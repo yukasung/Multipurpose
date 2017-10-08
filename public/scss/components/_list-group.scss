@@ -1,0 +1,13 @@
+/*-----------------------------------------------------------------------------------*/
+/*	COMPONENT > LIST GROUP
+/*-----------------------------------------------------------------------------------*/
+
+.list-group{
+	&.border-bottom{
+		.list-group-item{
+			border: none;
+			background-color: transparent;
+			border-bottom: 1px dotted #d4dde4;
+		}
+	}
+}

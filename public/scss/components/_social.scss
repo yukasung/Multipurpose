@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------------*/
+/*	02. SOCIAL
+/*-----------------------------------------------------------------------------------*/
+
+.social {
+	display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -20px;
+    font-size: 0;
+    line-height: 1;
+    li {
+	    display: inline-block;
+	    margin: 0 20px 0 0;
+	    a {
+		    color: $font-color;
+		    &:hover{
+		    	color: $brand-secondary;
+		    }
+		    i {
+			    background: none;
+			    box-shadow: none;
+			    border: 0;
+			    height: auto !important;
+			    width: auto;
+			    font-size: 16px;
+			}
+		}
+	}
+}
+
+.share{
+	display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -20px;
+    font-size: 0;
+    line-height: 1;
+    li {
+	    display: inline-block;
+	    margin: 0 20px 0 0;
+	    a {
+		    color: $font-color;
+		    &:hover{
+		    	color: $brand-secondary;
+		    }
+		    i {
+			    background: none;
+			    box-shadow: none;
+			    border: 0;
+			    height: auto !important;
+			    width: auto;
+			    font-size: 16px;
+			}
+		}
+	}
+}

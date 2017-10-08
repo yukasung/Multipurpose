@@ -1,0 +1,45 @@
+/*-----------------------------------------------------------------------------------*/
+/*  COMPONENTS > CARD
+/*-----------------------------------------------------------------------------------*/
+
+.card{
+	background-color: $card-bg-color;
+	border-radius: $card-border-radius;
+	border: none;
+	box-shadow: $card-box-shadow;
+	.card-title{
+		line-height: 28px;
+		a{
+			color: $card-title-link-color;
+			&:hover{
+				color: $link-active-color;
+			}
+		}
+	}
+	.card-block{
+		padding: 20px 0 0 0;
+	}
+	.card-header{
+		background-color: transparent;
+		border-bottom: $card-border-bottom;
+	}
+	.card-footer{
+		background-color: transparent;
+	}
+	img{
+		border-radius: $card-border-radius $card-border-radius 0 0;
+	}
+	.card-img-left {
+		border-bottom-left-radius: calc(.25rem - 1px);
+		border-top-left-radius: calc(.25rem - 1px);
+		float: left;
+		padding-right: 1em;
+		margin-bottom: -1.25em;
+	}
+	.card-link{
+		font-size: $more-font-size;
+		color: $more-font-color;
+		text-transform: uppercase;
+	}
+}
+

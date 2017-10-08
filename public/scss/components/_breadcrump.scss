@@ -1,0 +1,29 @@
+/*-----------------------------------------------------------------------------------*/
+/*  COMPONENT > BREADCRUMB
+/*-----------------------------------------------------------------------------------*/
+
+.breadcrumb{
+    background-color: transparent;
+    margin-top: 10px;
+    li{
+    	margin-right: 15px;
+    	&:before{
+    		margin-right: 15px;
+    	}
+    }
+    a{
+    	color: $font-color;
+    	&:hover{
+    		color: $link-active-color;
+    	}
+    }
+    .breadcrumb-item{
+        &::before{
+            color: $page-header-font-color;
+        }
+        &.active{
+            color: $page-header-font-color;
+        }
+    }
+
+}

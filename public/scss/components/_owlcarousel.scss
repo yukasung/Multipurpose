@@ -1,0 +1,70 @@
+/*-----------------------------------------------------------------------------------*/
+/*  COMPONENT > OWLCAROUSEL
+/*-----------------------------------------------------------------------------------*/
+.owl-carousel {
+    position: relative;
+    padding-right: 3px;
+}
+
+.owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0 3px;
+    display: block;
+    border-radius: 100%;
+    border: 2px solid #d2d2d2;
+    width: 11px;
+    height: 11px;
+    transition: all 150ms ease-in;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #d2d2d2
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    width: 100%;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    z-index: 100;
+    position: absolute;
+    background: none;
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    color: rgba(255,255,255,0.7);
+    transition: color 200ms ease-in;
+}
+
+.owl-nav .owl-prev:before, .owl-nav .owl-next:before {
+    font-family: "FontAwesome";
+}
+
+.owl-nav .owl-prev:before{
+	content: '\f104';
+}
+
+.owl-nav .owl-next:before {
+    content: '\f105';
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    left: 25px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    left: auto;
+    right: 25px;
+}

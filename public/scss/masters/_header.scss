@@ -1,0 +1,30 @@
+.header-top{
+	background-color: $primary-color;
+	color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+	.list-inline{
+		margin-bottom: 0;
+		.list-inline-item{
+			a{
+				color: #fff;
+			}
+			i{
+				margin-right: 10px;
+			}
+			&:not(:last-child){
+				margin-right: 40px;
+			}
+		}
+	}
+	.social-links{
+		display: inline-block;
+    	float: right;
+		font-size: 16px;
+		.list-inline-item{
+			&:not(:last-child){
+				margin-right: 20px;
+			}
+		}
+	}
+}

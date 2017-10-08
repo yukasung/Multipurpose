@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------------*/
+/*	COMPONENT > COLLAPSE
+/*-----------------------------------------------------------------------------------*/
+
+.accordion{
+	.card{
+		&+.card{
+			margin-top: 5px;
+		}
+		.card-header{
+			a{
+				color: $font-color;
+				padding-left: 40px;
+			}
+		}
+	}
+	.card-header{
+		a{			
+			&.collapsed{
+				span{
+					&.accordion-icons{
+						position: relative;
+						&:before{
+						    content: "\f105";
+						    font-family: FontAwesome;
+						    font-size: 24px;
+						    height: 40px;
+						    left: -51px;
+						    line-height: 39px;
+						    position: absolute;
+						    text-align: center;
+						    top: -10px;
+						    width: 42px;
+						}
+					}
+				}
+			}
+			span{
+				&.accordion-icons{
+					position: relative;
+					&:before{
+					    content: "\f107";
+					    font-family: FontAwesome;
+					    font-size: 24px;
+					    height: 40px;
+					    left: -51px;
+					    line-height: 39px;
+					    position: absolute;
+					    text-align: center;
+					    top: -10px;
+					    width: 42px;
+					}
+				}
+			}
+		}
+	}
+}

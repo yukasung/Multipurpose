@@ -1,0 +1,37 @@
+/*-----------------------------------------------------------------------------------*/
+/*  02. MASTERS > WIDGET
+/*-----------------------------------------------------------------------------------*/
+
+.widget{
+	
+	.info{
+	 	i{
+	 		float: left;
+	 	}
+	 	p {
+		    overflow: hidden;
+		    margin: 0;
+		}
+	}
+	
+	.post-list{
+		.post-list-title{
+			color: $card-title-link-color;
+			&:hover{
+				color: $link-active-color;
+			}
+		}
+	}
+
+	.product-list{
+        .media{
+            &:first-child{
+                padding-top: 0;
+            }
+            padding: 15px 0;
+            border-bottom: 1px dotted rgba($line-color, 0.4);
+        }
+    }
+
+}
+

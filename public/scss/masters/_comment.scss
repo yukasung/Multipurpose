@@ -1,0 +1,10 @@
+.blog-commnets{
+	h4{
+		a{
+			color: $font-color;
+			&:hover{
+				color: $link-active-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+/* 1. Colors
+   ========================================================================== */
+$white: #fff !default;
+$black: #000 !default;
+$gray: #464a4c !default;
+
+$primary-color: #db5048 !default;
+
+$brand-primary: #021F59 !default;
+$brand-primary-lighter: #3498DB !default;
+$brand-primary-darker: #021F59 !default;
+$brand-secondary: #0468BF !default;
+
+$font-color: #333333 !default;
+$line-color: $white !default;
+
+/* 2. Border
+   ========================================================================== */
+$border-width: 2px !default;
+
+/* 2. Fonts
+   ========================================================================== */
+$font-roboto-path: "/fonts/roboto/" !default;
+
+/* 12 Background Color
+  ========================================================================== */
+$bg-1: $brand-primary !default;
+$bg-1-text-color: $font-color !default;
+$bg-2: $brand-primary !default;
+$bg-2-text-color: $white !default;
+
+/* 7. Box
+   ========================================================================== */
+$box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !default;
+$box-border-radius: 2px;
+
+/* 3. Navigation Bar
+   ========================================================================== */
+$navbar-bg-color: #fff !default;
+$navbar-font-size: 14px !default;
+$navbar-font-color: $font-color;
+$navbar-line-color: rgba($line-color, 0.4) !default;
+$navbar-font-weight: 500 !default;
+/* 4. Page Header
+   ========================================================================== */
+$page-header-bg-color: $brand-primary !default;
+$page-header-font-color: $white !default;
+$page-header-padding: 30px 0 0 0 !default;
+
+/* 10 Link
+  ========================================================================== */
+$link-color: $brand-secondary !default;
+$link-active-color: $brand-secondary !default;
+
+/* 4. Buttons
+   ========================================================================== */
+$btn-color: $brand-secondary !default;
+$btn-font-color: #fff !default;
+
+/* 4. Cards
+   ========================================================================== */
+$card-bg-color: $brand-primary !default;
+$card-border-radius: 0 !default;
+$card-title-link-color: $font-color !default;
+$card-box-shadow: none !default;
+$card-border: 1px solid rgba($line-color, 0.1) !default;
+$card-border-bottom: 1px solid rgba($line-color, 0.8) !default;
+
+/* 4. Pagination
+   ========================================================================== */
+$pagination-bg: $brand-primary !default;
+$pagination-font-color: $font-color !default;
+$pagination-font-active-color: #fff !default;
+$pagination-border-color: $brand-secondary !default;
+$pagination-hover-bg: $brand-secondary !default;
+
+/* 4. Meta
+   ========================================================================== */
+$meta-font-color: #707070 !default;
+$meta-font-size: 13px !default;
+$meta-font-weight: normal !default;
+
+/* 4. More
+   ========================================================================== */
+$more-font-size: 13px !default;
+$more-font-color: $brand-secondary !default;
+
+/* 4. Footer
+   ========================================================================== */
+$footer-bg-color: #303030 !default;
+$footer-border-top: none !default;
+
+/* 4. Overlay
+   ========================================================================== */
+$overlay-bg-color: rgba($brand-secondary, 0.8) !default;
+
+/* 4. Section Title
+   ========================================================================== */
+$section-title-line: 2px solid rgba($line-color, 0.09) !default;
+
+/* 4. Forms
+   ========================================================================== */
+$input-bg: $white !default;
+$input-color: $gray !default;
+$input-border-color: rgba($white, .15) !default;
+$input-btn-border-width: $border-width !default;
