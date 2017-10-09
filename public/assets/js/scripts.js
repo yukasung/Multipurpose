@@ -405,6 +405,40 @@ $(document).ready(function() {
     })
 
 
+    /*-----------------------------------------------------------------------------------*/
+    /*  REVOLUTION
+    /*-----------------------------------------------------------------------------------*/
+    $("#slider1").revolution({
+        sliderType: "standard",
+        sliderLayout: "auto",
+        /*fullScreenOffsetContainer: ".navbar",*/
+        spinner: "off",
+        delay: 9000,
+        shadow: 0,
+        gridwidth: 1170,
+        gridheight: 600,
+        responsiveLevels: [4096, 1024, 778, 480],
+        navigation: {
+            arrows: {
+                enable: true,
+                hide_onleave: true
+            },
+            touch:{
+                touchenabled:"on",
+            },
+            bullets: {
+                enable: true,
+                hide_onleave: true,
+                h_align: "center",
+                v_align: "bottom",
+                space: 8,
+                h_offset: 0,
+                v_offset: 20,
+                tmp:''
+            }
+        }
+    });
+
 });
 
 

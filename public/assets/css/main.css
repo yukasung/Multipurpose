@@ -509,7 +509,7 @@ footer {
   @media (max-width: 991px) {
     .navbar-action {
       position: absolute;
-      right: 1rem; } }
+      right: 4px; } }
   .navbar-action > ul {
     display: -webkit-box;
     display: -webkit-flex;

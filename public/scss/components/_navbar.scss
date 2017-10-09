@@ -160,7 +160,7 @@
     margin-right: -7px;
     @include media-breakpoint-down(md) { 
         position: absolute;
-        right: 1rem;
+        right: 4px;
     }
     >ul{
         display: flex;
