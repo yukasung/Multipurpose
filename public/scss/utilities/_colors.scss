@@ -3,20 +3,9 @@
 /*-----------------------------------------------------------------------------------*/
 
 .text-primary{
-    color: $brand-secondary !important; 
-}
-
-.btn-primary{
-	color: $btn-font-color;
-    background: $btn-color; 	
-    border-color: $btn-color;
-    &:hover{
-		color: $btn-font-color;
-		background: $btn-color; 	
-		border-color: $btn-color;
-    }
+    color: $primary-color !important; 
 }
 
 .bg-primary{
-	background-color: $brand-secondary !important; 
+    background-color: $primary-color !important; 
 }

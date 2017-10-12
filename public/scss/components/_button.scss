@@ -1,17 +1,12 @@
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENT > BUTTON
 /*-----------------------------------------------------------------------------------*/
-// .btn {    
-//     border: 0;
-//     margin-right: 4px;
-//     font-size: 13px;
-//     line-height: 1;
-//     padding: 12px 20px;
-//     font-weight: 700;
-//     border-radius: 0;
-//     text-shadow: none;
-//     text-transform: uppercase;
-//     transition: all 150ms ease-in;
-//     box-shadow: none;
-//     display: inline-block;
-// }
+
+.btn{
+	font-size: 13px;
+	padding: 12px 30px;
+}
+.btn-primary{
+	background: $primary-color !important;
+	border-color:  $primary-color !important;
+}

@@ -113,6 +113,8 @@ ul{
     margin-bottom: 40px;
     overflow: hidden;
     h2 {
+        font-size: 40px;
+        font-weight: normal;
         padding: 0 20px;
         margin: 0;
         overflow: hidden;
@@ -202,5 +204,16 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     cursor: pointer;
+}
+
+.video-wrap{
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 

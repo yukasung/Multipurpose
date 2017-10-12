@@ -1,10 +1,12 @@
 /* 1. Colors
    ========================================================================== */
+
+$primary-color: #db5048 !default;
+
 $white: #fff !default;
 $black: #000 !default;
 $gray: #464a4c !default;
 
-$primary-color: #db5048 !default;
 
 $brand-primary: #021F59 !default;
 $brand-primary-lighter: #3498DB !default;
@@ -12,7 +14,7 @@ $brand-primary-darker: #021F59 !default;
 $brand-secondary: #0468BF !default;
 
 $font-color: #333333 !default;
-$line-color: $white !default;
+$line-color: $black !default;
 
 /* 2. Border
    ========================================================================== */
@@ -49,8 +51,8 @@ $page-header-padding: 30px 0 0 0 !default;
 
 /* 10 Link
   ========================================================================== */
-$link-color: $brand-secondary !default;
-$link-active-color: $brand-secondary !default;
+$link-color: $primary-color !default;
+$link-active-color: $primary-color !default;
 
 /* 4. Buttons
    ========================================================================== */
@@ -59,10 +61,10 @@ $btn-font-color: #fff !default;
 
 /* 4. Cards
    ========================================================================== */
-$card-bg-color: $brand-primary !default;
+$card-bg-color: #fff !default;
 $card-border-radius: 0 !default;
 $card-title-link-color: $font-color !default;
-$card-box-shadow: none !default;
+$card-box-shadow: $box-shadow !default;
 $card-border: 1px solid rgba($line-color, 0.1) !default;
 $card-border-bottom: 1px solid rgba($line-color, 0.8) !default;
 
@@ -82,8 +84,8 @@ $meta-font-weight: normal !default;
 
 /* 4. More
    ========================================================================== */
-$more-font-size: 13px !default;
-$more-font-color: $brand-secondary !default;
+$more-font-size: 12px !default;
+$more-font-color: $primary-color !default;
 
 /* 4. Footer
    ========================================================================== */
@@ -92,7 +94,7 @@ $footer-border-top: none !default;
 
 /* 4. Overlay
    ========================================================================== */
-$overlay-bg-color: rgba($brand-secondary, 0.8) !default;
+$overlay-bg-color: rgba($primary-color, 0.8) !default;
 
 /* 4. Section Title
    ========================================================================== */
