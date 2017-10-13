@@ -99,7 +99,7 @@ $(document).ready(function() {
 
     $( '.owl-col-1' ).owlCarousel({
         items: 1,
-        nav: true,
+        nav: false,
         navText: ['', ''],
         dots: true,
         loop: true,
