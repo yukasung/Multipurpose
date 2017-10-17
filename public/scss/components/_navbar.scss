@@ -7,16 +7,9 @@
     box-shadow: 0 1px 6px rgba(0,0,0,.35);
     padding-top: 0;
     padding-bottom: 0;
-    &.fixed-top{
-        animation: fadeInDown 800ms;
-    }
-    button{
-        display: block;
-        transition: color 0.3s, box-shadow 0.3s;
-        padding: 0;
-        &:focus{
-            outline: none;
-        }
+    transition: all .5s;
+    &.scroll-up {
+        transform: translateY(-110%);
     }
     .container{
         @include media-breakpoint-down(md) {
@@ -40,6 +33,14 @@
                     transform: rotate(180deg);
                 }
             }
+        }
+    }
+
+    .btn-search{
+        padding: 0 5px;
+        color: $font-color;
+        @include media-breakpoint-down(sm) {
+            margin-right: 8px;
         }
     }
    
@@ -81,9 +82,6 @@
                     border-top: none;
                 }  
             }
-        }
-        &:last-child{
-            
         }
     }
     .dropdown-toggle{
@@ -232,152 +230,3 @@
         }
     }
 }
-
-.nav-item-search{
-    ul {
-        height: 90px;
-        line-height: 90px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }   
-}
-
-.navbar-search{
-    position: relative;
-    display: block;
-    width: 44px;
-    height: 44px;
-    overflow: hidden;
-    white-space: nowrap;
-    color: transparent !important;
-    margin-top:  -5px;
-    &::before, &::after {
-        content: '';
-        position: absolute;
-        transition: opacity 0.4s;
-        transform: translateZ(0);
-        backface-visibility: hidden;
-    }
-    &::before {
-        top: 16px;
-        left: 11px;
-        width: 17px;
-        height: 17px;
-        border-radius: 50%;
-        border: 3px solid $navbar-font-color;
-        @include media-breakpoint-up(lg) {
-            top: 15px;
-            left: 11px;
-            width: 15px;
-            height: 15px;
-            border: 2px solid $navbar-font-color;
-        }
-    }
-    &::after {
-        height: 3px;
-        width: 7px;
-        background: $navbar-font-color;
-        bottom: 9px;
-        right: 13px;
-        transform: rotate(45deg);
-        @include media-breakpoint-up(lg) {
-            height: 2px;
-            width: 8px;
-            background: $navbar-font-color;
-            bottom: 13px;
-            right: 15px;
-        }
-    }
-    span {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        &::before, &::after {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: 3px;
-            width: 24px;
-            top: 56%;
-            left: 50%;
-            margin-left: -11px;
-            background: $navbar-font-color;
-            opacity: 0;
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            transition: opacity 0.3s, transform 0.3s;
-            @include media-breakpoint-up(lg) {
-                height: 2px;
-                width: 18px;
-            }
-        }
-        &::before {
-            transform: rotate(45deg);
-        }
-        &::after {
-            transform: rotate(-45deg);
-        }
-    }
-    &.navbar-search-active::before, &.navbar-search-active::after {
-        opacity: 0;
-    }
-    &.navbar-search-active span::before, &.navbar-search-active span::after {
-        opacity: 1;
-    }
-    &.navbar-search-active span::before {
-        transform: rotate(135deg);
-    }
-    &.navbar-search-active span::after {
-        transform: rotate(45deg);
-    }
-}
-
-#search_form {
-    transition: max-height, 0.5s;
-    position: absolute;
-    top: 98px;
-    left: 0;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    background-color: rgba(0,0,0,.9);
-    box-shadow: $box-shadow;
-    &.show {
-        max-height: 60px;
-    }
-    input {
-        box-sizing: border-box;
-        display: block;
-        height: 60px;
-        border: none;
-        font-size: 18px;
-        background-color: rgba(0,0,0,.9);
-    }
-    input[type="search"] {
-        width: 100%;
-        padding: 0 5px 0 22px;
-    }
-    .search-field{
-        span{
-            border: none;
-            padding: 0 15px;
-        }
-        button{
-            background: 0 0;
-            border: none;
-        }   
-    }
-    .input-group-addon{
-        background-color: transparent;
-    }
-    .form-control{
-        &:focus{
-            background-color: transparent;
-        }
-    }
-    
-}
-

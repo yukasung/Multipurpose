@@ -17,14 +17,5 @@
 			}
 		}
 	}
-	.social-links{
-		display: inline-block;
-    	float: right;
-		font-size: 16px;
-		.list-inline-item{
-			&:not(:last-child){
-				margin-right: 20px;
-			}
-		}
-	}
+
 }
