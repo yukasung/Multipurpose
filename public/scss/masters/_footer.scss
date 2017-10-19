@@ -1,28 +1,13 @@
 footer{
-	background-color: $footer-bg-color;
-	border-top: $footer-border-top;
-	.widget{
-		.post-list{
-			padding: 0;
-   			margin: 0;
-   			li {
-			    clear: both;
-			    margin-bottom: 25px;
-			    display: block;
-			    overflow: hidden;
-			    .meta {
-				    margin-bottom: 5px;
+	.list-inline{
+		&.social-links{
+			.list-inline-item{
+				&:not(:last-child) {
+					margin-right: 40px;
 				}
 			}
-			p {
-			    margin-bottom: 0;
-			}
-		}
-	}
-	[class*="col-"]{
-		.widget{
-			&:first-child{
-				margin-top: 0;
+			a{
+				color: #ffffff;
 			}
 		}
 	}

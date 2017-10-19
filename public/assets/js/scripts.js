@@ -419,7 +419,7 @@ $(document).ready(function() {
     /*-----------------------------------------------------------------------------------*/
     
     var searchOpenBtn = $(".btn-search"),
-    searchCloseBtn = $(".search-popup .close-btn"),
+    searchCloseBtn = $(".search-popup .btn-close"),
     searchPopup = $(".search-popup"),
     formGroup = $(".search-popup .form-group"),
     searchPopupHeading = $(".search-popup h2");

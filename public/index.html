@@ -119,14 +119,14 @@
                 </div>
                 <div class="search-popup" style="display: none;">
                     <div class="search-popup-block d-flex align-items-center justify-content-center">
-                        <div class="close-btn"> CLOSE
+                        <div class="btn-close"> CLOSE
                             <i class="fa fa-close"></i>
                         </div>
                         <form action="#" id="search-form" method="post"><input type="hidden" name="form-name" value="search-form">
                             <h2 class="text-center">Search Our Website</h2>
                             <div class="form-group p-relative">
                                 <input type="search" class="form-control" placeholder="What are you searching for...">
-                                <button class="btn btn-primary" type="submit">Search</button>
+                                <button class="btn btn-primary m-0" type="submit">Search</button>
                             </div>
                         </form>
                     </div>
@@ -143,7 +143,9 @@
                                 <div class="col-sm-12 text-left">
                                     <h1>The ease & simplicity<br>of Gmail, available<br>across devices</h1>
                                     <p class="mb-0 mt-3">We appreciate that you have put time, thought, effort and passion<br>into your building project as well as the commitment.</p>
-                                    <a class="btn btn-primary btn-lg text-uppercase mt-5" href="#" role="button">Create an account</a>
+                                    <div class="mt-5">
+                                        <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">See all service</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -219,25 +221,14 @@
                             <img src="assets/img/about_2.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="col-sm-6">
-                            <div class="section-title mt-3 mt-sm-0 mb-3">
-                                <h2>About Us</h2>
+                            <div class="pl-0 pl-sm-4">
+                                <div class="section-title no-line mt-3 mt-sm-0 mb-4">
+                                    <h2>Our business experties Provide you the great value</h2>
+                                </div>
+                                <p>Aucibus penatibus pede odio porttitor nisl. Malesuada adipiscing eiusmod phasellus placerat fusce. Laborum sint justo ridiculus mus scelerisque sapien gravida quis in lacus rhoncus. Sociis parturient erat vitae sit magna aptent. Dui hendrerit sociosqu rutrum habitant risus.</p>
+                                <p>An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus. Te eos accusam repudiandae.</p>
+                                <a class="btn btn-primary text-uppercase mt-3" href="#" role="button">Learn More</a>
                             </div>
-                            <p>Aucibus penatibus pede odio porttitor nisl. Malesuada adipiscing eiusmod phasellus placerat fusce. Laborum sint justo ridiculus mus scelerisque sapien gravida quis in lacus rhoncus. Sociis parturient erat vitae sit magna aptent. Dui hendrerit sociosqu rutrum habitant risus.</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="fa fa-check fa-fw text-primary"></i>
-                                    Deserunt veniam fermentum
-                                </li>
-                                <li>
-                                    <i class="fa fa-check fa-fw text-primary"></i>
-                                    Adipiscing fugiat sunt sit venenatis
-                                </li>
-                                <li>
-                                    <i class="fa fa-check fa-fw text-primary"></i>
-                                    Montes qui pede nibh cillum.
-                                </li>
-                            </ul>
-                            <a class="btn btn-primary text-uppercase mt-4" href="#" role="button">read more</a>
                         </div>
                     </div>    
                 </div>
@@ -482,72 +473,59 @@
                 </div>
             </div>
         </div>        
-        <footer class="footer">
-            <div class="container inner">
+        <footer class="footer bg-inverse">
+            <div class="container pt-7 pb-6">
                 <div class="row">
+                    <div class="col-sm-5">
+                        <img src="assets/img/logo-footer.png" class="mb-4" alt="">
+                        <p class="text-white">is a responsive site template with a clean and professional design. A great solution for your business, portfolio, blog or any other purpose site.</p>
+                        <ul class="list-inline social-links">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 class="text-uppercase text-primary mb-4">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white">Terms &amp; Condition</a></li>
+                            <li><a href="#" class="text-white">Support</a></li>
+                            <li><a href="#" class="text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 class="text-uppercase text-primary mb-4">Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">About us</a></li>
+                            <li><a href="#" class="text-white">Customer</a></li>
+                            <li><a href="#" class="text-white">Service</a></li>
+                            <li><a href="#" class="text-white">Collection</a></li>
+                        </ul>
+                    </div>
                     <div class="col-sm-3">
-                        <div class="widget"><img src="#" class="mb-2" srcset="assets/img/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="">
-                            <p>is a responsive site template with a clean and professional design. A great solution for your business, portfolio, blog or any other purpose site.</p>
-                            <p>© 2016 Morello. All rights reserved. Theme by <a href="http://elemisfreebies.com">elemis</a>.</p>
+                        <h4 class="text-uppercase text-primary mb-4">Our Address</h4>
+                        <ul class="list-unstyled text-white">
+                            <li>Address: 639 Riverside Drive, New York, NY 10027, United States</li>
+                            <li>Phone: +1 714 2222 6666</li>
+                            <li>Email: support@your-domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-inverse-dark py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="text-white mb-0">© 2017 Soprano by PuzzleThemes. All right reserved.</p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">Popular Posts</h4>
-                        <ul class="post-list">
-                            <li>
-                                <div class="meta"><span class="date">3th Oct 2012</span> </div>
-                                <p> <a href="blog-post.html">Etiam porta sem malesuada magna mollis euismod ullamcorper nulla</a> </p>
-                            </li>
-                            <li>
-                                <div class="meta"><span class="date">28th Sep 2012</span> </div>
-                                <p> <a href="blog-post.html">Ornare nullam risus non metus auctor fringilla fermentum justo</a> </p>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">Get in Touch</h4>
-                        <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam.</p>
-                        <address>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="fa fa-phone fa-fw"></i>
-                                    <p>019223 8092344</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope fa-fw"></i>
-                                    <p>info@appstraptheme.com</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-home fa-fw"></i>
-                                    <p>Sunshine House, Sunville. SUN12 8LU.</p>
-                                </li>
-                            </ul>
-                        </address>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">About Us</h4>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Contact Us</a> </li>
-                            <li> <a href="#">Terms of Use</a> </li>
-                            <li> <a href="#">Privacy Policy</a> </li>
-                        </ul>
-                    </div>
-                    <div class="widget">
-                        <h4 class="widget-title">Elsewhere</h4>
-                        <ul class="social">
-                            <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-vimeo"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-whatsapp"></i></a> </li>
-                        </ul>
-                    </div>
-                  </div>
                 </div>
             </div>
         </footer>
