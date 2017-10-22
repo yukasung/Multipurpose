@@ -2,9 +2,9 @@
 /*	02. COMPONENTS > PAGINATION
 /*-----------------------------------------------------------------------------------*/
 .pagination{
-  	justify-content: center;
   	margin-bottom: 0;
 	.page-item{
+		padding: 0 10px;
 		&:first-child{			
 			.page-link{
 				border-radius: 50%;
@@ -17,17 +17,13 @@
 		}
 		&.active{
 			.page-link{
-				opacity: 1;
-				color: $pagination-font-color;
-				background-color: transparent;
-				&:hover{
-				    color: $pagination-font-color;
-				    background: none;
-				}
+				color: #ffffff;
+			    background: $primary-color;
+			    opacity: 1;
 			}
 		}
 		.page-link{
-			color: $pagination-font-color;
+			color: $font-color;
 		    width: 40px;
 		    height: 40px;
 		    line-height: 40px;
@@ -51,8 +47,8 @@
 		    text-align: center;
 		    opacity: .4;
 			&:hover{
-			    color: $pagination-font-active-color;
-			    background: $pagination-hover-bg;
+			    color: #ffffff;
+			    background: $primary-color;
 			    opacity: 1;
 			}
 		}

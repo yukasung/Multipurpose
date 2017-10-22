@@ -51,8 +51,8 @@ $page-header-padding: 30px 0 0 0 !default;
 
 /* 10 Link
   ========================================================================== */
-$link-color: $primary-color !default;
-$link-active-color: $primary-color !default;
+// $link-color: $primary-color !default;
+// $link-active-color: $primary-color !default;
 
 /* 4. Buttons
    ========================================================================== */
@@ -66,14 +66,6 @@ $card-border-radius: 0 !default;
 $card-title-link-color: $font-color !default;
 $card-border: 1px solid rgba($line-color, 0.1) !default;
 $card-border-bottom: 1px solid rgba($line-color, 0.8) !default;
-
-/* 4. Pagination
-   ========================================================================== */
-$pagination-bg: $brand-primary !default;
-$pagination-font-color: $font-color !default;
-$pagination-font-active-color: #fff !default;
-$pagination-border-color: $brand-secondary !default;
-$pagination-hover-bg: $brand-secondary !default;
 
 /* 4. Meta
    ========================================================================== */

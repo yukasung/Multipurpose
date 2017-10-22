@@ -10,6 +10,7 @@
 @import "base/typography";
 
 // Import Bootstrap parts
+@import "vendor/bootstrap/scss/functions";
 @import "vendor/bootstrap/scss/variables";
 @import "vendor/bootstrap/scss/mixins/breakpoints";
 
@@ -46,6 +47,7 @@
 @import 'components/progress';
 @import 'components/pricing';
 @import 'components/slider';
+@import 'components/parallax';
 
 // Utilities
 @import 'utilities/colors';
@@ -54,7 +56,6 @@
 @import 'utilities/border';
 @import 'utilities/overlay';
 @import 'utilities/sizing';
-@import 'utilities/position';
 
 // Page-specific stylesheets
 @import 'pages/blog';

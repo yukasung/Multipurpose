@@ -14,7 +14,7 @@
 					a{
 						color: $font-color;
 						&:hover{
-							color: $link-active-color;
+							color: $primary-color;;
 						}
 					}
 				}
@@ -40,15 +40,15 @@
 					margin-right: 40px;
 					cursor: pointer;
 					position: relative;
-					color: $brand-secondary;
+					color: $primary-color;
 					&.is-checked{
-						&::after{
+						&:after{
 							content: "";
 						    width: 100%;
 						    bottom: -2px;
 						    left: 0;
 						    position: absolute;
-						    border-bottom: 2px solid $brand-secondary;
+						    border-bottom: 2px solid $primary-color;
 						}
 					}
 				}

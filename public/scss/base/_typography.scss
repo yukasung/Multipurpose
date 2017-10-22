@@ -25,13 +25,13 @@ a{
 	position:relative;
 	transition:0.5s color ease;
 	text-decoration:none;
-	color: $link-color;
+	color: $primary-color;
     &:hover{
-        color: $link-active-color;
+        color: $primary-color;
         text-decoration: none;
     }
     &:focus{
-        color: $link-active-color;
+        color: $primary-color;
         text-decoration: none;   
     }
 }

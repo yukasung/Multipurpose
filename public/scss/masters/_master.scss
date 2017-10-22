@@ -13,16 +13,6 @@
     text-transform: uppercase;
 }
 
-.bg-1{
-    background: $bg-1;
-    color: $bg-1-text-color;
-}
-
-.bg-2{
-    background: $bg-2;
-    color: $bg-2-text-color;
-}
-
 .bg-inverse h1,
 .bg-inverse h2,
 .bg-inverse h3,
@@ -103,7 +93,7 @@ ul{
     a{
         color: $meta-font-color;
         &:hover{
-            color: $link-active-color;
+            color: $primary-color;
         }
     }
 }
@@ -204,4 +194,17 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     cursor: pointer;
+}
+
+
+.master-social{
+    margin-bottom: 0;
+    .list-inline-item{
+        i{
+            margin-right: 10px;
+        }
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+    }
 }
