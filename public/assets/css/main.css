@@ -192,48 +192,6 @@ dl {
         opacity: 1;
         -webkit-transform: none;
                 transform: none; }
-    .search-popup .search-popup-block button {
-      height: 50px;
-      line-height: 50px;
-      background: #db5048;
-      color: #fff;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      border: none;
-      padding: 0 30px;
-      text-transform: uppercase; }
-      @media (max-width: 767px) {
-        .search-popup .search-popup-block button {
-          width: 100%;
-          top: 100%;
-          right: 0;
-          margin-top: 10px; } }
-    .search-popup .search-popup-block .form-control {
-      padding: 0 30px;
-      height: 60px;
-      border: 1px solid #777;
-      color: #333333;
-      background: none;
-      font-weight: 300;
-      width: 100%;
-      font-size: 18px; }
-      .search-popup .search-popup-block .form-control::-webkit-input-placeholder {
-        font-weight: 300;
-        color: #777;
-        font-size: 20px; }
-      .search-popup .search-popup-block .form-control::-moz-placeholder {
-        font-weight: 300;
-        color: #777;
-        font-size: 20px; }
-      .search-popup .search-popup-block .form-control:-ms-input-placeholder {
-        font-weight: 300;
-        color: #777;
-        font-size: 20px; }
-      .search-popup .search-popup-block .form-control::placeholder {
-        font-weight: 300;
-        color: #777;
-        font-size: 20px; }
     .search-popup .search-popup-block .btn-close {
       color: #333;
       position: absolute;
@@ -252,19 +210,6 @@ dl {
     .search-popup .search-popup-block form {
       max-width: 800px;
       width: 100%; }
-    .search-popup .search-popup-block .form-group {
-      opacity: 0;
-      -webkit-transform: translateY(30px);
-              transform: translateY(30px);
-      -webkit-transition: all 0.7s;
-      transition: all 0.7s; }
-      .search-popup .search-popup-block .form-group.visible {
-        opacity: 1;
-        -webkit-transform: none;
-                transform: none; }
-      .search-popup .search-popup-block .form-group .form-control {
-        border-color: #ccc;
-        font-weight: 400; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > MASTER

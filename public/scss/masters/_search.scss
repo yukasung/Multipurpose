@@ -32,39 +32,6 @@
                 transform: none;
             }
         }
-        button {
-            height: 50px;
-            line-height: 50px;
-            background: $primary-color;
-            color: #fff;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            border: none;
-            padding: 0 30px;
-            text-transform: uppercase;
-            @include media-breakpoint-down(sm) {
-                width: 100%;
-                top: 100%;
-                right: 0;
-                margin-top: 10px;
-            }
-        }
-        .form-control {
-            padding: 0 30px;
-            height: 60px;
-            border: 1px solid #777;
-            color: $font-color;
-            background: none;
-            font-weight: 300;
-            width: 100%;
-            font-size: 18px;
-            &::placeholder {
-                font-weight: 300;
-                color: #777;
-                font-size: 20px;
-            }
-        }
         .btn-close {
             color: #333;
             position: absolute;
@@ -83,19 +50,6 @@
             max-width: 800px;
             width: 100%;
         }
-        .form-group {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.7s;
-            &.visible {
-                opacity: 1;
-                transform: none;
-            }
-            .form-control {
-                border-color: #ccc;
-                font-weight: 400;
-            }
-        }
-       
+               
     }
 }
