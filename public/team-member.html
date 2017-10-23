@@ -21,10 +21,42 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-toggleable-md fixed-top">
+            <div class="header-top">
                 <div class="container">
-                    <a class="navbar-brand py-3 py-md-4" href="#">
-                        <img srcset="assets/img/logo.png 1x, assets/img/logo-light@2x.png 2x"  alt="">
+                    <div class="row">
+                        <div class="col-9 d-none d-sm-block">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="fa fa-clock-o"></i>Mon - Sat: 8:00 - 17:00
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="tel:171422226666"><i class="fa fa-phone"></i>+1 714 2222 6666</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="mailto:Info@construction.com"><i class="fa fa-envelope-o"></i>Info@construction.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3">
+                            <ul class="list-inline master-social float-right">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand py-3 py-sm-4" href="/">
+                        <img src="assets/img/logo.png"  alt="">
                     </a>                                      
                     <div class="collapse navbar-collapse" id="navbar_collapse">
                         <ul class="navbar-nav ml-auto">
@@ -42,17 +74,17 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="fixtures.html">Fixtures</a>
+                                <a class="nav-link" href="fixtures.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="table.html">League Tables</a>
+                                <a class="nav-link" href="table.html">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="team.html">Teams</a>
+                                <a class="nav-link" href="team.html">Gallery</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    News
+                                    Blog
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -62,20 +94,10 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                    Shortcodes
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Shop
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="shop-grid.html">Product Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -84,8 +106,10 @@
                     </div>
                     <div class="navbar-action">
                         <ul>
-                            <li class="nav-item nav-item-search">
-                                <a class="navbar-search" href="#">Search<span></span></a>
+                            <li class="nav-item nav-item-search d-flex">
+                                <a class="btn-search d-flex align-items-center" href="#">
+                                    <i class="fa fa-search fa-lg"></i>
+                                </a>
                             </li>
                             <li class="nav-item nav-item-menu">
                                 <a class="navbar-toggler" href="#" data-toggle="collapse" data-target="#navbar_collapse" aria-controls="navbar_collapse" aria-expanded="false" aria-label="Toggle navigation">Menu<span></span></a>
@@ -93,65 +117,58 @@
                         </ul>
                     </div>                     
                 </div>
-                <form id="search_form">
-                    <div class="input-group search-field">
-                        <input id="search" type="text" class="form-control" name="search" placeholder="search..">
-                        <span class="input-group-addon"><button class="navbar-search">Search<span></span></button></span>
-                    </div>
-                </form>
-            </nav>
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h1 class="text-uppercase">Team Member</h1>
-                            <p class="lead mb-0">Semper esse incididunt vestibulum natoque</p>
+                <div class="search-popup" style="display: none;">
+                    <div class="search-popup-block d-flex align-items-center justify-content-center">
+                        <div class="btn-close"> CLOSE
+                            <i class="fa fa-close"></i>
                         </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right mb-0 p-0">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                 <li class="breadcrumb-item"><a href="#">Page</a></li>
-                                <li class="breadcrumb-item active">Team Member</li>
-                            </ol>
-                        </div>
+                        <form>
+                            <h2 class="text-center">Search Our Website</h2>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary btn-lg text-uppercase" type="button">Search</button>
+                                </span>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <div id="content">
-            <div class="bg-1">
-                <div class="container py-5 py-sm-7">
+            <div class="bg-white">
+                <div class="container pt-7">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img class="img-fluid" src="assets/img/team/sm/1.jpg" alt="">                                   
                         </div>                    
-                        <div class="col-sm-8">                            
-                            <div class="d-block mt-4 mt-sm-0 ml-sm-3">
+                        <div class="col-md-8">                            
+                            <div class="d-block mt-4 mt-md-0 ml-md-3">
                                 <h1>Debra Barnes</h1>
-                                <p class="text-muted font-weight-bold mb-3 wow fadeInUp" data-wow-delay=".2s">Web Designer & Software Developer</p>
-                                <p class="wow fadeInUp" data-wow-delay=".2s">Mauris duis incididunt aliquam luctus tincidunt. Vel deserunt aliquam imperdiet culpa. Vestibulum tempus neque lectus ut tempor. Velit nibh cillum urna culpa elementum. Aute pharetra phasellus nostrud aliquet.</p>
+                                <p class="text-muted mb-3 wow fadeInUp" data-wow-delay=".2s">Web Designer & Software Developer</p>
+                                <p class="wow fadeInUp" data-wow-delay=".2s">Mauris duis incididunt aliquam luctus tincidunt. Vel deserunt aliquam imperdiet culpa. Vestibulum tempus neque lectus ut tempor. Velit nibh cillum urna culpa elementum.</p>
                                 <dl class="row mb-0 wow fadeInUp" data-wow-delay=".2s">
-                                    <dt class="col-sm-3">Age</dt>
-                                    <dd class="col-sm-9">35.</dd>
+                                    <dt class="col-md-3">Age</dt>
+                                    <dd class="col-md-9">35.</dd>
 
-                                    <dt class="col-sm-3">Nationality</dt>
-                                    <dd class="col-sm-9">United States of American</dd>
+                                    <dt class="col-md-3">Nationality</dt>
+                                    <dd class="col-md-9">United States of American</dd>
 
-                                    <dt class="col-sm-3">Address</dt>
-                                    <dd class="col-sm-9">50 5th Avenue, 5th Floor, New York, NY 10118.</dd>
+                                    <dt class="col-md-3">Address</dt>
+                                    <dd class="col-md-9">50 5th Avenue, 5th Floor, New York, NY 10118.</dd>
 
-                                    <dt class="col-sm-3 text-truncate">Phone</dt>
-                                    <dd class="col-sm-9">+410 246 80246</dd>
+                                    <dt class="col-md-3 text-truncate">Phone</dt>
+                                    <dd class="col-md-9">+410 246 80246</dd>
 
-                                    <dt class="col-sm-3">E-mail</dt>
-                                    <dd class="col-sm-9"><a href="mailto:info@giantthemes.com">info@giantthemes.com</a></dd>
+                                    <dt class="col-md-3">E-mail</dt>
+                                    <dd class="col-md-9"><a href="mailto:info@giantthemes.com">info@giantthemes.com</a></dd>
 
-                                    <dt class="col-sm-3">Website</dt>
-                                    <dd class="col-sm-9"><a href="http://websitename.com">www.websitename.com</a></dd>
+                                    <dt class="col-md-3">Website</dt>
+                                    <dd class="col-md-9"><a href="http://websitename.com">www.websitename.com</a></dd>
 
-                                    <dt class="col-sm-3">Social</dt>
-                                    <dd class="col-sm-9">
-                                        <ul class="share ml-2">
+                                    <dt class="col-md-3">Social</dt>
+                                    <dd class="col-md-9">
+                                        <ul class="share">
                                             <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
                                             <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
                                             <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
@@ -161,12 +178,16 @@
                                 </dl>
                             </div>
                         </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="bg-white">
+                <div class="container py-7">
+                    <div class="section-title">
+                        <h2>Professional Skills</h2>                        
                     </div>
-                    <div class="section-title mt-7">
-                        <h2>Professional Skills</h2>
-                        <p class="lead">Netus parturient sapien non nisl. Lectus sint <em>reprehenderit</em> natoque eiusmod mi. Porta volutpat sit tortor do cursus. Turpis morbi nullam occaecat <em>exercitation</em> pariatur. Cupidatat pulvinar dapibus sem tempus curae. Praesent condimentum vehicula cubilia irure.</p>
-                    </div>
-                    <div class="row">
+                    <p class="lead">Netus parturient sapien non nisl. Lectus sint <em>reprehenderit</em> natoque eiusmod mi. Porta volutpat sit tortor do cursus. Turpis morbi nullam occaecat <em>exercitation</em> pariatur. Cupidatat pulvinar dapibus sem tempus curae. Praesent condimentum vehicula cubilia irure.</p>
+                    <div class="row mt-6">
                         <div class="col-sm-6">
                             <p class="mb-2">Graphics Design</p>
                             <div class="progress mb-4">                               
@@ -204,11 +225,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-title mt-7">
-                        <h2>Experiences & Jobs</h2>
-                        <p class="lead">Tellus officia pede ipsum <em>himenaeos</em> fermentum. Tempor occaecat inceptos integer dis donec. Condimentum nostra pulvinar etiam nulla ea. Fusce consectetur porta laborum sem penatibus. Consectetuer sunt labore <em>sollicitudin</em> semper. Euismod vel esse metus mollis.</p>
+                </div>
+            </div>
+            <div class="bg-primary">
+                <div class="container py-7">
+                    <div class="section-title no-line text-center text-white">
+                        <h2>Experiences & Jobs</h2>                        
                     </div>
-                    <div class="row">
+                    <p class="lead text-white">Tellus officia pede ipsum <em>himenaeos</em> fermentum. Tempor occaecat inceptos integer dis donec. Condimentum nostra pulvinar etiam nulla ea. Fusce consectetur porta laborum sem penatibus. Consectetuer sunt labore <em>sollicitudin</em> semper. Euismod vel esse metus mollis.</p>
+                    <div class="row mt-6">
                         <div class="col-sm-6">
                             <div id="accordion1" class="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.0s">
@@ -221,8 +246,8 @@
                                         </h5>
                                     </div>
                                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="card-block">
-                                            <p>Dolore ac maecenas feugiat dis consectetur. Pellentesque pede do anim rhoncus ligula. Diam conubia minim cursus maecenas sed. Tincidunt congue laborum sunt rhoncus. Per praesent elit nisl purus laoreet. Mollis inceptos sem tempor aenean. Etiam officia sem quam esse. Integer per fusce tellus sint. Donec eleifend hendrerit porta sed. Faucibus dolore cum curabitur luctus cursus. Feugiat quis exercitation volutpat risus.</p>
+                                        <div class="card-body p-4">
+                                            <p>Dolore ac maecenas feugiat dis consectetur. Pellentesque pede do anim rhoncus ligula. Diam conubia minim cursus maecenas sed. Tincidunt congue laborum sunt rhoncus. Per praesent elit nisl purus laoreet. Mollis inceptos sem tempor aenean. Etiam officia sem quam esse. Integer per fusce tellus sint Donec eleifend hendrerit porta sed. Faucibus dolore cum curabitur luctus cursus.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +261,7 @@
                                         </h5>
                                     </div>
                                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <p>Inceptos facilisis tempor venenatis faucibus. Auctor qui lectus integer massa. Curabitur arcu in tellus odio. Cursus id vel aliqua pariatur fermentum. Leo ornare natoque cursus taciti. Cursus diam bibendum ridiculus ut. Libero ultrices morbi urna consequat. Donec natoque incididunt adipisicing urna tortor. Ridiculus praesent porttitor dolore nulla.</p>
                                         </div>
                                     </div>
@@ -251,7 +276,7 @@
                                         </h5>
                                     </div>
                                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <p>Sunt laoreet enim egestas proident. Libero dis consequat pretium cubilia inceptos. Arcu magna culpa ex montes. Curae nullam volutpat mi iaculis tempor. Tempus curae ligula aenean mollit phasellus. Ridiculus cum nostrud tristique habitant vitae.
                                             Aenean consectetur ridiculus placerat quis. Sociosqu vitae adipiscing gravida purus commodo. Inceptos eu officia porttitor eiusmod quisque. Massa ullamco cursus mauris imperdiet porta.</p>
                                         </div>
@@ -267,7 +292,7 @@
                                         </h5>
                                     </div>
                                     <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <p>Montes dolore consequat luctus gravida. Lobortis conubia dictum incididunt rhoncus accumsan consectetur. Ac primis nunclorem molestie fusce lacinia aliquip sagittis do irure nisi parturient. Odio reprehenderit deserunt cursus aliquam. Congue in labore ea consequat malesuada tempus. Justo donec non ridiculus conubia et.</p>
                                         </div>
                                     </div>
@@ -286,9 +311,9 @@
                                         </h5>
                                     </div>
                                     <div id="accordion2_collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <span>Graphics Designer (05/05/2010 - 30/05/2011)</span>
-                                            <p>Iaculis sagittis voluptate gravida laborum eget curae himenaeos fringilla molestie hendrerit. Sit dui minim quis congue tristique facilisis nisi ultricies arcu. Metus malesuada et senectus leo voluptate tempor quam in erat. Per elit aptent erat habitant laborum phasellus ullamcorper sit. Cillum nostrud mauris incididunt labore esse venenatis sociosqu dolor.</p>
+                                            <p>Iaculis sagittis voluptate gravida laborum eget curae himenaeos fringilla molestie hendrerit. Sit dui minim quis congue tristique facilisis nisi ultricies arcu. Metus malesuada et senectus leo voluptate tempor quam in erat. Per elit aptent erat habitant laborum phasellus ullamcorper sit.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +327,7 @@
                                         </h5>
                                     </div>
                                     <div id="accordion2_collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <span>Graphics Designer (05/05/2012 - 30/05/2013)</span>
                                             <p>Fringilla tempus quis veniam esse. Ultrices convallis proident justo amet. Veniam ullamcorper condimentum ut nunc nibh. Orci leo eros elementum volutpat veniam. Nisl dapibus pharetra libero ullamcorper irure. Nunclorem anim vel quis in. Porttitor cillum habitant neque mi laoreet.</p>
                                         </div>
@@ -318,7 +343,7 @@
                                         </h5>
                                     </div>
                                     <div id="accordion2_collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <span>Graphics Designer (05/05/2014 - 30/05/2015)</span>
                                             <p>Sunt laoreet enim egestas proident. Libero dis consequat pretium cubilia inceptos. Arcu magna culpa ex montes. Curae nullam volutpat mi iaculis tempor. Tempus curae ligula aenean mollit phasellus. Ridiculus cum nostrud tristique habitant vitae.
                                             Aenean consectetur ridiculus placerat quis. Sociosqu vitae adipiscing gravida purus commodo. Inceptos eu officia porttitor eiusmod quisque. Massa ullamco cursus mauris imperdiet porta.</p>
@@ -335,7 +360,7 @@
                                         </h5>
                                     </div>
                                     <div id="accordion2_collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-                                        <div class="card-block">
+                                        <div class="card-body p-4">
                                             <span>Graphics Designer (05/05/2016 - 30/05/2017)</span>
                                             <p>Montes dolore consequat luctus gravida. Lobortis conubia dictum incididunt rhoncus accumsan consectetur. Ac primis nunclorem molestie fusce lacinia aliquip sagittis do irure nisi parturient. Odio reprehenderit deserunt cursus aliquam. Congue in labore ea consequat malesuada tempus. Justo donec non ridiculus conubia et.</p>
                                         </div>
@@ -343,12 +368,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="section-title mt-7">
-                        <h2>My Portfolio</h2>
-                        <p class="lead">Sollicitudin mollis congue venenatis lorem iaculis eleifend per cras sagittis eu sit. Sed ex nisl ea odio lobortis quis ornare lectus aliquet ullamco. Duis penatibus proident vitae non incididunt diam ad eleifend.</p>
                     </div>                    
-                    <div class="portfolio isotope caption wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                </div>
+            </div>
+            <div class="bg-white">
+                <div class="container py-7">
+                    <div class="section-title">
+                        <h2>My Portfolio</h2>                        
+                    </div>
+                    <p class="lead">Sollicitudin mollis congue venenatis lorem iaculis eleifend per cras sagittis eu sit. Sed ex nisl ea odio lobortis quis ornare lectus aliquet ullamco. Duis penatibus proident vitae non incididunt diam ad eleifend.</p> 
+                    <div class="portfolio mt-6 isotope caption wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                         <div class="button-group filters-button-group mb-4">
                             <ul class="list-inline text-center">
                                 <li class="list-inline-item"><a class="button is-checked" data-filter="*">All</a></li>
@@ -360,7 +389,7 @@
                             </ul>
                         </div>
                         <div class="grid">
-                            <div class="grid-item mb-4 col-sm-4 transition coporate">
+                            <div class="grid-item mb-4 col-md-4 transition coporate">
                                 <figure class="figure mb-0">
                                     <a class="d-block" href="portfolio-post.html">
                                         <div class="overlay">
@@ -373,9 +402,9 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item mb-4 col-sm-4 coporate">
+                            <div class="grid-item mb-4 col-md-4 coporate">
                                 <figure class="figure mb-0">
-                                   <a class="d-block" href="portfolio-post.html">
+                                    <a class="d-block" href="portfolio-post.html">
                                         <div class="overlay">
                                             <div class="overlay-text"><span>View Project</span></div>
                                         </div>
@@ -386,7 +415,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item mb-4 col-sm-4 package">
+                            <div class="grid-item mb-4 col-md-4 package">
                                 <figure class="figure mb-0">
                                     <a class="d-block" href="portfolio-post.html">
                                         <div class="overlay">
@@ -399,7 +428,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item mb-4 col-sm-4 food">
+                            <div class="grid-item mb-4 col-md-4 food">
                                 <figure class="figure mb-0">
                                     <a class="d-block" href="portfolio-post.html">
                                         <div class="overlay">
@@ -412,7 +441,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item mb-4 col-sm-4 transition books">
+                            <div class="grid-item mb-4 col-md-4 transition books">
                                 <figure class="figure mb-0">
                                     <a class="d-block" href="portfolio-post.html">
                                         <div class="overlay">
@@ -425,7 +454,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item mb-4 col-sm-4 video">
+                            <div class="grid-item mb-4 col-md-4 video">
                                 <figure class="figure mb-0">
                                     <a class="d-block" href="portfolio-post.html">
                                         <div class="overlay">
@@ -443,77 +472,67 @@
                 </div>
             </div>
         </div>        
-        <footer class="footer bg-inverse">
-            <div class="container inner">
+        <footer class="footer bg-dark">
+            <div class="container pt-7 pb-6">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <div class="widget"><img src="#" class="mb-2" srcset="assets/img/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="">
-                            <p>is a responsive site template with a clean and professional design. A great solution for your business, portfolio, blog or any other purpose site.</p>
-                            <p>© 2016 Morello. All rights reserved. Theme by <a href="http://elemisfreebies.com">elemis</a>.</p>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/">
+                            <img src="assets/img/logo-footer.png" class="mb-4" alt="">
+                        </a>
+                        <p class="text-white">is a responsive site template with a clean and professional design. A great solution for your business, portfolio, blog or any other purpose site.</p>
+                        <ul class="list-inline master-social mb-3">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <h4 class="text-uppercase text-white mb-3 mt-3 mt-sm-0">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Condition</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <h4 class="text-uppercase text-white mb-3 mt-3 mt-sm-0 ">Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Customer</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Collection</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-white">
+                        <h4 class="text-uppercase mb-3 mt-3 mt-sm-0">Our Address</h4>
+                        <ul class="list-unstyled">
+                            <li>Address: 639 Riverside Drive, New York, NY 10027, United States</li>
+                            <li>Phone: +1 714 2222 6666</li>
+                            <li>Email: support@your-domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-darken py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="text-white mb-0">© 2017 Soprano by PuzzleThemes. All right reserved.</p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">Popular Posts</h4>
-                        <ul class="post-list">
-                            <li>
-                                <div class="meta"><span class="date">3th Oct 2012</span> </div>
-                                <p> <a href="blog-post.html">Etiam porta sem malesuada magna mollis euismod ullamcorper nulla</a> </p>
-                            </li>
-                            <li>
-                                <div class="meta"><span class="date">28th Sep 2012</span> </div>
-                                <p> <a href="blog-post.html">Ornare nullam risus non metus auctor fringilla fermentum justo</a> </p>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">Get in Touch</h4>
-                        <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam.</p>
-                        <address>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="fa fa-phone fa-fw"></i>
-                                    <p>019223 8092344</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope fa-fw"></i>
-                                    <p>info@appstraptheme.com</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-home fa-fw"></i>
-                                    <p>Sunshine House, Sunville. SUN12 8LU.</p>
-                                </li>
-                            </ul>
-                        </address>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">About Us</h4>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Contact Us</a> </li>
-                            <li> <a href="#">Terms of Use</a> </li>
-                            <li> <a href="#">Privacy Policy</a> </li>
-                        </ul>
-                    </div>
-                    <div class="widget">
-                        <h4 class="widget-title">Elsewhere</h4>
-                        <ul class="social">
-                            <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-vimeo"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-whatsapp"></i></a> </li>
-                        </ul>
-                    </div>
-                  </div>
                 </div>
             </div>
         </footer>
         <script src="assets/plugins/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/scripts.js"></script>
     </body>

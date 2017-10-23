@@ -4,16 +4,12 @@
    ========================================================================== */
 /* 2. Fonts
    ========================================================================== */
-/* 12 Background Color
-  ========================================================================== */
 /* 7. Box
    ========================================================================== */
 /* 3. Navigation Bar
    ========================================================================== */
 /* 4. Page Header
    ========================================================================== */
-/* 10 Link
-  ========================================================================== */
 /* 4. Buttons
    ========================================================================== */
 /* 4. Cards
@@ -42,7 +38,7 @@ body, li, address {
   line-height: 28px; }
 
 blockquote {
-  border-left: 3px solid #0468BF !important;
+  border-left: 3px solid #db5048 !important;
   position: relative;
   margin: 30px 0;
   padding: 15px 30px;
@@ -253,7 +249,7 @@ address p {
 
 .page-header {
   padding: 30px 0 0 0;
-  background-color: #021F59;
+  background-color: #db5048;
   color: #fff; }
   .page-header a {
     color: #fff !important; }
@@ -655,22 +651,22 @@ input[type="submit"] {
         padding: 15px;
         color: #333333; }
         .nav-vertical ul li a:hover {
-          color: #0468BF; }
+          color: #db5048; }
         .nav-vertical ul li a i {
           margin-right: 10px;
           font-size: 18px;
           margin-top: 3px;
           width: 20px; }
           .nav-vertical ul li a i:first-child {
-            color: #0468BF; }
+            color: #db5048; }
         .nav-vertical ul li a i[class*='fa-caret'] {
           float: right; }
         .nav-vertical ul li a.active {
-          color: #0468BF; }
+          color: #db5048; }
           .nav-vertical ul li a.active + ul {
             display: block; }
         .nav-vertical ul li a:hover {
-          color: #0468BF; }
+          color: #db5048; }
   .nav-vertical .dropdown-toggle {
     display: -webkit-box;
     display: -webkit-flex;
@@ -689,11 +685,12 @@ input[type="submit"] {
   .nav.nav-tabs .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: none; }
+    border: none;
+    color: #333333; }
     .nav.nav-tabs .nav-link.active {
       background-color: transparent;
       border-color: transparent transparent transparent;
-      color: #007bff; }
+      color: #db5048; }
       .nav.nav-tabs .nav-link.active:after {
         height: 2px;
         width: 100%;
@@ -702,7 +699,7 @@ input[type="submit"] {
         bottom: 0;
         left: 0;
         position: absolute;
-        background: #0468BF; }
+        background: #db5048; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > OWLCAROUSEL
@@ -840,7 +837,7 @@ input[type="submit"] {
     .social li a {
       color: #333333; }
       .social li a:hover {
-        color: #0468BF; }
+        color: #db5048; }
       .social li a i {
         background: none;
         box-shadow: none;
@@ -858,11 +855,11 @@ input[type="submit"] {
   line-height: 1; }
   .share li {
     display: inline-block;
-    margin: 0 20px 0 0; }
+    margin: 0 30px 0 0; }
     .share li a {
       color: #333333; }
       .share li a:hover {
-        color: #0468BF; }
+        color: #db5048; }
       .share li a i {
         background: none;
         box-shadow: none;
@@ -1266,11 +1263,6 @@ a .overlay {
 .team .card-img-overlay {
   z-index: 1;
   top: auto; }
-
-.team .team-number {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 54px; }
 
 /*-----------------------------------------------------------------------------------*/
 /* 	PAGE > PORTFOLIO

@@ -21,10 +21,42 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-toggleable-md fixed-top">
+            <div class="header-top">
                 <div class="container">
-                    <a class="navbar-brand py-3 py-md-4" href="#">
-                        <img srcset="assets/img/logo.png 1x, assets/img/logo-light@2x.png 2x"  alt="">
+                    <div class="row">
+                        <div class="col-9 d-none d-sm-block">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="fa fa-clock-o"></i>Mon - Sat: 8:00 - 17:00
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="tel:171422226666"><i class="fa fa-phone"></i>+1 714 2222 6666</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="mailto:Info@construction.com"><i class="fa fa-envelope-o"></i>Info@construction.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3">
+                            <ul class="list-inline master-social float-right">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand py-3 py-sm-4" href="/">
+                        <img src="assets/img/logo.png"  alt="">
                     </a>                                      
                     <div class="collapse navbar-collapse" id="navbar_collapse">
                         <ul class="navbar-nav ml-auto">
@@ -42,17 +74,17 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="fixtures.html">Fixtures</a>
+                                <a class="nav-link" href="fixtures.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="table.html">League Tables</a>
+                                <a class="nav-link" href="table.html">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="team.html">Teams</a>
+                                <a class="nav-link" href="team.html">Gallery</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    News
+                                    Blog
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -62,20 +94,10 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                    Shortcodes
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Shop
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="shop-grid.html">Product Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -84,8 +106,10 @@
                     </div>
                     <div class="navbar-action">
                         <ul>
-                            <li class="nav-item nav-item-search">
-                                <a class="navbar-search" href="#">Search<span></span></a>
+                            <li class="nav-item nav-item-search d-flex">
+                                <a class="btn-search d-flex align-items-center" href="#">
+                                    <i class="fa fa-search fa-lg"></i>
+                                </a>
                             </li>
                             <li class="nav-item nav-item-menu">
                                 <a class="navbar-toggler" href="#" data-toggle="collapse" data-target="#navbar_collapse" aria-controls="navbar_collapse" aria-expanded="false" aria-label="Toggle navigation">Menu<span></span></a>
@@ -93,38 +117,31 @@
                         </ul>
                     </div>                     
                 </div>
-                <form id="search_form">
-                    <div class="input-group search-field">
-                        <input id="search" type="text" class="form-control" name="search" placeholder="search..">
-                        <span class="input-group-addon"><button class="navbar-search">Search<span></span></button></span>
-                    </div>
-                </form>
-            </nav>
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h1 class="text-uppercase">Online Shop</h1>
-                            <p class="lead mb-0">Semper esse incididunt vestibulum natoque</p>
+                <div class="search-popup" style="display: none;">
+                    <div class="search-popup-block d-flex align-items-center justify-content-center">
+                        <div class="btn-close"> CLOSE
+                            <i class="fa fa-close"></i>
                         </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right mb-0 p-0">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                                <li class="breadcrumb-item active">Online Shop</li>
-                            </ol>
-                        </div>
+                        <form>
+                            <h2 class="text-center">Search Our Website</h2>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary btn-lg text-uppercase" type="button">Search</button>
+                                </span>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <div id="content">
-            <div class="bg-1">
-                <div class="container py-5 py-sm-7">
+            <div class="bg-white">
+                <div class="container py-7">
                     <div class="row">
-                        <div class="col-sm-9 push-sm-3">
+                        <div class="col-md-9 push-md-3">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <span class="shop-item-sale">sale</span>
@@ -133,7 +150,7 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
@@ -149,7 +166,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/2.jpg" alt="">
@@ -157,7 +174,7 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
@@ -173,7 +190,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/3.jpg" alt="">
@@ -181,7 +198,7 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
@@ -197,7 +214,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/4.jpg" alt="">
@@ -205,23 +222,23 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
                                                 <ins class="text-decoration-none">$35.00</ins>
                                             </span>
-                                            <div class="float-right">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="float-right text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>                                     
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/5.jpg" alt="">
@@ -229,23 +246,23 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
                                                 <ins class="text-decoration-none">$35.00</ins>
                                             </span>
-                                            <div class="float-right">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="float-right text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>                                     
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/6.jpg" alt="">
@@ -253,23 +270,23 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
                                                 <ins class="text-decoration-none">$35.00</ins>
                                             </span>
-                                            <div class="float-right">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="float-right text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>                                     
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/7.jpg" alt="">
@@ -277,23 +294,23 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
                                                 <ins class="text-decoration-none">$35.00</ins>
                                             </span>
-                                            <div class="float-right">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="float-right text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>                                     
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/8.jpg" alt="">
@@ -301,23 +318,23 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
                                                 <ins class="text-decoration-none">$35.00</ins>
                                             </span>
-                                            <div class="float-right">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="float-right text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>                                     
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-md-4">
                                     <div class="card mb-4">
                                         <a href="product-detail.html">
                                             <img class="card-img-top img-fluid" src="assets/img/shop/9.jpg" alt="">
@@ -325,25 +342,25 @@
                                                 <div class="overlay-text"><span>Product Detail</span></div>
                                             </div>
                                         </a>
-                                        <div class="card-block">
+                                        <div class="card-body px-0">
                                             <h4 class="card-title"><a href="product-detail.html">Same Black Shoe</a></h4>
                                              <span class="font-weight-bold">
                                                 <del class="op-5">$85.00</del>
                                                 <ins class="text-decoration-none">$35.00</ins>
                                             </span>
-                                            <div class="float-right">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="float-right text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>                                     
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <nav>
-                                <ul class="pagination">
+                                <ul class="pagination justify-content-center">
                                     <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Previous">
                                             <span aria-hidden="true">&laquo;</span>
@@ -408,12 +425,12 @@
                                                 <del class="op-5">$95.00</del>
                                                 <ins class="text-decoration-none">$65.00</ins>
                                             </span>
-                                            <div class="d-block">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="d-block text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -427,12 +444,12 @@
                                                 <del class="op-5">$95.00</del>
                                                 <ins class="text-decoration-none">$65.00</ins>
                                             </span>
-                                            <div class="d-block">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="d-block text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -446,12 +463,12 @@
                                                 <del class="op-5">$95.00</del>
                                                 <ins class="text-decoration-none">$65.00</ins>
                                             </span>
-                                            <div class="d-block">
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star text-primary"></i>
-                                                <i class="fa fa-star-half-o text-primary"></i>
+                                            <div class="d-block text-primary">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -476,77 +493,67 @@
                 </div>
             </div>
         </div>        
-        <footer class="footer bg-inverse">
-            <div class="container inner">
+        <footer class="footer bg-dark">
+            <div class="container pt-7 pb-6">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <div class="widget"><img src="#" class="mb-2" srcset="assets/img/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="">
-                            <p>is a responsive site template with a clean and professional design. A great solution for your business, portfolio, blog or any other purpose site.</p>
-                            <p>© 2016 Morello. All rights reserved. Theme by <a href="http://elemisfreebies.com">elemis</a>.</p>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/">
+                            <img src="assets/img/logo-footer.png" class="mb-4" alt="">
+                        </a>
+                        <p class="text-white">is a responsive site template with a clean and professional design. A great solution for your business, portfolio, blog or any other purpose site.</p>
+                        <ul class="list-inline master-social mb-3">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <h4 class="text-uppercase text-white mb-3 mt-3 mt-sm-0">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Condition</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <h4 class="text-uppercase text-white mb-3 mt-3 mt-sm-0 ">Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Customer</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Collection</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-white">
+                        <h4 class="text-uppercase mb-3 mt-3 mt-sm-0">Our Address</h4>
+                        <ul class="list-unstyled">
+                            <li>Address: 639 Riverside Drive, New York, NY 10027, United States</li>
+                            <li>Phone: +1 714 2222 6666</li>
+                            <li>Email: support@your-domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-darken py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="text-white mb-0">© 2017 Soprano by PuzzleThemes. All right reserved.</p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">Popular Posts</h4>
-                        <ul class="post-list">
-                            <li>
-                                <div class="meta"><span class="date">3th Oct 2012</span> </div>
-                                <p> <a href="blog-post.html">Etiam porta sem malesuada magna mollis euismod ullamcorper nulla</a> </p>
-                            </li>
-                            <li>
-                                <div class="meta"><span class="date">28th Sep 2012</span> </div>
-                                <p> <a href="blog-post.html">Ornare nullam risus non metus auctor fringilla fermentum justo</a> </p>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">Get in Touch</h4>
-                        <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam.</p>
-                        <address>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="fa fa-phone fa-fw"></i>
-                                    <p>019223 8092344</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope fa-fw"></i>
-                                    <p>info@appstraptheme.com</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-home fa-fw"></i>
-                                    <p>Sunshine House, Sunville. SUN12 8LU.</p>
-                                </li>
-                            </ul>
-                        </address>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="widget">
-                        <h4 class="widget-title">About Us</h4>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Contact Us</a> </li>
-                            <li> <a href="#">Terms of Use</a> </li>
-                            <li> <a href="#">Privacy Policy</a> </li>
-                        </ul>
-                    </div>
-                    <div class="widget">
-                        <h4 class="widget-title">Elsewhere</h4>
-                        <ul class="social">
-                            <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-vimeo"></i></a> </li>
-                            <li> <a href="#"><i class="fa fa-whatsapp"></i></a> </li>
-                        </ul>
-                    </div>
-                  </div>
                 </div>
             </div>
         </footer>
         <script src="assets/plugins/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/scripts.js"></script>
     </body>

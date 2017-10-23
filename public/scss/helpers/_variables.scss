@@ -7,12 +7,6 @@ $white: #fff !default;
 $black: #000 !default;
 $gray: #464a4c !default;
 
-
-$brand-primary: #021F59 !default;
-$brand-primary-lighter: #3498DB !default;
-$brand-primary-darker: #021F59 !default;
-$brand-secondary: #0468BF !default;
-
 $font-color: #333333 !default;
 $line-color: $black !default;
 
@@ -24,12 +18,6 @@ $border-width: 2px !default;
    ========================================================================== */
 $font-roboto-path: "/fonts/roboto/" !default;
 
-/* 12 Background Color
-  ========================================================================== */
-$bg-1: $brand-primary !default;
-$bg-1-text-color: $font-color !default;
-$bg-2: $brand-primary !default;
-$bg-2-text-color: $white !default;
 
 /* 7. Box
    ========================================================================== */
@@ -45,18 +33,13 @@ $navbar-line-color: rgba($line-color, 0.4) !default;
 $navbar-font-weight: 500 !default;
 /* 4. Page Header
    ========================================================================== */
-$page-header-bg-color: $brand-primary !default;
+$page-header-bg-color: $primary-color !default;
 $page-header-font-color: $white !default;
 $page-header-padding: 30px 0 0 0 !default;
 
-/* 10 Link
-  ========================================================================== */
-// $link-color: $primary-color !default;
-// $link-active-color: $primary-color !default;
-
 /* 4. Buttons
    ========================================================================== */
-$btn-color: $brand-secondary !default;
+$btn-color: $primary-color !default;
 $btn-font-color: #fff !default;
 
 /* 4. Cards
