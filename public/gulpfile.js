@@ -7,6 +7,8 @@ var browserSync = require('browser-sync');
 var plumber = require('gulp-plumber');
 var path = require('path');
 var notify = require('gulp-notify');
+var headerfooter = require('gulp-headerfooter');
+
 // var cssbeautify = require('gulp-cssbeautify');
 // var bulkSass = require('gulp-sass-bulk-import');
 // var compass = require('gulp-compass');
@@ -59,11 +61,24 @@ gulp.task('sass', function() {
         // .pipe(livereload());
 });    
 
+gulp.task('master', function () {
+    gulp.src('content/*.html')
+        .pipe(headerfooter.header('master/header.html'))
+        .pipe(headerfooter.footer('master/footer.html'))
+        .pipe(gulp.dest('./'))
+});
+
+
 // Default
-gulp.task('default', ['sass','browser-sync'], function() {  
-    // livereload.listen();    
+gulp.task('default', ['master', 'sass', 'browser-sync'], function() {  
+      
+    
     gulp.watch('scss/**/*.scss', ['sass']);
-    gulp.watch(['**/*.html'], browserSync.reload);
+    gulp.watch('master/**/*.html',['master']);
+    gulp.watch('content/**/*.html',['master']);
+
+    gulp.watch(['./*.html'], browserSync.reload);
     gulp.watch(['assets/js/**/*.js'], browserSync.reload);
     gulp.watch(['assets/css/**/*.css'], browserSync.reload); 
+    
 });
