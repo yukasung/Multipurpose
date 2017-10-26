@@ -121,6 +121,23 @@ $(document).ready(function() {
         }
     });
 
+    $( '.owl-col-3' ).owlCarousel({
+        autoplay: false,
+        autoplayTimeout: 8000,
+        loop: false,
+        margin: 30,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+
     $( '.owl-col-4' ).owlCarousel({
         autoplay: false,
         autoplayTimeout: 8000,
@@ -385,6 +402,8 @@ $(document).ready(function() {
         videoMaxWidth: '1000px'
     });
 
+    $('#video-gallery').lightGallery(); 
+    
     /*-----------------------------------------------------------------------------------*/
     /*  COUNTER
     /*-----------------------------------------------------------------------------------*/

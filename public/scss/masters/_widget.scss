@@ -23,15 +23,15 @@
 		}
 	}
 
-	.product-list{
-        .media{
-            &:first-child{
-                padding-top: 0;
-            }
-            padding: 15px 0;
-            border-bottom: 1px dotted rgba($line-color, 0.4);
-        }
-    }
+	// .product-list{
+    //     .media{
+    //         &:first-child{
+    //             padding-top: 0;
+    //         }
+    //         padding: 15px 0;
+    //         border-bottom: 1px dotted rgba($line-color, 0.4);
+    //     }
+    // }
 
 }
 

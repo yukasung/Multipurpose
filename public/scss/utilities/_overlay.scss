@@ -1,9 +1,11 @@
 /*-----------------------------------------------------------------------------------*/
+
+
 /*	UTILITIES > OVERLAY
 /*-----------------------------------------------------------------------------------*/
 
-a{
-    &:hover{
+a {
+    &:hover {
         .overlay {
             opacity: 1;
         }
@@ -28,7 +30,8 @@ a{
             position: absolute;
             z-index: 11;
             display: table;
-            span {
+            span,
+            .fa {
                 color: #fff;
                 margin-bottom: 10px;
                 font-weight: 500;

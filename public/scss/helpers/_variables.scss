@@ -8,7 +8,7 @@ $black: #000 !default;
 $gray: #464a4c !default;
 
 $font-color: #333333 !default;
-$line-color: $black !default;
+
 
 /* 2. Border
    ========================================================================== */
@@ -29,7 +29,6 @@ $box-border-radius: 2px;
 $navbar-bg-color: #fff !default;
 $navbar-font-size: 14px !default;
 $navbar-font-color: $font-color;
-$navbar-line-color: rgba($line-color, 0.4) !default;
 $navbar-font-weight: 500 !default;
 /* 4. Page Header
    ========================================================================== */
@@ -47,8 +46,6 @@ $btn-font-color: #fff !default;
 $card-bg-color: #fff !default;
 $card-border-radius: 0 !default;
 $card-title-link-color: $font-color !default;
-$card-border: 1px solid rgba($line-color, 0.1) !default;
-$card-border-bottom: 1px solid rgba($line-color, 0.8) !default;
 
 /* 4. Meta
    ========================================================================== */
@@ -72,7 +69,7 @@ $overlay-bg-color: rgba($primary-color, 0.8) !default;
 
 /* 4. Section Title
    ========================================================================== */
-$section-title-line: 2px solid rgba($line-color, 0.09) !default;
+$section-title-line: 2px solid rgba(#000000, 0.09) !default;
 
 /* 4. Forms
    ========================================================================== */

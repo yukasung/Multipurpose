@@ -56,7 +56,7 @@
     }
     .nav-item{
         display: inline-block;
-        text-align: center;
+        text-align: center;        
         @include media-breakpoint-down(md) {
             text-align: left;
         }
@@ -65,12 +65,13 @@
             white-space: nowrap;
             text-transform: uppercase;
             padding: 0 25px;
+            outline: none;
             @include media-breakpoint-down(md) {
                 line-height: 20px !important;
                 padding: 10px 15px;
             }
             @include media-breakpoint-down(md){
-                border-top: 1px solid $navbar-line-color;
+                border-top: 1px solid #000000;
             }
             &:hover{
                 color: $primary-color;

@@ -1,19 +1,25 @@
 /*-----------------------------------------------------------------------------------*/
+
+
 /*  UTILITIES > COLORS
 /*-----------------------------------------------------------------------------------*/
 
-.text-primary{
-    color: $primary-color !important; 
+.text-primary {
+    color: $primary-color !important;
 }
 
-.bg-primary{
-    background-color: $primary-color !important; 
+.bg-primary {
+    background-color: $primary-color !important;
 }
 
-.bg-shadow{
+.bg-shadow {
     box-shadow: $box-shadow;
 }
 
-.bg-darken{
-    background-color: #222324 !important;
+.bg-dark {
+    background-color: #282a2c !important;
+}
+
+.bg-darken {
+    background-color: #232526 !important;
 }
