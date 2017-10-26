@@ -991,22 +991,6 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > BREADCRUMB
 /*-----------------------------------------------------------------------------------*/
-.breadcrumb {
-  background-color: transparent;
-  margin-top: 10px; }
-  .breadcrumb li {
-    margin-right: 15px; }
-    .breadcrumb li:before {
-      margin-right: 15px; }
-  .breadcrumb a {
-    color: #333333; }
-    .breadcrumb a:hover {
-      color: #db5048; }
-  .breadcrumb .breadcrumb-item::before {
-    color: #fff; }
-  .breadcrumb .breadcrumb-item.active {
-    color: #fff; }
-
 .icon-sm {
   font-size: 55px; }
 
@@ -1210,6 +1194,12 @@ hr.line-dotted {
 
 .bg-darken {
   background-color: #232526 !important; }
+
+.bg-grey {
+  background-color: #f3f5f6 !important; }
+
+.bg-transparent {
+  background-color: transparent !important; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > OPACITY
