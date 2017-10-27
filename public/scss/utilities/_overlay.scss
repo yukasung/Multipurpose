@@ -19,7 +19,7 @@ a {
         z-index: 10;
         transition: all 200ms ease-in;
         background: #FFF;
-        background: $overlay-bg-color;
+        background: rgba($primary-color, 0.8);
         top: 0;
         .overlay-text {
             text-align: center;

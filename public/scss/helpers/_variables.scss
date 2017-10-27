@@ -2,78 +2,15 @@
    ========================================================================== */
 
 $primary-color: #db5048 !default;
-
-$white: #fff !default;
-$black: #000 !default;
-$gray: #464a4c !default;
-
 $font-color: #333333 !default;
-
-
-/* 2. Border
-   ========================================================================== */
-$border-width: 2px !default;
 
 /* 2. Fonts
    ========================================================================== */
+
 $font-roboto-path: "/fonts/roboto/" !default;
 
+/* 7. Box Shadow
+   ========================================================================== */
 
-/* 7. Box
-   ========================================================================== */
-$box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !default;
-$box-border-radius: 2px;
-
-/* 3. Navigation Bar
-   ========================================================================== */
-$navbar-bg-color: #fff !default;
-$navbar-font-size: 14px !default;
-$navbar-font-color: $font-color;
-$navbar-font-weight: 500 !default;
-/* 4. Page Header
-   ========================================================================== */
-$page-header-bg-color: $primary-color !default;
-$page-header-font-color: $white !default;
-$page-header-padding: 30px 0 0 0 !default;
-
-/* 4. Buttons
-   ========================================================================== */
-$btn-color: $primary-color !default;
-$btn-font-color: #fff !default;
-
-/* 4. Cards
-   ========================================================================== */
-$card-bg-color: #fff !default;
-$card-border-radius: 0 !default;
-$card-title-link-color: $font-color !default;
-
-/* 4. Meta
-   ========================================================================== */
-$meta-font-color: #707070 !default;
-$meta-font-size: 13px !default;
-$meta-font-weight: normal !default;
-
-/* 4. More
-   ========================================================================== */
-$more-font-size: 12px !default;
-$more-font-color: $primary-color !default;
-
-/* 4. Footer
-   ========================================================================== */
-$footer-bg-color: #303030 !default;
-$footer-border-top: none !default;
-
-/* 4. Overlay
-   ========================================================================== */
-$overlay-bg-color: rgba($primary-color, 0.8) !default;
-
-/* 4. Section Title
-   ========================================================================== */
-$section-title-line: 2px solid rgba(#000000, 0.09) !default;
-
-/* 4. Forms
-   ========================================================================== */
-$input-bg: $white !default;
-$input-color: $gray !default;
-$input-border-color: rgba($white, .15) !default;
-$input-btn-border-width: $border-width !default;
+$box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;

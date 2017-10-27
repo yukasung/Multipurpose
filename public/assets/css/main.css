@@ -1,30 +1,8 @@
 /* 1. Colors
    ========================================================================== */
-/* 2. Border
-   ========================================================================== */
 /* 2. Fonts
    ========================================================================== */
-/* 7. Box
-   ========================================================================== */
-/* 3. Navigation Bar
-   ========================================================================== */
-/* 4. Page Header
-   ========================================================================== */
-/* 4. Buttons
-   ========================================================================== */
-/* 4. Cards
-   ========================================================================== */
-/* 4. Meta
-   ========================================================================== */
-/* 4. More
-   ========================================================================== */
-/* 4. Footer
-   ========================================================================== */
-/* 4. Overlay
-   ========================================================================== */
-/* 4. Section Title
-   ========================================================================== */
-/* 4. Forms
+/* 7. Box Shadow
    ========================================================================== */
 /*-----------------------------------------------------------------------------------*/
 /*  Base > Typography
@@ -217,11 +195,6 @@ dl {
   padding-top: 70px;
   padding-bottom: 70px; }
 
-.more {
-  font-size: 12px;
-  color: #db5048;
-  text-transform: uppercase; }
-
 .bg-inverse h1,
 .bg-inverse h2,
 .bg-inverse h3,
@@ -250,13 +223,6 @@ address p {
   display: inline-block;
   margin: 0 0 10px 10px; }
 
-.page-header {
-  padding: 30px 0 0 0;
-  background-color: #db5048;
-  color: #fff; }
-  .page-header a {
-    color: #fff !important; }
-
 .lead em {
   font-weight: bold; }
 
@@ -273,10 +239,10 @@ ul.list-md li {
   padding-bottom: 6px; }
 
 .meta {
-  margin-bottom: 12px;
   font-size: 13px;
   color: #707070;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 12px; }
   .meta span:before {
     content: "|";
     padding: 0 5px; }
@@ -466,7 +432,7 @@ input[type="submit"] {
 /*  COMPONENTS > NAVBAR
 /*-----------------------------------------------------------------------------------*/
 .navbar {
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
   padding-top: 0;
   padding-bottom: 0;
@@ -624,7 +590,9 @@ input[type="submit"] {
   overflow: hidden;
   white-space: nowrap;
   color: transparent !important; }
-  .navbar-toggler span, .navbar-toggler span::before, .navbar-toggler span::after {
+  .navbar-toggler span,
+  .navbar-toggler span::before,
+  .navbar-toggler span::after {
     position: absolute;
     display: inline-block;
     height: 3px;
@@ -637,7 +605,8 @@ input[type="submit"] {
     margin-top: -2px;
     -webkit-transition: background 0.3s 0.3s;
     transition: background 0.3s 0.3s; }
-  .navbar-toggler span::before, .navbar-toggler span::after {
+  .navbar-toggler span::before,
+  .navbar-toggler span::after {
     content: '';
     right: 0;
     -webkit-transform: translateZ(0);
@@ -825,8 +794,8 @@ input[type="submit"] {
 /*  COMPONENTS > CARD
 /*-----------------------------------------------------------------------------------*/
 .card {
-  background-color: #fff;
-  border-radius: 0;
+  background-color: #ffffff;
+  border-radius: 2px;
   border: none; }
   .card .card-title {
     font-size: 20px;
@@ -841,7 +810,7 @@ input[type="submit"] {
   .card .card-footer {
     background-color: transparent; }
   .card img {
-    border-radius: 0 0 0 0; }
+    border-radius: 2px 2px 0 0; }
   .card .card-img-left {
     border-bottom-left-radius: -webkit-calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
