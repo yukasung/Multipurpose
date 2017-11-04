@@ -343,14 +343,6 @@ input[type="submit"] {
     text-transform: uppercase;
     margin-bottom: 30px; }
 
-@media (min-width: 768px) {
-  .sidebar.sidebar-right {
-    padding-left: 30px; } }
-
-@media (min-width: 768px) {
-  .sidebar.sidebar-left {
-    padding-right: 30px; } }
-
 .blog-commnets h4 a {
   color: #333333; }
   .blog-commnets h4 a:hover {
@@ -823,6 +815,29 @@ input[type="submit"] {
     font-size: 12px;
     color: #db5048;
     text-transform: uppercase; }
+  .card .card-social {
+    float: right;
+    visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease; }
+    .card .card-social a:not(:last-child) {
+      margin-right: 25px; }
+    .card .card-social.active {
+      visibility: visible;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transition: -webkit-transform 0.35s ease;
+      transition: -webkit-transform 0.35s ease;
+      transition: transform 0.35s ease;
+      transition: transform 0.35s ease, -webkit-transform 0.35s ease; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > FORMS

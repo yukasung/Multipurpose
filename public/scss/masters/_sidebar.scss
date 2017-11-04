@@ -20,16 +20,16 @@
             margin-bottom: 30px;
         }
     }
-    &.sidebar-right {
-        @include media-breakpoint-up(md){
-            padding-left: 30px;
-        }
-    }
+    // &.sidebar-right {
+    //     @include media-breakpoint-up(md){
+    //         padding-left: 30px;
+    //     }
+    // }
 
-    &.sidebar-left{
-        @include media-breakpoint-up(md){
-            padding-right: 30px;
-        }
-    }
+    // &.sidebar-left{
+    //     @include media-breakpoint-up(md){
+    //         padding-right: 30px;
+    //     }
+    // }
 
 }

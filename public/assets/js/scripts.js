@@ -1,29 +1,28 @@
-
-function setNavbarPosition(){
+function setNavbarPosition() {
 
     var navbarHeight = $('.navbar').height();
     // $( 'body' ).css('padding-top', navbarHeight + 'px');
     $('.navbar .nav-item > .nav-link').css('line-height', navbarHeight + 'px');
-    $( '.navbar-action' ).css('top', (navbarHeight / 2) - 22 + 'px');
+    $('.navbar-action').css('top', (navbarHeight / 2) - 22 + 'px');
 
 }
 
-$(window).resize(function() {
+$(window).resize(function () {
     setNavbarPosition();
-}); 
+});
 
 /* ----------------------------------------------------------- */
 /*  Fixed header
 /* ----------------------------------------------------------- */
 
 navbar = $(".navbar"),
-currentScrollTop = 0,
-c = 0;
-$(window).on("scroll", function() {
+    currentScrollTop = 0,
+    c = 0;
+$(window).on("scroll", function () {
     if ($(this).scrollTop() >= 5) {
-        $( '.navbar' ).addClass('fixed-top');
+        $('.navbar').addClass('fixed-top');
     } else {
-        $( '.navbar' ).removeClass('fixed-top');
+        $('.navbar').removeClass('fixed-top');
     }
     var a = $(window).scrollTop(),
         b = navbar.height();
@@ -34,11 +33,11 @@ $(window).on("scroll", function() {
         navbar.removeClass("scroll-up")
     }
     c = currentScrollTop;
-    
+
 })
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     'use strict';
 
     setNavbarPosition();
@@ -47,16 +46,16 @@ $(document).ready(function() {
     /*  NAVBAR
     /*-----------------------------------------------------------------------------------*/
 
-    $( '.navbar-nav .dropdown' ).each(function() {
+    $('.navbar-nav .dropdown').each(function () {
         var navbarToggle = '.navbar-toggler';
         var dropdown = $(this),
-          dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
-          dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
-        
+            dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
+            dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
+
         // Mouseover
-        dropdown.hover(function(){
+        dropdown.hover(function () {
             var isMobileMenu = $(navbarToggle).size() > 0 && $(navbarToggle).css('display') !== 'none';
-            if ((dropdownHoverAll == true || (dropdownHoverAll == false && !isMobileMenu))) { 
+            if ((dropdownHoverAll == true || (dropdownHoverAll == false && !isMobileMenu))) {
                 dropdownToggle.trigger('click');
             }
         })
@@ -64,7 +63,7 @@ $(document).ready(function() {
     });
 
 
-    $('.navbar-toggler').click(function() {
+    $('.navbar-toggler').click(function () {
         $(this).toggleClass('navbar-toggler-active');
     });
 
@@ -72,12 +71,12 @@ $(document).ready(function() {
     /*  NAV VERTICAL
     /*-----------------------------------------------------------------------------------*/
 
-    $( '.nav-vertical .nav-item' ).click(function() {
+    $('.nav-vertical .nav-item').click(function () {
         $(this).toggleClass('show');
     });
 
-    $(".nav-vertical a").click(function(event){
-        if($(this).next('ul').length){
+    $(".nav-vertical a").click(function (event) {
+        if ($(this).next('ul').length) {
             event.preventDefault();
             $(this).next().toggle('fast');
             $(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
@@ -88,14 +87,14 @@ $(document).ready(function() {
     /*  OWL CAROUSEL
     /*-----------------------------------------------------------------------------------*/
 
-    $( '.slider-owl' ).owlCarousel({
+    $('.slider-owl').owlCarousel({
         items: 1,
         dots: true,
         loop: true,
         margin: 0
     });
 
-    $( '.owl-col-1' ).owlCarousel({
+    $('.owl-col-1').owlCarousel({
         items: 1,
         nav: false,
         navText: ['', ''],
@@ -104,7 +103,7 @@ $(document).ready(function() {
         margin: 0
     });
 
-    $( '.owl-col-2' ).owlCarousel({
+    $('.owl-col-2').owlCarousel({
         autoplay: false,
         autoplayTimeout: 8000,
         loop: false,
@@ -121,7 +120,7 @@ $(document).ready(function() {
         }
     });
 
-    $( '.owl-col-3' ).owlCarousel({
+    $('.owl-col-3').owlCarousel({
         autoplay: false,
         autoplayTimeout: 8000,
         loop: false,
@@ -138,7 +137,7 @@ $(document).ready(function() {
         }
     });
 
-    $( '.owl-col-4' ).owlCarousel({
+    $('.owl-col-4').owlCarousel({
         autoplay: false,
         autoplayTimeout: 8000,
         loop: false,
@@ -151,7 +150,7 @@ $(document).ready(function() {
             },
             768: {
                 items: 2
-    
+
             },
             992: {
                 items: 4
@@ -159,7 +158,7 @@ $(document).ready(function() {
         }
     });
 
-    $( '.basic-carousel' ).owlCarousel({
+    $('.basic-carousel').owlCarousel({
         items: 1,
         nav: true,
         navText: ['', ''],
@@ -169,7 +168,7 @@ $(document).ready(function() {
         margin: 0
     });
 
-    $( '.product-carousel' ).owlCarousel({
+    $('.product-carousel').owlCarousel({
         autoplay: false,
         autoplayTimeout: 8000,
         loop: false,
@@ -182,7 +181,7 @@ $(document).ready(function() {
             },
             768: {
                 items: 2
-    
+
             },
             992: {
                 items: 4
@@ -193,14 +192,14 @@ $(document).ready(function() {
     /*-----------------------------------------------------------------------------------*/
     /*  LAZY LOAD GOOGLE MAPS
     /*-----------------------------------------------------------------------------------*/
-    (function($, window, document, undefined) {
+    (function ($, window, document, undefined) {
         var $window = $(window),
             mapInstances = [],
             $pluginInstance = $('.google-map').lazyLoadGoogleMaps({
-                callback: function(container, map) {
+                callback: function (container, map) {
                     var $container = $(container),
                         center = new google.maps.LatLng($container.attr('data-lat'), $container.attr('data-lng'));
-    
+
                     map.setOptions({
                         center: center,
                         zoom: 15,
@@ -299,27 +298,27 @@ $(document).ready(function() {
                         position: center,
                         map: map
                     });
-    
+
                     $.data(map, 'center', center);
                     mapInstances.push(map);
-    
-                    var updateCenter = function() {
+
+                    var updateCenter = function () {
                         $.data(map, 'center', map.getCenter());
                     };
                     google.maps.event.addListener(map, 'dragend', updateCenter);
                     google.maps.event.addListener(map, 'zoom_changed', updateCenter);
-                    google.maps.event.addListenerOnce(map, 'idle', function() {
+                    google.maps.event.addListenerOnce(map, 'idle', function () {
                         $container.addClass('is-loaded');
                     });
                 }
             });
-    
-        $window.on('resize', $pluginInstance.debounce(1000, function() {
-            $.each(mapInstances, function() {
+
+        $window.on('resize', $pluginInstance.debounce(1000, function () {
+            $.each(mapInstances, function () {
                 this.setCenter($.data(this, 'center'));
             });
         }));
-    
+
     })(jQuery, window, document);
 
     /*-----------------------------------------------------------------------------------*/
@@ -330,53 +329,57 @@ $(document).ready(function() {
     // filter functions
     var filterFns = {
         // show if number is greater than 50
-        numberGreaterThan50: function() {
+        numberGreaterThan50: function () {
             var number = $(this).find('.number').text();
-            return parseInt( number, 10 ) > 50;
+            return parseInt(number, 10) > 50;
         },
         // show if name ends with -ium
-        ium: function() {
+        ium: function () {
             var name = $(this).find('.name').text();
-            return name.match( /ium$/ );
+            return name.match(/ium$/);
         }
     };
 
     // bind filter button click
-    $('.portfolio .filters-button-group').on( 'click', 'a', function() {
-        var filterValue = $( this ).attr('data-filter');
+    $('.portfolio .filters-button-group').on('click', 'a', function () {
+        var filterValue = $(this).attr('data-filter');
         // use filterFn if matches value
-        filterValue = filterFns[ filterValue ] || filterValue;
-        $grid.isotope({ filter: filterValue });
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({
+            filter: filterValue
+        });
     });
 
     // change is-checked class on buttons
-    $('.portfolio .button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'a', function() {
+    $('.portfolio .button-group').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'a', function () {
             $buttonGroup.find('.is-checked').removeClass('is-checked');
-            $( this ).addClass('is-checked');
+            $(this).addClass('is-checked');
         });
     });
 
     /*-----------------------------------------------------------------------------------*/
     /*  PROGRESS BAR
     /*-----------------------------------------------------------------------------------*/
-    
-    $(".progress-bar").each(function(i){
+
+    $(".progress-bar").each(function (i) {
 
         var progressDelay = 500;
 
         $(this).appear(function () {
-            $(this).delay( progressDelay * i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, progressDelay );
+            $(this).delay(progressDelay * i).animate({
+                width: $(this).attr('aria-valuenow') + '%'
+            }, progressDelay);
         });
 
-        $(this).prop('Counter',0).animate({
+        $(this).prop('Counter', 0).animate({
             Counter: $(this).text()
         }, {
             duration: progressDelay,
             easing: 'swing',
             step: function (now) {
-                $(this).text(Math.ceil(now)+'%');
+                $(this).text(Math.ceil(now) + '%');
             }
         });
 
@@ -402,13 +405,13 @@ $(document).ready(function() {
         videoMaxWidth: '1000px'
     });
 
-    $('#video-gallery').lightGallery(); 
-    
+    $('#video-gallery').lightGallery();
+
     /*-----------------------------------------------------------------------------------*/
     /*  COUNTER
     /*-----------------------------------------------------------------------------------*/
-    
-    $( ".counter" ).appear(function () {
+
+    $(".counter").appear(function () {
         $(this).children('span').countTo();
     });
 
@@ -416,14 +419,14 @@ $(document).ready(function() {
     /*  CHECKBOX COLLAPSE
     /*-----------------------------------------------------------------------------------*/
 
-    $( '.checkbox-collapse .custom-checkbox' ).on('click', function(e){
-   
-        if($(this).find( 'input[type=checkbox]' ).prop('checked')){
-           $(this).parent().find( '.collapse' ).collapse('show');
-        }else{     
-           $(this).parent().find( '.collapse' ).collapse('hide');
+    $('.checkbox-collapse .custom-checkbox').on('click', function (e) {
+
+        if ($(this).find('input[type=checkbox]').prop('checked')) {
+            $(this).parent().find('.collapse').collapse('show');
+        } else {
+            $(this).parent().find('.collapse').collapse('hide');
         }
-        
+
         e.stopPropagation();
     })
 
@@ -436,37 +439,46 @@ $(document).ready(function() {
     /*-----------------------------------------------------------------------------------*/
     /*	SEARCH POPUP
     /*-----------------------------------------------------------------------------------*/
-    
-    var searchOpenBtn = $(".btn-search"),
-    searchCloseBtn = $(".search-popup .btn-close"),
-    searchPopup = $(".search-popup"),
-    formGroup = $(".search-popup .form-group"),
-    searchPopupHeading = $(".search-popup h2");
 
-    searchOpenBtn.on("click", function(e) {
+    var searchOpenBtn = $(".btn-search"),
+        searchCloseBtn = $(".search-popup .btn-close"),
+        searchPopup = $(".search-popup"),
+        formGroup = $(".search-popup .form-group"),
+        searchPopupHeading = $(".search-popup h2");
+
+    searchOpenBtn.on("click", function (e) {
         e.preventDefault();
         searchPopup.show();
-        setTimeout(function() {
-          searchPopup.addClass("visible");
+        setTimeout(function () {
+            searchPopup.addClass("visible");
         }, 100);
-        setTimeout(function() {
-          searchPopupHeading.addClass("visible");
+        setTimeout(function () {
+            searchPopupHeading.addClass("visible");
         }, 600);
-        setTimeout(function() {
-          formGroup.addClass("visible");
-          searchCloseBtn.addClass("visible");
+        setTimeout(function () {
+            formGroup.addClass("visible");
+            searchCloseBtn.addClass("visible");
         }, 800);
-      });
-      searchCloseBtn.on("click", function() {
+    });
+    searchCloseBtn.on("click", function () {
         searchPopup.removeClass("visible");
-        setTimeout(function() {
-          searchPopup.hide();
-          formGroup.removeClass("visible");
-          searchCloseBtn.removeClass("visible");
-          searchPopupHeading.removeClass("visible");
+        setTimeout(function () {
+            searchPopup.hide();
+            formGroup.removeClass("visible");
+            searchCloseBtn.removeClass("visible");
+            searchPopupHeading.removeClass("visible");
         }, 300);
-      });
-      
+    });
+
+
+    /*-----------------------------------------------------------------------------------*/
+    /*	CARD SHARE SOCIAL
+	/*-----------------------------------------------------------------------------------*/
+
+    $(".card-link-share").click(function () {
+        $(this).closest("div").find(".card-social").toggleClass("active");
+        return false;
+    });
+
+
 });
-
-
