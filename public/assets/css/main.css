@@ -629,6 +629,18 @@ input[type="submit"] {
       -webkit-transform: translateX(4px) translateY(2px) rotate(-45deg);
               transform: translateX(4px) translateY(2px) rotate(-45deg); }
 
+.dropdown-submenu {
+  position: relative; }
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: -70%;
+    float: left; }
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    float: right !important; }
+
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > NAVS
 /*-----------------------------------------------------------------------------------*/

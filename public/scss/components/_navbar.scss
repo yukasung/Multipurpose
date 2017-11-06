@@ -225,3 +225,20 @@
         }
     }
 }
+
+.dropdown-submenu {
+    position: relative;
+    >.dropdown-menu {
+        top: 0;
+        left: -70%;
+        float: left;
+    }
+    &:hover {
+        >.dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            float: right !important; 
+        }
+    }
+}
