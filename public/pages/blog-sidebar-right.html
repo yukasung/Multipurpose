@@ -1,0 +1,51 @@
+{% set page_title = "Our Blog Posts" %} {% extends "../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html"
+%}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        {% set posts = posts.slice(0,8) %} {% for post in posts %}
+                        <div class="col-md-6">
+                            <div class="card bg-shadow mb-4">
+                                <a href="blog-post.html">
+                                    <img src="{{ post.img }}" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="overlay-text">
+                                            <span>View Post</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h3 class="card-title">
+                                            <a href="blog-post.html">{{ post.title }}</a>
+                                        </h3>
+                                        <p class="meta">
+                                            <span>{{ post.date }}</span>
+                                            <span>
+                                                <a href="#">{{ post.category }}</a>
+                                            </span>
+                                            <span>
+                                                <a href="#">{{ post.comment }} Comments</a>
+                                            </span>
+                                        </p>
+                                        <p class="card-text">{{ post.desc }}</p>
+                                        <a href="blog-post.html" class="card-link">Read more</a>
+                                        <a href="#" class="card-link card-link-share">Share</a>
+                                        {% include "../templates/partials/card_social.html" %}
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% include "../templates/partials/pagination.html" %}
+                </div>
+                <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
+                    {% include "../templates/partials/sidebar.html" %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -4,16 +4,16 @@
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="row">
-                        {% for post in posts %}
-                        <div class="col-md-6">
+                        {% set posts = posts.slice(0,9) %} {% for post in posts %}
+                        <div class="col-md-4">
                             <div class="card bg-shadow mb-4">
                                 <a href="blog-post.html">
                                     <img src="{{ post.img }}" alt="" class="img-fluid">
                                     <div class="overlay">
                                         <div class="overlay-text">
-                                            <span>View More</span>
+                                            <span>View Post</span>
                                         </div>
                                     </div>
                                     <div class="card-body p-4">
@@ -41,9 +41,6 @@
                     </div>
                     {% include "../templates/partials/pagination.html" %}
                 </div>
-                <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
-                    {% include "../templates/partials/sidebar.html" %}
-                </aside>
             </div>
         </div>
     </div>
