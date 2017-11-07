@@ -1,0 +1,32 @@
+{% set page_title = "Portfolio" %} {% extends "../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html"
+%}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <p class="lead text-center">Curabitur porta nam tellus
+                <em>viverra</em> lectus. Mauris dui pariatur felis sunt. Excepteur cubilia mollit
+                <em>pharetra</em> hendrerit. Blandit integer porta eget ipsum. Ullamco etiam
+                <em>ridiculus</em> arcu nec magna.</p>
+            <div class="portfolio isotope caption mt-6">
+                {% include "../templates/partials/portfolio_filters.html" %}
+                <div class="grid pt-3" data-isotope='{"layoutMode": "fitRows","itemSelector": ".grid-item" }'>
+                    {% set portfolio = portfolio.slice(0,6) %} {% for port in portfolio %}
+                    <div class="grid-item mb-4 col-md-4 {{ port.tag }}">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-post.html">
+                                <div class="overlay">
+                                    <div class="overlay-text">
+                                        <span>View Project</span>
+                                    </div>
+                                </div>
+                                <img src="{{ port.img }}" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
