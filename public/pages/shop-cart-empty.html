@@ -1,0 +1,16 @@
+{% set page_title = "Cart" %} {% extends "../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html"
+%}
+<div id="content">
+    <div class="bg-white">
+        <div class="container product py-7">
+            <div class="text-center mb-4">
+                <h2>Your cart is currently empty.</h2>
+                <p>You have not added any items in your shopping cart</p>
+                <a class="btn btn-primary text-uppercase mt-3" href="#">
+                    <span>Return To Shop</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
