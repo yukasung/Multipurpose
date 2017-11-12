@@ -63,9 +63,9 @@ gulp.task('sass', function () {
 });
 
 
-function requireUncached( $module ) {
-    delete require.cache[require.resolve( $module )];
-    return require( $module );
+function requireUncached($module) {
+    delete require.cache[require.resolve($module)];
+    return require($module);
 }
 
 gulp.task('nunjucks', function () {
@@ -85,7 +85,7 @@ gulp.task('default', ['nunjucks', 'sass', 'browser-sync'], function () {
 
     gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch(['pages/*.html', 'templates/**/*.html', './data.json'], ['nunjucks']);
-    
+
     gulp.watch(['./*.html'], browserSync.reload);
     gulp.watch(['assets/js/**/*.js'], browserSync.reload);
     gulp.watch(['assets/css/**/*.css'], browserSync.reload);

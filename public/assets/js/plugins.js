@@ -59,22 +59,6 @@ var e;t?(t=n.makeArray(t),e=this.getItems(t)):e=this.items,this._getSorters(),th
  */
  !function(e){e.fn.appear=function(a,r){var p=e.extend({data:void 0,one:!0,accX:0,accY:0},r);return this.each(function(){var r=e(this);if(r.appeared=!1,a){var n=e(window),t=function(){if(r.is(":visible")){var e=n.scrollLeft(),a=n.scrollTop(),t=r.offset(),c=t.left,i=t.top,o=p.accX,f=p.accY,s=r.height(),l=n.height(),h=r.width(),d=n.width();i+s+f>=a&&i<=a+l+f&&c+h+o>=e&&c<=e+d+o?r.appeared||r.trigger("appear",p.data):r.appeared=!1}else r.appeared=!1},c=function(){if(r.appeared=!0,p.one){n.unbind("scroll",t);var c=e.inArray(t,e.fn.appear.checks);c>=0&&e.fn.appear.checks.splice(c,1)}a.apply(this,arguments)};p.one?r.one("appear",p.data,c):r.bind("appear",p.data,c),n.scroll(t),e.fn.appear.checks.push(t),t()}else r.trigger("appear",p.data)})},e.extend(e.fn.appear,{checks:[],timeout:null,checkAll:function(){var a=e.fn.appear.checks.length;if(a>0)for(;a--;)e.fn.appear.checks[a]()},run:function(){e.fn.appear.timeout&&clearTimeout(e.fn.appear.timeout),e.fn.appear.timeout=setTimeout(e.fn.appear.checkAll,20)}}),e.each(["append","prepend","after","before","attr","removeAttr","addClass","removeClass","toggleClass","remove","css","show","hide"],function(a,r){var p=e.fn[r];p&&(e.fn[r]=function(){var a=p.apply(this,arguments);return e.fn.appear.run(),a})})}(jQuery);
 
- /*-----------------------------------------------------------------------------------*/
-/*	BOOTSTRAP HOVER DROPDOWN
-/*-----------------------------------------------------------------------------------*/
-/**
- * @preserve
- * Project: Bootstrap Hover Dropdown
- * Author: Cameron Spear
- * Version: v2.2.1
- * Contributors: Mattia Larentis
- * Dependencies: Bootstrap's Dropdown plugin, jQuery
- * Description: A simple plugin to enable Bootstrap dropdowns to active on hover and provide a nice user experience.
- * License: MIT
- * Homepage: http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
- */
-!function(e,n){var o=e();e.fn.dropdownHover=function(t){return"ontouchstart"in document?this:(o=o.add(this.parent()),this.each(function(){function r(){d.parents(".navbar").find(".navbar-toggle").is(":visible")||(n.clearTimeout(a),n.clearTimeout(i),i=n.setTimeout(function(){o.find(":focus").blur(),v.instantlyCloseOthers===!0&&o.removeClass("open"),n.clearTimeout(i),d.attr("aria-expanded","true"),s.addClass("open"),d.trigger(h)},v.hoverDelay))}var a,i,d=e(this),s=d.parent(),u={delay:500,hoverDelay:0,instantlyCloseOthers:!0},l={delay:e(this).data("delay"),hoverDelay:e(this).data("hover-delay"),instantlyCloseOthers:e(this).data("close-others")},h="show.bs.dropdown",c="hide.bs.dropdown",v=e.extend(!0,{},u,t,l);s.hover(function(e){return s.hasClass("open")||d.is(e.target)?void r(e):!0},function(){n.clearTimeout(i),a=n.setTimeout(function(){d.attr("aria-expanded","false"),s.removeClass("open"),d.trigger(c)},v.delay)}),d.hover(function(e){return s.hasClass("open")||s.is(e.target)?void r(e):!0}),s.find(".dropdown-submenu").each(function(){var o,t=e(this);t.hover(function(){n.clearTimeout(o),t.children(".dropdown-menu").show(),t.siblings().children(".dropdown-menu").hide()},function(){var e=t.children(".dropdown-menu");o=n.setTimeout(function(){e.hide()},v.delay)})})}))},e(document).ready(function(){e('[data-hover="dropdown"]').dropdownHover()})}(jQuery,window);
-
 /*-----------------------------------------------------------------------------------*/
 /*	JQUERY COUNT TO
 /*-----------------------------------------------------------------------------------*/

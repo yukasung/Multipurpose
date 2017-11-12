@@ -46,25 +46,42 @@ $(document).ready(function () {
     /*  NAVBAR
     /*-----------------------------------------------------------------------------------*/
 
-    $('.navbar-nav .dropdown').each(function () {
-        var navbarToggle = '.navbar-toggler';
-        var dropdown = $(this),
-            dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
-            dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
+    // $('.navbar-nav .dropdown').hover(function () {
+    //     var navbarToggle = '.navbar-toggler';
+    //     var dropdown = $(this);
+    //     var dropdownToggle = $(this).find('>.dropdown-toggle');
+    //     var dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
+    //     var isMobileMenu = $(navbarToggle).size() > 0 && $(navbarToggle).css('display') !== 'none';
 
-        // Mouseover
-        dropdown.hover(function () {
-            var isMobileMenu = $(navbarToggle).size() > 0 && $(navbarToggle).css('display') !== 'none';
-            if ((dropdownHoverAll == true || (dropdownHoverAll == false && !isMobileMenu))) {
-                dropdownToggle.trigger('click');
-            }
-        })
+    //     if ((dropdownHoverAll == true || (dropdownHoverAll == false && !isMobileMenu))) {
+    //         dropdownToggle.trigger('click');
+    //     }
 
-    });
+    // });
 
+    // $('.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //     $(this).parent().siblings().removeClass('show');
+    //     $(this).parent().toggleClass('show');
+    // });
 
-    $('.navbar-toggler').click(function () {
-        $(this).toggleClass('navbar-toggler-active');
+    // $('.navbar-toggler').click(function () {
+    //     $(this).toggleClass('navbar-toggler-active');
+    // });
+    $('.navbar .dropdown-toggle').on('click', function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent(".dropdown-menu");
+        $(this).parent("li").toggleClass('show');
+
+        if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+                "top": $el[0].offsetTop,
+                "left": $parent.outerWidth() - 4
+            });
+        }
+        $('.navbar-nav li.show').not($(this).parents("li")).removeClass("show");
+        return false;
     });
 
     /*-----------------------------------------------------------------------------------*/
