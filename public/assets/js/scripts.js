@@ -59,24 +59,24 @@ $(document).ready(function () {
 
     // });
 
-    // $('.navbar-toggler').click(function () {
-    //     $(this).toggleClass('navbar-toggler-active');
-    // });
-
-    $('.navbar .dropdown-toggle').on('click', function (e) {
-        var $el = $(this);
-        var $parent = $(this).offsetParent(".dropdown-menu");
-        $(this).parent("li").toggleClass('show');
-
-        if (!$parent.parent().hasClass('navbar-nav')) {
-            $el.next().css({
-                "top": $el[0].offsetTop,
-                "left": $parent.outerWidth() - 4
-            });
-        }
-        $('.navbar-nav li.show').not($(this).parents("li")).removeClass("show");
-        return false;
+    $('.navbar-toggler').click(function () {
+        $(this).toggleClass('navbar-toggler-active');
     });
+
+    // $('.navbar .dropdown-toggle').on('click', function (e) {
+    //     var $el = $(this);
+    //     var $parent = $(this).offsetParent(".dropdown-menu");
+    //     $(this).parent("li").toggleClass('show');
+
+    //     if (!$parent.parent().hasClass('navbar-nav')) {
+    //         $el.next().css({
+    //             "top": $el[0].offsetTop,
+    //             "left": $parent.outerWidth() - 4
+    //         });
+    //     }
+    //     $('.navbar-nav li.show').not($(this).parents("li")).removeClass("show");
+    //     return false;
+    // });
 
     /*-----------------------------------------------------------------------------------*/
     /*  NAV VERTICAL
@@ -491,34 +491,5 @@ $(document).ready(function () {
         return false;
     });
 
-    $(document).on("shown.bs.dropdown.position-calculator", function (event, data) {
-        var $item = $('.dropdown-menu', event.target);
-        var target = data.relatedTarget;
-
-        // reset position
-        $item.css({
-            top: 0,
-            left: 0
-        });
-
-        // calculate new position
-        var calculator = new $.PositionCalculator({
-            item: $item,
-            target: target,
-            itemAt: "top left",
-            itemOffset: {
-                y: 3,
-                x: 0,
-                mirror: true
-            },
-            targetAt: "bottom left",
-            flip: "both"
-        });
-        var posResult = calculator.calculate();
-
-        // set new position
-        $item.css({
-        });
-    });
 
 });
