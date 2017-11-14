@@ -213,12 +213,11 @@
             <a class="navbar-brand py-3 py-sm-4" href="/">
                 <img src="assets/img/logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <input id="main-menu-state" type="checkbox" />
+            <label class="main-menu-btn" for="main-menu-state">
+                <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+            </label>
+            <div class="collapse navbar-collapse" id="main-menu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="bootstrap-4-navbar.html">Default</a>
@@ -244,8 +243,6 @@
                             <li>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </li>
-                            <li class="dropdown-divider"></li>
-                            <li class="dropdown-header">Nav header</li>
                             <li class="dropdown">
                                 <a class="dropdown-item dropdown-toggle" href="#">A sub menu</a>
                                 <ul class="dropdown-menu">
@@ -259,7 +256,7 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item disabled" href="#">Disabled item</a>
+                                        <a class="dropdown-item" href="#">Disabled item</a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="#">One more link</a>
