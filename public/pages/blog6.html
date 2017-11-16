@@ -1,0 +1,14 @@
+{% set page_title = "Classic Blog Sidebar Right" %} {% extends "../templates/layout.html" %} {% block content %} {% include
+"../templates/partials/page_title.html" %}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    {% include "../templates/partials/classic_blog.html" %} {% include "../templates/partials/pagination.html" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% set page_title = "Blog Post" %} {% extends "../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html"
+%}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-8 order-1 order-md-2">
+                    {% include "../templates/partials/blog_post.html" %}
+                </div>
+                <aside class="col-md-4 order-2 order-md-1 sidebar pl-md-4 mt-5 mt-md-0">
+                    {% include "../templates/partials/sidebar.html" %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
