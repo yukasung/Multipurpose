@@ -435,7 +435,8 @@ input[type="submit"] {
   .navbar .navbar-nav li:first-child {
     border-top: 0; }
   .navbar .navbar-nav li a {
-    font-size: 14px; }
+    font-size: 14px;
+    letter-spacing: 1px; }
 
 .navbar .dropdown-menu {
   padding: 0;
