@@ -9,6 +9,7 @@
                 margin: 0 15px;
                 @include media-breakpoint-up(md) {
                     margin: 0;
+                    border-top: none;
                 }
                 &:first-child {
                     border-top: 0;
@@ -138,7 +139,6 @@
         height: 2px;
         width: 24px;
         background: #bbb;
-        -webkit-transition: all 0.25s;
         transition: all 0.25s;
     }
 
