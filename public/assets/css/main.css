@@ -16,7 +16,7 @@ body, li, address {
   line-height: 28px; }
 
 blockquote {
-  border-left: 3px solid #db5048 !important;
+  border-left: 3px solid #3498db !important;
   position: relative;
   margin: 30px 0;
   padding: 15px 30px;
@@ -29,12 +29,12 @@ a {
   -webkit-transition: 0.5s color ease;
   transition: 0.5s color ease;
   text-decoration: none;
-  color: #db5048; }
+  color: #3498db; }
   a:hover {
-    color: #db5048;
+    color: #3498db;
     text-decoration: none; }
   a:focus {
-    color: #db5048;
+    color: #3498db;
     text-decoration: none; }
 
 small {
@@ -120,7 +120,7 @@ dl {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .header-top {
-  background-color: #db5048;
+  background-color: #3498db;
   color: #fff;
   font-size: 14px;
   padding: 10px 0; }
@@ -254,7 +254,7 @@ ul.list-md li {
   .meta a {
     color: #707070; }
     .meta a:hover {
-      color: #db5048; }
+      color: #3498db; }
 
 .section-title {
   margin-bottom: 40px;
@@ -339,7 +339,7 @@ input[type="submit"] {
   .sidebar .widget a:not(.btn) {
     color: inherit; }
     .sidebar .widget a:not(.btn):hover {
-      color: #db5048; }
+      color: #3498db; }
   .sidebar .widget:first-child {
     margin-top: 0; }
   .sidebar .widget .widget-title {
@@ -349,7 +349,7 @@ input[type="submit"] {
 .blog-commnets h4 a {
   color: #333333; }
   .blog-commnets h4 a:hover {
-    color: #db5048; }
+    color: #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > WIDGET
@@ -364,7 +364,7 @@ input[type="submit"] {
 .widget .post-list .post-list-title {
   color: #333333; }
   .widget .post-list .post-list-title:hover {
-    color: #db5048; }
+    color: #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > SLIDER
@@ -446,7 +446,7 @@ input[type="submit"] {
     border: 0; }
   @media (min-width: 768px) {
     .navbar .dropdown-menu li {
-      background: #db5048;
+      background: #3498db;
       border-top: 1px solid rgba(255, 255, 255, 0.2); } }
   .navbar .dropdown-menu li a {
     background: none;
@@ -461,7 +461,7 @@ input[type="submit"] {
         color: #ffffff; } }
     @media (min-width: 768px) {
       .navbar .dropdown-menu li a:hover {
-        background: #e37973; } }
+        background: #5faee3; } }
 
 .navbar .sub-arrow {
   margin-left: 4px !important;
@@ -639,22 +639,22 @@ input[type="submit"] {
       padding: 0 0 0 15px !important;
       color: #333333; }
       .nav-vertical ul li a:hover {
-        color: #db5048; }
+        color: #3498db; }
       .nav-vertical ul li a i {
         margin-right: 10px;
         font-size: 18px;
         margin-top: 3px;
         width: 20px; }
         .nav-vertical ul li a i:first-child {
-          color: #db5048; }
+          color: #3498db; }
       .nav-vertical ul li a i[class*='fa-caret'] {
         float: right; }
       .nav-vertical ul li a.active {
-        color: #db5048; }
+        color: #3498db; }
         .nav-vertical ul li a.active + ul {
           display: block; }
       .nav-vertical ul li a:hover {
-        color: #db5048; }
+        color: #3498db; }
   .nav-vertical .dropdown-toggle {
     display: -webkit-box;
     display: -webkit-flex;
@@ -678,7 +678,7 @@ input[type="submit"] {
     .nav.nav-tabs .nav-link.active {
       background-color: transparent;
       border-color: transparent transparent transparent;
-      color: #db5048; }
+      color: #3498db; }
       .nav.nav-tabs .nav-link.active:after {
         height: 2px;
         width: 100%;
@@ -687,7 +687,7 @@ input[type="submit"] {
         bottom: 0;
         left: 0;
         position: absolute;
-        background: #db5048; }
+        background: #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > OWLCAROUSEL
@@ -714,13 +714,13 @@ input[type="submit"] {
       margin: 0 3px;
       display: block;
       border-radius: 100%;
-      border: 2px solid #db5048;
+      border: 2px solid #3498db;
       width: 11px;
       height: 11px;
       -webkit-transition: all 150ms ease-in;
       transition: all 150ms ease-in; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #db5048; }
+      background: #3498db; }
 
 .owl-dot-white .owl-dot span {
   border: 2px solid #ffffff !important; }
@@ -729,10 +729,10 @@ input[type="submit"] {
   background: #ffffff !important; }
 
 .owl-dot-primary .owl-dot span {
-  border: 2px solid #db5048 !important; }
+  border: 2px solid #3498db !important; }
 
 .owl-dot-primary .owl-dot.active span, .owl-dot-primary .owl-dot:hover span {
-  background: #db5048 !important; }
+  background: #3498db !important; }
 
 .owl-nav {
   position: absolute;
@@ -765,7 +765,7 @@ input[type="submit"] {
     .card .card-title a {
       color: #333333; }
       .card .card-title a:hover {
-        color: #db5048; }
+        color: #3498db; }
   .card .card-header {
     background-color: transparent; }
   .card .card-footer {
@@ -782,7 +782,7 @@ input[type="submit"] {
     margin-bottom: -1.25em; }
   .card .card-link {
     font-size: 12px;
-    color: #db5048;
+    color: #3498db;
     text-transform: uppercase; }
   .card .card-social {
     float: right;
@@ -840,10 +840,10 @@ input[type="submit"] {
     padding: 18px 36px; }
 
 .btn-primary {
-  background-color: #db5048;
+  background-color: #3498db;
   color: #fff; }
   .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    background-color: #db5048; }
+    background-color: #3498db; }
 
 .input-group-btn .btn {
   padding-left: 15px;
@@ -863,7 +863,7 @@ input[type="submit"] {
     display: inline-block;
     margin: 0 30px 0 0; }
     .social li a:hover {
-      color: #db5048; }
+      color: #3498db; }
     .social li a i {
       background: none;
       box-shadow: none;
@@ -883,7 +883,7 @@ input[type="submit"] {
     display: inline-block;
     margin: 0 30px 0 0; }
     .share li a:hover {
-      color: #db5048; }
+      color: #3498db; }
     .share li a i {
       background: none;
       box-shadow: none;
@@ -905,7 +905,7 @@ input[type="submit"] {
       border-radius: 50%; }
     .pagination .page-item.active .page-link {
       color: #ffffff;
-      background: #db5048;
+      background: #3498db;
       opacity: 1; }
     .pagination .page-item .page-link {
       color: #333333;
@@ -934,7 +934,7 @@ input[type="submit"] {
       opacity: .4; }
       .pagination .page-item .page-link:hover {
         color: #ffffff;
-        background: #db5048;
+        background: #3498db;
         opacity: 1; }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1130,10 +1130,10 @@ hr.line-dotted {
 /*  UTILITIES > COLORS
 /*-----------------------------------------------------------------------------------*/
 .text-primary {
-  color: #db5048 !important; }
+  color: #3498db !important; }
 
 .bg-primary {
-  background-color: #db5048 !important; }
+  background-color: #3498db !important; }
 
 .bg-shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
@@ -1181,7 +1181,7 @@ a .overlay {
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
   background: #FFF;
-  background: rgba(219, 80, 72, 0.8);
+  background: rgba(52, 152, 219, 0.8);
   top: 0; }
   a .overlay .overlay-text {
     text-align: center;
@@ -1241,7 +1241,7 @@ a .overlay {
   .portfolio .grid .grid-item figure .figure-caption a {
     color: #333333; }
     .portfolio .grid .grid-item figure .figure-caption a:hover {
-      color: #db5048; }
+      color: #3498db; }
 
 .portfolio.caption .grid-item figcaption {
   margin-top: 15px; }
@@ -1254,14 +1254,14 @@ a .overlay {
   margin-right: 40px;
   cursor: pointer;
   position: relative;
-  color: #db5048; }
+  color: #3498db; }
   .portfolio .filters-button-group ul li a.is-checked:after {
     content: "";
     width: 100%;
     bottom: -2px;
     left: 0;
     position: absolute;
-    border-bottom: 2px solid #db5048; }
+    border-bottom: 2px solid #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE > SHOP
