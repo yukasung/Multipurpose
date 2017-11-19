@@ -1,0 +1,28 @@
+{% macro blog(post) %}
+<div class="card bg-shadow mb-4">
+    <a href="blog-post.html">
+        <img src="{{ post.img }}" alt="" class="img-fluid">
+        <div class="overlay">
+            <div class="overlay-text">
+                <span>View Post</span>
+            </div>
+        </div>
+        <div class="card-body p-4">
+            <h3 class="card-title">
+                <a href="blog-post.html">{{ post.title }}</a>
+            </h3>
+            <p class="meta">
+                <span>{{ post.date }}</span>
+                <span>
+                    <a href="#">{{ post.category }}</a>
+                </span>
+                <span>
+                    <a href="#">{{ post.comment }} Comments</a>
+                </span>
+            </p>
+            <p class="card-text">{{ post.desc }}</p>
+            {% include "partials/card_action.html" %}
+        </div>
+    </a>
+</div>
+{% endmacro %}
