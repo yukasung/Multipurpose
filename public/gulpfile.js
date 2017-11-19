@@ -78,8 +78,8 @@ gulp.task('nunjucks', function () {
             path: ['templates']
         }))
         .pipe(gulp.dest('./'))
-        .pipe(browserSync.stream())
-        .pipe(browserSync.reload({stream: true}))
+        // .pipe(browserSync.stream())
+        // .pipe(browserSync.reload({stream: true}))
 });
 
 // Default
