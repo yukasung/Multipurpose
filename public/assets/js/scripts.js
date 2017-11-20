@@ -478,9 +478,9 @@ $(document).ready(function () {
 	/*-----------------------------------------------------------------------------------*/
 
     $(".card-link-share").click(function () {
-        $(this).closest("div").find(".card-social").toggleClass("active");
+        var cardSocial = $(this).closest("div").find(".card-social");
+        cardSocial.toggleClass("active");
         return false;
     });
-
 
 });

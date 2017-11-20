@@ -44,7 +44,7 @@
 		float: right;
 		visibility: hidden;
 		transform: translateZ(0);
-		transform: translateX(-50px);
+		transform: translateX(-50%);
 		transition: transform 0.35s ease;
 		a:not(:last-child) {
 			margin-right: 25px;

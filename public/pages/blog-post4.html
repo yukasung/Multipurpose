@@ -1,11 +1,11 @@
-{% set page_title = "Blog Default"%} {% set page_active_link = "Right Sidebar" %} {% set page_link2 = "Blog" %} {% extends
-    "../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html" %}
+{% set page_title = "Blog Post"%} {% set page_active_link = "Right Sitebar" %} {% set page_link2 = "Single" %} {% extends
+"../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html" %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
                 <div class="col-md-8">
-                    {% include "../templates/partials/blog_default.html" %} {% include "../templates/partials/pagination.html" %}
+                    {% include "../templates/partials/blog_post_card.html" %}
                 </div>
                 <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
                     {% include "../templates/partials/sidebar.html" %}

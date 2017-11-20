@@ -17,6 +17,7 @@
 	border-radius: 100%;
 	border: 5px solid #ffffff;
 	background: rgba(#ffffff, 0.2);
+	transition: all .2s ease-in;
 	>*{
 		display: block;
 		position: absolute;
@@ -31,5 +32,10 @@
 		margin-top: -25px;
 		margin-left: -25px;
 		padding-left: 5px;
+	}
+	&:hover{
+		background: rgba($primary-color, 0.8);
+		width: 85px;
+		height: 85px;
 	}
 }
