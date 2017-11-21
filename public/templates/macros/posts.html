@@ -1,6 +1,7 @@
-<div class="card">
+{% macro post(bg_shadow="", body_padding="py-4 px-0") %}
+<div class="card {{ bg_shadow }}">
     <img src="assets/img/blog/blog_1-770x513.jpg" class="img-fluid" alt="">
-    <div class="card-body py-4 px-0">
+    <div class="card-body {{ body_padding }}">
         <h3 class="card-title h4">Cursus praesent dis dui enim litora aliquam lacus justo exercitation lacinia.</h3>
         <p class="meta">
             <span class="meta-date">25 Jan 2017</span>
@@ -203,7 +204,8 @@
                             <p class="mb-1">Tellus sociis qui venenatis porttitor. Eget morbi lacinia at litora. Turpis nostra vitae purus
                                 facilisis fringilla. Blandit sunt auctor dui eros erat. Odio curae imperdiet a malesuada
                                 senectus. Sint fringilla aenean proident dignissim culpa. Ac aliquip nunclorem eleifend do
-                                aute.</p>
+                                aute.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -256,3 +258,5 @@
         </form>
     </div>
 </div>
+
+{% endmacro %}

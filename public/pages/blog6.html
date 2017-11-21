@@ -1,11 +1,20 @@
-{% set page_title = "Blog Default"%} {% set page_active_link = "Full Width" %} {% set page_link2 = "Blog" %} {% extends
-    "../templates/layout.html" %} {% block content %} {% include "../templates/partials/page_title.html" %}
+{% set page_title = "Blog Default"%} {% set page_active_link = "Full Width" %} {% set page_link2 = "Blog" %} {% extends "../templates/layout.html"
+%} {% block content %} {% include "../templates/partials/page_title.html" %} {% import '../templates/macros/blogs.html' as
+blogs %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    {% include "../templates/partials/blog_default.html" %} {% include "../templates/partials/pagination.html" %}
+                    <div class="card mb-4">
+                        {{ blogs.standard() }}
+                    </div>
+                    <div class="card mb-4">
+                        {{ blogs.owlCarousel() }}
+                    </div>
+                    <div class="card mb-4">
+                        {{ blogs.video() }}
+                    </div>
                 </div>
             </div>
         </div>
