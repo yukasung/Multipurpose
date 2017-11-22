@@ -6,15 +6,9 @@ as blogs %}
         <div class="container py-7">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="card bg-shadow mb-6">
-                        {{ blogs.standard("p-4") }}
-                    </div>
-                    <div class="card bg-shadow mb-6">
-                        {{ blogs.owlCarousel("p-4") }}
-                    </div>
-                    <div class="card bg-shadow mb-6">
-                        {{ blogs.video("p-4") }}
-                    </div>
+                    {{ blogs.standard("bg-shadow mb-6","p-4") }}
+                    {{ blogs.owlCarousel("bg-shadow mb-6","p-4") }}
+                    {{ blogs.video("bg-shadow mb-6","p-4") }}
                 </div>
                 <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
                     {% include "../templates/partials/sidebar.html" %}
