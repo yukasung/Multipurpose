@@ -1,151 +1,157 @@
-{% macro blog(post) %}
-<div class="card mb-4">
-    <a href="blog-post.html">
-        <img src="{{ post.img }}" alt="" class="img-fluid">
-        <div class="overlay">
-            <div class="overlay-text">
-                <span>View Post</span>
+
+
+<!-- Blog -->
+{% macro blog(post, card_css="mb-4", card_body_css="py-4 px-0") %}
+    <div class="card {{ card_css }}">
+        <a href="blog-post.html">
+            <img src="{{ post.img }}" alt="" class="img-fluid">
+            <div class="overlay">
+                <div class="overlay-text">
+                    <span>View Post</span>
+                </div>
             </div>
-        </div>
-        <div class="card-body py-4 px-0">
-            <h3 class="card-title">
-                <a href="blog-post.html">{{ post.title }}</a>
-            </h3>
-            <p class="meta">
-                <span>{{ post.date }}</span>
-                <span>
-                    <a href="#">{{ post.category }}</a>
-                </span>
-                <span>
-                    <a href="#">{{ post.comment }} Comments</a>
-                </span>
-            </p>
-            <p class="card-text">{{ post.desc }}</p>
-            {% include "partials/card_action.html" %}
-        </div>
-    </a>
-</div>
-{% endmacro %} 
-
-{% macro card(post) %}
-<div class="card bg-shadow mb-4">
-    <a href="blog-post.html">
-        <img src="{{ post.img }}" alt="" class="img-fluid">
-        <div class="overlay">
-            <div class="overlay-text">
-                <span>View Post</span>
+            <div class="card-body {{ card_body_css }}">
+                <h3 class="card-title">
+                    <a href="blog-post.html">{{ post.title }}</a>
+                </h3>
+                <p class="meta">
+                    <span>{{ post.date }}</span>
+                    <span>
+                        <a href="#">{{ post.category }}</a>
+                    </span>
+                    <span>
+                        <a href="#">{{ post.comment }} Comments</a>
+                    </span>
+                </p>
+                <p class="card-text">{{ post.desc }}</p>
+                {{ card_action() }}
             </div>
-        </div>
-        <div class="card-body p-4">
-            <h3 class="card-title">
-                <a href="blog-post.html">{{ post.title }}</a>
-            </h3>
-            <p class="meta">
-                <span>{{ post.date }}</span>
-                <span>
-                    <a href="#">{{ post.category }}</a>
-                </span>
-                <span>
-                    <a href="#">{{ post.comment }} Comments</a>
-                </span>
-            </p>
-            <p class="card-text">{{ post.desc }}</p>
-            {% include "partials/card_action.html" %}
-        </div>
-    </a>
-</div>
-{% endmacro %} 
-
-{% macro standard(bady_padding="py-4 px-0") %}
-
-<a href="blog-post.html">
-    <img src="assets/img/blog/blog_4-770x513.jpg" alt="" class="card-img-top img-fluid">
-    <div class="overlay">
-        <div class="overlay-text">
-            <span>View Post</span>
-        </div>
-    </div>
-</a>
-    <div class="card-body {{ bady_padding }}">
-    <h3 class="card-title">
-        <a href="blog-post.html">The Important Standard Post Format</a>
-    </h3>
-    <p class="meta">
-        <span>09 May 2017</span>
-        <span>
-            <a href="#">Magazine</a>,
-            <a href="#">Creativity</a>
-        </span>
-        <span>
-            <a href="#">15 Comments</a>
-        </span>
-    </p>
-    <p>Laoreet leo libero nostra volutpat dapibus. Vel per fusce vestibulum lacinia. Nullam est augue elit accumsan. Commodo
-        nec convallis faucibus auctor minim. Ante volutpat sapien euismod arcu occaecat ornare occaecat aliquam condimentum.</p>
-    {% include "partials/card_action.html" %}
-</div>
-
-{% endmacro %}
-
-{% macro owlCarousel(bady_padding="py-4 px-0") %}
-
-<div class="owl-col-1 owl-carousel owl-theme owl-loaded owl-img-dots owl-dot-white">
-    <div class="item">
-        <img src="assets/img/blog/blog_1-770x513.jpg" alt="" />
-    </div>
-    <div class="item">
-        <img src="assets/img/blog/blog_2-770x513.jpg" alt="" />
-    </div>
-    <div class="item">
-        <img src="assets/img/blog/blog_3-770x513.jpg" alt="" />
-    </div>
-</div>
-<div class="card-body {{ bady_padding }}">
-    <h3 class="card-title">
-        <a href="blog-post.html">Photo with Slider Post Format</a>
-    </h3>
-    <p class="meta">
-        <span>25 Jan 2017</span>
-        <span>
-            <a href="#">Magazine</a>,
-            <a href="#">Creativity</a>
-        </span>
-        <span>
-            <a href="#">15 Comments</a>
-        </span>
-    </p>
-    <p>Irure parturient maecenas sunt pellentesque ornare. Torquent ultricies condimentum culpa rutrum ea. Eleifend lacinia
-        pariatur a ad. Ornare occaecat aliquam condimentum cubilia fringilla. Occaecat erat eleifend diam inceptos ornare.</p>
-    {% include "partials/card_action.html" %}
-</div>
-
-{% endmacro %}
-
-{% macro video(bady_padding="py-4 px-0") %}
-<div class="position-relative">
-    <div id="video-gallery">
-        <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
-            <i class="fa fa-play"></i>
         </a>
     </div>
-    <img src="assets/img/blog/blog_4-770x513.jpg" alt="" class="card-img-top img-fluid">
-</div>
-<div class="card-body {{ bady_padding }}">
-    <h3 class="card-title">
-        <a href="blog-post.html">Video Post Format</a>
-    </h3>
-    <p class="meta">
-        <span>09 May 2017</span>
-        <span>
-            <a href="#">Magazine</a>,
-            <a href="#">Creativity</a>
-        </span>
-        <span>
-            <a href="#">15 Comments</a>
-        </span>
-    </p>
-    <p>Laoreet leo libero nostra volutpat dapibus. Vel per fusce vestibulum lacinia. Nullam est augue elit accumsan. Commodo
-        nec convallis faucibus auctor minim. Ante volutpat sapien euismod arcu occaecat ornare occaecat aliquam condimentum.</p>
-    {% include "partials/card_action.html" %}
-</div>
+{% endmacro %} 
+
+<!-- Card -->
+{% macro card(post) %}
+    {{ blog(post,"bg-shadow mb-4","p-4") }}
+{% endmacro %} 
+
+
+<!-- Standard -->
+{% macro standard(card_bady_css="py-4 px-0") %}
+
+    <a href="blog-post.html">
+        <img src="assets/img/blog/blog_4-770x513.jpg" alt="" class="card-img-top img-fluid">
+        <div class="overlay">
+            <div class="overlay-text">
+                <span>View Post</span>
+            </div>
+        </div>
+    </a>
+        <div class="card-body {{ card_bady_css }}">
+        <h3 class="card-title">
+            <a href="blog-post.html">The Important Standard Post Format</a>
+        </h3>
+        <p class="meta">
+            <span>09 May 2017</span>
+            <span>
+                <a href="#">Magazine</a>,
+                <a href="#">Creativity</a>
+            </span>
+            <span>
+                <a href="#">15 Comments</a>
+            </span>
+        </p>
+        <p>Laoreet leo libero nostra volutpat dapibus. Vel per fusce vestibulum lacinia. Nullam est augue elit accumsan. Commodo
+            nec convallis faucibus auctor minim. Ante volutpat sapien euismod arcu occaecat ornare occaecat aliquam condimentum.</p>
+        {{ card_action() }}
+    </div>
+
+{% endmacro %}
+
+<!-- OWL Carousel -->
+{% macro owlCarousel(card_bady_css="py-4 px-0") %}
+
+    <div class="owl-col-1 owl-carousel owl-theme owl-loaded owl-img-dots owl-dot-white">
+        <div class="item">
+            <img src="assets/img/blog/blog_1-770x513.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="assets/img/blog/blog_2-770x513.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="assets/img/blog/blog_3-770x513.jpg" alt="" />
+        </div>
+    </div>
+    <div class="card-body {{ card_bady_css }}">
+        <h3 class="card-title">
+            <a href="blog-post.html">Photo with Slider Post Format</a>
+        </h3>
+        <p class="meta">
+            <span>25 Jan 2017</span>
+            <span>
+                <a href="#">Magazine</a>,
+                <a href="#">Creativity</a>
+            </span>
+            <span>
+                <a href="#">15 Comments</a>
+            </span>
+        </p>
+        <p>Irure parturient maecenas sunt pellentesque ornare. Torquent ultricies condimentum culpa rutrum ea. Eleifend lacinia
+            pariatur a ad. Ornare occaecat aliquam condimentum cubilia fringilla. Occaecat erat eleifend diam inceptos ornare.</p>
+        {{ card_action() }}
+    </div>
+
+{% endmacro %}
+
+<!-- Video -->
+{% macro video(card_bady_css="py-4 px-0") %}
+
+    <div class="position-relative">
+        <div id="video-gallery">
+            <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+        <img src="assets/img/blog/blog_4-770x513.jpg" alt="" class="card-img-top img-fluid">
+    </div>
+    <div class="card-body {{ card_bady_css }}">
+        <h3 class="card-title">
+            <a href="blog-post.html">Video Post Format</a>
+        </h3>
+        <p class="meta">
+            <span>09 May 2017</span>
+            <span>
+                <a href="#">Magazine</a>,
+                <a href="#">Creativity</a>
+            </span>
+            <span>
+                <a href="#">15 Comments</a>
+            </span>
+        </p>
+        <p>Laoreet leo libero nostra volutpat dapibus. Vel per fusce vestibulum lacinia. Nullam est augue elit accumsan. Commodo
+            nec convallis faucibus auctor minim. Ante volutpat sapien euismod arcu occaecat ornare occaecat aliquam condimentum.</p>
+        <a href="blog-post.html" class="card-link">Read more</a>
+        <a href="#" class="card-link card-link-share">Share</a>
+        {{ card_action() }}
+    </div>
+
+{% endmacro %}
+
+<!-- Card Action -->
+{% macro card_action() %}
+    
+    <a href="blog-post.html" class="card-link">Read more</a>
+    <a href="#" class="card-link card-link-share">Share</a>
+    <div class="card-social">
+        <a href="#">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-google-plus"></i>
+        </a>
+    </div>
+
 {% endmacro %}
