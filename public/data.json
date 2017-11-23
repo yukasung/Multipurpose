@@ -72,7 +72,7 @@
             "img": "assets/img/blog/blog_8-450x300.jpg"
         }
     ],
-    "portfolio": [{
+    "portfolios": [{
             "title": "Mus bibendum pellentesque massa",
             "img": "assets/img/portfolio/portfolio_1-440x300.jpg",
             "tag": "transition coporate"

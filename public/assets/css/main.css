@@ -771,6 +771,8 @@ input[type="submit"] {
   .card .card-footer {
     background-color: transparent; }
   .card img {
+    border-radius: 0; }
+  .card.bg-shadow img {
     border-radius: 2px 2px 0 0; }
   .card .card-img-left {
     border-bottom-left-radius: -webkit-calc(.25rem - 1px);
@@ -958,7 +960,7 @@ input[type="submit"] {
   height: 80px;
   border-radius: 100%;
   border: 5px solid #ffffff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(52, 152, 219, 0.8);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in; }
   .icon-video > * {
@@ -976,7 +978,7 @@ input[type="submit"] {
     margin-left: -25px;
     padding-left: 5px; }
   .icon-video:hover {
-    background: rgba(52, 152, 219, 0.8);
+    background: #3498db;
     width: 85px;
     height: 85px; }
 

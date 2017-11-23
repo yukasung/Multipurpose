@@ -16,7 +16,7 @@
 	height: 80px;
 	border-radius: 100%;
 	border: 5px solid #ffffff;
-	background: rgba(#ffffff, 0.2);
+	background: rgba($primary-color, 0.8);
 	transition: all .2s ease-in;
 	>*{
 		display: block;
@@ -34,7 +34,7 @@
 		padding-left: 5px;
 	}
 	&:hover{
-		background: rgba($primary-color, 0.8);
+		background: $primary-color;
 		width: 85px;
 		height: 85px;
 	}

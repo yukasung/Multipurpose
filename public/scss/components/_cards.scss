@@ -26,7 +26,12 @@
 		background-color: transparent;
 	}
 	img {
-		border-radius: 2px 2px 0 0;
+		border-radius: 0;
+	}
+	&.bg-shadow {
+		img {
+			border-radius: 2px 2px 0 0;
+		}
 	}
 	.card-img-left {
 		border-bottom-left-radius: calc(.25rem - 1px);

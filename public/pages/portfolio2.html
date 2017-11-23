@@ -1,5 +1,10 @@
-{% set page_title = "Detail Portfolio 4 Columns" %} {% extends "../templates/master.html" %} {% block content %} {% include "../templates/partials/page_title.html"
-%}
+{% set page_title = "Portfolio Grid" %} 
+{% set page_link2 = "Portfolio" %} 
+{% set page_active_link = "4 Columns" %} 
+{% extends "../templates/master.html" %} 
+{% block content %} 
+{% include "../templates/partials/page_title.html" %}
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
@@ -10,21 +15,9 @@
             <div class="portfolio isotope caption mt-6">
                 {% include "../templates/partials/portfolio_filters.html" %}
                 <div class="grid pt-3" data-isotope='{"layoutMode": "fitRows","itemSelector": ".grid-item" }'>
-                    {% set portfolio = portfolio.slice(0,8) %} {% for port in portfolio %}
+                    {% set portfolios = portfolios.slice(0,8) %} {% for portfolio in portfolios %}
                     <div class="grid-item mb-4 col-md-3 {{ port.tag }}">
-                        <figure class="figure mb-0">
-                            <a class="d-block" href="portfolio-post.html">
-                                <div class="overlay">
-                                    <div class="overlay-text">
-                                        <span>View Project</span>
-                                    </div>
-                                </div>
-                                <img src="{{ port.img }}" class="figure-img img-fluid mb-0" alt="">
-                            </a>
-                            <figcaption class="figure-caption">
-                                <a href="portfolio-post.html">{{ port.title }}</a>
-                            </figcaption>
-                        </figure>
+                        {{ macroPortfolios.portfolio(portfolio) }}
                     </div>
                     {% endfor %}
 
