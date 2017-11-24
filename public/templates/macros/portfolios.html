@@ -1,0 +1,27 @@
+
+<!-- Blog -->
+{% macro portfolio(portfolio, caption_css="") %}
+
+    <figure class="figure mb-0">
+        <a class="d-block" href="portfolio-post.html">
+            {{ card_overlay() }}
+            <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+        </a>
+        <figcaption class="figure-caption {{ caption_css }}">
+            <a href="portfolio-post.html">{{ portfolio.title }}</a>
+        </figcaption>
+    </figure>
+    
+{% endmacro %} 
+
+
+<!-- Card Overlay -->
+{% macro card_overlay() %}
+
+    <div class="overlay">
+        <div class="overlay-text">
+            <span>View Project</span>
+        </div>
+    </div>
+
+{% endmacro %}

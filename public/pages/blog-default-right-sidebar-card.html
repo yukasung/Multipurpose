@@ -10,15 +10,10 @@
         <div class="container py-7">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="card mb-4">
-                        {{ blogs.standard() }}
-                    </div>
-                    <div class="card mb-4">
-                        {{ blogs.owlCarousel() }}
-                    </div>
-                    <div class="card mb-4">
-                        {{ blogs.video() }}
-                    </div>
+                    {{ blogs.standard("bg-shadow mb-6","p-4") }}
+                    {{ blogs.owlCarousel("bg-shadow mb-6","p-4") }}
+                    {{ blogs.video("bg-shadow mb-6","p-4") }}
+                    {% include "../templates/partials/pagination.html" %}
                 </div>
                 <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
                     {% include "../templates/partials/sidebar.html" %}

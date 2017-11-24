@@ -1,0 +1,32 @@
+{% set page_title = "Portfolio Card" %} 
+{% set page_link2 = "Portfolio" %} 
+{% set page_active_link = "3 Columns" %} 
+{% extends "../templates/master.html" %} 
+{% block content %} 
+{% include "../templates/partials/page_title.html"%} 
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <p class="lead text-center">Curabitur porta nam tellus
+                <em>viverra</em> lectus. Mauris dui pariatur felis sunt. Excepteur cubilia mollit
+                <em>pharetra</em> hendrerit. Blandit integer porta eget ipsum. Ullamco etiam
+                <em>ridiculus</em> arcu nec magna.</p>
+            <div class="portfolio isotope caption mt-6">
+                {% include "../templates/partials/portfolio_filters.html" %}
+                <div class="grid pt-3" data-isotope='{"layoutMode": "fitRows","itemSelector": ".grid-item" }'>
+                    {% set portfolios = portfolios.slice(0,6) %} {% for portfolio in portfolios %}
+                    <div class="grid-item mb-4 col-md-4 {{ portfolio.tag }}">
+                        <div class="card bg-shadow">
+                            {{ macroPortfolios.portfolio(portfolio,"px-4 py-3 mt-0") }}
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
