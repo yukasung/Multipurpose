@@ -3,13 +3,13 @@
 {% set page_link2 = "Single" %} 
 {% extends "../templates/master.html" %} 
 {% block content %} {% include "../templates/partials/page_title.html" %} 
-{% import '../templates/macros/posts.html' as posts %}
+{% import '../templates/macros/posts.html' as macroPosts %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
                 <div class="col-md-8">
-                    {{ posts.post() }}
+                    {{ macroPosts.card() }}
                 </div>
                 <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
                     {% include "../templates/partials/sidebar.html" %}

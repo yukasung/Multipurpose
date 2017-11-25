@@ -1263,13 +1263,25 @@ a .overlay {
   cursor: pointer;
   position: relative;
   color: #3498db; }
-  .portfolio .filters-button-group ul li a.is-checked:after {
+  .portfolio .filters-button-group ul li a:hover, .portfolio .filters-button-group ul li a.is-checked {
+    color: #3498db; }
+    .portfolio .filters-button-group ul li a:hover:before, .portfolio .filters-button-group ul li a.is-checked:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1); }
+  .portfolio .filters-button-group ul li a:before {
     content: "";
-    width: 100%;
-    bottom: -2px;
-    left: 0;
     position: absolute;
-    border-bottom: 2px solid #3498db; }
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE > SHOP

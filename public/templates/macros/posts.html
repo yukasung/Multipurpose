@@ -1,4 +1,5 @@
-{% macro post(card_css="", card_body_css="py-4 px-0") %}
+<!-- Default -->
+{% macro default(card_css="", card_body_css="py-4 px-0") %}
 
     <div class="card {{ card_css }}">
         <img src="assets/img/blog/blog_1-770x513.jpg" class="img-fluid" alt="">
@@ -260,4 +261,9 @@
         </div>
     </div>
 
+{% endmacro %}
+
+<!-- Card -->
+{% macro card() %}
+    {{ default("bg-shadow","p-4") }}
 {% endmacro %}

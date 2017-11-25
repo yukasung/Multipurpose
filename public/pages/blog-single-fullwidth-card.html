@@ -4,13 +4,13 @@
 {% extends "../templates/master.html" %} 
 {% block content %} 
 {% include "../templates/partials/page_title.html" %} 
-{% import '../templates/macros/posts.html' as posts %}
+{% import '../templates/macros/posts.html' as macroPosts %} 
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    {{ posts.post("bg-shadow","p-4") }}
+                    {{ macroPosts.card() }}
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 
-<!-- Blog -->
-{% macro portfolio(portfolio, caption_css="") %}
+<!-- Default -->
+{% macro default(portfolio, caption_css="") %}
 
     <figure class="figure mb-0">
         <a class="d-block" href="portfolio-post.html">
@@ -14,6 +14,14 @@
     
 {% endmacro %} 
 
+<!-- Card -->
+{% macro card(portfolio) %}
+
+    <div class="card bg-shadow">
+        {{ default(portfolio,"px-4 py-3 mt-0") }}        
+    </div>
+
+{% endmacro %} 
 
 <!-- Card Overlay -->
 {% macro card_overlay() %}

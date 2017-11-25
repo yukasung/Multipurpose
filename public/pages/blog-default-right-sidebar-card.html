@@ -4,15 +4,15 @@
 {% extends "../templates/master.html" %} 
 {% block content %} 
 {% include "../templates/partials/page_title.html" %} 
-{% import '../templates/macros/blogs.html' as blogs %}
+{% import '../templates/macros/blogs.html' as macroBlogs %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
                 <div class="col-md-8">
-                    {{ blogs.standard("bg-shadow mb-6","p-4") }}
-                    {{ blogs.owlCarousel("bg-shadow mb-6","p-4") }}
-                    {{ blogs.video("bg-shadow mb-6","p-4") }}
+                    {{ macroBlogs.standard("bg-shadow mb-6","p-4") }}
+                    {{ macroBlogs.owlCarousel("bg-shadow mb-6","p-4") }}
+                    {{ macroBlogs.video("bg-shadow mb-6","p-4") }}
                     {% include "../templates/partials/pagination.html" %}
                 </div>
                 <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">

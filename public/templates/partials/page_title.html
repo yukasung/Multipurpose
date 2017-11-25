@@ -10,10 +10,14 @@
                         <li class="breadcrumb-item">
                             <a href="/">Home</a>
                         </li>
+                        {% if page_link2 %}
                         <li class="breadcrumb-item">
                             <a href="#">{{ page_link2 }}</a>
                         </li>
+                        {% endif %}
+                        {% if page_active_link %}
                         <li class="breadcrumb-item active" aria-current="page">{{ page_active_link }}</li>
+                        {% endif %}
                     </ol>
                 </nav>
             </div>

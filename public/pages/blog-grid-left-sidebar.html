@@ -1,6 +1,6 @@
 {% set page_title = "Blog Grid"%} {% set page_active_link = "Left Sitebar" %} {% set page_link2 = "Blog" %} {% extends "../templates/master.html"
 %} {% block content %} {% include "../templates/partials/page_title.html" %} {% import '../templates/macros/blogs.html' as
-blogs %}
+macroBlogs %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
@@ -9,7 +9,7 @@ blogs %}
                     <div class="row">
                         {% set posts = posts.slice(0,8) %} {% for post in posts %}
                         <div class="col-md-6">
-                            {{ blogs.blog(post) }}
+                            {{ macroBlogs.default(post) }}
                         </div>
                         {% endfor %}
                     </div>

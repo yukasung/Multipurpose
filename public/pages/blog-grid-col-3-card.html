@@ -4,7 +4,7 @@
 {% extends "../templates/master.html"%} 
 {% block content %} 
 {% include "../templates/partials/page_title.html" %} 
-{% import '../templates/macros/blogs.html' as blogs %}
+{% import '../templates/macros/blogs.html' as macroBlogs %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
@@ -13,7 +13,7 @@
                     <div class="row">
                         {% set posts = posts.slice(0,9) %} {% for post in posts %}
                         <div class="col-md-4">
-                            {{ blogs.card(post) }}
+                            {{ macroBlogs.card(post) }}
                         </div>
                         {% endfor %}
                     </div>
