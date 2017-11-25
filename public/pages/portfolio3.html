@@ -18,9 +18,7 @@
                 <div class="grid pt-3" data-isotope='{"layoutMode": "fitRows","itemSelector": ".grid-item" }'>
                     {% set portfolios = portfolios.slice(0,6) %} {% for portfolio in portfolios %}
                     <div class="grid-item mb-4 col-md-4 {{ portfolio.tag }}">
-                        <div class="card bg-shadow">
-                            {{ macroPortfolios.portfolio(portfolio,"px-4 py-3 mt-0") }}
-                        </div>
+                        {{ macroPortfolios.portfolio(portfolio,"px-4 py-3 mt-0") }}
                     </div>
                     {% endfor %}
 
