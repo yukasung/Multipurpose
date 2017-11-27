@@ -257,7 +257,7 @@ ul.list-md li {
       color: #3498db; }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   overflow: hidden; }
   .section-title h2 {
     font-size: 40px;
@@ -846,6 +846,12 @@ input[type="submit"] {
   color: #fff; }
   .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background-color: #3498db; }
+
+.btn-white {
+  background-color: #ffffff;
+  color: #333333; }
+  .btn-white:hover, .btn-white:active, .btn-white:focus {
+    background-color: #ffffff; }
 
 .input-group-btn .btn {
   padding-left: 15px;
