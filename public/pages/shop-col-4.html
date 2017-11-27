@@ -1,0 +1,27 @@
+{% set page_title = "Shop Grid" %} 
+{% set page_link2 = "Shop" %} 
+{% set page_active_link = "4 Columns" %} 
+{% extends "../templates/master.html" %} 
+{% block content %} 
+{% include "../templates/partials/page_title.html" %}
+{% import '../templates/macros/shops.html' as macroShops %}
+{% import '../templates/macros/paginations.html' as macroPaginations %}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        {% set products = products.slice(0,8) %} {% for product in products %}
+                        <div class="col-md-3">
+                            {{ macroShops.default(product) }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {{ macroPaginations.default() }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

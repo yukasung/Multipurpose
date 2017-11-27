@@ -1,5 +1,10 @@
-{% set page_title = "Product Detail" %} {% extends "../templates/master.html" %} {% block content %} {% include "../templates/partials/page_title.html"
-%}
+{% set page_title = "Product Detail" %} 
+{% set page_link2 = "Shop" %} 
+{% set page_active_link = "Single Product" %} 
+{% extends "../templates/master.html" %} 
+{% block content %} 
+{% include "../templates/partials/page_title.html" %}
+{% import '../templates/macros/shops.html' as macroShops %}
 <div id="content">
     <div class="bg-white">
         <div class="container product py-7">
@@ -423,35 +428,7 @@
             </div>
             <div class="owl-col-4 owl-carousel owl-theme owl-loaded mt-6">
                 {% set products = products.slice(0,9) %} {% for product in products %}
-                <div class="card">
-                    <a href="product-detail.html">
-                        {% if product.sale %}
-                        <span class="shop-item-sale">sale</span>
-                        {% endif %}
-                        <img class="card-img-top img-fluid" src="{{ product.img }}" alt="">
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <span>Product Detail</span>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="card-body px-0">
-                        <h4 class="card-title">
-                            <a href="product-detail.html">{{ product.name }}</a>
-                        </h4>
-                        <span class="font-weight-bold">
-                            <del class="op-5">{{ product.price }}</del>
-                            <ins class="text-decoration-none">{{ product.discount_price }}</ins>
-                        </span>
-                        <div class="float-right">
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star text-primary"></i>
-                            <i class="fa fa-star-half-o text-primary"></i>
-                        </div>
-                    </div>
-                </div>
+                    {{ macroShops.default(product,"") }}
                 {% endfor %}
             </div>
         </div>

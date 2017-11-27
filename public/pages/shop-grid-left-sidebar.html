@@ -1,0 +1,30 @@
+{% set page_title = "Shop Grid" %} 
+{% set page_link2 = "Shop" %} 
+{% set page_active_link = "Left Sidebar" %} 
+{% extends "../templates/master.html" %} 
+{% block content %} 
+{% include "../templates/partials/page_title.html" %}
+{% import '../templates/macros/shops.html' as macroShops %}
+{% import '../templates/macros/paginations.html' as macroPaginations %}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-9 order-1 order-md-2">
+                    <div class="row">
+                        {% set products = products.slice(0,9) %} {% for product in products %}
+                        <div class="col-md-4">
+                            {{ macroShops.default(product) }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {{ macroPaginations.default() }}
+                </div>
+                <aside class="col-md-3 order-2 order-md-1 sidebar pl-md-4 mt-5 mt-md-0">
+                    {% include "../templates/partials/sidebar_shop.html" %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

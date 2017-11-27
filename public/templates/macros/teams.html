@@ -1,0 +1,20 @@
+
+<!-- Default -->
+{% macro default(team) %}
+
+    <div class="card team img-overlay mb-4">
+        <a href="team-member.html">
+            <img class="card-img img-fluid" src="{{ team.img }}" alt="">
+            <div class="overlay">
+                <div class="overlay-text">
+                    <span>View Profile</span>
+                </div>
+            </div>
+            <div class="card-img-overlay text-white">
+                <h4 class="card-title mb-0">{{ team.name }}</h4>
+                <p class="card-text">{{ team.position }}</p>
+            </div>
+        </a>
+    </div>
+
+{% endmacro %} 
