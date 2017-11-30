@@ -2,13 +2,13 @@
 <!-- Default -->
 {% macro default(post, card_css="mb-4", card_body_css="py-4 px-0") %}
     <div class="card {{ card_css }}">
-        <a href="blog-post.html">
+        <a href="blog-single-right-sidebar.html">
             <img src="{{ post.img }}" alt="" class="img-fluid">
             {{ card_overlay() }}
         </a>
         <div class="card-body {{ card_body_css }}">
             <h3 class="card-title">
-                <a href="blog-post.html">{{ post.title }}</a>
+                <a href="blog-single-right-sidebar.html">{{ post.title }}</a>
             </h3>
             <p class="meta">
                 <span>{{ post.date }}</span>
@@ -35,13 +35,13 @@
 {% macro standard(card_css="mb-4",card_bady_css="py-4 px-0") %}
     
     <div class="card {{ card_css }}">
-        <a href="blog-post.html">
+        <a href="blog-single-right-sidebar.html">
             <img src="assets/img/blog/blog_4-770x513.jpg" alt="" class="card-img-top img-fluid">
             {{ card_overlay() }}
         </a>
         <div class="card-body {{ card_bady_css }}">
             <h3 class="card-title">
-                <a href="blog-post.html">The Important Standard Post Format</a>
+                <a href="blog-single-right-sidebar.html">The Important Standard Post Format</a>
             </h3>
             <p class="meta">
                 <span>09 May 2017</span>
@@ -78,7 +78,7 @@
         </div>
         <div class="card-body {{ card_bady_css }}">
             <h3 class="card-title">
-                <a href="blog-post.html">Photo with Slider Post Format</a>
+                <a href="blog-single-right-sidebar.html">Photo with Slider Post Format</a>
             </h3>
             <p class="meta">
                 <span>25 Jan 2017</span>
@@ -112,7 +112,7 @@
         </div>
         <div class="card-body {{ card_bady_css }}">
             <h3 class="card-title">
-                <a href="blog-post.html">Video Post Format</a>
+                <a href="blog-single-right-sidebar.html">Video Post Format</a>
             </h3>
             <p class="meta">
                 <span>09 May 2017</span>
@@ -135,7 +135,7 @@
 <!-- Card Action -->
 {% macro card_action() %}
     
-    <a href="blog-post.html" class="card-link">Read more</a>
+    <a href="blog-single-right-sidebar.html" class="card-link">Read more</a>
     <a href="#" class="card-link card-link-share">Share</a>
     <div class="card-social">
         <a href="#">

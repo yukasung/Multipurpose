@@ -1,5 +1,6 @@
-{% set page_title = "Team I" %} {% extends "../templates/master.html" %} {% block content %} {% include "../templates/partials/page_title.html"
-%}
+{% set page_title = "Our Team" %} {% set page_link2 = "Pages" %} {% set page_active_link = "Team" %} {% extends "../templates/master.html"
+%} {% block content %} {% include "../templates/partials/page_title.html" %} {% import '../templates/macros/shops.html' as
+macroShops %} {% import '../templates/macros/paginations.html' as macroPaginations %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
@@ -131,6 +132,19 @@
                             </div>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-9 text-white">
+                    <h3>Join the people behind our success.</h3>
+                    <p>Senectus euismod sint sed urna vel molestie porttitor porta pulvinar himenaeos sociosqu ex blandit vehicula aptent.</p>
+                </div>
+                <div class="col-md-3 my-auto">
+                    <a href="#" class="btn btn-white text-uppercase float-right">Apply Now</a>
                 </div>
             </div>
         </div>
