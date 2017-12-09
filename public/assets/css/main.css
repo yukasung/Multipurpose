@@ -686,8 +686,8 @@ input[type="submit"] {
       display: block;
       border-radius: 100%;
       border: 2px solid #3498db;
-      width: 11px;
-      height: 11px;
+      width: 13px;
+      height: 13px;
       -webkit-transition: all 150ms ease-in;
       transition: all 150ms ease-in; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -1232,11 +1232,18 @@ a .overlay {
 .w-5 {
   width: 5% !important; }
 
+.w-60px {
+  width: 60px !important; }
+
 .w-auto {
   width: auto !important; }
 
 .font-size-normal {
   font-size: 16px; }
+
+.font-normal {
+  font-size: 16px;
+  font-style: normal; }
 
 /*-----------------------------------------------------------------------------------*/
 /* 	PAGE > BLOG

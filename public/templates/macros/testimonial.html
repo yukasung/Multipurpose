@@ -1,0 +1,29 @@
+<!-- Layout 1 -->
+{% macro layout1(testimonial) %}
+
+    <div class="media">
+        <i class="fa fa-quote-left fa-2x text-primary"></i>
+        <div class="media-body ml-4">
+            {{ testimonial.desc }}
+            <div class="d-block mt-4">
+                <img src="{{ testimonial.img }}" alt="Jimi Bloggs" class="d-inline rounded-circle bg-shadow mr-2" style="max-width: 90px;">
+                <div class="d-inline-block align-middle">
+                    <span>{{ testimonial.name }}
+                        <small class="mt-0">{{ testimonial.position }}</small>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endmacro %} 
+
+<!-- Layout 2 -->
+{% macro layout2(testimonial) %}
+
+    <img src="{{ testimonial.img }}" class="rounded-circle d-inline w-auto">
+    <p class="lead mt-4">{{ testimonial.desc }}</p>
+    <h4 class="mt-4">{{ testimonial.name }}</h4>
+    <p class="mb-2">{{ testimonial.position }}</p>
+
+{% endmacro %} 

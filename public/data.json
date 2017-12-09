@@ -196,6 +196,48 @@
             "position": "Web Programmer",
             "img": "assets/img/team/team_1.jpg"
         }
-    ]
+    ],
+    "testimonials": [{
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Marketing Specialist",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/author/a1-150x150.jpg"
+    }
+]
 
 }
