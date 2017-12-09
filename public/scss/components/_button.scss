@@ -49,6 +49,16 @@
     }
 }
 
+.btn-black {
+    background-color: #000000;
+    color: #ffffff;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #ffffff;
+    }
+}
+
 .input-group-btn {
     .btn {
         padding-left: 15px;

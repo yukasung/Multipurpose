@@ -12,7 +12,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #333333; }
 
-body, li, address {
+body,
+li,
+address {
   line-height: 28px; }
 
 blockquote {
@@ -113,11 +115,13 @@ h4 small {
 dl {
   line-height: 28px; }
 
-.font-weight-normal {
-  font-weight: normal; }
-
 .list-border-bottom li:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.lead {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0; }
 
 .header-top {
   background-color: #3498db;
@@ -256,47 +260,6 @@ ul.list-md li {
     .meta a:hover {
       color: #3498db; }
 
-.section-title {
-  margin-bottom: 20px;
-  overflow: hidden; }
-  .section-title h2 {
-    font-size: 40px;
-    font-weight: normal;
-    padding: 0 20px;
-    margin: 0;
-    overflow: hidden; }
-    @media (max-width: 767px) {
-      .section-title h2 {
-        padding: 0; } }
-    .section-title h2:before {
-      margin-left: -100%;
-      margin-right: 20px; }
-    .section-title h2:after {
-      margin-right: -100%;
-      margin-left: 20px; }
-    .section-title h2:before, .section-title h2:after {
-      content: '';
-      width: 100%;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.09);
-      display: inline-block;
-      vertical-align: middle; }
-      @media (max-width: 767px) {
-        .section-title h2:before, .section-title h2:after {
-          display: none; } }
-    .section-title h2 + .lead {
-      margin-top: 15px;
-      margin-bottom: 10px; }
-  .section-title.text-center h2:before, .section-title.text-center h2:after {
-    width: 100px; }
-  .section-title.no-line h2 {
-    padding: 0; }
-    .section-title.no-line h2:before, .section-title.no-line h2:after {
-      display: none; }
-  .section-title .lead {
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0; }
-
 .client {
   padding-top: 0px; }
   .client .client-item {
@@ -329,6 +292,11 @@ input[type="submit"] {
     margin-right: 10px; }
   .master-social .list-inline-item:not(:last-child) {
     margin-right: 40px; }
+
+.bg-image-center {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > SIDEBAR
@@ -426,6 +394,9 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > NAVBAR
     /*-----------------------------------------------------------------------------------*/
+.navbar .navbar-brand {
+  padding: 14px 0; }
+
 .navbar .navbar-nav li {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 15px; }
@@ -853,6 +824,12 @@ input[type="submit"] {
   .btn-white:hover, .btn-white:active, .btn-white:focus {
     background-color: #ffffff; }
 
+.btn-black {
+  background-color: #000000;
+  color: #ffffff; }
+  .btn-black:hover, .btn-black:active, .btn-black:focus {
+    background-color: #ffffff; }
+
 .input-group-btn .btn {
   padding-left: 15px;
   padding-right: 15px; }
@@ -988,6 +965,18 @@ input[type="submit"] {
     width: 85px;
     height: 85px; }
 
+.icon-circle-md {
+  border-radius: 100%;
+  display: table-cell;
+  font-size: 30px;
+  height: 85px;
+  width: 85px;
+  padding: 30px;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  vertical-align: middle; }
+
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENT > IMAGE
 /*-----------------------------------------------------------------------------------*/
@@ -1062,6 +1051,15 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENT > TABLE
 /*-----------------------------------------------------------------------------------*/
+hr.hr-primary {
+  border-top-color: #3498db !important; }
+
+hr.hr-white {
+  border-top-color: #ffffff !important; }
+
+hr.hr-lg {
+  border-top-width: 3px; }
+
 hr.line-dotted {
   border-top: 1px dotted #d4dde4; }
 
@@ -1231,8 +1229,14 @@ a .overlay {
 
 /*	UTILITIES > SIZING
 /*-----------------------------------------------------------------------------------*/
+.w-5 {
+  width: 5% !important; }
+
 .w-auto {
   width: auto !important; }
+
+.font-size-normal {
+  font-size: 16px; }
 
 /*-----------------------------------------------------------------------------------*/
 /* 	PAGE > BLOG

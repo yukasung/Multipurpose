@@ -1,4 +1,14 @@
 hr{
+	&.hr-primary {
+		border-top-color: $primary-color !important;
+	}
+	&.hr-white{
+		border-top-color: #ffffff !important;
+	}
+	&.hr-lg{
+		border-top-width: 3px;
+	}
+
 	&.line-dotted{
 		border-top: 1px dotted #d4dde4;
 	}

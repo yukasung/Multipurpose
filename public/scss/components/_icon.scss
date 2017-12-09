@@ -39,3 +39,15 @@
 		height: 85px;
 	}
 }
+
+.icon-circle-md{
+	border-radius: 100%;
+	display: table-cell;
+	font-size: 30px;
+	height: 85px;
+	width: 85px;
+	padding: 30px;
+	text-align: center;
+	transition: .5s;
+	vertical-align: middle;
+}
