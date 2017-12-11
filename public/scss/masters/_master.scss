@@ -21,7 +21,7 @@
 
 .bg-inverse .meta,
 .bg-inverse .meta a {
-    color: #a1a1a1;
+    color: #b9b9b9;
 }
 
 .bg-transparent {
@@ -43,7 +43,7 @@ address {
 .tags {
     display: inline-block;
     margin: 0 0 10px 10px;
-    a{
+    a {
         font-size: 15px;
         font-weight: normal;
     }
@@ -78,26 +78,27 @@ ul {
 
 .meta {
     font-size: 13px;
-    color: #707070;
-    font-weight: normal;
+    color: #b9b9b9;
     margin-bottom: 12px;
     span {
-        &:before {
-            content: "|";
-            padding: 0 5px;
+        &::after {
+            content: "/";
+            font-size: 10px;
+            vertical-align: 1px;
+            padding: 0 10px 0 10px;
         }
-        &:first-child {
-            &:before {
+        &:last-child {
+            &::after {
                 display: none;
             }
         }
-    }
-    a {
-        color: #707070;
-        &:hover {
-            color: $primary-color;
+        a{
+            color: inherit;
+            &:hover{
+                color: $primary-color;
+            }
         }
-    }
+    } 
 }
 
 .client {

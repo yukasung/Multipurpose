@@ -2,22 +2,22 @@
     "posts": [{
             "title": "Orci per consectetur vulputate",
             "date": "25 Jan 2017",
-            "category": "News",
+            "category": "Design",
             "comment": "15",
             "desc": "Integer convallis etiam magnis eleifend aenean qui convallis commodo sociosqu",
             "img": "assets/img/blog/blog_1-450x300.jpg"
         },
         {
             "title": "Molestie libero vitae etiam",
-            "date": "25 Jan 2017",
-            "category": "News",
+            "date": "26 Jan 2017",
+            "category": "Industry News",
             "comment": "15",
             "desc": "Himenaeos veniam blandit sem dolore quam nisl ligula purus tortor mus",
             "img": "assets/img/blog/blog_2-450x300.jpg"
         },
         {
             "title": "Himenaeos occaecat viverra",
-            "date": "25 Jan 2017",
+            "date": "27 Jan 2017",
             "category": "News",
             "comment": "15",
             "desc": "Pede sagittis sapien mollit minim sed Nascetur penatibus tempor cubilia vitae",
@@ -25,7 +25,7 @@
         },
         {
             "title": "Conubia exercitation nullam",
-            "date": "25 Jan 2017",
+            "date": "28 Jan 2017",
             "category": "News",
             "comment": "15",
             "desc": "Cum posuere vulputate primis montes nec sem ante tortor neque nisi egestas",
@@ -33,7 +33,7 @@
         },
         {
             "title": "Dignissim nibh phasellus",
-            "date": "25 Jan 2017",
+            "date": "29 Jan 2017",
             "category": "News",
             "comment": "15",
             "desc": "Mattis class sollicitudin conubia dolor Rutrum dolor ante imperdiet eleifend",

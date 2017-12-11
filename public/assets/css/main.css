@@ -209,7 +209,7 @@ dl {
 
 .bg-inverse .meta,
 .bg-inverse .meta a {
-  color: #a1a1a1; }
+  color: #b9b9b9; }
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -247,17 +247,18 @@ ul.list-md li {
 
 .meta {
   font-size: 13px;
-  color: #707070;
-  font-weight: normal;
+  color: #b9b9b9;
   margin-bottom: 12px; }
-  .meta span:before {
-    content: "|";
-    padding: 0 5px; }
-  .meta span:first-child:before {
+  .meta span::after {
+    content: "/";
+    font-size: 10px;
+    vertical-align: 1px;
+    padding: 0 10px 0 10px; }
+  .meta span:last-child::after {
     display: none; }
-  .meta a {
-    color: #707070; }
-    .meta a:hover {
+  .meta span a {
+    color: inherit; }
+    .meta span a:hover {
       color: #3498db; }
 
 .client {
@@ -721,6 +722,10 @@ input[type="submit"] {
     color: rgba(255, 255, 255, 0.7);
     -webkit-transition: color 200ms ease-in;
     transition: color 200ms ease-in; }
+
+.owl-carousel .owl-stage-outer {
+  margin: -5px;
+  padding: 5px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > CARD
@@ -1237,6 +1242,9 @@ a .overlay {
 
 .w-auto {
   width: auto !important; }
+
+.w-max-90px {
+  max-width: 90px !important; }
 
 .font-size-normal {
   font-size: 16px; }
