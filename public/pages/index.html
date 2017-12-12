@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 bg-image-center" style="background-image:url(assets/img/art/1000x530x1.jpg);height: 475px;"></div>
                 <div class="col-12 col-md-6 my-auto">
-                    <div class="d-block text-white px-4">
+                    <div class="d-block text-white px-4 py-5">
                         <h2 class="text-uppercase">Who We are</h2>
                         <hr class="hr-lg mt-4 mb-4 w-60px bg-shadow hr-white m-0">
                         <p class="lead mb-3">Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.</p>
@@ -183,12 +183,12 @@
     <div class="bg-white">
         <div class="container py-7">
             <h2 class="text-uppercase text-center">Our Recent News</h2>
-            <hr class="hr-lg mt-4 mb-4 w-5 bg-shadow hr-primary">
+            <hr class="hr-lg mt-4 mb-4 w-60px bg-shadow hr-primary">
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="owl-col-3 owl-carousel owl-theme owl-loaded">
                         {% set posts = posts.slice(0,9) %} {% for post in posts %}
-                        <div class="item">
+                        <div class="item px-1">
                             {{ macroBlogs.card(post) }}
                         </div>
                         {% endfor %}

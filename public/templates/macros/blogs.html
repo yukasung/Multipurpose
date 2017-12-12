@@ -16,7 +16,11 @@
 {% endmacro %}
 
 <!-- Card -->
-{% macro card(post) %} {{ default(post,"bg-shadow mb-4","p-4") }} {% endmacro %}
+{% macro card(post) %}
+<!-- - -->
+{{ default(post,"bg-shadow mb-4","p-4") }}
+<!-- - -->
+{% endmacro %}
 
 
 <!-- Standard -->
@@ -98,29 +102,17 @@
 
 <div class="meta">
     <span class="meta-date">
-        {% if post.date %}
-            {{ post.date }}
-        {% else %}
-            29 Jan 2017
-        {% endif %}
+        {% if post.date %} {{ post.date }} {% else %} 29 Jan 2017 {% endif %}
     </span>
     <span clsss="meta-category">
         <a href="#">
-            {% if post.category %}
-                {{ post.category }}
-            {% else %}
-                Photography
-            {% endif %}
+            {% if post.category %} {{ post.category }} {% else %} Photography {% endif %}
         </a>
     </span>
     <span class="meta-comment">
         <a href="#">
             <i class="far fa-comment mr-1"></i>
-            {% if post.comment %}
-                {{ post.comment }}
-            {% else %}
-                10
-            {% endif %}
+            {% if post.comment %} {{ post.comment }} {% else %} 10 {% endif %}
         </a>
     </span>
 </div>
