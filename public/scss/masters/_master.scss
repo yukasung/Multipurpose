@@ -82,7 +82,7 @@ ul {
     margin-bottom: 12px;
     span {
         &::after {
-            content: "/";
+            content: "|";
             font-size: 10px;
             vertical-align: 1px;
             padding: 0 10px 0 10px;

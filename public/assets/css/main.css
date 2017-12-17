@@ -250,7 +250,7 @@ ul.list-md li {
   color: #b9b9b9;
   margin-bottom: 12px; }
   .meta span::after {
-    content: "/";
+    content: "|";
     font-size: 10px;
     vertical-align: 1px;
     padding: 0 10px 0 10px; }
