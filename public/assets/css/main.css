@@ -9,8 +9,7 @@
 /*-----------------------------------------------------------------------------------*/
 html,
 body {
-  font-family: "Roboto", sans-serif;
-  color: #333333; }
+  font-family: "Roboto", sans-serif; }
 
 body,
 li,
@@ -57,7 +56,7 @@ h5,
 h6 {
   font-family: inherit;
   font-weight: normal;
-  line-height: 1.1; }
+  line-height: 1.4; }
 
 .h1 small,
 .h2 small,
@@ -246,8 +245,8 @@ ul.list-md li {
   padding-bottom: 6px; }
 
 .meta {
-  font-size: 13px;
-  color: #b9b9b9;
+  font-size: 14px;
+  color: #888888;
   margin-bottom: 12px; }
   .meta span::after {
     content: "|";
@@ -316,7 +315,7 @@ input[type="submit"] {
     margin-bottom: 30px; }
 
 .blog-commnets h4 a {
-  color: #333333; }
+  color: #4d4d4d; }
   .blog-commnets h4 a:hover {
     color: #3498db; }
 
@@ -331,7 +330,7 @@ input[type="submit"] {
   margin: 0; }
 
 .widget .post-list .post-list-title {
-  color: #333333; }
+  color: #4d4d4d; }
   .widget .post-list .post-list-title:hover {
     color: #3498db; }
 
@@ -423,7 +422,7 @@ input[type="submit"] {
   .navbar .dropdown-menu li a {
     background: none;
     border: none;
-    color: #333333;
+    color: #4d4d4d;
     text-transform: uppercase;
     padding: 15px 0;
     line-height: 1; }
@@ -485,7 +484,7 @@ input[type="submit"] {
       text-transform: uppercase;
       padding: 0 25px;
       outline: none;
-      color: #333333; }
+      color: #4d4d4d; }
       @media (max-width: 991px) {
         .navbar .navbar-nav .nav-item .nav-link {
           line-height: 20px !important;
@@ -609,7 +608,7 @@ input[type="submit"] {
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       padding: 0 0 0 15px !important;
-      color: #333333; }
+      color: #4d4d4d; }
       .nav-vertical ul li a:hover {
         color: #3498db; }
       .nav-vertical ul li a i {
@@ -646,7 +645,7 @@ input[type="submit"] {
     padding-top: 15px;
     padding-bottom: 15px;
     border: none;
-    color: #333333; }
+    color: #4d4d4d; }
     .nav.nav-tabs .nav-link.active {
       background-color: transparent;
       border-color: transparent transparent transparent;
@@ -747,12 +746,16 @@ input[type="submit"] {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; }
     .owl-carousel .owl-item .item .card {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 auto;
           -ms-flex: 1 0 auto;
               flex: 1 0 auto; }
+    .owl-carousel .owl-item .item img {
+      margin: auto; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > CARD
@@ -766,7 +769,7 @@ input[type="submit"] {
     font-weight: normal;
     line-height: 28px; }
     .card .card-title a {
-      color: #333333; }
+      color: #000000; }
       .card .card-title a:hover {
         color: #3498db; }
   .card .card-header {
@@ -925,7 +928,7 @@ input[type="submit"] {
       background: #3498db;
       opacity: 1; }
     .pagination .page-item .page-link {
-      color: #333333;
+      color: #4d4d4d;
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -1102,7 +1105,7 @@ hr.line-dotted {
   margin-top: 5px; }
 
 .accordion .card .card-header a {
-  color: #333333;
+  color: #4d4d4d;
   padding-left: 40px; }
 
 .accordion .card-header a.collapsed span.accordion-icons {
@@ -1175,6 +1178,12 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 .text-primary {
   color: #3498db !important; }
+
+.text-muted {
+  color: #4d4d4d !important; }
+
+.text-black {
+  color: #000000 !important; }
 
 .bg-primary {
   background-color: #3498db !important; }
@@ -1302,7 +1311,7 @@ a .overlay {
     .portfolio .grid .grid-item {
       width: 50%; } }
   .portfolio .grid .grid-item figure .figure-caption a {
-    color: #333333; }
+    color: #4d4d4d; }
     .portfolio .grid .grid-item figure .figure-caption a:hover {
       color: #3498db; }
 

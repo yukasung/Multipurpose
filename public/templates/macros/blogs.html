@@ -101,7 +101,10 @@
 {% macro card_meta(post) %}
 
 <div class="meta">
-    <span class="meta-date">
+    <span>
+            By Admin on Dec 12, 2017
+    </span>
+    <!-- <span class="meta-date">
         {% if post.date %} {{ post.date }} {% else %} 29 Jan 2017 {% endif %}
     </span>
     <span clsss="meta-category">
@@ -114,7 +117,7 @@
             <i class="far fa-comment mr-1"></i>
             {% if post.comment %} {{ post.comment }} {% else %} 10 {% endif %}
         </a>
-    </span>
+    </span> -->
 </div>
 
 {% endmacro %}
