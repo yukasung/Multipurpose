@@ -5,7 +5,7 @@
             "category": "Design",
             "comment": "15",
             "desc": "Integer convallis etiam magnis eleifend aenean convallis commodo sociosqu",
-            "img": "assets/img/blog/blog_1-450x300.jpg"
+            "img": "assets/img/blog/blog-1.jpg"
         },
         {
             "title": "Molestie libero vitae etiam",
@@ -13,7 +13,7 @@
             "category": "Industry News",
             "comment": "15",
             "desc": "Himenaeos veniam blandit sem dolore quam nisl ligula purus tortor",
-            "img": "assets/img/blog/blog_2-450x300.jpg"
+            "img": "assets/img/blog/blog-2.jpg"
         },
         {
             "title": "Himenaeos occaecat viverra",
@@ -21,7 +21,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Pede sagittis sapien mollit minim Nascetur penatibus tempor cubilia",
-            "img": "assets/img/blog/blog_3-450x300.jpg"
+            "img": "assets/img/blog/blog-3.jpg"
         },
         {
             "title": "Conubia exercitation nullam",
@@ -29,7 +29,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Cum posuere vulputate primis montes nec sem ante tortor neque nisi egestas",
-            "img": "assets/img/blog/blog_4-450x300.jpg"
+            "img": "assets/img/blog/blog-4.jpg"
         },
         {
             "title": "Dignissim nibh phasellus",
@@ -37,7 +37,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Mattis class sollicitudin conubia dolor Rutrum dolor ante imperdiet eleifend",
-            "img": "assets/img/blog/blog_5-450x300.jpg"
+            "img": "assets/img/blog/blog-5.jpg"
         },
         {
             "title": "Tellus ullamco ligula vehicula",
@@ -45,7 +45,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Varius penatibus convallis aliqua commodo lobortis aliqua vestibulum",
-            "img": "assets/img/blog/blog_6-450x300.jpg"
+            "img": "assets/img/blog/blog-6.jpg"
         },
         {
             "title": "Torquent quisque facilisis",
@@ -53,7 +53,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Adipiscing integer aliquet gravida egestas mauris pellentesque cubilia",
-            "img": "assets/img/blog/blog_7-450x300.jpg"
+            "img": "assets/img/blog/blog-7.jpg"
         },
         {
             "title": "Senectus bibendum aliquet",
@@ -61,7 +61,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Bibendum venenatis excepteur cubilia neque Ad semper ante felis luctus",
-            "img": "assets/img/blog/blog_8-450x300.jpg"
+            "img": "assets/img/blog/blog-8.jpg"
         },
         {
             "title": "Senectus bibendum aliquet",
@@ -69,7 +69,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Bibendum venenatis excepteur cubilia neque Ad semper ante felis luctus",
-            "img": "assets/img/blog/blog_8-450x300.jpg"
+            "img": "assets/img/blog/blog-9.jpg"
         }
     ],
     "portfolios": [{

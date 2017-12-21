@@ -9,7 +9,8 @@
 /*-----------------------------------------------------------------------------------*/
 html,
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #777777; }
 
 body,
 li,
@@ -56,7 +57,8 @@ h5,
 h6 {
   font-family: inherit;
   font-weight: normal;
-  line-height: 1.4; }
+  line-height: 1.4;
+  color: #000000; }
 
 .h1 small,
 .h2 small,
@@ -246,7 +248,7 @@ ul.list-md li {
 
 .meta {
   font-size: 14px;
-  color: #888888;
+  color: #b9b9b9;
   margin-bottom: 12px; }
   .meta span::after {
     content: "|";
@@ -315,7 +317,7 @@ input[type="submit"] {
     margin-bottom: 30px; }
 
 .blog-commnets h4 a {
-  color: #4d4d4d; }
+  color: #777777; }
   .blog-commnets h4 a:hover {
     color: #3498db; }
 
@@ -330,7 +332,7 @@ input[type="submit"] {
   margin: 0; }
 
 .widget .post-list .post-list-title {
-  color: #4d4d4d; }
+  color: #777777; }
   .widget .post-list .post-list-title:hover {
     color: #3498db; }
 
@@ -422,7 +424,7 @@ input[type="submit"] {
   .navbar .dropdown-menu li a {
     background: none;
     border: none;
-    color: #4d4d4d;
+    color: #777777;
     text-transform: uppercase;
     padding: 15px 0;
     line-height: 1; }
@@ -484,7 +486,7 @@ input[type="submit"] {
       text-transform: uppercase;
       padding: 0 25px;
       outline: none;
-      color: #4d4d4d; }
+      color: #777777; }
       @media (max-width: 991px) {
         .navbar .navbar-nav .nav-item .nav-link {
           line-height: 20px !important;
@@ -608,7 +610,7 @@ input[type="submit"] {
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       padding: 0 0 0 15px !important;
-      color: #4d4d4d; }
+      color: #777777; }
       .nav-vertical ul li a:hover {
         color: #3498db; }
       .nav-vertical ul li a i {
@@ -645,7 +647,7 @@ input[type="submit"] {
     padding-top: 15px;
     padding-bottom: 15px;
     border: none;
-    color: #4d4d4d; }
+    color: #777777; }
     .nav.nav-tabs .nav-link.active {
       background-color: transparent;
       border-color: transparent transparent transparent;
@@ -928,7 +930,7 @@ input[type="submit"] {
       background: #3498db;
       opacity: 1; }
     .pagination .page-item .page-link {
-      color: #4d4d4d;
+      color: #777777;
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -1105,7 +1107,7 @@ hr.line-dotted {
   margin-top: 5px; }
 
 .accordion .card .card-header a {
-  color: #4d4d4d;
+  color: #777777;
   padding-left: 40px; }
 
 .accordion .card-header a.collapsed span.accordion-icons {
@@ -1180,7 +1182,7 @@ hr.line-dotted {
   color: #3498db !important; }
 
 .text-muted {
-  color: #4d4d4d !important; }
+  color: #777777 !important; }
 
 .text-black {
   color: #000000 !important; }
@@ -1311,7 +1313,7 @@ a .overlay {
     .portfolio .grid .grid-item {
       width: 50%; } }
   .portfolio .grid .grid-item figure .figure-caption a {
-    color: #4d4d4d; }
+    color: #777777; }
     .portfolio .grid .grid-item figure .figure-caption a:hover {
       color: #3498db; }
 

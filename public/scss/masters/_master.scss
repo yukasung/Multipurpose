@@ -78,7 +78,7 @@ ul {
 
 .meta {
     font-size: 14px;
-    color: #888888;
+    color: $font-meta-color;
     margin-bottom: 12px;
     span {
         &::after {
