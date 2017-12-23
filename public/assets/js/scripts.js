@@ -191,9 +191,37 @@ $(document).ready(function () {
         }
     });
 
-    $(".owl-carousel").each(function (index) {
-        var options = $(this).data('owl-carousel-options');
-        $(this).owlCarousel(options);
+
+    $('.owl-carousel').each(function () {
+
+        var owlOptions = ["items", "margin", "loop", "center", "mouseDrag", "touchDrag", "pullDrag", "freeDrag", "stagePadding", "merge", "mergeFit", "autoWidth", "startPosition", "URLhashListener", "nav", "rewind", "navElement", "slideBy", "dots", "dotsEach", "dotData", "lazyLoad", "lazyContent", "autoplay", "autoplayTimeout", "autoplayHoverPause", "smartSpeed", "fluidSpeed", "autoplaySpeed", "navSpeed", "dotsSpeed", "dragEndSpeed", "callbacks", "responsiveRefreshRate", "video", "videoHeight", "videoWidth", "animateOut", "animateInClass", "fallbackEasing", "nestedItemSelector", "itemElement", "stageElement", "navContainer", "dotsContaine", "dotClass", "equalize"];
+        var carousel = $(this);
+        var data = carousel.data();
+        var options = {
+            navText: "",
+            autoplayTimeout: 4000
+        };
+
+        $.each(data, function (name, value) {
+            if (owlOptions.indexOf(name) >= 0) {
+                options[name] = value;
+            }
+        });
+
+        options["responsive"] = {
+            0: {
+                items: carousel.data("col-xs")
+            },
+            768: {
+                items: carousel.data("col-sm")
+            },
+            992: {
+                items: carousel.data("col-md")
+            }
+        };
+
+        carousel.owlCarousel(options);
+
     });
 
     /*-----------------------------------------------------------------------------------*/
