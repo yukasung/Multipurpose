@@ -208,17 +208,18 @@ $(document).ready(function () {
             }
         });
 
-        options["responsive"] = {
-            0: {
-                items: carousel.data("col-xs")
-            },
-            768: {
-                items: carousel.data("col-sm")
-            },
-            992: {
-                items: carousel.data("col-md")
-            }
-        };
+        if (carousel.data("col-xs") !== 'undefined' && carousel.data("col-sm") !== 'undefined' && carousel.data("col-md") !== 'undefined')
+            options["responsive"] = {
+                0: {
+                    items: carousel.data("col-xs")
+                },
+                768: {
+                    items: carousel.data("col-sm")
+                },
+                992: {
+                    items: carousel.data("col-md")
+                }
+            };
 
         carousel.owlCarousel(options);
 
