@@ -128,7 +128,7 @@ $(document).ready(function () {
         loop: false,
         margin: 30,
         nav: false,
-        dots: true,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -145,7 +145,7 @@ $(document).ready(function () {
         loop: false,
         margin: 30,
         nav: false,
-        dots: true,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -190,7 +190,12 @@ $(document).ready(function () {
             }
         }
     });
-      
+
+    $(".owl-carousel").each(function (index) {
+        var options = $(this).data('owl-carousel-options');
+        $(this).owlCarousel(options);
+    });
+
     /*-----------------------------------------------------------------------------------*/
     /*  LAZY LOAD GOOGLE MAPS
     /*-----------------------------------------------------------------------------------*/
