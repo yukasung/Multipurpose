@@ -5,7 +5,7 @@
 <!-- blog -->
 {% import '../templates/macros/blogs.html' as macroBlogs %}
 <div id="content">
-    <div class="slider-owl owl-carousel owl-theme owl-loaded owl-img-dots owl-dot-white">
+    <div class="slider-owl owl-carousel owl-theme owl-loaded owl-dots-white owl-nav-box" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false}'>
         <div class="item" style="background-image: url('assets/img/slider_1.jpg');">
             <div class="overlay-black"></div>
             <div class="slider-caption">
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-white border border-right-0 border-left-0 py-6">
+    <div class="bg-white py-6 border-top-xs border-bottom-xs border-gray ">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
@@ -127,7 +127,7 @@
     </div>
 </div>
 <div class="bg-white">
-    <div class="container py-7">
+    <div class="container pt-7 pb-6">
         <h3 class="text-center">Latest Industry News</h3>
         <hr class="hr-lg mt-3 mb-4 w-60px bg-shadow hr-primary">
         <div class="row justify-content-md-center text-center">
@@ -149,8 +149,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-12">
-                <div class="owl-carousel owl-theme owl-loaded" data-autoplay="true" data-loop="false" data-margin="30" data-dots="false"
-                    data-nav="true" data-col-md="4" data-col-sm="2" data-col-xs="1">
+                <div class="owl-carousel owl-theme owl-loaded owl-dots-white" data-owl-carousel-options='{"responsive":{"0":{"items":1, "nav":false, "dots":true}, "600":{"items":2, "dots":false}, "940":{"items":4, "nav":true, "dots":false}}, "margin": 30, "nav":true, "dots":false}'>
                     <div class="item">
                         <img src="assets/img/client/google.png" alt="">
                     </div>

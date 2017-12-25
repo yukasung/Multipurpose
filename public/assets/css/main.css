@@ -731,10 +731,10 @@ input[type="submit"] {
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #3498db; }
 
-.owl-dot-white .owl-dot span {
+.owl-dots-white .owl-dot span {
   border: 2px solid #ffffff !important; }
 
-.owl-dot-white .owl-dot.active span, .owl-dot-white .owl-dot:hover span {
+.owl-dots-white .owl-dot.active span, .owl-dots-white .owl-dot:hover span {
   background: #ffffff !important; }
 
 .owl-dot-primary .owl-dot span {
@@ -742,6 +742,10 @@ input[type="submit"] {
 
 .owl-dot-primary .owl-dot.active span, .owl-dot-primary .owl-dot:hover span {
   background: #3498db !important; }
+
+.owl-nav-box .owl-nav > div {
+  width: 30px;
+  background: #000000; }
 
 .owl-nav > div {
   position: absolute;
@@ -751,11 +755,14 @@ input[type="submit"] {
   display: inline-block;
   zoom: 1;
   margin: 0 1px;
-  padding: 5px 0;
-  width: 30px;
+  padding: 10px 0;
+  line-height: 0;
+  width: 0;
   opacity: .8;
   border-radius: 0;
-  font-size: 0; }
+  font-size: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
   .owl-nav > div:after {
     font-family: 'FontAwesome';
     font-size: 28px;
@@ -1245,6 +1252,17 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > BORDER
 /*-----------------------------------------------------------------------------------*/
+.border-top-xs {
+  border-top-width: 1px;
+  border-top-style: solid; }
+
+.border-bottom-xs {
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.border-gray {
+  border-color: #e9ecef !important; }
+
 /*-----------------------------------------------------------------------------------*/
 /*	UTILITIES > OVERLAY
 /*-----------------------------------------------------------------------------------*/
