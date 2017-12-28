@@ -667,8 +667,7 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 .owl-carousel {
   position: relative; }
-  .owl-carousel:hover .owl-nav .owl-prev,
-  .owl-carousel:hover .owl-nav .owl-next {
+  .owl-carousel:hover .owl-nav > div {
     opacity: 0.7; }
   .owl-carousel .owl-stage {
     display: -webkit-box;
@@ -718,7 +717,7 @@ input[type="submit"] {
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
-    *display: inline; }
+    display: inline; }
     .owl-theme .owl-dots .owl-dot span {
       margin: 0 3px;
       display: block;
@@ -743,8 +742,9 @@ input[type="submit"] {
 .owl-dot-primary .owl-dot.active span, .owl-dot-primary .owl-dot:hover span {
   background: #3498db !important; }
 
-.owl-nav-box .owl-nav > div {
-  width: 30px;
+.owl-nav-bg-black .owl-nav > div {
+  width: 28px;
+  color: #ffffff;
   background: #000000; }
 
 .owl-nav > div {
@@ -758,16 +758,15 @@ input[type="submit"] {
   padding: 10px 0;
   line-height: 0;
   width: 0;
-  opacity: .8;
   border-radius: 0;
   font-size: 0;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   .owl-nav > div:after {
-    font-family: 'FontAwesome';
-    font-size: 28px;
+    font-family: 'themify';
+    font-size: 20px;
     display: block;
-    line-height: 42px; }
+    line-height: 40px; }
   .owl-nav > div:hover {
     opacity: 1 !important; }
 
@@ -780,13 +779,45 @@ input[type="submit"] {
 .owl-nav .owl-prev {
   left: -1px; }
   .owl-nav .owl-prev:after {
-    content: "\f104"; }
+    content: "\e64a"; }
 
 .owl-nav .owl-next {
   left: auto;
   right: -1px; }
   .owl-nav .owl-next:after {
-    content: "\f105"; }
+    content: "\e649"; }
+
+.owl-hero .owl-item {
+  color: #333333;
+  background-color: #e6e6e6; }
+  .owl-hero .owl-item .owl-img {
+    position: relative;
+    min-height: 550px; }
+    @media (max-width: 767px) {
+      .owl-hero .owl-item .owl-img {
+        min-height: 250px; } }
+  @media (max-width: 767px) {
+    .owl-hero .owl-item .owl-caption {
+      width: 100% !important; } }
+  @media (min-width: 576px) {
+    .owl-hero .owl-item .owl-caption {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      z-index: 1;
+      margin: 0 auto;
+      overflow: hidden;
+      color: #ffffff;
+      margin-left: 50px;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      padding: 0; }
+      .owl-hero .owl-item .owl-caption h2 {
+        color: #ffffff; } }
+  @media (min-width: 576px) {
+    .owl-hero .owl-item.active .owl-caption {
+      margin-left: 0; } }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > CARD
@@ -988,11 +1019,8 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > BREADCRUMB
 /*-----------------------------------------------------------------------------------*/
-.icon-sm {
-  font-size: 55px; }
-
-.icon-md {
-  font-size: 75px; }
+.icon-3x {
+  font-size: 3em; }
 
 .icon-video {
   position: absolute;
