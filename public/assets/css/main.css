@@ -700,11 +700,10 @@ input[type="submit"] {
         -webkit-flex: 1 0 auto;
             -ms-flex: 1 0 auto;
                 flex: 1 0 auto; }
-      .owl-carousel .owl-item .item img {
-        margin: auto; }
 
 .owl-dots {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
   .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1; }
@@ -790,6 +789,9 @@ input[type="submit"] {
 .owl-hero .owl-item {
   color: #333333;
   background-color: #e6e6e6; }
+  @media (max-width: 767px) {
+    .owl-hero .owl-item figure:after {
+      background: none; } }
   @media (max-width: 767px) {
     .owl-hero .owl-item .owl-caption {
       width: 100% !important; } }
@@ -1255,6 +1257,16 @@ hr.line-dotted {
 
 .bg-transparent {
   background-color: transparent !important; }
+
+.g-l-r.g-primary:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(left, #3498db, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(to right, #3498db, rgba(255, 255, 255, 0) 80%); }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > OPACITY
