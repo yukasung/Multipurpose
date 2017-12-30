@@ -8,11 +8,11 @@
     color: $primary-color !important;
 }
 
-.text-muted{
+.text-muted {
     color: $font-color !important;
 }
 
-.text-black{
+.text-black {
     color: #000000 !important;
 }
 
@@ -36,24 +36,36 @@
     background-color: #232526 !important;
 }
 
-.bg-grey{
+.bg-grey {
     background-color: #f3f5f6 !important;
 }
 
-.bg-transparent{
+.bg-transparent {
     background-color: transparent !important;
 }
 
-.g-l-r {
-    &.g-primary {
+.gradient-left {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &.gradient-primary {
         &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(to right, $primary-color, rgba(255, 255, 255, 0) 80%);
+            background: radial-gradient(circle at center left, $primary-color, rgba(255, 255, 255, 0) 80%);
+        }
+    }
+    &.gradient-black {
+        &:after {
+            background: radial-gradient(circle at center left, #000, rgba(255, 255, 255, 0) 80%);
+        }
+    }
+    &.gradient-white {
+        &:after {
+            background: radial-gradient(circle at center left, #fff, rgba(255, 255, 255, 0) 80%);
         }
     }
 }

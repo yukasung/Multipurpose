@@ -154,8 +154,21 @@
         .owl-item {
             color: $font-color;
             background-color: #e6e6e6;
-            figure{
-                &:after{
+            .theme-dark {
+                @include media-breakpoint-up(sm) {
+                    color: #ffffff;
+                }
+            }
+            .theme-light {
+                @include media-breakpoint-up(sm) {
+                    color: $font-color;
+                }
+            }
+            h2 {
+                color: inherit;
+            }
+            figure {
+                &:after {
                     @include media-breakpoint-down(sm) {
                         background: none;
                     }
@@ -172,13 +185,9 @@
                     z-index: 1;
                     margin: 0 auto;
                     overflow: hidden;
-                    color: #ffffff;
                     margin-left: 50px;
                     transition: all .4s ease-in-out;
                     padding: 0 !important;
-                    h2 {
-                        color: #ffffff;
-                    }
                 }
             }
             &.active {

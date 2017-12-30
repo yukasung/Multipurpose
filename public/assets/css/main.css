@@ -789,6 +789,14 @@ input[type="submit"] {
 .owl-hero .owl-item {
   color: #333333;
   background-color: #e6e6e6; }
+  @media (min-width: 576px) {
+    .owl-hero .owl-item .theme-dark {
+      color: #ffffff; } }
+  @media (min-width: 576px) {
+    .owl-hero .owl-item .theme-light {
+      color: #333333; } }
+  .owl-hero .owl-item h2 {
+    color: inherit; }
   @media (max-width: 767px) {
     .owl-hero .owl-item figure:after {
       background: none; } }
@@ -804,13 +812,10 @@ input[type="submit"] {
       z-index: 1;
       margin: 0 auto;
       overflow: hidden;
-      color: #ffffff;
       margin-left: 50px;
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
-      padding: 0 !important; }
-      .owl-hero .owl-item .owl-caption h2 {
-        color: #ffffff; } }
+      padding: 0 !important; } }
   @media (min-width: 576px) {
     .owl-hero .owl-item.active .owl-caption {
       margin-left: 0; } }
@@ -1258,15 +1263,25 @@ hr.line-dotted {
 .bg-transparent {
   background-color: transparent !important; }
 
-.g-l-r.g-primary:after {
+.gradient-left:after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  background: -webkit-linear-gradient(left, #3498db, rgba(255, 255, 255, 0) 80%);
-  background: linear-gradient(to right, #3498db, rgba(255, 255, 255, 0) 80%); }
+  left: 0; }
+
+.gradient-left.gradient-primary:after {
+  background: -webkit-radial-gradient(center left, circle, #3498db, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
+
+.gradient-left.gradient-black:after {
+  background: -webkit-radial-gradient(center left, circle, #000, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle at center left, #000, rgba(255, 255, 255, 0) 80%); }
+
+.gradient-left.gradient-white:after {
+  background: -webkit-radial-gradient(center left, circle, #fff, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle at center left, #fff, rgba(255, 255, 255, 0) 80%); }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > OPACITY
