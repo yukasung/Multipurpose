@@ -34,44 +34,77 @@
     }
 }
 
-.owl-img-dots {
-    .owl-dots {
-        bottom: 60px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        height: 3px;
-    }
-}
-
-.owl-theme {
-    .owl-dots {
-        text-align: center;
-        margin-top: 20px;
-        .owl-dot {
-            display: inline-block;
-            zoom: 1;
-            display: inline;
+.owl-dots {
+    text-align: center;
+    .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        span {
+            margin: 0 5px;
+            display: block;
+            border-radius: 100%;
+            border: 2px solid $primary-color;
+            width: 13px;
+            height: 13px;
+            transition: all 150ms ease-in;
+        }
+        &.active,
+        &:hover {
             span {
-                margin: 0 3px;
-                display: block;
-                border-radius: 100%;
-                border: 2px solid $primary-color;
-                width: 13px;
-                height: 13px;
-                transition: all 150ms ease-in;
-            }
-            &.active,
-            &:hover {
-                span {
-                    background: $primary-color;
-                }
+                background: $primary-color;
             }
         }
     }
 }
 
+.owl-dots-inside {
+    .owl-dots {
+        position: absolute;
+        bottom: 30px;
+        margin: 0;
+        display: inline-block;
+        left: 50%;
+        width: auto;
+        transform: translateX(-50%);
+    }
+}
+
+// .owl-img-dots {
+//     .owl-dots {
+//         bottom: 60px;
+//         left: 0;
+//         position: absolute;
+//         right: 0;
+//         text-align: center;
+//         height: 3px;
+//     }
+// }
+// .owl-theme {
+//     .owl-dots {
+//         text-align: center;
+//         margin-top: 20px;
+//         .owl-dot {
+//             display: inline-block;
+//             zoom: 1;
+//             display: inline;
+//             span {
+//                 margin: 0 3px;
+//                 display: block;
+//                 border-radius: 100%;
+//                 border: 2px solid $primary-color;
+//                 width: 13px;
+//                 height: 13px;
+//                 transition: all 150ms ease-in;
+//             }
+//             &.active,
+//             &:hover {
+//                 span {
+//                     background: $primary-color;
+//                 }
+//             }
+//         }
+//     }
+// }
 .owl-dots-white {
     .owl-dot {
         span {
@@ -159,13 +192,6 @@
     .owl-item {
         color: $font-color;
         background-color: #e6e6e6;
-        .owl-img {
-            position: relative;
-            min-height: 550px;
-            @include media-breakpoint-down(sm) {
-                min-height: 250px;
-            }
-        }
         .owl-caption {
             @include media-breakpoint-down(sm) {
                 width: 100% !important;
@@ -180,7 +206,7 @@
                 color: #ffffff;
                 margin-left: 50px;
                 transition: all .4s ease-in-out;
-                padding: 0;
+                padding: 0 !important;
                 h2 {
                     color: #ffffff;
                 }

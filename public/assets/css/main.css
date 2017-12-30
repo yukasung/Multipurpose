@@ -703,23 +703,13 @@ input[type="submit"] {
       .owl-carousel .owl-item .item img {
         margin: auto; }
 
-.owl-img-dots .owl-dots {
-  bottom: 60px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  height: 3px; }
-
-.owl-theme .owl-dots {
-  text-align: center;
-  margin-top: 20px; }
-  .owl-theme .owl-dots .owl-dot {
+.owl-dots {
+  text-align: center; }
+  .owl-dots .owl-dot {
     display: inline-block;
-    zoom: 1;
-    display: inline; }
-    .owl-theme .owl-dots .owl-dot span {
-      margin: 0 3px;
+    zoom: 1; }
+    .owl-dots .owl-dot span {
+      margin: 0 5px;
       display: block;
       border-radius: 100%;
       border: 2px solid #3498db;
@@ -727,8 +717,18 @@ input[type="submit"] {
       height: 13px;
       -webkit-transition: all 150ms ease-in;
       transition: all 150ms ease-in; }
-    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
       background: #3498db; }
+
+.owl-dots-inside .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  margin: 0;
+  display: inline-block;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .owl-dots-white .owl-dot span {
   border: 2px solid #ffffff !important; }
@@ -790,12 +790,6 @@ input[type="submit"] {
 .owl-hero .owl-item {
   color: #333333;
   background-color: #e6e6e6; }
-  .owl-hero .owl-item .owl-img {
-    position: relative;
-    min-height: 550px; }
-    @media (max-width: 767px) {
-      .owl-hero .owl-item .owl-img {
-        min-height: 250px; } }
   @media (max-width: 767px) {
     .owl-hero .owl-item .owl-caption {
       width: 100% !important; } }
@@ -812,7 +806,7 @@ input[type="submit"] {
       margin-left: 50px;
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
-      padding: 0; }
+      padding: 0 !important; }
       .owl-hero .owl-item .owl-caption h2 {
         color: #ffffff; } }
   @media (min-width: 576px) {
