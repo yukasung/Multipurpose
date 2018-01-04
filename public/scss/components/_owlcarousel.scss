@@ -154,12 +154,12 @@
         .owl-item {
             color: $font-color;
             background-color: #e6e6e6;
-            .theme-dark {
+            .owl-theme-dark {
                 @include media-breakpoint-up(sm) {
                     color: #ffffff;
                 }
             }
-            .theme-light {
+            .owl-theme-light {
                 @include media-breakpoint-up(sm) {
                     color: $font-color;
                 }

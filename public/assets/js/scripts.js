@@ -79,57 +79,24 @@ var theme = {
     },
     initNavbar: function () {
 
-        /* ----------------------------------------------------------- */
-        /*  Fixed header
-        /* ----------------------------------------------------------- */
-
-        navbar = $(".navbar"),
-            currentScrollTop = 0,
-            c = 0;
-        $(window).on("scroll", function () {
-            if ($(this).scrollTop() >= 5) {
-                $('.navbar').addClass('fixed-top');
-            } else {
-                $('.navbar').removeClass('fixed-top');
-            }
-            var a = $(window).scrollTop(),
-                b = navbar.height();
-            currentScrollTop = a;
-            if (c < currentScrollTop && a > b + b + 200) {
-                navbar.addClass("scroll-up")
-            } else if (c > currentScrollTop && !(a <= b)) {
-                navbar.removeClass("scroll-up")
-            }
-            c = currentScrollTop;
-
-        })
-
-        /*-----------------------------------------------------------------------------------*/
-        /*  NAVBAR
-        /*-----------------------------------------------------------------------------------*/
-
-        var $mainMenuState = $('#main-menu-state');
-        if ($mainMenuState.length) {
-            // animate mobile menu
-            $mainMenuState.change(function (e) {
-                var $menu = $('#main-menu');
-                if (this.checked) {
-                    $menu.hide().slideDown(250, function () {
-                        $menu.css('display', '');
-                    });
+        // Fixed header navigation that auto hides when scroll down
+        var lastScrollTop = 0;
+        $(window).on('scroll', function () {
+            scrollTop = $(this).scrollTop();
+            if (scrollTop < lastScrollTop) {
+                // scroll up
+                if (scrollTop > $('header').height()) {
+                    $(".navbar").addClass('fixed-top');  
+                    $(".navbar").removeClass("scroll-up");                  
                 } else {
-                    $menu.show().slideUp(250, function () {
-                        $menu.css('display', '');
-                    });
+                    $(".navbar").removeClass('fixed-top');                    
                 }
-            });
-            // hide mobile menu beforeunload
-            $(window).on('beforeunload unload', function () {
-                if ($mainMenuState[0].checked) {
-                    $mainMenuState[0].click();
-                }
-            });
-        }
+            } else {
+                // scroll down
+                $(".navbar").addClass("scroll-up");
+            }
+            lastScrollTop = scrollTop;
+        });
 
         /*-----------------------------------------------------------------------------------*/
         /*  NAV VERTICAL
@@ -388,6 +355,6 @@ var theme = {
         var navbarHeight = $('.navbar').height();
         $('.navbar .nav-item > .nav-link').css('line-height', navbarHeight + 'px');
         $('.navbar-action').css('top', (navbarHeight / 2) - 22 + 'px');
-        
+
     }
 };

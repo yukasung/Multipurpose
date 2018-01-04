@@ -3,7 +3,15 @@
     /*-----------------------------------------------------------------------------------*/
 
     .navbar {
-        .navbar-brand{
+        background: #ffffff;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: all .6s;
+        &.scroll-up {
+            transform: translateY(-110%);
+        }
+        .navbar-brand {
             padding: 14px 0;
         }
         .navbar-nav {
@@ -17,9 +25,33 @@
                 &:first-child {
                     border-top: 0;
                 }
-                a{
+                a {
                     font-size: 14px;
                     letter-spacing: 1px;
+                }
+            }
+            .nav-item {
+                display: inline-block;
+                text-align: center;
+                @include media-breakpoint-down(md) {
+                    text-align: left;
+                }
+                .nav-link {
+                    position: relative;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    padding: 0 25px;
+                    outline: none;
+                    color: $font-color;
+                    @include media-breakpoint-down(md) {
+                        line-height: 20px !important;
+                        padding: 10px 0;
+                    }
+                }
+                &:last-child {
+                    .nav-link {
+                        padding-right: 0;
+                    }
                 }
             }
         }
@@ -82,38 +114,6 @@
                 @include media-breakpoint-down(md) {
                     &::after {
                         transform: rotate(180deg);
-                    }
-                }
-            }
-        }
-    }
-
-    .navbar {
-        background: #ffffff;
-        box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
-        padding-top: 0;
-        padding-bottom: 0;
-        transition: all .5s;
-        &.scroll-up {
-            transform: translateY(-110%);
-        }
-        .navbar-nav {
-            .nav-item {
-                display: inline-block;
-                text-align: center;
-                @include media-breakpoint-down(md) {
-                    text-align: left;
-                }
-                .nav-link {
-                    position: relative;
-                    white-space: nowrap;
-                    text-transform: uppercase;
-                    padding: 0 25px;
-                    outline: none;
-                    color: $font-color;
-                    @include media-breakpoint-down(md) {
-                        line-height: 20px !important;
-                        padding: 10px 0;
                     }
                 }
             }
