@@ -48,11 +48,6 @@
                         padding: 10px 0;
                     }
                 }
-                &:last-child {
-                    .nav-link {
-                        padding-right: 0;
-                    }
-                }
             }
         }
         .dropdown-menu {
@@ -120,6 +115,27 @@
         }
     }
 
+    .navbar-action {
+        margin-left: 20px;        
+        ul {
+            margin: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+                padding: 0 10px;
+                i{
+                    color: $font-color;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            top: 20px;
+            right: 65px;
+        }
+    } 
+    
+    // Adding a menu toggle button on small screens
     .main-menu-btn {
         position: relative;
         display: inline-block;
@@ -129,6 +145,7 @@
         white-space: nowrap;
         overflow: hidden;
         cursor: pointer;
+        margin-bottom: 0;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     /* hamburger icon */
@@ -139,9 +156,9 @@
         position: absolute;
         top: 50%;
         left: 2px;
-        height: 2px;
+        height: 1px;
         width: 24px;
-        background: #bbb;
+        background: $font-color;
         transition: all 0.25s;
     }
 

@@ -437,8 +437,6 @@ input[type="submit"] {
         .navbar .navbar-nav .nav-item .nav-link {
           line-height: 20px !important;
           padding: 10px 0; } }
-    .navbar .navbar-nav .nav-item:last-child .nav-link {
-      padding-right: 0; }
   .navbar .dropdown-menu {
     padding: 0;
     border: none; }
@@ -489,6 +487,22 @@ input[type="submit"] {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); } }
 
+.navbar-action {
+  margin-left: 20px; }
+  .navbar-action ul {
+    margin: 0;
+    padding: 0; }
+    .navbar-action ul li {
+      display: inline-block;
+      padding: 0 10px; }
+      .navbar-action ul li i {
+        color: #333333; }
+  @media (max-width: 767px) {
+    .navbar-action {
+      position: absolute;
+      top: 20px;
+      right: 65px; } }
+
 .main-menu-btn {
   position: relative;
   display: inline-block;
@@ -498,6 +512,7 @@ input[type="submit"] {
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 0;
   -webkit-tap-highlight-color: transparent; }
 
 /* hamburger icon */
@@ -507,9 +522,9 @@ input[type="submit"] {
   position: absolute;
   top: 50%;
   left: 2px;
-  height: 2px;
+  height: 1px;
   width: 24px;
-  background: #bbb;
+  background: #333333;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
 
@@ -1017,6 +1032,12 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > BREADCRUMB
 /*-----------------------------------------------------------------------------------*/
+.icon-lg {
+  font-size: 1.33333em; }
+
+.icon-2x {
+  font-size: 2em; }
+
 .icon-3x {
   font-size: 3em; }
 
