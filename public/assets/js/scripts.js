@@ -12,6 +12,7 @@ var theme = {
         theme.setPostNavigationPosition();
         theme.initOwlCarousel();
         theme.initIsoTope();
+        theme.initSmartmenu();
         theme.initNavbar();
         theme.initGoogleMap();
         theme.initProgressBar();
@@ -23,6 +24,11 @@ var theme = {
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
+    },
+    initSmartmenu: function () {
+        $('.navbar-nav').smartmenus({
+            showTimeout: 50
+        });
     },
     initOwlCarousel: function () {
 
@@ -80,43 +86,31 @@ var theme = {
     initNavbar: function () {
 
         // Fixed header navigation that auto hides when scroll down
-        // var lastScrollTop = 0;
-        // $(window).on('scroll', function () {
-        //     scrollTop = $(this).scrollTop();
-        //     if (scrollTop < lastScrollTop) {
-        //         // scroll up
-        //         if (scrollTop > $('header').height()) {
-        //             $(".navbar").addClass('fixed-top');  
-        //             $(".navbar").removeClass("scroll-up");                  
-        //         } else {
-        //             $(".navbar").removeClass('fixed-top');                    
-        //         }
-        //     } else {
-        //         // scroll down
-        //         $(".navbar").addClass("scroll-up");
-        //     }
-        //     lastScrollTop = scrollTop;
-        // });
-        navbar = $(".navbar"),
-            currentScrollTop = 0,
-            c = 0;
+        var currentScrollTop = 0;
+        var lastScrollTop = 0;
         $(window).on("scroll", function () {
+
             if ($(this).scrollTop() >= 5) {
                 $('.navbar').addClass('fixed-top');
             } else {
                 $('.navbar').removeClass('fixed-top');
             }
-            var a = $(window).scrollTop(),
-                b = navbar.height();
-            currentScrollTop = a;
-            if (c < currentScrollTop && a > b + b + 200) {
-                navbar.addClass("scroll-up")
-            } else if (c > currentScrollTop && !(a <= b)) {
-                navbar.removeClass("scroll-up")
-            }
-            c = currentScrollTop;
 
-        })
+            var scrollTop = $(window).scrollTop();
+            var navbarHeight = $('.navbar').height();
+            currentScrollTop = scrollTop;
+
+            if (lastScrollTop < currentScrollTop && scrollTop > navbarHeight + navbarHeight + 200) {
+                // scroll down
+                $(".navbar").addClass("scroll-up");
+            } else if (lastScrollTop > currentScrollTop && !(scrollTop <= navbarHeight)) {
+                // scrool up
+                $(".navbar").removeClass("scroll-up");
+            }
+
+            lastScrollTop = currentScrollTop;
+
+        });
 
         /*-----------------------------------------------------------------------------------*/
         /*  NAV VERTICAL

@@ -14,20 +14,31 @@
         .navbar-brand {
             padding: 14px 0;
         }
+        .dropdown-toggle {
+            &:after {
+                display: none;
+            }
+        }
+        .dropdown-item {
+            .sub-arrow {
+                @include media-breakpoint-down(md) {
+                    border-top: .3em solid !important;
+                    border-right: .3em solid transparent !important;
+                    border-left: .3em solid transparent !important;
+                }
+            }
+        }
         .navbar-nav {
             li {
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-                margin: 0 15px;
+                @include media-breakpoint-down(sm) {
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                }
                 @include media-breakpoint-up(md) {
                     margin: 0;
                     border-top: none;
                 }
                 &:first-child {
                     border-top: 0;
-                }
-                a {
-                    font-size: 14px;
-                    letter-spacing: 1px;
                 }
             }
             .nav-item {
@@ -36,6 +47,10 @@
                 @include media-breakpoint-down(md) {
                     text-align: left;
                 }
+                a {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
                 .nav-link {
                     position: relative;
                     white-space: nowrap;
@@ -43,6 +58,19 @@
                     padding: 0 25px;
                     outline: none;
                     color: $font-color;
+                    .sub-arrow {
+                        @include media-breakpoint-down(sm) {
+                            position: absolute;
+                            right: 0;
+                            top: 19px;
+                            margin: 0 15px 0 0;
+                            padding: 0;
+                            text-align: center;
+                        }
+                    }
+                    &:hover {
+                        color: $primary-color;
+                    }
                     @include media-breakpoint-down(md) {
                         line-height: 20px !important;
                         padding: 10px 0;
@@ -53,6 +81,10 @@
         .dropdown-menu {
             padding: 0;
             border: none;
+            @include media-breakpoint-down(md) {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-left: 20px;
+            }
             li {
                 &:first-child {
                     border: 0;
@@ -80,30 +112,6 @@
                 }
             }
         }
-        .sub-arrow {
-            margin-left: 4px !important;
-            font-size: 16px !important;
-            width: auto !important;
-            @include media-breakpoint-down(md) {
-                border: none !important;
-                &::before {
-                    content: "" !important;
-                }
-                &::after {
-                    display: inline-block;
-                    width: 0;
-                    height: 0;
-                    margin-left: 0.255em;
-                    vertical-align: 0.255em;
-                    content: "";
-                    border-top: 0.3em solid;
-                    border-right: 0.3em solid transparent;
-                    border-bottom: 0;
-                    border-left: 0.3em solid transparent;
-                    transition: all .4s ease;
-                }
-            }
-        }
         .highlighted {
             .sub-arrow {
                 @include media-breakpoint-down(md) {
@@ -116,15 +124,18 @@
     }
 
     .navbar-action {
-        margin-left: 20px;        
+        margin-left: 20px;
         ul {
             margin: 0;
             padding: 0;
-            li{
+            li {
                 display: inline-block;
                 padding: 0 10px;
-                i{
+                i {
                     color: $font-color;
+                    &:hover {
+                        color: $primary-color;
+                    }
                 }
             }
         }
@@ -133,9 +144,7 @@
             top: 20px;
             right: 65px;
         }
-    } 
-    
-    // Adding a menu toggle button on small screens
+    } // Adding a menu toggle button on small screens
     .main-menu-btn {
         position: relative;
         display: inline-block;
