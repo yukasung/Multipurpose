@@ -12,7 +12,6 @@ var theme = {
         theme.setPostNavigationPosition();
         theme.initOwlCarousel();
         theme.initIsoTope();
-        theme.initSmartmenu();
         theme.initNavbar();
         theme.initGoogleMap();
         theme.initProgressBar();
@@ -24,11 +23,6 @@ var theme = {
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
-    },
-    initSmartmenu: function () {
-        $('.navbar-nav').smartmenus({
-            showTimeout: 50
-        });
     },
     initOwlCarousel: function () {
 

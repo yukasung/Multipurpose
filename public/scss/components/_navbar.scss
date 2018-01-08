@@ -14,20 +14,6 @@
         .navbar-brand {
             padding: 14px 0;
         }
-        .dropdown-toggle {
-            &:after {
-                display: none;
-            }
-        }
-        .dropdown-item {
-            .sub-arrow {
-                @include media-breakpoint-down(md) {
-                    border-top: .3em solid !important;
-                    border-right: .3em solid transparent !important;
-                    border-left: .3em solid transparent !important;
-                }
-            }
-        }
         .navbar-nav {
             li {
                 @include media-breakpoint-down(sm) {
@@ -58,22 +44,32 @@
                     padding: 0 25px;
                     outline: none;
                     color: $font-color;
-                    .sub-arrow {
-                        @include media-breakpoint-down(sm) {
-                            position: absolute;
-                            right: 0;
-                            top: 19px;
-                            margin: 0 15px 0 0;
-                            padding: 0;
-                            text-align: center;
-                        }
-                    }
                     &:hover {
                         color: $primary-color;
                     }
                     @include media-breakpoint-down(md) {
                         line-height: 20px !important;
                         padding: 10px 0;
+                    }
+                }
+            }
+            &.sm-collapsible {
+                .sub-arrow {
+                    width: auto !important;
+                    height: auto !important;
+                    border: none;
+                    transition: all .4s ease;
+                    &:before {
+                        content: "\f107" !important;
+                        font-family: "FontAwesome";
+                        font-size: 15px;
+                    }
+                }
+                .show> {
+                    a> {
+                        .sub-arrow {
+                            transform: rotate(180deg);
+                        }
                     }
                 }
             }
@@ -112,15 +108,6 @@
                 }
             }
         }
-        .highlighted {
-            .sub-arrow {
-                @include media-breakpoint-down(md) {
-                    &::after {
-                        transform: rotate(180deg);
-                    }
-                }
-            }
-        }
     }
 
     .navbar-action {
@@ -144,7 +131,9 @@
             top: 20px;
             right: 65px;
         }
-    } // Adding a menu toggle button on small screens
+    }
+    /* Adding a menu toggle button on small screens */
+
     .main-menu-btn {
         position: relative;
         display: inline-block;

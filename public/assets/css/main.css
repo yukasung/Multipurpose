@@ -129,14 +129,8 @@ dl {
   color: #fff;
   font-size: 14px;
   padding: 10px 0; }
-  .header-top .list-inline {
-    margin-bottom: 0; }
-    .header-top .list-inline .list-inline-item a {
-      color: #fff; }
-    .header-top .list-inline .list-inline-item i {
-      margin-right: 10px; }
-    .header-top .list-inline .list-inline-item:not(:last-child) {
-      margin-right: 40px; }
+  .header-top a {
+    color: inherit; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  MASTER > SEARCH
@@ -408,13 +402,6 @@ input[type="submit"] {
             transform: translateY(-110%); }
   .navbar .navbar-brand {
     padding: 14px 0; }
-  .navbar .dropdown-toggle:after {
-    display: none; }
-  @media (max-width: 991px) {
-    .navbar .dropdown-item .sub-arrow {
-      border-top: .3em solid !important;
-      border-right: .3em solid transparent !important;
-      border-left: .3em solid transparent !important; } }
   @media (max-width: 767px) {
     .navbar .navbar-nav li {
       border-top: 1px solid rgba(0, 0, 0, 0.1); } }
@@ -440,20 +427,25 @@ input[type="submit"] {
       padding: 0 25px;
       outline: none;
       color: #333333; }
-      @media (max-width: 767px) {
-        .navbar .navbar-nav .nav-item .nav-link .sub-arrow {
-          position: absolute;
-          right: 0;
-          top: 19px;
-          margin: 0 15px 0 0;
-          padding: 0;
-          text-align: center; } }
       .navbar .navbar-nav .nav-item .nav-link:hover {
         color: #3498db; }
       @media (max-width: 991px) {
         .navbar .navbar-nav .nav-item .nav-link {
           line-height: 20px !important;
           padding: 10px 0; } }
+  .navbar .navbar-nav.sm-collapsible .sub-arrow {
+    width: auto !important;
+    height: auto !important;
+    border: none;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+    .navbar .navbar-nav.sm-collapsible .sub-arrow:before {
+      content: "\f107" !important;
+      font-family: "FontAwesome";
+      font-size: 15px; }
+  .navbar .navbar-nav.sm-collapsible .show > a > .sub-arrow {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .navbar .dropdown-menu {
     padding: 0;
     border: none; }
@@ -481,10 +473,6 @@ input[type="submit"] {
       @media (min-width: 768px) {
         .navbar .dropdown-menu li a:hover {
           background: #5faee3; } }
-  @media (max-width: 991px) {
-    .navbar .highlighted .sub-arrow::after {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); } }
 
 .navbar-action {
   margin-left: 20px; }
@@ -504,6 +492,7 @@ input[type="submit"] {
       top: 20px;
       right: 65px; } }
 
+/* Adding a menu toggle button on small screens */
 .main-menu-btn {
   position: relative;
   display: inline-block;

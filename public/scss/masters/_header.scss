@@ -3,19 +3,7 @@
 	color: #fff;
     font-size: 14px;
     padding: 10px 0;
-	.list-inline{
-		margin-bottom: 0;
-		.list-inline-item{
-			a{
-				color: #fff;
-			}
-			i{
-				margin-right: 10px;
-			}
-			&:not(:last-child){
-				margin-right: 40px;
-			}
-		}
+	a{
+		color: inherit;
 	}
-
 }
