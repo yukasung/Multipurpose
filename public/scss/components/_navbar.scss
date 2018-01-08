@@ -15,6 +15,9 @@
             padding: 14px 0;
         }
         .navbar-nav {
+            >li {
+                margin: 0 15px;
+            }
             li {
                 @include media-breakpoint-down(sm) {
                     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -58,6 +61,7 @@
                     width: auto !important;
                     height: auto !important;
                     border: none;
+                    margin-right: 0;
                     transition: all .4s ease;
                     &:before {
                         content: "\f107" !important;
@@ -112,12 +116,14 @@
 
     .navbar-action {
         margin-left: 20px;
+        @include media-breakpoint-up(sm) {
+            margin-top: 5px;
+        }
         ul {
             margin: 0;
             padding: 0;
             li {
                 display: inline-block;
-                padding: 0 10px;
                 i {
                     color: $font-color;
                     &:hover {
@@ -125,100 +131,77 @@
                     }
                 }
             }
+            li {
+                &:not(:last-child) {
+                    padding: 0 10px;
+                }
+                &:nth-child(2) {
+                    @include media-breakpoint-up(sm) {
+                        padding-right: 0;
+                    }
+                }
+            }
         }
         @include media-breakpoint-down(sm) {
             position: absolute;
-            top: 20px;
-            right: 65px;
+            right: 10px;
+            top: 17px;
         }
     }
-    /* Adding a menu toggle button on small screens */
 
-    .main-menu-btn {
+    .navbar-toggler {
         position: relative;
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        text-indent: 28px;
-        white-space: nowrap;
-        overflow: hidden;
-        cursor: pointer;
-        margin-bottom: 0;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-    /* hamburger icon */
-
-    .main-menu-btn-icon,
-    .main-menu-btn-icon:before,
-    .main-menu-btn-icon:after {
-        position: absolute;
-        top: 50%;
-        left: 2px;
-        height: 1px;
-        width: 24px;
-        background: $font-color;
-        transition: all 0.25s;
-    }
-
-    .main-menu-btn-icon:before {
-        content: '';
-        top: -7px;
-        left: 0;
-    }
-
-    .main-menu-btn-icon:after {
-        content: '';
-        top: 7px;
-        left: 0;
-    }
-    /* x icon */
-
-    #main-menu-state:checked~.main-menu-btn .main-menu-btn-icon {
-        height: 0;
-        background: transparent;
-    }
-
-    #main-menu-state:checked~.main-menu-btn .main-menu-btn-icon:before {
-        top: 0;
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-
-    #main-menu-state:checked~.main-menu-btn .main-menu-btn-icon:after {
-        top: 0;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    /* hide menu state checkbox (keep it visible to screen readers) */
-
-    #main-menu-state {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
+        display: block;
+        width: 44px;
         padding: 0;
         overflow: hidden;
-        clip: rect(1px, 1px, 1px, 1px);
-    }
-    /* hide the menu in mobile view */
-
-    #main-menu-state:not(:checked)~#main-menu {
-        display: none;
-    }
-
-    #main-menu-state:checked~#main-menu {
-        display: block;
-    }
-
-    @media (min-width: 768px) {
-        /* hide the button in desktop view */
-        .main-menu-btn {
+        white-space: nowrap;
+        color: transparent !important;
+        top: 3px;
+        span,
+        span::before,
+        span::after {
             position: absolute;
-            top: -99999px;
+            display: inline-block;
+            height: 1px;
+            width: 24px;
+            background: $font-color;
         }
-        /* always show the menu in desktop view */
-        #main-menu-state:not(:checked)~#main-menu {
-            display: block;
+        span {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            margin-top: -2px;
+            transition: background 0.3s 0.3s;
+        }
+        span::before,
+        span::after {
+            content: '';
+            right: 0;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            transform-origin: 0% 50%;
+            transition: transform 0.3s 0.3s;
+        }
+        span::before {
+            top: -6px;
+        }
+        span::after {
+            top: 6px;
+        }
+        &.navbar-toggler-active {
+            span {
+                background: rgba(51, 51, 51, 0);
+                &::before,
+                &::after {
+                    background: $font-color;
+                }
+                &::before {
+                    transform: translateX(4px) translateY(-3px) rotate(45deg);
+                }
+                &::after {
+                    transform: translateX(4px) translateY(2px) rotate(-45deg);
+                }
+            }
         }
     }
