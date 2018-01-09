@@ -14,10 +14,14 @@
         .navbar-brand {
             padding: 14px 0;
         }
-        .navbar-nav {
-            >li {
-                margin: 0 15px;
+        .navbar-toggler {
+            border: none;
+            padding-right: 0;
+            &:focus {
+                outline: none !important;
             }
+        }
+        .navbar-nav {
             li {
                 @include media-breakpoint-down(sm) {
                     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -50,6 +54,9 @@
                     &:hover {
                         color: $primary-color;
                     }
+                    @include media-breakpoint-down(sm) {
+                        margin-left: 5px;
+                    }
                     @include media-breakpoint-down(md) {
                         line-height: 20px !important;
                         padding: 10px 0;
@@ -58,24 +65,30 @@
             }
             &.sm-collapsible {
                 .sub-arrow {
-                    width: auto !important;
-                    height: auto !important;
                     border: none;
-                    margin-right: 0;
-                    transition: all .4s ease;
+                    width: auto;
                     &:before {
-                        content: "\f107" !important;
-                        font-family: "FontAwesome";
-                        font-size: 15px;
+                        content: "\f078" !important;
+                        font-family: FontAwesome;
+                        font-size: 10px;
+                        color: #555;
                     }
                 }
-                .show> {
-                    a> {
+                .show {
+                    >a {
                         .sub-arrow {
-                            transform: rotate(180deg);
+                            &:before {
+                                content: "\f077" !important;
+                                color: $primary-color;
+                            }
                         }
                     }
                 }
+            }
+        }
+        .dropdown-item {
+            @include media-breakpoint-down(sm) {
+                margin-left: 5px;
             }
         }
         .dropdown-menu {
@@ -109,98 +122,6 @@
                             background: lighten($primary-color, 10%);
                         }
                     }
-                }
-            }
-        }
-    }
-
-    .navbar-action {
-        margin-left: 20px;
-        @include media-breakpoint-up(sm) {
-            margin-top: 5px;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            li {
-                display: inline-block;
-                i {
-                    color: $font-color;
-                    &:hover {
-                        color: $primary-color;
-                    }
-                }
-            }
-            li {
-                &:not(:last-child) {
-                    padding: 0 10px;
-                }
-                &:nth-child(2) {
-                    @include media-breakpoint-up(sm) {
-                        padding-right: 0;
-                    }
-                }
-            }
-        }
-        @include media-breakpoint-down(sm) {
-            position: absolute;
-            right: 10px;
-            top: 17px;
-        }
-    }
-
-    .navbar-toggler {
-        position: relative;
-        display: block;
-        width: 44px;
-        padding: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        color: transparent !important;
-        top: 3px;
-        span,
-        span::before,
-        span::after {
-            position: absolute;
-            display: inline-block;
-            height: 1px;
-            width: 24px;
-            background: $font-color;
-        }
-        span {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            margin-top: -2px;
-            transition: background 0.3s 0.3s;
-        }
-        span::before,
-        span::after {
-            content: '';
-            right: 0;
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            transform-origin: 0% 50%;
-            transition: transform 0.3s 0.3s;
-        }
-        span::before {
-            top: -6px;
-        }
-        span::after {
-            top: 6px;
-        }
-        &.navbar-toggler-active {
-            span {
-                background: rgba(51, 51, 51, 0);
-                &::before,
-                &::after {
-                    background: $font-color;
-                }
-                &::before {
-                    transform: translateX(4px) translateY(-3px) rotate(45deg);
-                }
-                &::after {
-                    transform: translateX(4px) translateY(2px) rotate(-45deg);
                 }
             }
         }

@@ -402,8 +402,11 @@ input[type="submit"] {
             transform: translateY(-110%); }
   .navbar .navbar-brand {
     padding: 14px 0; }
-  .navbar .navbar-nav > li {
-    margin: 0 15px; }
+  .navbar .navbar-toggler {
+    border: none;
+    padding-right: 0; }
+    .navbar .navbar-toggler:focus {
+      outline: none !important; }
   @media (max-width: 767px) {
     .navbar .navbar-nav li {
       border-top: 1px solid rgba(0, 0, 0, 0.1); } }
@@ -431,24 +434,27 @@ input[type="submit"] {
       color: #333333; }
       .navbar .navbar-nav .nav-item .nav-link:hover {
         color: #3498db; }
+      @media (max-width: 767px) {
+        .navbar .navbar-nav .nav-item .nav-link {
+          margin-left: 5px; } }
       @media (max-width: 991px) {
         .navbar .navbar-nav .nav-item .nav-link {
           line-height: 20px !important;
           padding: 10px 0; } }
   .navbar .navbar-nav.sm-collapsible .sub-arrow {
-    width: auto !important;
-    height: auto !important;
     border: none;
-    margin-right: 0;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease; }
+    width: auto; }
     .navbar .navbar-nav.sm-collapsible .sub-arrow:before {
-      content: "\f107" !important;
-      font-family: "FontAwesome";
-      font-size: 15px; }
-  .navbar .navbar-nav.sm-collapsible .show > a > .sub-arrow {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+      content: "\f078" !important;
+      font-family: FontAwesome;
+      font-size: 10px;
+      color: #555; }
+  .navbar .navbar-nav.sm-collapsible .show > a .sub-arrow:before {
+    content: "\f077" !important;
+    color: #3498db; }
+  @media (max-width: 767px) {
+    .navbar .dropdown-item {
+      margin-left: 5px; } }
   .navbar .dropdown-menu {
     padding: 0;
     border: none; }
@@ -476,84 +482,6 @@ input[type="submit"] {
       @media (min-width: 768px) {
         .navbar .dropdown-menu li a:hover {
           background: #5faee3; } }
-
-.navbar-action {
-  margin-left: 20px; }
-  @media (min-width: 576px) {
-    .navbar-action {
-      margin-top: 5px; } }
-  .navbar-action ul {
-    margin: 0;
-    padding: 0; }
-    .navbar-action ul li {
-      display: inline-block; }
-      .navbar-action ul li i {
-        color: #333333; }
-        .navbar-action ul li i:hover {
-          color: #3498db; }
-    .navbar-action ul li:not(:last-child) {
-      padding: 0 10px; }
-    @media (min-width: 576px) {
-      .navbar-action ul li:nth-child(2) {
-        padding-right: 0; } }
-  @media (max-width: 767px) {
-    .navbar-action {
-      position: absolute;
-      right: 10px;
-      top: 17px; } }
-
-.navbar-toggler {
-  position: relative;
-  display: block;
-  width: 44px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  color: transparent !important;
-  top: 3px; }
-  .navbar-toggler span,
-  .navbar-toggler span::before,
-  .navbar-toggler span::after {
-    position: absolute;
-    display: inline-block;
-    height: 1px;
-    width: 24px;
-    background: #333333; }
-  .navbar-toggler span {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    margin-top: -2px;
-    -webkit-transition: background 0.3s 0.3s;
-    transition: background 0.3s 0.3s; }
-  .navbar-toggler span::before,
-  .navbar-toggler span::after {
-    content: '';
-    right: 0;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-    -webkit-transition: -webkit-transform 0.3s 0.3s;
-    transition: -webkit-transform 0.3s 0.3s;
-    transition: transform 0.3s 0.3s;
-    transition: transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s; }
-  .navbar-toggler span::before {
-    top: -6px; }
-  .navbar-toggler span::after {
-    top: 6px; }
-  .navbar-toggler.navbar-toggler-active span {
-    background: rgba(51, 51, 51, 0); }
-    .navbar-toggler.navbar-toggler-active span::before, .navbar-toggler.navbar-toggler-active span::after {
-      background: #333333; }
-    .navbar-toggler.navbar-toggler-active span::before {
-      -webkit-transform: translateX(4px) translateY(-3px) rotate(45deg);
-              transform: translateX(4px) translateY(-3px) rotate(45deg); }
-    .navbar-toggler.navbar-toggler-active span::after {
-      -webkit-transform: translateX(4px) translateY(2px) rotate(-45deg);
-              transform: translateX(4px) translateY(2px) rotate(-45deg); }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > NAVS
