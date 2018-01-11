@@ -365,6 +365,7 @@ var theme = {
     setPostNavigationPosition: function () {
 
         var navbarHeight = $('.navbar').height();
+        console.log(navbarHeight);
         $('.navbar .nav-item > .nav-link').css('line-height', navbarHeight + 'px');
         // $('.navbar-action').css('top', (navbarHeight / 2) - 22 + 'px');
 

@@ -3,126 +3,80 @@
     /*-----------------------------------------------------------------------------------*/
 
     .navbar {
-        background: #ffffff;
-        box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
-        padding-top: 0;
-        padding-bottom: 0;
-        transition: all .6s;
-        &.scroll-up {
-            transform: translateY(-110%);
+        @include media-breakpoint-up(sm) {
+            padding: 0;
+        }
+        .navbar-header {
+            display: table;
+            position: relative;
+            height: 48px;
         }
         .navbar-brand {
-            padding: 14px 0;
-        }
-        .navbar-toggler {
-            border: none;
-            padding-right: 0;
-            &:focus {
-                outline: none !important;
-            }
-        }
-        .navbar-nav {
-            li {
-                @include media-breakpoint-down(sm) {
-                    border-top: 1px solid rgba(0, 0, 0, 0.1);
-                }
-                @include media-breakpoint-up(md) {
-                    margin: 0;
-                    border-top: none;
-                }
-                &:first-child {
-                    border-top: 0;
-                }
-            }
-            .nav-item {
-                display: inline-block;
-                text-align: center;
-                @include media-breakpoint-down(md) {
-                    text-align: left;
-                }
-                a {
-                    font-size: 14px;
-                    letter-spacing: 1px;
-                }
-                .nav-link {
-                    position: relative;
-                    white-space: nowrap;
-                    text-transform: uppercase;
-                    padding: 0 25px;
-                    outline: none;
-                    color: $font-color;
-                    &:hover {
-                        color: $primary-color;
-                    }
-                    @include media-breakpoint-down(sm) {
-                        margin-left: 5px;
-                    }
-                    @include media-breakpoint-down(md) {
-                        line-height: 20px !important;
-                        padding: 10px 0;
-                    }
-                }
-            }
-            &.sm-collapsible {
-                .sub-arrow {
-                    border: none;
-                    width: auto;
-                    &:before {
-                        content: "\f078" !important;
-                        font-family: FontAwesome;
-                        font-size: 10px;
-                        color: #555;
-                    }
-                }
-                .show {
-                    >a {
-                        .sub-arrow {
-                            &:before {
-                                content: "\f077" !important;
-                                color: $primary-color;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .dropdown-item {
-            @include media-breakpoint-down(sm) {
-                margin-left: 5px;
-            }
+            vertical-align: middle;
+            display: table-cell;
         }
         .dropdown-menu {
+            border-radius: 0;
+            border: 0;
             padding: 0;
-            border: none;
-            @include media-breakpoint-down(md) {
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-                padding-left: 20px;
-            }
             li {
-                &:first-child {
-                    border: 0;
-                }
-                @include media-breakpoint-up(md) {
+                @include media-breakpoint-up(sm) {
                     background: $primary-color;
-                    border-top: 1px solid rgba(255, 255, 255, 0.2);
+                    &:not(:first-child) {
+                        border-top: 1px solid rgba(255, 255, 255, 0.2);
+                    }
                 }
                 a {
-                    background: none;
-                    border: none;
-                    color: $font-color;
                     text-transform: uppercase;
-                    padding: 15px 0;
+                    font-size: 13px;
+                    letter-spacing: 0.5px;
+                    color: #ffffff;
                     line-height: 1;
-                    @include media-breakpoint-up(md) {
+                    @include media-breakpoint-up(sm) {
                         padding: 15px;
-                        color: #ffffff;
                     }
-                    &:hover {
-                        @include media-breakpoint-up(md) {
-                            background: lighten($primary-color, 10%);
-                        }
+                }
+            }
+            .dropdown-item {
+                &:hover,
+                &:focus {
+                    background-color: lighten($primary-color, 10);
+                }
+            }
+        }
+        
+        .navbar-nav {
+            >li {
+                >a {
+                    @include media-breakpoint-down(sm) {
+                        color: $font-color !important;
+                    }
+                }
+            }
+            li {
+                @include media-breakpoint-down(sm) {
+                    &:not(:first-child) {
+                        border-top: 1px solid rgba(0, 0, 0, 0.2);
                     }
                 }
             }
         }
     }
+
+    .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        color: #2e2e2e !important;
+    }
+
+    .navbar-expand-md {
+        .navbar-nav {
+            .nav-link {
+                padding-left: 10px;
+                padding-right: 30px;
+            }
+        }
+    } 
