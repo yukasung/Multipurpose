@@ -80,11 +80,21 @@
                 }
             }
         }
-        // .dropdown{
-        //     .dropdown-menu{
-        //         left: 4px !important;
-        //     }
-        // }
+        ul {
+            ul {
+                @include media-breakpoint-up(sm) {
+                    // top: 0 !important;
+                    // margin-top: 0 !important;
+                    // left: 0 !important;
+                }
+                li {
+                    @include media-breakpoint-up(sm) {
+                        // border-left: 1px solid #efefef !important;
+                        // border-right: 1px solid #efefef !important;
+                    }
+                }
+            }
+        }
     }
     .sm-collapsible {
         .sub-arrow {
