@@ -80,7 +80,7 @@ var theme = {
     initNavbar: function () {
 
         $('.navbar-toggler').click(function() {
-            $(this).toggleClass('navbar-toggler-active');
+            $(this).toggleClass('open');
         });
         
         // Fixed header navigation that auto hides when scroll down
