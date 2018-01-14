@@ -5,8 +5,14 @@
     /*-----------------------------------------------------------------------------------*/
 
 .navbar {
+    background: #ffffff;
+    transition: all .5s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
     @include media-breakpoint-up(sm) {
         padding: 0;
+    }
+    &.scroll-up {
+        transform: translateY(-110%);
     }
     .navbar-header {
         display: table;
@@ -19,18 +25,18 @@
     }
     .dropdown-menu {
         border-radius: 0;
-        border: 0;
         padding: 0;
+        margin: 0;
+        border: 0;
         @include media-breakpoint-down(sm) {
             margin-top: 0;
             padding-left: 20px;
-            border-top: 1px solid #efefef;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            ;
         }
         li {
             @include media-breakpoint-up(sm) {
-                &:not(:first-child) {
-                    border-top: 1px solid #efefef;
-                }
+                background: $primary-color;
             }
             a {
                 text-transform: uppercase;
@@ -39,14 +45,17 @@
                 line-height: 1;
                 @include media-breakpoint-up(sm) {
                     padding: 15px;
+                    color: #ffffff;
                 }
                 @include media-breakpoint-down(sm) {
                     padding-top: 15px;
                     padding-bottom: 15px;
                 }
-                &:hover {
+                &:hover,
+                &:active {
                     @include media-breakpoint-up(sm) {
-                        color: $primary-color;
+                        background: lighten($primary-color, 8) !important;
+                        color: #ffffff;
                     }
                 }
             }
@@ -83,9 +92,8 @@
         ul {
             ul {
                 @include media-breakpoint-up(sm) {
-                    // top: 0 !important;
-                    // margin-top: 0 !important;
-                    // left: 0 !important;
+                    // padding-top: 6px !important;
+                    // padding-left: 10px !important;
                 }
                 li {
                     @include media-breakpoint-up(sm) {

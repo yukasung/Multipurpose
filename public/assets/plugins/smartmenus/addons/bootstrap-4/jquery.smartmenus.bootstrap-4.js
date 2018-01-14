@@ -36,8 +36,10 @@
 
 					$this.smartmenus({
 							// these are some good default options that should work for all
-							subMenusSubOffsetX: 2,
-							subMenusSubOffsetY: -9,
+							// subMenusSubOffsetX: 2,
+							subMenusSubOffsetX: -1,
+							// subMenusSubOffsetY: -9,
+							subMenusSubOffsetY: 0,
 							subIndicators: !skipBehavior,
 							collapsibleShowFunction: null,
 							collapsibleHideFunction: null,
