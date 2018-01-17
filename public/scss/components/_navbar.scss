@@ -201,8 +201,8 @@
 
 .navbar-toggler {
     border: none;
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 15px;
     position: relative;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
@@ -212,7 +212,7 @@
     span {
         display: block;
         position: absolute;
-        height: 3px;
+        height: 2px;
         width: 100%;
         border-radius: 9px;
         opacity: 1;
@@ -224,10 +224,10 @@
         }
         &:nth-child(2),
         &:nth-child(3) {
-            top: 8px;
+            top: 7px;
         }
         &:nth-child(4) {
-            top: 16px;
+            top: 14px;
         }
     }
     &.open {

@@ -286,15 +286,16 @@ var theme = {
 
     },
     initSearchPopup: function () {
-        var btnSearchOpen = $(".navbar .btn-search"),
-            btnSearchClose = $(".search-popup .btn-close"),
-            searchPopup = $(".search-popup"),
-            formGroup = $(".search-popup .form-group"),
-            searchPopupHeading = $(".search-popup h2");
+
+        var btnSearchOpen = $(".navbar .btn-search");
+        var btnSearchClose = $(".search-popup .btn-close");
+        var searchPopup = $(".search-popup");
+        var formGroup = $(".search-popup .form-group");
+        var searchPopupHeading = $(".search-popup h2");
 
         btnSearchOpen.on("click", function (e) {
             e.preventDefault();
-            searchPopup.show();
+            searchPopup.show();            
             setTimeout(function () {
                 searchPopup.addClass("visible");
             }, 100);
@@ -304,8 +305,10 @@ var theme = {
             setTimeout(function () {
                 formGroup.addClass("visible");
                 btnSearchClose.addClass("visible");
+                
             }, 800);
         });
+        
         btnSearchClose.on("click", function () {
             searchPopup.removeClass("visible");
             setTimeout(function () {
@@ -315,6 +318,7 @@ var theme = {
                 searchPopupHeading.removeClass("visible");
             }, 300);
         });
+
     },
     initLightGallery: function () {
 
