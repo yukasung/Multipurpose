@@ -20,6 +20,7 @@ var theme = {
         theme.initCounter();
         theme.initCheckboxCollapse();
         theme.initLinkShare();
+        theme.initSearchPopup();
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
@@ -79,10 +80,10 @@ var theme = {
     },
     initNavbar: function () {
 
-        $('.navbar-toggler').click(function() {
+        $('.navbar-toggler').click(function () {
             $(this).toggleClass('open');
         });
-        
+
         // Fixed header navigation that auto hides when scroll down
         var currentScrollTop = 0;
         var lastScrollTop = 0;
@@ -285,13 +286,13 @@ var theme = {
 
     },
     initSearchPopup: function () {
-        var searchOpenBtn = $(".btn-search"),
-            searchCloseBtn = $(".search-popup .btn-close"),
+        var btnSearchOpen = $(".navbar .btn-search"),
+            btnSearchClose = $(".search-popup .btn-close"),
             searchPopup = $(".search-popup"),
             formGroup = $(".search-popup .form-group"),
             searchPopupHeading = $(".search-popup h2");
 
-        searchOpenBtn.on("click", function (e) {
+        btnSearchOpen.on("click", function (e) {
             e.preventDefault();
             searchPopup.show();
             setTimeout(function () {
@@ -302,15 +303,15 @@ var theme = {
             }, 600);
             setTimeout(function () {
                 formGroup.addClass("visible");
-                searchCloseBtn.addClass("visible");
+                btnSearchClose.addClass("visible");
             }, 800);
         });
-        searchCloseBtn.on("click", function () {
+        btnSearchClose.on("click", function () {
             searchPopup.removeClass("visible");
             setTimeout(function () {
                 searchPopup.hide();
                 formGroup.removeClass("visible");
-                searchCloseBtn.removeClass("visible");
+                btnSearchClose.removeClass("visible");
                 searchPopupHeading.removeClass("visible");
             }, 300);
         });
@@ -359,6 +360,39 @@ var theme = {
             var cardSocial = $(this).closest("div").find(".card-social");
             cardSocial.toggleClass("active");
             return false;
+        });
+
+    },
+    initSearchPopup: function () {
+
+        var searchOpenBtn = $(".btn-search"),
+            searchCloseBtn = $(".search-popup .btn-close"),
+            searchPopup = $(".search-popup"),
+            formGroup = $(".search-popup .form-group"),
+            searchPopupHeading = $(".search-popup h2");
+
+        searchOpenBtn.on("click", function (e) {
+            e.preventDefault();
+            searchPopup.show();
+            setTimeout(function () {
+                searchPopup.addClass("visible");
+            }, 100);
+            setTimeout(function () {
+                searchPopupHeading.addClass("visible");
+            }, 600);
+            setTimeout(function () {
+                formGroup.addClass("visible");
+                searchCloseBtn.addClass("visible");
+            }, 800);
+        });
+        searchCloseBtn.on("click", function () {
+            searchPopup.removeClass("visible");
+            setTimeout(function () {
+                searchPopup.hide();
+                formGroup.removeClass("visible");
+                searchCloseBtn.removeClass("visible");
+                searchPopupHeading.removeClass("visible");
+            }, 300);
         });
 
     },

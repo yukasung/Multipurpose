@@ -109,6 +109,33 @@
             }
         }
     }
+    .input-search {
+        input {
+            @include media-breakpoint-up(sm) {
+                width: 245px;
+            }
+        }
+    }
+    .navbar-action {
+        margin-top: auto;
+        margin-bottom: auto;
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        @include media-breakpoint-up(sm) {
+            margin-left: 85px;
+        }
+        li {
+            &:not(:last-child) {
+                margin-right: 15px;
+                @include media-breakpoint-up(sm) {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
     .sm-collapsible {
         .sub-arrow {
             width: auto;
@@ -152,7 +179,8 @@
     letter-spacing: 0.5px;
 }
 
-.navbar-expand-md {
+.navbar-expand-md,
+.navbar-expand-lg {
     .navbar-nav {
         .nav-item {
             &:last-child {
@@ -234,5 +262,8 @@
         .nav-link {
             color: $font-color;
         }
+    }
+    a {
+        color: $font-color;
     }
 }

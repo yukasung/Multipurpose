@@ -71,11 +71,6 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
-            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span></span>
@@ -83,6 +78,11 @@
                 <span></span>
                 <span></span>
             </button>
+            <div class="navbar-header mx-auto">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+            </div>
             <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -240,48 +240,38 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown sub-arrow-none ml-0 ml-md-4">
-                        <a class="nav-link dropdown-toggle" href="#">
-                            <i class="ion-search icon-lg mr-1"></i> Search</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <form class="form-inline">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-secondary" type="button">
-                                                <i class="ion-search icon-lg mr-1"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="ion-ios-cart icon-lg mr-1"></i> Cart</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">
-                            <i class="ion-earth icon-lg mr-1"></i> EN</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="page-about-us.html">English</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="page-services.html">Français</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="page-contact.html">Deutsch</a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
-
             </div>
+            <ul class="navbar-action list-inline">
+                <li class="list-inline-item">
+                    <a class="btn-cart" href="#">
+                        <i class="ion-bag icon-lg"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-search" href="#">
+                        <i class="ion-ios-search-strong icon-lg"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
+    <div class="search-popup" style="display: none;">
+        <div class="search-popup-block d-flex align-items-center justify-content-center">
+            <div class="btn-close"> CLOSE
+                <i class="ion-android-close icon-lg"></i>
+            </div>
+            <form>
+                <h2 class="text-center">Search Our Website</h2>
+                <div class="input-icon input-group-lg">
+                    <button type="submit" class="input-btn">
+                        <i class="ion-ios-search-strong icon icon-2x"></i>
+                    </button>
+                    <input type="text" class="form-control" name="" placeholder="Search...">
+                </div>
+            </form>
+        </div>
+    </div>
 </header> 
 <!-- Page title -->
 <div class="bg-grey">

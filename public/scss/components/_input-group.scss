@@ -1,0 +1,22 @@
+.input-icon {
+    position: relative;
+    .input-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 10px;
+        background: 0 0;
+        border: none;
+        outline: none !important;
+        .icon {
+            color: #76838f;
+        }
+    }
+    &.input-group-lg {
+        .icon {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    }
+}
