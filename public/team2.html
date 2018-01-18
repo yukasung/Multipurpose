@@ -71,6 +71,11 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span></span>
@@ -78,11 +83,6 @@
                 <span></span>
                 <span></span>
             </button>
-            <div class="navbar-header mx-auto">
-                <a class="navbar-brand" href="/">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
-            </div>
             <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -244,25 +244,47 @@
             </div>
             <ul class="navbar-action list-inline">
                 <li class="list-inline-item">
-                    <a class="btn-cart" href="#">
+                    <a href="#" data-toggle="navbar-popup" data-target="#popupLanguage">
                         <i class="ion-bag icon-lg"></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="btn-search" href="#">
+                    <a href="#">
+                        <i class="ion-bag icon-lg"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="navbar-popup" data-target="#popupSearch">
                         <i class="ion-ios-search-strong icon-lg"></i>
                     </a>
                 </li>
             </ul>
+
         </div>
     </nav>
-    <div class="search-popup" style="display: none;">
-        <div class="search-popup-block d-flex align-items-center justify-content-center">
+    <div id="popupSearch" class="navbar-popup" style="display: none;">
+        <div class="navbar-popup-body d-flex align-items-center justify-content-center">
             <div class="btn-close"> CLOSE
                 <i class="ion-android-close icon-lg"></i>
             </div>
             <form>
-                <h2 class="text-center">Search Our Website</h2>
+                <h3 class="popup-title text-center mb-4">Search Our Website</h3>
+                <div class="input-icon input-group-lg">
+                    <button type="submit" class="input-btn">
+                        <i class="ion-ios-search-strong icon icon-2x"></i>
+                    </button>
+                    <input type="text" class="form-control" name="" placeholder="Search...">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="popupLanguage" class="navbar-popup" style="display: none;">
+        <div class="navbar-popup-body d-flex align-items-center justify-content-center">
+            <div class="btn-close"> CLOSE
+                <i class="ion-android-close icon-lg"></i>
+            </div>
+            <form>
+                <h3 class="popup-title text-center mb-4">Switch The Language</h3>
                 <div class="input-icon input-group-lg">
                     <button type="submit" class="input-btn">
                         <i class="ion-ios-search-strong icon icon-2x"></i>

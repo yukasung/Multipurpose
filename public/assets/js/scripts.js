@@ -15,12 +15,11 @@ var theme = {
         theme.initNavbar();
         theme.initGoogleMap();
         theme.initProgressBar();
-        theme.initSearchPopup();
+        theme.initNavbarPopup();
         theme.initLightGallery();
         theme.initCounter();
         theme.initCheckboxCollapse();
         theme.initLinkShare();
-        theme.initSearchPopup();
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
@@ -285,38 +284,36 @@ var theme = {
         });
 
     },
-    initSearchPopup: function () {
+    initNavbarPopup: function () {
 
-        var btnSearchOpen = $(".navbar .btn-search");
-        var btnSearchClose = $(".search-popup .btn-close");
-        var searchPopup = $(".search-popup");
-        var formGroup = $(".search-popup .form-group");
-        var searchPopupHeading = $(".search-popup h2");
+        $('a[data-toggle="navbar-popup"]').on("click", function (e) {
 
-        btnSearchOpen.on("click", function (e) {
+            var target = $(this).attr("data-target");
+            var btnClose = $(target).find('.btn-close');
+            var lblTitle = $(target).find('.popup-title');
+            
             e.preventDefault();
-            searchPopup.show();            
+            $(target).show();
+
             setTimeout(function () {
-                searchPopup.addClass("visible");
+                $(target).addClass("visible");
             }, 100);
             setTimeout(function () {
-                searchPopupHeading.addClass("visible");
+                lblTitle.addClass("visible");
             }, 600);
             setTimeout(function () {
-                formGroup.addClass("visible");
-                btnSearchClose.addClass("visible");
-                
+                btnClose.addClass("visible");
             }, 800);
-        });
-        
-        btnSearchClose.on("click", function () {
-            searchPopup.removeClass("visible");
-            setTimeout(function () {
-                searchPopup.hide();
-                formGroup.removeClass("visible");
-                btnSearchClose.removeClass("visible");
-                searchPopupHeading.removeClass("visible");
-            }, 300);
+
+            btnClose.bind("click", function () {
+                $(target).removeClass("visible");
+                setTimeout(function () {
+                    $(target).hide();
+                    btnClose.removeClass("visible");
+                    lblTitle.removeClass("visible");
+                }, 300);
+            });
+
         });
 
     },
@@ -364,39 +361,6 @@ var theme = {
             var cardSocial = $(this).closest("div").find(".card-social");
             cardSocial.toggleClass("active");
             return false;
-        });
-
-    },
-    initSearchPopup: function () {
-
-        var searchOpenBtn = $(".btn-search"),
-            searchCloseBtn = $(".search-popup .btn-close"),
-            searchPopup = $(".search-popup"),
-            formGroup = $(".search-popup .form-group"),
-            searchPopupHeading = $(".search-popup h2");
-
-        searchOpenBtn.on("click", function (e) {
-            e.preventDefault();
-            searchPopup.show();
-            setTimeout(function () {
-                searchPopup.addClass("visible");
-            }, 100);
-            setTimeout(function () {
-                searchPopupHeading.addClass("visible");
-            }, 600);
-            setTimeout(function () {
-                formGroup.addClass("visible");
-                searchCloseBtn.addClass("visible");
-            }, 800);
-        });
-        searchCloseBtn.on("click", function () {
-            searchPopup.removeClass("visible");
-            setTimeout(function () {
-                searchPopup.hide();
-                formGroup.removeClass("visible");
-                searchCloseBtn.removeClass("visible");
-                searchPopupHeading.removeClass("visible");
-            }, 300);
         });
 
     },

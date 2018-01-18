@@ -135,7 +135,7 @@ dl {
 /*-----------------------------------------------------------------------------------*/
 /*  MASTER > SEARCH
 /*-----------------------------------------------------------------------------------*/
-.search-popup {
+.navbar-popup {
   display: none;
   -webkit-transform: translateX(-500px);
           transform: translateX(-500px);
@@ -150,25 +150,25 @@ dl {
   z-index: 9999;
   opacity: 0;
   padding: 20px; }
-  .search-popup.visible {
+  .navbar-popup.visible {
     -webkit-transform: none;
             transform: none;
     opacity: 1; }
-  .search-popup .search-popup-block {
+  .navbar-popup .navbar-popup-body {
     width: 100%;
     height: 100%; }
-    .search-popup .search-popup-block h2 {
+    .navbar-popup .navbar-popup-body .popup-title {
       opacity: 0;
       -webkit-transform: translateY(30px);
               transform: translateY(30px);
       -webkit-transition: all 0.7s;
       transition: all 0.7s;
       margin-bottom: 30px; }
-      .search-popup .search-popup-block h2.visible {
+      .navbar-popup .navbar-popup-body .popup-title.visible {
         opacity: 1;
         -webkit-transform: none;
                 transform: none; }
-    .search-popup .search-popup-block .btn-close {
+    .navbar-popup .navbar-popup-body .btn-close {
       color: #333;
       position: absolute;
       top: 30px;
@@ -179,11 +179,11 @@ dl {
               transform: translateX(30px);
       -webkit-transition: all 0.7s;
       transition: all 0.7s; }
-      .search-popup .search-popup-block .btn-close.visible {
+      .navbar-popup .navbar-popup-body .btn-close.visible {
         opacity: 1;
         -webkit-transform: none;
                 transform: none; }
-    .search-popup .search-popup-block form {
+    .navbar-popup .navbar-popup-body form {
       max-width: 800px;
       width: 100%; }
 
@@ -462,7 +462,7 @@ input[type="submit"] {
     @media (max-width: 767px) {
       .navbar .navbar-action {
         position: absolute;
-        right: 15px;
+        right: 60px;
         top: 15px; } }
     @media (min-width: 576px) {
       .navbar .navbar-action {
