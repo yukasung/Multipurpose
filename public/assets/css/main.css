@@ -472,6 +472,10 @@ input[type="submit"] {
       @media (min-width: 576px) {
         .navbar .navbar-action li:not(:last-child) {
           margin-right: 30px; } }
+    .navbar .navbar-action .nav-link-flag {
+      padding: 0; }
+      .navbar .navbar-action .nav-link-flag .flag-icon {
+        font-size: 16px; }
   .navbar .sm-collapsible .sub-arrow {
     width: auto;
     margin-right: 3px;
