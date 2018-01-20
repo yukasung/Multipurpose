@@ -4,6 +4,8 @@
    ========================================================================== */
 /* 7. Box Shadow
    ========================================================================== */
+/* 2. Navbar
+   ========================================================================== */
 /*-----------------------------------------------------------------------------------*/
 /*  Base > Typography
 /*-----------------------------------------------------------------------------------*/
@@ -391,6 +393,17 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > NAVBAR
     /*-----------------------------------------------------------------------------------*/
+.navbar-light .navbar-toggler span {
+  background: #2e2e2e; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333333; }
+
+.navbar-light .navbar-action .nav-action {
+  color: #333333; }
+  .navbar-light .navbar-action .nav-action span {
+    font-size: 13px; }
+
 .navbar {
   background: #ffffff;
   -webkit-transition: all .5s;
@@ -556,15 +569,6 @@ input[type="submit"] {
     top: 18px;
     width: 0%;
     left: 50%; }
-
-.navbar-light .navbar-toggler span {
-  background: #2e2e2e; }
-
-.navbar-light .navbar-nav .nav-link {
-  color: #333333; }
-
-.navbar-light a {
-  color: #333333; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > NAVS
