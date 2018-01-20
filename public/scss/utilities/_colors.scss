@@ -24,6 +24,14 @@
     background-color: $primary-color !important;
 }
 
+.bg-white{
+    background-color: #fff !important;
+}
+
+.bg-overlay{
+    opacity: 0.915 !important;
+}
+
 .bg-shadow {
     box-shadow: $box-shadow;
 }
@@ -43,6 +51,8 @@
 .bg-transparent {
     background-color: transparent !important;
 }
+
+
 
 .gradient-left {
     &:after {

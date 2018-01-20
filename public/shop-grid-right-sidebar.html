@@ -16,6 +16,7 @@
     <link href="assets/css/plugins.css" rel="stylesheet">
     <!-- SmartMenus jQuery Bootstrap 4 Addon CSS -->
     <link href="assets/plugins/smartmenus/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.css" rel="stylesheet">
+    <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -84,7 +85,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+            <div id="navbarNav" class="collapse navbar-collapse justify-content-end mt-3 mt-md-0">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
@@ -245,9 +246,9 @@
             </div>
             <ul class="navbar-action list-inline">
                 <li class="list-inline-item">
-                    <a href="#" class="nav-link nav-link-flag" data-toggle="navbar-popup" data-target="#popupLanguage">
-                        <i class="flag-icon flag-icon-gb"></i>
-                        <span>EN</span>
+                    <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                        <i class="flag-icon flag-icon-gb font-size-16 mr-1"></i>
+                        <span class="font-size-13">EN</span>
                     </a>
                 </li>
                 <li class="list-inline-item">
@@ -256,7 +257,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" data-toggle="navbar-popup" data-target="#popupSearch">
+                    <a href="#" data-toggle="modal" data-target="#modalSearch">
                         <i class="ion-ios-search-strong icon-lg"></i>
                     </a>
                 </li>
@@ -264,56 +265,89 @@
 
         </div>
     </nav>
-    <div id="popupSearch" class="navbar-popup" style="display: none;">
-        <div class="navbar-popup-body d-flex align-items-center justify-content-center">
-            <div class="btn-close"> CLOSE
-                <i class="ion-android-close icon-lg"></i>
-            </div>
-            <form>
-                <h3 class="popup-title text-center mb-4">Search Our Website</h3>
-                <div class="input-icon input-group-lg">
-                    <button type="submit" class="input-btn">
-                        <i class="ion-ios-search-strong icon icon-2x"></i>
+
+    <!-- Modal Search-->
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content bg-overlay">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
-                    <input type="text" class="form-control" name="" placeholder="Search...">
                 </div>
-            </form>
-        </div>
-    </div>
-    <div id="popupLanguage" class="navbar-popup" style="display: none;">
-        <div class="navbar-popup-body d-flex align-items-center justify-content-center">
-            <div class="btn-close"> CLOSE
-                <i class="ion-android-close icon-lg"></i>
-            </div>
-            <form>
-                <h3 class="popup-title text-center mb-4">Switch The Language</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                            <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
-                                <i class="flag-icon flag-icon-de icon-2x mr-2 align-middle"></i><span>Deutsch</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                            <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
-                                <i class="flag-icon flag-icon-gb icon-2x mr-2 align-middle"></i><span>English</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                            <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
-                                <i class="flag-icon flag-icon-es icon-2x mr-2 align-middle"></i><span>Español</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                            <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
-                                <i class="flag-icon flag-icon-fr icon-2x mr-2 align-middle"></i><span>Français</span>
-                            </a>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <form>
+                                    <h5 class="modal-title h3 text-center mb-4">Search Our Website</h5>
+                                    <div class="input-icon input-group-lg">
+                                        <button type="submit" class="input-btn">
+                                            <i class="ion-ios-search-strong icon icon-2x"></i>
+                                        </button>
+                                        <input type="text" class="form-control" name="" placeholder="Search...">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
+
+    <!-- Modal Language-->
+    <div class="modal fade" id="modalLanguage" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content bg-overlay">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <form>
+                                    <h3 class="popup-title text-center mb-4">Switch The Language</h3>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                    <i class="flag-icon flag-icon-de icon-2x mr-2 align-middle"></i>
+                                                    <span class="text-muted">Deutsch</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                    <i class="flag-icon flag-icon-gb icon-2x mr-2 align-middle"></i>
+                                                    <span class="text-muted">English</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                    <i class="flag-icon flag-icon-es icon-2x mr-2 align-middle"></i>
+                                                    <span class="text-muted">Español</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                    <i class="flag-icon flag-icon-fr icon-2x mr-2 align-middle"></i>
+                                                    <span class="text-muted">Français</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </header>  
 <div class="bg-grey">
     <div class="container py-4">
@@ -952,6 +986,7 @@
     <!-- SmartMenus jQuery plugin -->
     <script type="text/javascript" src="assets/plugins/smartmenus/jquery.smartmenus.js"></script>
     <script type="text/javascript" src="assets/plugins/smartmenus/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js"></script>
+    <script type="text/javascript" src="assets/plugins/wow/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 

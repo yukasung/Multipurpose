@@ -20,6 +20,8 @@ var theme = {
         theme.initCounter();
         theme.initCheckboxCollapse();
         theme.initLinkShare();
+        theme.initWOW();
+        
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
@@ -363,6 +365,9 @@ var theme = {
             return false;
         });
 
+    },
+    initWOW: function(){
+        new WOW().init();
     },
     setPostNavigationPosition: function () {
 
