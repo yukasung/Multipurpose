@@ -18,8 +18,18 @@ $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
 0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
 
 
-/* 2. Navbar
+/* 2. Navigation Bar
    ========================================================================== */
-$navbar-font-size: 13px;
-$navbar-light-font-color: $font-color;
-$navbar-light-toggler-color: #2e2e2e;
+$navbar-height: 48px !default;
+$navbar-bg-color: #ffffff !default;
+$navbar-font-size: 13px !default;
+$navbar-light-font-color: $font-color !default;
+$navbar-light-font-color-mobile: $font-color !default;
+$navbar-light-toggler-color: #2e2e2e !default;
+$navbar-ddl-bg-color: $primary-color !default;
+$navbar-ddl-bg-color-mobile: #ffffff !default;
+$navbar-ddl-font-color: #ffffff !default;
+$navbar-border-top-mobile: 1px solid #efefef;
+
+/* 2. Footer
+   ========================================================================== */

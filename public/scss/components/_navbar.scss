@@ -24,11 +24,11 @@
     }
 
     .navbar {
-        background: #ffffff;
+        background: $navbar-bg-color;
         transition: all .5s;
         box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
         @include media-breakpoint-up(sm) {
-            height: 48px;
+            height: $navbar-height;
             padding: 0;
         }
         &.scroll-up {
@@ -54,8 +54,9 @@
                 ;
             }
             li {
+                background: $navbar-ddl-bg-color-mobile;
                 @include media-breakpoint-up(sm) {
-                    background: $primary-color;
+                    background: $navbar-ddl-bg-color;
                 }
                 a {
                     text-transform: uppercase;
@@ -64,7 +65,7 @@
                     line-height: 1;
                     @include media-breakpoint-up(sm) {
                         padding: 15px;
-                        color: #ffffff;
+                        color: $navbar-ddl-font-color;
                     }
                     @include media-breakpoint-down(sm) {
                         padding-top: 15px;
@@ -97,33 +98,19 @@
                     @include media-breakpoint-down(sm) {
                         line-height: 1 !important;
                         padding: 15px 0;
-                        color: $font-color !important;
+                        color: $navbar-light-font-color-mobile !important;
                     }
                 }
             }
             li {
                 @include media-breakpoint-down(sm) {
                     &:not(:first-child) {
-                        border-top: 1px solid #efefef;
+                        border-top: $navbar-border-top-mobile;
                     }
                 }
                 ul {
                     @include media-breakpoint-up(sm) {
                         box-shadow: 2px 2px 0 rgba(0, 0, 0, .04);
-                    }
-                }
-            }
-            ul {
-                ul {
-                    @include media-breakpoint-up(sm) {
-                        // padding-top: 6px !important;
-                        // padding-left: 10px !important;
-                    }
-                    li {
-                        @include media-breakpoint-up(sm) {
-                            // border-left: 1px solid #efefef !important;
-                            // border-right: 1px solid #efefef !important;
-                        }
                     }
                 }
             }
