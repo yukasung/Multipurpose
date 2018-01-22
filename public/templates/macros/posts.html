@@ -42,22 +42,17 @@
                 <ul class="share ml-2">
                     <li>
                         <a href="#">
-                            <i class="fab fa-facebook-f"></i>
+                            <i class="ion-social-twitter-outline icon-lg"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-twitter"></i>
+                            <i class="ion-social-facebook-outline icon-lg"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-whatsapp"></i>
+                            <i class="ion-social-googleplus-outline icon-lg"></i>
                         </a>
                     </li>
                 </ul>
@@ -118,12 +113,7 @@
                     <h5>
                         <a href="#">Jana Klein</a>
                     </h5>
-                    <div class="meta">
-                        <span class="date">25 Jan 2017</span>
-                        <span class="reply">
-                            <a class="link-effect" href="#">Reply</a>
-                        </span>
-                    </div>
+                    {{ card_meta_comment() }}
                     <p>Accumsan taciti arcu hendrerit fringilla. Ligula officia inceptos luctus ut posuere. Dui odio magna ex
                         laboris. Eros justo amet cum sint felis. Leo ad semper dis ullamco officia. Varius himenaeos blandit
                         aliquip sint. Do class senectus praesent elit laoreet.</p>
@@ -142,12 +132,7 @@
                     <h5>
                         <a href="#">Ruby Nelson</a>
                     </h5>
-                    <div class="meta">
-                        <span class="date">19 Mar 2017</span>
-                        <span class="reply">
-                            <a class="link-effect" href="#">Reply</a>
-                        </span>
-                    </div>
+                    {{ card_meta_comment() }}
                     <p>Suspendisse nunc veniam felis do. Nunclorem mollit eleifend consectetuer mi. At aliquip gravida ut nascetur
                         laborum. Facilisis vel eu per dictum labore. Cum veniam vel vestibulum pariatur nisi. Cum tellus
                         elementum imperdiet sint.</p>
@@ -166,12 +151,7 @@
                     <h5>
                         <a href="#">Hope Schneider</a>
                     </h5>
-                    <div class="meta">
-                        <span class="date">31 Jan 2017</span>
-                        <span class="reply">
-                            <a class="link-effect" href="#">Reply</a>
-                        </span>
-                    </div>
+                    {{ card_meta_comment() }}
                     <p>Tellus quisque metus massa suspendisse est. Labore quisque nascetur ut facilisis. Tristique nullam neque
                         sollicitudin lacus dignissim. Tempus habitant mus et deserunt. Quisque fermentum quis parturient
                         orci neque. Occaecat habitant neque eleifend sociis bibendum. Nibh tortor dolore proident lacinia.</p>
@@ -188,12 +168,7 @@
                             <h5>
                                 <a href="#">Doyle Holland</a>
                             </h5>
-                            <div class="meta">
-                                <span class="date">12 Feb 2017</span>
-                                <span class="reply">
-                                    <a class="link-effect" href="#">Reply</a>
-                                </span>
-                            </div>
+                            {{ card_meta_comment() }}
                             <p class="mb-1">Tellus sociis qui venenatis porttitor. Eget morbi lacinia at litora. Turpis nostra vitae purus
                                 facilisis fringilla. Blandit sunt auctor dui eros erat. Odio curae imperdiet a malesuada
                                 senectus. Sint fringilla aenean proident dignissim culpa. Ac aliquip nunclorem eleifend do
@@ -216,12 +191,7 @@
                     <h5>
                         <a href="#">Julian Wilson</a>
                     </h5>
-                    <div class="meta">
-                        <span class="date">02 Feb 2017</span>
-                        <span class="reply">
-                            <a class="link-effect" href="#">Reply</a>
-                        </span>
-                    </div>
+                    {{ card_meta_comment() }}
                     <p>Consectetuer integer nostrud pariatur auctor erat. Scelerisque pharetra nisl ridiculus congue. Sollicitudin
                         euismod hendrerit facilisis ex culpa. Lorem diam laoreet augue excepteur elit. Lectus habitant nunclorem
                         labore aliquet.</p>
@@ -260,15 +230,13 @@
 
 <!-- Card meta -->
 {% macro card_meta() %}
-<div class="meta">
-    <span class="meta-date">25 Jan 2017</span>
-    <span clsss="meta-category">
-        <a href="#">Photography</a>
-    </span>
-    <span class="meta-comment">
-        <a href="#">
-            <i class="far fa-comment mr-1"></i>15   
-        </a>
-    </span>
-</div>
+<p class="blog-post-meta">January 1, 2018 by
+    <a href="#">Mark</a>
+</p>
+{% endmacro %}
+
+{% macro card_meta_comment() %}
+<p class="blog-post-meta">January 1, 2018
+    <a href="#">Reply</a>
+</p>
 {% endmacro %}

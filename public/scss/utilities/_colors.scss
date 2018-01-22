@@ -16,15 +16,22 @@
     color: #eee!important;
 }
 
+.text-body {
+    color: $font-color;
+    a {
+        color: inherit;
+    }
+}
+
 .bg-primary {
     background-color: $primary-color !important;
 }
 
-.bg-white{
+.bg-white {
     background-color: #fff !important;
 }
 
-.bg-overlay{
+.bg-overlay {
     opacity: 0.915 !important;
 }
 
@@ -47,8 +54,6 @@
 .bg-transparent {
     background-color: transparent !important;
 }
-
-
 
 .gradient-left {
     &:after {

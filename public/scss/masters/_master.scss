@@ -76,31 +76,6 @@ ul {
     }
 }
 
-.meta {
-    font-size: 14px;
-    color: $font-meta-color;
-    margin-bottom: 12px;
-    span {
-        &::after {
-            content: "|";
-            font-size: 10px;
-            vertical-align: 1px;
-            padding: 0 10px 0 10px;
-        }
-        &:last-child {
-            &::after {
-                display: none;
-            }
-        }
-        a{
-            color: inherit;
-            &:hover{
-                color: $primary-color;
-            }
-        }
-    } 
-}
-
 .client {
     padding-top: 0px;
     .client-item {

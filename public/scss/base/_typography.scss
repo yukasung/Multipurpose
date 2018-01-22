@@ -62,6 +62,9 @@ h6 {
     font-weight: normal;
     line-height: 1.4;
     color: $font-heading-color;
+    a {
+        color: inherit;
+    }
 }
 
 .h1 small,
@@ -129,12 +132,6 @@ h4 small {
 
 dl {
     line-height: 28px;
-}
-
-.list-border-bottom {
-    li:not(:last-child) {
-        border-bottom: 1px solid rgba(#000000, 0.2);
-    }
 }
 
 .lead {

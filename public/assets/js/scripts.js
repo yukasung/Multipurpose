@@ -19,7 +19,7 @@ var theme = {
         theme.initLightGallery();
         theme.initCounter();
         theme.initCheckboxCollapse();
-        theme.initLinkShare();
+        theme.initCardLinkShare();
         theme.initWOW();
         
     },
@@ -357,7 +357,7 @@ var theme = {
         })
 
     },
-    initLinkShare: function () {
+    initCardLinkShare: function () {
 
         $(".card-link-share").click(function () {
             var cardSocial = $(this).closest("div").find(".card-social");

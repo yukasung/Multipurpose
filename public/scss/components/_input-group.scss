@@ -9,8 +9,15 @@
         background: 0 0;
         border: none;
         outline: none !important;
+        z-index: 999;
         .icon {
             color: #76838f;
+        }
+    }
+    &.input-group {
+        .icon {
+            margin: 0 6px;
+            font-size: 20px;
         }
     }
     &.input-group-lg {
