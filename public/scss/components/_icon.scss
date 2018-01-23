@@ -39,12 +39,13 @@
 	transform: translate(-50%, -50%);
 	z-index: 10;
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 72px;
+	height: 72px;
 	border-radius: 100%;
 	border: 3px solid #ffffff;
 	background: rgba(#000000, 0.2);
 	transition: all .2s ease-in;
+	cursor: pointer;
 	>* {
 		display: block;
 		position: absolute;
@@ -59,11 +60,6 @@
 		margin-top: -25px;
 		margin-left: -25px;
 		padding-left: 5px;
-	}
-	&:hover {
-		background: $primary-color;
-		width: 85px;
-		height: 85px;
 	}
 }
 

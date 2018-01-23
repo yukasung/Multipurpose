@@ -1006,13 +1006,14 @@ input[type="submit"] {
           transform: translate(-50%, -50%);
   z-index: 10;
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   border-radius: 100%;
   border: 3px solid #ffffff;
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in; }
+  transition: all .2s ease-in;
+  cursor: pointer; }
   .icon-video > * {
     display: block;
     position: absolute;
@@ -1027,10 +1028,6 @@ input[type="submit"] {
     margin-top: -25px;
     margin-left: -25px;
     padding-left: 5px; }
-  .icon-video:hover {
-    background: #3498db;
-    width: 85px;
-    height: 85px; }
 
 .icon-circle-md {
   border-radius: 100%;

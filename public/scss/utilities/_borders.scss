@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  UTILITIES > BORDER
+/*-----------------------------------------------------------------------------------*/
+
+
+.border-top-xs {
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.border-bottom-xs {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.border-gray {
+    border-color: #e9ecef !important;
+}
+
+.list-border-bottom {
+    li:not(:last-child) {
+        border-bottom: 1px solid rgba(#000000, 0.1);
+    }
+}
