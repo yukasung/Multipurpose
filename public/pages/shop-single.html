@@ -1,16 +1,24 @@
-{% set page_title = "Product Detail" %} 
-{% set page_link2 = "Shop" %} 
-{% set page_active_link = "Single Product" %} 
-{% extends "../templates/master.html" %} 
-{% block content %} 
+<!--  -->
+{% set page_title = "Product Detail" %}
+<!--  -->
+{% set page_link2 = "Shop" %}
+<!--  -->
+{% set page_active_link = "Single Product" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
+<!--  -->
 {% include "../templates/partials/page_title.html" %}
+<!--  -->
 {% import '../templates/macros/shops.html' as macroShops %}
+<!--  -->
 <div id="content">
     <div class="bg-white">
         <div class="container product py-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="owl-col-1 owl-carousel owl-theme owl-loaded owl-img-dots owl-dot-white">
+                    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
                         <div class="item">
                             <img src="assets/img/shop/shop_1.jpg" alt="" />
                         </div>
@@ -23,11 +31,11 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <h2 class="card-title mt-4 mt-md-0">Truetone by Ecolatnix U22 T-Shirt</h2>
-                    <h3 class="font-weight-bold">
+                    <h3 class="card-title mt-4 mt-md-0">Truetone by Ecolatnix U22 T-Shirt</h3>
+                    <h4 class="font-weight-bold">
                         <del class="op-5">$55.00</del>
                         <ins class="text-decoration-none text-primary">$35.00</ins>
-                    </h3>
+                    </h4>
                     <div class="float-none mt-3 text-primary">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -42,25 +50,20 @@
                     </div>
                     <div class="d-block">
                         <strong>Share:</strong>
-                        <ul class="share ml-2">
+                        <ul class="share">
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-facebook"></i>
+                                    <i class="ion-social-twitter-outline icon-lg"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="ion-social-facebook-outline icon-lg"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-whatsapp"></i>
+                                    <i class="ion-social-googleplus-outline icon-lg"></i>
                                 </a>
                             </li>
                         </ul>
@@ -427,9 +430,7 @@
                 <h2>Related Products</h2>
             </div>
             <div class="owl-col-4 owl-carousel owl-theme owl-loaded mt-6">
-                {% set products = products.slice(0,9) %} {% for product in products %}
-                    {{ macroShops.default(product,"") }}
-                {% endfor %}
+                {% set products = products.slice(0,9) %} {% for product in products %} {{ macroShops.default(product,"") }} {% endfor %}
             </div>
         </div>
     </div>

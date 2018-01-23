@@ -764,14 +764,10 @@ input[type="submit"] {
   background-color: #ffffff;
   border-radius: 2px;
   border: none; }
-  .card .card-title {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 28px; }
-    .card .card-title a {
-      color: #000000; }
-      .card .card-title a:hover {
-        color: #3498db; }
+  .card .card-title a {
+    color: #000000; }
+    .card .card-title a:hover {
+      color: #3498db; }
   .card .card-header {
     background-color: transparent; }
   .card .card-footer {
@@ -1245,6 +1241,8 @@ hr.line-dotted {
   color: #333333; }
   .text-body a {
     color: inherit; }
+    .text-body a:hover {
+      color: #3498db; }
 
 .bg-primary {
   background-color: #3498db !important; }
@@ -1266,6 +1264,9 @@ hr.line-dotted {
 
 .bg-grey {
   background-color: #f3f5f6 !important; }
+
+.bg-yellow {
+  background-color: #ffc300 !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -1415,6 +1416,8 @@ a .overlay {
   margin-bottom: 10px; }
   .meta a:hover {
     color: #3498db; }
+  .meta .meta-link {
+    font-size: 12px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE > SERVICE
@@ -1475,9 +1478,7 @@ a .overlay {
 /*	PAGE > SHOP
 /*-----------------------------------------------------------------------------------*/
 .shop-item-sale {
-  background: #ffc300;
   border-radius: 50%;
-  color: #fff;
   font-size: 14px;
   right: 12px;
   top: 12px;

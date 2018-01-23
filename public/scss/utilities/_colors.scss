@@ -20,6 +20,9 @@
     color: $font-color;
     a {
         color: inherit;
+        &:hover{
+            color: $primary-color;
+        }
     }
 }
 
@@ -49,6 +52,10 @@
 
 .bg-grey {
     background-color: #f3f5f6 !important;
+}
+
+.bg-yellow{
+    background-color: #ffc300 !important;
 }
 
 .bg-transparent {
