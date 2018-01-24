@@ -4,7 +4,7 @@
 <div class="card {{ card_css }}">
     <a href="shop-single.html">
         {% if product.sale %}
-        <span class="shop-item-sale bg-yellow text-white">sale</span>
+        <span class="badge badge-primary text-uppercase badge-pill position-absolute right-0 mt-3 mr-3 py-3">sale</span>
         {% endif %}
         <img class="card-img-top img-fluid" src="{{ product.img }}" alt=""> {{ card_overlay() }}
     </a>
@@ -32,8 +32,8 @@
 {% macro card_overlay() %}
 
 <div class="overlay">
-    <div class="overlay-text">
-        <span>Product Detail</span>
+    <div class="overlay-body">
+        <span class="text-white text-uppercase">View Detail</span>       
     </div>
 </div>
 

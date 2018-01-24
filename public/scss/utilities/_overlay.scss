@@ -21,24 +21,18 @@ a {
         background: #FFF;
         background: rgba($primary-color, 0.8);
         top: 0;
-        .overlay-text {
+        .overlay-body {
+            position: absolute;
+            display: table;
             text-align: center;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            position: absolute;
             z-index: 11;
-            display: table;
             >* {
-                color: #fff;
-                margin-bottom: 10px;
-                font-weight: 500;
-                letter-spacing: -0.5px;
-                line-height: 20px;
                 display: table-cell;
                 vertical-align: middle;
-                text-transform: uppercase;
             }
         }
     }
