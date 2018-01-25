@@ -1,13 +1,45 @@
 /*-----------------------------------------------------------------------------------*/
+
+
 /*	COMPONENT > LIST GROUP
 /*-----------------------------------------------------------------------------------*/
 
-.list-group{
-	&.border-bottom{
-		.list-group-item{
-			border: none;
-			background-color: transparent;
-			border-bottom: 1px dotted #d4dde4;
+.list-group-flush {
+	&:first-child {
+		.list-group-item {
+			&:first-child {
+				border-top: 0;
+			}
 		}
 	}
 }
+
+// .list-group {
+// 	&.border-bottom {
+// 		.list-group-item {
+// 			border: none;
+// 			background-color: transparent;
+// 			border-bottom: 1px dotted #d4dde4;
+// 		}
+// 	}
+// }
+// ul {
+// 	&.list-xl {
+// 		li {
+// 			padding-top: 15px;
+// 			padding-bottom: 15px;
+// 		}
+// 	}
+// 	&.list-lg {
+// 		li {
+// 			padding-top: 10px;
+// 			padding-bottom: 10px;
+// 		}
+// 	}
+// 	&.list-md {
+// 		li {
+// 			padding-top: 6px;
+// 			padding-bottom: 6px;
+// 		}
+// 	}
+// }

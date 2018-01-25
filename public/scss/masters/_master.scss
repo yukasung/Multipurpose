@@ -55,27 +55,6 @@ address {
     }
 }
 
-ul {
-    &.list-xl {
-        li {
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-    }
-    &.list-lg {
-        li {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-    }
-    &.list-md {
-        li {
-            padding-top: 6px;
-            padding-bottom: 6px;
-        }
-    }
-}
-
 .client {
     padding-top: 0px;
     .client-item {
