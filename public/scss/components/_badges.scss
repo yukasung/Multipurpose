@@ -8,8 +8,10 @@
     &.badge-primary {
         background: $primary-color;
     }
-    &.badge-sm {
-        padding-top: 15px;
-        padding-bottom: 15px;
+    &.badge-pill {
+        &.badge-sm {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     }
 }

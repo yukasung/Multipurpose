@@ -141,6 +141,9 @@ dl {
   line-height: 28px;
   margin: 0; }
 
+.text-decoration-none {
+  text-decoration: none; }
+
 .header-top {
   background-color: #3498db;
   color: #fff;
@@ -359,7 +362,6 @@ input[type="submit"] {
         .navbar .dropdown-menu li {
           background: #3498db; } }
       .navbar .dropdown-menu li a {
-        text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 1; }
@@ -496,88 +498,21 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > NAVS
 /*-----------------------------------------------------------------------------------*/
-.nav-vertical {
-  top: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  .nav-vertical ul {
-    list-style: none;
-    margin-top: 0;
-    padding: 0; }
-    .nav-vertical ul .nav-item:first-child a {
-      padding-top: 0; }
-    .nav-vertical ul .nav-item.dropdown ul {
-      margin-top: 0;
-      display: none; }
-      .nav-vertical ul .nav-item.dropdown ul li {
-        border-bottom: none; }
-        .nav-vertical ul .nav-item.dropdown ul li:first-child a {
-          padding-top: 0; }
-        .nav-vertical ul .nav-item.dropdown ul li a {
-          padding-left: 30px !important; }
-    .nav-vertical ul .nav-item.dropdown.show > .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      -webkit-transform: translate3d(0px, 0, 0);
-              transform: translate3d(0px, 0, 0); }
-      @media (max-width: 991.98px) {
-        .nav-vertical ul .nav-item.dropdown.show > .dropdown-menu {
-          max-height: 200px; } }
-    .nav-vertical ul .nav-item.dropdown.show > .dropdown-toggle:after {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
-    .nav-vertical ul li a {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      text-decoration: none;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-      padding: 0 0 0 15px !important;
-      color: #333333; }
-      .nav-vertical ul li a:hover {
-        color: #3498db; }
-      .nav-vertical ul li a i {
-        margin-right: 10px;
-        font-size: 18px;
-        margin-top: 3px;
-        width: 20px; }
-        .nav-vertical ul li a i:first-child {
-          color: #3498db; }
-      .nav-vertical ul li a i[class*='fa-caret'] {
-        float: right; }
-      .nav-vertical ul li a.active {
-        color: #3498db; }
-        .nav-vertical ul li a.active + ul {
-          display: block; }
-      .nav-vertical ul li a:hover {
-        color: #3498db; }
-  .nav-vertical .dropdown-toggle {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .nav-vertical .dropdown-toggle:after {
-      margin-left: auto;
-      -webkit-transition: all .4s ease;
-      transition: all .4s ease;
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-              align-self: center; }
-
-.nav.nav-tabs {
-  border-bottom: 1px solid #000000; }
-  .nav.nav-tabs .nav-link {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.nav.nav-tabs.nav-tabs-flush {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  .nav.nav-tabs.nav-tabs-flush .nav-link {
+    padding: 15px 0;
+    margin-right: 30px;
     border: none;
     color: #333333; }
-    .nav.nav-tabs .nav-link.active {
+    .nav.nav-tabs.nav-tabs-flush .nav-link:first-child {
+      padding-left: 0; }
+    .nav.nav-tabs.nav-tabs-flush .nav-link.active {
       background-color: transparent;
       border-color: transparent transparent transparent;
-      color: #3498db; }
-      .nav.nav-tabs .nav-link.active:after {
+      color: #3498db;
+      font-weight: 500; }
+      .nav.nav-tabs.nav-tabs-flush .nav-link.active:after {
         height: 2px;
         width: 100%;
         display: block;
@@ -1021,7 +956,7 @@ input[type="submit"] {
     margin-left: -25px;
     padding-left: 5px; }
 
-.icon-circle-md {
+.icon-circle-sm {
   border-radius: 100%;
   display: table-cell;
   font-size: 30px;
@@ -1218,7 +1153,7 @@ hr.line-dotted {
 .badge.badge-primary {
   background: #3498db; }
 
-.badge.badge-sm {
+.badge.badge-pill.badge-sm {
   padding-top: 15px;
   padding-bottom: 15px; }
 
@@ -1293,15 +1228,6 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 .op-5 {
   opacity: 0.5 !important; }
-
-/*-----------------------------------------------------------------------------------*/
-/*  UTILITIES > TYPOGRAPHY
-/*-----------------------------------------------------------------------------------*/
-.text-decoration-none {
-  text-decoration: none; }
-
-.list-md li {
-  padding: 10px 0; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > BORDER

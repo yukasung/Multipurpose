@@ -1,121 +1,38 @@
 /*-----------------------------------------------------------------------------------*/
+
+
 /*  COMPONENTS > NAVS
 /*-----------------------------------------------------------------------------------*/
 
-.nav-vertical{
-    top:0;
-    transition: all 0.3s ease;
-    ul{
-        list-style:none;
-        margin-top:0;
-        padding:0;
-        .nav-item{
-             &:first-child{
-                a{
-                    padding-top: 0;
-                }
-            }
-            &.dropdown{
-                ul{
-                    margin-top: 0;display: none;
-                    li{
-                        border-bottom: none;
-                        &:first-child{
-                            a{
-                                padding-top: 0;
-                            }
-                        }
-                        a{
-                            padding-left: 30px !important;
-                        }
-                    }
-                }
-                 &.show{
-                    >.dropdown-menu{
-                        opacity: 1;
-                        visibility: visible;
-                        transform: translate3d(0px, 0, 0);
-                        @include media-breakpoint-down(md) {
-                            max-height: 200px;
-                        }
-                    }
-                    >.dropdown-toggle{                
-                        &:after{
-                            transform: rotate(180deg);
-                        }
-                    }
-                }  
-            }
-        }
-        li{                              
-            a{
-                display: flex;
-                text-decoration:none;
-                transition: all 0.3s ease;
-                padding: 0 0 0 15px !important;
+.nav {
+    &.nav-tabs {
+        &.nav-tabs-flush {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            .nav-link {
+                padding: 15px 0;
+                margin-right: 30px;
+                border: none;
                 color: $font-color;
-                
-                &:hover{
-                    color: $primary-color;
+                &:first-child {
+                    padding-left: 0;
                 }
-                i{
-                    margin-right:10px;
-                    font-size: 18px;
-                    margin-top: 3px;
-                    width: 20px;
-                    &:first-child{
-                        color: $primary-color;
+                &.active {
+                    background-color: transparent;
+                    border-color: transparent transparent transparent;
+                    color: $primary-color;
+                    font-weight: 500;
+                    &:after {
+                        height: 2px;
+                        width: 100%;
+                        display: block;
+                        content: " ";
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        background: $primary-color;
                     }
-                }
-                i[class*='fa-caret']{
-                    float: right;
-                }
-                &.active{
-                    color: $primary-color;
-                    &+ul{
-                        display:block
-                    }
-                }
-                &:hover{
-                    color: $primary-color;
                 }
             }
         }
-    }
-
-    .dropdown-toggle{
-        display: flex;
-        &:after{
-            margin-left: auto;
-            transition: all .4s ease;
-            align-self: center;
-        }   
-    }
-}
-
-.nav{
-    &.nav-tabs{
-        border-bottom: 1px solid #000000;
-        .nav-link{
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: none;
-            color: $font-color;
-            &.active{
-                background-color: transparent;
-                border-color: transparent transparent transparent;
-                color: $primary-color;
-                &:after{
-                    height: 2px;
-                    width: 100%;
-                    display: block;
-                    content: " ";
-                    bottom: 0;
-                    left: 0;
-                    position: absolute;
-                    background: $primary-color;
-                }
-            }
-        }        
     }
 }
