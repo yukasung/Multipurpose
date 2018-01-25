@@ -4,7 +4,7 @@
 <div class="card {{ card_css }}">
     <a href="shop-single.html">
         {% if product.sale %}
-        <span class="badge badge-primary text-uppercase badge-pill position-absolute right-0 mt-3 mr-3 py-3">sale</span>
+        <span class="badge badge-pill badge-primary badge-sm text-uppercase  position-absolute right-0 mt-3 mr-3">sale</span>
         {% endif %}
         <img class="card-img-top img-fluid" src="{{ product.img }}" alt=""> {{ card_overlay() }}
     </a>
@@ -33,8 +33,33 @@
 
 <div class="overlay">
     <div class="overlay-body">
-        <span class="text-white text-uppercase">View Detail</span>       
+        <span class="text-white text-uppercase">View Detail</span>
     </div>
 </div>
 
 {% endmacro %}
+
+<!--  -->
+{% macro header() %}
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <p class="font-weight-bold">Showing 1–12 of 23 results</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <form class="float-none float-md-right">
+            <div class="form-group">
+                <select class="form-control">
+                    <option value="menu_order">Default sorting</option>
+                    <option value="popularity">Sort by popularity</option>
+                    <option value="rating" selected="selected">Sort by average rating</option>
+                    <option value="date">Sort by newness</option>
+                    <option value="price">Sort by price: low to high</option>
+                    <option value="price-desc">Sort by price: high to low</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endmacro%}

@@ -5,11 +5,11 @@
 /*-----------------------------------------------------------------------------------*/
 
 .badge {
-    &.badge-primary{
+    &.badge-primary {
         background: $primary-color;
     }
-    &.badge-circle{        
-        border-radius: 50%;
-        line-height: 1.5;
+    &.badge-sm {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }

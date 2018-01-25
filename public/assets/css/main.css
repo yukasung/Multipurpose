@@ -879,6 +879,10 @@ input[type="submit"] {
   .btn-black:hover, .btn-black:active, .btn-black:focus {
     background-color: #ffffff; }
 
+.btn-outline.btn-default {
+  background-color: transparent;
+  border-color: #e4eaec; }
+
 .input-group-btn .btn {
   padding-left: 15px;
   padding-right: 15px; }
@@ -1228,9 +1232,9 @@ hr.line-dotted {
 .badge.badge-primary {
   background: #3498db; }
 
-.badge.badge-circle {
-  border-radius: 50%;
-  line-height: 1.5; }
+.badge.badge-sm {
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > COLORS
@@ -1316,11 +1320,11 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > BORDER
 /*-----------------------------------------------------------------------------------*/
-.border-top-xs {
+.border-top {
   border-top-width: 1px;
   border-top-style: solid; }
 
-.border-bottom-xs {
+.border-bottom {
   border-bottom-width: 1px;
   border-bottom-style: solid; }
 
