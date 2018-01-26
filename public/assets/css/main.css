@@ -183,13 +183,6 @@ address p {
   overflow: hidden;
   margin: 0; }
 
-.tags {
-  display: inline-block;
-  margin: 0 0 10px 10px; }
-  .tags a {
-    font-size: 15px;
-    font-weight: normal; }
-
 .lead em {
   font-weight: bold; }
 
@@ -833,24 +826,6 @@ input[type="submit"] {
       width: auto;
       font-size: 16px; }
 
-.share {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  margin-bottom: -20px;
-  line-height: 1; }
-  .share li {
-    display: inline-block;
-    margin: 0 0 0 25px; }
-    .share li a:hover {
-      color: #3498db; }
-    .share li a i {
-      background: none;
-      box-shadow: none;
-      border: 0;
-      height: auto !important;
-      width: auto; }
-
 /*-----------------------------------------------------------------------------------*/
 /*	02. COMPONENTS > PAGINATION
 /*-----------------------------------------------------------------------------------*/
@@ -1054,6 +1029,13 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENT > LIST GROUP
 /*-----------------------------------------------------------------------------------*/
+.list-lg li {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.list-inline-lg li:not(:first-child) {
+  margin-left: 30px; }
+
 .list-group-flush:first-child .list-group-item:first-child {
   border-top: 0; }
 
@@ -1232,14 +1214,6 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > BORDER
 /*-----------------------------------------------------------------------------------*/
-.border-top {
-  border-top-width: 1px;
-  border-top-style: solid; }
-
-.border-bottom {
-  border-bottom-width: 1px;
-  border-bottom-style: solid; }
-
 .border-gray {
   border-color: #e9ecef !important; }
 
