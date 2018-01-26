@@ -1,4 +1,5 @@
     /*-----------------------------------------------------------------------------------*/
+
     /*  COMPONENTS > NAVBAR
     /*-----------------------------------------------------------------------------------*/
 
@@ -16,7 +17,7 @@
         .navbar-action {
             .nav-action {
                 color: $navbar-light-font-color;
-                span{
+                span {
                     font-size: $navbar-font-size;
                 }
             }
@@ -51,10 +52,12 @@
                 margin-top: 0;
                 padding-left: 20px;
                 border-top: 1px solid rgba(255, 255, 255, 0.2);
-                ;
             }
             li {
                 background: $navbar-ddl-bg-color-mobile;
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                }
                 @include media-breakpoint-up(sm) {
                     background: $navbar-ddl-bg-color;
                 }

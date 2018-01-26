@@ -351,6 +351,8 @@ input[type="submit"] {
         border-top: 1px solid rgba(255, 255, 255, 0.2); } }
     .navbar .dropdown-menu li {
       background: #ffffff; }
+      .navbar .dropdown-menu li:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
       @media (min-width: 576px) {
         .navbar .dropdown-menu li {
           background: #3498db; } }
