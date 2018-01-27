@@ -1,35 +1,34 @@
-
 <!-- Default -->
 {% macro default(portfolio, caption_css="") %}
 
-    <figure class="figure mb-0">
-        <a class="d-block" href="portfolio-single-image-gallery.html">
-            {{ card_overlay() }}
-            <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
-        </a>
-        <figcaption class="figure-caption {{ caption_css }}">
-            <a href="portfolio-single-image-gallery.html">{{ portfolio.title }}</a>
-        </figcaption>
-    </figure>
-    
-{% endmacro %} 
+<figure class="figure mb-0">
+    <a class="d-block" href="portfolio-single-image-gallery.html">
+        {{ card_overlay() }}
+        <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+    </a>
+    <!-- <figcaption class="figure-caption {{ caption_css }}">
+        <a href="portfolio-single-image-gallery.html">{{ portfolio.title }}</a>
+    </figcaption> -->
+</figure>
+
+{% endmacro %}
 
 <!-- Card -->
 {% macro card(portfolio) %}
 
-    <div class="card bg-shadow">
-        {{ default(portfolio,"px-4 py-3 mt-0") }}        
-    </div>
+<div class="card bg-shadow">
+    {{ default(portfolio,"px-4 py-3 mt-0") }}
+</div>
 
-{% endmacro %} 
+{% endmacro %}
 
 <!-- Card Overlay -->
 {% macro card_overlay() %}
 
-    <div class="overlay">
-        <div class="overlay-text">
-            <span>View Project</span>
-        </div>
+<div class="overlay">
+    <div class="overlay-body">
+        <span class="text-uppercase text-white">View Project</span>
     </div>
+</div>
 
 {% endmacro %}

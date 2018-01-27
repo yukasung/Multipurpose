@@ -1,25 +1,72 @@
-{% set page_title = "Portfolio Grid" %} 
-{% set page_link2 = "Portfolio" %} 
-{% set page_active_link = "3 Columns" %} 
-{% extends "../templates/master.html" %} 
-{% block content %} 
-{% include "../templates/partials/page_title.html"%} 
+{% set page_title = "Portfolio Grid" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "3 Columns" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
 {% import '../templates/macros/portfolios.html' as macroPortfolios %}
 
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
-            <p class="lead text-center">Curabitur porta nam tellus viverra lectus. Mauris dui pariatur felis sunt. Excepteur cubilia mollit
-                pharetra hendrerit. Blandit integer porta eget ipsum. Ullamco etiam ridiculus arcu nec magna.</p>
-            <div class="portfolio isotope caption mt-6">
-                {% include "../templates/partials/portfolio_filters.html" %}
-                <div class="grid pt-3" data-isotope='{"layoutMode": "fitRows","itemSelector": ".grid-item" }'>
-                    {% set portfolios = portfolios.slice(0,6) %} {% for portfolio in portfolios %}
-                    <div class="grid-item mb-4 col-md-4 {{ portfolio.tag }}">
-                        {{ macroPortfolios.default(portfolio) }}
+            <div class="isotope">
+                {% include "../templates/partials/isotope_filters.html" %}
+                <div class="isotope-grid pt-3">
+                    <div class="grid-item coporate">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-0-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
                     </div>
-                    {% endfor %}
+                    <div class="grid-item coporate">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-2-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="grid-item grid-item-x2 coporate package">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-4-hwide-gap.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
 
+                    <div class="grid-item package">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-8-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="grid-item grid-item-x2 package">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-9-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="grid-item video">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-6-vwide-gap.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="grid-item food">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image-gallery.html">
+                                <img src="assets/img/portfolio/portfolio-1-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>

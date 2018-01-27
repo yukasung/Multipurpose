@@ -21,7 +21,7 @@ var theme = {
         theme.initCheckboxCollapse();
         theme.initCardLinkShare();
         theme.initWOW();
-        
+
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
@@ -43,7 +43,7 @@ var theme = {
     },
     initIsoTope: function () {
 
-        var $grid = $('.portfolio .grid').isotope();
+        var $grid = $('.isotope .isotope-grid').isotope();
 
         // filter functions
         var filterFns = {
@@ -60,7 +60,7 @@ var theme = {
         };
 
         // bind filter button click
-        $('.portfolio .filters-button-group').on('click', 'a', function () {
+        $('.isotope-filter').on('click', 'a', function () {
             var filterValue = $(this).attr('data-filter');
             // use filterFn if matches value
             filterValue = filterFns[filterValue] || filterValue;
@@ -70,7 +70,7 @@ var theme = {
         });
 
         // change is-checked class on buttons
-        $('.portfolio .button-group').each(function (i, buttonGroup) {
+        $('.isotope .isotope-filter').each(function (i, buttonGroup) {
             var $buttonGroup = $(buttonGroup);
             $buttonGroup.on('click', 'a', function () {
                 $buttonGroup.find('.is-checked').removeClass('is-checked');
@@ -293,7 +293,7 @@ var theme = {
             var target = $(this).attr("data-target");
             var btnClose = $(target).find('.btn-close');
             var lblTitle = $(target).find('.popup-title');
-            
+
             e.preventDefault();
             $(target).show();
 
@@ -366,7 +366,7 @@ var theme = {
         });
 
     },
-    initWOW: function(){
+    initWOW: function () {
         new WOW().init();
     },
     setPostNavigationPosition: function () {

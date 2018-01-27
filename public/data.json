@@ -83,43 +83,39 @@
     ],
     "portfolios": [{
             "title": "Mus bibendum pellentesque massa",
-            "img": "assets/img/portfolio/portfolio_1-440x300.jpg",
-            "tag": "transition coporate"
+            "img": "assets/img/portfolio/portfolio-2-primary.jpg",
+            "tag": "transition coporate",
+            "grid_item_class": ""
         },
         {
             "title": "Cras vestibulum pretium mus tempor",
-            "img": "assets/img/portfolio/portfolio_2-440x300.jpg",
-            "tag": "coporate"
+            "img": "assets/img/portfolio/portfolio-1-primary.jpg",
+            "tag": "coporate",
+            "grid_item_class": ""
         },
         {
             "title": "Aliquam non do phasellus aenean",
-            "img": "assets/img/portfolio/portfolio_3-440x300.jpg",
-            "tag": "package"
+            "img": "assets/img/portfolio/portfolio-4-hwide-gap.jpg",
+            "tag": "package",
+            "grid_item_class": "w-50"
         },
         {
             "title": "Hendrerit auctor commodo deserunt",
-            "img": "assets/img/portfolio/portfolio_4-440x300.jpg",
-            "tag": "food"
+            "img": "assets/img/portfolio/portfolio-6-vwide-gap.jpg",
+            "tag": "food",
+            "grid_item_class": ""
         },
         {
             "title": "Mollis adipisicing penatibus esse",
-            "img": "assets/img/portfolio/portfolio_5-440x300.jpg",
-            "tag": "transition books"
+            "img": "assets/img/portfolio/portfolio-8-primary.jpg",
+            "tag": "transition books",
+            "grid_item_class": ""
         },
         {
             "title": "Habitant taciti hendrerit tincidunt",
-            "img": "assets/img/portfolio/portfolio_6-440x300.jpg",
-            "tag": "video"
-        },
-        {
-            "title": "Facilisi sapien dui pretium esse",
-            "img": "assets/img/portfolio/portfolio_7-440x300.jpg",
-            "tag": "video"
-        },
-        {
-            "title": "Nunclorem placerat dignissim semper",
-            "img": "assets/img/portfolio/portfolio_8-440x300.jpg",
-            "tag": "video"
+            "img": "assets/img/portfolio/portfolio-9-primary.jpg",
+            "tag": "video",
+            "grid_item_class": ""
         }
     ],
     "products": [{

@@ -302,7 +302,7 @@
             <p class="lead">Sollicitudin mollis congue venenatis lorem iaculis eleifend per cras sagittis eu sit. Sed ex nisl ea odio lobortis
                 quis ornare lectus aliquet ullamco. Duis penatibus proident vitae non incididunt diam ad eleifend.</p>
             <div class="portfolio isotope caption mt-6">
-                {% include "../templates/partials/portfolio_filters.html" %}
+                {% include "../templates/partials/isotope_filters.html" %}
                 <div class="grid pt-3" data-isotope='{"layoutMode": "fitRows","itemSelector": ".grid-item" }'>
                     {% set portfolios = portfolios.slice(0,6) %} {% for portfolio in portfolios %}
                     <div class="grid-item mb-4 col-md-4 {{ port.tag }}">
