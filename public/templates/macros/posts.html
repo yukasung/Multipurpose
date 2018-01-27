@@ -1,65 +1,138 @@
-<!-- Default -->
-{% macro default(card_css="", card_body_css="py-4 px-0") %}
+<!-- Single Standard Post -->
+{% macro standard(card_css="", card_body_css="py-4 px-0") %}
 
 <div class="card {{ card_css }}">
     <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
-    <div class="card-body {{ card_body_css }} mt-2">
-        <h3 class="card-title h4">Cursus praesent dis dui enim litora aliquam lacus justo exercitation lacinia.</h3>
-        {{ card_meta() }}
-        <p>Natoque dolore massa class laoreet convallis. Magnis dis sollicitudin cursus irure. Exercitation luctus penatibus
-            nullam voluptate morbi. Felis pharetra phasellus bibendum mus. Torquent dis aliquam fugiat iaculis Proident sem
-            sociis dignissim reprehenderit. Lectus pulvinar non inceptos ipsum. Augue laoreet eu ullamco justo lobortis.
-            Veniam euismod class turpis incididunt.</p>
-        <p>Aptent risus leo dignissim gravida excepteur. Scelerisque porta orci class mollis sollicitudin. Diam nec exercitation
-            litora mollit. Vulputate consectetur quisque malesuada massa. Aute malesuada scelerisque bibendum curae. Excepteur
-            rutrum curabitur rhoncus voluptate aliquam. Volutpat pretium facilisi leo nulla.</p>
-        <blockquote class="blockquote">
-            <p class="mb-0">Adipiscing condimentum sollicitudin nulla ridiculus cum. Eget molestie iaculis lacinia himenaeos. Deserunt sollicitudin
-                quis ipsum pede. Vel eros ligula pariatur congue. Vitae dui dolor est tellus. Etiam nisi condimentum lacus
-                vivamus scelerisque.</p>
-        </blockquote>
-        <h4 class="mt-4">Imperdiet montes cillum irure fringilla</h4>
-        <p>Adipiscing auctor bibendum quis magna malesuada. Metus proident curabitur pulvinar ea sed. Sunt leo laoreet gravida
-            integer. Est quis quam gravida morbi metus. Ex facilisi cum malesuada adipisicing minim. Aliquip voluptate nunc
-            exercitation placerat aptent.</p>
-        <p>Montes nunc non nunclorem neque. Condimentum excepteur iaculis deserunt nisi. Scelerisque ea tincidunt accumsan magnis
-            sagittis. Mollit nisl sociis augue taciti nunclorem. Proident parturient amet nam placerat donec. Dolore congue
-            consectetur bibendum magna sit. Nulla fusce nostra montes pretium sapien. Ad parturient netus class eros feugiat.
-            Quam esse vehicula dignissim pariatur curabitur.</p>
-        <div class="row no-gutters py-3 border-top border-bottom">
-            <div class="col-md-6">
-                <strong>Share:</strong>
-                <div class="d-inline-block ml-4">
-                    <ul class="list-inline list-inline-lg mb-0">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="ion-social-twitter-outline icon-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="ion-social-facebook-outline icon-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="ion-social-googleplus-outline icon-lg"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Content -->
+    {{ content() }}
+</div>
+<!-- Comments -->
+{{ comments() }}
+<!--  -->
+{% endmacro %}
+
+<!-- Single Slide Show Post -->
+{% macro slide(card_css="") %}
+
+<div class="card {{ card_css }}">
+    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
+        <div class="item">
+            <img src="assets/img/blog/blog-2.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="assets/img/blog/blog-3.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="assets/img/blog/blog-4.jpg" alt="" />
+        </div>
+    </div>
+    <!-- Content -->
+    {{ content() }}
+</div>
+<!-- Comments -->
+{{ comments() }}
+<!--  -->
+{% endmacro %}
+
+<!-- Single Video Post -->
+{% macro video(card_css="") %}
+
+<div class="card {{ card_css }}">
+    <div class="position-relative">
+        <div id="video-gallery">
+            <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
+                <i class="ion-ios-play"></i>
+            </a>
+        </div>
+        <img src="assets/img/blog/blog-6.jpg" alt="" class="card-img-top img-fluid">
+    </div>
+    <!-- Content -->
+    {{ content() }}
+</div>
+<!-- Comments -->
+{{ comments() }}
+<!--  -->
+{% endmacro %}
+
+<!-- Card -->
+{% macro card() %}
+<!--  -->
+{{ standard("bg-shadow","p-4") }}
+<!--  -->
+{% endmacro %}
+
+<!--  -->
+{% macro content() %}
+
+<div class="card-body py-4 px-0 mt-2">
+    <h3 class="card-title h4">Cursus praesent dis dui enim litora aliquam lacus justo exercitation lacinia.</h3>
+    <p class="meta mb-4 border-bottom pb-3">
+        January 1, 2018
+        <span class="font-italic">by</span>
+        <a href="#">Mark</a>
+        <span class="font-italic">in</span>
+        <a href="#">Business</a>
+    </p>
+    <p>Natoque dolore massa class laoreet convallis. Magnis dis sollicitudin cursus irure. Exercitation luctus penatibus nullam
+        voluptate morbi. Felis pharetra phasellus bibendum mus. Torquent dis aliquam fugiat iaculis Proident sem sociis dignissim
+        reprehenderit. Lectus pulvinar non inceptos ipsum. Augue laoreet eu ullamco justo lobortis. Veniam euismod class
+        turpis incididunt.</p>
+    <p>Aptent risus leo dignissim gravida excepteur. Scelerisque porta orci class mollis sollicitudin. Diam nec exercitation
+        litora mollit. Vulputate consectetur quisque malesuada massa. Aute malesuada scelerisque bibendum curae. Excepteur
+        rutrum curabitur rhoncus voluptate aliquam. Volutpat pretium facilisi leo nulla.</p>
+    <blockquote class="blockquote">
+        <p class="mb-0">Adipiscing condimentum sollicitudin nulla ridiculus cum. Eget molestie iaculis lacinia himenaeos. Deserunt sollicitudin
+            quis ipsum pede. Vel eros ligula pariatur congue. Vitae dui dolor est tellus. Etiam nisi condimentum lacus vivamus
+            scelerisque.
+        </p>
+    </blockquote>
+    <h4 class="mt-4">Imperdiet montes cillum irure fringilla</h4>
+    <p>Adipiscing auctor bibendum quis magna malesuada. Metus proident curabitur pulvinar ea sed. Sunt leo laoreet gravida integer.
+        Est quis quam gravida morbi metus. Ex facilisi cum malesuada adipisicing minim. Aliquip voluptate nunc exercitation
+        placerat aptent.</p>
+    <p>Montes nunc non nunclorem neque. Condimentum excepteur iaculis deserunt nisi. Scelerisque ea tincidunt accumsan magnis
+        sagittis. Mollit nisl sociis augue taciti nunclorem. Proident parturient amet nam placerat donec. Dolore congue consectetur
+        bibendum magna sit. Nulla fusce nostra montes pretium sapien. Ad parturient netus class eros feugiat. Quam esse vehicula
+        dignissim pariatur curabitur.</p>
+    <div class="row no-gutters py-3 border-top border-bottom">
+        <div class="col-md-6">
+            <strong>Share:</strong>
+            <div class="d-inline-block ml-4">
+                <ul class="list-inline list-inline-lg mb-0">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="ion-social-twitter-outline icon-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="ion-social-facebook-outline icon-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="ion-social-googleplus-outline icon-lg"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-6 text-md-right mt-4 mt-md-0">
-                <div class="d-inline-block">
-                    <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">catalog</a>
-                    <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">business</a>
-                    <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">wanderer</a>
-                    <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">inspiring</a>
-                </div>
+        </div>
+        <div class="col-md-6 text-md-right mt-4 mt-md-0">
+            <div class="d-inline-block">
+                <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">catalog</a>
+                <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">business</a>
+                <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">wanderer</a>
+                <a href="#" class="badge badge-light h6 rounded-0 px-2 py-1 mb-0">inspiring</a>
             </div>
         </div>
     </div>
 </div>
+
+{% endmacro %}
+
+<!--  -->
+{% macro comments() %}
+
 <div class="card mt-4">
     <div class="card-body p-0">
         <div class="row">
@@ -113,7 +186,7 @@
                     <h5>
                         <a href="#">Jana Klein</a>
                     </h5>
-                    {{ card_meta_comment() }}
+                    {{ meta_comment() }}
                     <p>Accumsan taciti arcu hendrerit fringilla. Ligula officia inceptos luctus ut posuere. Dui odio magna ex
                         laboris. Eros justo amet cum sint felis. Leo ad semper dis ullamco officia. Varius himenaeos blandit
                         aliquip sint. Do class senectus praesent elit laoreet.</p>
@@ -132,7 +205,7 @@
                     <h5>
                         <a href="#">Ruby Nelson</a>
                     </h5>
-                    {{ card_meta_comment() }}
+                    {{ meta_comment() }}
                     <p>Suspendisse nunc veniam felis do. Nunclorem mollit eleifend consectetuer mi. At aliquip gravida ut nascetur
                         laborum. Facilisis vel eu per dictum labore. Cum veniam vel vestibulum pariatur nisi. Cum tellus
                         elementum imperdiet sint.</p>
@@ -151,7 +224,7 @@
                     <h5>
                         <a href="#">Hope Schneider</a>
                     </h5>
-                    {{ card_meta_comment() }}
+                    {{ meta_comment() }}
                     <p>Tellus quisque metus massa suspendisse est. Labore quisque nascetur ut facilisis. Tristique nullam neque
                         sollicitudin lacus dignissim. Tempus habitant mus et deserunt. Quisque fermentum quis parturient
                         orci neque. Occaecat habitant neque eleifend sociis bibendum. Nibh tortor dolore proident lacinia.</p>
@@ -168,7 +241,7 @@
                             <h5>
                                 <a href="#">Doyle Holland</a>
                             </h5>
-                            {{ card_meta_comment() }}
+                            {{ meta_comment() }}
                             <p class="mb-1">Tellus sociis qui venenatis porttitor. Eget morbi lacinia at litora. Turpis nostra vitae purus
                                 facilisis fringilla. Blandit sunt auctor dui eros erat. Odio curae imperdiet a malesuada
                                 senectus. Sint fringilla aenean proident dignissim culpa. Ac aliquip nunclorem eleifend do
@@ -191,7 +264,7 @@
                     <h5>
                         <a href="#">Julian Wilson</a>
                     </h5>
-                    {{ card_meta_comment() }}
+                    {{ meta_comment() }}
                     <p>Consectetuer integer nostrud pariatur auctor erat. Scelerisque pharetra nisl ridiculus congue. Sollicitudin
                         euismod hendrerit facilisis ex culpa. Lorem diam laoreet augue excepteur elit. Lectus habitant nunclorem
                         labore aliquet.</p>
@@ -223,28 +296,10 @@
 </div>
 
 {% endmacro %}
-
-<!-- Card -->
-{% macro card() %}
 <!--  -->
-{{ default("bg-shadow","p-4") }}
-<!--  -->
-{% endmacro %}
-
-
-<!-- Card meta -->
-{% macro card_meta() %}
-<p class="meta mb-4 border-bottom pb-3">
-    January 1, 2018
-    <span class="font-italic">by</span>
-    <a href="#">Mark</a>
-    <span class="font-italic">in</span>
-    <a href="#">Business</a>
-</p>
-{% endmacro %}
 
 <!-- Card meta comment -->
-{% macro card_meta_comment() %}
+{% macro meta_comment() %}
 <p class="meta">January 1, 2018
     <a href="#" class="float-right text-uppercase meta-link">Reply</a>
 </p>
