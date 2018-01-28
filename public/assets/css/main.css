@@ -1335,20 +1335,22 @@ a .overlay {
 /*-----------------------------------------------------------------------------------*/
 /* 	PAGE > PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
-.isotope .isotope-filter a {
-  cursor: pointer; }
-
-.isotope .isotope-grid .grid-item {
-  width: 25%;
-  padding: 10px; }
-  .isotope .isotope-grid .grid-item.grid-item-x2 {
-    width: 50%; }
+.isotope {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .isotope .isotope-filter {
+    margin: 0 10px; }
+  .isotope .isotope-grid .grid-item {
+    width: 25%;
+    padding: 10px; }
+    .isotope .isotope-grid .grid-item.grid-item-x2 {
+      width: 50%; }
+      @media (max-width: 767.98px) {
+        .isotope .isotope-grid .grid-item.grid-item-x2 {
+          width: 100%; } }
     @media (max-width: 767.98px) {
-      .isotope .isotope-grid .grid-item.grid-item-x2 {
+      .isotope .isotope-grid .grid-item {
         width: 100%; } }
-  @media (max-width: 767.98px) {
-    .isotope .isotope-grid .grid-item {
-      width: 100%; } }
 
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE > SHOP
