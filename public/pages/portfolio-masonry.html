@@ -1,0 +1,74 @@
+{% set page_title = "Portfolio Masonry" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Masonry" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+
+<div id="content">
+    <div class="container py-7">
+        <div class="isotope">
+            {% include "../templates/partials/isotope_filters.html" %}
+            <div class="isotope-grid isotope-masonry mt-4">
+                <div class="grid-item coporate">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-0-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                        <div class="overlay overlay-white">
+                            <div class="overlay-body">
+                                <h3 class="text-body">Custom Content Here</h3>
+                                <p class="text-body">See below for big content place</p>
+                                <a href="#" class="btn btn-primary mt-3 text-uppercase">View Detail</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item coporate">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-2-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                        <div class="overlay overlay-primary overlay-box">
+                            <div class="overlay-body">
+                                <h5 class="text-white">This is a wider card with supporting text.</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item grid-item-x2 coporate package">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-4-hwide-gap.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item package">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-8-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                        <div class="overlay overlay-primary">
+                            <div class="overlay-body">
+                                <h5 class="text-white">This is a wider card with supporting text.</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item grid-item-x2 package">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-9-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item video">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-6-vwide-gap.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item food">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/masonry/portfolio-1-primary.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

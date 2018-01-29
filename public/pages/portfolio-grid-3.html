@@ -1,0 +1,52 @@
+{% set page_title = "Portfolio Grid" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Grid" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+
+<div id="content">
+    <div class="container py-7">
+        <div class="isotope">
+            {% include "../templates/partials/isotope_filters.html" %}
+            <div class="isotope-grid mt-4" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows"}}'>
+                <div class="grid-item col-12 col-md-4 mb-4 coporate">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/grid/p1-440x300.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item col-12 col-md-4 mb-4 coporate">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/grid/p2-440x300.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item col-12 col-md-4 mb-4 coporate package">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/grid/p3-440x300.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item col-12 col-md-4 mb-4 package">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/grid/p4-440x300.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item col-12 col-md-4 mb-4 package">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/grid/p5-440x300.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+                <div class="grid-item col-md-4 video">
+                    <a class="d-block" href="portfolio-single-image-gallery.html">
+                        <img src="assets/img/portfolio/grid/p6-440x300.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

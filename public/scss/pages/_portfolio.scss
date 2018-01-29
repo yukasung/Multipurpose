@@ -6,21 +6,23 @@
 .isotope {
 	margin-left: -10px;
 	margin-right: -10px;
-	.isotope-filter{
+	.isotope-filter {
 		margin: 0 10px;
 	}
 	.isotope-grid {
-		.grid-item {
-			width: 25%;
-			padding: 10px;
-			&.grid-item-x2 {
-				width: 50%;
+		&.isotope-masonry {
+			.grid-item {
+				width: 25%;
+				padding: 10px;
+				&.grid-item-x2 {
+					width: 50%;
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+					}
+				}
 				@include media-breakpoint-down(sm) {
 					width: 100%;
 				}
-			}
-			@include media-breakpoint-down(sm) {
-				width: 100%;
 			}
 		}
 	}
