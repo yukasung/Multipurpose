@@ -7,7 +7,7 @@
 .nav {
     &.nav-tabs {
         &.nav-tabs-flush {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            border-bottom: 2px solid rgba(0,0,0,0.09);
             .nav-link {
                 padding: 15px 0;
                 margin-right: 30px;
@@ -26,7 +26,7 @@
                         width: 100%;
                         display: block;
                         content: " ";
-                        bottom: 0;
+                        bottom: -1px;
                         left: 0;
                         position: absolute;
                         background: $primary-color;
