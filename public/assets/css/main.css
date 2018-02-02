@@ -562,7 +562,7 @@ input[type="submit"] {
       margin: 0 5px;
       display: block;
       border-radius: 100%;
-      border: 2px solid #3498db;
+      border: 1px solid #3498db;
       width: 13px;
       height: 13px;
       -webkit-transition: all 150ms ease-in;
