@@ -881,7 +881,7 @@ input[type="submit"] {
 .icon-lg {
   font-size: 1.33333em;
   line-height: .75em;
-  vertical-align: -.0867em; }
+  vertical-align: -.17em; }
 
 .icon-2x {
   font-size: 2em; }
@@ -1060,7 +1060,7 @@ hr.line-dotted {
 /*	COMPONENT > COLLAPSE
 /*-----------------------------------------------------------------------------------*/
 .accordion .card + .card {
-  margin-top: 5px; }
+  margin-top: 15px; }
 
 .accordion .card .card-header a {
   color: #333333;

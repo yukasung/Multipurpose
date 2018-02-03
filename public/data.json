@@ -187,19 +187,19 @@
     }, {
         "name": "Denise Ward",
         "position": "Web Programmer",
-        "img": "assets/img/team/team_5.jpg"
+        "img": "assets/img/team/team_1.jpg"
     }, {
         "name": "Juan Murphy",
         "position": "Maintenance Technician",
-        "img": "assets/img/team/team_6.jpg"
+        "img": "assets/img/team/team_2.jpg"
     }, {
         "name": "Peter Miller",
         "position": "Web Designer",
-        "img": "assets/img/team/team_7.jpg"
+        "img": "assets/img/team/team_3.jpg"
     }, {
         "name": "Deborah Young",
         "position": "Web Programmer",
-        "img": "assets/img/team/team_1.jpg"
+        "img": "assets/img/team/team_4.jpg"
     }],
     "testimonials": [{
         "name": "Coriss Ambady",

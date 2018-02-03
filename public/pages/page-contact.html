@@ -1,26 +1,31 @@
-{% set page_title = "Contact Us" %} 
-{% set page_link2 = "Pages" %} 
-{% set page_active_link = "Contact" %} 
-{% extends "../templates/master.html" %} 
-{% block content %} 
+{% set page_title = "Contact Us" %}
+<!--  -->
+{% set page_link2 = "Pages" %}
+<!--  -->
+{% set page_active_link = "Contact" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
+<!--  -->
 {% include "../templates/partials/page_title.html" %}
+<!--  -->
 {% import '../templates/macros/shops.html' as macroShops %}
+<!--  -->
 {% import '../templates/macros/paginations.html' as macroPaginations %}
 <div id="content">
     <div class="bg-white">
-        <div class="container py-5 py-md-7">
+        <div class="container py-7">
             <div class="container">
-                <p class="lead text-center">Curabitur curae pellentesque
-                    molestie vulputate porttitor. Molestie fusce iaculis scelerisque pariatur vehicula. Consequat laborum
-                    curae velit veniam. Sociis
-                    voluptate diam penatibus ad ullamcorper.</p>
+                <p class="lead text-center">Curabitur curae pellentesque molestie vulputate porttitor. Molestie fusce iaculis scelerisque pariatur vehicula.
+                    Consequat laborum curae velit veniam. Sociis voluptate diam penatibus ad ullamcorper.</p>
                 <ul class="list-inline text-center mt-4 mb-0">
                     <li class="list-inline-item my-2 my-md-0 ml-0 ml-md-4">
-                        <i class="fa fa-map-marker mr-2 text-primary"></i>3302 Neighbor Rd, Saint Joseph, MO, 64506</li>
+                        <i class="ti-location-pin icon-lg mr-2 text-primary"></i>3302 Neighbor Rd, Saint Joseph, MO, 64506</li>
                     <li class="list-inline-item my-2 my-md-0 ml-0 ml-md-4">
-                        <i class="fa fa-phone mr-2 text-primary"></i>(816) 676-0309</li>
+                        <i class="ti-mobile icon-lg mr-2 text-primary"></i>(816) 676-0309</li>
                     <li class="list-inline-item my-2 my-md-0 ml-0 ml-md-4">
-                        <i class="fa fa-envelope-o mr-2 text-primary"></i>info@email.com</li>
+                        <i class="ti-email icon-lg mr-2 text-primary"></i>info@email.com</li>
                 </ul>
                 <div class="row mt-6">
                     <div class="col-md-6">
