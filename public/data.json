@@ -241,6 +241,17 @@
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
         "img": "assets/img/author/a1-150x150.jpg"
+    }],
+    "clients": [{
+        "img": "assets/img/client/google.png"
+    }, {
+        "img": "assets/img/client/wordpress.png"
+    }, {
+        "img": "assets/img/client/logitech.png"
+    }, {
+        "img": "assets/img/client/ebay.png"
+    }, {
+        "img": "assets/img/client/ebay.png"
     }]
 
 }

@@ -1,29 +1,32 @@
 <!-- Layout 1 -->
 {% macro layout1(testimonial) %}
-
-    <div class="media">
-        <i class="fas fa-quote-left fa-2x text-primary"></i>
-        <div class="media-body ml-4">
-            {{ testimonial.desc }}
-            <div class="d-block mt-4">
-                <img src="{{ testimonial.img }}" alt="Testimonial" class="d-inline rounded-circle bg-shadow w-max-90px mr-2">
-                <div class="d-inline-block align-middle">
-                    <span>{{ testimonial.name }}
-                        <small class="mt-0">{{ testimonial.position }}</small>
-                    </span>
+<div class="card border">
+    <div class="card-body">
+        <div class="media">
+            <i class="ti-quote-left icon-lg text-primary"></i>
+            <div class="media-body ml-4">
+                <p class="font-weight-light font-italic">{{ testimonial.desc }}</p>
+                <div class="d-block mt-4">
+                    <img src="{{ testimonial.img }}" alt="Testimonial" class="d-inline rounded-circle bg-shadow w-max-90px mr-2">
+                    <div class="d-inline-block align-middle">
+                        <span>{{ testimonial.name }}
+                            <small class="text-muted mt-0">{{ testimonial.position }}</small>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-{% endmacro %} 
+{% endmacro %}
 
 <!-- Layout 2 -->
 {% macro layout2(testimonial) %}
 
-    <img src="{{ testimonial.img }}" class="rounded-circle d-inline w-auto">
-    <p class="lead mt-4">{{ testimonial.desc }}</p>
-    <h4 class="mt-4">{{ testimonial.name }}</h4>
-    <p class="mb-2">{{ testimonial.position }}</p>
+<img src="{{ testimonial.img }}" class="rounded-circle d-inline w-auto">
+<p class="lead mt-4">{{ testimonial.desc }}</p>
+<h4 class="mt-4">{{ testimonial.name }}</h4>
+<p class="mb-2">{{ testimonial.position }}</p>
 
-{% endmacro %} 
+{% endmacro %}

@@ -1,92 +1,131 @@
-{% set page_title = "Our Services" %} {% set page_link2 = "Pages" %} {% set page_active_link = "Services" %} {% extends "../templates/master.html"
-%} {% block content %} {% include "../templates/partials/page_title.html" %} {% import '../templates/macros/teams.html' as
-macroTeams %} {% import '../templates/macros/partners.html' as macroPartners %} 
+{% set page_title = "Our Services" %}
+<!--  -->
+{% set page_link2 = "Pages" %}
+<!--  -->
+{% set page_active_link = "Services" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %} {% include "../templates/partials/page_title.html" %}
+<!--  -->
+{% import '../templates/macros/teams.html' as macroTeams %}
+<!--  -->
+{% import '../templates/macros/partners.html' as macroPartners %}
+<!--  -->
 {% import '../templates/macros/counters.html' as macroCounters %}
+<!--  -->
 {% import '../templates/macros/prices.html' as macroPrices %}
+<!--  -->
+{% import '../templates/macros/clients.html' as macroClients %}
+
 <div id="content">
     <div class="bg-white">
-        <div class="container py-7">
+        <div class="container pt-4 pb-4 pb-md-0">
             <div class="row">
-                <div class="col-md-12">
-                    <p class="lead text-center">Senectus lacinia primis proident voluptate pariatur ac porttitor amet purus nostra quisque. Dignissim
-                        pulvinar mauris porta etiam. Condimentum gravida leo venenatis etiam proident feugiat class aptent.</p>
+                <div class="col-md-6 pb-4 pb-md-0">
+                    <img src="assets/img/service/business-man-2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-left pb-4 mp-md-0">
+                    <h3 class="mb-4">We have been trusted advisors to the world’s biggest companies, and we continue to grow with the help
+                        of more than
+                        <span class="text-primary">20,000</span> people in our global network</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
+                        ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non tincidunt
+                        dui. Curabitur pretium efficitur sem vitae fermentum. Maecenas fermentum erat non facilisis laoreet.</p>
+                    <a href="#" class="btn btn-primary text-uppercase mt-3">Contact Us</a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <h3 class="text-white">Global Business Lounge Services</h3>
+                    <hr class="hr-lg mt-3 mx-md-0 mb-4 w-60px hr-white">
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <a href="#" class="btn btn-black text-uppercase">send free enquiry</a>
+                </div>
+            </div>
+
             <div class="row text-center mt-6">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="card bg-shadow">
+                    <div class="card">
                         <div class="card-body p-4">
-                            <i class="fa fa-laptop icon-md text-primary"></i>
+                            <i class="ti-crown icon-5x text-primary"></i>
                             <h4 class="mt-4">Business Intelligence</h4>
-                            <p class="mt-3">Quisque eros a sunt dui libero laborum conubia lobortis venenatis.</p>
-                        </div>
-                    </div>   
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="card bg-shadow">
-                        <div class="card-body p-4">
-                            <i class="fa fa-wrench icon-md text-primary"></i>
-                            <h4 class="mt-4">Custom Software</h4>
-                            <p class="mt-3">Porttitor non ultrices inceptos laborum magnis sagittis.</p>
+                            <p class="mt-3 mb-0">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
+                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
+                                fermentum, accumsan enim non, auctor neque.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="card bg-shadow">
+                    <div class="card">
                         <div class="card-body p-4">
-                            <i class="fa fa-rocket icon-md text-primary"></i>
+                            <i class="ti-cup icon-5x text-primary"></i>
+                            <h4 class="mt-4">Custom Software</h4>
+                            <p class="mt-3 mb-0">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
+                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
+                                fermentum, accumsan enim non, auctor neque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <i class="ti-world icon-5x text-primary"></i>
                             <h4 class="mt-4">Systems Integration</h4>
-                            <p class="mt-3">Aliquam malesuada sint iaculis curabitur minim nostrud</p>
+                            <p class="mt-3 mb-0">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
+                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
+                                fermentum, accumsan enim non, auctor neque.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-center mt-0 mt-md-5">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="card bg-shadow">
+                    <div class="card">
                         <div class="card-body p-4">
-                            <i class="fa fa-tachometer icon-md text-primary"></i>
+                            <i class="ti-timer icon-5x text-primary"></i>
                             <h4 class="mt-4">Managed Services</h4>
-                            <p class="mt-3">Sapien fusce eleifend vitae lorem varius nullam egestas laoreet dignissim.</p>
+                            <p class="mt-3 mb-0">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
+                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
+                                fermentum, accumsan enim non, auctor neque.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="card bg-shadow">
+                    <div class="card">
                         <div class="card-body p-4">
-                            <i class="fa fa-university icon-md text-primary"></i>
+                            <i class="ti-pie-chart icon-5x text-primary"></i>
                             <h4 class="mt-4">Outsourced IT Staffing</h4>
-                            <p class="mt-3">Consectetur ac, blandit at eros. Integer posuere erat morbi.</p>
+                            <p class="mt-3 mb-0">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
+                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
+                                fermentum, accumsan enim non, auctor neque.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="card bg-shadow">
+                    <div class="card">
                         <div class="card-body p-4">
-                            <i class="fa fa-desktop icon-md text-primary"></i>
+                            <i class="ti-stats-up icon-5x text-primary"></i>
                             <h4 class="mt-4">Microsoft Solutions</h4>
-                            <p class="mt-3">Nunclorem justo tellus parturient dolor sapien tempor modi dapibus.</p>
+                            <p class="mt-3 mb-0">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
+                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
+                                fermentum, accumsan enim non, auctor neque.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-primary">
-        <div class="container py-6">
-            <div class="section-title text-white no-line">
-                <h2>We have 15 years experience in services</h2>
-            </div>
+    <div class="bg-white">
+        <div class="container py-7">
             <div class="row">
-                <div class="col-md-12">
-                    <p class="lead text-white ">Senectus lacinia primis proident voluptate pariatur ac porttitor amet purus nostra quisque. Dignissim
-                        Aliquip ac vehicula tortor nunclorem class incididunt lobortis sint sem consequat. Mollit pretium
-                        porttitor odio varius cum.</p>
-                </div>
-            </div>
-            <div class="row mt-4">
                 <div class="col-md-6">
-                    <div class="owl-col-1 owl-carousel owl-theme owl-loaded owl-img-dots owl-dot-white">
+                    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
                         <div class="item">
                             <img src="assets/img/art/bc7.jpg" alt="" />
                         </div>
@@ -98,28 +137,40 @@ macroTeams %} {% import '../templates/macros/partners.html' as macroPartners %}
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-white">
-                    <h4>1. 40+ Years Experience We Have</h4>
-                    <p>Rutrum ut sociis conubia sint nunc convallis do cupidatat gravida arcu fermentum fugiat enim nostra lorem.</p>
-                    <h4>2. We Provide Qualified And Expert</h4>
-                    <p>Sagittis nibh nulla ullamcorper inceptos cubilia dis morbi dolore fusce eros eleifend dignissim nibh
-                        sociosqu nostrud aptent cum.</p>
-                    <h4>3. Mordant Technology And Tools We Use</h4>
-                    <p>Nisl fermentum nullam lobortis eget donec vestibulum odio sociis conubia quisque phasellus pharetra eu
-                        risus integer sollicitudin curabitur.</p>
-                    <h4>4. Quick Response And 24/7 Support</h4>
-                    <p>Condimentum senectus ridiculus imperdiet torquent fames blandit sodales.</p>
+                <div class="col-md-6 pl-md-4">
+                    <h6 class="text-uppercase font-weight-light text-muted">TECHNOLOGY FROM TOMORROW</h6>
+                    <h3>We work in partnership with all the major technology suppliers</h3>
+                    <hr class="hr-lg mt-3 mx-md-0 mb-4 w-60px hr-primary">
+                    <ul class="list-unstyled list-lg">
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Consectetur adipiscing elit</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Integer molestie lorem at massa</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Facilisis in pretium nisl aliquet</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Facilisis in pretium nisl aliquet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ macroClients.layout1(clients) }}
                 </div>
             </div>
         </div>
     </div>
     <div class="bg-white">
         <div class="container py-7">
-            <div class="section-title no-line">
-                <h2>Our Prices</h2>
-            </div>
-            <p class="lead">Vivamus varius ullamcorper arcu aliquam. Laoreet pharetra dolore nisi augue. Himenaeos ridiculus hendrerit nascetur
-                semper. Senectus condimentum lacus pede sollicitudin. Nullam inceptos et congue felis.</p>
+            <h2 class="text-center">Our Prices</h2>
+            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
             <div class="row mt-6">
                 <div class="col-md-4">
                     {{ macroPrices.default(19, "Startup License") }}
@@ -136,12 +187,12 @@ macroTeams %} {% import '../templates/macros/partners.html' as macroPartners %}
     <div class="bg-primary">
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-9 text-white">
+                <div class="col-md-9 text-white text-center text-md-left">
                     <h3>The most powerful services ever on the market.</h3>
                     <p>Vivamus adipisicing sit ultrices cursus morbi proident erat ipsum. Penatibus ea ullamco ut tellus praesent.</p>
                 </div>
-                <div class="col-md-3 my-auto">
-                    <a href="#" class="btn btn-white text-uppercase float-right">Contact Us Now</a>
+                <div class="col-md-3 my-auto text-center text-md-right">
+                    <a href="#" class="btn btn-black text-uppercase mt-4 mt-md-0">Contact Us Now</a>
                 </div>
             </div>
         </div>

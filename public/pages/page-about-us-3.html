@@ -1,0 +1,107 @@
+{% set page_title = "About Us" %}
+<!--  -->
+{% set page_link2 = "Pages" %}
+<!--  -->
+{% set page_active_link = "About Us" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html" %}
+<!--  -->
+{% import '../templates/macros/teams.html' as macroTeams %}
+<!--  -->
+{% import '../templates/macros/partners.html' as macroPartners %}
+<!--  -->
+{% import '../templates/macros/counters.html' as macroCounters %}
+<!--  -->
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Our Philosophy</h3>
+                    <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+                    <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. sed quia non numquam qui ratione
+                        voluptatem sequi nesciunt.</p>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipiscil consectetur,
+                        adipisci velit. sed quia non numquam qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                        est, qui dolorem ipsum.</p>
+                    <a href="#" class="btn btn-primary text-uppercase mt-3">Contact Us</a>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <img src="assets/img/about/aboutus.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 my-auto order-1 order-md-1">
+                    <div class="d-block text-white px-4 py-5">
+                        <h3 class="text-white text-uppercase">We Are Expert In Marketing &amp; Investment
+                            <br> Marketing &amp; Investment</h3>
+                        <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-white">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
+                            consequat blandit.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
+                            consequat blandit. Sed nec risus sapien.
+                        </p>
+                        <a href="#" class="btn btn-black text-uppercase mt-3">Read More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 bg-image-center order-2 order-md-2" style="background-image:url(assets/img/about/1000x530x2.jpg);height: 475px;">
+                    <div id="video-gallery">
+                        <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
+                            <i class="ion-ios-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container py-7">
+            <h3>Global Team</h3>
+            <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lead">Osed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci sed quia non numquam qui ratione
+                        voluptatem sequi nesciunt.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                {% set teams = teams.slice(0,4) %} {% for team in teams %}
+                <div class="col-md-3">
+                    {{ macroTeams.layout1(team) }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row justify-content-md-center text-center text-white">
+                {{ macroCounters.default() }}
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container py-7">
+            <h3 class="text-center">Our Partners</h3>
+            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
+            <div class="row justify-content-center mb-2">
+                <div class="col-md-8 text-center">
+                    <p class="lead text-center">Vivamus varius ullamcorper arcu aliquam. Laoreet pharetra dolore nisi augue.</p>
+                </div>
+            </div>
+            {{ macroPartners.grid() }}
+        </div>
+    </div>
+</div>
+{% endblock %}

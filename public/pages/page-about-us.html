@@ -16,49 +16,81 @@
 <!--  -->
 {% import '../templates/macros/counters.html' as macroCounters %}
 <!--  -->
+{% import '../templates/macros/testimonial.html' as macroTestimonials %}
+<!--  -->
+{% import '../templates/macros/clients.html' as macroClients %}
+<!--  -->
+{% import '../templates/macros/components.html' as macroComponents %}
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-8">
-                    <h3>Our Philosophy</h3>
+                <div class="col-md-6 pr-md-5">
+                    <h3>Our Mission</h3>
                     <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
-                    <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. sed quia non numquam qui ratione
-                        voluptatem sequi nesciunt.</p>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipiscil consectetur,
-                        adipisci velit. sed quia non numquam qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                        est, qui dolorem ipsum.</p>
-                    <a href="#" class="btn btn-primary text-uppercase mt-3">Contact Us</a>
+                    <p>Vestibulum ultrices ligula sit amet augue interdum fermentum. Vestibulum sed nisi ornare, tincidunt ante
+                        et, tempus metus.</p>
+                    <ul class="list-unstyled list-lg">
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Consectetur adipiscing elit</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Integer molestie lorem at massa</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Facilisis in pretium nisl aliquet</li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <img src="assets/img/about/aboutus.jpg" class="img-fluid" alt="">
+                <div class="col-md-6 pl-md-5">
+                    <h3>Our Vision</h3>
+                    <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+                    <p>Vestibulum ultrices ligula sit amet augue interdum fermentum. Vestibulum sed nisi ornare, tincidunt ante
+                        et, tempus metus. Nunc pellentesque purus odio, eu dictum mi luctus vitae. Class aptent taciti sociosqu
+                        ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas fermentum interdum elit,
+                        vel laoreet elit ultricies quis. Nam massa nisl, bibendum ut lectus ac, sodales laoreet nibh. Praesent
+                        cursus mauris at purus volutpat ultrices. Duis in semper orci. Duis ultricies auctor pulvinar. Fusce
+                        quis orci urna. Phasellus ut velit fringilla enim ultrices varius ac et odio.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="bg-primary">
-        <div class="container-fluid">
+        <div class="container py-7">
             <div class="row">
-                <div class="col-12 col-md-6 my-auto order-1 order-md-1">
-                    <div class="d-block text-white px-4 py-5">
-                        <h3 class="text-white text-uppercase">We Are Expert In Marketing &amp; Investment
-                            <br> Marketing &amp; Investment</h3>
-                        <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-white">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
-                            consequat blandit.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
-                            consequat blandit. Sed nec risus sapien.
-                        </p>
-                        <a href="#" class="btn btn-black text-uppercase mt-3">Read More</a>
-                    </div>
+                <div class="col-md-6 text-white text-center text-md-left">
+                    <h3 class="mb-3">Numbers Don’t Lie</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio libero, placerat id placerat in,
+                        tincidunt non justo. tincidunt ante et, tempus metus. Nunc pellentesque purus odio, eu dictum mi
+                        luctus vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <a href="#" class="btn btn-black text-uppercase mt-3">Read More</a>
                 </div>
-                <div class="col-12 col-md-6 bg-image-center order-2 order-md-2" style="background-image:url(assets/img/about/1000x530x2.jpg);height: 475px;">
-                    <div id="video-gallery">
-                        <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
-                            <i class="ion-ios-play"></i>
-                        </a>
+                <div class="col-md-6 text-white mt-5 mt-md-0">
+                    <div class="row justify-content-md-center text-center">
+                        <div class="col-6">
+                            <div class="counter">
+                                <span class="h1" data-from="0" data-to="600" data-speed="3500" data-refresh-interval="50"></span>
+                            </div>
+                            <p class="mt-3 mb-4">Employees</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="counter">
+                                <span class="h1" data-from="0" data-to="100" data-speed="3500" data-refresh-interval="50"></span>
+                            </div>
+                            <p class="mt-3 mb-4">Offices</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="counter mt-4 mt-md-0">
+                                <span class="h1" data-from="0" data-to="320" data-speed="3500" data-refresh-interval="50"></span>
+                            </div>
+                            <p class="mt-3">Continents</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="counter mt-4 mt-md-0">
+                                <span class="h1" data-from="0" data-to="480" data-speed="3500" data-refresh-interval="50"></span>
+                            </div>
+                            <p class="mt-3">Clients</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,42 +98,108 @@
     </div>
     <div class="bg-white">
         <div class="container py-7">
-            <h3>Global Team</h3>
-            <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="lead">Osed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci sed quia non numquam qui ratione
-                        voluptatem sequi nesciunt.</p>
-                </div>
-            </div>
-            <div class="row mt-5">
+            <h6 class="text-uppercase font-weight-light text-muted text-center">Meet our team</h6>
+            <h3 class="text-center">Talents Behind Our Success</h3>
+            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
+            <div class="row mt-6">
                 {% set teams = teams.slice(0,4) %} {% for team in teams %}
                 <div class="col-md-3">
-                    {{ macroTeams.default(team) }}
+                    {{ macroTeams.layout1(team) }}
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
     <div class="bg-primary">
-        <div class="container py-5">
-            <div class="row justify-content-md-center text-center text-white">
-                {{ macroCounters.default() }}
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-6 pr-md-5 text-white">
+                    <h3 class="mb-3">Our History</h3>
+                    <p>tincidunt ante et, tempus metus. Nunc pellentesque purus odio, eu dictum mi luctus vitae. Class aptent
+                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas fermentum
+                        interdum elit, vel laoreet elit ultricies quis. Nam massa nisl.</p>
+                    <p>Maecenas fermentum interdum elit, vel laoreet elit ultricies quis. Nam massa nisl, bibendum ut lectus
+                        ac, sodales laoreet nibh. Praesent cursus mauris at purus volutpat ultrices.</p>
+                    <a href="#" class="btn btn-black text-uppercase mt-3 mb-4">Read More</a>
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <dl class="row mb-0 text-white">
+                        <dt class="col-sm-3">
+                            <i class="ti-calendar icon-lg mr-2"></i>08/12/17</dt>
+                        <dd class="col-sm-9">
+                            <p class="font-weight-bold">Joined the Business Lounge Family</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dolor ultricies.</p>
+                        </dd>
+                        <dt class="col-sm-3">
+                            <i class="ti-calendar icon-lg mr-2"></i>08/12/17</dt>
+                        <dd class="col-sm-9">
+                            <p class="font-weight-bold">Joined the Business Lounge Family</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dolor ultricies.</p>
+                        </dd>
+                        <dt class="col-sm-3">
+                            <i class="ti-calendar icon-lg mr-2"></i>08/12/17</dt>
+                        <dd class="col-sm-9">
+                            <p class="font-weight-bold">Joined the Business Lounge Family</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dolor ultricies.</p>
+                        </dd>
+                    </dl>
+                </div>
             </div>
         </div>
     </div>
     <div class="bg-white">
         <div class="container py-7">
-            <h3 class="text-center">Our Partners</h3>
-            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
-            <div class="row justify-content-center mb-2">
-                <div class="col-md-8 text-center">
-                    <p class="lead text-center">Vivamus varius ullamcorper arcu aliquam. Laoreet pharetra dolore nisi augue.</p>
+            <div class="row">
+                <div class="col-md-6 pr-md-5 text-center text-md-left">
+                    <h3>Growing Fast</h3>
+                    <hr class="hr-lg mt-3 mx-md-0 mb-4 w-60px hr-primary">
+                    <p>Vestibulum ultrices ligula sit amet augue interdum fermentum. Vestibulum sed nisi ornare, tincidunt ante
+                        et, tempus metus. Nunc pellentesque purus odio, eu dictum mi luctus vitae. Class aptent taciti sociosqu
+                        ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas fermentum interdum elit,
+                        vel laoreet elit ultricies quis. Nam massa nisl, bibendum ut lectus ac, sodales laoreet nibh. Praesent
+                        cursus mauris at purus volutpat ultrices.</p>
+                    <a href="#" class="btn btn-primary text-uppercase mt-3">Read More</a>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 pl-md-5">
+                    <p class="mb-2">Finance</p>
+                    {{ macroComponents.progress_bar(90, "mb-4") }}
+                    <p class="mb-2">nformation Technologies</p>
+                    {{ macroComponents.progress_bar(80, "mb-4") }}
+                    <p class="mb-2">Education</p>
+                    {{ macroComponents.progress_bar(75, "mb-4") }}
+                    <p class="mb-2">Retail</p>
+                    {{ macroComponents.progress_bar(70, "mb-4") }}
                 </div>
             </div>
-            {{ macroPartners.grid() }}
         </div>
     </div>
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ macroClients.layout1(clients) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white">
+    <div class="container py-7">
+        <h6 class="text-uppercase font-weight-light text-muted text-center">testimonials</h6>
+        <h3 class="text-center">What They Are Saying</h3>
+        <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme owl-loaded owl-dots-primary owl-nav-bg-black mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+                    {% for testimonial in testimonials %}
+                    <div class="item mb-4">
+                        {{ macroTestimonials.layout1(testimonial) }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 {% endblock %}

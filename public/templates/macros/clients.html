@@ -1,0 +1,11 @@
+<!--  -->
+{% macro layout1(clients) %}
+<div class="owl-carousel owl-theme owl-loaded owl-dots-white" data-owl-carousel-options='{"responsive":{"0":{"items":1, "nav":false, "dots":true}, "600":{"items":2, "dots":false}, "940":{"items":4, "nav":true, "dots":false}}, "margin": 30, "nav":true, "dots":false}'>
+    {% for client in clients %}
+    <div class="item">
+        <img src="{{ client.img }}" alt="">
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}
+<!--  -->

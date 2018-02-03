@@ -265,7 +265,7 @@ var theme = {
 
         $(".progress-bar").each(function (i) {
 
-            var progressDelay = 500;
+            var progressDelay = 200;
 
             $(this).appear(function () {
                 $(this).delay(progressDelay * i).animate({
