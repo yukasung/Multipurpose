@@ -1105,21 +1105,19 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENTS > PRICING
 /*-----------------------------------------------------------------------------------*/
-.pricing {
-  border: 1px solid rgba(0, 0, 0, 0.2); }
-  .pricing .price {
-    font-size: 80px;
-    font-weight: 300;
-    line-height: .8; }
-    .pricing .price .currency {
-      position: relative;
-      font-size: 44px;
-      font-weight: 500;
-      top: -22px;
-      letter-spacing: 0px; }
-    .pricing .price .period {
-      font-size: 18px;
-      letter-spacing: 0px; }
+.pricing .price {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: .8; }
+  .pricing .price .currency {
+    position: relative;
+    font-size: 44px;
+    font-weight: 500;
+    top: -22px;
+    letter-spacing: 0px; }
+  .pricing .price .period {
+    font-size: 18px;
+    letter-spacing: 0px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	02. COMPONENTS > PARALLAX
@@ -1243,6 +1241,9 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > BORDER
 /*-----------------------------------------------------------------------------------*/
+.border-primary {
+  border-color: #3498db !important; }
+
 .border-gray {
   border-color: #e9ecef !important; }
 

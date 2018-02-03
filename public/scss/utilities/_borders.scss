@@ -4,6 +4,10 @@
 /*  UTILITIES > BORDER
 /*-----------------------------------------------------------------------------------*/
 
+.border-primary{
+    border-color: $primary-color !important;
+}
+
 .border-gray {
     border-color: #e9ecef !important;
 }
