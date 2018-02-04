@@ -1,25 +1,9 @@
-/*-----------------------------------------------------------------------------------*/
-
-/*	COMPONENT > COLLAPSE
-/*-----------------------------------------------------------------------------------*/
-
+// /*-----------------------------------------------------------------------------------*/
+// /*	COMPONENT > COLLAPSE
+// /*-----------------------------------------------------------------------------------*/
 .accordion {
-	&.accordion-primary {
-		.card {
-			background-color: $primary-color;
-			.card-header{
-				border-bottom: 1px solid #ffffff;
-			}
-		}
-	}
 	.card {
-		&+.card {
-			margin-top: 10px;
-		}
 		.card-header {
-			border-bottom: 1px solid rgba(#000000, 0.125);
-			padding-left: 30px;
-			padding-right: 30px;
 			a {
 				display: block;
 				color: $font-color;

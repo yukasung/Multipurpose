@@ -1,5 +1,5 @@
 <!-- Single Standard Post -->
-{% macro standard(card_css="", card_body_css="py-4 px-0") %}
+{% macro standard(card_css="border-0", card_body_css="py-4 px-0") %}
 
 <div class="card {{ card_css }}">
     <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
@@ -12,7 +12,7 @@
 {% endmacro %}
 
 <!-- Single Slide Show Post -->
-{% macro slide(card_css="") %}
+{% macro slide(card_css="border-0") %}
 
 <div class="card {{ card_css }}">
     <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
@@ -35,7 +35,7 @@
 {% endmacro %}
 
 <!-- Single Video Post -->
-{% macro video(card_css="") %}
+{% macro video(card_css="border-0") %}
 
 <div class="card {{ card_css }}">
     <div class="position-relative">
@@ -133,7 +133,7 @@
 <!--  -->
 {% macro comments() %}
 
-<div class="card mt-4">
+<div class="card border-0 mt-4">
     <div class="card-body p-0">
         <div class="row">
             <div class="col-md-3 text-center">
@@ -169,7 +169,7 @@
         </div>
     </div>
 </div>
-<div class="card mt-4">
+<div class="card border-0 mt-4">
     <div class="card-body p-0">
         <h4>5 Comments</h4>
         <ul class="list-unstyled mt-4">
@@ -248,7 +248,7 @@
         </ul>
     </div>
 </div>
-<div class="card mt-4">
+<div class="card border-0 mt-4">
     <div class="card-body p-0">
         <h4 class="card-title">Would you like to share your thoughts?</h4>
         <p>Your email address will not be published. Required fields are marked *</p>
