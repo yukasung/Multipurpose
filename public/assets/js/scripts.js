@@ -98,6 +98,7 @@ var theme = {
 
             var scrollTop = $(window).scrollTop();
             var navbarHeight = $('.navbar').height();
+
             currentScrollTop = scrollTop;
 
             if (lastScrollTop < currentScrollTop && scrollTop > navbarHeight + navbarHeight + 200) {
@@ -106,6 +107,10 @@ var theme = {
             } else if (lastScrollTop > currentScrollTop && !(scrollTop <= navbarHeight)) {
                 // scrool up
                 $(".navbar").removeClass("scroll-up");
+            }
+
+            if ($(this).scrollTop() < 300 && $(".navbar").hasClass('fixed-top')) {
+                $(".navbar").removeClass('fixed-top');
             }
 
             lastScrollTop = currentScrollTop;

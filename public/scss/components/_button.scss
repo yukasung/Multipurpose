@@ -1,6 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
 
-
 /*	COMPONENT > BUTTON
 /*-----------------------------------------------------------------------------------*/
 
@@ -13,7 +12,6 @@
 }
 
 .btn {
-    border: none;
     position: relative;
     padding: 10px 30px;
     font-size: 12px;
@@ -30,11 +28,13 @@
 
 .btn-primary {
     background-color: $primary-color;
+    border-color: $primary-color;
     color: #fff;
     &:hover,
     &:active,
     &:focus {
         background-color: $primary-color;
+        border-color: $primary-color;
     }
 }
 
@@ -54,7 +54,8 @@
     &:hover,
     &:active,
     &:focus {
-        background-color: #ffffff;
+        background-color: #000000;
+        color: inherit;
     }
 }
 
@@ -70,4 +71,11 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+
+.btn-outline-white {
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffffff;
 }

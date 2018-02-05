@@ -514,7 +514,7 @@ input[type="submit"] {
         background: #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
-/*  COMPONENT > OWLCAROUSEL
+/*  COMPONENT > OWL CAROUSEL
 /*-----------------------------------------------------------------------------------*/
 .owl-carousel {
   position: relative; }
@@ -579,6 +579,8 @@ input[type="submit"] {
   width: auto;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
+  .owl-dots-inside .owl-dots span {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .owl-dots-white .owl-dot span {
   border: 2px solid #ffffff !important; }
@@ -641,10 +643,10 @@ input[type="submit"] {
   color: #333333;
   background-color: #e6e6e6; }
   @media (min-width: 576px) {
-    .owl-hero .owl-item .owl-theme-dark {
+    .owl-hero .owl-item .owl-item-dark {
       color: #ffffff; } }
   @media (min-width: 576px) {
-    .owl-hero .owl-item .owl-theme-light {
+    .owl-hero .owl-item .owl-item-light {
       color: #333333; } }
   .owl-hero .owl-item h2 {
     color: inherit; }
@@ -760,7 +762,6 @@ input[type="submit"] {
   outline: none; }
 
 .btn {
-  border: none;
   position: relative;
   padding: 10px 30px;
   font-size: 12px;
@@ -776,9 +777,11 @@ input[type="submit"] {
 
 .btn-primary {
   background-color: #3498db;
+  border-color: #3498db;
   color: #fff; }
   .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    background-color: #3498db; }
+    background-color: #3498db;
+    border-color: #3498db; }
 
 .btn-white {
   background-color: #ffffff;
@@ -790,7 +793,8 @@ input[type="submit"] {
   background-color: #000000;
   color: #ffffff; }
   .btn-black:hover, .btn-black:active, .btn-black:focus {
-    background-color: #ffffff; }
+    background-color: #000000;
+    color: inherit; }
 
 .btn-outline.btn-default {
   background-color: transparent;
@@ -799,6 +803,12 @@ input[type="submit"] {
 .input-group-btn .btn {
   padding-left: 15px;
   padding-right: 15px; }
+
+.btn-outline-white {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffffff; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	02. SOCIAL
@@ -1171,7 +1181,7 @@ hr.line-dotted {
 .bg-transparent {
   background-color: transparent !important; }
 
-.gradient-left:after {
+.bg-gradient:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1179,15 +1189,15 @@ hr.line-dotted {
   bottom: 0;
   left: 0; }
 
-.gradient-left.gradient-primary:after {
+.bg-gradient.gradient-primary-left:after {
   background: -webkit-radial-gradient(center left, circle, #3498db, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
 
-.gradient-left.gradient-black:after {
-  background: -webkit-radial-gradient(center left, circle, #000, rgba(255, 255, 255, 0) 80%);
-  background: radial-gradient(circle at center left, #000, rgba(255, 255, 255, 0) 80%); }
+.bg-gradient.gradient-dark-left:after {
+  background: -webkit-radial-gradient(center left, circle, #343a40, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
 
-.gradient-left.gradient-white:after {
+.bg-gradient.gradient-white-left:after {
   background: -webkit-radial-gradient(center left, circle, #fff, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #fff, rgba(255, 255, 255, 0) 80%); }
 

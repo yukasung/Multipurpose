@@ -189,7 +189,7 @@
                     <div class="owl-col-3 owl-carousel owl-theme owl-loaded">
                         {% set posts = posts.slice(0,9) %} {% for post in posts %}
                         <div class="item px-1">
-                            {{ macroBlogs.card(post) }}
+                            {{ macroBlogs.default(post) }}
                         </div>
                         {% endfor %}
                     </div>

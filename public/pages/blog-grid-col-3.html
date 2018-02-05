@@ -1,9 +1,15 @@
-{% set page_title = "Blog Grid"%} 
-{% set page_active_link = "3 Columns" %} 
-{% set page_link2 = "Blog" %} 
-{% extends "../templates/master.html"%} 
-{% block content %} 
-{% include "../templates/partials/page_title.html" %} 
+{% set page_title = "Blog Grid"%}
+<!--  -->
+{% set page_active_link = "3 Columns" %}
+<!--  -->
+{% set page_link2 = "Blog" %}
+<!--  -->
+{% extends "../templates/master.html"%}
+<!--  -->
+{% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html" %}
+<!--  -->
 {% import '../templates/macros/blogs.html' as macroBlogs %}
 <div id="content">
     <div class="bg-white">
@@ -11,9 +17,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        {% set posts = posts.slice(0,9) %} {% for post in posts %}
+                        {% set posts = posts.slice(0,9) %}
+                        <!--  -->
+                        {% for post in posts %}
                         <div class="col-md-4">
-                            {{ macroBlogs.default(post,"border-0 mb-4") }}
+                            {{ macroBlogs.default(post) }}
                         </div>
                         {% endfor %}
                     </div>

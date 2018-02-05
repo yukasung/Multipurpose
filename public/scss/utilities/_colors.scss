@@ -1,6 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
 
-
 /*  UTILITIES > COLORS
 /*-----------------------------------------------------------------------------------*/
 
@@ -13,14 +12,14 @@
 }
 
 .text-grey {
-    color: #eee!important;
+    color: #eee !important;
 }
 
 .text-body {
     color: $font-color;
     a {
         color: inherit;
-        &:hover{
+        &:hover {
             color: $primary-color;
         }
     }
@@ -54,7 +53,7 @@
     background-color: #f3f5f6 !important;
 }
 
-.bg-yellow{
+.bg-yellow {
     background-color: #ffc300 !important;
 }
 
@@ -62,7 +61,7 @@
     background-color: transparent !important;
 }
 
-.gradient-left {
+.bg-gradient {
     &:after {
         content: '';
         position: absolute;
@@ -71,19 +70,20 @@
         bottom: 0;
         left: 0;
     }
-    &.gradient-primary {
+    &.gradient-primary-left {
         &:after {
             background: radial-gradient(circle at center left, $primary-color, rgba(255, 255, 255, 0) 80%);
         }
     }
-    &.gradient-black {
+    &.gradient-dark-left {
         &:after {
-            background: radial-gradient(circle at center left, #000, rgba(255, 255, 255, 0) 80%);
+            background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%);
         }
     }
-    &.gradient-white {
+    &.gradient-white-left {
         &:after {
             background: radial-gradient(circle at center left, #fff, rgba(255, 255, 255, 0) 80%);
         }
     }
 }
+

@@ -1,5 +1,5 @@
 <!-- Default -->
-{% macro default(post, card_css="mb-4", card_body_css="py-4 px-0") %}
+{% macro default(post, card_css="border-0 mb-4", card_body_css="py-4 px-0") %}
 <div class="card {{ card_css }}">
     <a href="blog-single-right-sidebar.html">
         <img src="{{ post.img }}" alt="" class="img-fluid"> {{ card_overlay() }}
@@ -15,15 +15,8 @@
 </div>
 {% endmacro %}
 
-<!-- Card -->
-{% macro card(post) %}
-<!-- - -->
-{{ default(post,"bg-shadow mb-4","p-4") }}
-<!-- - -->
-{% endmacro %}
-
-
 <!-- Standard -->
+
 {% macro standard(card_css="border-0 mb-4",card_bady_css="py-4 px-0") %}
 
 <div class="card {{ card_css }}">
@@ -71,6 +64,35 @@
 
 {% endmacro %}
 
+
+<!-- OWL Carousel -->
+{% macro owlCarousel_layout1() %}
+
+<div class="card border-0 mb-4">
+    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
+        <div class="item">
+            <img src="assets/img/blog/blog-2.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="assets/img/blog/blog-3.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="assets/img/blog/blog-4.jpg" alt="" />
+        </div>
+    </div>
+    <div class="card-body py-4 px-0">
+        <h3 class="card-title h4">
+            <a href="blog-single-right-sidebar.html">Photo with Slider Post Format</a>
+        </h3>
+        {{ blog_post_meta() }}
+        <p>Irure parturient maecenas sunt pellentesque ornare. Torquent ultricies condimentum culpa rutrum ea. Eleifend lacinia
+            pariatur a ad. Ornare occaecat aliquam condimentum cubilia fringilla. Occaecat erat eleifend diam inceptos ornare.</p>
+        {{ card_action() }}
+    </div>
+</div>
+
+{% endmacro %}
+
 <!-- Video -->
 {% macro video(card_css="border-0 mb-4",card_bady_css="py-4 px-0") %}
 
@@ -97,6 +119,33 @@
 {% endmacro %}
 
 
+<!-- Video -->
+{% macro video_layout1() %}
+
+<div class="card border-0 mb-4">
+    <div class="position-relative">
+        <div id="video-gallery">
+            <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
+                <i class="ion-ios-play"></i>
+            </a>
+        </div>
+        <img src="assets/img/blog/blog-6.jpg" alt="" class="card-img-top img-fluid">
+    </div>
+    <div class="card-body py-4 px-0">
+        <h3 class="card-title h4">
+            <a href="blog-single-right-sidebar.html">Video Post Format</a>
+        </h3>
+        {{ blog_post_meta() }}
+        <p>Laoreet leo libero nostra volutpat dapibus. Vel per fusce vestibulum lacinia. Nullam est augue elit accumsan. Commodo
+            nec convallis faucibus auctor minim. Ante volutpat sapien euismod arcu occaecat ornare occaecat aliquam condimentum.</p>
+        {{ card_action() }}
+    </div>
+</div>
+
+{% endmacro %}
+
+
+
 <!-- Card meta -->
 {% macro card_meta(post) %}
 
@@ -110,7 +159,8 @@
 {% endmacro %} {% macro blog_post_meta() %}
 
 <p class="meta">
-    January 1, 2018 <span class="font-italic">by</span>
+    January 1, 2018
+    <span class="font-italic">by</span>
     <a href="#">Mark</a>
     <span class="font-italic">in</span>
     <a href="#">Business</a>
