@@ -75,15 +75,9 @@
             background: radial-gradient(circle at center left, $primary-color, rgba(255, 255, 255, 0) 80%);
         }
     }
-    &.gradient-dark-left {
-        &:after {
-            background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%);
-        }
-    }
     &.gradient-white-left {
         &:after {
             background: radial-gradient(circle at center left, #fff, rgba(255, 255, 255, 0) 80%);
         }
     }
 }
-

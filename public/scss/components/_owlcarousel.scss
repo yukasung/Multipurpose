@@ -154,8 +154,8 @@
 
 .owl-hero {
     .owl-item {
-        color: $font-color;
-        background-color: #e6e6e6;
+        color: #ffffff;
+        background-color: $primary-color;
         .owl-item-dark {
             @include media-breakpoint-up(sm) {
                 color: #ffffff;

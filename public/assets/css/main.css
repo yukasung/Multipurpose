@@ -640,8 +640,8 @@ input[type="submit"] {
     content: "\e649"; }
 
 .owl-hero .owl-item {
-  color: #333333;
-  background-color: #e6e6e6; }
+  color: #ffffff;
+  background-color: #3498db; }
   @media (min-width: 576px) {
     .owl-hero .owl-item .owl-item-dark {
       color: #ffffff; } }
@@ -1192,10 +1192,6 @@ hr.line-dotted {
 .bg-gradient.gradient-primary-left:after {
   background: -webkit-radial-gradient(center left, circle, #3498db, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
-
-.bg-gradient.gradient-dark-left:after {
-  background: -webkit-radial-gradient(center left, circle, #343a40, rgba(255, 255, 255, 0) 80%);
-  background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
 
 .bg-gradient.gradient-white-left:after {
   background: -webkit-radial-gradient(center left, circle, #fff, rgba(255, 255, 255, 0) 80%);
