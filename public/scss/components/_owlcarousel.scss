@@ -154,25 +154,10 @@
 
 .owl-hero {
     .owl-item {
-        color: #ffffff;
-        background-color: $primary-color;
-        .owl-item-dark {
-            @include media-breakpoint-up(sm) {
-                color: #ffffff;
-            }
-        }
-        .owl-item-light {
-            @include media-breakpoint-up(sm) {
-                color: $font-color;
-            }
-        }
-        h2 {
-            color: inherit;
-        }
         figure {
             &:after {
                 @include media-breakpoint-down(sm) {
-                    background: none;
+                    background: none !important;
                 }
             }
         }
@@ -187,17 +172,9 @@
                 z-index: 1;
                 margin: 0 auto;
                 overflow: hidden;
-                margin-left: 50px;
-                transition: all .4s ease-in-out;
                 padding: 0 !important;
             }
         }
-        &.active {
-            .owl-caption {
-                @include media-breakpoint-up(sm) {
-                    margin-left: 0;
-                }
-            }
-        }
+        
     }
 }

@@ -639,39 +639,24 @@ input[type="submit"] {
   .owl-nav .owl-next:after {
     content: "\e649"; }
 
-.owl-hero .owl-item {
-  color: #ffffff;
-  background-color: #3498db; }
-  @media (min-width: 576px) {
-    .owl-hero .owl-item .owl-item-dark {
-      color: #ffffff; } }
-  @media (min-width: 576px) {
-    .owl-hero .owl-item .owl-item-light {
-      color: #333333; } }
-  .owl-hero .owl-item h2 {
-    color: inherit; }
-  @media (max-width: 767.98px) {
-    .owl-hero .owl-item figure:after {
-      background: none; } }
-  @media (max-width: 767.98px) {
-    .owl-hero .owl-item .owl-caption {
-      width: 100% !important; } }
-  @media (min-width: 576px) {
-    .owl-hero .owl-item .owl-caption {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      z-index: 1;
-      margin: 0 auto;
-      overflow: hidden;
-      margin-left: 50px;
-      -webkit-transition: all .4s ease-in-out;
-      transition: all .4s ease-in-out;
-      padding: 0 !important; } }
-  @media (min-width: 576px) {
-    .owl-hero .owl-item.active .owl-caption {
-      margin-left: 0; } }
+@media (max-width: 767.98px) {
+  .owl-hero .owl-item figure:after {
+    background: none !important; } }
+
+@media (max-width: 767.98px) {
+  .owl-hero .owl-item .owl-caption {
+    width: 100% !important; } }
+
+@media (min-width: 576px) {
+  .owl-hero .owl-item .owl-caption {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 1;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 !important; } }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENTS > CARD
@@ -1189,13 +1174,9 @@ hr.line-dotted {
   bottom: 0;
   left: 0; }
 
-.bg-gradient.gradient-primary-left:after {
+.bg-gradient.gradient-primary.gradient-left-right:after {
   background: -webkit-radial-gradient(center left, circle, #3498db, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
-
-.bg-gradient.gradient-white-left:after {
-  background: -webkit-radial-gradient(center left, circle, #fff, rgba(255, 255, 255, 0) 80%);
-  background: radial-gradient(circle at center left, #fff, rgba(255, 255, 255, 0) 80%); }
 
 .op-0 {
   opacity: 0 !important; }
