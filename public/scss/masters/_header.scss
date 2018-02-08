@@ -1,7 +1,6 @@
 .header-top{
-	background-color: $primary-color;
-	color: #fff;
-    font-size: 14px;
+	background-color: $primary;
+    font-size: $navbar-nav-link-font-size;
     padding: 10px 0;
 	a{
 		color: inherit;

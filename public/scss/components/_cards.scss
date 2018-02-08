@@ -5,13 +5,11 @@
 /*-----------------------------------------------------------------------------------*/
 
 .card {
-	background-color: $card-bg-color;
 	border-radius: 2px;
 	.card-title {
 		a {
-			color: $card-title-font-color;
 			&:hover {
-				color: $primary-color;
+				color: $primary;
 			}
 		}
 	}
@@ -37,8 +35,6 @@
 		margin-bottom: -1.25em;
 	}
 	.card-link {
-		font-size: $card-link-font-size;
-		color: $card-link-color;
 		text-transform: uppercase;
 	}
 	.card-social {

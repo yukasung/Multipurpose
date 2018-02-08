@@ -7,7 +7,7 @@
 html,
 body {
     font-family: "Roboto", sans-serif;
-    color: $font-color;
+    // color: $font-color;
 }
 
 body,
@@ -17,7 +17,7 @@ address {
 }
 
 blockquote {
-    border-left: 3px solid $primary-color !important;
+    border-left: 3px solid $primary !important;
     position: relative;
     margin: 30px 0;
     padding: 15px 30px;
@@ -29,13 +29,13 @@ a {
     position: relative;
     transition: 0.5s color ease;
     text-decoration: none;
-    color: $primary-color;
+    color: $primary;
     &:hover {
-        color: $primary-color;
+        color: $primary;
         text-decoration: none;
     }
     &:focus {
-        color: $primary-color;
+        color: $primary;
         text-decoration: none;
         outline: none;
     }

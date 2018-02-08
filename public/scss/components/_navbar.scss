@@ -9,23 +9,10 @@
                 background: $navbar-light-toggler-color;
             }
         }
-        .navbar-nav {
-            .nav-link {
-                color: $navbar-light-font-color;
-            }
-        }
-        .navbar-action {
-            .nav-action {
-                color: $navbar-light-font-color;
-                span {
-                    font-size: $navbar-font-size;
-                }
-            }
-        }
+       
     }
 
     .navbar {
-        background: $navbar-bg-color;
         transition: all .5s;
         box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
         @include media-breakpoint-up(sm) {
@@ -62,7 +49,6 @@
                     background: $navbar-ddl-bg-color;
                 }
                 a {
-                    font-size: $navbar-font-size;
                     letter-spacing: 0.5px;
                     line-height: 1;
                     @include media-breakpoint-up(sm) {
@@ -76,13 +62,14 @@
                     &:hover,
                     &:active {
                         @include media-breakpoint-up(sm) {
-                            background: lighten($primary-color, 8) !important;
+                            background: lighten($primary, 8) !important;
                             color: #ffffff;
                         }
                     }
                 }
             }
             .dropdown-item {
+                font-size: $navbar-nav-link-font-size;
                 &:hover,
                 &:focus {
                     background-color: inherit;
@@ -100,7 +87,6 @@
                     @include media-breakpoint-down(sm) {
                         line-height: 1 !important;
                         padding: 15px 0;
-                        color: $navbar-light-font-color-mobile !important;
                     }
                 }
             }
@@ -143,6 +129,15 @@
                     }
                 }
             }
+            .nav-action{
+                color: $body-color;
+                i{
+                    margin-left: 2px;
+                }
+                span{
+                    font-size: 13px;
+                }
+            }
         }
         .sm-collapsible {
             .sub-arrow {
@@ -180,10 +175,10 @@
     }
 
     .nav-link {
+        font-size: $navbar-nav-link-font-size;
         padding-top: 0;
         padding-bottom: 0;
         text-transform: uppercase;
-        font-size: $navbar-font-size;
         letter-spacing: 0.5px;
     }
 

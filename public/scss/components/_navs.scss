@@ -12,14 +12,13 @@
                 padding: 15px 0;
                 margin-right: 30px;
                 border: none;
-                color: $font-color;
                 &:first-child {
                     padding-left: 0;
                 }
                 &.active {
                     background-color: transparent;
                     border-color: transparent transparent transparent;
-                    color: $primary-color;
+                    color: $primary;
                     font-weight: 500;
                     &:after {
                         height: 2px;
@@ -29,7 +28,7 @@
                         bottom: -1px;
                         left: 0;
                         position: absolute;
-                        background: $primary-color;
+                        background: $primary;
                     }
                 }
             }

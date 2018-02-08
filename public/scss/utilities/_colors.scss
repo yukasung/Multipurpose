@@ -3,34 +3,17 @@
 /*  UTILITIES > COLORS
 /*-----------------------------------------------------------------------------------*/
 
-.text-primary {
-    color: $primary-color !important;
-}
-
 .text-black {
     color: #000000 !important;
 }
 
-.text-grey {
-    color: #eee !important;
-}
-
 .text-body {
-    color: $font-color;
     a {
         color: inherit;
         &:hover {
-            color: $primary-color;
+            color: $primary;
         }
     }
-}
-
-.bg-primary {
-    background-color: $primary-color !important;
-}
-
-.bg-white {
-    background-color: #fff !important;
 }
 
 .bg-overlay {
@@ -39,22 +22,6 @@
 
 .bg-shadow {
     box-shadow: $box-shadow;
-}
-
-.bg-dark {
-    background-color: #282a2c !important;
-}
-
-.bg-darken {
-    background-color: #232526 !important;
-}
-
-.bg-grey {
-    background-color: #f3f5f6 !important;
-}
-
-.bg-yellow {
-    background-color: #ffc300 !important;
 }
 
 .bg-transparent {
@@ -73,7 +40,7 @@
     &.gradient-primary{
         &.gradient-left-right{
             &:after {
-                background: radial-gradient(circle at center left, $primary-color, rgba(255, 255, 255, 0) 80%);
+                background: radial-gradient(circle at center left, $primary, rgba(255, 255, 255, 0) 80%);
             }
         }
     }

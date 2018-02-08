@@ -40,7 +40,7 @@
             margin: 0 5px;
             display: block;
             border-radius: 100%;
-            border: 1px solid $primary-color;
+            border: 1px solid $primary;
             width: 13px;
             height: 13px;
             transition: all 150ms ease-in;
@@ -48,7 +48,7 @@
         &.active,
         &:hover {
             span {
-                background: $primary-color;
+                background: $primary;
             }
         }
     }
@@ -86,12 +86,12 @@
 .owl-dot-primary {
     .owl-dot {
         span {
-            border: 2px solid $primary-color !important;
+            border: 2px solid $primary !important;
         }
         &.active,
         &:hover {
             span {
-                background: $primary-color !important;
+                background: $primary !important;
             }
         }
     }

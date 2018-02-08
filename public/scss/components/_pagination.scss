@@ -18,12 +18,11 @@
 		&.active{
 			.page-link{
 				color: #ffffff;
-			    background: $primary-color;
+			    background: $primary;
 			    opacity: 1;
 			}
 		}
 		.page-link{
-			color: $font-color;
 		    width: 40px;
 		    height: 40px;
 		    line-height: 40px;
@@ -48,7 +47,7 @@
 		    opacity: .4;
 			&:hover{
 			    color: #ffffff;
-			    background: $primary-color;
+			    background: $primary;
 			    opacity: 1;
 			}
 		}

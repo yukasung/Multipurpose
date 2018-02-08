@@ -1,46 +1,24 @@
 /* 1. Colors
    ========================================================================== */
 
-$primary-color: #3498db !default;
-$font-color: #333333 !default;
-$font-heading-color: #333333 !default;
-$font-meta-color: #b9b9b9 !default;
+$primary: #3498db;
+$input-btn-padding-x: 1.25rem;
+$input-btn-padding-x-lg: 1.25rem;
+$border-color: #e9ecef;
 
-/* 2. Fonts
-   ========================================================================== */
+/// 
 
-$font-roboto-path: "/fonts/roboto/" !default;
-
-/* 7. Box Shadow
-   ========================================================================== */
-
+$body-color: #333333;
 $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
-
-
-/* 2. Navigation Bar
-   ========================================================================== */
-$navbar-height: 48px !default;
-$navbar-bg-color: #ffffff !default;
-$navbar-font-size: 13px !default;
-$navbar-light-font-color: $font-color !default;
-$navbar-light-font-color-mobile: $font-color !default;
-$navbar-light-toggler-color: #2e2e2e !default;
-$navbar-ddl-bg-color: $primary-color !default;
-$navbar-ddl-bg-color-mobile: #ffffff !default;
-$navbar-ddl-font-color: #ffffff !default;
+0 2px 10px 0 rgba(0, 0, 0, 0.12);
+// Navbar
+$navbar-nav-link-font-size: 15px;
+$navbar-light-color: #333333;
+$navbar-height: 48px;
+$navbar-light-toggler-color: #2e2e2e;
+$navbar-ddl-bg-color: $primary;
+$navbar-ddl-bg-color-mobile: #ffffff;
+$navbar-ddl-font-color: #ffffff;
 $navbar-border-top-mobile: 1px solid #efefef;
-
-/* 2. Blog Post
-   ========================================================================== */
-$blog-meta-font-size: 15px !default;
-$blog-meta-font-color: #999 !default;
-
-/* 2. Card
-   ========================================================================== */
-$card-bg-color: #ffffff !default;
-$card-title-font-size: 20px !default;
-$card-title-font-color: #000000 !default;
-$card-link-font-size: 12px !default;
-$card-link-color: $primary-color !default;
-
+$blog-meta-font-size: 15px;
+$blog-meta-font-color: #999;
