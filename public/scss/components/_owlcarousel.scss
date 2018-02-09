@@ -23,6 +23,8 @@
             flex-direction: column;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: auto;
+            margin-top: auto;
             .card {
                 flex: 1 0 auto;
             }
@@ -93,6 +95,16 @@
             span {
                 background: $primary !important;
             }
+        }
+    }
+}
+
+.owl-nav-bg-dark {
+    .owl-nav {
+        >div {
+            width: 28px;
+            color: #ffffff;
+            background: #343a40;
         }
     }
 }

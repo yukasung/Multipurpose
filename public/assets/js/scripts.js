@@ -109,9 +109,9 @@ var theme = {
                 $(".navbar").removeClass("scroll-up");
             }
 
-            if ($(this).scrollTop() < 300 && $(".navbar").hasClass('fixed-top')) {
-                $(".navbar").removeClass('fixed-top');
-            }
+            // if ($(this).scrollTop() < 300 && $(".navbar").hasClass('fixed-top')) {
+            //     $(".navbar").removeClass('fixed-top');
+            // }
 
             lastScrollTop = currentScrollTop;
 

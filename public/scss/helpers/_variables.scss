@@ -6,13 +6,19 @@ $input-btn-padding-x: 1.25rem;
 $input-btn-padding-x-lg: 1.25rem;
 $border-color: #e9ecef;
 
-/// 
-
+// Body
+//
+// Settings for the `<body>` element.
 $body-color: #333333;
+
+
+// Links
+//
+// Style anchor elements.
+$link-hover-decoration: none;
 $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 // Navbar
-$navbar-nav-link-font-size: 15px;
 $navbar-light-color: #333333;
 $navbar-height: 48px;
 $navbar-light-toggler-color: #2e2e2e;
