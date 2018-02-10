@@ -21,6 +21,7 @@ var theme = {
         theme.initCheckboxCollapse();
         theme.initCardLinkShare();
         theme.initWOW();
+        parallaxInit('.parallax');
 
     },
     resizeEvent: function () {

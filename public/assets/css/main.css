@@ -8938,16 +8938,6 @@ hr.line-dotted {
     letter-spacing: 0px; }
 
 /*-----------------------------------------------------------------------------------*/
-/*	02. COMPONENTS > PARALLAX
-/*-----------------------------------------------------------------------------------*/
-.parallax .icon-video {
-  position: relative;
-  top: auto;
-  left: auto;
-  -webkit-transform: none;
-          transform: none; }
-
-/*-----------------------------------------------------------------------------------*/
 /*  Component > Badge
 /*-----------------------------------------------------------------------------------*/
 .badge.badge-primary {
@@ -8968,8 +8958,13 @@ hr.line-dotted {
   .text-body a:hover {
     color: #3498db; }
 
-.bg-overlay {
-  opacity: 0.915 !important; }
+.bg-overlay:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .bg-shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
@@ -9028,53 +9023,8 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*	UTILITIES > OVERLAY
 /*-----------------------------------------------------------------------------------*/
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-decoration: none;
-  z-index: 1;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  opacity: 1;
-  width: 100%;
-  height: 100%; }
-  .overlay.overlay-hover {
-    opacity: 0; }
-    .overlay.overlay-hover:hover {
-      opacity: 1; }
-  .overlay.overlay-white:after {
-    background: rgba(255, 255, 255, 0.85); }
-  .overlay.overlay-primary:after {
-    background: rgba(52, 152, 219, 0.85); }
-  .overlay.overlay-box:after {
-    top: 30px;
-    left: 30px;
-    right: 30px;
-    bottom: 30px; }
-  .overlay:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  .overlay .overlay-body {
-    position: absolute;
-    display: table;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 11;
-    padding: 30px; }
-    .overlay .overlay-body > * {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center; }
+.overlay-background {
+  background: rgba(0, 0, 0, 0.5); }
 
 /*	UTILITIES > SIZING
 /*-----------------------------------------------------------------------------------*/
