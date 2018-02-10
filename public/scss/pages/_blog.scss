@@ -8,11 +8,6 @@
     font-size: $blog-meta-font-size;
     color: $blog-meta-font-color;
     margin-bottom: 10px;
-    a {
-        &:hover {
-            color: $primary;
-        }
-    }
     .meta-link {
         font-size: 12px;
     }

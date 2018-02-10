@@ -339,7 +339,7 @@ var theme = {
             videoMaxWidth: '1000px'
         });
 
-        $('#video-gallery').lightGallery();
+        $('.video-gallery').lightGallery();
 
     },
     initCounter: function () {

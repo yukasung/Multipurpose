@@ -1,197 +1,103 @@
-<!-- master -->
+<!--  -->
 {% extends "../templates/master.html" %} {% block content %}
-<!-- testimonial -->
+<!--  -->
 {% import '../templates/macros/testimonial.html' as macroTestimonials%}
-<!-- blog -->
+<!--  -->
 {% import '../templates/macros/blogs.html' as macroBlogs %}
+<!--  -->
+{% import '../templates/macros/clients.html' as macroClients%}
 <div id="content">
-    <div class="slider-owl owl-carousel owl-theme owl-loaded owl-img-dots owl-dot-white">
-        <div class="item" style="background-image: url('assets/img/slider_1.jpg');">
-            
-            <div class="slider-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-left">
-                            <h1>The ease & simplicity
-                                <br>of Gmail, available
-                                <br>across devices</h1>
-                            <p class="mb-0 mt-3">We appreciate that you have put time, thought, effort and passion
-                                <br>into your building project as well as the commitment.</p>
-                            <div class="mt-5">
-                                <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">See all service</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="owl-hero owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true,"animateOut": "fadeOut","animateIn": "fadeIn"}'>
+        <div class="item w-100 bg-primary">
+            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
+                <img src="assets/img/slider/slider_1.jpg" alt="">
+            </figure>
+            <div class="container">
+                <div class="owl-caption px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
+                    <h2>Global Project Management Services & Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
+                        nisl consequat pellentesque.</p>
+                    <a href="#" class="btn btn-dark mt-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-3">Learn More</a>
                 </div>
             </div>
         </div>
-        <div class="item" style="background-image: url('assets/img/slider/slider-1.jpg');">
-            <div class="slider-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1>The ease & simplicity of Gmail
-                                <br>available across devices</h1>
-                            <p class="mb-0 mt-3">We appreciate that you have put time, thought, effort and passion
-                                <br>into your building project as well as the commitment.</p>
-                            <a class="btn btn-primary btn-lg text-uppercase mt-5" href="#" role="button">Create an account</a>
-                        </div>
-                    </div>
+        <div class="item w-100 bg-primary">
+            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
+                <img src="assets/img/slider/slider_2.jpg" alt="">
+            </figure>
+            <div class="container">
+                <div class="owl-caption px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
+                    <h2>Global Project Management Services & Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
+                        nisl consequat pellentesque.</p>
+                    <a href="#" class="btn btn-dark mt-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="item w-100 bg-primary">
+            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
+                <img src="assets/img/slider/slider_3.jpg" alt="">
+            </figure>
+            <div class="container">
+                <div class="owl-caption px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
+                    <h2>Global Project Management Services & Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
+                        nisl consequat pellentesque.
+                    </p>
+                    <a href="#" class="btn btn-dark mt-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-3">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-white">
-        <div class="container py-7">
-            <h2 class="text-uppercase text-center">Our Services</h2>
-            <hr class="hr-lg mt-4 mb-4 w-60px bg-shadow hr-primary">
-            <div class="row justify-content-md-center mb-5">
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row text-center text-md-left">
                 <div class="col-md-6">
-                    <p class="lead text-center">We allow you to start without having to worry about a mistake.</p>
+                    <h3 class="text-white">Looking for insurance consulting?</h3>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 px-md-5 py-md-4 py-3">
-                    <div class="media">
-                        <div class="d-inline-block">
-                            <i class="far fa-user icon-circle-md bg-primary bg-shadow text-white"></i>
-                        </div>
-                        <div class="media-body ml-4 mt-3">
-                            <h4 class="mt-0 mb-3">You will learn all you need proffesional</h4>
-                            Lorem ipsum dolor consectetur adipiscing elit, eiusmod tempor ut labore et dolore magna
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 px-md-5 py-md-4 py-3">
-                    <div class="media">
-                        <div class="d-inline-block">
-                            <i class="far fa-list-alt icon-circle-md bg-primary bg-shadow text-white"></i>
-                        </div>
-                        <div class="media-body ml-4 mt-3">
-                            <h4 class="mt-0 mb-3">You will learn all you need proffesional</h4>
-                            Lorem ipsum dolor consectetur adipiscing elit, eiusmod tempor ut labore et dolore magna
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 px-md-5 py-md-4 py-3">
-                    <div class="media">
-                        <div class="d-inline-block">
-                            <i class="far fa-gem icon-circle-md bg-primary bg-shadow text-white"></i>
-                        </div>
-                        <div class="media-body ml-4 mt-3">
-                            <h4 class="mt-0 mb-3">You will learn all you need proffesional</h4>
-                            Lorem ipsum dolor consectetur adipiscing elit, eiusmod tempor ut labore et dolore magna
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 px-md-5 py-md-4 py-3">
-                    <div class="media">
-                        <div class="d-inline-block">
-                            <i class="far fa-image icon-circle-md bg-primary bg-shadow text-white"></i>
-                        </div>
-                        <div class="media-body ml-4 mt-3">
-                            <h4 class="mt-0 mb-3">You will learn all you need proffesional</h4>
-                            Lorem ipsum dolor consectetur adipiscing elit, eiusmod tempor ut labore et dolore magna
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-primary">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6 bg-image-center" style="background-image:url(assets/img/art/1000x530x1.jpg);height: 475px;"></div>
-                <div class="col-12 col-md-6 my-auto">
-                    <div class="d-block text-white px-4 py-5">
-                        <h2 class="text-uppercase">Who We are</h2>
-                        <hr class="hr-lg mt-4 mb-4 w-60px bg-shadow hr-white m-0">
-                        <p class="lead mb-3">Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.</p>
-                        <p class="content-top-space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
-                            consequat blandit. Sed nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.
-                        </p>
-                        <a href="#" class="btn btn-black text-uppercase mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 my-auto order-2 order-md-1">
-                    <div class="d-block text-white px-4 py-5">
-                        <h2 class="text-uppercase">Why Choose Us</h2>
-                        <hr class="hr-lg mt-4 mb-4 w-60px bg-shadow hr-white m-0">
-                        <p class="content-top-space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
-                            consequat blandit. Sed nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                        <p class="content-top-space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus
-                            consequat blandit. Sed nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                        <a href="#" class="btn btn-black text-uppercase mt-3">Read More</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 bg-image-center order-1 order-md-2" style="background-image:url(assets/img/art/1000x530x2.jpg);height: 475px;"></div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-white">
-        <div class="container py-7">
-            <h2 class="text-uppercase text-center">What People Say</h2>
-            <hr class="hr-lg mt-4 mb-6 w-60px bg-shadow hr-primary">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-col-3 owl-carousel owl-theme owl-loaded owl-dot-primary">
-                        {% for testimonial in testimonials %}
-                        <div class="item mb-4">
-                            {{ macroTestimonials.layout1(testimonial) }}
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-primary">
-        <div class="container py-5">
-            <div class="row justify-content-md-center text-center text-white">
-                <div class="col-6 col-md-3">
-                    <div class="counter">
-                        <span class="display-4" data-from="0" data-to="600" data-speed="3500" data-refresh-interval="50"></span>
-                    </div>
-                    <h4 class="text-uppercase mt-3">Employees</h4>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="counter">
-                        <span class="display-4" data-from="0" data-to="100" data-speed="3500" data-refresh-interval="50"></span>
-                    </div>
-                    <h4 class="text-uppercase mt-3">Offices</h4>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="counter mt-4 mt-md-0">
-                        <span class="display-4" data-from="0" data-to="320" data-speed="3500" data-refresh-interval="50"></span>
-                    </div>
-                    <h4 class="text-uppercase mt-3">Continents</h4>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="counter mt-4 mt-md-0">
-                        <span class="display-4" data-from="0" data-to="480" data-speed="3500" data-refresh-interval="50"></span>
-                    </div>
-                    <h4 class="text-uppercase mt-3">Clients</h4>
+                <div class="col-md-6 text-md-right">
+                    <a href="#" class="btn btn-lg btn-outline-light">Contact us today</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="bg-white">
-        <div class="container py-7">
-            <h2 class="text-uppercase text-center">Our Recent News</h2>
-            <hr class="hr-lg mt-4 mb-4 w-60px bg-shadow hr-primary">
-            <div class="row mt-5">
-                <div class="col-md-12">
-                    <div class="owl-col-3 owl-carousel owl-theme owl-loaded">
-                        {% set posts = posts.slice(0,9) %} {% for post in posts %}
-                        <div class="item px-1">
-                            {{ macroBlogs.default(post) }}
+        <div class="container pt-7 pb-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4 mb-md-0">
+                        <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                        <div class="card-body py-4 px-0">
+                            <h3 class="card-title h5">Professional Consulting</h3>
+                            <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+                            <p class="card-text">Proin diam augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id
+                                lorem fermentum, accumsan enim non, auctor neque.</p>
                         </div>
-                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4 mb-md-0">
+                        <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                        <div class="card-body py-4 px-0">
+                            <h3 class="card-title h5">Valuable Ideas</h3>
+                            <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+                            <p class="card-text">Proin diam augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id
+                                lorem fermentum, accumsan enim non, auctor neque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4 mb-md-0">
+                        <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                        <div class="card-body py-4 px-0">
+                            <h3 class="card-title h5">Excellent Timing</h3>
+                            <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+                            <p class="card-text">Proin diam augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id
+                                lorem fermentum, accumsan enim non, auctor neque.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,17 +106,86 @@
     <div class="bg-primary">
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-8 text-white">
-                    <h3>Awesome MultiPurpose Template</h3>
-                    <p>Wilson is a new incredibly versatile WordPress theme that has a special codeless page builder. Even several
-                        demos are included!</p>
+                <div class="col-md-12">
+                    {{ macroClients.layout1(clients) }}
                 </div>
-                <div class="col-md-4 text-right">
-                    <a href="#" class="btn btn-black text-uppercase mt-4">contact us</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax position-relative" data-parallax-img="assets/img/video_1.jpg" data-parallax-img-width="1366" data-parallax-img-height="450">
+        <div class="container py-9">
+            <div class="row">
+                <div class="col-md-12 text-white">
+                    <h6 class="font-weight-light">Technology from tomorrow</h6>
+                    <h3 class="mb-4">We work in partnership with all the major technology suppliers</h3>
+                    <ul class="list-unstyled list-lg">
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Consectetur adipiscing elit</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Integer molestie lorem at massa</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Facilisis in pretium nisl aliquet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <h3 class="card-title h5">
+                                <a href="blog-single-right-sidebar.html">Global Automative Market Grows to $600 billion</a>
+                            </h3>
+                            <p class="meta">January 1, 2018
+                                <span class="font-italic">by</span>
+                                <a href="#">Mark</a>
+                                <span class="font-italic">in</span>
+                                <a href="#">Design</a>
+                            </p>
+                            <a href="#" class="btn btn-primary mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <h3 class="card-title h5">
+                                <a href="blog-single-right-sidebar.html">Industrial Innovation and Design Exhibitions of 2017</a>
+                            </h3>
+                            <p class="meta">January 1, 2018
+                                <span class="font-italic">by</span>
+                                <a href="#">Mark</a>
+                                <span class="font-italic">in</span>
+                                <a href="#">Design</a>
+                            </p>
+                            <a href="#" class="btn btn-primary mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <h3 class="card-title h5">
+                                <a href="blog-single-right-sidebar.html">Exciting New Technologies in Business Communication</a>
+                            </h3>
+                            <p class="meta">January 1, 2018
+                                <span class="font-italic">by</span>
+                                <a href="#">Mark</a>
+                                <span class="font-italic">in</span>
+                                <a href="#">Design</a>
+                            </p>
+                            <a href="#" class="btn btn-primary mt-4">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
