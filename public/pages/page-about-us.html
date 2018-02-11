@@ -182,24 +182,24 @@
             </div>
         </div>
     </div>
-</div>
-<div class="bg-white">
-    <div class="container py-7">
-        <h6 class="text-uppercase font-weight-light text-muted text-center">testimonials</h6>
-        <h3 class="text-center">What They Are Saying</h3>
-        <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="owl-carousel owl-theme owl-loaded owl-dots-primary owl-nav-bg-black mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
-                    {% for testimonial in testimonials %}
-                    <div class="item mb-4">
-                        {{ macroTestimonials.layout1(testimonial) }}
+
+    <div class="bg-white">
+        <div class="container py-7">
+            <h6 class="text-uppercase font-weight-light text-muted text-center">testimonials</h6>
+            <h3 class="text-center">What They Are Saying</h3>
+            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme owl-loaded owl-dots-primary owl-nav-bg-black mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+                        {% for testimonial in testimonials %}
+                        <div class="item mb-4">
+                            {{ macroTestimonials.layout1(testimonial) }}
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 {% endblock %}
