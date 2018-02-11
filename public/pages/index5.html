@@ -1,0 +1,228 @@
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% import '../templates/macros/testimonial.html' as macroTestimonials%}
+<!--  -->
+{% import '../templates/macros/blogs.html' as macroBlogs %}
+<!--  -->
+{% import '../templates/macros/clients.html' as macroClients%}
+<!--  -->
+{% import '../templates/macros/counters.html' as macroCounters %}
+<!--  -->
+<div id="content">
+    <div class="owl-hero owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true,"animateOut": "fadeOut","animateIn": "fadeIn"}'>
+        <div class="item w-100 bg-primary">
+            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
+                <img src="assets/img/slider/slider_1.jpg" alt="">
+            </figure>
+            <div class="container">
+                <div class="owl-caption px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
+                    <h2>Global Project Management Services & Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
+                        nisl consequat pellentesque.</p>
+                    <a href="#" class="btn btn-dark mt-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="item w-100 bg-primary">
+            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
+                <img src="assets/img/slider/slider_2.jpg" alt="">
+            </figure>
+            <div class="container">
+                <div class="owl-caption px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
+                    <h2>Global Project Management Services & Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
+                        nisl consequat pellentesque.</p>
+                    <a href="#" class="btn btn-dark mt-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="item w-100 bg-primary">
+            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
+                <img src="assets/img/slider/slider_3.jpg" alt="">
+            </figure>
+            <div class="container">
+                <div class="owl-caption px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
+                    <h2>Global Project Management Services & Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
+                        nisl consequat pellentesque.
+                    </p>
+                    <a href="#" class="btn btn-dark mt-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row justify-content-md-center text-center text-white">
+                {{ macroCounters.layout1() }}
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="font-weight-light">25 years industry experience</h6>
+                    <h3 class="mb-4">Business Lounge is the best consulting partner.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
+                        ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non tincidunt
+                        dui. Curabitur pretium efficitur sem vitae fermentum. Maecenas fermentum erat non facilisis laoreet.
+                        Dignissim dapibus erat. In eu rutrum ante. Nullam id lorem fermentum, accumsan enim non, auctor neque.</p>
+                    <ul class="list-unstyled list-lg">
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Nulla laoreet metus at eros porttitor elementum.
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Sed et purus eu dolor tempor fringilla eu eget quam.
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Curabitur ullamcorper ultricies nisi. Nam eget dui.</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Quisque euismod elit pellentesque massa consequat.</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Sed non erat non est suscipit tincidunt.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Contact Us</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-shadow border-0 mb-4">
+                                <div class="d-block text-center p-4">
+                                    <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title h5">Professional Consulting</h3>
+                                    <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-shadow border-0 mb-4">
+                                <div class="d-block text-center p-4">
+                                    <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title h5">Professional Consulting</h3>
+                                    <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-shadow border-0 mb-4">
+                                <div class="d-block text-center p-4">
+                                    <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title h5">Professional Consulting</h3>
+                                    <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-shadow border-0 mb-4">
+                                <div class="d-block text-center p-4">
+                                    <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title h5">Professional Consulting</h3>
+                                    <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="font-weight-light">Technology from tomorrow</h6>
+                    <h3 class="mb-4">We work in partnership with all the major technology suppliers</h3>
+                    <ul class="list-unstyled list-lg">
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Nulla laoreet metus at eros porttitor elementum.
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Sed et purus eu dolor tempor fringilla eu eget quam.
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Curabitur ullamcorper ultricies nisi. Nam eget dui.</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Quisque euismod elit pellentesque massa consequat.</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Sed non erat non est suscipit tincidunt.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row bg-white py-4">
+                        <div class="col-6">
+                            <div class="d-block text-center p-2">
+                                <img src="assets/img/client/dark-logo2-180x80.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-block text-center p-2">
+                                <img src="assets/img/client/dark-logo4-180x80.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-block text-center p-2">
+                                <img src="assets/img/client/dark-logo6-180x80.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-block text-center p-2">
+                                <img src="assets/img/client/dark-logo7-180x80.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-block text-center p-2">
+                                <img src="assets/img/client/dark-logo8-180x80.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-block text-center p-2">
+                                <img src="assets/img/client/dark-logo9-180x80.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container pt-7 pb-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-center text-md-left">Latest Industry News</h3>
+                    <hr class="hr-lg mt-3 mx-md-0 mb-4 w-60px hr-primary">
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-12 col-md-6 col-form-label text-md-right">Subscribe to our newsletter</label>
+                            <div class="col-12 col-md-6">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Your email">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                {% set posts = posts.slice(0,6) %} {% for post in posts %}
+                <div class="col-md-4">
+                    {{ macroBlogs.default(post) }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
