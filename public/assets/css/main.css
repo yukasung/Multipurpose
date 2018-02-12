@@ -8567,7 +8567,8 @@ input[type="submit"] {
   margin: 0 1px;
   padding: 10px 0;
   line-height: 0;
-  width: 0;
+  width: 40px;
+  height: 40px;
   border-radius: 0;
   font-size: 0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -8583,18 +8584,41 @@ input[type="submit"] {
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
   text-align: center;
-  color: #ffffff;
-  opacity: 0; }
+  color: #ffffff; }
+  @media (min-width: 576px) {
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      opacity: 0; } }
 
 .owl-nav .owl-prev {
-  left: -1px; }
+  left: 0; }
   .owl-nav .owl-prev:after {
     content: "\e64a"; }
 
 .owl-nav .owl-next {
+  right: 0; }
+  .owl-nav .owl-next:after {
+    content: "\e649"; }
+
+.owl-hero .owl-prev,
+.owl-hero .owl-next {
+  height: 60px;
+  text-align: center;
+  color: #ffffff; }
+  @media (min-width: 576px) {
+    .owl-hero .owl-prev,
+    .owl-hero .owl-next {
+      opacity: 0; } }
+
+.owl-hero .owl-prev {
+  left: -1px; }
+  .owl-hero .owl-prev:after {
+    content: "\e64a"; }
+
+.owl-hero .owl-next {
   left: auto;
   right: -1px; }
-  .owl-nav .owl-next:after {
+  .owl-hero .owl-next:after {
     content: "\e649"; }
 
 @media (max-width: 767.98px) {
@@ -8779,27 +8803,6 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENT > IMAGE
 /*-----------------------------------------------------------------------------------*/
-.img-overlay:before {
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 70%;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(100%, rgba(0, 0, 0, 0.4)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, transparent 40%, rgba(0, 0, 0, 0.4) 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.4) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
-  /* IE6-9 */
-  /* responsive portrait phone */ }
-
 .img-circle {
   border-radius: 50%; }
 
@@ -9017,8 +9020,14 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*	UTILITIES > OVERLAY
 /*-----------------------------------------------------------------------------------*/
-.overlay-background {
-  background: rgba(0, 0, 0, 0.35); }
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .overlay.overlay-dark {
+    background: rgba(0, 0, 0, 0.35); }
 
 /*	UTILITIES > SIZING
 /*-----------------------------------------------------------------------------------*/
