@@ -56,6 +56,91 @@
     }
 }
 
+.owl-nav {
+    >div {
+        position: absolute;
+        top: calc(50% - 14px);
+        transform: translateY(-50%);
+        display: inline-block;
+        zoom: 1;
+        margin: 0 1px;
+        padding: 10px 0;
+        line-height: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+        font-size: 0;
+        transition: all 0.2s ease-in-out;
+        &:after {
+            font-family: 'themify';
+            font-size: 20px;
+            display: block;
+            line-height: 40px;
+        }
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
+    .owl-prev,
+    .owl-next {
+        text-align: center;
+        color: #ffffff;
+    }
+    .owl-prev {
+        left: 0;
+        &:after {
+            content: "\e64a";
+        }
+    }
+    .owl-next {
+        right: 0;
+        &:after {
+            content: "\e649";
+        }
+    }
+}
+
+.owl-nav-edge {
+    .owl-prev,
+    .owl-next {
+        height: 60px;
+        text-align: center;
+        color: #ffffff;
+        @include media-breakpoint-up(sm) {
+            opacity: 0;
+        }
+    }
+    .owl-prev {
+        left: -1px;
+    }
+    .owl-next {
+        right: -1px;
+    }
+    .owl-item {
+        figure {
+            &:after {
+                @include media-breakpoint-down(sm) {
+                    background: none !important;
+                }
+            }
+        }
+        .owl-caption {
+            @include media-breakpoint-down(sm) {
+                width: 100% !important;
+            }
+            @include media-breakpoint-up(sm) {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                margin: 0 auto;
+                overflow: hidden;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
 .owl-dots-inside {
     .owl-dots {
         position: absolute;
@@ -85,7 +170,7 @@
     }
 }
 
-.owl-dot-primary {
+.owl-dots-primary {
     .owl-dot {
         span {
             border: 2px solid $primary !important;
@@ -95,16 +180,6 @@
             span {
                 background: $primary !important;
             }
-        }
-    }
-}
-
-.owl-nav-bg-dark {
-    .owl-nav {
-        >div {
-            width: 28px;
-            color: #ffffff;
-            background: #343a40;
         }
     }
 }
@@ -119,105 +194,11 @@
     }
 }
 
-.owl-nav {
-    >div {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        display: inline-block;
-        zoom: 1;
-        margin: 0 1px;
-        padding: 10px 0;
-        line-height: 0;
-        width: 40px;
-        height: 40px;
-        border-radius: 0;
-        font-size: 0;
-        transition: all 0.2s ease-in-out; // position: absolute;
-        // top: calc(50% - 14px);
-        // text-align: center;
-        // line-height: 38px;
-        // width: 40px;
-        // height: 40px;
-        // z-index: 5;
-        // font-size: 0;
-        // line-height: 0;
-        &:after {
-            font-family: 'themify';
-            font-size: 20px;
-            display: block;
-            line-height: 40px;
-        }
-        &:hover {
-            opacity: 1 !important;
-        }
-    }
+.owl-nav-hover{
     .owl-prev,
     .owl-next {
-        text-align: center;
-        color: #ffffff;
         @include media-breakpoint-up(sm) {
             opacity: 0;
-        }
-    }
-    .owl-prev {
-        left: 0;
-        &:after {
-            content: "\e64a";
-        }
-    }
-    .owl-next {
-        right: 0;
-        &:after {
-            content: "\e649";
-        }
-    }
-}
-
-.owl-hero {
-    .owl-prev,
-    .owl-next {
-        height: 60px;
-        text-align: center;
-        color: #ffffff;
-        @include media-breakpoint-up(sm) {
-            opacity: 0;
-        }
-    }
-    .owl-prev {
-        left: -1px;
-        &:after {
-            content: "\e64a";
-        }
-    }
-    .owl-next {
-        left: auto;
-        right: -1px;
-        &:after {
-            content: "\e649";
-        }
-    }
-    .owl-item {
-        figure {
-            &:after {
-                @include media-breakpoint-down(sm) {
-                    background: none !important;
-                }
-            }
-        }
-        .owl-caption {
-            @include media-breakpoint-down(sm) {
-                width: 100% !important;
-            }
-            @include media-breakpoint-up(sm) {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 1;
-                margin: 0 auto;
-                overflow: hidden;
-                padding: 0 !important;
-            }
         }
     }
 }
