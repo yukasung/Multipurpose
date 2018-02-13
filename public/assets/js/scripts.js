@@ -22,12 +22,11 @@ var theme = {
         theme.initCardLinkShare();
         theme.initWOW();
         theme.initParallax();
-
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
     },
-    parallaxUpdate: function(evt, obj){
+    parallaxUpdate: function (evt, obj) {
         var vw = $(window).width();
         var vh = $(window).height();
         var st = $(window).scrollTop();
@@ -37,46 +36,46 @@ var theme = {
         var ol = pos.left;
         var ow = $(obj).innerWidth();
         var oh = $(obj).innerHeight();
-    
+
         // Check if element is in viewport
-        if(st + vh < ot) return;
-        if(st > ot + oh) return;
-    
+        if (st + vh < ot) return;
+        if (st > ot + oh) return;
+
         var iw = parseInt($(obj).attr('data-parallax-img-width'));
         var ih = parseInt($(obj).attr('data-parallax-img-height'));
         var parallax_ratio = parseFloat($(obj).attr('data-parallax-ratio'));
         parallax_ratio = (isNaN(parallax_ratio)) ? 1 : parallax_ratio;
         var expand_ratio = parseFloat($(obj).attr('data-parallax-expand'));
         expand_ratio = (isNaN(expand_ratio)) ? 1 : expand_ratio;
-    
+
         // Calculate image size
         var img_wh = ((iw / ih) < (ow / oh));
         var img_ratio = (img_wh) ? (iw / ow) : (ih / oh);
         var fw = iw / img_ratio * expand_ratio;
         var fh = ih / img_ratio * expand_ratio;
         var fsize = fw + 'px ' + fh + 'px';
-    
+
         // Calculate scroll delta
         var t = Math.abs((ot - vh - st));
         var m = vh + oh;
         var d = t / m;
-    
+
         // Vertical parallax only - centralizing image horizontally
         var px = ((fw - ow) / 2) * -1;
-        
+
         // Calculate image position
         var py = 0;
         py = ((fh - oh) * d) * -1;
         var fpos = px + 'px ' + py + 'px';
-    
+
         // Settings properties
         $(obj).css({
             'background-size': fsize,
             'background-position': fpos
         });
     },
-    parallaxUpdateAll: function(evt, cls){
-        $(cls).each(function(idx, obj){
+    parallaxUpdateAll: function (evt, cls) {
+        $(cls).each(function (idx, obj) {
             theme.parallaxUpdate(null, obj);
         });
     },
@@ -88,9 +87,9 @@ var theme = {
                 'background-image': 'url(' + url + ')',
                 'background-repeat': 'repeat'
             });
-            parallaxUpdate(null, obj);
+            theme.parallaxUpdate(null, obj);
         });
-        $(cls).on('resize', parallaxUpdate);
+        $(cls).on('resize', theme.parallaxUpdate);
         $(window).on('scroll', function (evt) {
             theme.parallaxUpdateAll(evt, cls);
         });
@@ -98,9 +97,26 @@ var theme = {
             theme.parallaxUpdateAll(evt, cls);
         });
     },
+    // add animate.css class(es) to the elements to be animated
+    setAnimation: function (_elem, _InOut) {
+        // Store all animationend event name in a string.
+        // cf animate.css documentation
+        var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+        _elem.each(function () {
+            var $elem = $(this);
+            var $animationType = 'animated ' + $elem.data('animation-' + _InOut);
+
+            $elem.addClass($animationType).one(animationEndEvent, function () {
+                $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
+            });
+        });
+    },
     initOwlCarousel: function () {
 
-        $('.owl-carousel').each(function () {
+        var owl = $('.owl-carousel');
+
+        owl.each(function () {
 
             var options = $(this).data("owl-carousel-options");
             var defaults = {
@@ -111,7 +127,22 @@ var theme = {
                 $(this).owlCarousel(options);
             }
 
+            $(this).on('changed.owl.carousel', function (event) {
+
+                var $currentItem = $('.owl-item', $(this)).eq(event.item.index);
+                var $elemsToanim = $currentItem.find("[data-animation-in]");
+                theme.setAnimation($elemsToanim, 'in');
+
+            });
+
+            var $currentItem = $('.owl-item', owl).eq(2);
+            var $elemsToanim = $currentItem.find("[data-animation-in]");
+            theme.setAnimation($elemsToanim, 'in');
+
         });
+
+
+
     },
     initIsoTope: function () {
 

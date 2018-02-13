@@ -40,7 +40,8 @@
 {% macro owlCarousel(card_css="border-0 mb-4",card_bady_css="py-4 px-0") %}
 
 <div class="card {{ card_css }}">
-    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
+    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-hover owl-nav-edge owl-nav-bg-black"
+        data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true,"animateOut": "fadeOut","animateIn": "fadeIn"}'>
         <div class="item">
             <img src="assets/img/blog/blog-2.jpg" alt="" />
         </div>
@@ -98,12 +99,14 @@
 
 <div class="card {{ card_css }}">
     <div class="position-relative">
-        <div id="video-gallery">
-            <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
-                <i class="ion-ios-play"></i>
-            </a>
+        <img src="assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
+        <div class="overlay d-flex align-items-center justify-content-center text-white">
+            <div class="video-gallery">
+                <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
+                    <i class="ion-ios-play"></i>
+                </a>
+            </div>
         </div>
-        <img src="assets/img/blog/blog-6.jpg" alt="" class="card-img-top img-fluid">
     </div>
     <div class="card-body {{ card_bady_css }}">
         <h3 class="card-title h5">
