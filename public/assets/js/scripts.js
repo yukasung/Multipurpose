@@ -134,6 +134,8 @@ var theme = {
 
         owl.each(function () {
 
+            var currentItem = {};
+            var elemsToanim = {};
             var options = $(this).data("owl-carousel-options");
             var defaults = {
                 navText: "",
@@ -145,15 +147,15 @@ var theme = {
 
             // Fired before current slide change
             $(this).on('change.owl.carousel', function (event) {
-                var currentItem = $('.owl-item', owl).eq(event.item.index);
-                var elemsToanim = currentItem.find("[data-animation-out]");
+                currentItem = $('.owl-item', owl).eq(event.item.index);
+                elemsToanim = currentItem.find("[data-animation-out]");
                 theme.setAnimation(elemsToanim, 'out');
             });
 
             var round = 0;
             $(this).on('changed.owl.carousel', function (event) {
-                var currentItem = $('.owl-item', $(this)).eq(event.item.index);
-                var elemsToanim = currentItem.find("[data-animation-in]");
+                currentItem = $('.owl-item', $(this)).eq(event.item.index);
+                elemsToanim = currentItem.find("[data-animation-in]");
                 theme.setAnimation(elemsToanim, 'in');
             });
 
@@ -173,8 +175,8 @@ var theme = {
                 }
             });
 
-            var currentItem = $('.owl-item', owl).eq(2);
-            var elemsToanim = currentItem.find("[data-animation-in]");
+            currentItem = $('.owl-item', owl).eq(2);
+            elemsToanim = currentItem.find("[data-animation-in]");
             theme.setAnimation(elemsToanim, 'in');
 
         });
