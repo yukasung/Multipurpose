@@ -10,7 +10,6 @@ $(window).resize(function () {
 var theme = {
     init: function () {
         theme.setPostNavigationPosition();
-        theme.initOwlCarousel();
         theme.initIsoTope();
         theme.initNavbar();
         theme.initGoogleMap();
@@ -21,6 +20,7 @@ var theme = {
         theme.initCheckboxCollapse();
         theme.initCardLinkShare();
         theme.initWOW();
+        theme.initOwlCarousel();
         theme.initParallax();
     },
     resizeEvent: function () {
@@ -98,18 +98,34 @@ var theme = {
         });
     },
     // add animate.css class(es) to the elements to be animated
-    setAnimation: function (_elem, _InOut) {
+    setAnimation: function (elem, inOut) {
         // Store all animationend event name in a string.
         // cf animate.css documentation
         var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-        _elem.each(function () {
-            var $elem = $(this);
-            var $animationType = 'animated ' + $elem.data('animation-' + _InOut);
+        elem.each(function () {
 
-            $elem.addClass($animationType).one(animationEndEvent, function () {
-                $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
+            var element = $(this);
+            var animationType = 'animated ' + element.data('animation-' + inOut);
+            var animationDurations = {};
+
+            if (element.data('animation-duration')) {
+                animationDurations['animation-duration'] = element.data('animation-duration');
+            }
+
+            if (element.data('animation-delay')) {
+                animationDurations['animation-delay'] = element.data('animation-delay');
+            }
+
+            if (element.data('animation-offset')) {
+                animationDurations['animation-offset'] = element.data('animation-offset');
+            }
+
+            element.addClass(animationType).css(animationDurations).one(animationEndEvent, function () {
+                element.removeClass(animationType); // remove animate.css Class at the end of the animations
+                element.removeAttr('style'); // remove style
             });
+
         });
     },
     initOwlCarousel: function () {
@@ -127,17 +143,39 @@ var theme = {
                 $(this).owlCarousel(options);
             }
 
-            $(this).on('changed.owl.carousel', function (event) {
-
-                var $currentItem = $('.owl-item', $(this)).eq(event.item.index);
-                var $elemsToanim = $currentItem.find("[data-animation-in]");
-                theme.setAnimation($elemsToanim, 'in');
-
+            // Fired before current slide change
+            $(this).on('change.owl.carousel', function (event) {
+                var currentItem = $('.owl-item', owl).eq(event.item.index);
+                var elemsToanim = currentItem.find("[data-animation-out]");
+                theme.setAnimation(elemsToanim, 'out');
             });
 
-            var $currentItem = $('.owl-item', owl).eq(2);
-            var $elemsToanim = $currentItem.find("[data-animation-in]");
-            theme.setAnimation($elemsToanim, 'in');
+            var round = 0;
+            $(this).on('changed.owl.carousel', function (event) {
+                var currentItem = $('.owl-item', $(this)).eq(event.item.index);
+                var elemsToanim = currentItem.find("[data-animation-in]");
+                theme.setAnimation(elemsToanim, 'in');
+            });
+
+            $(this).on('translated.owl.carousel', function (event) {
+
+                if (event.item.index == (event.page.count - 1)) {
+                    if (round < 1) {
+                        round++
+                        console.log(round);
+                    } else {
+                        $(this).trigger('stop.owl.autoplay');
+                        var owlData = $(this).data('owl.carousel');
+                        owlData.settings.autoplay = false; //don't know if both are necessary
+                        owlData.options.autoplay = false;
+                        $(this).trigger('refresh.owl.carousel');
+                    }
+                }
+            });
+
+            var currentItem = $('.owl-item', owl).eq(2);
+            var elemsToanim = currentItem.find("[data-animation-in]");
+            theme.setAnimation(elemsToanim, 'in');
 
         });
 
