@@ -22,6 +22,7 @@ var theme = {
         theme.initWOW();
         theme.initOwlCarousel();
         theme.initParallax();
+        theme.initParallaxVideo();
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
@@ -97,6 +98,15 @@ var theme = {
             theme.parallaxUpdateAll(evt, cls);
         });
     },
+    initParallaxVideo: function () {
+        $('#video-work').backgroundVideo({
+            $outerWrap: $('.outer-wrap'),
+            pauseVideoOnViewLoss: false,
+            parallaxOptions: {
+                effect: 1.9
+            }
+        });
+    },
     // add animate.css class(es) to the elements to be animated
     setAnimation: function (elem, inOut) {
         // Store all animationend event name in a string.
@@ -122,11 +132,62 @@ var theme = {
             }
 
             element.addClass(animationType).css(animationDurations).one(animationEndEvent, function () {
-                element.removeClass(animationType); // remove animate.css Class at the end of the animations
-                element.removeAttr('style'); // remove style
+                element.removeClass(animationType);
+                element.removeAttr('style');
             });
 
         });
+    },
+    owlAddAnimateClass: function (elements, inOut) {
+        
+        elements.each(function () {
+
+            var element = $(this);
+            var animationType = 'animated ' + element.data('animation-' + inOut);
+            var animationDurations = {};
+
+            if (element.data('animation-duration')) {
+                animationDurations['animation-duration'] = element.data('animation-duration');
+            }
+
+            if (element.data('animation-delay')) {
+                animationDurations['animation-delay'] = element.data('animation-delay');
+            }
+
+            if (element.data('animation-offset')) {
+                animationDurations['animation-offset'] = element.data('animation-offset');
+            }
+
+            element.addClass(animationType).css(animationDurations);
+
+        });
+
+    },
+    owlRemoveAnimateClass: function (elements, inOut) {
+           
+        elements.each(function () {
+
+            var element = $(this);
+            var animationType = 'animated ' + element.data('animation-' + inOut);
+            var animationDurations = {};
+
+            if (element.data('animation-duration')) {
+                animationDurations['animation-duration'] = element.data('animation-duration');
+            }
+
+            if (element.data('animation-delay')) {
+                animationDurations['animation-delay'] = element.data('animation-delay');
+            }
+
+            if (element.data('animation-offset')) {
+                animationDurations['animation-offset'] = element.data('animation-offset');
+            }
+            
+            element.removeClass(animationType);
+            element.removeAttr('style');
+
+        });
+
     },
     initOwlCarousel: function () {
 
@@ -136,6 +197,7 @@ var theme = {
 
             var currentItem = {};
             var elemsToanim = {};
+            var round = 0;
             var options = $(this).data("owl-carousel-options");
             var defaults = {
                 navText: "",
@@ -145,34 +207,16 @@ var theme = {
                 $(this).owlCarousel(options);
             }
 
-            // Fired before current slide change
             $(this).on('change.owl.carousel', function (event) {
                 currentItem = $('.owl-item', owl).eq(event.item.index);
                 elemsToanim = currentItem.find("[data-animation-out]");
                 theme.setAnimation(elemsToanim, 'out');
             });
 
-            var round = 0;
             $(this).on('changed.owl.carousel', function (event) {
                 currentItem = $('.owl-item', $(this)).eq(event.item.index);
                 elemsToanim = currentItem.find("[data-animation-in]");
                 theme.setAnimation(elemsToanim, 'in');
-            });
-
-            $(this).on('translated.owl.carousel', function (event) {
-
-                if (event.item.index == (event.page.count - 1)) {
-                    if (round < 1) {
-                        round++
-                        console.log(round);
-                    } else {
-                        $(this).trigger('stop.owl.autoplay');
-                        var owlData = $(this).data('owl.carousel');
-                        owlData.settings.autoplay = false; //don't know if both are necessary
-                        owlData.options.autoplay = false;
-                        $(this).trigger('refresh.owl.carousel');
-                    }
-                }
             });
 
             currentItem = $('.owl-item', owl).eq(2);
@@ -180,8 +224,6 @@ var theme = {
             theme.setAnimation(elemsToanim, 'in');
 
         });
-
-
 
     },
     initIsoTope: function () {
