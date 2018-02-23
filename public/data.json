@@ -6,7 +6,7 @@
             "category": "Design",
             "comment": "15",
             "desc": "Integer convallis etiam magnis eleifend aenean convallis commodo sociosqu",
-            "img": "assets/img/blog/blog-1.jpg"
+            "img": "assets/img/blog/blog-1-800x518.jpg"
         },
         {
             "title": "Molestie libero vitae etiam",
@@ -15,7 +15,7 @@
             "category": "World",
             "comment": "15",
             "desc": "Himenaeos veniam blandit sem dolore quam nisl ligula purus tortor",
-            "img": "assets/img/blog/blog-2.jpg"
+            "img": "assets/img/blog/blog-2-800x518.jpg"
         },
         {
             "title": "Himenaeos occaecat viverra",
@@ -24,7 +24,7 @@
             "category": "Technology",
             "comment": "15",
             "desc": "Pede sagittis sapien mollit minim Nascetur penatibus tempor cubilia",
-            "img": "assets/img/blog/blog-3.jpg"
+            "img": "assets/img/blog/blog-3-800x518.jpg"
         },
         {
             "title": "Conubia exercitation nullam",
@@ -33,7 +33,7 @@
             "category": "Culture",
             "comment": "15",
             "desc": "Cum posuere vulputate primis montes nec sem ante tortor neque nisi egestas",
-            "img": "assets/img/blog/blog-4.jpg"
+            "img": "assets/img/blog/blog-4-800x518.jpg"
         },
         {
             "title": "Dignissim nibh phasellus",
@@ -42,7 +42,7 @@
             "category": "Business",
             "comment": "15",
             "desc": "Mattis class sollicitudin conubia dolor Rutrum dolor ante imperdiet eleifend",
-            "img": "assets/img/blog/blog-5.jpg"
+            "img": "assets/img/blog/blog-5-800x518.jpg"
         },
         {
             "title": "Tellus ullamco ligula vehicula",
@@ -51,7 +51,7 @@
             "category": "News",
             "comment": "15",
             "desc": "Varius penatibus convallis aliqua commodo lobortis aliqua vestibulum",
-            "img": "assets/img/blog/blog-6.jpg"
+            "img": "assets/img/blog/blog-6-800x518.jpg"
         },
         {
             "title": "Torquent quisque facilisis",
@@ -60,7 +60,7 @@
             "category": "Politics",
             "comment": "15",
             "desc": "Adipiscing integer aliquet gravida egestas mauris pellentesque cubilia",
-            "img": "assets/img/blog/blog-7.jpg"
+            "img": "assets/img/blog/blog-7-800x518.jpg"
         },
         {
             "title": "Senectus bibendum aliquet",
@@ -69,7 +69,7 @@
             "category": "Science",
             "comment": "15",
             "desc": "Bibendum venenatis excepteur cubilia neque Ad semper ante felis luctus",
-            "img": "assets/img/blog/blog-8.jpg"
+            "img": "assets/img/blog/blog-8-800x518.jpg"
         },
         {
             "title": "Senectus bibendum aliquet",
@@ -78,7 +78,7 @@
             "category": "Health",
             "comment": "15",
             "desc": "Bibendum venenatis excepteur cubilia neque Ad semper ante felis luctus",
-            "img": "assets/img/blog/blog-9.jpg"
+            "img": "assets/img/blog/blog-9-800x518.jpg"
         }
     ],
     "portfolios": [{
@@ -243,15 +243,15 @@
         "img": "assets/img/author/a1-150x150.jpg"
     }],
     "clients": [{
-        "img": "assets/img/client/google.png"
+        "img": "assets/img/client/logo2-light.png"
     }, {
-        "img": "assets/img/client/wordpress.png"
+        "img": "assets/img/client/logo3-light.png"
     }, {
-        "img": "assets/img/client/logitech.png"
+        "img": "assets/img/client/logo4-light.png"
     }, {
-        "img": "assets/img/client/ebay.png"
+        "img": "assets/img/client/logo5-light.png"
     }, {
-        "img": "assets/img/client/ebay.png"
+        "img": "assets/img/client/logo1-light.png"
     }]
 
 }
