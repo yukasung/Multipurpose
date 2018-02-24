@@ -171,19 +171,19 @@
     "teams": [{
         "name": "Debra Barnes",
         "position": "Web Designer",
-        "img": "assets/img/team/team_1.jpg"
+        "img": "assets/img/team/team-1-700x892.jpg"
     }, {
         "name": "Martin Campbell",
         "position": "Software Developer",
-        "img": "assets/img/team/team_2.jpg"
+        "img": "assets/img/team/team-2-700x892.jpg"
     }, {
         "name": "Judith Foster",
         "position": "Computer Programmer",
-        "img": "assets/img/team/team_3.jpg"
+        "img": "assets/img/team/team-3-700x892.jpg"
     }, {
         "name": "Sharon Martinez",
         "position": "Java Programmer",
-        "img": "assets/img/team/team_4.jpg"
+        "img": "assets/img/team/team-4-700x892.jpg"
     }, {
         "name": "Denise Ward",
         "position": "Web Programmer",
@@ -203,44 +203,44 @@
     }],
     "testimonials": [{
         "name": "Coriss Ambady",
-        "position": "Marketing Specialist",
+        "position": "Managing Director",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
+        "img": "assets/img/person/person-1-400x400.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Operations Manager",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/person/person-2-400x400.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Technology Director",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/person/person-3-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
+        "img": "assets/img/person/person-1-400x400.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Operations Director",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/person/person-2-400x400.jpg"
+    }, {
+        "name": "Coriss Ambady",
+        "position": "Business Director",
+        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "img": "assets/img/person/person-3-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
+        "img": "assets/img/person/person-1-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
-    }, {
-        "name": "Coriss Ambady",
-        "position": "Marketing Specialist",
-        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
-    }, {
-        "name": "Coriss Ambady",
-        "position": "Marketing Specialist",
-        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
-    }, {
-        "name": "Coriss Ambady",
-        "position": "Marketing Specialist",
-        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
-    }, {
-        "name": "Coriss Ambady",
-        "position": "Marketing Specialist",
-        "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
-        "img": "assets/img/author/a1-150x150.jpg"
+        "img": "assets/img/person/person-2-400x400.jpg"
     }],
     "clients": [{
         "img": "assets/img/client/logo2-light.png"
