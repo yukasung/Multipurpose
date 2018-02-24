@@ -1,14 +1,15 @@
 <!-- Default -->
 {% macro layout1(team) %}
 
-<div class="card mb-4">
+<div class="card border-0 mb-4">
     <a href="team-member.html">
         <img class="card-img img-fluid" src="{{ team.img }}" alt="">
     </a>
     <div class="card-body px-0 text-center">
-        <h4 class="card-title mb-2">
-            <a href="#">{{ team.name }} <small class="text-muted">{{ team.position }}</small> </a>
+        <h4 class="card-title h5 mb-2">
+            <a href="#">{{ team.name }}</a>
         </h4>
+        <p class="text-muted">{{ team.position }}</p>
     </div>
 </div>
 

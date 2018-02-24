@@ -10005,6 +10005,9 @@ input[type="submit"] {
             -ms-flex: 1 0 auto;
                 flex: 1 0 auto; }
 
+.owl-hero .owl-item .item {
+  margin-top: 0; }
+
 .owl-dots {
   text-align: center;
   margin-top: 30px; }

@@ -11,7 +11,7 @@
                 opacity: 0.7;
             }
         }
-    }
+    }    
     .owl-stage {
         display: flex;
     }
@@ -28,6 +28,14 @@
             .card {
                 flex: 1 0 auto;
             }
+        }
+    }
+}
+
+.owl-hero{
+    .owl-item {
+        .item {
+            margin-top: 0;
         }
     }
 }
