@@ -1,14 +1,14 @@
 <!-- Default -->
-{% macro default(price, title, card_css="", btn_css="btn-primary") %}
+{% macro default(price, title, card_css="", btn_css="") %}
 
-    <div class="card pricing border text-center mb-4 mb-md-0 {{ card_css }}">
+    <div class="card pricing rounded-0 border text-center mb-4 mb-md-0 {{ card_css }}">
         <div class="card-header p-4 border-bottom-0">
             <h3 class="price mb-0">
                 <span class="currency">$</span>{{ price }}
                 <span class="period">/month</span>
             </h3>
         </div>
-        <div class="card-body pt-0 px-4 pb-4">
+        <div class="card-body">
             <h4 class="card-title">{{ title }}</h4>
             <ul class="list-unstyled list-lg">
                 <li>
@@ -26,7 +26,7 @@
                     <strong>Support</strong>
                 </li>
             </ul>
-            <a href="#" class="btn text-uppercase mt-2 {{ btn_css }}">Choose Plan</a>
+            <a href="#" class="btn {{ btn_css }} mt-2">Choose Plan</a>
         </div>
     </div>
 
