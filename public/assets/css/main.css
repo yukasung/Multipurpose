@@ -9945,30 +9945,28 @@ input[type="submit"] {
     left: 50%; }
 
 /*-----------------------------------------------------------------------------------*/
-/*  COMPONENTS > NAVS
+/*  Custom > Components > Navs
 /*-----------------------------------------------------------------------------------*/
-.nav.nav-tabs.nav-tabs-flush {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.09); }
-  .nav.nav-tabs.nav-tabs-flush .nav-link {
-    padding: 15px 0;
-    margin-right: 30px;
-    border: none; }
-    .nav.nav-tabs.nav-tabs-flush .nav-link:first-child {
-      padding-left: 0; }
-    .nav.nav-tabs.nav-tabs-flush .nav-link.active {
-      background-color: transparent;
-      border-color: transparent transparent transparent;
-      color: #3498db;
-      font-weight: 500; }
-      .nav.nav-tabs.nav-tabs-flush .nav-link.active:after {
-        height: 2px;
-        width: 100%;
-        display: block;
-        content: " ";
-        bottom: -1px;
-        left: 0;
-        position: absolute;
-        background: #3498db; }
+.nav.nav-tabs.nav-tabs-flush .nav-link {
+  padding: 15px 0;
+  margin-right: 30px;
+  border: none; }
+  .nav.nav-tabs.nav-tabs-flush .nav-link:first-child {
+    padding-left: 0; }
+  .nav.nav-tabs.nav-tabs-flush .nav-link.active {
+    background-color: transparent;
+    border-color: transparent transparent transparent;
+    color: #3498db;
+    font-weight: 500; }
+    .nav.nav-tabs.nav-tabs-flush .nav-link.active:after {
+      height: 2px;
+      width: 100%;
+      display: block;
+      content: " ";
+      bottom: -1px;
+      left: 0;
+      position: absolute;
+      background: #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > OWL CAROUSEL
@@ -10157,6 +10155,9 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > FORMS
 /*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*  Custom > Components > Input group
+/*-----------------------------------------------------------------------------------*/
 .input-icon {
   position: relative; }
   .input-icon .input-btn {
@@ -10170,7 +10171,8 @@ input[type="submit"] {
     outline: none !important;
     z-index: 999; }
     .input-icon .input-btn .icon {
-      color: #76838f; }
+      color: #76838f;
+      font-size: 20px; }
   .input-icon.input-group .icon {
     margin: 0 6px;
     font-size: 20px; }
@@ -10202,7 +10204,7 @@ input[type="submit"] {
       font-size: 16px; }
 
 /*-----------------------------------------------------------------------------------*/
-/*	02. COMPONENTS > PAGINATION
+/*	Custom > Components > Pagination
 /*-----------------------------------------------------------------------------------*/
 .pagination {
   margin-bottom: 0; }
@@ -10238,8 +10240,7 @@ input[type="submit"] {
       outline: 0;
       cursor: pointer;
       text-decoration: none;
-      text-align: center;
-      opacity: .4; }
+      text-align: center; }
       .pagination .page-item .page-link:hover {
         color: #ffffff;
         background: #3498db;
