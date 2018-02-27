@@ -1,5 +1,11 @@
 /* 1. Colors
    ========================================================================== */
+/*-----------------------------------------------------------------------------------*/
+/*  Custom > Content > Typography
+/*-----------------------------------------------------------------------------------*/
+.text-decoration-none {
+  text-decoration: none; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10390,6 +10396,9 @@ hr.hr-lg {
 hr.line-dotted {
   border-top: 1px dotted #d4dde4; }
 
+/*-----------------------------------------------------------------------------------*/
+/*	Custom > Components > Collapse
+/*-----------------------------------------------------------------------------------*/
 .accordion .card .card-header {
   position: relative; }
   .accordion .card .card-header a {
