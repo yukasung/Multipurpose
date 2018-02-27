@@ -10390,29 +10390,31 @@ hr.hr-lg {
 hr.line-dotted {
   border-top: 1px dotted #d4dde4; }
 
-.accordion .card .card-header a {
-  display: block;
-  padding-right: 30px; }
-  .accordion .card .card-header a:after {
-    content: "\e64b";
-    position: absolute;
-    right: 0;
-    font-family: "themify";
-    -webkit-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .accordion .card .card-header a.collapsed:after {
-    content: "\e649";
-    position: absolute;
-    right: 0;
-    font-family: "themify";
-    -webkit-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+.accordion .card .card-header {
+  position: relative; }
+  .accordion .card .card-header a {
+    display: block;
+    padding-right: 30px; }
+    .accordion .card .card-header a:after {
+      content: "\e64b";
+      position: absolute;
+      right: 15px;
+      font-family: "themify";
+      -webkit-transition: all .3s linear 0s;
+      transition: all .3s linear 0s;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .accordion .card .card-header a.collapsed:after {
+      content: "\e649";
+      position: absolute;
+      right: 15px;
+      font-family: "themify";
+      -webkit-transition: all .3s linear 0s;
+      transition: all .3s linear 0s;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENTS > PROGRESS

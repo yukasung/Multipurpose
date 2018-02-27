@@ -4,13 +4,14 @@
 .accordion {
 	.card {
 		.card-header {
+			position: relative;
 			a {
 				display: block;
 				padding-right: 30px;
 				&:after {
 					content: "\e64b";
 					position: absolute;
-					right: 0;
+					right: 15px;
 					font-family: "themify";
 					transition: all .3s linear 0s;
 					top: 50%;
@@ -20,7 +21,7 @@
 					&:after {
 						content: "\e649";
 						position: absolute;
-						right: 0;
+						right: 15px;
 						font-family: "themify";
 						transition: all .3s linear 0s;
 						top: 50%;

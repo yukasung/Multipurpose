@@ -18,15 +18,12 @@
         <div class="container product py-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
+                    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-edge owl-nav-bg-black" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
                         <div class="item">
-                            <img src="assets/img/shop/shop_1.jpg" alt="" />
+                            <img src="assets/img/shop/shop-1-700x892.jpg" alt="" />
                         </div>
                         <div class="item">
-                            <img src="assets/img/shop/shop_2.jpg" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/shop/shop_3.jpg" alt="" />
+                            <img src="assets/img/shop/shop-3-700x892.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -54,17 +51,17 @@
                             <ul class="list-inline list-inline-lg mb-0">
                                 <li class="list-inline-item">
                                     <a href="#">
-                                        <i class="ion-social-twitter-outline icon-lg"></i>
+                                        <i class="ion-social-twitter icon-lg"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#">
-                                        <i class="ion-social-facebook-outline icon-lg"></i>
+                                        <i class="ion-social-facebook icon-lg"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#">
-                                        <i class="ion-social-googleplus-outline icon-lg"></i>
+                                        <i class="ion-social-googleplus icon-lg"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -101,28 +98,32 @@
                             </div>
                             <div class="form-group row">
                                 <div class="offset-2 col-6">
-                                    <input type="submit" value="add to card" name="submit" class="btn btn-primary text-uppercase">
+                                    <input type="submit" value="Add To Card" name="submit" class="btn btn-primary">
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs nav-tabs-flush flex-column flex-md-row mt-6" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#desc" role="tab">Description</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#info" role="tab">Additional Information</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#review" role="tab">Reviews (4)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#custom" role="tab">Custom</a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-tabs-flush flex-column flex-md-row mt-6" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#desc" role="tab">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#info" role="tab">Additional Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#review" role="tab">Reviews (4)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#custom" role="tab">Custom</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <!-- Tab panes -->
             <div class="tab-content mt-4">
                 <div class="tab-pane active" id="desc" role="tabpanel">
@@ -405,7 +406,8 @@
                 <h3>Related Products</h3>
             </div>
             <div class="owl-carousel owl-theme owl-loaded owl-dots-primary owl-nav-bg-black mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 4}}}'>
-                {% set products = products.slice(0,9) %} {% for product in products %} {{ macroShops.default(product,"border-0") }} {% endfor %}
+                {% set products = products.slice(0,9) %} {% for product in products %} {{ macroShops.default(product,"border-0") }} {% endfor
+                %}
             </div>
         </div>
     </div>
