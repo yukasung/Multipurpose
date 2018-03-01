@@ -1,37 +1,55 @@
 /*-----------------------------------------------------------------------------------*/
 
-
 /*  Custom > Components > Navs
 /*-----------------------------------------------------------------------------------*/
 
 .nav {
-    &.nav-tabs {
-        &.nav-tabs-flush {
-            // border-bottom: 2px solid rgba(0,0,0,0.09);
-            .nav-link {
-                padding: 15px 0;
-                margin-right: 30px;
-                border: none;
-                &:first-child {
-                    padding-left: 0;
-                }
-                &.active {
-                    background-color: transparent;
-                    border-color: transparent transparent transparent;
-                    color: $primary;
-                    font-weight: 500;
-                    &:after {
-                        height: 2px;
-                        width: 100%;
-                        display: block;
-                        content: " ";
-                        bottom: -1px;
-                        left: 0;
-                        position: absolute;
-                        background: $primary;
-                    }
-                }
-            }
+    height: 22px;
+    overflow: hidden;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 15px;
+    .nav-link {
+        line-height: 22px;        
+        padding: 0 0 4px;
+        margin-right: 46px;
+        border: 0;
+        &.active {
+            color: $primary;
+            border: 0;
+            border-bottom: 2px solid $primary;
         }
     }
 }
+
+// .nav {
+//     &.nav-tabs {
+//         &.nav-tabs-flush {
+//             // border-bottom: 2px solid rgba(0,0,0,0.09);
+//             .nav-link {
+//                 padding: 15px 0;
+//                 margin-right: 30px;
+//                 border: none;
+//                 &:first-child {
+//                     padding-left: 0;
+//                 }
+//                 &.active {
+//                     background-color: transparent;
+//                     border-color: transparent transparent transparent;
+//                     color: $primary;
+//                     font-weight: 500;
+//                     &:after {
+//                         height: 2px;
+//                         width: 100%;
+//                         display: block;
+//                         content: " ";
+//                         bottom: -1px;
+//                         left: 0;
+//                         position: absolute;
+//                         background: $primary;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

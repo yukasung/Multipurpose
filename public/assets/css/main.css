@@ -9947,26 +9947,21 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  Custom > Components > Navs
 /*-----------------------------------------------------------------------------------*/
-.nav.nav-tabs.nav-tabs-flush .nav-link {
-  padding: 15px 0;
-  margin-right: 30px;
-  border: none; }
-  .nav.nav-tabs.nav-tabs-flush .nav-link:first-child {
-    padding-left: 0; }
-  .nav.nav-tabs.nav-tabs-flush .nav-link.active {
-    background-color: transparent;
-    border-color: transparent transparent transparent;
-    color: #3498db;
-    font-weight: 500; }
-    .nav.nav-tabs.nav-tabs-flush .nav-link.active:after {
-      height: 2px;
-      width: 100%;
-      display: block;
-      content: " ";
-      bottom: -1px;
-      left: 0;
-      position: absolute;
-      background: #3498db; }
+.nav {
+  height: 22px;
+  overflow: hidden;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 15px; }
+  .nav .nav-link {
+    line-height: 22px;
+    padding: 0 0 4px;
+    margin-right: 46px;
+    border: 0; }
+    .nav .nav-link.active {
+      color: #3498db;
+      border: 0;
+      border-bottom: 2px solid #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > OWL CAROUSEL
@@ -10338,9 +10333,13 @@ input[type="submit"] {
 .modal .close {
   outline: none; }
 
-/*-----------------------------------------------------------------------------------*/
-/*	COMPONENT > ISOTOPE
-/*-----------------------------------------------------------------------------------*/
+.isotope-filter {
+  height: 22px;
+  overflow: hidden;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 15px; }
+
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENT > VIDEO
 /*-----------------------------------------------------------------------------------*/
