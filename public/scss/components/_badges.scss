@@ -1,7 +1,6 @@
 /*-----------------------------------------------------------------------------------*/
 
-
-/*  Component > Badge
+/*  Custom > Component > Badge
 /*-----------------------------------------------------------------------------------*/
 
 .badge {
@@ -9,9 +8,9 @@
         background: $primary;
     }
     &.badge-pill {
-        &.badge-sm {
-            padding-top: 15px;
-            padding-bottom: 15px;
+        &.badge-circle {
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
     }
 }

@@ -243,15 +243,20 @@
         "img": "assets/img/testimonial/testimonial-2-400x400.jpg"
     }],
     "clients": [{
-        "img": "assets/img/client/logo2-light.png"
+        "img": "assets/img/client/logo2-light.png",
+        "img_dark": "assets/img/client/logo2-dark.png"
     }, {
-        "img": "assets/img/client/logo3-light.png"
+        "img": "assets/img/client/logo3-light.png",
+        "img_dark": "assets/img/client/logo3-dark.png"
     }, {
-        "img": "assets/img/client/logo4-light.png"
+        "img": "assets/img/client/logo4-light.png",
+        "img_dark": "assets/img/client/logo4-dark.png"
     }, {
-        "img": "assets/img/client/logo5-light.png"
+        "img": "assets/img/client/logo5-light.png",
+        "img_dark": "assets/img/client/logo5-dark.png"
     }, {
-        "img": "assets/img/client/logo1-light.png"
+        "img": "assets/img/client/logo1-light.png",
+        "img_dark": "assets/img/client/logo1-dark.png"
     }]
 
 }

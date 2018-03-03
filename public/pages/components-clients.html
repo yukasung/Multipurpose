@@ -1,0 +1,39 @@
+{% set page_title = "Clients"%}
+<!--  -->
+{% set page_active_link = "Clients" %}
+<!--  -->
+{% set page_link2 = "Elements" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %} {% include "../templates/partials/page_title.html" %}
+<!--  -->
+{% import '../templates/macros/clients.html' as macroClients %}
+
+<div id="content">
+    <div class="bg-white py-7">
+        <div class="bd-example">
+            <div class="bg-white">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ macroClients.layout2(clients) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bd-example py-7">
+            <div class="bg-primary">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ macroClients.layout1(clients) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

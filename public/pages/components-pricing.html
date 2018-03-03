@@ -1,0 +1,44 @@
+{% set page_title = "Pricing"%}
+<!--  -->
+{% set page_active_link = "Pricing" %}
+<!--  -->
+{% set page_link2 = "Elements" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %} {% include "../templates/partials/page_title.html" %}
+<!--  -->
+{% import '../templates/macros/prices.html' as macroPrices %}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-4">
+                    {{ macroPrices.default(19, "Startup License", "", "") }}
+                </div>
+                <div class="col-md-4">
+                    {{ macroPrices.default(29, "Business License", "","btn-primary") }}
+                </div>
+                <div class="col-md-4">
+                    {{ macroPrices.default(39, "Enterprise License", "", "") }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-4">
+                    {{ macroPrices.default(19, "Startup License", "border-0", "") }}
+                </div>
+                <div class="col-md-4">
+                    {{ macroPrices.default(29, "Business License", "border-0","btn-primary") }}
+                </div>
+                <div class="col-md-4">
+                    {{ macroPrices.default(39, "Enterprise License", "border-0", "") }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

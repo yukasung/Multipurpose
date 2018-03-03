@@ -9967,7 +9967,7 @@ input[type="submit"] {
       border-bottom: 2px solid #3498db; }
 
 /*-----------------------------------------------------------------------------------*/
-/*  COMPONENT > OWL CAROUSEL
+/*  Custom > Component > Owl Calrosel
 /*-----------------------------------------------------------------------------------*/
 .owl-carousel {
   position: relative; }
@@ -10008,6 +10008,7 @@ input[type="submit"] {
                 flex: 1 0 auto; }
 
 .owl-hero .owl-item .item {
+  height: 100%;
   margin-top: 0; }
 
 .owl-dots {
@@ -10141,6 +10142,9 @@ input[type="submit"] {
   width: 28px;
   color: #ffffff;
   background: #000000; }
+
+.owl-nav-dark .owl-nav > div {
+  color: #343a40; }
 
 @media (min-width: 576px) {
   .owl-nav-hover .owl-prev,
@@ -10454,14 +10458,14 @@ hr.line-dotted {
     letter-spacing: 0px; }
 
 /*-----------------------------------------------------------------------------------*/
-/*  Component > Badge
+/*  Custom > Component > Badge
 /*-----------------------------------------------------------------------------------*/
 .badge.badge-primary {
   background: #3498db; }
 
-.badge.badge-pill.badge-sm {
-  padding-top: 15px;
-  padding-bottom: 15px; }
+.badge.badge-pill.badge-circle {
+  padding-top: 16px;
+  padding-bottom: 16px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > COLORS
