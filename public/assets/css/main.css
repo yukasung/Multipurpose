@@ -6,6 +6,9 @@
 .text-decoration-none {
   text-decoration: none; }
 
+a {
+  outline: none; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9769,8 +9772,8 @@ input[type="submit"] {
     width: 100%; } }
 
 /*-----------------------------------------------------------------------------------*/
-/*  COMPONENTS > NAVBAR
-    /*-----------------------------------------------------------------------------------*/
+/*  Custom > Components > Navbar
+/*-----------------------------------------------------------------------------------*/
 .navbar-light .navbar-toggler span {
   background: #2e2e2e; }
 
@@ -10553,6 +10556,9 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 .w-5 {
   width: 5% !important; }
+
+.w-10 {
+  width: 10% !important; }
 
 .w-60px {
   width: 60px !important; }
