@@ -1,0 +1,83 @@
+{% set page_title = "Badges"%}
+<!--  -->
+{% set page_active_link = "Badges" %}
+<!--  -->
+{% set page_link2 = "Elements" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %} {% include "../templates/partials/page_title.html" %}
+
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bd-example pt-3 pb-4">
+                        <h1>Example heading
+                            <span class="badge badge-secondary">New</span>
+                        </h1>
+                        <h2>Example heading
+                            <span class="badge badge-secondary">New</span>
+                        </h2>
+                        <h3>Example heading
+                            <span class="badge badge-secondary">New</span>
+                        </h3>
+                        <h4>Example heading
+                            <span class="badge badge-secondary">New</span>
+                        </h4>
+                        <h5>Example heading
+                            <span class="badge badge-secondary">New</span>
+                        </h5>
+                        <h6>Example heading
+                            <span class="badge badge-secondary">New</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-12">
+                    <div class="bd-example pt-3 pb-4">
+                        <a href="#" class="badge badge-primary">Primary</a>
+                        <a href="#" class="badge badge-secondary">Secondary</a>
+                        <a href="#" class="badge badge-success">Success</a>
+                        <a href="#" class="badge badge-danger">Danger</a>
+                        <a href="#" class="badge badge-warning">Warning</a>
+                        <a href="#" class="badge badge-info">Info</a>
+                        <a href="#" class="badge badge-light">Light</a>
+                        <a href="#" class="badge badge-dark">Dark</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-12">
+                    <div class="bd-example pt-3 pb-4">
+                        <span class="badge badge-pill badge-primary">Primary</span>
+                        <span class="badge badge-pill badge-secondary">Secondary</span>
+                        <span class="badge badge-pill badge-success">Success</span>
+                        <span class="badge badge-pill badge-danger">Danger</span>
+                        <span class="badge badge-pill badge-warning">Warning</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-light">Light</span>
+                        <span class="badge badge-pill badge-dark">Dark</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-12">
+                    <div class="bd-example pt-3 pb-4">
+                        <span class="badge badge-pill badge-circle badge-primary text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-secondary text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-success text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-danger text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-warning text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-info text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-light text-uppercase">Sale</span>
+                        <span class="badge badge-pill badge-circle badge-dark text-uppercase">Sale</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

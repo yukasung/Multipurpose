@@ -9972,7 +9972,7 @@ input[type="submit"] {
 .owl-carousel {
   position: relative; }
   .owl-carousel:hover .owl-nav > div {
-    opacity: 0.7; }
+    opacity: 0.8; }
   .owl-carousel .owl-stage {
     display: -webkit-box;
     display: -webkit-flex;
@@ -10072,8 +10072,7 @@ input[type="submit"] {
 .owl-nav-edge .owl-prev,
 .owl-nav-edge .owl-next {
   height: 60px;
-  text-align: center;
-  color: #ffffff; }
+  text-align: center; }
   @media (min-width: 576px) {
     .owl-nav-edge .owl-prev,
     .owl-nav-edge .owl-next {
@@ -10138,10 +10137,10 @@ input[type="submit"] {
 .owl-dots-primary .owl-dot.active span, .owl-dots-primary .owl-dot:hover span {
   background: #3498db !important; }
 
-.owl-nav-bg-black .owl-nav > div {
+.owl-nav-bg-dark .owl-nav > div {
   width: 28px;
   color: #ffffff;
-  background: #000000; }
+  background: #343a40; }
 
 .owl-nav-dark .owl-nav > div {
   color: #343a40; }

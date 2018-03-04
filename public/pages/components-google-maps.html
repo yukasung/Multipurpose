@@ -1,0 +1,22 @@
+{% set page_title = "Maps"%}
+<!--  -->
+{% set page_active_link = "Maps" %}
+<!--  -->
+{% set page_link2 = "Elements" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %} {% include "../templates/partials/page_title.html" %}
+
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="google-map" style="width: 100%; height: 440px" data-lat="51.211215" data-lng="3.226287"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
