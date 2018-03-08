@@ -8,6 +8,7 @@
 }
 
 .text-body {
+    color: $body-color;
     a {
         color: inherit;
         &:hover {
