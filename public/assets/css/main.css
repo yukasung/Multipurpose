@@ -10715,6 +10715,9 @@ hr.line-dotted {
 .overlay-primary {
   background: rgba(52, 152, 219, 0.5); }
 
+.overlay-light {
+  background: rgba(255, 255, 255, 0.5); }
+
 /*	UTILITIES > SIZING
 /*-----------------------------------------------------------------------------------*/
 .w-5 {
