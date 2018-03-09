@@ -98,11 +98,11 @@
 {% macro video(card_css="border-0 mb-4",card_bady_css="py-4 px-0") %}
 
 <div class="card {{ card_css }}">
-    <div class="position-relative">
+    <div class="overlay">
         <img src="assets/img/blog/blog-5-800x518.jpg" alt="" class="img-fluid">
-        <div class="overlay d-flex align-items-center justify-content-center text-white">
+        <div class="overlay-body">
             <div class="video-gallery">
-                <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
+                <a class="icon-video overlay-align-middle text-center" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
                     <i class="ion-ios-play"></i>
                 </a>
             </div>
@@ -126,13 +126,15 @@
 {% macro video_layout1() %}
 
 <div class="card border-0 mb-4">
-    <div class="position-relative">
-        <div id="video-gallery">
-            <a class="icon-video" href="https://www.youtube.com/watch?v=meBbDqAXago">
-                <i class="ion-ios-play"></i>
-            </a>
-        </div>
+    <div class="overlay">
         <img src="assets/img/blog/blog-6.jpg" alt="" class="card-img-top img-fluid">
+        <div class="overlay-body">
+            <div class="video-gallery">
+                <a class="icon-video overlay-align-middle text-center" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
+                    <i class="ion-ios-play"></i>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="card-body py-4 px-0">
         <h3 class="card-title h5">
