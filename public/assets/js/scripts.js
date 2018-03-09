@@ -22,7 +22,7 @@ var theme = {
         theme.initWOW();
         theme.initOwlCarousel();
         theme.initParallax();
-        theme.initParallaxVideo();
+        // theme.initParallaxVideo();
     },
     resizeEvent: function () {
         theme.setPostNavigationPosition();
