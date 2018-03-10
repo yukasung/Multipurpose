@@ -10,6 +10,7 @@ $(window).resize(function () {
 var theme = {
     init: function () {
         theme.setPostNavigationPosition();
+        theme.initSmartMenu();
         theme.initIsoTope();
         theme.initNavbar();
         theme.initGoogleMap();
@@ -80,6 +81,37 @@ var theme = {
             theme.parallaxUpdate(null, obj);
         });
     },
+    initSmartMenu: function () {
+        // SmartMenus init
+        $('#main-menu').smartmenus({
+            subMenusSubOffsetX: 1,
+            subMenusSubOffsetY: -8
+        });
+
+        // SmartMenus mobile menu toggle button
+        var $mainMenuState = $('#main-menu-state');
+        if ($mainMenuState.length) {
+            // animate mobile menu
+            $mainMenuState.change(function (e) {
+                var $menu = $('#main-menu');
+                if (this.checked) {
+                    $menu.hide().slideDown(250, function () {
+                        $menu.css('display', '');
+                    });
+                } else {
+                    $menu.show().slideUp(250, function () {
+                        $menu.css('display', '');
+                    });
+                }
+            });
+            // hide mobile menu beforeunload
+            $(window).bind('beforeunload unload', function () {
+                if ($mainMenuState[0].checked) {
+                    $mainMenuState[0].click();
+                }
+            });
+        }
+    },
     initParallax: function () {
         var cls = '.parallax';
         $(cls).each(function (idx, obj) {
@@ -139,7 +171,7 @@ var theme = {
         });
     },
     owlAddAnimateClass: function (elements, inOut) {
-        
+
         elements.each(function () {
 
             var element = $(this);
@@ -164,7 +196,7 @@ var theme = {
 
     },
     owlRemoveAnimateClass: function (elements, inOut) {
-           
+
         elements.each(function () {
 
             var element = $(this);
@@ -182,7 +214,7 @@ var theme = {
             if (element.data('animation-offset')) {
                 animationDurations['animation-offset'] = element.data('animation-offset');
             }
-            
+
             element.removeClass(animationType);
             element.removeAttr('style');
 
