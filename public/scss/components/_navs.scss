@@ -3,17 +3,17 @@
 /*  Custom > Components > Navs
 /*-----------------------------------------------------------------------------------*/
 
-.nav {
-    height: 22px;
-    overflow: hidden;
-    padding-bottom: 28px;
-    border-bottom: 1px solid #d2d2d2;
-    margin-bottom: 15px;
+.nav-tabs-flush {
+    @include media-breakpoint-up(sm) {
+        border-bottom: 1px solid #dee2e6;
+    }
     .nav-link {
-        line-height: 22px;        
-        padding: 0 0 4px;
         margin-right: 46px;
+        padding: 16px 8px;
         border: 0;
+        @include media-breakpoint-up(sm) {
+            padding: 0 0 4px;
+        }
         &.active {
             color: $primary;
             border: 0;
@@ -22,6 +22,24 @@
     }
 }
 
+// .nav {
+//     height: 22px;
+//     overflow: hidden;
+//     padding-bottom: 28px;
+//     border-bottom: 1px solid #d2d2d2;
+//     margin-bottom: 15px;
+//     .nav-link {
+//         line-height: 22px;        
+//         padding: 0 0 4px;
+//         margin-right: 46px;
+//         border: 0;
+//         &.active {
+//             color: $primary;
+//             border: 0;
+//             border-bottom: 2px solid $primary;
+//         }
+//     }
+// }
 // .nav {
 //     &.nav-tabs {
 //         &.nav-tabs-flush {
