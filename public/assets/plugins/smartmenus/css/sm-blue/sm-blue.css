@@ -4,28 +4,25 @@
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
-.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active {
+
+.sm-blue a,
+.sm-blue a:hover,
+.sm-blue a:focus,
+.sm-blue a:active {
   padding: 10px 20px;
-  /* make room for the toggle button (sub indicator) */
   padding-right: 58px;
-  background: #3092c0;
-  background-image: linear-gradient(to bottom, #3298c8, #2e8cb8);
-  color: #fff;
-  font-family: "PT Sans Narrow", "Arial Narrow", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 23px;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
+
 .sm-blue a.current {
   background: #006892;
   background-image: linear-gradient(to bottom, #006188, #006f9c);
   color: #fff;
 }
+
 .sm-blue a.disabled {
   color: #a1d1e8;
 }
+
 .sm-blue a .sub-arrow {
   position: absolute;
   top: 50%;
@@ -41,69 +38,112 @@
   background: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+
 .sm-blue a .sub-arrow::before {
   content: '+';
 }
+
 .sm-blue a.highlighted .sub-arrow::before {
   content: '-';
 }
-.sm-blue > li:first-child > a, .sm-blue > li:first-child > :not(ul) a {
+
+.sm-blue>li:first-child>a,
+.sm-blue>li:first-child> :not(ul) a {
   border-radius: 8px 8px 0 0;
 }
-.sm-blue > li:last-child > a, .sm-blue > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul {
+
+.sm-blue>li:last-child>a,
+.sm-blue>li:last-child>*:not(ul) a,
+.sm-blue>li:last-child>ul,
+.sm-blue>li:last-child>ul>li:last-child>a,
+.sm-blue>li:last-child>ul>li:last-child>*:not(ul) a,
+.sm-blue>li:last-child>ul>li:last-child>ul,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>a,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul {
   border-radius: 0 0 8px 8px;
 }
-.sm-blue > li:last-child > a.highlighted, .sm-blue > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted {
+
+.sm-blue>li:last-child>a.highlighted,
+.sm-blue>li:last-child>*:not(ul) a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,
+.sm-blue>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted {
   border-radius: 0;
 }
+
 .sm-blue ul {
   background: #fff;
 }
+
 .sm-blue ul ul {
   background: rgba(102, 102, 102, 0.1);
 }
-.sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active {
+
+.sm-blue ul a,
+.sm-blue ul a:hover,
+.sm-blue ul a:focus,
+.sm-blue ul a:active {
   background: transparent;
   color: #2b82ac;
   font-size: 16px;
   text-shadow: none;
   border-left: 8px solid transparent;
 }
+
 .sm-blue ul a.current {
   background: #006892;
   background-image: linear-gradient(to bottom, #006188, #006f9c);
   color: #fff;
 }
+
 .sm-blue ul a.disabled {
   color: #b3b3b3;
 }
+
 .sm-blue ul ul a,
 .sm-blue ul ul a:hover,
 .sm-blue ul ul a:focus,
 .sm-blue ul ul a:active {
   border-left: 16px solid transparent;
 }
+
 .sm-blue ul ul ul a,
 .sm-blue ul ul ul a:hover,
 .sm-blue ul ul ul a:focus,
 .sm-blue ul ul ul a:active {
   border-left: 24px solid transparent;
 }
+
 .sm-blue ul ul ul ul a,
 .sm-blue ul ul ul ul a:hover,
 .sm-blue ul ul ul ul a:focus,
 .sm-blue ul ul ul ul a:active {
   border-left: 32px solid transparent;
 }
+
 .sm-blue ul ul ul ul ul a,
 .sm-blue ul ul ul ul ul a:hover,
 .sm-blue ul ul ul ul ul a:focus,
 .sm-blue ul ul ul ul ul a:active {
   border-left: 40px solid transparent;
 }
+
 .sm-blue ul li {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .sm-blue ul li:first-child {
   border-top: 0;
 }
@@ -119,45 +159,34 @@
     position: absolute;
     width: 12em;
   }
-
   .sm-blue li {
     float: left;
   }
-
   .sm-blue.sm-rtl li {
     float: right;
   }
-
-  .sm-blue ul li, .sm-blue.sm-rtl ul li, .sm-blue.sm-vertical li {
+  .sm-blue ul li,
+  .sm-blue.sm-rtl ul li,
+  .sm-blue.sm-vertical li {
     float: none;
   }
-
   .sm-blue a {
     white-space: nowrap;
   }
-
-  .sm-blue ul a, .sm-blue.sm-vertical a {
+  .sm-blue ul a,
+  .sm-blue.sm-vertical a {
     white-space: normal;
   }
-
-  .sm-blue .sm-nowrap > li > a, .sm-blue .sm-nowrap > li > :not(ul) a {
+  .sm-blue .sm-nowrap>li>a,
+  .sm-blue .sm-nowrap>li> :not(ul) a {
     white-space: nowrap;
   }
-
   /* ...end */
-  .sm-blue {
-    background: #3092c0;
-    background-image: linear-gradient(to bottom, #3298c8, #2e8cb8);
-    border-radius: 8px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  }
-  .sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
-    padding: 13px 24px;
-    background: #3092c0;
-    background-image: linear-gradient(to bottom, #3298c8, #2e8cb8);
-    color: #fff;
-  }
-  .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
+ 
+  .sm-blue a:hover,
+  .sm-blue a:focus,
+  .sm-blue a:active,
+  .sm-blue a.highlighted {
     background: #2b82ac;
     background-image: linear-gradient(to bottom, #2d89b4, #297ca3);
   }
@@ -189,16 +218,13 @@
   .sm-blue a .sub-arrow::before {
     display: none;
   }
-  .sm-blue > li:first-child > a, .sm-blue > li:first-child > :not(ul) a {
-    border-radius: 8px 0 0 8px;
-  }
-  .sm-blue > li:last-child > a, .sm-blue > li:last-child > :not(ul) a {
+ 
+  .sm-blue>li:last-child>a,
+  .sm-blue>li:last-child> :not(ul) a {
     border-radius: 0 8px 8px 0 !important;
   }
-  .sm-blue > li {
-    border-left: 1px solid #2b82ac;
-  }
-  .sm-blue > li:first-child {
+ 
+  .sm-blue>li:first-child {
     border-left: 0;
   }
   .sm-blue ul {
@@ -212,14 +238,21 @@
     border-radius: 4px !important;
     background: #fff;
   }
-  .sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+  .sm-blue ul a,
+  .sm-blue ul a:hover,
+  .sm-blue ul a:focus,
+  .sm-blue ul a:active,
+  .sm-blue ul a.highlighted {
     border: 0 !important;
     padding: 9px 23px;
     background: transparent;
     color: #2b82ac;
     border-radius: 0 !important;
   }
-  .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+  .sm-blue ul a:hover,
+  .sm-blue ul a:focus,
+  .sm-blue ul a:active,
+  .sm-blue ul a.highlighted {
     background: #3092c0;
     background-image: linear-gradient(to bottom, #3298c8, #2e8cb8);
     color: #fff;
@@ -279,16 +312,18 @@
     border-style: dashed solid dashed dashed;
     border-color: transparent #a1d1e8 transparent transparent;
   }
-  .sm-blue.sm-rtl > li:first-child > a, .sm-blue.sm-rtl > li:first-child > :not(ul) a {
+  .sm-blue.sm-rtl>li:first-child>a,
+  .sm-blue.sm-rtl>li:first-child> :not(ul) a {
     border-radius: 0 8px 8px 0;
   }
-  .sm-blue.sm-rtl > li:last-child > a, .sm-blue.sm-rtl > li:last-child > :not(ul) a {
+  .sm-blue.sm-rtl>li:last-child>a,
+  .sm-blue.sm-rtl>li:last-child> :not(ul) a {
     border-radius: 8px 0 0 8px !important;
   }
-  .sm-blue.sm-rtl > li:first-child {
+  .sm-blue.sm-rtl>li:first-child {
     border-left: 1px solid #2b82ac;
   }
-  .sm-blue.sm-rtl > li:last-child {
+  .sm-blue.sm-rtl>li:last-child {
     border-left: 0;
   }
   .sm-blue.sm-rtl ul a .sub-arrow {
@@ -313,13 +348,15 @@
     border-style: dashed dashed dashed solid;
     border-color: transparent transparent transparent #a1d1e8;
   }
-  .sm-blue.sm-vertical > li:first-child > a, .sm-blue.sm-vertical > li:first-child > :not(ul) a {
+  .sm-blue.sm-vertical>li:first-child>a,
+  .sm-blue.sm-vertical>li:first-child> :not(ul) a {
     border-radius: 8px 8px 0 0;
   }
-  .sm-blue.sm-vertical > li:last-child > a, .sm-blue.sm-vertical > li:last-child > :not(ul) a {
+  .sm-blue.sm-vertical>li:last-child>a,
+  .sm-blue.sm-vertical>li:last-child> :not(ul) a {
     border-radius: 0 0 8px 8px !important;
   }
-  .sm-blue.sm-vertical > li {
+  .sm-blue.sm-vertical>li {
     border-left: 0 !important;
   }
   .sm-blue.sm-vertical ul {

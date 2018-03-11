@@ -298,55 +298,23 @@ var theme = {
     },
     initNavbar: function () {
 
-        $('.navbar-toggler').click(function () {
-            $(this).toggleClass('open');
-        });
 
-        // Fixed header navigation that auto hides when scroll down
-        var currentScrollTop = 0;
-        var lastScrollTop = 0;
-        $(window).on("scroll", function () {
+        // breakpoint and up  
+        $(window).resize(function () {
+            if ($(window).width() >= 980) {
 
-            if ($(this).scrollTop() >= 5) {
-                $('.navbar').addClass('fixed-top');
-            } else {
-                $('.navbar').removeClass('fixed-top');
-            }
+                // // when you hover a toggle show its dropdown menu
+                // $(".navbar .dropdown-toggle").hover(function () {
+                //     $(this).parent().toggleClass("show");
+                //     $(this).parent().find(".dropdown-menu").toggleClass("show");
+                // });
 
-            var scrollTop = $(window).scrollTop();
-            var navbarHeight = $('.navbar').height();
+                // // hide the menu when the mouse leaves the dropdown
+                // $(".navbar .dropdown-menu").mouseleave(function () {
+                //     $(this).removeClass("show");
+                // });
 
-            currentScrollTop = scrollTop;
-
-            if (lastScrollTop < currentScrollTop && scrollTop > navbarHeight + navbarHeight + 200) {
-                // scroll down
-                $(".navbar").addClass("scroll-up");
-            } else if (lastScrollTop > currentScrollTop && !(scrollTop <= navbarHeight)) {
-                // scrool up
-                $(".navbar").removeClass("scroll-up");
-            }
-
-            // if ($(this).scrollTop() < 300 && $(".navbar").hasClass('fixed-top')) {
-            //     $(".navbar").removeClass('fixed-top');
-            // }
-
-            lastScrollTop = currentScrollTop;
-
-        });
-
-        /*-----------------------------------------------------------------------------------*/
-        /*  NAV VERTICAL
-        /*-----------------------------------------------------------------------------------*/
-
-        $('.nav-vertical .nav-item').click(function () {
-            $(this).toggleClass('show');
-        });
-
-        $(".nav-vertical a").click(function (event) {
-            if ($(this).next('ul').length) {
-                event.preventDefault();
-                $(this).next().toggle('fast');
-                $(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+                // do something here
             }
         });
 
@@ -594,7 +562,8 @@ var theme = {
     setPostNavigationPosition: function () {
 
         var navbarHeight = $('.navbar').height();
-        $('.navbar .nav-item > .nav-link').css('line-height', navbarHeight + 'px');
+        // $('.navbar .dropdown-menu').css('top', navbarHeight + 'px');
+        $('.navbar .navbar-nav > .nav-item > .nav-link').css('line-height', navbarHeight + 'px');
         // $('.navbar-action').css('top', (navbarHeight / 2) - 22 + 'px');
 
     }
