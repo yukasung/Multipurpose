@@ -10,7 +10,6 @@ $(window).resize(function () {
 var theme = {
     init: function () {
         theme.setPostNavigationPosition();
-        theme.initSmartMenu();
         theme.initIsoTope();
         theme.initNavbar();
         theme.initGoogleMap();
@@ -80,37 +79,6 @@ var theme = {
         $(cls).each(function (idx, obj) {
             theme.parallaxUpdate(null, obj);
         });
-    },
-    initSmartMenu: function () {
-        // SmartMenus init
-        $('#main-menu').smartmenus({
-            subMenusSubOffsetX: 1,
-            subMenusSubOffsetY: -8
-        });
-
-        // SmartMenus mobile menu toggle button
-        var $mainMenuState = $('#main-menu-state');
-        if ($mainMenuState.length) {
-            // animate mobile menu
-            $mainMenuState.change(function (e) {
-                var $menu = $('#main-menu');
-                if (this.checked) {
-                    $menu.hide().slideDown(250, function () {
-                        $menu.css('display', '');
-                    });
-                } else {
-                    $menu.show().slideUp(250, function () {
-                        $menu.css('display', '');
-                    });
-                }
-            });
-            // hide mobile menu beforeunload
-            $(window).bind('beforeunload unload', function () {
-                if ($mainMenuState[0].checked) {
-                    $mainMenuState[0].click();
-                }
-            });
-        }
     },
     initParallax: function () {
         var cls = '.parallax';
@@ -297,26 +265,6 @@ var theme = {
 
     },
     initNavbar: function () {
-
-
-        // breakpoint and up  
-        $(window).resize(function () {
-            if ($(window).width() >= 980) {
-
-                // // when you hover a toggle show its dropdown menu
-                // $(".navbar .dropdown-toggle").hover(function () {
-                //     $(this).parent().toggleClass("show");
-                //     $(this).parent().find(".dropdown-menu").toggleClass("show");
-                // });
-
-                // // hide the menu when the mouse leaves the dropdown
-                // $(".navbar .dropdown-menu").mouseleave(function () {
-                //     $(this).removeClass("show");
-                // });
-
-                // do something here
-            }
-        });
 
     },
     initGoogleMap: function () {

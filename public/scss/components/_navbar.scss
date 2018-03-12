@@ -3,102 +3,111 @@
 /*  Custom > Components > Navbar
 /*-----------------------------------------------------------------------------------*/
 
-.navbar {
-    box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, .35);
-    @include media-breakpoint-up(sm) {
-        height: $navbar-height;
-        padding: 0;
-    }
-    .nav-item {
-        padding: 0 8px;
-        margin: 0 4px;
-    }
-    .dropdown {
-        @include media-breakpoint-up(sm) {
-            &:hover {
-                .dropdown-menu {
-                    display: block;
-                }
-            }
-            .dropdown-menu {
-                &:hover {
-                    display: block;
-                }
-            }
-        }
-    }
-    .dropdown-item {
-        padding: 10px 10px;
-        @include media-breakpoint-up(sm) {
-            padding: 10px 30px;
-        }
-        &:hover,
-        &:focus {
-            background: transparent;
-        }
-    }
-    .dropdown-menu {
-        padding: 0;
-        @include media-breakpoint-up(sm) {
-            padding: 15px 0;
-        }
-    }
-    .nav-link,
-    .dropdown-item {
-        font-size: 13px;
-    }
-    .nav-link {
-        padding: 0;
-    }
-    .mega-menu {
-        position: static;
-        .container {
-            @include media-breakpoint-down(sm) {
-                padding: 0 15px !important;
-            }
-        }
-        .dropdown-menu {
-            width: 100%;
-            left: 0;
-            right: 0;
-            padding: 0;
-        }
-    }
-    .dropdown-menu {
-        border-radius: 0;
-        margin: 0;
-        border: none;
-        @include media-breakpoint-up(sm) {
-            background: $primary;
-        }
-        div[class*="col"]:not(:first-child) {
-            @include media-breakpoint-up(sm) {
-                padding: 0 30px;
-            }
-        }
-        div[class*="col"]:not(:last-child) {
-            @include media-breakpoint-up(sm) {
-                border-right: 1px solid #dee2e6;
-            }
-        }
-        .container {
-            padding: 30px;
-        }
-        .nav-item {
-            padding: 0;
-            margin: 0;
-        }
-        .nav-link {
-            padding: 6px 0;
-        }
-        .nav-link,
-        .dropdown-item {
-            @include media-breakpoint-up(sm) {
-                color: $white;
-                &:hover {
-                    color: $white;
-                }
-            }
+.navbar{
+    .dropdown-toggle{
+        &:after{
+            display: inline;
+            border: 0;
+            vertical-align: baseline;
         }
     }
 }
+// .navbar {
+//     box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, .35);
+//     @include media-breakpoint-up(sm) {
+//         height: $navbar-height;
+//         padding: 0;
+//     }
+//     .nav-item {
+//         padding: 0 8px;
+//         margin: 0 4px;
+//     }
+//     .dropdown {
+//         @include media-breakpoint-up(sm) {
+//             &:hover {
+//                 .dropdown-menu {
+//                     display: block;
+//                 }
+//             }
+//             .dropdown-menu {
+//                 &:hover {
+//                     display: block;
+//                 }
+//             }
+//         }
+//     }
+//     .dropdown-item {
+//         padding: 10px 10px;
+//         @include media-breakpoint-up(sm) {
+//             padding: 10px 30px;
+//         }
+//         &:hover,
+//         &:focus {
+//             background: transparent;
+//         }
+//     }
+//     .dropdown-menu {
+//         padding: 0;
+//         @include media-breakpoint-up(sm) {
+//             padding: 15px 0;
+//         }
+//     }
+//     .nav-link,
+//     .dropdown-item {
+//         font-size: 13px;
+//     }
+//     .nav-link {
+//         padding: 0;
+//     }
+//     .mega-menu {
+//         position: static;
+//         .container {
+//             @include media-breakpoint-down(sm) {
+//                 padding: 0 15px !important;
+//             }
+//         }
+//         .dropdown-menu {
+//             width: 100%;
+//             left: 0;
+//             right: 0;
+//             padding: 0;
+//         }
+//     }
+//     .dropdown-menu {
+//         border-radius: 0;
+//         margin: 0;
+//         border: none;
+//         @include media-breakpoint-up(sm) {
+//             background: $primary;
+//         }
+//         div[class*="col"]:not(:first-child) {
+//             @include media-breakpoint-up(sm) {
+//                 padding: 0 30px;
+//             }
+//         }
+//         div[class*="col"]:not(:last-child) {
+//             @include media-breakpoint-up(sm) {
+//                 border-right: 1px solid #dee2e6;
+//             }
+//         }
+//         .container {
+//             padding: 30px;
+//         }
+//         .nav-item {
+//             padding: 0;
+//             margin: 0;
+//         }
+//         .nav-link {
+//             padding: 6px 0;
+//         }
+//         .nav-link,
+//         .dropdown-item {
+//             @include media-breakpoint-up(sm) {
+//                 color: $white;
+//                 &:hover {
+//                     color: $white;
+//                 }
+//             }
+//         }
+//     }
+// }

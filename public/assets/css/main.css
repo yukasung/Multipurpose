@@ -9781,74 +9781,10 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  Custom > Components > Navbar
 /*-----------------------------------------------------------------------------------*/
-.navbar {
-  box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.35); }
-  @media (min-width: 576px) {
-    .navbar {
-      height: 48px;
-      padding: 0; } }
-  .navbar .nav-item {
-    padding: 0 8px;
-    margin: 0 4px; }
-  @media (min-width: 576px) {
-    .navbar .dropdown:hover .dropdown-menu {
-      display: block; }
-    .navbar .dropdown .dropdown-menu:hover {
-      display: block; } }
-  .navbar .dropdown-item {
-    padding: 10px 10px; }
-    @media (min-width: 576px) {
-      .navbar .dropdown-item {
-        padding: 10px 30px; } }
-    .navbar .dropdown-item:hover, .navbar .dropdown-item:focus {
-      background: transparent; }
-  .navbar .dropdown-menu {
-    padding: 0; }
-    @media (min-width: 576px) {
-      .navbar .dropdown-menu {
-        padding: 15px 0; } }
-  .navbar .nav-link,
-  .navbar .dropdown-item {
-    font-size: 13px; }
-  .navbar .nav-link {
-    padding: 0; }
-  .navbar .mega-menu {
-    position: static; }
-    @media (max-width: 767.98px) {
-      .navbar .mega-menu .container {
-        padding: 0 15px !important; } }
-    .navbar .mega-menu .dropdown-menu {
-      width: 100%;
-      left: 0;
-      right: 0;
-      padding: 0; }
-  .navbar .dropdown-menu {
-    border-radius: 0;
-    margin: 0;
-    border: none; }
-    @media (min-width: 576px) {
-      .navbar .dropdown-menu {
-        background: #3498db; } }
-    @media (min-width: 576px) {
-      .navbar .dropdown-menu div[class*="col"]:not(:first-child) {
-        padding: 0 30px; } }
-    @media (min-width: 576px) {
-      .navbar .dropdown-menu div[class*="col"]:not(:last-child) {
-        border-right: 1px solid #dee2e6; } }
-    .navbar .dropdown-menu .container {
-      padding: 30px; }
-    .navbar .dropdown-menu .nav-item {
-      padding: 0;
-      margin: 0; }
-    .navbar .dropdown-menu .nav-link {
-      padding: 6px 0; }
-    @media (min-width: 576px) {
-      .navbar .dropdown-menu .nav-link,
-      .navbar .dropdown-menu .dropdown-item {
-        color: #fff; }
-        .navbar .dropdown-menu .nav-link:hover,
-        .navbar .dropdown-menu .dropdown-item:hover {
-          color: #fff; } }
+.navbar .dropdown-toggle:after {
+  display: inline;
+  border: 0;
+  vertical-align: baseline; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  Custom > Components > Navs

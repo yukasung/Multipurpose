@@ -9,11 +9,9 @@
     <title>Video</title>
     <link rel="shortcut icon" href="style/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="assets/plugins/bootsnav/bootsnav.css" rel="stylesheet">
     <link href="assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">
-    <!-- <link href="assets/plugins/smartmenus/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.css" rel="stylesheet"> -->
-    <link href="assets/plugins/smartmenus/css/sm-core-css.css" rel="stylesheet">
-    <link href="assets/plugins/smartmenus/css/sm-blue/sm-blue.css" rel="stylesheet">
+    <link href="assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">    
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/lightgallery/css/lightgallery.min.css" rel="stylesheet">
@@ -72,108 +70,121 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Mega Dropdown</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+    
+     <!-- Start Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-default bootsnav">
+        <div class="container">            
+            <!-- Start Header Navigation -->
+            <!-- <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#brand"><img src="images/brand/logo-black.png" class="logo" alt=""></a>
+            </div> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+              </button>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Blog</a>
-                        <ul class="dropdown-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Megamenu</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
                             <li>
-                                <a class="dropdown-item" href="blog-default-left-sidebar.html">Blog - Left Sidebar</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="blog-default-right-sidebar.html">Blog - Right Sidebar</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="blog-grid-col-3.html">Blog - Grid</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="blog-single-right-sidebar.html">Single - Standard Post</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="blog-single-slide-right-sidebar.html">Single - Slide Show Post</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="blog-single-video-right-sidebar.html">Single - Video Post</a>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>    
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown mega-menu">
-                        <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Category 2
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <span class="nav-link text-uppercase" href="#">Category 1</span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Active</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Link item</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Link item</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <span class="nav-link text-uppercase" href="#">Category 2</span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Active</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Link item</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Link item</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.col-md-4  -->
-                                    <div class="col-md-4">
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <span class="nav-link text-uppercase" href="#">Category 3</span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Active</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Link item</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Link item</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.col-md-4  -->
-                                </div>
-                            </div>
-                            <!--  /.container  -->
-                        </div>
-                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>   
+
+        <!-- Start Side Menu -->
+        <div class="side">
+            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+            <div class="widget">
+                <h6 class="title">Custom Pages</h6>
+                <ul class="link">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-    </div>
+            <div class="widget">
+                <h6 class="title">Additional Links</h6>
+                <ul class="link">
+                    <li><a href="#">Retina Homepage</a></li>
+                    <li><a href="#">New Page Examples</a></li>
+                    <li><a href="#">Parallax Sections</a></li>
+                    <li><a href="#">Shortcode Central</a></li>
+                    <li><a href="#">Ultimate Font Collection</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Side Menu -->
+    </nav>
+    <!-- End Navigation -->
+
     <!-- Modal Language-->
     <div class="modal fade" id="modalLanguage" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen" role="document">
@@ -346,8 +357,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/plugins/smartmenus/jquery.smartmenus.js"></script>
-    <!-- <script type="text/javascript" src="assets/plugins/smartmenus/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js"></script> -->
+    <script type="text/javascript" src="assets/plugins/bootsnav/bootsnav.js"></script>
     <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/plugins/wow/wow.min.js"></script>
     <script type="text/javascript" src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
