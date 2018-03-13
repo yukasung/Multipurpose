@@ -248,10 +248,14 @@
                     // Dropdown Fade Toggle
                     $("a.dropdown-toggle", this).off('click');
                     $("a.dropdown-toggle", this).on('click', function (e) {
+                        // Comment by Arm
                         e.stopPropagation();
-                        $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle().toggleClass(getIn);
-                        $(this).closest("li.dropdown").first().toggleClass("on");                        
+                        
+                        // $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle().toggleClass(getIn);
+                        $(this).closest("li.dropdown").first().toggleClass("show on");  
+                        $(this).closest("li.dropdown").find(".dropdown-menu").first().toggleClass("show on");                   
                         return false;
+                        // End comment
                     });   
                     
                     // Hidden dropdown action
@@ -266,11 +270,13 @@
                     // Megamenu style
                     $(".megamenu-fw", this).each(function(){
                         $(".col-menu", this).each(function(){
-                            $(".content", this).addClass("animated");
-                            $(".content", this).stop().fadeOut();
+                            // $(".content", this).addClass("animated");
+                            // $(".content", this).stop().fadeOut();
                             $(".title", this).off("click");
                             $(".title", this).on("click", function(){
-                                $(this).closest(".col-menu").find(".content").stop().fadeToggle().addClass(getIn);
+                                // Comment by Arm
+                                // $(this).closest(".col-menu").find(".content").stop().fadeToggle().addClass(getIn);
+                                $(this).closest(".col-menu").find(".content").stop().fadeToggle(0);
                                 $(this).closest(".col-menu").toggleClass("on");
                                 return false;
                             });
@@ -304,14 +310,16 @@
                     $("li.dropdown", this).off("mouseleave");                    
                     $("a.dropdown-toggle", this).off('click');
                     $("a.dropdown-toggle", this).on('click', function (e) {
-                        e.stopPropagation();
-                        $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle();
-                        $(".navbar-toggle").each(function(){
-                            $(".fa", this).removeClass("fa-times");
-                            $(".fa", this).addClass("fa-bars");
-                            $(".navbar-collapse").removeClass("in");
-                            $(".navbar-collapse").removeClass("on");
-                        });
+                        // Comment by Arm
+                        // e.stopPropagation();
+                        // $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle();
+                        // $(".navbar-toggle").each(function(){
+                        //     $(".fa", this).removeClass("fa-times");
+                        //     $(".fa", this).addClass("fa-bars");
+                        //     $(".navbar-collapse").removeClass("in");
+                        //     $(".navbar-collapse").removeClass("on");
+                        // });
+                        // End comment
                     });
                     
                     $(this).on("mouseleave", function(){

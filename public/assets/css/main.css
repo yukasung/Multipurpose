@@ -9781,10 +9781,33 @@ input[type="submit"] {
 /*-----------------------------------------------------------------------------------*/
 /*  Custom > Components > Navbar
 /*-----------------------------------------------------------------------------------*/
-.navbar .dropdown-toggle:after {
-  display: inline;
-  border: 0;
-  vertical-align: baseline; }
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .navbar .dropdown-toggle:after {
+    display: inline;
+    border: 0;
+    vertical-align: baseline; }
+  @media (max-width: 767.98px) {
+    .navbar .navbar-nav {
+      background: #3498db; } }
+  .navbar .navbar-nav > li > a {
+    text-transform: uppercase; }
+    @media (min-width: 576px) {
+      .navbar .navbar-nav > li > a {
+        line-height: 72px; } }
+  .navbar .navbar-nav li a,
+  .navbar .navbar-nav li .title {
+    font-size: 13px; }
+  .navbar .navbar-nav .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    background: #3498db !important; }
+    .navbar .navbar-nav .dropdown-menu .title {
+      color: #fff;
+      text-transform: uppercase; }
+    .navbar .navbar-nav .dropdown-menu a {
+      color: #fff !important; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  Custom > Components > Navs
