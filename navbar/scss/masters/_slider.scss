@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------------------------*/
+/*  02. MASTERS > SLIDER
+/*-----------------------------------------------------------------------------------*/
+
+.slider-owl{
+	.owl-item{
+		&.active{
+			.slider-caption{
+				position: absolute;
+		    	top: 50%;
+			    transform: translateY(-50%);
+			    width: 100%;
+			    padding: 0 32px;
+			   	color: #fff;
+			   	*{
+			    	animation-duration: 1.5s;
+		    		animation-fill-mode: both;
+			    }
+			    h1{
+			    	position: relative;			    	
+			    	animation-delay: 0.5s;
+		    		animation-name: fadeInUp;		    		
+			    }
+			    p{
+			    	font-size: 18px;
+			    	line-height: 30px;
+			    	animation-delay: 1.5s;
+		    		animation-name: fadeInUp;
+			    }
+			    .btn{			    	
+			    	animation-delay: 2.6s;
+    				animation-name: fadeInUp;
+			    }
+
+			}
+
+			h1{
+				font-size: 48px;
+			    line-height: 62px;
+			    @include media-breakpoint-down(xs) {
+	    			font-size: 34px;
+	    			line-height: 46px;
+	    		}
+			}
+		}
+		.item{
+			height: 650px;
+			width: 100%;
+			position: relative;
+			text-align: center;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+	}
+	.btn{
+		@include media-breakpoint-down(sm) {
+			display: block;
+			width: 100%;
+		}
+	}
+}

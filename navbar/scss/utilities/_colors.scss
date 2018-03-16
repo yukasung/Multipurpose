@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------------------------*/
+
+/*  UTILITIES > COLORS
+/*-----------------------------------------------------------------------------------*/
+
+.text-black {
+    color: #000000 !important;
+}
+
+.text-body {
+    color: $body-color;
+    a {
+        color: inherit;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.bg-overlay-dark {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.bg-shadow {
+    box-shadow: $box-shadow;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-gradient {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &.gradient-primary {
+        &.gradient-left-right {
+            &:after {
+                background: radial-gradient(circle at center left, $primary, rgba(255, 255, 255, 0) 80%);
+            }
+        }
+    }
+    &.gradient-dark {
+        &.gradient-left-right {
+            &:after {
+                background: radial-gradient(circle at center left, $dark, rgba(255, 255, 255, 0) 80%);
+            }
+        }
+    }
+    &.gradient-light {
+        &.gradient-left-right {
+            &:after {
+                background: radial-gradient(circle at center left, $light, rgba(255, 255, 255, 0) 80%);
+            }
+        }
+    }
+}

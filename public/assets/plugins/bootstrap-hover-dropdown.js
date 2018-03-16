@@ -17,6 +17,7 @@
     // if instantlyCloseOthers is true, then it will instantly
     // shut other nav items when a new one is hovered over
     $.fn.dropdownHover = function (options) {
+       
         // don't do anything if touch is supported
         // (plugin causes some issues on mobile)
         if('ontouchstart' in document) return this; // don't want to affect chaining
@@ -47,7 +48,7 @@
 
             $parent.hover(function (event) {
                 // so a neighbor can't open the dropdown
-                if(!$parent.hasClass('open') && !$this.is(event.target)) {
+                if(!$parent.hasClass('show') && !$this.is(event.target)) {
                     // stop this event, stop executing any code
                     // in this callback but continue to propagate
                     return true;
@@ -59,7 +60,8 @@
                 window.clearTimeout(timeoutHover)
                 timeout = window.setTimeout(function () {
                     $this.attr('aria-expanded', 'false');
-                    $parent.removeClass('open');
+                    $parent.removeClass('show');
+                    $parent.find('.dropdown-menu').removeClass('show');
                     $this.trigger(hideEvent);
                 }, settings.delay);
             });
@@ -68,7 +70,7 @@
             $this.hover(function (event) {
                 // this helps prevent a double event from firing.
                 // see https://github.com/CWSpear/bootstrap-hover-dropdown/issues/55
-                if(!$parent.hasClass('open') && !$parent.is(event.target)) {
+                if(!$parent.hasClass('show') && !$parent.is(event.target)) {
                     // stop this event, stop executing any code
                     // in this callback but continue to propagate
                     return true;
@@ -111,12 +113,13 @@
                     $allDropdowns.find(':focus').blur();
 
                     if(settings.instantlyCloseOthers === true)
-                        $allDropdowns.removeClass('open');
+                        $allDropdowns.removeClass('show');
                     
                     // clear timer for hover event
                     window.clearTimeout(timeoutHover);
                     $this.attr('aria-expanded', 'true');
-                    $parent.addClass('open');
+                    $parent.addClass('show');
+                    $parent.find('.dropdown-menu').addClass('show');
                     $this.trigger(showEvent);
                 }, settings.hoverDelay);
             }

@@ -1,0 +1,9 @@
+.blog-commnets{
+	h4{
+		a{
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+}
