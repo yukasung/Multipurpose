@@ -3,163 +3,477 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Bootstrap NavBar</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="assets/css/animate.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <link href="assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 
-
-    <!--Demo purpose css-->
-    <style>
-        body {
-            padding-top: 10px;
-        }
-
-        .navbar {
-            margin: 40px 0;
-        }
-    </style>
 </head>
 
 <body>
-
-    <!-- Static navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-item" href="#">Action</a>
+    <header class="header-topbar">
+        <div class="header-top header-top-dark bg-primary py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-4">
+                                <a href="tel:171422226666">
+                                    <i class="ion-ios-telephone icon-lg mr-2"></i>+1 714 2222 6666</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-item" href="#">Another action</a>
-                            </li>
-                            <li class="nav-item dropdown-submenu">
-                                <a class="nav-link dropdown-item dropdown-toggle" href="#">Submenu</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a class="nav-link dropdown-item" href="#">Submenu action</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link dropdown-item" href="#">Another submenu action</a>
-                                    </li>
-                                    <li class="nav-item dropdown-submenu">
-                                        <a class="nav-link dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action aa</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown-submenu">
-                                        <a class="nav-link dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action bb</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown-submenu">
-                                <a class="nav-link dropdown-item dropdown-toggle" href="#">Submenu 2</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a class="nav-link dropdown-item" href="#">Submenu action 2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link dropdown-item" href="#">Another submenu action 2</a>
-                                    </li>
-                                    <li class="nav-item dropdown-submenu">
-                                        <a class="nav-link dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action 1 3</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action 2 3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown-submenu">
-                                        <a class="nav-link dropdown-item dropdown-toggle" href="#">Second subsubmenu 3</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action 3 </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action 3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                            <li class="list-inline-item">
+                                <a href="mailto:Info@construction.com">
+                                    <i class="ion-ios-email icon-lg mr-2"></i>info@domain.com</a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 d-none d-md-block float-right">
+                            <li class="list-inline-item mr-4">
+                                <a href="#">
+                                    <i class="ion-social-facebook icon-lg"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-4">
+                                <a href="#">
+                                    <i class="ion-social-instagram icon-lg"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-4">
+                                <a href="#">
+                                    <i class="ion-social-twitter icon-lg"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="ion-social-youtube icon-lg"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <!-- Main component for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <h1>Bootstrap 4 multi dropdown navbar</h1>
-            <p>This example of bootstrap 4 navigation with multi dropdown menu.</p>
-            <p>
-                <a class="btn btn-lg btn-danger" href="https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-navbar/" target="_blank"
-                    role="button">Live Demo</a>
-                <a class="btn btn-lg btn-primary" href="https://github.com/bootstrapthemesco/bootstrap-4-multi-dropdown-navbar" target="_blank"
-                    role="button">Download from Github</a>
-                <a class="btn btn-lg btn-info" href="https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-hover-navbar/" target="_blank"
-                    role="button">hover version</a>
-            </p>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-top navbar-dropdown-hover">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-item" href="#">Action</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li class="nav-item dropdown dropdown-submenu dropdown-left">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Submenu</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" href="#">Submenu action</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" href="#">Another submenu action</a>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-submenu">
+                                            <a class="nav-link dropdown-toggle" href="#">Subsubmenu</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Subsubmenu action aa</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Another subsubmenu action</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-submenu">
+                                            <a class="nav-link dropdown-toggle" href="#">Second subsubmenu</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Subsubmenu action bb</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Another subsubmenu action</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle" href="#">Submenu Acction 2</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" href="#">Submenu action 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" href="#">Another submenu action 2</a>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-submenu dropdown-left">
+                                            <a class="nav-link dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Subsubmenu action 1 3</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Another subsubmenu action 2 3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-submenu">
+                                            <a class="nav-link dropdown-item dropdown-toggle" href="#">Second subsubmenu 3</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Subsubmenu action 3 </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link dropdown-item" href="#">Another subsubmenu action 3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega-menu dropdown-menu-w-75">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown mega
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h3 class="dropdown-header">
+                                            Pages
+                                        </h3>
+                                        <a href="shop.htm" class="dropdown-item">Shop Home</a>
+                                        <a href="shop-cart.htm" class="dropdown-item">Cart</a>
+                                        <a href="shop-checkout.htm" class="dropdown-item">Checkout</a>
+                                        <a href="shop-confirmation.htm" class="dropdown-item">Confirmation</a>
+                                        <a href="shop-grid.htm" class="dropdown-item">Products Grid</a>
+                                        <a href="shop-list.htm" class="dropdown-item">Products List</a>
+                                        <a href="shop-product.htm" class="dropdown-item">Product View</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="dropdown-header">
+                                            Pages
+                                        </h3>
+                                        <a href="shop.htm" class="dropdown-item">Shop Home</a>
+                                        <a href="shop-cart.htm" class="dropdown-item">Cart</a>
+                                        <a href="shop-checkout.htm" class="dropdown-item">Checkout</a>
+                                        <a href="shop-confirmation.htm" class="dropdown-item">Confirmation</a>
+                                        <a href="shop-grid.htm" class="dropdown-item">Products Grid</a>
+                                        <a href="shop-list.htm" class="dropdown-item">Products List</a>
+                                        <a href="shop-product.htm" class="dropdown-item">Product View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-action">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                                <i class="flag-icon flag-icon-gb"></i><span class="ml-2">en</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" data-toggle="modal" data-target="#modalSearch">
+                                <i class="ion-bag icon-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" data-toggle="modal" data-target="#modalSearch">
+                                <i class="ion-ios-search-strong icon-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Modal Search-->
+        <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen" role="document">
+                <div class="modal-content bg-overlay">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <form>
+                                        <h5 class="modal-title h3 text-center mb-4">Search Our Website</h5>
+                                        <div class="input-icon input-group-lg">
+                                            <button type="submit" class="input-btn">
+                                                <i class="ion-ios-search-strong icon"></i>
+                                            </button>
+                                            <input type="text" class="form-control" name="" placeholder="Search...">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <!-- /container -->
+        <!-- Modal Language-->
+        <div class="modal fade" id="modalLanguage" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen" role="document">
+                <div class="modal-content bg-overlay">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <form>
+                                        <h3 class="popup-title text-center mb-4">Switch The Language</h3>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                    <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                        <i class="flag-icon flag-icon-de icon-2x mr-2 align-middle"></i>
+                                                        <span class="text-muted">Deutsch</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                    <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                        <i class="flag-icon flag-icon-gb icon-2x mr-2 align-middle"></i>
+                                                        <span class="text-muted">English</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                    <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                        <i class="flag-icon flag-icon-es icon-2x mr-2 align-middle"></i>
+                                                        <span class="text-muted">Español</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
+                                                    <a href="#" class="d-inline" data-toggle="navbar-popup" data-target="#popupLanguage">
+                                                        <i class="flag-icon flag-icon-fr icon-2x mr-2 align-middle"></i>
+                                                        <span class="text-muted">Français</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1628c313d01%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1628c313d01%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    data-holder-rendered="true">
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1628c313d02%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1628c313d02%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    data-holder-rendered="true">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1628c313d03%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1628c313d03%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    data-holder-rendered="true">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div id="content">
+        <div class="container">
+
+            <h1>Bootstrap grid examples</h1>
+            <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+
+            <h3>Five grid tiers</h3>
+            <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts
+                at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+
+            <div class="row">
+                <div class="col-4">.col-4</div>
+                <div class="col-4">.col-4</div>
+                <div class="col-4">.col-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">.col-lg-4</div>
+                <div class="col-lg-4">.col-lg-4</div>
+                <div class="col-lg-4">.col-lg-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4">.col-xl-4</div>
+                <div class="col-xl-4">.col-xl-4</div>
+                <div class="col-xl-4">.col-xl-4</div>
+            </div>
+
+            <h3>Three equal columns</h3>
+            <p>Get three equal-width columns
+                <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns
+                will automatically stack.</p>
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <h3>Three unequal columns</h3>
+            <p>Get three columns
+                <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should
+                add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the
+                viewport.
+            </p>
+            <div class="row">
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-6">.col-md-6</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+
+            <h3>Two columns</h3>
+            <p>Get two columns
+                <strong>starting at desktops and scaling to large desktops</strong>.</p>
+            <div class="row">
+                <div class="col-md-8">.col-md-8</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <h3>Full width, single column</h3>
+            <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+
+            <hr>
+
+            <h3>Two columns with two nested columns</h3>
+            <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two
+                columns
+                <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger
+                column.
+            </p>
+            <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+            <div class="row">
+                <div class="col-md-8">
+                    .col-md-8
+                    <div class="row">
+                        <div class="col-md-6">.col-md-6</div>
+                        <div class="col-md-6">.col-md-6</div>
+                    </div>
+                </div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <hr>
+
+            <h3>Mixed: mobile and desktop</h3>
+            <p>The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg (large),
+                and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible
+                layouts.
+            </p>
+            <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to
+                specify xs.
+            </p>
+            <div class="row">
+                <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-6">.col-6</div>
+                <div class="col-6">.col-6</div>
+            </div>
+
+            <hr>
+
+            <h3>Mixed: mobile, tablet, and desktop</h3>
+            <p></p>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-8">.col-12 .col-sm-6 .col-lg-8</div>
+                <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            </div>
+
+        </div>
+        <!-- /container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="assets/js/bootstrap-4-navbar.js"></script>
+    <script src="assets/js/bootstrap-navbar.js"></script>
 </body>
 
 </html>

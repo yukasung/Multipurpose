@@ -9,7 +9,7 @@ $(window).resize(function () {
 
 var theme = {
     init: function () {
-        theme.setPostNavigationPosition();
+        theme.setTopSpace();
         theme.initIsoTope();
         theme.initNavbar();
         theme.initGoogleMap();
@@ -22,10 +22,9 @@ var theme = {
         theme.initWOW();
         theme.initOwlCarousel();
         theme.initParallax();
-        // theme.initParallaxVideo();
     },
     resizeEvent: function () {
-        theme.setPostNavigationPosition();
+        theme.setTopSpace();
     },
     parallaxUpdate: function (evt, obj) {
         var vw = $(window).width();
@@ -507,12 +506,17 @@ var theme = {
     initWOW: function () {
         new WOW().init();
     },
-    setPostNavigationPosition: function () {
+    setTopSpace: function () {
 
-        var navbarHeight = $('.navbar').height();
-        // $('.navbar .dropdown-menu').css('top', navbarHeight + 'px');
-        $('.navbar .navbar-nav > .nav-item > .nav-link').css('line-height', navbarHeight + 'px');
-        // $('.navbar-action').css('top', (navbarHeight / 2) - 22 + 'px');
+        if ($('.navbar').hasClass('navbar-top') || $('nav').hasClass('navbar-fixed-top')) {
+            if ($('.top-space').length > 0) {
+                var top_space_height = $('.navbar').outerHeight();
+                if ($('.header-top').length > 0) {
+                    top_space_height = top_space_height + $('.header-top').outerHeight();
+                }
+                $('.top-space').css('margin-top', top_space_height + "px");
+            }
+        }
 
     }
 };

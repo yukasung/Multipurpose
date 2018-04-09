@@ -26,41 +26,41 @@
 
 <body>
     <!--  -->
-    <header>
-    <div class="bg-primary font-size-15 text-white py-2">
+    <header class="header-topbar">
+    <div class="header-top header-top-dark bg-primary py-2">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9 text-center text-md-left">
+                <div class="col-md-6 text-center text-md-left">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item mr-4">
-                            <a href="tel:171422226666" class="text-white">
+                            <a href="tel:171422226666">
                                 <i class="ion-ios-telephone icon-lg mr-2"></i>+1 714 2222 6666</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="mailto:Info@construction.com" class="text-white">
-                                <i class="ion-ios-email icon-lg mr-2"></i>Info@construction.com</a>
+                            <a href="mailto:Info@construction.com">
+                                <i class="ion-ios-email icon-lg mr-2"></i>info@domain.com</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-md-6">
                     <ul class="list-inline mb-0 d-none d-md-block float-right">
                         <li class="list-inline-item mr-4">
-                            <a href="#" class="text-white">
+                            <a href="#">
                                 <i class="ion-social-facebook icon-lg"></i>
                             </a>
                         </li>
                         <li class="list-inline-item mr-4">
-                            <a href="#" class="text-white">
+                            <a href="#">
                                 <i class="ion-social-instagram icon-lg"></i>
                             </a>
                         </li>
                         <li class="list-inline-item mr-4">
-                            <a href="#" class="text-white">
+                            <a href="#">
                                 <i class="ion-social-twitter icon-lg"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="text-white">
+                            <a href="#">
                                 <i class="ion-social-youtube icon-lg"></i>
                             </a>
                         </li>
@@ -69,58 +69,194 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Start Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle animated dropdown" id="pages-drop" data-toggle="dropdown" data-hover="dropdown"
-                        aria-expanded="false">Pages</a>
-                    <!-- Menu -->
-                    <div class="dropdown-menu">
-                        <div class="dropdown dropdown-submenu">
-                            <a href="about.htm" class="dropdown-item dropdown-toggle animated dropdown" id="about-drop" data-toggle="dropdown" data-hover="dropdown"
-                                data-close-others="false" aria-expanded="false">About</a>
-                            <!-- Dropdown Menu -->
-                            <div class="dropdown-menu" role="menu" aria-labelledby="about-drop" style="display: none;">
-                                <a href="about.htm" class="dropdown-item">About Us Basic</a>
-                                <a href="about-extended.htm" class="dropdown-item">About Us Extended</a>
-                                <a href="about-me.htm" class="dropdown-item">About Me</a>
-                                <a href="team.htm" class="dropdown-item">Team List</a>
-                                <a href="team-grid.htm" class="dropdown-item">Team Grid</a>
-                                <a href="team-member.htm" class="dropdown-item">Team Member</a>
-                                <a href="contact.htm" class="dropdown-item">Contact</a>
-                                <a href="contact.php" class="dropdown-item">Contact (PHP)</a>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-top navbar-dropdown-hover">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#">
+                Chainarong
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-item" href="#">Action</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-submenu dropdown-left">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Submenu</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link dropdown-item" href="#">Submenu action</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link dropdown-item" href="#">Another submenu action</a>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle" href="#">Subsubmenu</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action aa</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle" href="#">Second subsubmenu</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action bb</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown dropdown-submenu">
+                                <a class="nav-link dropdown-toggle" href="#">Submenu Acction 2</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link dropdown-item" href="#">Submenu action 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link dropdown-item" href="#">Another submenu action 2</a>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-submenu dropdown-left">
+                                        <a class="nav-link dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action 1 3</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action 2 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-submenu">
+                                        <a class="nav-link dropdown-item dropdown-toggle" href="#">Second subsubmenu 3</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Subsubmenu action 3 </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item" href="#">Another subsubmenu action 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-mega-menu dropdown-menu-w-75">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown mega
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="dropdown-header">
+                                        Pages
+                                    </h3>
+                                    <a href="shop.htm" class="dropdown-item">Shop Home</a>
+                                    <a href="shop-cart.htm" class="dropdown-item">Cart</a>
+                                    <a href="shop-checkout.htm" class="dropdown-item">Checkout</a>
+                                    <a href="shop-confirmation.htm" class="dropdown-item">Confirmation</a>
+                                    <a href="shop-grid.htm" class="dropdown-item">Products Grid</a>
+                                    <a href="shop-list.htm" class="dropdown-item">Products List</a>
+                                    <a href="shop-product.htm" class="dropdown-item">Product View</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="dropdown-header">
+                                        Pages
+                                    </h3>
+                                    <a href="shop.htm" class="dropdown-item">Shop Home</a>
+                                    <a href="shop-cart.htm" class="dropdown-item">Cart</a>
+                                    <a href="shop-checkout.htm" class="dropdown-item">Checkout</a>
+                                    <a href="shop-confirmation.htm" class="dropdown-item">Confirmation</a>
+                                    <a href="shop-grid.htm" class="dropdown-item">Products Grid</a>
+                                    <a href="shop-list.htm" class="dropdown-item">Products List</a>
+                                    <a href="shop-product.htm" class="dropdown-item">Product View</a>
+                                </div>
                             </div>
                         </div>
-                        <a href="customers.htm" class="dropdown-item">Customers</a>
-                        <a href="features.htm" class="dropdown-item">Features/Services</a>
-                        <a href="login.htm" class="dropdown-item">Login</a>
-                        <a href="signup.htm" class="dropdown-item">Sign Up</a>
-                        <a href="starter.htm" class="dropdown-item">Starter Snippets</a>
-                        <a href="404.htm" class="dropdown-item">404 Error</a>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-action">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                            <i class="flag-icon flag-icon-gb"></i>
+                            <span class="ml-2">en</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" data-toggle="modal" data-target="#modalSearch">
+                            <i class="ion-bag icon-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" data-toggle="modal" data-target="#modalSearch">
+                            <i class="ion-ios-search-strong icon-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
         </div>
     </nav>
-    <!-- End Navigation -->
+    <!-- Modal Search-->
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content bg-overlay">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <form>
+                                    <h5 class="modal-title h3 text-center mb-4">Search Our Website</h5>
+                                    <div class="input-icon input-group-lg">
+                                        <button type="submit" class="input-btn">
+                                            <i class="ion-ios-search-strong icon"></i>
+                                        </button>
+                                        <input type="text" class="form-control" name="" placeholder="Search...">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Language-->
     <div class="modal fade" id="modalLanguage" tabindex="-1" role="dialog" aria-hidden="true">
@@ -731,7 +867,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-navbar.js"></script>
     <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/plugins/wow/wow.min.js"></script>
     <script type="text/javascript" src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
