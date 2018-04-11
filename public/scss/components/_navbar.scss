@@ -414,7 +414,7 @@
         transition: ease-in-out 0.3s;
     }
     .navbar-top {
-        top: 34px;
+        top: 35px;
         background: #fff;
         box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6);
     }
@@ -437,18 +437,19 @@ header {
             }
         }
         &.header-appear {
+            .navbar {
+                box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+                // &.navbar-light {
+                //     box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+                // }
+                // &.navbar-dark {
+                //     background-color: #000000;
+                //     box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+                // }
+            }
             .navbar-scroll-top {
                 top: 0;
                 transition-duration: 0.3s;
-            }
-            nav {
-                &.navbar-light {
-                    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
-                }
-                &.navbar-dark {
-                    background-color: #000000;
-                    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
-                }
             }
         }
     }

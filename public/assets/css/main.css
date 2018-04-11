@@ -10098,7 +10098,7 @@ input[type="submit"] {
   transition: ease-in-out 0.3s; }
 
 .header-topbar .navbar-top {
-  top: 34px;
+  top: 35px;
   background: #fff;
   box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6); }
 
@@ -10113,17 +10113,13 @@ header.sticky .navbar-scroll-top {
 header.sticky nav.fixed-top.navbar-dark {
   background-color: #000000; }
 
+header.sticky.header-appear .navbar {
+  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
+
 header.sticky.header-appear .navbar-scroll-top {
   top: 0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
-
-header.sticky.header-appear nav.navbar-light {
-  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
-
-header.sticky.header-appear nav.navbar-dark {
-  background-color: #000000;
-  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
 
 .fixed-top {
   z-index: 9999;

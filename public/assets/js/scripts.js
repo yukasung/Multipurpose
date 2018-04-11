@@ -137,57 +137,6 @@ var theme = {
 
         });
     },
-    owlAddAnimateClass: function (elements, inOut) {
-
-        elements.each(function () {
-
-            var element = $(this);
-            var animationType = 'animated ' + element.data('animation-' + inOut);
-            var animationDurations = {};
-
-            if (element.data('animation-duration')) {
-                animationDurations['animation-duration'] = element.data('animation-duration');
-            }
-
-            if (element.data('animation-delay')) {
-                animationDurations['animation-delay'] = element.data('animation-delay');
-            }
-
-            if (element.data('animation-offset')) {
-                animationDurations['animation-offset'] = element.data('animation-offset');
-            }
-
-            element.addClass(animationType).css(animationDurations);
-
-        });
-
-    },
-    owlRemoveAnimateClass: function (elements, inOut) {
-
-        elements.each(function () {
-
-            var element = $(this);
-            var animationType = 'animated ' + element.data('animation-' + inOut);
-            var animationDurations = {};
-
-            if (element.data('animation-duration')) {
-                animationDurations['animation-duration'] = element.data('animation-duration');
-            }
-
-            if (element.data('animation-delay')) {
-                animationDurations['animation-delay'] = element.data('animation-delay');
-            }
-
-            if (element.data('animation-offset')) {
-                animationDurations['animation-offset'] = element.data('animation-offset');
-            }
-
-            element.removeClass(animationType);
-            element.removeAttr('style');
-
-        });
-
-    },
     initOwlCarousel: function () {
 
         var owl = $('.owl-carousel');
@@ -510,11 +459,12 @@ var theme = {
 
         if ($('.navbar').hasClass('navbar-top') || $('nav').hasClass('navbar-fixed-top')) {
             if ($('.top-space').length > 0) {
-                var top_space_height = $('.navbar').outerHeight();
+                var topSpaceHeight = $('.navbar').outerHeight();
                 if ($('.header-top').length > 0) {
-                    top_space_height = top_space_height + $('.header-top').outerHeight();
+                    topSpaceHeight = topSpaceHeight + $('.header-top').outerHeight();
                 }
-                $('.top-space').css('margin-top', top_space_height + "px");
+                topSpaceHeight -= 1;
+                $('.top-space').css('margin-top', topSpaceHeight + "px");
             }
         }
 

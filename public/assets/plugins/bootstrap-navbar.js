@@ -39,6 +39,7 @@ var navbar = {
         });
 
         $('.navbar .dropdown-menu .dropdown-toggle').on('click', function (e) {
+            
             var $el = $(this);
             var $parent = $(this).offsetParent(".dropdown-menu");
 
@@ -106,7 +107,7 @@ var navbar = {
 
     },
     eventScroll: function (element) {
-               
+
         // sticky nav start
         var headerHeight = $('nav').outerHeight();
         if (!$('header').hasClass('no-sticky')) {
