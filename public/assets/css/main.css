@@ -10157,9 +10157,6 @@ header.sticky.header-appear .navbar-scroll-top {
 /*-----------------------------------------------------------------------------------*/
 /*  COMPONENT > FORMS
 /*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
-/*  Custom > Components > Input group
-/*-----------------------------------------------------------------------------------*/
 .input-icon {
   position: relative; }
   .input-icon .input-btn {
@@ -10167,7 +10164,7 @@ header.sticky.header-appear .navbar-scroll-top {
     top: 0;
     right: 0;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
     background: 0 0;
     border: none;
     outline: none !important;
@@ -10919,6 +10916,9 @@ hr.line-dotted {
 .font-normal {
   font-size: 16px;
   font-style: normal; }
+
+.font-size-inherit {
+  font-size: inherit; }
 
 .font-size-12 {
   font-size: 12px; }
