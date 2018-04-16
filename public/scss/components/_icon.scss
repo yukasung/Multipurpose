@@ -9,7 +9,7 @@
 .icon-lg {
 	font-size: 1.33333em;
 	line-height: .75em;
-	vertical-align: -.17em;
+	vertical-align: -15%;
 }
 
 .icon-2x {
@@ -42,11 +42,6 @@
 	border: 3px solid #ffffff;
 	background: rgba(#000000, 0.2);
 	cursor: pointer;
-	transition: width .2s, height .2s;
-	&:hover {
-		width: 76px;
-		height: 76px;
-	}
 	>* {
 		display: block;
 		position: absolute;

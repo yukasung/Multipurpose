@@ -1,6 +1,12 @@
-/*-----------------------------------------------------------------------------------*/
-
-
-/*  COMPONENT > BREADCRUMB
-/*-----------------------------------------------------------------------------------*/
-
+//
+// Custom breadcrumb
+//
+.breadcrumb-item + {
+    .breadcrumb-item{
+        &::before{
+            font-family: "Ionicons";
+            font-size: 12px;
+            content: "\f3d3";
+        }
+    }
+}    
