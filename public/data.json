@@ -82,40 +82,46 @@
         }
     ],
     "portfolios": [{
-            "title": "Mus bibendum pellentesque massa",
-            "img": "assets/img/portfolio/portfolio-1-440x300.jpg",
+            "title": "Agricultural Market Analysis, 2017",
+            "img": "assets/img/blog/blog-1-800x518.jpg",
+            "img2": "assets/img/portfolio/portfolio-1-1200x650.jpg",
             "tag": "transition coporate",
-            "grid_item_class": ""
+            "desc": "Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis neque a sollicitudin"
         },
         {
             "title": "Cras vestibulum pretium mus tempor",
-            "img": "assets/img/portfolio/portfolio-1-primary.jpg",
+            "img": "assets/img/blog/blog-2-800x518.jpg",
+            "img2": "assets/img/portfolio/portfolio-2-1200x650.jpg",
             "tag": "coporate",
-            "grid_item_class": ""
+            "desc": "Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis neque a sollicitudin"
         },
         {
             "title": "Aliquam non do phasellus aenean",
-            "img": "assets/img/portfolio/portfolio-4-hwide-gap.jpg",
+            "img": "assets/img/blog/blog-3-800x518.jpg",
+            "img2": "assets/img/portfolio/portfolio-3-1200x650.jpg",
             "tag": "package",
-            "grid_item_class": "w-50"
+            "desc": "Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis neque a sollicitudin"
         },
         {
             "title": "Hendrerit auctor commodo deserunt",
-            "img": "assets/img/portfolio/portfolio-6-vwide-gap.jpg",
+            "img": "assets/img/blog/blog-4-800x518.jpg",
+            "img2": "assets/img/portfolio/portfolio-4-1200x650.jpg",
             "tag": "food",
-            "grid_item_class": ""
+            "desc": "Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis neque a sollicitudin"
         },
         {
             "title": "Mollis adipisicing penatibus esse",
-            "img": "assets/img/portfolio/portfolio-8-primary.jpg",
+            "img": "assets/img/blog/blog-5-800x518.jpg",
+            "img2": "assets/img/portfolio/portfolio-3-1200x650.jpg",
             "tag": "transition books",
-            "grid_item_class": ""
+            "desc": "Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis neque a sollicitudin"
         },
         {
             "title": "Habitant taciti hendrerit tincidunt",
-            "img": "assets/img/portfolio/portfolio-9-primary.jpg",
+            "img": "assets/img/blog/blog-6-800x518.jpg",
+            "img2": "assets/img/portfolio/portfolio-2-1200x650.jpg",
             "tag": "video",
-            "grid_item_class": ""
+            "desc": "Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis neque a sollicitudin"
         }
     ],
     "products": [{

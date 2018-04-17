@@ -10339,7 +10339,7 @@ header.sticky.header-appear .navbar-scroll-top {
     background: 0 0;
     border: none;
     outline: none !important;
-    z-index: 999; }
+    z-index: 90; }
     .input-icon .input-btn .icon {
       color: #76838f;
       font-size: 20px; }

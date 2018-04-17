@@ -1,33 +1,33 @@
 <!-- Default -->
-{% macro default(portfolio, caption_css="") %}
+{% macro default(portfolio) %}
 
-<figure class="figure mb-0">
-    <a class="d-block" href="portfolio-single-image-gallery.html">
-        {{ card_overlay() }}
-        <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+<div class="card border-0 mb-4">
+    <a class="overlay overlay-hover" href="portfolio-single-image.html">
+        <img src="{{ portfolio.img }}" alt="" class="img-fluid overlay-scale">
     </a>
-    <!-- <figcaption class="figure-caption {{ caption_css }}">
-        <a href="portfolio-single-image-gallery.html">{{ portfolio.title }}</a>
-    </figcaption> -->
-</figure>
-
-{% endmacro %}
-
-<!-- Card -->
-{% macro card(portfolio) %}
-
-<div class="card bg-shadow">
-    {{ default(portfolio,"px-4 py-3 mt-0") }}
+    <div class="card-body py-4 px-0">
+        <h3 class="card-title h5">
+            <a href="portfolio-post.html">{{ portfolio.title }}</a>
+        </h3>
+        <p class="card-text">{{ portfolio.desc }}</p>
+    </div>
 </div>
 
 {% endmacro %}
 
-<!-- Card Overlay -->
-{% macro card_overlay() %}
 
-<div class="overlay">
-    <div class="overlay-body">
-        <span class="text-uppercase text-white">View Project</span>
+<!-- Layout 1 -->
+{% macro layout1(portfolio) %}
+
+<div class="card  bg-light flex-md-row border-0 mb-4 mb-md-5">
+    <a class="overlay overlay-hover" href="portfolio-single-image.html">
+        <img src="{{ portfolio.img2 }}" alt="" class="img-fluid overlay-scale">
+    </a>
+    <div class="card-bodyd-flex flex-column align-items-start py-4 px-4 my-auto">
+        <h3 class="card-title h5">
+            <a href="portfolio-post.html">{{ portfolio.title }}</a>
+        </h3>
+        <p class="card-text">{{ portfolio.desc }}</p>
     </div>
 </div>
 
