@@ -1,0 +1,112 @@
+{% set page_title = "Portfolio Masonry" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Masonry" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+
+<div id="content">
+    <div class="container py-7">
+        <div class="isotope">
+            <div class="row">
+                <div class="col-md-12">
+                    {% include "../templates/partials/isotope_filters.html" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="isotope-grid isotope-masonry mt-4">
+                        <div class="grid-item illustration">
+                            <figure class="figure overlay mb-0">
+                                <img src="assets/img/portfolio/portfolio-0-primary.jpg" class="figure-img overlay-figure mb-0" alt="">
+                                <figcaption class="overlay-body">
+                                    <div class="overlay-align-middle text-center">
+                                        <h5 class="h3 text-body">Custom Content Here</h5>
+                                        <p class="text-body">See below for big content place</p>
+                                        <button type="button" class="btn btn-primary mt-3">View Detail</button>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="grid-item illustration">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <figure class="figure overlay overlay-hover mb-0">
+                                    <img src="assets/img/portfolio/portfolio-1-600x600.jpg" class="figure-img overlay-figure overlay-scale mb-0" alt="">
+                                    <figcaption class="overlay-body overlay-primary overlay-fade p-4">
+                                        <h5>Title</h5>
+                                        <p>Lorem sit amet, consetetur sadipscing elitr.</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item grid-item-x2 illustration business">
+                            <a class="d-block" href="port`folio-single-image.html">
+                                <figure class="figure overlay overlay-hover mb-0">
+                                    <img src="assets/img/portfolio/portfolio-5-1200x577.jpg" class="figure-img overlay-figure overlay-scale mb-0" alt="">
+                                    <figcaption class="overlay-body overlay-primary overlay-fade p-4">
+                                        <h5>Title</h5>
+                                        <p>Lorem sit amet, consetetur sadipscing elitr.</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item works">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <figure class="figure overlay overlay-hover mb-0">
+                                    <img src="assets/img/portfolio/portfolio-3-600x600.jpg" class="figure-img overlay-figure overlay-scale mb-0" alt="">
+                                    <figcaption class="overlay-body overlay-primary overlay-fade p-4">
+                                        <h5>Title</h5>
+                                        <p>Lorem sit amet, consetetur sadipscing elitr.</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item grid-item-x2 works business branding">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <figure class="figure overlay overlay-hover mb-0">
+                                    <img src="assets/img/portfolio/portfolio-2-600x600.jpg" class="figure-img overlay-figure overlay-scale mb-0" alt="">
+                                    <figcaption class="overlay-body overlay-primary overlay-fade p-4">
+                                        <div class="overlay-align-middle text-center">
+                                            <h5>Badges scale to match the size</h5>
+                                            <p>Lorem sit amet, consetetur sadipscing elitr.</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item works">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <figure class="figure overlay overlay-hover mb-0">
+                                    <img src="assets/img/portfolio/portfolio-8-600x1245.jpg" class="figure-img overlay-figure overlay-scale mb-0" alt="">
+                                    <figcaption class="overlay-body overlay-primary overlay-fade  p-4">
+                                        <div class="d-block overlay-align-middle text-center">
+                                            <h5>Title</h5>
+                                            <p>Lorem sit amet, consetetur sadipscing elitr.</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item works business branding">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <figure class="figure overlay overlay-hover mb-0">
+                                    <img src="assets/img/portfolio/portfolio-6-600x600.jpg" class="figure-img overlay-figure overlay-scale mb-0" alt="">
+                                    <figcaption class="overlay-body overlay-primary overlay-fade p-4">
+                                        <h5>Title</h5>
+                                        <p>Lorem sit amet, consetetur sadipscing elitr.</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

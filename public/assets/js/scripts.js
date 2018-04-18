@@ -211,6 +211,17 @@ var theme = {
             });
         });
 
+
+        var $portfolio_filter = $('.portfolio-grid');
+        $portfolio_filter.imagesLoaded(function () {
+            $portfolio_filter.isotope({
+                layoutMode: 'packery',
+                itemSelector: '.grid-item',
+               
+            });
+            $portfolio_filter.isotope();
+        });
+
     },
     initNavbar: function () {
 
