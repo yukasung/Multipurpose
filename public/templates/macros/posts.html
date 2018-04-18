@@ -1,8 +1,8 @@
 <!-- Single Standard Post -->
-{% macro standard(card_css="border-0", card_body_css="py-4 px-0") %}
+{% macro standard() %}
 
-<div class="card {{ card_css }}">
-    <img src="assets/img/blog/blog-1-800x518.jpg" class="img-fluid" alt="">
+<div class="card border-0">
+    <img src="assets/img/blog/blog-1-1200x752.jpg" class="img-fluid" alt="">
     <!-- Content -->
     {{ content() }}
 </div>
@@ -12,18 +12,18 @@
 {% endmacro %}
 
 <!-- Single Slide Show Post -->
-{% macro slide(card_css="border-0") %}
+{% macro slide() %}
 
-<div class="card {{ card_css }}">
+<div class="card border-0">
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
         <div class="item">
-            <img src="assets/img/blog/blog-4-800x518.jpg" alt="" />
+            <img src="assets/img/blog/blog-4-1200x752.jpg" alt="" />
         </div>
         <div class="item">
-            <img src="assets/img/blog/blog-3-800x518.jpg" alt="" />
+            <img src="assets/img/blog/blog-3-1200x752.jpg" alt="" />
         </div>
         <div class="item">
-            <img src="assets/img/blog/blog-2-800x518.jpg" alt="" />
+            <img src="assets/img/blog/blog-2-1200x752.jpg" alt="" />
         </div>
     </div>
     <!-- Content -->
@@ -35,11 +35,11 @@
 {% endmacro %}
 
 <!-- Single Video Post -->
-{% macro video(card_css="border-0") %}
+{% macro video() %}
 
-<div class="card {{ card_css }}">
+<div class="card border-0">
     <div class="overlay">
-        <img src="assets/img/blog/blog-5-800x518.jpg" alt="" class="img-fluid">
+        <img src="assets/img/blog/blog-5-1200x752.jpg" alt="" class="img-fluid">
         <div class="overlay-body">
             <div class="video-gallery overlay-align-middle text-center">
                 <a class="icon-video" href="https://www.youtube.com/watch?v=GNloY_4s8RA">
