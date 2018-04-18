@@ -1,7 +1,7 @@
 <!-- Default -->
-{% macro default(product, card_css="border-0 mb-4") %}
+{% macro default(product) %}
 
-<div class="card {{ card_css }}">
+<div class="card border-0 mb-4">
     <div class="overlay overlay-hover" href="shop-single.html">
         {% if product.sale %}
         <span class="badge badge-pill badge-circle badge-primary text-uppercase position-absolute right-0 mt-3 mr-3">sale</span>
