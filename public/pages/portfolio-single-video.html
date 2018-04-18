@@ -1,0 +1,85 @@
+{% set page_title = "Single Project" %}
+<!--  -->
+{% set page_link2 = "Projects" %}
+<!--  -->
+{% set page_active_link = "Video" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-7">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0">
+                        <div class="overlay">
+                            <img src="assets/img/blog/blog-5-800x518.jpg" alt="" class="img-fluid">
+                            <div class="overlay-body">
+                                <div class="video-gallery overlay-align-middle text-center">
+                                    <a class="icon-video" href="https://www.youtube.com/watch?v=GNloY_4s8RA">
+                                        <i class="ion-ios-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8 col-sm-12">
+                    <h2>Project Case Study</h2>
+                    <p>Sed risus tellus, malesuada et accumsan vitae, aliquet eget nisl. Duis semper quis neque a sollicitudin.
+                        Donec porta tortor eget eros finibus, finibus hendrerit elit venenatis. Pellentesque vel dapibus
+                        neque, a feugiat metus. Aliquam erat volutpat. Aliquam erat volutpat. Fusce tristique interdum leo
+                        a finibus. Cras vitae pharetra justo, malesuada accumsan arcu. Nam eget nisi dictum, vulputate felis
+                        sit amet, rhoncus nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                        cubilia Curae; Nulla justo libero, laoreet sed mauris in, accumsan interdum risus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.</p>
+                    <ul class="list-unstyled list-lg">
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Consectetur adipiscing elit</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Integer molestie lorem at massa</li>
+                        <li>
+                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Facilisis in pretium nisl aliquet</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="section-title no-line mb-3">
+                        <h2>Project Description</h2>
+                        <p class="lead">Learn about our awesome products and quality service features</p>
+                    </div>
+                    <p>Sociis occaecat habitant urna mattis proident curabitur anim senectus eiusmod laborum nunc imperdiet
+                        pellentesque laoreet occaecat.</p>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-5">Project name</dt>
+                        <dd class="col-sm-7">Rainbow Long Waffle</dd>
+
+                        <dt class="col-sm-5">Author</dt>
+                        <dd class="col-sm-7">Raul Newton</dd>
+
+                        <dt class="col-sm-5">Created</dt>
+                        <dd class="col-sm-7">01 January 2017</dd>
+
+                        <dt class="col-sm-5 text-truncate">Updated</dt>
+                        <dd class="col-sm-7">15 Febuary 2017</dd>
+
+                        <dt class="col-sm-5 text-truncate">Download</dt>
+                        <dd class="col-sm-7">1509</dd>
+                    </dl>
+                    <a href="#" class="btn btn-primary mt-3">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
