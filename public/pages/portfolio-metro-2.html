@@ -1,0 +1,88 @@
+{% set page_title = "Portfolio Metro Style" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Metro Style" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+
+<div id="content">
+    <div class="container py-7">
+        <div class="row">
+            <div class="col-md-12">
+                {% include "../templates/partials/portfolio_filters.html" %}
+            </div>
+        </div>
+        <div class="portfolio-grid row no-gutters mt-4">
+            <div class="grid-item col-md-6 illustration">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-5-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-8-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration business">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-3-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-9-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-7-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-10-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-2-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-6-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-3 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/metro/project-6-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
