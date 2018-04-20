@@ -1,12 +1,7 @@
-/*-----------------------------------------------------------------------------------*/
-
-/*  Custom > Components > Navs
-/*-----------------------------------------------------------------------------------*/
-
+//
+// Custom navs
+//
 .nav-tabs-flush {
-    @include media-breakpoint-up(sm) {
-        border-bottom: 1px solid #dee2e6;
-    }
     .nav-link {
         margin-right: 46px;
         padding: 16px 8px;

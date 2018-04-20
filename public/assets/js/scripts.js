@@ -140,43 +140,43 @@ var theme = {
     initOwlCarousel: function () {
 
         var owl = $('.owl-carousel');
+        owl.imagesLoaded(function () {
+            owl.each(function () {
 
-        owl.each(function () {
+                var currentItem = {};
+                var elemsToanim = {};
+                var round = 0;
+                var options = $(this).data("owl-carousel-options");
+                var defaults = {
+                    navText: "",
+                }
 
-            var currentItem = {};
-            var elemsToanim = {};
-            var round = 0;
-            var options = $(this).data("owl-carousel-options");
-            var defaults = {
-                navText: "",
-            }
+                if (options != undefined) {
+                    $(this).owlCarousel(options);
+                }
 
-            if (options != undefined) {
-                $(this).owlCarousel(options);
-            }
+                $(this).on('change.owl.carousel', function (event) {
+                    currentItem = $('.owl-item', owl).eq(event.item.index);
+                    elemsToanim = currentItem.find("[data-animation-out]");
+                    theme.setAnimation(elemsToanim, 'out');
+                });
 
-            $(this).on('change.owl.carousel', function (event) {
-                currentItem = $('.owl-item', owl).eq(event.item.index);
-                elemsToanim = currentItem.find("[data-animation-out]");
-                theme.setAnimation(elemsToanim, 'out');
-            });
+                $(this).on('changed.owl.carousel', function (event) {
+                    currentItem = $('.owl-item', $(this)).eq(event.item.index);
+                    elemsToanim = currentItem.find("[data-animation-in]");
+                    theme.setAnimation(elemsToanim, 'in');
+                });
 
-            $(this).on('changed.owl.carousel', function (event) {
-                currentItem = $('.owl-item', $(this)).eq(event.item.index);
+                currentItem = $('.owl-item', owl).eq(2);
                 elemsToanim = currentItem.find("[data-animation-in]");
                 theme.setAnimation(elemsToanim, 'in');
+
             });
-
-            currentItem = $('.owl-item', owl).eq(2);
-            elemsToanim = currentItem.find("[data-animation-in]");
-            theme.setAnimation(elemsToanim, 'in');
-
         });
-
     },
     initIsoTope: function () {
 
-        var $grid = $('.isotope .isotope-grid').isotope();
+        var $grid = $('.portfolio-grid').isotope();
 
         // filter functions
         var filterFns = {
@@ -193,7 +193,7 @@ var theme = {
         };
 
         // bind filter button click
-        $('.isotope-filter').on('click', 'a', function () {
+        $('.portfolio-filter').on('click', 'a', function () {
             var filterValue = $(this).attr('data-filter');
             // use filterFn if matches value
             filterValue = filterFns[filterValue] || filterValue;
@@ -203,7 +203,7 @@ var theme = {
         });
 
         // change is-checked class on buttons
-        $('.isotope .isotope-filter').each(function (i, buttonGroup) {
+        $('.portfolio-filter').each(function (i, buttonGroup) {
             var $buttonGroup = $(buttonGroup);
             $buttonGroup.on('click', 'a', function () {
                 $buttonGroup.find('.active').removeClass('active');
@@ -211,15 +211,13 @@ var theme = {
             });
         });
 
-
-        var $portfolio_filter = $('.portfolio-grid');
-        $portfolio_filter.imagesLoaded(function () {
-            $portfolio_filter.isotope({
+        var $portfolioGrid = $('.portfolio-grid');
+        $portfolioGrid.imagesLoaded(function () {
+            $portfolioGrid.isotope({
                 layoutMode: 'packery',
                 itemSelector: '.grid-item',
-               
+
             });
-            $portfolio_filter.isotope();
         });
 
     },
