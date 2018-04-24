@@ -211,14 +211,25 @@ var theme = {
             });
         });
 
-        var $portfolioGrid = $('.portfolio-grid');
-        $portfolioGrid.imagesLoaded(function () {
-            $portfolioGrid.isotope({
+        var $portfolioPackery = $('.portfolio-layout-packery');
+        $portfolioPackery.imagesLoaded(function () {
+            $portfolioPackery.isotope({
                 layoutMode: 'packery',
                 itemSelector: '.grid-item',
 
             });
         });
+
+        var $portfolioMasonry = $('.portfolio-layout-masonry');
+        $portfolioMasonry.imagesLoaded(function () {
+            $portfolioMasonry.isotope({
+                layoutMode: 'masonry',
+                itemSelector: '.grid-item',
+
+            });
+        });
+
+        
 
     },
     initNavbar: function () {

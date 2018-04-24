@@ -7,8 +7,6 @@
 {% extends "../templates/master.html" %} {% block content %}
 <!--  -->
 {% include "../templates/partials/page_title.html"%}
-<!--  -->
-{% import '../templates/macros/portfolios.html' as macroPortfolios %}
 
 <div id="content">
     <div class="container py-7">
@@ -17,7 +15,7 @@
                 {% include "../templates/partials/portfolio_filters.html" %}
             </div>
         </div>
-        <div class="portfolio-grid row no-gutters mt-4">
+        <div class="portfolio-layout-packery row no-gutters mt-4">
             <div class="grid-item col-md-6 illustration">
                 <a class="d-block" href="portfolio-single-image.html">
                     <figure class="figure mb-0">

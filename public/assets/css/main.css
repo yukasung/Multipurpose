@@ -10123,13 +10123,19 @@ header.sticky.header-appear .navbar-scroll-top {
   top: 0;
   border-width: 0 0 1px; }
 
+@media (max-width: 767.98px) {
+  .nav-tabs-flush .nav-item {
+    margin: 10px 0; } }
+
 .nav-tabs-flush .nav-link {
-  margin-right: 46px;
-  padding: 16px 8px;
+  padding: 0 0 4px;
   border: 0; }
+  @media (max-width: 767.98px) {
+    .nav-tabs-flush .nav-link {
+      display: inline-block; } }
   @media (min-width: 576px) {
     .nav-tabs-flush .nav-link {
-      padding: 0 0 4px; } }
+      margin-right: 46px; } }
   .nav-tabs-flush .nav-link.active {
     color: #3498db;
     border: 0;

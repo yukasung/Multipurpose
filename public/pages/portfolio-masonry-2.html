@@ -1,0 +1,86 @@
+{% set page_title = "Portfolio Masonry Style" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Masonry Style" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+
+<div id="content">
+    <div class="container py-7">
+        <div class="row">
+            <div class="col-md-12">
+                {% include "../templates/partials/portfolio_filters.html" %}
+            </div>
+        </div>
+        <div class="portfolio-layout-masonry row mt-4">
+            <div class="grid-item col-md-4 mb-4 illustration">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item93.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item94.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration business">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item95.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration works">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item98.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item97.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item99.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item101.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item100.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="grid-item col-md-4 mb-4 illustration branding">
+                <a class="d-block" href="portfolio-single-image.html">
+                    <figure class="figure mb-0">
+                        <img src="assets/img/portfolio/masonry/portfolio-item102.jpg" class="figure-img img-fluid mb-0" alt="">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
