@@ -1,8 +1,6 @@
-/*-----------------------------------------------------------------------------------*/
-
-/*  Utilities > Overlay
-/*-----------------------------------------------------------------------------------*/
-
+//
+// Utilities overlay
+//
 .overlay {
     position: relative;
     display: inline-block;
@@ -37,7 +35,7 @@
     }
 }
 
-.overlay-hover:not(:hover) .overlay-body:not(.overlay-background-fixed) {
+.overlay-hover:not(:hover) .overlay-body:not(.overlay-bg-fixed) {
     opacity: 0;
 }
 

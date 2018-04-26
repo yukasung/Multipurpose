@@ -1,34 +1,38 @@
 <!-- Default -->
 {% macro default(portfolio) %}
-
-<div class="card border-0 mb-4">
-    <a class="overlay overlay-hover" href="portfolio-single-image.html">
-        <img src="{{ portfolio.img }}" alt="" class="img-fluid">
-    </a>
-    <div class="card-body py-4 px-0">
-        <h3 class="card-title h5">
-            <a href="portfolio-post.html">{{ portfolio.title }}</a>
-        </h3>
-        <p class="card-text">{{ portfolio.desc }}</p>
-    </div>
-</div>
-
+<figure class="figure mb-4">
+    <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+</figure>
 {% endmacro %}
-
 
 <!-- Layout 1 -->
 {% macro layout1(portfolio) %}
 
-<div class="card flex-md-row border-0 mb-4 mb-md-5">
-    <a class="overlay overlay-hover" href="portfolio-single-image.html">
-        <img src="{{ portfolio.img2 }}" alt="" class="img-fluid">
+<figure class="figure mb-4">
+    <a href="portfolio-post.html">
+        <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
     </a>
-    <div class="card-bodyd-flex flex-column align-items-start py-4 px-0 px-md-4 my-auto">
+    <figcaption class="figure-caption py-4">
         <h3 class="card-title h5">
             <a href="portfolio-post.html">{{ portfolio.title }}</a>
         </h3>
-        <p class="card-text">{{ portfolio.desc }}</p>
-    </div>
-</div>
+        <p>{{ portfolio.desc }}</p>
+    </figcaption>
+</figure>
+
+{% endmacro %}
+
+<!-- Layout 2 -->
+{% macro layout2(portfolio) %}
+
+<figure class="figure mb-4">
+    <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+    <figcaption class="figure-caption py-4">
+        <h3 class="card-title h5">
+            <a href="portfolio-post.html">{{ portfolio.title }}</a>
+        </h3>
+        <p>{{ portfolio.desc }}</p>
+    </figcaption>
+</figure>
 
 {% endmacro %}

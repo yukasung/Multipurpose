@@ -10897,9 +10897,6 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > BORDER
 /*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
-/*  Utilities > Overlay
-/*-----------------------------------------------------------------------------------*/
 .overlay {
   position: relative;
   display: inline-block;
@@ -10929,7 +10926,7 @@ hr.line-dotted {
   .overlay-body > :last-child {
     margin-bottom: 0; }
 
-.overlay-hover:not(:hover) .overlay-body:not(.overlay-background-fixed) {
+.overlay-hover:not(:hover) .overlay-body:not(.overlay-bg-fixed) {
   opacity: 0; }
 
 .overlay-image {

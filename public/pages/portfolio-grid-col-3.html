@@ -1,8 +1,8 @@
-{% set page_title = "Project List 3 Columns" %}
+{% set page_title = "Project Grid III" %}
 <!--  -->
-{% set page_link2 = "Project List" %}
+{% set page_link2 = "Grid List" %}
 <!--  -->
-{% set page_active_link = "Project List 3 Columns" %}
+{% set page_active_link = "Project Grid III" %}
 <!--  -->
 {% extends "../templates/master.html" %} {% block content %}
 <!--  -->
@@ -17,7 +17,7 @@
             <!--  -->
             {% for portfolio in portfolios %}
             <div class="col-md-4">
-                {{ macroPortfolios.default(portfolio) }}
+                {{ macroPortfolios.layout2(portfolio) }}
             </div>
             {% endfor %}
         </div>

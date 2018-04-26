@@ -211,25 +211,23 @@ var theme = {
             });
         });
 
-        var $portfolioPackery = $('.portfolio-layout-packery');
-        $portfolioPackery.imagesLoaded(function () {
-            $portfolioPackery.isotope({
+        var portfolioPackery = $('.portfolio-grid-packery');
+        portfolioPackery.imagesLoaded(function () {
+            portfolioPackery.isotope({
                 layoutMode: 'packery',
                 itemSelector: '.grid-item',
 
             });
         });
 
-        var $portfolioMasonry = $('.portfolio-layout-masonry');
-        $portfolioMasonry.imagesLoaded(function () {
-            $portfolioMasonry.isotope({
+        var portfolioMasonry = $('.portfolio-grid-masonry');
+        portfolioMasonry.imagesLoaded(function () {
+            portfolioMasonry.isotope({
                 layoutMode: 'masonry',
                 itemSelector: '.grid-item',
 
             });
         });
-
-        
 
     },
     initNavbar: function () {
