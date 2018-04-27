@@ -14,11 +14,11 @@
 <div id="content">
     <div class="container py-7">
         <div class="row">
-            {% set portfolios = portfolios.slice(0,9) %}
+            {% set portfolios = portfolios.slice(0,8) %}
             <!--  -->
             {% for portfolio in portfolios %}
-            <div class="col-md-4">
-                {{ macroPortfolios.layout1(portfolio) }}
+            <div class="col-md-6">
+                {{ macroPortfolios.default(portfolio) }}
             </div>
             {% endfor %}
         </div>
