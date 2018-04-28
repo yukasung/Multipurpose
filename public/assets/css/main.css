@@ -10936,6 +10936,15 @@ hr.line-dotted {
   background-image: -webkit-linear-gradient(bottom, #141618 0%, transparent 50%);
   background-image: linear-gradient(to top, #141618 0%, transparent 50%); }
 
+.overlay-align-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%; }
+
 /*	UTILITIES > SIZING
 /*-----------------------------------------------------------------------------------*/
 .w-5 {
