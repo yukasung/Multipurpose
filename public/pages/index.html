@@ -1,5 +1,7 @@
 <!--  -->
-{% extends "../templates/master.html" %} {% block content %}
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
 <!--  -->
 {% import '../templates/macros/blogs.html' as macroBlogs %}
 <!--  -->
@@ -132,7 +134,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-primary">
+
+    <div class="position-relative bg-primary">
+        <img alt="" src="assets/img/home/parallax-bg-1.jpg" class="bg-image bg-image-center op-1">
         <div class="container py-7">
             <div class="row justify-content-md-center text-center">
                 <div class="col-md-10">
@@ -140,7 +144,7 @@
                     <h4 class="h3 mt-3 text-white">We work in partnership with our clients, meeting their needs for high-quality information, analysis and
                         foresight across our network.
                     </h4>
-                    <a href="#" class="btn btn btn-outline-light mt-4">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-4">Learn More</a>
                 </div>
             </div>
         </div>
