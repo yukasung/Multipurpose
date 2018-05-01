@@ -8,49 +8,57 @@
 {% import '../templates/macros/clients.html' as macroClients%}
 <!--  -->
 {% import '../templates/macros/input_data.html' as inputData %}
+<!--  -->
+{% include "partials/header.html" %}
+<!--  -->
 <div id="content" class="top-space">
-    <div class="owl-carousel owl-hero owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-hover" data-owl-carousel-options='{"responsive":{"0":{"nav":false}, "600":{"nav":true}, "940":{"nav":true}},"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true,"autoplay":false}'>
+    <div class="owl-carousel owl-hero owl-theme owl-loaded owl-nav-hover" data-owl-carousel-options='{"responsive":{"0":{"nav":false}, "600":{"nav":true}, "940":{"nav":true}},"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true,"autoplay":false}'>
         <div class="item w-100 bg-primary">
-            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
-                <img src="assets/img/slider/slider_1.jpg" alt="">
+            <figure class="m-0">
+                <img src="assets/img/slider/slider_5.jpg" class="op-2" alt="">
             </figure>
             <div class="container">
-                <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
-                    <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
-                    <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
-                        vitae occaecat convallis nam. Eu primis libero.</p>
-                    <a href="#" class="btn btn-dark mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
-                    <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
+                <div class="row justify-content-md-center">
+                    <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white w-50">
+                        <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
+                        <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
+                            vitae occaecat convallis nam. Eu primis libero.</p>
+                        <a href="#" class="btn btn-dark btn-lg mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="item w-100 bg-primary">
-            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
-                <img src="assets/img/slider/slider_2.jpg" alt="">
+            <figure class="m-0">
+                <img src="assets/img/slider/slider_4.jpg" class="op-2" alt="">
             </figure>
             <div class="container">
-                <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
-                    <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We are always looking for technologists and management teams.</h2>
-                    <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
-                        vitae occaecat convallis nam. Eu primis libero.</p>
-                    <a href="#" class="btn btn-dark mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
-                    <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
+                <div class="row justify-content-md-center">
+                    <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white w-50">
+                        <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
+                        <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
+                            vitae occaecat convallis nam. Eu primis libero.</p>
+                        <a href="#" class="btn btn-dark mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
+                        <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="item w-100 bg-primary">
-            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
-                <img src="assets/img/slider/slider_3.jpg" alt="">
-            </figure>
-            <div class="container">
-                <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
-                    <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We can help your business grow with a powerful Search Engine Marketing solution</h2>
-                    <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
-                        vitae occaecat convallis nam. Eu primis libero.</p>
-                    <a href="#" class="btn btn-dark mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
-                    <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
-                </div>
-            </div>
+                <figure class="m-0">
+                        <img src="assets/img/slider/slider_6.jpg" class="op-2" alt="">
+                    </figure>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white w-50">
+                                <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
+                                <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
+                                    vitae occaecat convallis nam. Eu primis libero.</p>
+                                <a href="#" class="btn btn-dark mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
+                                <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
     <div class="bg-white">
@@ -85,7 +93,7 @@
         </div>
     </div>
     <div class="position-relative bg-primary">
-        <img alt="" src="assets/img/home/parallax-bg-1.jpg" class="bg-image bg-image-center op-1">
+        <img alt="" src="assets/img/home/parallax-bg-3.jpg" class="bg-image bg-image-center op-3">
         <div class="container py-7">
             <div class="row justify-content-md-center text-center">
                 <div class="col-md-10">
@@ -93,7 +101,7 @@
                     <h4 class="h3 mt-3 text-white">We work in partnership with our clients, meeting their needs for high-quality information, analysis and
                         foresight across our network.
                     </h4>
-                    <div class="video-gallery text-center mt-5">
+                    <div class="video-gallery text-center mt-4">
                         <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
                             <i class="ion-ios-play"></i>
                         </a>
@@ -125,41 +133,47 @@
     </div>
     <div class="bg-light">
         <div class="container py-7">
-                <h3 class="text-center">Contact Us</h3>
-                <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
-                <div class="row mt-6">
-                    <div class="col-md-6">
-                        <ul class="list-unstyled">
-                            <li class="my-2 my-md-0 ml-0 ml-md-4">
-                                <i class="ti-location-pin icon-lg mr-2 text-primary"></i>3302 Neighbor Rd, Saint Joseph, MO, 64506</li>
-                            <li class="my-2 my-md-0 ml-0 ml-md-4">
-                                <i class="ti-mobile icon-lg mr-2 text-primary"></i>(816) 676-0309</li>
-                            <li class="my-2 my-md-0 ml-0 ml-md-4">
-                                <i class="ti-email icon-lg mr-2 text-primary"></i>info@email.com</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 mt-6 mt-md-0">
-                        <form class="form-container" name="form_name" action="#" method="post">
-                            <div class="form-group">
-                                <input type="text" name="first" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="first" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="first" class="form-control" placeholder="Phone">
-                            </div>
-                            <div class="form-group">
-                                {{ inputData.ddlDepartments() }}
-                            </div>
-                            <div class="form-group">
-                                <textarea name="textarea" id="textarea" class="form-control" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
-                            </div>
-                            <input type="submit" value="Send Message" name="submit" class="btn btn-primary">
-                        </form>
-                    </div>
+            <h3 class="text-center">Get In Touch</h3>
+            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
+            <div class="row mt-6">
+                <div class="col-md-6">
+                    <h5>Contact Info</h5>
+                    <p>Cursus eget integer consequat est nascetur blandit augue culpa molestie deserunt luctus minim laborum
+                        lectus do tempus ultricies anim adipiscing aptent ultricies commodo fermentum nostra.</p>
+                    <ul class="list-unstyled list-lg mt-4 mb-0">
+                        <li>
+                            <i class="ti-email icon-lg mr-2 text-primary mr-2"></i>info@company.com
+                        </li>
+                        <li>
+                            <i class="ti-support icon-lg text-primary mr-2"></i>support@company.com
+                        </li>
+                        <li>
+                            <i class="ti-mobile icon-lg mr-2 text-primary mr-2"></i>+1 123 312 32 23
+                        </li>
+                        <li>
+                            <i class="ti-location-pin icon-lg mr-2 text-primary mr-2"></i>63739 street lorem ipsum dolor City, Country
+                        </li>
+                    </ul>
                 </div>
-            
+                <div class="col-md-6 mt-6 mt-md-0">
+                    <form class="form-container" name="form_name" action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="first" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="first" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="first" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="textarea" id="textarea" class="form-control" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" name="submit" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
