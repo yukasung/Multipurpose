@@ -10043,7 +10043,7 @@ input[type="submit"] {
   transition: all .4s ease 0s; }
 
 .navbar-collapse-show .navbar-toggler span {
-  background: rgba(51, 51, 51, 0); }
+  background: rgba(51, 51, 51, 0) !important; }
   .navbar-collapse-show .navbar-toggler span::before, .navbar-collapse-show .navbar-toggler span::after {
     background: #333333; }
   .navbar-collapse-show .navbar-toggler span::before {
@@ -10091,7 +10091,6 @@ input[type="submit"] {
 
 .header-topbar .navbar-top {
   top: 35px;
-  background: #fff;
   box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6); }
 
 header.sticky .navbar-scroll-top {
@@ -10117,6 +10116,22 @@ header.sticky.header-appear .navbar-scroll-top {
   z-index: 9999;
   top: 0;
   border-width: 0 0 1px; }
+
+.navbar-dark .navbar-action a {
+  color: #fff; }
+
+.navbar-dark .navbar-toggler span,
+.navbar-dark .navbar-toggler span::before,
+.navbar-dark .navbar-toggler span::after {
+  background: #fff; }
+
+.header-appear .navbar {
+  background-color: #fff !important; }
+  .header-appear .navbar .navbar-nav .nav-link {
+    color: #232323; }
+
+.header-appear .navbar-action a {
+  color: #232323; }
 
 @media (max-width: 767.98px) {
   .nav-tabs-flush .nav-item {
