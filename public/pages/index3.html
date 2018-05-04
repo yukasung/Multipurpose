@@ -10,24 +10,21 @@
 {% import '../templates/macros/input_data.html' as inputData %}
 <!--  -->
 {% import '../templates/macros/testimonial.html' as macroTestimonials %}
-
- <!--  -->
- {% include "partials/header2.html" %}
-
+<!--  -->
+{% include "partials/header2.html" %}
 <div id="content">
-    <div class="owl-carousel owl-hero owl-theme owl-loaded owl-nav-hover" data-owl-carousel-options='{"responsive":{"0":{"nav":false}, "600":{"nav":true}, "940":{"nav":true}},"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true,"autoplay":false}'>
-        <div class="item w-100">
+    <div class="owl-carousel owl-hero owl-theme owl-loaded owl-nav-hover" data-owl-carousel-options='{"responsive":{"0":{"nav":false}, "600":{"nav":true}, "940":{"nav":true}},"items":1, "nav":true,"margin":0, "dots":false, "loop":false, "autoHeight":true,"autoplay":false}'>
+        <div class="item item-height w-100">
             <figure class="m-0">
-                <img src="assets/img/slider/slider_7.jpg" alt="">
+                <img src="assets/img/slider/slider_7.jpg" class="bg-image bg-image-center" alt="">
             </figure>
             <div class="container">
-                <div class="row">
-                    <div class="owl-caption-fluid px-4 pt-4 pb-7 text-white w-50">
-                        <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
-                        <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
-                            vitae occaecat convallis nam. Eu primis libero.</p>
-                        <a href="#" class="btn btn-primary btn-lg mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
-                    </div>
+                <div class="owl-caption px-4 px-md-0 text-white text-center text-md-left w-50">
+                    <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
+                    <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
+                        vitae occaecat convallis nam. Eu primis libero.</p>
+                    <a href="#" class="btn btn-primary mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
+                    <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
                 </div>
             </div>
         </div>
@@ -72,20 +69,18 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    
+
                 </div>
             </div>
         </div>
     </div>
     <div class="position-relative bg-primary">
-        <img alt="" src="assets/img/home/parallax-bg-4.jpg" class="bg-image bg-image-center op-3">
-        <div class="container py-7">
+        <div class="container py-5">
             <div class="row justify-content-md-center text-center">
                 <div class="col-md-10">
                     <h3 class="font-weight-light text-white">Our Clients</h3>
                     <hr class="hr-lg mt-3 mb-4 w-60px hr-white">
-                    <p class="mt-3 text-white">We work in partnership with our clients, meeting their needs for high-quality information, analysis and
-                        foresight across.
+                    <p class="mt-3 text-white">We work in partnership with our clients, meeting their needs for high-quality information.
                     </p>
                     <div class="row mt-6">
                         <div class="col-md-4 mb-4">
@@ -113,7 +108,6 @@
     </div>
     <div class="bg-white">
         <div class="container py-7">
-            <h6 class="font-weight-light text-muted text-center">testimonials</h6>
             <h3 class="text-center">What They Are Saying</h3>
             <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
             <div class="row">
@@ -145,5 +139,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}

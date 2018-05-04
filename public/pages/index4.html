@@ -1,206 +1,107 @@
 <!--  -->
-{% extends "../templates/master.html" %} {% block content %}
+{% extends "../templates/master.html" %}
 <!--  -->
-{% import '../templates/macros/testimonial.html' as macroTestimonials%}
+{% block content %}
 <!--  -->
 {% import '../templates/macros/blogs.html' as macroBlogs %}
 <!--  -->
 {% import '../templates/macros/clients.html' as macroClients%}
+<!--  -->
+{% import '../templates/macros/input_data.html' as inputData %}
+<!--  -->
+{% import '../templates/macros/testimonial.html' as macroTestimonials %}
+<!--  -->
+{% include "partials/header2.html" %}
 <div id="content">
-    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-hover owl-nav-edge owl-nav-bg-black"
-        data-owl-carousel-options='{"responsive":{"0":{"nav":false}, "600":{"nav":true}, "940":{"nav":true}},"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
-        <div class="item w-100 bg-dark">
-            <figure class="m-0 bg-gradient gradient-dark gradient-left-right">
-                <img src="assets/img/slider/slider_1.jpg" alt="">
+    <div class="owl-carousel owl-hero owl-theme owl-loaded owl-nav-hover" data-owl-carousel-options='{"responsive":{"0":{"nav":false}, "600":{"nav":true}, "940":{"nav":true}},"items":1, "nav":true,"margin":0, "dots":false, "loop":false, "autoHeight":true,"autoplay":false}'>
+        <div class="item item-height w-100">
+            <figure class="m-0">
+                <img src="assets/img/slider/slider_7.jpg" class="bg-image bg-image-center" alt="">
             </figure>
-            <div class="container px-5">
-                <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
-                    <h2 data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.2s">Global Project Management Services & Solutions</h2>
-                    <p data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
-                        nisl consequat pellentesque.</p>
-                    <a href="#" class="btn btn-primary mt-3" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Learn More</a>
-                    <a href="#" class="btn btn-outline-light mt-3" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1.5s">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="item w-100 bg-light">
-            <figure class="m-0 bg-gradient gradient-light gradient-left-right">
-                <img src="assets/img/slider/slider_2.jpg" alt="">
-            </figure>
-            <div class="container px-5">
-                <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-md-left w-50">
-                    <h2 data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.2s">Global Project Management Services & Solutions</h2>
-                    <p data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
-                        nisl consequat pellentesque.</p>
-                    <a href="#" class="btn btn-primary mt-3" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
-                    <a href="#" class="btn btn-outline-primary mt-3" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1.5s">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="item w-100 bg-primary">
-            <figure class="m-0 bg-gradient gradient-primary gradient-left-right">
-                <img src="assets/img/slider/slider_3.jpg" alt="">
-            </figure>
-            <div class="container px-5">
-                <div class="owl-caption-fluid px-4 pt-4 pb-7 text-center text-white text-md-left w-50">
-                    <h2 data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.2s">Global Project Management Services & Solutions</h2>
-                    <p data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et fringilla orci. Maecenas convallis
-                        nisl consequat pellentesque.</p>
-                    <a href="#" class="btn btn-dark mt-3" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
-                    <a href="#" class="btn btn-outline-light mt-3" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1.5s">Learn More</a>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="owl-caption px-4 px-md-0 text-white text-center w-50">
+                        <h2 data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">We provide dedicated innovative software solutions and services</h2>
+                        <p class="mt-3" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.5s">Posuere donec senectus nec viverra. Iaculis pulvinar aliquip eiusmod sit natoque. Scelerisque excepteur
+                            vitae occaecat convallis nam. Eu primis libero.</p>
+                        <a href="#" class="btn btn-primary mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
+                        <a href="#" class="btn btn-outline-light mt-4 ml-2" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="1s">Join Us Now</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="bg-white">
+        <div class="container pt-7 pb-6">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-6 text-center mb-6">
+                            <i class="ti-bar-chart-alt icon-3x text-primary"></i>
+                            <h4 class="mt-4 mb-3">
+                                Business Intelligence
+                            </h4>
+                            <p class="mb-0">Aliquam excepteur magna primis placerat nostrud imperdiet varius aliquam sagittis rutrum semper
+                                luctus vitae primis.</p>
+                        </div>
+                        <div class="col-md-6 text-center mb-6">
+                            <i class="ti-world icon-3x text-primary"></i>
+                            <h4 class="mt-4 mb-3">
+                                Managed Services
+                            </h4>
+                            <p class="mb-0">Aliquam excepteur magna primis placerat nostrud imperdiet varius aliquam sagittis rutrum semper
+                                luctus vitae primis.</p>
+                        </div>
+                        <div class="col-md-6 text-center mb-6">
+                            <i class="ti-timer icon-3x text-primary"></i>
+                            <h4 class="mt-4 mb-3">
+                                Systems Integration
+                            </h4>
+                            <p class="mb-0">Aliquam excepteur magna primis placerat nostrud imperdiet varius aliquam sagittis rutrum semper
+                                luctus vitae primis.</p>
+                        </div>
+                        <div class="col-md-6 text-center mb-6">
+                            <i class="ti-wallet icon-3x text-primary"></i>
+                            <h4 class="mt-4 mb-3">
+                                Systems Integration
+                            </h4>
+                            <p class="mb-0">Aliquam excepteur magna primis placerat nostrud imperdiet varius aliquam sagittis rutrum semper
+                                luctus vitae primis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative bg-primary">
         <div class="container py-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-6">
-                    <h3>Looking for insurance consulting?</h3>
-                    <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
-                </div>
-                <div class="col-md-6 text-md-right">
-                    <a href="#" class="btn btn-lg btn-primary">Send free enquiry</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-white">
-        <div class="container pt-5 pb-6">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card bg-shadow border-0 mb-4">
-                        <div class="d-block text-center p-4">
-                            <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-md-10">
+                    <h3 class="font-weight-light text-white">Our Clients</h3>
+                    <hr class="hr-lg mt-3 mb-4 w-60px hr-white">
+                    <p class="mt-3 text-white">We work in partnership with our clients, meeting their needs for high-quality information.
+                    </p>
+                    <div class="row mt-6">
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/img/client/logo2-light.png" alt="">
                         </div>
-                        <div class="card-body text-center">
-                            <h3 class="card-title h5">Professional Consulting</h3>
-                            <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
-                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
-                                fermentum, accumsan enim non, auctor neque.</p>
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/img/client/logo3-light.png" alt="">
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-shadow border-0 mb-4">
-                        <div class="d-block text-center p-4">
-                            <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/img/client/logo4-light.png" alt="">
                         </div>
-                        <div class="card-body text-center">
-                            <h3 class="card-title h5">Professional Consulting</h3>
-                            <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
-                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
-                                fermentum, accumsan enim non, auctor neque.</p>
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/img/client/logo5-light.png" alt="">
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-shadow border-0 mb-4">
-                        <div class="d-block text-center p-4">
-                            <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/img/client/logo6-light.png" alt="">
                         </div>
-                        <div class="card-body text-center">
-                            <h3 class="card-title h5">Professional Consulting</h3>
-                            <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
-                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
-                                fermentum, accumsan enim non, auctor neque.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-shadow border-0 mb-4">
-                        <div class="d-block text-center p-4">
-                            <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="card-title h5">Professional Consulting</h3>
-                            <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
-                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
-                                fermentum, accumsan enim non, auctor neque.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-shadow border-0 mb-4">
-                        <div class="d-block text-center p-4">
-                            <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="card-title h5">Professional Consulting</h3>
-                            <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
-                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
-                                fermentum, accumsan enim non, auctor neque.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-shadow border-0 mb-4">
-                        <div class="d-block text-center p-4">
-                            <img src="assets/img/home/bar-chart-2x-95x94.png" alt="">
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="card-title h5">Professional Consulting</h3>
-                            <p class="card-text">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam
-                                augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante. Nullam id lorem
-                                fermentum, accumsan enim non, auctor neque.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-light">
-        <div class="container py-7">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6 class="font-weight-light">Technology from tomorrow</h6>
-                    <h3 class="mb-4">We work in partnership with all the major technology suppliers</h3>
-                    <ul class="list-unstyled list-lg">
-                        <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Nulla laoreet metus at eros porttitor elementum.
-                        </li>
-                        <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Sed et purus eu dolor tempor fringilla eu eget quam.
-                        </li>
-                        <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Curabitur ullamcorper ultricies nisi. Nam eget dui.</li>
-                        <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Quisque euismod elit pellentesque massa consequat.</li>
-                        <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Sed non erat non est suscipit tincidunt.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <div class="row bg-white py-4">
-                        <div class="col-6">
-                            <div class="d-block text-center p-2">
-                                <img src="assets/img/client/dark-logo2-180x80.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-block text-center p-2">
-                                <img src="assets/img/client/dark-logo4-180x80.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-block text-center p-2">
-                                <img src="assets/img/client/dark-logo6-180x80.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-block text-center p-2">
-                                <img src="assets/img/client/dark-logo7-180x80.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-block text-center p-2">
-                                <img src="assets/img/client/dark-logo8-180x80.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-block text-center p-2">
-                                <img src="assets/img/client/dark-logo9-180x80.png" alt="">
-                            </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/img/client/logo1-light.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -208,34 +109,34 @@
         </div>
     </div>
     <div class="bg-white">
-        <div class="container pt-4 pb-4 pb-md-0">
-            <div class="row">
-                <div class="col-md-6 pb-4 pb-md-0">
-                    <img src="assets/img/service/business-man-2.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-md-6 my-auto text-center text-md-left pb-4 mp-md-0">
-                    <h3 class="mb-4">We have been trusted advisors to the world’s biggest companies, and we continue to grow with the help
-                        of more than
-                        <span class="text-primary">20,000</span> people in our global network</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
-                        ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non tincidunt
-                        dui. Curabitur pretium efficitur sem vitae fermentum. Maecenas fermentum erat non facilisis laoreet.</p>
-                    <a href="#" class="btn btn-primary mt-3">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-light">
         <div class="container py-7">
+            <h6 class="font-weight-light text-muted text-center">testimonials</h6>
+            <h3 class="text-center">What They Are Saying</h3>
+            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-dots-primary owl-nav-bg-black mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+                    <div class="owl-carousel owl-theme owl-loaded mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":false, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
                         {% for testimonial in testimonials %}
                         <div class="item mb-4">
                             {{ macroTestimonials.layout1(testimonial) }}
                         </div>
                         {% endfor %}
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-9 text-white text-center text-md-left">
+                    <h3>The most powerful services ever on the market.</h3>
+                    <p>Auctor labore taciti ex nisl ullamco. In cubilia aliquam viverra vestibulum litora blandit veniam labore
+                        ullamcorper.
+                    </p>
+                </div>
+                <div class="col-md-3 my-auto text-center text-md-right">
+                    <a href="#" class="btn btn-outline-light mt-4 mt-md-0">Contact Us Now</a>
                 </div>
             </div>
         </div>

@@ -54,10 +54,28 @@
             max-width: none;
         }
     }
+    &.bg-dark{
+        .navbar-brand{
+            .logo-dark{
+                display: none;
+            }
+        }
+    }
+    &.bg-light{
+        .navbar-brand{
+            .logo-light{
+                display: none;
+            }
+        }
+    }
     .navbar-brand {
         display: block;
         padding: 0;
         margin: 0;
+        .logo {
+            max-height: 26px;
+            max-width: none;
+        }
         @include media-breakpoint-down(md) {
             width: 100%;
             position: absolute;
@@ -284,7 +302,7 @@
         display: inline-block;
         height: 2px;
         width: 24px;
-        background: #333333;
+        background: $navbar-light-color;
     }
     span {
         position: absolute;
@@ -436,10 +454,45 @@ header {
         &.header-appear {
             .navbar {
                 box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+                &.bg-transparent{
+                    .navbar-brand{
+                        .logo-dark{
+                            display: inline;
+                        }
+                        .logo-light{
+                            display: none;
+                        }
+                    }
+                }
             }
             .navbar-scroll-top {
                 top: 0;
                 transition-duration: 0.3s;
+            }
+        }
+    }
+    &:not(.sticky) {
+        .navbar {
+            &.bg-transparent {
+                .navbar-nav> {
+                    .nav-item> {
+                        .nav-link {
+                            color: $navbar-dark-color;
+                        }
+                    }
+                }
+                .navbar-action {
+                    a {
+                        color: $navbar-dark-color;
+                    }
+                }
+                .navbar-toggler {
+                    span,
+                    span::before,
+                    span::after {
+                        background: $navbar-dark-color;
+                    }
+                }
             }
         }
     }
@@ -451,34 +504,8 @@ header {
     border-width: 0 0 1px;
 }
 
-.navbar-dark {
-    .navbar-action {
-        a {
-            color: #fff;
-        }
-    }
-    .navbar-toggler {
-        span,
-        span::before,
-        span::after {
-            background: #fff;
-        }
-    }
-
-}
-
 .header-appear {
     .navbar {
         background-color: $white !important;
-        .navbar-nav {
-            .nav-link {
-                color: $navbar-light-color;
-            }
-        }
-    }
-    .navbar-action {
-        a {
-            color: $navbar-light-color;
-        }
     }
 }
