@@ -1,9 +1,6 @@
-/*-----------------------------------------------------------------------------------*/
-
-
-/*	COMPONENT > Modal
-/*-----------------------------------------------------------------------------------*/
-
+//
+// Custom modal
+//
 %fullscreen {
     margin: 0;
     max-width: 100%;
@@ -21,12 +18,17 @@
             .modal-content {
                 border: none;
                 border-radius: 0;
-                box-shadow: inherit;                
+                box-shadow: inherit;
                 @extend %fullscreen;
             }
         }
     }
-    .close{
+    .close {
         outline: none;
     }
+}
+
+.modal-open {
+    overflow-y: auto;
+    padding-right: 0px !important;
 }

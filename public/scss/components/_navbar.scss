@@ -101,6 +101,7 @@
             padding-top: 15px;
             padding-bottom: 15px;
             background-color: $navbar-nav-bg-color;
+            box-shadow: $box-shadow;
         }
         .nav-item {
             @include media-breakpoint-down(md) {
@@ -431,7 +432,7 @@
     }
     .navbar-top {
         top: 35px;
-        box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6);
+        box-shadow: $box-shadow;
     }
 }
 
@@ -453,7 +454,7 @@ header {
         }
         &.header-appear {
             .navbar {
-                box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+                box-shadow: $box-shadow;
                 &.bg-transparent{
                     .navbar-brand{
                         .logo-dark{
