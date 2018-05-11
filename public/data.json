@@ -261,19 +261,31 @@
         "img": "assets/img/testimonial/testimonial-2-400x400.jpg"
     }],
     "clients": [{
-        "img": "assets/img/client/logo2-light.png",
-        "img_dark": "assets/img/client/logo2-dark.png"
+        "img": "assets/img/client/client-1-light-180x80.png",
+        "img_dark": "assets/img/client/client-1-dark-180x80.png"
     }, {
-        "img": "assets/img/client/logo3-light.png",
+        "img": "assets/img/client/client-2-light-180x80.png",
         "img_dark": "assets/img/client/logo3-dark.png"
     }, {
-        "img": "assets/img/client/logo4-light.png",
+        "img": "assets/img/client/client-3-light-180x80.png",
         "img_dark": "assets/img/client/logo4-dark.png"
     }, {
-        "img": "assets/img/client/logo5-light.png",
+        "img": "assets/img/client/client-4-light-180x80.png",
         "img_dark": "assets/img/client/logo5-dark.png"
     }, {
-        "img": "assets/img/client/logo1-light.png",
+        "img": "assets/img/client/client-5-light-180x80.png",
+        "img_dark": "assets/img/client/logo1-dark.png"
+    }, {
+        "img": "assets/img/client/client-6-light-180x80.png",
+        "img_dark": "assets/img/client/logo1-dark.png"
+    }, {
+        "img": "assets/img/client/client-7-light-180x80.png",
+        "img_dark": "assets/img/client/logo1-dark.png"
+    }, {
+        "img": "assets/img/client/client-8-light-180x80.png",
+        "img_dark": "assets/img/client/logo1-dark.png"
+    }, {
+        "img": "assets/img/client/client-9-light-180x80.png",
         "img_dark": "assets/img/client/logo1-dark.png"
     }]
 

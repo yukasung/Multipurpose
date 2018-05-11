@@ -2567,7 +2567,7 @@ fieldset:disabled a.btn {
     color: #6c757d; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1.75rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
@@ -2836,8 +2836,8 @@ tbody.collapse.show {
   padding-left: 0.375rem; }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 1.3125rem;
+  padding-left: 1.3125rem; }
 
 .btn-group-vertical {
   -webkit-box-orient: vertical;
@@ -10346,9 +10346,6 @@ header:not(.sticky) .navbar.bg-transparent .navbar-toggler span::after {
 .owl-nav-hover:hover .owl-nav > div {
   opacity: 1; }
 
-/*-----------------------------------------------------------------------------------*/
-/*  COMPONENT > FORMS
-/*-----------------------------------------------------------------------------------*/
 .input-icon {
   position: relative; }
   .input-icon .input-btn {
@@ -10928,9 +10925,9 @@ hr.line-dotted {
 .op-10 {
   opacity: 1 !important; }
 
-/*-----------------------------------------------------------------------------------*/
-/*  UTILITIES > BORDER
-/*-----------------------------------------------------------------------------------*/
+.border-radius-30 {
+  border-radius: 30px; }
+
 .overlay {
   position: relative;
   display: inline-block;
