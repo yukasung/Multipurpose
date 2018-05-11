@@ -10556,9 +10556,14 @@ header:not(.sticky) .navbar.bg-transparent .navbar-toggler span::after {
       display: table-cell;
       vertical-align: middle; }
 
-/*-----------------------------------------------------------------------------------*/
-/*	COMPONENT > LIST GROUP
-/*-----------------------------------------------------------------------------------*/
+.list-sm li {
+  padding-top: 4px;
+  padding-bottom: 4px; }
+
+.list-md li {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
 .list-lg li {
   padding-top: 8px;
   padding-bottom: 8px; }
@@ -10926,7 +10931,10 @@ hr.line-dotted {
   opacity: 1 !important; }
 
 .border-radius-30 {
-  border-radius: 30px; }
+  border-radius: 30px !important; }
+
+.border-gray {
+  border-color: #67666A !important; }
 
 .overlay {
   position: relative;
@@ -11022,7 +11030,7 @@ hr.line-dotted {
   font-size: 14px; }
 
 .font-size-15 {
-  font-size: 14px; }
+  font-size: 15px; }
 
 .font-size-16 {
   font-size: 16px; }
