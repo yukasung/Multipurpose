@@ -5,6 +5,10 @@
     color: #000000 !important;
 }
 
+.text-gray{
+    color: #e0e0e0 !important;
+}
+
 .text-body {
     color: $body-color;
     a {
@@ -15,16 +19,20 @@
     }
 }
 
+.bg-black{
+    background-color: #1c1c20;
+}
+
+.bg-darken{
+    background-color: #28282e;
+}
+
 .bg-overlay-dark {
     background: rgba(0, 0, 0, 0.35);
 }
 
 .bg-shadow {
     box-shadow: $box-shadow;
-}
-
-.bg-transparent {
-    background-color: transparent !important;
 }
 
 .bg-gradient {

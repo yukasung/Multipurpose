@@ -10341,10 +10341,34 @@ header:not(.sticky) .navbar.bg-transparent .navbar-toggler span::after {
   color: #343a40; }
 
 .owl-nav-hover .owl-nav > div {
-  opacity: 0; }
+  display: none !important; }
 
 .owl-nav-hover:hover .owl-nav > div {
-  opacity: 1; }
+  display: block !important; }
+
+@media (min-width: 576px) {
+  .owl-nav-sm-hover .owl-nav > div {
+    display: none !important; }
+  .owl-nav-sm-hover:hover .owl-nav > div {
+    display: block !important; } }
+
+@media (min-width: 768px) {
+  .owl-nav-md-hover .owl-nav > div {
+    display: none !important; }
+  .owl-nav-md-hover:hover .owl-nav > div {
+    display: block !important; } }
+
+@media (min-width: 992px) {
+  .owl-nav-lg-hover .owl-nav > div {
+    display: none !important; }
+  .owl-nav-lg-hover:hover .owl-nav > div {
+    display: block !important; } }
+
+@media (min-width: 1200px) {
+  .owl-nav-xl-hover .owl-nav > div {
+    display: none !important; }
+  .owl-nav-xl-hover:hover .owl-nav > div {
+    display: block !important; } }
 
 .input-icon {
   position: relative; }
@@ -10847,6 +10871,9 @@ hr.line-dotted {
 .text-black {
   color: #000000 !important; }
 
+.text-gray {
+  color: #e0e0e0 !important; }
+
 .text-body {
   color: #333333; }
   .text-body a {
@@ -10854,14 +10881,17 @@ hr.line-dotted {
     .text-body a:hover {
       color: #3498db; }
 
+.bg-black {
+  background-color: #1c1c20; }
+
+.bg-darken {
+  background-color: #28282e; }
+
 .bg-overlay-dark {
   background: rgba(0, 0, 0, 0.35); }
 
 .bg-shadow {
   box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
-
-.bg-transparent {
-  background-color: transparent !important; }
 
 .bg-gradient:after {
   content: '';
@@ -11020,6 +11050,9 @@ hr.line-dotted {
 .font-size-inherit {
   font-size: inherit; }
 
+.font-size-11 {
+  font-size: 11px; }
+
 .font-size-12 {
   font-size: 12px; }
 
@@ -11040,6 +11073,9 @@ hr.line-dotted {
 
 .font-size-21 {
   font-size: 21px; }
+
+.line-height-26 {
+  line-height: 26px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > POSITION
