@@ -10884,8 +10884,11 @@ hr.line-dotted {
 .bg-black {
   background-color: #1c1c20; }
 
-.bg-darken {
+.bg-darker {
   background-color: #28282e; }
+
+.bg-darkest {
+  background-color: #1c1c20; }
 
 .bg-overlay-dark {
   background: rgba(0, 0, 0, 0.35); }
