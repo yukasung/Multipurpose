@@ -1726,7 +1726,7 @@ pre {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #e7e7e7;
   border-radius: 0;
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -2990,7 +2990,7 @@ tbody.collapse.show {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 1px solid #e7e7e7;
   border-radius: 0; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -3116,7 +3116,7 @@ tbody.collapse.show {
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid #e7e7e7;
   border-radius: 0.25rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -3188,7 +3188,7 @@ tbody.collapse.show {
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: 1px solid #e7e7e7;
   border-radius: 0; }
   .custom-file-label::after {
     position: absolute;
@@ -3204,7 +3204,7 @@ tbody.collapse.show {
     color: #495057;
     content: "Browse";
     background-color: #e9ecef;
-    border-left: 1px solid #ced4da;
+    border-left: 1px solid #e7e7e7;
     border-radius: 0 0 0 0; }
 
 .nav {
@@ -10370,6 +10370,9 @@ header:not(.sticky) .navbar.bg-transparent .navbar-toggler span::after {
   .owl-nav-xl-hover:hover .owl-nav > div {
     display: block !important; } }
 
+.card .card-link {
+  font-size: 14px; }
+
 .input-icon {
   position: relative; }
   .input-icon .input-btn {
@@ -10889,6 +10892,9 @@ hr.line-dotted {
     color: inherit; }
     .text-body a:hover {
       color: #3498db; }
+
+.bg-transparent {
+  background-color: transparent; }
 
 .bg-black {
   background-color: #1c1c20; }
