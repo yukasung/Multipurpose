@@ -18,10 +18,16 @@
 
 <!-- Layout 2 -->
 {% macro layout2(testimonial) %}
-
-<img src="{{ testimonial.img }}" class="rounded-circle d-inline w-max-90px">
-<p class="lead mt-4">{{ testimonial.desc }}</p>
-<h4 class="mt-4">{{ testimonial.name }}</h4>
-<p class="mb-2">{{ testimonial.position }}</p>
+<div class="row">
+    <div class="col-md-3">
+        <img src="{{ testimonial.img }}" class="rounded-circle d-inline">
+    </div>
+    <div class="col-md-9">
+        <p class="lead mt-4">Habitant nunclorem pharetra cursus torquent mus nisi consequat. Mollis odio metus dolor cras pretium. Cubilia laoreet
+            porttitor tellus faucibus litora ac mollis id. Cubilia magnis est aenean vehicula.</p>
+        <h4 class="h5 mt-4">{{ testimonial.name }}</h4>
+        <p class="op-6">{{ testimonial.position }}</p>
+    </div>
+</div>
 
 {% endmacro %}
