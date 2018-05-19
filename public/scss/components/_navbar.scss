@@ -61,7 +61,8 @@
             }
         }
     }
-    &.bg-light{
+    &.bg-light,
+    &.bg-white{
         .navbar-brand{
             .logo-light{
                 display: none;

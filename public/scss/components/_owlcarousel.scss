@@ -27,7 +27,7 @@
                 flex: 1 0 auto;
             }
             &.item-height {
-                height: 650px;
+                height: 592px;
             }
         }
     }
@@ -147,6 +147,7 @@
     .owl-caption-fluid {
         @include media-breakpoint-down(sm) {
             width: 100% !important;
+            z-index: 1;
         }
         @include media-breakpoint-up(sm) {
             position: absolute;
@@ -208,7 +209,7 @@
         >div {
             width: 28px;
             color: #ffffff;
-            background: $dark;
+            background: #252525;
             &:after {
                 font-size: 20px;
             }
@@ -220,6 +221,9 @@
     .owl-nav {
         >div {
             color: $dark;
+            &:not(:hover){
+                opacity: 0.5;
+            }
         }
     }
 }
@@ -227,7 +231,6 @@
 //
 // Utilities for show nav when hover event active
 //
-
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
