@@ -54,15 +54,14 @@
             max-width: none;
         }
     }
-    &.bg-dark{
+    &.navbar-dark{
         .navbar-brand{
             .logo-dark{
                 display: none;
             }
         }
     }
-    &.bg-light,
-    &.bg-white{
+    &.navbar-light{
         .navbar-brand{
             .logo-light{
                 display: none;

@@ -126,7 +126,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-white">
+    <div class="bg-primary">
         <div class="container py-7">
             <div class="row">
                 <div class="col-md-6 my-auto">
@@ -134,32 +134,19 @@
                 </div>
                 <div class="col-md-5 offset-md-1 my-auto">
                     <div class="d-block mt-6 mt-md-0">
-                        <h6 class="font-weight-light text-muted">We are there for you when you need us</h6>
-                        <h3>Careers with Aware</h3>
-                        <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
-                        <p>Tempus sapien sodales nec rhoncus nullam justo cubilia commodo vivamus. Laboris velit dignissim nullam
+                        <h6 class="font-weight-light text-white">We are there for you when you need us</h6>
+                        <h3 class="text-white">Careers with Aware</h3>
+                        <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-white">
+                        <p class="text-white">Tempus sapien sodales nec rhoncus nullam justo cubilia commodo vivamus. Laboris velit dignissim nullam
                             aliqua. Volutpat sociis tempus a scelerisque reprehenderit pariatur dictum sint lacus cubilia
                             a ante occaecat torquent augue cuctor montes dolore fames eiusmod penatibus.
                         </p>
-                        <a href="#" class="btn btn-primary text-uppercase mt-3">Join Us Now</a>
+                        <a href="#" class="btn btn-light text-uppercase mt-3">Join Us Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-light">
-            <div class="container py-7">
-                <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":true,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": false}}}'>
-                    {% set testimonials = testimonials.slice(0,3) %}
-                    <!--  -->
-                    {% for testimonial in testimonials %}
-                    <div class="item">
-                        {{ macroTestimonials.layout2(testimonial) }}
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
@@ -190,7 +177,19 @@
             </div>
         </div>
     </div>
-    
+    <div class="bg-light">
+            <div class="container py-7">
+                <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":true,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": false}}}'>
+                    {% set testimonials = testimonials.slice(0,3) %}
+                    <!--  -->
+                    {% for testimonial in testimonials %}
+                    <div class="item">
+                        {{ macroTestimonials.layout2(testimonial) }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
 </div>
 
 {% endblock %}

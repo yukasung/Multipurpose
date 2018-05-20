@@ -9798,9 +9798,9 @@ input[type="submit"] {
   @media (max-width: 767.98px) {
     .navbar .container {
       max-width: none; } }
-  .navbar.bg-dark .navbar-brand .logo-dark {
+  .navbar.navbar-dark .navbar-brand .logo-dark {
     display: none; }
-  .navbar.bg-light .navbar-brand .logo-light, .navbar.bg-white .navbar-brand .logo-light {
+  .navbar.navbar-light .navbar-brand .logo-light {
     display: none; }
   .navbar .navbar-brand {
     display: block;
