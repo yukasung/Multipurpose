@@ -9720,6 +9720,25 @@ input[type="submit"] {
     .caption-img-overlay-fluid.caption-right {
       right: 80px; } }
 
+.bg-image-center {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-image,
+.bg-image-fluid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover; }
+
+@media (max-width: 767.98px) {
+  .bg-image-fluid {
+    position: relative; } }
+
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > SIDEBAR
 /*-----------------------------------------------------------------------------------*/
@@ -10312,35 +10331,6 @@ header.sticky.header-appear .navbar-nav .nav-link {
 @media (max-width: 767.98px) {
   .owl-item figure:after {
     background: none !important; } }
-
-.owl-item .owl-caption {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 1;
-  margin: 0 auto;
-  overflow: hidden; }
-  @media (max-width: 767.98px) {
-    .owl-item .owl-caption {
-      width: 100% !important;
-      left: 0; } }
-
-@media (max-width: 767.98px) {
-  .owl-item .owl-caption-fluid {
-    width: 100% !important;
-    z-index: 1; } }
-
-@media (min-width: 576px) {
-  .owl-item .owl-caption-fluid {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 1;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 !important; } }
 
 .owl-dots-inside .owl-dots {
   position: absolute;
@@ -10968,20 +10958,6 @@ hr.line-dotted {
 .bg-gradient.gradient-light.gradient-left-right:after {
   background: -webkit-radial-gradient(center left, circle, #f8f9fa, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
-
-.bg-image-center {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  object-fit: cover; }
 
 .op-0 {
   opacity: 0 !important; }
