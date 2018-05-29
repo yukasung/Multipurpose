@@ -98,11 +98,11 @@ input[type="submit"] {
 }
 
 .caption-img-overlay-fluid {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         width: 100% !important;
         z-index: 1;
     }
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

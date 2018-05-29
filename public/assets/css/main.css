@@ -9702,12 +9702,12 @@ input[type="submit"] {
   left: 0;
   padding: 1.25rem; }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
   .caption-img-overlay-fluid {
     width: 100% !important;
     z-index: 1; } }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .caption-img-overlay-fluid {
     position: absolute;
     top: 50%;
