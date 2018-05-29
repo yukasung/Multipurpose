@@ -54,16 +54,36 @@
             max-width: none;
         }
     }
-    &.navbar-dark{
-        .navbar-brand{
-            .logo-dark{
+    &.navbar-dark {
+        .navbar-brand {
+            .logo-dark {
                 display: none;
             }
         }
+        .navbar-action {
+            >ul {
+                a {
+                    color: $navbar-dark-color;
+                    text-decoration: none;
+                    outline: 0;
+                }
+            }
+        }
+        .navbar-toggler {
+            span,
+            span::before,
+            span::after {
+                position: absolute;
+                display: inline-block;
+                height: 2px;
+                width: 24px;
+                background: $navbar-dark-color;
+            }
+        }
     }
-    &.navbar-light{
-        .navbar-brand{
-            .logo-light{
+    &.navbar-light {
+        .navbar-brand {
+            .logo-light {
                 display: none;
             }
         }
@@ -455,44 +475,29 @@ header {
         &.header-appear {
             .navbar {
                 box-shadow: $box-shadow;
-                &.bg-transparent{
-                    .navbar-brand{
-                        .logo-dark{
-                            display: inline;
-                        }
-                        .logo-light{
-                            display: none;
-                        }
-                    }
-                }
             }
             .navbar-scroll-top {
                 top: 0;
                 transition-duration: 0.3s;
             }
-        }
-    }
-    &:not(.sticky) {
-        .navbar {
-            &.bg-transparent {
-                .navbar-nav> {
-                    .nav-item> {
-                        .nav-link {
-                            color: $navbar-dark-color;
-                        }
-                    }
+            .navbar-brand {
+                .logo-dark {
+                    display: block;
                 }
-                .navbar-action {
+                .logo-light {
+                    display: none;
+                }
+            }
+            .navbar-action {
+                >ul {
                     a {
-                        color: $navbar-dark-color;
+                        color: $navbar-light-color;
                     }
                 }
-                .navbar-toggler {
-                    span,
-                    span::before,
-                    span::after {
-                        background: $navbar-dark-color;
-                    }
+            }
+            .navbar-nav {
+                .nav-link {
+                    color: $navbar-light-color;
                 }
             }
         }

@@ -1,14 +1,6 @@
 /*	UTILITIES > SIZING
 /*-----------------------------------------------------------------------------------*/
 
-.w-5{
-    width: 5% !important;
-}
-
-.w-10{
-    width: 10% !important;
-}
-
 .w-60px{
     width: 60px !important;
 }
@@ -22,4 +14,8 @@
 
 .h-592px{
     height: 592px !important;
+}
+
+.h-100vh {
+    min-height: 100vh;
 }

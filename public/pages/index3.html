@@ -96,7 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-white py-6 border-top border-bottom">
+    <div class="bg-white pt-6 pb-7 border-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
@@ -127,13 +127,13 @@
         </div>
     </div>
     <div class="bg-primary">
-        <div class="container py-7">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 my-auto">
-                    <img src="assets/img/other/other-1-540x372.jpg" class="img-fluid" alt="">
+                <div class="col-md-6">
+                    <img src="assets/img/other/other-5-1600x1067.jpg" class="bg-image" alt="">
                 </div>
                 <div class="col-md-6 my-auto">
-                    <div class="d-block ml-4">
+                    <div class="d-block p-6">
                         <h3 class="text-white mb-4">We are there for you when you need us</h3>
                         <p class="text-white">Tempus sapien sodales nec rhoncus nullam justo cubilia commodo vivamus. Laboris velit dignissim nullam
                             aliqua. Volutpat sociis tempus a scelerisque reprehenderit pariatur dictum sint lacus cubilia
@@ -189,5 +189,35 @@
         </div>
     </div>
 </div>
+<div class="bg-white">
+    <div class="container pt-7 pb-6">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Latest Technology News</h3>
+                <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
+            </div>
+            <div class="col-md-6">
+                <div class="row justify-content-end">
+                    <label for="staticEmail" class="col-sm-5 col-form-label">Subscribe to our newsletter</label>
+                    <div class="col-sm-6">
+                        <div class="form-group input-icon">
+                            <button type="submit" class="input-btn">
+                                <i class="ion-ios-arrow-right"></i>
+                            </button>
+                            <input type="text" class="form-control border-radius-30" name="" placeholder="Your Email">
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+        <div class="row mt-5">
+            {% set posts = posts.slice(0,6) %} {% for post in posts %}
+            <div class="col-md-4">
+                {{ macroBlogs.default(post) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}
