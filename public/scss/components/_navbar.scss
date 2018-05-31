@@ -170,7 +170,7 @@
     }
     .dropdown-submenu {
         >a {
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 &:after {
                     @include arrow-right;
                 }
@@ -216,7 +216,7 @@
             padding-bottom: 0;
         }
         .nav-item {
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 padding-left: 28px;
                 padding-right: 28px;
             }
@@ -497,7 +497,9 @@ header {
             }
             .navbar-nav {
                 .nav-link {
-                    color: $navbar-light-color;
+                    @include media-breakpoint-up(lg) {
+                        color: $navbar-light-color;
+                    }
                 }
             }
         }

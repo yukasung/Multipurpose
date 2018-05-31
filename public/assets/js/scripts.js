@@ -481,7 +481,7 @@ var theme = {
                 if ($('.header-top').length > 0) {
                     topSpaceHeight = topSpaceHeight + $('.header-top').outerHeight();
                 }
-                topSpaceHeight -= 1;
+                topSpaceHeight -= 2;
                 $('.top-space').css('margin-top', topSpaceHeight + "px");
             }
         }
