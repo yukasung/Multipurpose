@@ -1,9 +1,15 @@
 {% set page_title = "Blog Single"%} 
+<!--  -->
 {% set page_active_link = "Full Width" %} 
+<!--  -->
 {% set page_link2 = "Single" %} 
+<!--  -->
 {% extends "../templates/master.html" %} 
+<!--  -->
 {% block content %} 
+<!--  -->
 {% include "../templates/partials/page_title.html" %} 
+<!--  -->
 {% import '../templates/macros/posts.html' as macroPosts %}
 <!--  -->
 {% include "partials/header.html" %}
@@ -11,7 +17,7 @@
     <div class="bg-white">
         <div class="container py-7">
             <div class="row justify-content-center">
-                <div class="col-md-12">
+                <div class="col-12">
                     {{ macroPosts.standard() }}
                 </div>
             </div>

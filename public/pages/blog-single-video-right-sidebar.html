@@ -1,8 +1,13 @@
-{% set page_title = "Blog Single"%} 
-{% set page_active_link = "Right Sitebar" %} 
-{% set page_link2 = "Single" %} 
-{% extends "../templates/master.html" %} 
-{% block content %} {% include "../templates/partials/page_title.html" %} 
+{% set page_title = "Blog Single - Video Post"%}
+<!--  -->
+{% set page_active_link = "Video Post" %}
+<!--  -->
+{% set page_link2 = "Single" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %} {% include "../templates/partials/page_title.html" %}
+<!--  -->
 {% import '../templates/macros/posts.html' as macroPosts %}
 <!--  -->
 {% include "partials/header.html" %}
@@ -10,10 +15,10 @@
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-12 col-lg-8">
                     {{ macroPosts.video() }}
                 </div>
-                <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
+                <aside class="col-12 col-lg-4 sidebar pl-lg-4 mt-5 mt-lg-0">
                     {% include "../templates/partials/sidebar.html" %}
                 </aside>
             </div>
