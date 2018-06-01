@@ -1,5 +1,5 @@
 <!-- Page title -->
-{% set page_title = "Blog Default"%}
+{% set page_title = "Blog – Left Sidebar"%}
 <!-- Page Active -->
 {% set page_active_link = "Left Sidebar" %}
 <!-- Page Link 2 -->
@@ -14,9 +14,9 @@
 {% include "partials/header.html" %}
 <div id="content">
     <div class="bg-white">
-        <div class="container py-6 py-md-7">
+        <div class="container py-6 py-lg-7">
             <div class="row">
-                <div class="col-md-8 order-1 order-md-2">
+                <div class="col-12 col-lg-8 order-1 order-lg-2">
                     {{ macroBlogs.standard() }}
                     <!--  -->
                     {{ macroBlogs.owlCarousel() }}
@@ -25,7 +25,7 @@
                     <!--  -->
                     {% include "../templates/partials/pagination.html" %}
                 </div>
-                <aside class="col-md-4 order-2 order-md-1 sidebar pr-md-4 mt-5 mt-md-0">
+                <aside class="col-12 col-lg-4 order-2 order-lg-1 sidebar pr-lg-4 mt-5 mt-lg-0">
                     {% include "../templates/partials/sidebar.html" %}
                 </aside>
             </div>

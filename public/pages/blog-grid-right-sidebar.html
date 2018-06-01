@@ -1,6 +1,6 @@
-{% set page_title = "Blog Grid"%} 
+{% set page_title = "Blog Grid - Right Sidebar"%} 
 <!--  -->
-{% set page_active_link = "Right Sitebar" %} 
+{% set page_active_link = "Right Sidebar" %} 
 <!--  -->
 {% set page_link2 = "Blog" %} 
 <!--  -->
@@ -15,19 +15,19 @@
 {% include "partials/header.html" %}
 <div id="content">
     <div class="bg-white">
-        <div class="container py-6 py-md-7">
+        <div class="container py-6 py-lg-7">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-12 col-lg-8">
                     <div class="row">
                         {% set posts = posts.slice(0,8) %} {% for post in posts %}
-                        <div class="col-md-6">
+                        <div class="col-12 col-sm-6">
                             {{ macroBlogs.default(post) }}
                         </div>
                         {% endfor %}
                     </div>
                     {% include "../templates/partials/pagination.html" %}
                 </div>
-                <aside class="col-md-4 sidebar pl-md-4 mt-5 mt-md-0">
+                <aside class="col-12 col-lg-4 sidebar pl-lg-4 mt-5 mt-lg-0">
                     {% include "../templates/partials/sidebar.html" %}
                 </aside>
             </div>
