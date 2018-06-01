@@ -198,7 +198,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #7d7d7d;
   text-align: left;
   caption-side: bottom; }
 
@@ -1878,7 +1878,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
   .form-check-input:disabled ~ .form-check-label {
-    color: #6c757d; }
+    color: #7d7d7d; }
 
 .form-check-label {
   margin-bottom: 0; }
@@ -9562,7 +9562,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-muted {
-  color: #6c757d !important; }
+  color: #7d7d7d !important; }
 
 .text-hide {
   font: 0/0 a;
