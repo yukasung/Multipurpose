@@ -4,13 +4,13 @@
 // Sass utilities
 @import 'helpers/variables';
 
+// Import Bootstrap parts
+@import "vendor/bootstrap/scss/bootstrap";
+
 // Base stuff
 // @import 'base/reset';
 // @import "base/font";
 @import "base/typography";
-
-// Import Bootstrap parts
-@import "vendor/bootstrap/scss/bootstrap";
 
 // Layout related stylesheets
 @import 'masters/header';

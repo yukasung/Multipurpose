@@ -1,16 +1,3 @@
-blockquote {
-  border-left: 3px solid #3498db !important;
-  position: relative;
-  margin: 30px 0;
-  padding: 15px 30px;
-  font-style: italic; }
-
-.text-decoration-none {
-  text-decoration: none; }
-
-a {
-  outline: none; }
-
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -315,7 +302,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
   color: inherit; }
 
@@ -9625,6 +9612,42 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+blockquote {
+  border-left: 3px solid #3498db !important;
+  position: relative;
+  margin: 30px 0;
+  padding: 15px 30px;
+  font-style: italic; }
+
+.text-decoration-none {
+  text-decoration: none; }
+
+a {
+  outline: none; }
+
+.headline-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.headline-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.headline-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.headline-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (max-width: 1199.98px) {
+    .headline-4 {
+      font-size: 2.375rem; } }
+
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > MASTER
 /*-----------------------------------------------------------------------------------*/
@@ -11101,6 +11124,12 @@ hr.line-dotted {
 
 .line-height-26 {
   line-height: 26px; }
+
+.font-weight-500 {
+  font-weight: 500 !important; }
+
+.font-weight-600 {
+  font-weight: 600 !important; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  UTILITIES > POSITION

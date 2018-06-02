@@ -1,7 +1,6 @@
 //
 // Custom Typography
 //
-
 blockquote {
     border-left: 3px solid $primary !important;
     position: relative;
@@ -14,6 +13,33 @@ blockquote {
     text-decoration: none;
 }
 
-a{
+a {
     outline: none;
+}
+
+.headline-1 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.headline-2 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.headline-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.headline-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    @include media-breakpoint-down(lg) {
+        font-size: 2.375rem;
+    }
 }
