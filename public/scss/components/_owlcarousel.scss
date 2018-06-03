@@ -38,6 +38,13 @@
         .item {
             height: 100%;
             margin-top: 0;
+            .bg-gradient {
+                &:after {
+                    @include media-breakpoint-down(lg) {
+                        content: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -194,7 +201,7 @@
     .owl-nav {
         >div {
             color: $dark;
-            &:not(:hover){
+            &:not(:hover) {
                 opacity: 0.5;
             }
         }
