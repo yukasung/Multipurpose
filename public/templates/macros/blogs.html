@@ -1,6 +1,6 @@
 <!-- Default -->
-{% macro default(post) %}
-<div class="card border-0 mb-4">
+{% macro default(post, card_css="border-0 mb-4") %}
+<div class="card {{ card_css }}">
     <a href="blog-single-right-sidebar.html">
         <img src="{{ post.img }}" alt="" class="img-fluid"> 
     </a>
