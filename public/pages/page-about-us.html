@@ -8,8 +8,6 @@
 <!--  -->
 {% block content %}
 <!--  -->
-{% include "../templates/partials/page_title.html" %}
-<!--  -->
 {% import '../templates/macros/teams.html' as macroTeams %}
 <!--  -->
 {% import '../templates/macros/partners.html' as macroPartners %}
@@ -20,39 +18,36 @@
 <!--  -->
 {% import '../templates/macros/components.html' as macroComponents %}
 <!--  -->
+{% include "../templates/partials/page_title.html" %}
+<!--  -->
 {% include "partials/header.html" %}
+
 <div id="content">
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-6 pr-md-5">
-                    <h3>Our Mission</h3>
-                    <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
-                    <p>Convallis risus fames vel a. Orci tincidunt ullamco commodo fringilla sed volutpat himenaeos auctor.
-                        Himenaeos consequat fermentum netus. Faucibus justo incididunt varius erat. Semper pellentesque culpa
-                        laboris gravida tortor imperdiet nostra.</p>
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="assets/img/other/other-14-800x863.jpg" alt="">
+                </div>
+                <div class="col-lg-6 pl-lg-6 mt-4 mt-lg-0">
+                    <h3>Our Vision</h3>
+                    <p>We are idea-driven, working with a strong focus on design and user experience. Our projects should engage
+                        your audience, we want to create wonderful digital things that people love to be part of and use.
+                        That's what your brand and audience deserve.</p>
+                    <h3 class="mt-4">Our Mission</h3>
+                    <p>We are idea-driven, working with a strong focus on design and user experience. Our projects should engage
+                        your audience, we want to create wonderful digital things that people love to be part.</p>
                     <ul class="list-unstyled list-lg">
                         <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Lorem ipsum dolor sit amet
+                            <i class="ti-check-box icon-lg text-primary mr-3"></i>Nulla laoreet metus at eros porttitor elementum.
                         </li>
                         <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Consectetur adipiscing elit</li>
+                            <i class="ti-check-box icon-lg text-primary mr-3"></i>Sed et purus eu dolor tempor fringilla eu eget quam.</li>
                         <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Integer molestie lorem at massa</li>
+                            <i class="ti-check-box icon-lg text-primary mr-3"></i>Quisque euismod elit pellentesque massa consequat.</li>
                         <li>
-                            <i class="ti-check-box icon-lg text-primary mr-2"></i>Facilisis in pretium nisl aliquet</li>
+                            <i class="ti-check-box icon-lg text-primary mr-3"></i>Sed non erat non est suscipit tincidunt.</li>
                     </ul>
-                </div>
-                <div class="col-md-6 pl-md-5">
-                    <h3>Our Vision</h3>
-                    <hr class="hr-lg mt-3 mx-0 mb-4 w-60px hr-primary">
-                    <p>Maecenas nostrud vulputate nisi voluptate integer torquent hendrerit tortor at blandit. Ipsum senectus
-                        bibendum pulvinar curabitur. Cursus cupidatat taciti odio. Imperdiet varius fames consectetuer
-                        convallis voluptate. Nulla lobortis adipisicing dictum feugiat veniam excepteur porttitor fusce
-                        pulvinar nostrud netus orci magnis faucibus conubia pariatur veniam esse posuere rutrum.</p>
-                    <p>Congue maecenas occaecat primis conubia fames id aliqua dapibus. Pretium netus condimentum vulputate
-                        labore vulputate ullamcorper dolore suspendisse gravida convallis eiusmod pulvinar deserunt
-                        consequat imperdiet qui sint porta montes.</p>
                 </div>
             </div>
         </div>
@@ -60,13 +55,13 @@
     <div class="bg-primary">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-6 text-white text-center text-md-left">
+                <div class="col-lg-6 text-white text-center text-lg-left">
                     <h3 class="mb-3">The polling numbers don't lie</h3>
                     <p>Libero enim vulputate lorem felis fringilla. Curabitur auctor cillum rutrum posuere. Laborum occaecat
                         euismod litora himenaeos lorem.</p>
-                    <a href="#" class="btn btn btn-outline-light mt-4">Read More</a>
+                    <a href="#" class="btn btn btn-dark mt-4">Read More</a>
                 </div>
-                <div class="col-md-6 text-white mt-5 mt-md-0">
+                <div class="col-lg-6 text-white mt-5 mt-lg-0">
                     <div class="row justify-content-md-center text-center">
                         <div class="col-6">
                             <div class="counter">
@@ -98,52 +93,45 @@
         </div>
     </div>
     <div class="bg-white">
-        <div class="container py-7">
+        <div class="container pt-7 pb-6">
             <h6 class="font-weight-light text-muted text-center">We are a global team</h6>
             <h3 class="text-center">We Are Known For Our Quality</h3>
-            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
             <div class="row mt-6">
                 {% set teams = teams.slice(0,4) %} {% for team in teams %}
-                <div class="col-md-3">
-                    {{ macroTeams.layout1(team) }}
+                <div class="col-md-6 col-lg-3">
+                    {{ macroTeams.layout1(team,"border-0 mb-0") }}
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-    <div class="bg-primary">
+    <div class="bg-light">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-6 pr-md-5 text-white">
-                    <h3 class="mb-3">Our History</h3>
-                    <p>tincidunt ante et, tempus metus. Nunc pellentesque purus odio, eu dictum mi luctus vitae. Class aptent
-                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas fermentum
-                        interdum elit, vel laoreet elit ultricies quis. Nam massa nisl.</p>
-                    <p>Maecenas fermentum interdum elit, vel laoreet elit ultricies quis. Nam massa nisl, bibendum ut lectus
-                        ac, sodales laoreet nibh. Praesent cursus mauris at purus volutpat ultrices.</p>
-                    <a href="#" class="btn btn btn-outline-light mt-3">Read More</a>
-                </div>
-                <div class="col-md-6 pl-md-5 pt-4 pt-md-0">
-                    <dl class="row mb-0 text-white">
-                        <dt class="col-sm-3">
-                            <i class="ti-calendar icon-lg mr-2"></i>01/02/16</dt>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Our History</h3>
+                    <p>Vestibulum ultrices ligula sit amet augue interdum fermentum. Vestibulum sed nisi ornare, tincidunt ante
+                        et, tempus metus. Nunc pellentesque purus odio, eu dictum mi luctus vitae.</p>
+                    <dl class="row mt-4 mb-0">
+                        <dt class="col-sm-3">08 Mar 2017</dt>
                         <dd class="col-sm-9 pt-3 pt-md-0">
-                            <p class="font-weight-bold">Aute libero ornare taciti phasellus inceptos</p>
-                            <p>Mauris duis nostra enim iaculis laborum cillum vestibulum incididunt qui sapien labore litora.</p>
+                            <p class="font-weight-bold">Joined the Business Lounge Family</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dolor ultricies</p>
                         </dd>
-                        <dt class="col-sm-3">
-                            <i class="ti-calendar icon-lg mr-2"></i>10/05/17</dt>
+                        <dt class="col-sm-3">08 Mar 2017</dt>
                         <dd class="col-sm-9 pt-3 pt-md-0">
-                            <p class="font-weight-bold">Tortor a convallis volutpat praesent nullam</p>
-                            <p>Mauris duis nostra enim iaculis laborum cillum vestibulum incididunt qui sapien labore litora.</p>
+                            <p class="font-weight-bold">Partnership with ABC Bank</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dolor ultricies</p>
                         </dd>
-                        <dt class="col-sm-3">
-                            <i class="ti-calendar icon-lg mr-2"></i>15/02/18</dt>
+                        <dt class="col-sm-3">08 Mar 2017</dt>
                         <dd class="col-sm-9 pt-3 pt-md-0">
-                            <p class="font-weight-bold">Fermentum pellentesque senectus nostra</p>
-                            <p>Mauris duis nostra enim iaculis laborum cillum vestibulum incididunt qui sapien labore litora.</p>
+                            <p class="font-weight-bold">New York Office</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dolor ultricies</p>
                         </dd>
                     </dl>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0 ml-auto">
+                    <img class="img-fluid" src="assets/img/other/other-14-800x863.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -151,16 +139,15 @@
     <div class="bg-white">
         <div class="container py-7">
             <div class="row">
-                <div class="col-md-6 pr-md-5 text-center text-md-left">
+                <div class="col-lg-6 pr-lg-5 text-center text-lg-left">
                     <h3>Fast Growing Business</h3>
-                    <hr class="hr-lg mt-3 mx-md-0 mb-4 w-60px hr-primary">
-                    <p>Aliquam ut pede cursus laboris lacus fames parturient elementum excepteur purus cillum. Blandit ornare
+                    <p class="mt-4">Aliquam ut pede cursus laboris lacus fames parturient elementum excepteur purus cillum. Blandit ornare
                         ultrices elementum sollicitudin curae dolor. Aptent eros excepteur massa mus fugiat. Porta deserunt
                         cursus montes natoque quis tempor conubia adipisicing molestie Non facilisi metus feugiat donec fringilla
                         ultricies. Litora tincidunt semper vulputate ex pede ad dictum faucibus.</p>
                     <a href="#" class="btn btn-primary mt-3">Read More</a>
                 </div>
-                <div class="col-md-6 mt-5 mt-md-0 pl-md-5">
+                <div class="col-lg-6 mt-5 mt-lg-0 pl-lg-5">
                     <p class="mb-2">Finance</p>
                     {{ macroComponents.progress_bar(90, "mb-4") }}
                     <p class="mb-2">formation Technologies</p>
@@ -178,25 +165,6 @@
             <div class="row">
                 <div class="col-md-12">
                     {{ macroClients.layout1(clients) }}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-white">
-        <div class="container py-7">
-            <h6 class="font-weight-light text-muted text-center">testimonials</h6>
-            <h3 class="text-center">What They Are Saying</h3>
-            <hr class="hr-lg mt-3 mb-4 w-60px hr-primary">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-dots-primary owl-nav-bg-black mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
-                        {% for testimonial in testimonials %}
-                        <div class="item mb-4">
-                            {{ macroTestimonials.layout1(testimonial) }}
-                        </div>
-                        {% endfor %}
-                    </div>
                 </div>
             </div>
         </div>

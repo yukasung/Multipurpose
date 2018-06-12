@@ -1,7 +1,7 @@
 <!-- Default -->
-{% macro layout1(team) %}
+{% macro layout1(team, card_css="border-0 mb-4") %}
 
-<div class="card border-0 mb-4">
+<div class="card {{ card_css }}">
     <a href="team-member.html">
         <img class="card-img img-fluid rounded-0" src="{{ team.img }}" alt="">
     </a>

@@ -10526,7 +10526,8 @@ header.sticky.header-appear .navbar-action > ul a {
 .breadcrumb-item + .breadcrumb-item::before {
   font-family: "Ionicons";
   font-size: 12px;
-  content: "\f3d3"; }
+  content: "\f3d3";
+  color: inherit; }
 
 .icon-xs {
   font-size: .75em; }
