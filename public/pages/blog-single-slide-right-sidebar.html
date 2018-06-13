@@ -1,27 +1,25 @@
-{% set page_title = "Blog Single - Slide Show Post"%} 
+{% set page_title = "Blog Single - Slide Show Post"%}
 <!--  -->
-{% set page_active_link = "Slide Show Post" %} 
+{% set page_active_link = "Slide Show Post" %}
 <!--  -->
-{% set page_link2 = "Single" %} 
+{% set page_link2 = "Single" %}
 <!--  -->
-{% extends "../templates/master.html" %} 
+{% extends "../templates/master.html" %}
 <!--  -->
-{% block content %} {% include "../templates/partials/page_title.html" %} 
+{% block content %} {% include "../templates/partials/page_title.html" %}
 <!--  -->
 {% import '../templates/macros/posts.html' as macroPosts %}
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
-    <div class="bg-white">
-        <div class="container py-7">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    {{ macroPosts.slide() }}
-                </div>
-                <aside class="col-12 col-lg-4 sidebar pl-lg-4 mt-5 mt-lg-0">
-                    {% include "../templates/partials/sidebar.html" %}
-                </aside>
+    <div class="container py-6 py-lg-8">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                {{ macroPosts.slide() }}
             </div>
+            <aside class="col-12 col-lg-4 sidebar pl-lg-4 mt-5 mt-lg-0">
+                {% include "../templates/partials/sidebar.html" %}
+            </aside>
         </div>
     </div>
 </div>
