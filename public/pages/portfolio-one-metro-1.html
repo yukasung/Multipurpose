@@ -1,0 +1,105 @@
+{% set page_title = "Portfolio Metro Style" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Metro Style" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% include "partials/header.html" %}
+<div id="content">
+    <div class="container py-6 py-lg-8">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 px-0 border-bottom">
+                {% include "../templates/partials/portfolio_filters.html" %}
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-12">
+                <div class="portfolio-grid portfolio-grid-packery row mt-4">
+                    <div class="grid-item col-lg-6 mb-4 planning">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <img src="assets/img/portfolio/metro/portfolio-5-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                            <figcaption class="figure-caption pt-4">
+                                <h3 class="h5">
+                                    <a href="portfolio-post.html">Cras vestibulum pretium</a>
+                                </h3>
+                                <span>Branding and Identity</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item col-lg-3 mb-4 planning">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <img src="assets/img/portfolio/metro/portfolio-8-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                            <figcaption class="figure-caption pt-4">
+                                <h3 class="h5">
+                                    <a href="portfolio-post.html">Cras vestibulum pretium</a>
+                                </h3>
+                                <span>Branding and Identity</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item col-lg-3 mb-4 investing">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <img src="assets/img/portfolio/metro/portfolio-3-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                            <figcaption class="figure-caption pt-4">
+                                <h3 class="h5">
+                                    <a href="portfolio-post.html">Cras vestibulum pretium</a>
+                                </h3>
+                                <span>Branding and Identity</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item col-lg-6 mb-4 traning">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <img src="assets/img/portfolio/metro/portfolio-1-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                            <figcaption class="figure-caption pt-4">
+                                <h3 class="h5">
+                                    <a href="portfolio-post.html">Cras vestibulum pretium</a>
+                                </h3>
+                                <span>Branding and Identity</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item col-lg-3 mb-4 investing marketing">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <img src="assets/img/portfolio/metro/portfolio-9-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                            <figcaption class="figure-caption pt-4">
+                                <h3 class="h5">
+                                    <a href="portfolio-post.html">Cras vestibulum pretium</a>
+                                </h3>
+                                <span>Branding and Identity</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid-item col-lg-3 mb-4 traning marketing">
+                        <figure class="figure mb-0">
+                            <a class="d-block" href="portfolio-single-image.html">
+                                <img src="assets/img/portfolio/metro/portfolio-7-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                            </a>
+                            <figcaption class="figure-caption pt-4">
+                                <h3 class="h5">
+                                    <a href="portfolio-post.html">Cras vestibulum pretium</a>
+                                </h3>
+                                <span>Branding and Identity</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

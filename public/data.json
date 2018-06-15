@@ -82,56 +82,56 @@
         }
     ],
     "portfolios": [{
-            "title": "Agricultural Market Analysis, 2017",
-            "img": "assets/img/portfolio/grid/portfolio-1-800x650.jpg",
+            "title": "Agricultural Market, 2017",
+            "img": "assets/img/blog/blog-1-1200x752.jpg",
             "tag": "transition coporate",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Cras vestibulum pretium mus tempor",
-            "img": "assets/img/portfolio/grid/portfolio-2-800x650.jpg",
+            "title": "Cras vestibulum pretium",
+            "img": "assets/img/blog/blog-2-1200x752.jpg",
             "tag": "coporate",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Aliquam non do phasellus aenean",
-            "img": "assets/img/portfolio/grid/portfolio-3-800x650.jpg",
+            "title": "Aliquam phasellus aenean",
+            "img": "assets/img/blog/blog-3-1200x752.jpg",
             "tag": "package",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Hendrerit auctor commodo deserunt",
-            "img": "assets/img/portfolio/grid/portfolio-4-800x650.jpg",
+            "title": "Hendrerit commodo deserunt",
+            "img": "assets/img/blog/blog-4-1200x752.jpg",
             "tag": "food",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Mollis adipisicing penatibus esse",
-            "img": "assets/img/portfolio/grid/portfolio-5-800x650.jpg",
+            "title": "Mollis adipisicing penatibus",
+            "img": "assets/img/blog/blog-5-1200x752.jpg",
             "tag": "transition books",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Habitant taciti hendrerit tincidunt",
-            "img": "assets/img/portfolio/grid/portfolio-6-800x650.jpg",
+            "title": "Habitant hendrerit tincidunt",
+            "img": "assets/img/blog/blog-6-1200x752.jpg",
             "tag": "video",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Habitant taciti hendrerit tincidunt",
-            "img": "assets/img/portfolio/grid/portfolio-7-800x650.jpg",
+            "title": "Habitant hendrerit tincidunt",
+            "img": "assets/img/blog/blog-7-1200x752.jpg",
             "tag": "video",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Habitant taciti hendrerit tincidunt",
-            "img": "assets/img/portfolio/grid/portfolio-8-800x650.jpg",
+            "title": "Habitant hendrerit tincidunt",
+            "img": "assets/img/blog/blog-8-1200x752.jpg",
             "tag": "video",
             "desc": "Branding and Identity"
         },
         {
-            "title": "Habitant taciti hendrerit tincidunt",
-            "img": "assets/img/portfolio/grid/portfolio-9-800x650.jpg",
+            "title": "Habitant hendrerit tincidunt",
+            "img": "assets/img/blog/blog-9-1200x752.jpg",
             "tag": "video",
             "desc": "Branding and Identity"
         }

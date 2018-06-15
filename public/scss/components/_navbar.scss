@@ -210,6 +210,9 @@
         margin-top: 0;
         padding-top: 19px;
         padding-bottom: 19px;
+        @include media-breakpoint-up(md) {
+            box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+        }
         @include media-breakpoint-down(md) {
             background-color: transparent;
             padding-top: 0;

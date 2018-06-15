@@ -3,8 +3,18 @@
 //
 .nav-tabs-flush {
     .nav-item {
-        @include media-breakpoint-down(sm) {
-            margin: 10px 0;
+        @include media-breakpoint-down(md) {
+            flex: 1 1 auto;
+            text-align: center;
+            margin: 10px 0 0;
+        }
+        &:not(:last-child) {
+            .nav-link {
+                margin-right: 25px;
+                @include media-breakpoint-up(sm) {
+                    margin-right: 46px;
+                }
+            }
         }
     }
     .nav-link {
@@ -13,9 +23,6 @@
         }
         padding: 0 0 4px;
         border: 0;
-        @include media-breakpoint-up(sm) {
-            margin-right: 46px;
-        }
         &.active {
             color: $primary;
             border: 0;

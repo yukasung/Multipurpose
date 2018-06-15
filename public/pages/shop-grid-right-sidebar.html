@@ -16,26 +16,24 @@
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
-    <div class="bg-white">
-        <div class="container py-7">
-            {{ macroShops.header() }}
-            <div class="row mt-4">
-                <div class="col-12 col-lg-9">
-                    <div class="row">
-                        {% set products = products.slice(0,9) %} 
-                        <!--  -->
-                        {% for product in products %}
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            {{ macroShops.default(product) }}
-                        </div>
-                        {% endfor %}
+    <div class="container py-6 py-lg-8">
+        {{ macroShops.header() }}
+        <div class="row mt-4">
+            <div class="col-12 col-lg-9">
+                <div class="row">
+                    {% set products = products.slice(0,9) %}
+                    <!--  -->
+                    {% for product in products %}
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        {{ macroShops.default(product) }}
                     </div>
-                    {{ macroPaginations.default() }}
+                    {% endfor %}
                 </div>
-                <aside class="col-12 col-lg-3 sidebar pl-lg-4 mt-5 mt-lg-0">
-                    {% include "../templates/partials/sidebar_shop.html" %}
-                </aside>
+                {{ macroPaginations.default() }}
             </div>
+            <aside class="col-12 col-lg-3 sidebar pl-lg-4 mt-5 mt-lg-0">
+                {% include "../templates/partials/sidebar_shop.html" %}
+            </aside>
         </div>
     </div>
 </div>
