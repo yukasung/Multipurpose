@@ -1,16 +1,14 @@
-{% set page_title = "Project Grid One Column" %}
+{% set page_title = "Project Grid Two Column" %}
 <!--  -->
-{% set page_link2 = "Grid One Column" %}
+{% set page_link2 = "Projects" %}
 <!--  -->
-{% set page_active_link = "Project Grid" %}
+{% set page_active_link = "Grid Two Column" %}
 <!--  -->
 {% extends "../templates/master.html" %} {% block content %}
 <!--  -->
 {% include "../templates/partials/page_title.html"%}
 <!--  -->
 {% import '../templates/macros/portfolios.html' as macroPortfolios %}
-<!--  -->
-{% import '../templates/macros/blogs.html' as macroBlogs %}
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
@@ -26,12 +24,12 @@
                     {% set portfolios = portfolios.slice(0,6) %}
                     <!--  -->
                     {% for portfolio in portfolios %}
-                    <div class="grid-item col-6 mb-lg-4 {{ portfolio.tag }}">
+                    <div class="grid-item col-md-6 mb-4 {{ portfolio.tag }}">
                         <figure class="figure">
                             <a href="portfolio-post.html">
                                 <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
                             </a>
-                            <figcaption class="figure-caption text-center py-4">
+                            <figcaption class="figure-caption text-center pt-4">
                                 <h4 class="h5">
                                     <a href="portfolio-post.html">{{ portfolio.title }}</a>
                                 </h4>

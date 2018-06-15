@@ -26,19 +26,18 @@
                     {% set portfolios = portfolios.slice(0,6) %}
                     <!--  -->
                     {% for portfolio in portfolios %}
-                    <div class="grid-item mb-lg-4 {{ portfolio.tag }}">
-                        <a class="d-block" href="portfolio-single-image.html">
-                            <figure class="figure overlay mb-0">
-                                <div class="overlay-gradient overaly-gradient-dark"></div>
+                    <div class="grid-item {{ portfolio.tag }}">
+                        <figure class="figure">
+                            <a href="portfolio-post.html">
                                 <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
-                                <figcaption class="overlay-body overlay-bottom p-4">
-                                    <h4 class="h5">
-                                        <a href="portfolio-post.html">{{ portfolio.title }}</a>
-                                    </h4>
-                                    <span>{{ portfolio.desc }}</span>
-                                </figcaption>
-                            </figure>
-                        </a>
+                            </a>
+                            <figcaption class="figure-caption text-center py-4">
+                                <h4 class="h5">
+                                    <a href="portfolio-post.html">{{ portfolio.title }}</a>
+                                </h4>
+                                <span>{{ portfolio.desc }}</span>
+                            </figcaption>
+                        </figure>
                     </div>
                     {% endfor %}
                 </div>
