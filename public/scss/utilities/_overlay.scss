@@ -29,12 +29,14 @@
     left: 0;
     padding: 20px;
     color: #fff;
-    top: auto;
     a:not([class]) {
         color: inherit;
     }
     > :last-child {
         margin-bottom: 0;
+    }
+    &.overlay-bottom{
+        top: auto;
     }
 }
 
@@ -46,4 +48,13 @@
     height: 80%;
     top: auto;
     background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.overlay-align-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
