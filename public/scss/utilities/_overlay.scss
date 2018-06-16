@@ -9,8 +9,16 @@
     margin: 0;
     overflow: hidden;
     vertical-align: middle;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
+}
+
+.overlay-hover {
+    &:not(:hover) {
+        .overlay-body,
+        .overlay-gradient {
+            opacity: 0 !important;
+        }
+    }
 }
 
 .overlay-body {
@@ -21,6 +29,7 @@
     left: 0;
     padding: 20px;
     color: #fff;
+    top: auto;
     a:not([class]) {
         color: inherit;
     }
@@ -29,36 +38,12 @@
     }
 }
 
-.overlay-bottom {
-    top: auto;
-}
-
-.overlay-dark {
-    background: rgba($black, .5);
-}
-
-.overlay-primary {
-    background: rgba($primary, .5);
-}
-
-.overlay-light {
-    background: rgba($white, .5);
-}
-
 .overlay-gradient {
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 80%;
+    top: auto;
     background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.overlay-align-middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    width: 100%;
 }

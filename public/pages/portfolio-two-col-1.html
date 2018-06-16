@@ -8,11 +8,9 @@
 <!--  -->
 {% include "../templates/partials/page_title.html"%}
 <!--  -->
-{% import '../templates/macros/portfolios.html' as macroPortfolios %}
-<!--  -->
-{% import '../templates/macros/blogs.html' as macroBlogs %}
-<!--  -->
 {% include "partials/header.html" %}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
 <div id="content">
     <div class="container py-6 py-lg-8">
         <div class="row justify-content-center">
@@ -29,9 +27,9 @@
                     <div class="grid-item mb-4 {{ portfolio.tag }}">
                         <a class="d-block" href="portfolio-single-image.html">
                             <figure class="figure overlay mb-0">
-                                <div class="overlay-gradient overaly-gradient-dark op-5"></div>
+                                <div class="overlay-gradient op-5"></div>
                                 <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
-                                <figcaption class="overlay-body overlay-bottom p-4">
+                                <figcaption class="overlay-body p-4">
                                     <h4 class="h5">{{ portfolio.title }}</h4>
                                     <span class="font-weight-light">{{ portfolio.desc }}</span>
                                 </figcaption>
