@@ -2,6 +2,7 @@
 /*	COMPONENTS > PROGRESS
 /*-----------------------------------------------------------------------------------*/
 .progress {
+	border-radius: 0;
   	.progress-bar {
 		width: 0;
 		&.progress-md {

@@ -1,0 +1,46 @@
+{% set page_title = "Project Grid Three Columns" %}
+<!--  -->
+{% set page_link2 = "Projects" %}
+<!--  -->
+{% set page_active_link = "Grid Three Columns" %}
+<!--  -->
+{% extends "../templates/master.html" %} {% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% include "partials/header.html" %}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+
+<div id="content">
+    <div class="container py-6 py-lg-8">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 px-0 border-bottom">
+                {% include "../templates/partials/portfolio_filters.html" %}
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="portfolio-grid portfolio-grid-packery row mt-5">
+                    {% set portfolios = portfolios.slice(0,6) %}
+                    <!--  -->
+                    {% for portfolio in portfolios %}
+                    <div class="grid-item col-md-6 col-lg-4 mb-4 {{ portfolio.tag }}">
+                        <a class="d-block" href="portfolio-single-image.html">
+                            <figure class="figure overlay overlay-hover mb-0">
+                                <figure class="figure overlay mb-0">
+                                <div class="overlay-gradient op-5"></div>
+                                <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+                                <figcaption class="overlay-body p-4">
+                                    <h4 class="h5">{{ portfolio.title }}</h4>
+                                    <span class="font-weight-light">{{ portfolio.desc }}</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

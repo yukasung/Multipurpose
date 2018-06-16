@@ -10723,10 +10723,12 @@ hr.line-dotted {
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENTS > PROGRESS
 /*-----------------------------------------------------------------------------------*/
-.progress .progress-bar {
-  width: 0; }
-  .progress .progress-bar.progress-md {
-    height: 30px; }
+.progress {
+  border-radius: 0; }
+  .progress .progress-bar {
+    width: 0; }
+    .progress .progress-bar.progress-md {
+      height: 30px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	COMPONENTS > PRICING
