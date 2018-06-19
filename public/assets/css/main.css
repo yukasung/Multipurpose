@@ -10353,17 +10353,6 @@ header.sticky.header-appear .navbar-action > ul a {
   .owl-nav .owl-next:after {
     content: "\e649"; }
 
-.owl-nav-edge .owl-prev,
-.owl-nav-edge .owl-next {
-  height: 60px;
-  text-align: center; }
-
-.owl-nav-edge .owl-prev {
-  left: -1px; }
-
-.owl-nav-edge .owl-next {
-  right: -1px; }
-
 @media (max-width: 767.98px) {
   .owl-item figure:after {
     background: none !important; } }
@@ -10380,24 +10369,11 @@ header.sticky.header-appear .navbar-action > ul a {
   .owl-dots-inside .owl-dots span {
     box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
 
-.owl-dots-white .owl-dot span {
-  border: 2px solid #ffffff !important; }
-
-.owl-dots-white .owl-dot.active span, .owl-dots-white .owl-dot:hover span {
-  background: #ffffff !important; }
-
 .owl-dots-primary .owl-dot span {
   border: 2px solid #3498db !important; }
 
 .owl-dots-primary .owl-dot.active span, .owl-dots-primary .owl-dot:hover span {
   background: #3498db !important; }
-
-.owl-nav-bg-dark .owl-nav > div {
-  width: 28px;
-  color: #ffffff;
-  background: #252525; }
-  .owl-nav-bg-dark .owl-nav > div:after {
-    font-size: 20px; }
 
 .owl-nav-dark .owl-nav > div {
   color: #343a40; }

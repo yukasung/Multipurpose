@@ -117,20 +117,6 @@
     }
 }
 
-.owl-nav-edge {
-    .owl-prev,
-    .owl-next {
-        height: 60px;
-        text-align: center;
-    }
-    .owl-prev {
-        left: -1px;
-    }
-    .owl-next {
-        right: -1px;
-    }
-}
-
 .owl-item {
     figure {
         &:after {
@@ -156,20 +142,6 @@
     }
 }
 
-.owl-dots-white {
-    .owl-dot {
-        span {
-            border: 2px solid #ffffff !important;
-        }
-        &.active,
-        &:hover {
-            span {
-                background: #ffffff !important;
-            }
-        }
-    }
-}
-
 .owl-dots-primary {
     .owl-dot {
         span {
@@ -179,19 +151,6 @@
         &:hover {
             span {
                 background: $primary !important;
-            }
-        }
-    }
-}
-
-.owl-nav-bg-dark {
-    .owl-nav {
-        >div {
-            width: 28px;
-            color: #ffffff;
-            background: #252525;
-            &:after {
-                font-size: 20px;
             }
         }
     }
