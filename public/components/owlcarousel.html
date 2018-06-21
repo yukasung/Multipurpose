@@ -9,16 +9,16 @@
     <title></title>
     <link rel="shortcut icon" href="style/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="/assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">
-    <link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="/assets/plugins/animate.css" rel="stylesheet">
-    <link href="/assets/plugins/lightgallery/css/lightgallery.min.css" rel="stylesheet">
-    <link href="/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="/assets/plugins/prism/prism.css" rel="stylesheet">
-    <link href="/assets/plugins/prism/prism-unescaped-markup.css" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link href="/assets/plugins/bootstrap/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../assets/plugins/animate.css" rel="stylesheet">
+    <link href="../assets/plugins/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+    <link href="../assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="../assets/plugins/prism/prism.css" rel="stylesheet">
+    <link href="../assets/plugins/prism/prism-unescaped-markup.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/plugins/bootstrap/css/docs.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -78,8 +78,8 @@
 
 <div class="container">
     <a class="navbar-brand text-uppercase" href="index.html">
-        <img class="logo logo-dark" src="/assets/img/brand/logo-dark.png">
-        <img class="logo logo-light" src="/assets/img/brand/logo-light.png">
+        <img class="logo logo-dark" src="../assets/img/brand/logo-dark.png">
+        <img class="logo logo-light" src="../assets/img/brand/logo-light.png">
     </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
         <ul class="navbar-nav">
@@ -621,14 +621,39 @@
 
                         <ul class="nav bd-sidenav">
                             <li class="active">
-                                <a href="/docs/4.1/components/alerts/">
+                                <a href="/components/owlcarousel.html">
                                     Owl Carousel
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/components/buttons.html">
+                                    Buttons
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/components/overlay.html">
+                                    Overlay
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/components/pricing.html">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/components/lists.html">
+                                    Lists
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/components/forms.html">
+                                    Forms
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="/docs/4.1/utilities/borders/">
+                        <a class="bd-toc-link" href="/components/buttons.html">
                             Utilities
                         </a>
 
@@ -790,13 +815,9 @@
                 
 
 <h1 class="bd-title" id="content">Owl Carousel</h1>
-<p class="bd-lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+<p class="bd-lead">A slideshow component for cycling through elements—images or slides of carousel.</p>
 <h3 id="slides-only">Basic</h3>
-<p>
-    <p>Here’s a carousel with slides only. Note the presence of the
-        <code class="highlighter-rouge">.d-block</code> and
-        <code class="highlighter-rouge">.w-100</code> on carousel images to prevent browser default image alignment.</p>
-</p>
+<p>Here’s a carousel with slides only.</p>
 <div class="bd-example">
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
         <div class="item">
@@ -830,9 +851,9 @@
 </figure>
 <h3 id="navigation-hover">Navigation hover</h3>
 <p>
-    <p>Here’s a carousel with slides only. Note the presence of the
-        <code class="highlighter-rouge">.d-block</code> and
-        <code class="highlighter-rouge">.w-100</code> on carousel images to prevent browser default image alignment.</p>
+    <p>Show navigation on hover over by adding
+        <code class="highlighter-rouge">.owl-nav-md-hover</code>
+    </p>
 </p>
 <div class="bd-example">
     <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
@@ -866,7 +887,7 @@
     </script>
 </figure>
 <h3 id="show-dots-nav">Dots navigation</h3>
-<p>Show dots navigation.</p>
+<p>Show dots navigation by adding <code class="highlighter-rouge">.owl-dots-primary</code>.</p>
 <div class="bd-example">
     <div class="owl-carousel owl-theme owl-loaded owl-dots-primary" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
         <div class="item">
@@ -899,7 +920,8 @@
     </script>
 </figure>
 <p>
-    You can also show dots inside carousel with <code class="highlighter-rouge">.owl-dots-inside</code>.
+    You can also show dots inside carousel with
+    <code class="highlighter-rouge">.owl-dots-inside</code>.
 </p>
 
             </main>
@@ -911,21 +933,21 @@
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/plugins/bootstrap-navbar.js"></script>
-<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/wow/wow.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/lazy-load-google-maps.js"></script>
-<script type="text/javascript" src="/assets/plugins/lightgallery/js/lightgallery-all.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
-<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
-<script type="text/javascript" src="/assets/plugins/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/prism/prism.js"></script>
-<script type="text/javascript" src="/assets/plugins/prism/prism-unescaped-markup.js"></script>
-<script type="text/javascript" src="/assets/plugins/bootstrap/js/docs.min.js"></script>
-<script src="/assets/js/scripts.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-navbar.js"></script>
+<script type="text/javascript" src="../assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wow/wow.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/lazy-load-google-maps.js"></script>
+<script type="text/javascript" src="../assets/plugins/lightgallery/js/lightgallery-all.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.countTo.js"></script>
+<script type="text/javascript" src="../assets/plugins/SmoothScroll.js"></script>
+<script type="text/javascript" src="../assets/plugins/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="../assets/plugins/prism/prism-unescaped-markup.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap/js/docs.min.js"></script>
+<script src="../assets/js/scripts.js"></script>
 </body>
 
 </html>

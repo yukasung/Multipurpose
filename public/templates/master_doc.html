@@ -9,16 +9,16 @@
     <title>{{ page_title }}</title>
     <link rel="shortcut icon" href="style/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="/assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">
-    <link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="/assets/plugins/animate.css" rel="stylesheet">
-    <link href="/assets/plugins/lightgallery/css/lightgallery.min.css" rel="stylesheet">
-    <link href="/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="/assets/plugins/prism/prism.css" rel="stylesheet">
-    <link href="/assets/plugins/prism/prism-unescaped-markup.css" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link href="/assets/plugins/bootstrap/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../assets/plugins/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../assets/plugins/animate.css" rel="stylesheet">
+    <link href="../assets/plugins/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+    <link href="../assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="../assets/plugins/prism/prism.css" rel="stylesheet">
+    <link href="../assets/plugins/prism/prism-unescaped-markup.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/plugins/bootstrap/css/docs.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -157,15 +157,40 @@
                         </a>
 
                         <ul class="nav bd-sidenav">
-                            <li class="{% if (component == owlcarousel )  %}active{%endif%}">
-                                <a href="/docs/4.1/components/alerts/">
+                            <li class="{% if (component == 'owlcarousel' ) %}active{%endif%}">
+                                <a href="/components/owlcarousel.html">
                                     Owl Carousel
+                                </a>
+                            </li>
+                            <li class="{% if (component == 'buttons' ) %}active{%endif%}">
+                                <a href="/components/buttons.html">
+                                    Buttons
+                                </a>
+                            </li>
+                            <li class="{% if (component == 'overlay' ) %}active{%endif%}">
+                                <a href="/components/overlay.html">
+                                    Overlay
+                                </a>
+                            </li>
+                            <li class="{% if (component == 'pricing' ) %}active{%endif%}">
+                                <a href="/components/pricing.html">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="{% if (component == 'lists' ) %}active{%endif%}">
+                                <a href="/components/lists.html">
+                                    Lists
+                                </a>
+                            </li>
+                            <li class="{% if (component == 'forms' ) %}active{%endif%}">
+                                <a href="/components/forms.html">
+                                    Forms
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="/docs/4.1/utilities/borders/">
+                        <a class="bd-toc-link" href="/components/buttons.html">
                             Utilities
                         </a>
 
@@ -328,21 +353,21 @@
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/plugins/bootstrap-navbar.js"></script>
-<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/wow/wow.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/lazy-load-google-maps.js"></script>
-<script type="text/javascript" src="/assets/plugins/lightgallery/js/lightgallery-all.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
-<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
-<script type="text/javascript" src="/assets/plugins/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/prism/prism.js"></script>
-<script type="text/javascript" src="/assets/plugins/prism/prism-unescaped-markup.js"></script>
-<script type="text/javascript" src="/assets/plugins/bootstrap/js/docs.min.js"></script>
-<script src="/assets/js/scripts.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-navbar.js"></script>
+<script type="text/javascript" src="../assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wow/wow.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/lazy-load-google-maps.js"></script>
+<script type="text/javascript" src="../assets/plugins/lightgallery/js/lightgallery-all.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.countTo.js"></script>
+<script type="text/javascript" src="../assets/plugins/SmoothScroll.js"></script>
+<script type="text/javascript" src="../assets/plugins/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="../assets/plugins/prism/prism-unescaped-markup.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap/js/docs.min.js"></script>
+<script src="../assets/js/scripts.js"></script>
 </body>
 
 </html>

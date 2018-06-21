@@ -1,6 +1,6 @@
 {% extends "../templates/master_doc.html" %}
 <!--  -->
-{% set component = owlcarousel %}
+{% set component = "owlcarousel" %}
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
@@ -13,13 +13,9 @@
 {% block content %}
 
 <h1 class="bd-title" id="content">Owl Carousel</h1>
-<p class="bd-lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+<p class="bd-lead">A slideshow component for cycling through elements—images or slides of carousel.</p>
 <h3 id="slides-only">Basic</h3>
-<p>
-    <p>Here’s a carousel with slides only. Note the presence of the
-        <code class="highlighter-rouge">.d-block</code> and
-        <code class="highlighter-rouge">.w-100</code> on carousel images to prevent browser default image alignment.</p>
-</p>
+<p>Here’s a carousel with slides only.</p>
 <div class="bd-example">
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
         <div class="item">
@@ -53,9 +49,9 @@
 </figure>
 <h3 id="navigation-hover">Navigation hover</h3>
 <p>
-    <p>Here’s a carousel with slides only. Note the presence of the
-        <code class="highlighter-rouge">.d-block</code> and
-        <code class="highlighter-rouge">.w-100</code> on carousel images to prevent browser default image alignment.</p>
+    <p>Show navigation on hover over by adding
+        <code class="highlighter-rouge">.owl-nav-md-hover</code>
+    </p>
 </p>
 <div class="bd-example">
     <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
@@ -89,7 +85,7 @@
     </script>
 </figure>
 <h3 id="show-dots-nav">Dots navigation</h3>
-<p>Show dots navigation.</p>
+<p>Show dots navigation by adding <code class="highlighter-rouge">.owl-dots-primary</code>.</p>
 <div class="bd-example">
     <div class="owl-carousel owl-theme owl-loaded owl-dots-primary" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
         <div class="item">
@@ -122,6 +118,7 @@
     </script>
 </figure>
 <p>
-    You can also show dots inside carousel with <code class="highlighter-rouge">.owl-dots-inside</code>.
+    You can also show dots inside carousel with
+    <code class="highlighter-rouge">.owl-dots-inside</code>.
 </p>
 {% endblock %}

@@ -1,0 +1,99 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "overlay" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#basic">Basic</a>
+    <a href="#navigation-hover">Navigation hover</a>
+    <a href="#dots-navigation">Dots navigation</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Overlay</h1>
+<p class="bd-lead">A slideshow component for cycling through elements—images or slides of carousel.</p>
+<h3 id="slides-only">Center Icon</h3>
+<div class="bd-example">
+    <div class="overlay">
+        <img src="../assets/img/blog/blog-1-800x518.jpg" alt="" class="img-fluid">
+        <div class="overlay-body">
+            <div class="video-gallery overlay-align-middle text-center">
+                <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
+                    <i class="ion-ios-play"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <div class="overlay">
+            <img src="../assets/img/blog/blog-1-800x518.jpg" alt="" class="img-fluid">
+            <div class="overlay-body">
+                <div class="video-gallery overlay-align-middle text-center">
+                    <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
+                        <i class="ion-ios-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </script>
+</figure>
+<h3 id="navigation-hover">Caption Inside</h3>
+<div class="bd-example">
+    <figure class="figure overlay">
+        <div class="overlay-gradient op-5"></div>
+        <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+        <figcaption class="overlay-body overlay-bottom p-4">
+            <h4 class="h5">Agricultural Market, 2017</h4>
+            <span class="font-weight-light">Branding and Identity</span>
+        </figcaption>
+    </figure>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <figure class="figure overlay">
+            <div class="overlay-gradient op-5"></div>
+            <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+            <figcaption class="overlay-body overlay-bottom p-4">
+                <h4 class="h5">Agricultural Market, 2017</h4>
+                <span class="font-weight-light">Branding and Identity</span>
+            </figcaption>
+        </figure>
+    </script>
+</figure>
+<h3 id="navigation-hover">Caption Hover</h3>
+<div class="bd-example">
+    <figure class="figure overlay overlay-hover">
+        <div class="overlay-gradient op-5"></div>
+        <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+        <figcaption class="overlay-body overlay-bottom p-4">
+            <h4 class="h5">Agricultural Market, 2017</h4>
+            <span class="font-weight-light">Branding and Identity</span>
+        </figcaption>
+    </figure>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <figure class="figure overlay overlay-hover">
+            <div class="overlay-gradient op-5"></div>
+            <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+            <figcaption class="overlay-body overlay-bottom p-4">
+                <h4 class="h5">Agricultural Market, 2017</h4>
+                <span class="font-weight-light">Branding and Identity</span>
+            </figcaption>
+        </figure>
+    </script>
+</figure>
+{% endblock %}
