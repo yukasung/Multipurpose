@@ -13,21 +13,19 @@
         border: none;
         outline: none !important;
         z-index: 90;
-        .icon {
-            color: #76838f;
-            font-size: 20px;
+    }
+    .input-btn {
+        +.form-control {
+            padding-right: 50px;
         }
+    }
+    .icon {
+        color: #76838f;
+        font-size: 20px;
     }
     &.input-group {
         .icon {
             margin: 0 6px;
-            font-size: 20px;
-        }
-    }
-    &.input-group-lg {
-        .icon {
-            margin: 0 10px;
-            font-size: 24px;
         }
     }
 }

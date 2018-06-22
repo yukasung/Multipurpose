@@ -2,14 +2,12 @@
 {% macro default(product) %}
 
 <div class="card border-0 mb-4">
-    <div class="overlay overlay-hover" href="shop-single.html">
-        {% if product.sale %}
-        <span class="badge badge-pill badge-circle badge-primary text-uppercase position-absolute right-0 mt-3 mr-3">sale</span>
-        {% endif %}
-        <a href="shop-single.html">
-            <img class="card-img-top rounded-0 img-fluid" src="{{ product.img }}" alt=""> {{ card_overlay() }}
-        </a>
-    </div>
+    {% if product.sale %}
+    <span class="badge badge-pill badge-circle badge-primary text-uppercase position-absolute right-0 mt-3 mr-3">sale</span>
+    {% endif %}
+    <a href="shop-single.html">
+        <img class="card-img-top rounded-0 img-fluid" src="{{ product.img }}" alt=""> {{ card_overlay() }}
+    </a>
     <div class="card-body px-0">
         <h3 class="card-title h5">
             <a href="shop-single.html">{{ product.name }}</a>

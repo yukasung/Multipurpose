@@ -10439,15 +10439,13 @@ select {
     border: none;
     outline: none !important;
     z-index: 90; }
-    .input-icon .input-btn .icon {
-      color: #76838f;
-      font-size: 20px; }
-  .input-icon.input-group .icon {
-    margin: 0 6px;
+  .input-icon .input-btn + .form-control {
+    padding-right: 50px; }
+  .input-icon .icon {
+    color: #76838f;
     font-size: 20px; }
-  .input-icon.input-group-lg .icon {
-    margin: 0 10px;
-    font-size: 24px; }
+  .input-icon.input-group .icon {
+    margin: 0 6px; }
 
 .btn {
   font-size: 0.8125rem; }
