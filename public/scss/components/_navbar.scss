@@ -455,7 +455,6 @@
     }
     .navbar-top {
         top: 35px;
-        box-shadow: $box-shadow;
     }
 }
 
@@ -519,4 +518,8 @@ header {
     .navbar {
         background-color: $white !important;
     }
+}
+
+.navbar-shadow{
+    box-shadow: $box-shadow;
 }

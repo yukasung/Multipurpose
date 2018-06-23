@@ -10177,8 +10177,7 @@ input[type="submit"] {
   transition: ease-in-out 0.3s; }
 
 .header-topbar .navbar-top {
-  top: 35px;
-  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
+  top: 35px; }
 
 header.sticky .navbar-scroll-top {
   position: fixed;
@@ -10219,6 +10218,9 @@ header.sticky.header-appear .navbar-action > ul a {
 
 .header-appear .navbar {
   background-color: #fff !important; }
+
+.navbar-shadow {
+  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
 
 @media (max-width: 991.98px) {
   .nav-tabs-flush .nav-item {

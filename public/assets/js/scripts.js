@@ -475,15 +475,25 @@ var theme = {
     },
     setTopSpace: function () {
 
+        var topSpaceHeight = 0;
+
         if ($('.navbar').hasClass('navbar-top') || $('nav').hasClass('navbar-fixed-top')) {
+            
             if ($('.top-space').length > 0) {
-                var topSpaceHeight = $('.navbar').outerHeight();
+
+                if (!$('.navbar').hasClass('bg-transparent')) {
+                    topSpaceHeight = $('.navbar').outerHeight();
+                }
+
                 if ($('.header-top').length > 0) {
                     topSpaceHeight = topSpaceHeight + $('.header-top').outerHeight();
                 }
+
                 topSpaceHeight -= 2;
                 $('.top-space').css('margin-top', topSpaceHeight + "px");
+
             }
+
         }
 
     }

@@ -9,8 +9,8 @@
 <!--  -->
 {% import '../templates/macros/input_data.html' as inputData %}
 <!--  -->
-{% include "partials/header4.html" %}
-<div id="content">
+{% include "partials/header5.html" %}
+<div id="content" class="top-space">
     <div class="owl-carousel owl-hero owl-theme owl-loaded owl-dots-inside owl-dots-primary owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true,"autoplay":false,"responsive":{"0":{"nav":false}, "600":{"nav":false}, "940":{"nav":true}}}'>
         <div class="item w-100">
             <figure class="m-0">
@@ -163,11 +163,11 @@
             </div>
         </div>
     </div>
-    <div class="bg-white border-top border-bottom">
-        <div class="container-fluid py-6">
+    <div class="bg-primary">
+        <div class="container-fluid py-5">
             <div class="row">
                 <div class="col-md-12">
-                    {{ macroClients.layout2() }}
+                    {{ macroClients.layout1() }}
                 </div>
             </div>
         </div>
