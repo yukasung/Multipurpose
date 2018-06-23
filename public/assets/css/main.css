@@ -10665,6 +10665,9 @@ hr.hr-primary {
 hr.hr-white {
   border-top-color: #ffffff !important; }
 
+hr.hr-md {
+  border-top-width: 2px; }
+
 hr.hr-lg {
   border-top-width: 3px; }
 

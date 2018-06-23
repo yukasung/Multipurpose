@@ -1,15 +1,17 @@
-hr{
+hr {
 	&.hr-primary {
 		border-top-color: $primary !important;
 	}
-	&.hr-white{
+	&.hr-white {
 		border-top-color: #ffffff !important;
 	}
-	&.hr-lg{
+	&.hr-md {
+		border-top-width: 2px;
+	}
+	&.hr-lg {
 		border-top-width: 3px;
 	}
-
-	&.line-dotted{
+	&.line-dotted {
 		border-top: 1px dotted #d4dde4;
 	}
 }
