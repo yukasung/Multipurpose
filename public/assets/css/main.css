@@ -9651,9 +9651,6 @@ a {
 .line-height-8 {
   line-height: 0.8; }
 
-/*-----------------------------------------------------------------------------------*/
-/*  02. MASTERS > MASTER
-/*-----------------------------------------------------------------------------------*/
 .inner {
   padding-top: 70px;
   padding-bottom: 70px; }
@@ -9737,7 +9734,8 @@ input[type="submit"] {
     z-index: 1;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 !important; }
+    padding: 0 !important;
+    background-color: transparent !important; }
     .caption-img-overlay-fluid.caption-right {
       right: 80px; } }
 

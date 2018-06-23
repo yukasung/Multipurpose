@@ -1,8 +1,6 @@
-/*-----------------------------------------------------------------------------------*/
-
-/*  02. MASTERS > MASTER
-/*-----------------------------------------------------------------------------------*/
-
+//
+// Master
+//
 .inner {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -110,6 +108,7 @@ input[type="submit"] {
         margin: 0 auto;
         overflow: hidden;
         padding: 0 !important;
+        background-color: transparent !important;
         &.caption-right {
             right: 80px;
         }
