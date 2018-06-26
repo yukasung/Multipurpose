@@ -9737,7 +9737,7 @@ input[type="submit"] {
     padding: 0 !important;
     background-color: transparent !important; }
     .caption-img-overlay-fluid.caption-right {
-      right: 80px; } }
+      right: 0; } }
 
 .bg-image-center {
   background-position: center center;
