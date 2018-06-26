@@ -53,21 +53,21 @@
         left: 0;
     }
     &.gradient-primary {
-        &.gradient-left-right {
+        &.gradient-left {
             &:after {
                 background: radial-gradient(circle at center left, $primary, rgba(255, 255, 255, 0) 80%);
             }
         }
     }
     &.gradient-dark {
-        &.gradient-left-right {
+        &.gradient-left {
             &:after {
                 background: radial-gradient(circle at center left, $dark, rgba(255, 255, 255, 0) 80%);
             }
         }
     }
     &.gradient-light {
-        &.gradient-left-right {
+        &.gradient-left {
             &:after {
                 background: radial-gradient(circle at center left, $light, rgba(255, 255, 255, 0) 80%);
             }

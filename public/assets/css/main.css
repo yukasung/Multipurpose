@@ -10375,6 +10375,12 @@ header.sticky.header-appear .navbar-action > ul a {
 .owl-dots-primary .owl-dot.active span, .owl-dots-primary .owl-dot:hover span {
   background: #3498db !important; }
 
+.owl-dots-white .owl-dot span {
+  border: 2px solid #fff !important; }
+
+.owl-dots-white .owl-dot.active span, .owl-dots-white .owl-dot:hover span {
+  background: #fff !important; }
+
 .owl-nav-dark .owl-nav > div {
   color: #343a40; }
   .owl-nav-dark .owl-nav > div:not(:hover) {
@@ -10971,15 +10977,15 @@ hr.line-dotted {
   bottom: 0;
   left: 0; }
 
-.bg-gradient.gradient-primary.gradient-left-right:after {
+.bg-gradient.gradient-primary.gradient-left:after {
   background: -webkit-radial-gradient(center left, circle, #3498db, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
 
-.bg-gradient.gradient-dark.gradient-left-right:after {
+.bg-gradient.gradient-dark.gradient-left:after {
   background: -webkit-radial-gradient(center left, circle, #343a40, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
 
-.bg-gradient.gradient-light.gradient-left-right:after {
+.bg-gradient.gradient-light.gradient-left:after {
   background: -webkit-radial-gradient(center left, circle, #f8f9fa, rgba(255, 255, 255, 0) 80%);
   background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
 

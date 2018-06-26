@@ -156,6 +156,20 @@
     }
 }
 
+.owl-dots-white {
+    .owl-dot {
+        span {
+            border: 2px solid $white !important;
+        }
+        &.active,
+        &:hover {
+            span {
+                background: $white !important;
+            }
+        }
+    }
+}
+
 .owl-nav-dark {
     .owl-nav {
         >div {
