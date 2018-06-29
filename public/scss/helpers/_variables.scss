@@ -60,3 +60,31 @@ $btn-padding-x-sm: 1.875rem;
 
 $btn-padding-y-lg: 0.875rem;
 $btn-padding-x-lg: 2.5rem;
+
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.875),
+  5: ($spacer * 3),
+  6: ($spacer * 4.5),
+  7: ($spacer * 6),
+  8: ($spacer * 7.5),
+  9: ($spacer * 9),
+  10: ($spacer * 10.5),
+  11: ($spacer * 11),
+  12: ($spacer * 12),
+  13: ($spacer * 13),
+  14: ($spacer * 14),
+  15: ($spacer * 15),
+  16: ($spacer * 16),
+  17: ($spacer * 17),
+  18: ($spacer * 18),
+  19: ($spacer * 19),
+  20: ($spacer * 20),
+), $spacers);

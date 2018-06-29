@@ -9,15 +9,15 @@
     color: #e0e0e0 !important;
 }
 
-.text-body {
-    color: $body-color;
-    a {
-        color: inherit;
-        &:hover {
-            color: $primary;
-        }
-    }
-}
+// .text-body {
+//     color: $body-color;
+//     a {
+//         color: inherit;
+//         &:hover {
+//             color: $primary;
+//         }
+//     }
+// }
 
 .bg-transparent{
     background-color: transparent;
