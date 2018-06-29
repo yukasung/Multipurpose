@@ -11251,6 +11251,9 @@ hr.line-dotted {
 .text-gray {
   color: #e0e0e0 !important; }
 
+.bg-dark-50 {
+  background-color: rgba(52, 58, 64, 0.5); }
+
 .bg-transparent {
   background-color: transparent; }
 
