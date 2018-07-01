@@ -35,19 +35,41 @@
     > :last-child {
         margin-bottom: 0;
     }
-    &.overlay-bottom{
+    &.overlay-bottom {
         top: auto;
     }
 }
 
-.overlay-gradient {
+.overlay-linear-gradient {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 80%;
-    top: auto;
-    background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0) 100%);
+    &.gradient-dark {
+        &.gradient-bottom {
+            background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0) 100%);
+        }
+        &.gradient-left {
+            background: linear-gradient(to right, #252525 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+}
+
+.overlay-radial-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &.gradient-dark {
+        &.gradient-left {
+            background: radial-gradient(circle at center left, $dark, rgba(255, 255, 255, 0) 80%);
+        }
+    }
+    &.gradient-light {
+        &.gradient-left {
+            background: radial-gradient(circle at center left, $light, rgba(255, 255, 255, 0) 80%);
+        }
+    }
 }
 
 .overlay-align-middle {

@@ -10,19 +10,18 @@
 {% include "partials/header4.html" %}
 <div id="content">
     <div class="owl-carousel owl-hero owl-theme owl-loaded owl-dots-inside owl-dots-white owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":true, "loop":true, "autoHeight":true,"autoplay":false,"responsive":{"0":{"nav":false}, "600":{"nav":false}, "940":{"nav":true}}}'>
-        <div class="item w-100 bg-dark" style="height: 646px;">
+        <div class="item w-100 bg-dark py-7 py-lg-17">
             <img src="assets/img/slider/slider-10-1920x985.jpg" class="bg-image bg-image-center op-5" alt="">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="container">
                     <div class="row justify-content-md-center text-center">
                         <div class="col-12 col-lg-8 text-white">
-                            <h1 class="text-uppercase font-weight-light">We Bring the Best Solution
+                            <h1 class="h2 text-uppercase font-weight-light mb-0">We Bring the Best Solution
                                 <br>
                                 <span class="display-4 font-weight-bold">For Your
                                     <span class="display-4 font-weight-bold text-primary">
                                         business</span>
                             </h1>
-
                         </div>
                     </div>
                 </div>
@@ -168,7 +167,7 @@
             </div>
             <div class="row mt-6">
                 <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"responsive":{"0":{"items":1}, "600":{"items":2}, "940":{"items":3}}, "margin": 30, "nav":false, "dots":true,"loop":true}'>
-                    {% set posts = posts.slice(0,6) %}
+                    {% set posts = posts.slice(0,9) %}
                     <!--  -->
                     {% for post in posts %}
                     <div class="item">
