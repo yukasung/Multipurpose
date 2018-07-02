@@ -11276,6 +11276,30 @@ hr.line-dotted {
 .bg-shadow {
   box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
 
+.bg-linear-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .bg-linear-gradient.gradient-dark.gradient-bottom {
+    background: -webkit-linear-gradient(bottom, #252525 0%, transparent 100%);
+    background: linear-gradient(to top, #252525 0%, transparent 100%); }
+  .bg-linear-gradient.gradient-dark.gradient-left {
+    background: -webkit-linear-gradient(left, #252525 0%, transparent 100%);
+    background: linear-gradient(to right, #252525 0%, transparent 100%); }
+
+.bg-radial-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .bg-radial-gradient.gradient-dark.gradient-left {
+    background: -webkit-radial-gradient(center left, circle, #343a40, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
+  .bg-radial-gradient.gradient-light.gradient-left {
+    background: -webkit-radial-gradient(center left, circle, #f8f9fa, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
+
 .op-0 {
   opacity: 0 !important; }
 
@@ -11344,30 +11368,6 @@ hr.line-dotted {
     margin-bottom: 0; }
   .overlay-body.overlay-bottom {
     top: auto; }
-
-.overlay-linear-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-  .overlay-linear-gradient.gradient-dark.gradient-bottom {
-    background: -webkit-linear-gradient(bottom, #252525 0%, transparent 100%);
-    background: linear-gradient(to top, #252525 0%, transparent 100%); }
-  .overlay-linear-gradient.gradient-dark.gradient-left {
-    background: -webkit-linear-gradient(left, #252525 0%, transparent 100%);
-    background: linear-gradient(to right, #252525 0%, transparent 100%); }
-
-.overlay-radial-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-  .overlay-radial-gradient.gradient-dark.gradient-left {
-    background: -webkit-radial-gradient(center left, circle, #343a40, rgba(255, 255, 255, 0) 80%);
-    background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
-  .overlay-radial-gradient.gradient-light.gradient-left {
-    background: -webkit-radial-gradient(center left, circle, #f8f9fa, rgba(255, 255, 255, 0) 80%);
-    background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
 
 .overlay-align-middle {
   position: absolute;
