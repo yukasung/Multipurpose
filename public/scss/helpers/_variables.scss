@@ -7,6 +7,7 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol";
 
+$font-size-base: 1rem;
 $line-height-base: 1.625;
 
 // Color
@@ -99,3 +100,14 @@ $sizes: map-merge((
   100: 100%,
   auto: auto
 ), $sizes);
+
+// Heading font size
+$headings: () !default;
+$headings: map-merge((
+  1: $font-size-base * 2.5,
+  2: $font-size-base * 2,
+  3: $font-size-base * 1.75,
+  4: $font-size-base * 1.5,
+  5: $font-size-base * 1.25,
+  6: $font-size-base,
+), $headings);

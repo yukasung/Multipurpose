@@ -9938,31 +9938,82 @@ blockquote {
 a {
   outline: none; }
 
-.headline-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.2; }
-
-.headline-2 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.2; }
-
-.headline-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.2; }
-
-.headline-4 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2; }
-  @media (max-width: 1199.98px) {
-    .headline-4 {
-      font-size: 2.375rem; } }
-
 .line-height-8 {
   line-height: 0.8; }
+
+.heading-1 {
+  font-size: 2.5rem !important; }
+
+.heading-2 {
+  font-size: 2rem !important; }
+
+.heading-3 {
+  font-size: 1.75rem !important; }
+
+.heading-4 {
+  font-size: 1.5rem !important; }
+
+.heading-5 {
+  font-size: 1.25rem !important; }
+
+.heading-6 {
+  font-size: 1rem !important; }
+
+@media (min-width: 576px) {
+  .heading-sm-1 {
+    font-size: 2.5rem !important; }
+  .heading-sm-2 {
+    font-size: 2rem !important; }
+  .heading-sm-3 {
+    font-size: 1.75rem !important; }
+  .heading-sm-4 {
+    font-size: 1.5rem !important; }
+  .heading-sm-5 {
+    font-size: 1.25rem !important; }
+  .heading-sm-6 {
+    font-size: 1rem !important; } }
+
+@media (min-width: 768px) {
+  .heading-md-1 {
+    font-size: 2.5rem !important; }
+  .heading-md-2 {
+    font-size: 2rem !important; }
+  .heading-md-3 {
+    font-size: 1.75rem !important; }
+  .heading-md-4 {
+    font-size: 1.5rem !important; }
+  .heading-md-5 {
+    font-size: 1.25rem !important; }
+  .heading-md-6 {
+    font-size: 1rem !important; } }
+
+@media (min-width: 992px) {
+  .heading-lg-1 {
+    font-size: 2.5rem !important; }
+  .heading-lg-2 {
+    font-size: 2rem !important; }
+  .heading-lg-3 {
+    font-size: 1.75rem !important; }
+  .heading-lg-4 {
+    font-size: 1.5rem !important; }
+  .heading-lg-5 {
+    font-size: 1.25rem !important; }
+  .heading-lg-6 {
+    font-size: 1rem !important; } }
+
+@media (min-width: 1200px) {
+  .heading-xl-1 {
+    font-size: 2.5rem !important; }
+  .heading-xl-2 {
+    font-size: 2rem !important; }
+  .heading-xl-3 {
+    font-size: 1.75rem !important; }
+  .heading-xl-4 {
+    font-size: 1.5rem !important; }
+  .heading-xl-5 {
+    font-size: 1.25rem !important; }
+  .heading-xl-6 {
+    font-size: 1rem !important; } }
 
 .inner {
   padding-top: 70px;
