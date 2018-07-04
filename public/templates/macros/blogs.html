@@ -2,7 +2,7 @@
 {% macro default(post, card_css="border-0 mb-4") %}
 <div class="card {{ card_css }}">
     <a href="blog-single-right-sidebar.html">
-        <img src="{{ post.img }}" alt="" class="img-fluid"> 
+        <img src="{{ post.img }}" alt="" class="img-fluid">
     </a>
     <div class="card-body py-4 px-0">
         <h5 class="card-title">
@@ -10,6 +10,23 @@
         </h5>
         {{ card_meta(post) }}
         <p class="card-text">{{ post.desc }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+
+<!-- Layout 1 -->
+{% macro layout1(post) %}
+<div class="card bg-transparent border-0 mb-4 mb-lg-0">
+    <div class="card-body p-0">
+        <h3 class="card-title h5">
+            <a class="text-body" href="blog-single-right-sidebar.html">{{ post.title }}</a>
+        </h3>
+        {{ card_meta(post) }}
+        <p class="card-text">{{ post.desc }}</p>
+    </div>
+    <div class="card-body px-0 pb-lg-0">
+        <a class="card-link" href="#">Read More</a>
     </div>
 </div>
 {% endmacro %}
@@ -38,8 +55,7 @@
 {% macro owlCarousel(card_css="border-0 mb-4",card_bady_css="py-4 px-0") %}
 
 <div class="card {{ card_css }}">
-    <div class="owl-carousel owl-theme owl-loaded owl-dots-white"
-        data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
+    <div class="owl-carousel owl-theme owl-loaded owl-dots-white" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
         <div class="item">
             <img src="assets/img/blog/blog-4-1200x752.jpg" alt="" />
         </div>
@@ -139,4 +155,3 @@
 </p>
 
 {% endmacro %}
-
