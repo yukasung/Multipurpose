@@ -30,41 +30,30 @@
     <section class="bg-primary py-5">
         <div class="container">
             <div class="row text-white">
-                <div class="col-md-4">
-                    <div class="row no-gutters">
-                        <div class="col-lg-5 text-lg-right">
-                            <div class="counter mr-4">
-                                <span class="display-4" data-from="0" data-to="120" data-speed="3500" data-refresh-interval="50"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 my-auto">
-                            <h5 class="m-0">Client base around the world</h5>
-                        </div>
+                <div class="col-6 col-md-3 text-center">
+                    <div class="counter mb-3">
+                        <span class="text-counter display-4" data-from="0" data-to="120" data-speed="3500" data-refresh-interval="50"></span>
+                        <span class="display-4">K</span>
                     </div>
+                    <h5>Clients</h5>
                 </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="row no-gutters">
-                        <div class="col-lg-5 text-lg-right">
-                            <div class="counter mr-4">
-                                <span class="display-4" data-from="0" data-to="1200" data-speed="3500" data-refresh-interval="50"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 my-auto">
-                            <h5 class="m-0">Connect employees worldwide</h5>
-                        </div>
+                <div class="col-6 col-md-3 text-center">
+                    <div class="counter mb-3">
+                        <span class="text-counter display-4" data-from="0" data-to="1500" data-speed="3500" data-refresh-interval="50"></span>
                     </div>
+                    <h5>Employees</h5>
                 </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="row no-gutters">
-                        <div class="col-lg-5 text-lg-right">
-                            <div class="counter mr-4">
-                                <span class="display-4" data-from="0" data-to="35" data-speed="3500" data-refresh-interval="50"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 my-auto">
-                            <h5 class="m-0">Years of consulting experience</h5>
-                        </div>
+                <div class="col-6 col-md-3 mt-4 mt-md-0 text-center">
+                    <div class="counter mb-3">
+                        <span class="text-counter display-4" data-from="0" data-to="450" data-speed="3500" data-refresh-interval="50"></span>
                     </div>
+                    <h5>Locations</h5>
+                </div>
+                <div class="col-6 col-md-3 mt-4 mt-md-0 text-center">
+                    <div class="counter mb-3">
+                        <span class="text-counter display-4" data-from="0" data-to="100" data-speed="3500" data-refresh-interval="50"></span>
+                    </div>
+                    <h5>Factories</h5>
                 </div>
             </div>
         </div>
@@ -73,17 +62,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h6 class="font-weight-light text-muted">30 years of insurance and consulting experience</h6>
-                    <h3>We provide diverse tax accounting and business consulting services</h3>
+                    <img class="img-fluid" src="assets/img/service/service-4-800x518.jpg" alt="">                    
+                    <h3 class="mt-4">We provide diverse tax accounting and business consulting services</h3>
                     <p class="mt-4">Consultants provide their advice to their clients in a variety of forms. Reports and presentations are
-                        often used. However, in some specialized fields, the consultant may develop customized software or
-                        other products for the client. Depending on the nature of the consulting services and the wishes
-                        of the client, the advice from the consultant may be made public, by placing the report or presentation
-                        online.
+                        often used. However, in some specialized fields, the consultant may develop customized software.
                     </p>
-                    <a href="#" class="btn btn-primary text-uppercase mt-4">Learn More</a>
                 </div>
-                <div class="col-lg-5 offset-lg-1 pt-6 pt-lg-0 my-auto">
+                <div class="col-lg-5 offset-lg-1 pt-6 pt-lg-0">
                     <div class="media">
                         <i class="ti-bar-chart-alt icon-3x text-primary mr-4"></i>
                         <div class="media-body">
@@ -105,12 +90,20 @@
                             <p>Managed services is the practice of outsourcing on a proactive basis management responsibilities.</p>
                         </div>
                     </div>
+                    <div class="media mt-4">
+                        <i class="ti-pie-chart icon-3x text-primary mr-4"></i>
+                        <div class="media-body">
+                            <h4 class="mb-3">Economic Consulting</h4>
+                            <p>These factors give context, content, and set the conditions and parameters in which an economy
+                                functions.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="position-relative bg-primary py-7">
-        <img alt="" src="assets/img/other/other-12-1920x700.jpg" class="bg-image bg-image-center op-2">
+        <img src="assets/img/other/other-12-1920x700.jpg" class="bg-image bg-image-center op-2" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 my-auto text-white">
@@ -177,7 +170,7 @@
             </div>
             <div class="row mt-6">
                 <div class="col-12">
-                    <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"responsive":{"0":{"items":1}, "600":{"items":2}, "940":{"items":3}}, "margin": 30, "nav":false, "dots":true,"loop":true}'>
+                    <section class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"autoplay":false,"responsive":{"0":{"items":1}, "600":{"items":2}, "940":{"items":3,"nav":true}}}'>
                         {% set posts = posts.slice(0,9) %}
                         <!--  -->
                         {% for post in posts %}
@@ -185,11 +178,11 @@
                             {{ macroBlogs.default(post,"border-0 mb-0") }}
                         </div>
                         {% endfor %}
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
+</div>
+</section>
 </div>
 
 {% endblock %}

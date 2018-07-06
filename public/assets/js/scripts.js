@@ -443,7 +443,7 @@ var theme = {
     initCounter: function () {
 
         $(".counter").appear(function () {
-            $(this).children('span').countTo();
+            $(this).children('.text-counter').countTo();
         });
 
     },
