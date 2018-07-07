@@ -11426,6 +11426,9 @@ hr.line-dotted {
           transform: translate(-50%, -50%);
   width: 100%; }
 
+.w-30px {
+  width: 30px !important; }
+
 .w-60px {
   width: 60px !important; }
 
