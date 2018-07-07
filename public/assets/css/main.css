@@ -10012,6 +10012,69 @@ a {
   .heading-xl-6 {
     font-size: 1rem !important; } }
 
+.present-1 {
+  font-size: 6rem !important; }
+
+.present-2 {
+  font-size: 5.5rem !important; }
+
+.present-3 {
+  font-size: 4.5rem !important; }
+
+.present-4 {
+  font-size: 3.5rem !important; }
+
+.present-5 {
+  font-size: 2.5rem !important; }
+
+@media (min-width: 576px) {
+  .present-sm-1 {
+    font-size: 6rem !important; }
+  .present-sm-2 {
+    font-size: 5.5rem !important; }
+  .present-sm-3 {
+    font-size: 4.5rem !important; }
+  .present-sm-4 {
+    font-size: 3.5rem !important; }
+  .present-sm-5 {
+    font-size: 2.5rem !important; } }
+
+@media (min-width: 768px) {
+  .present-md-1 {
+    font-size: 6rem !important; }
+  .present-md-2 {
+    font-size: 5.5rem !important; }
+  .present-md-3 {
+    font-size: 4.5rem !important; }
+  .present-md-4 {
+    font-size: 3.5rem !important; }
+  .present-md-5 {
+    font-size: 2.5rem !important; } }
+
+@media (min-width: 992px) {
+  .present-lg-1 {
+    font-size: 6rem !important; }
+  .present-lg-2 {
+    font-size: 5.5rem !important; }
+  .present-lg-3 {
+    font-size: 4.5rem !important; }
+  .present-lg-4 {
+    font-size: 3.5rem !important; }
+  .present-lg-5 {
+    font-size: 2.5rem !important; } }
+
+@media (min-width: 1200px) {
+  .present-xl-1 {
+    font-size: 6rem !important; }
+  .present-xl-2 {
+    font-size: 5.5rem !important; }
+  .present-xl-3 {
+    font-size: 4.5rem !important; }
+  .present-xl-4 {
+    font-size: 3.5rem !important; }
+  .present-xl-5 {
+    font-size: 2.5rem !important; } }
+
 .inner {
   padding-top: 70px;
   padding-bottom: 70px; }

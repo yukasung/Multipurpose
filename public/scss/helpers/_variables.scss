@@ -111,3 +111,13 @@ $headings: map-merge((
   5: $font-size-base * 1.25,
   6: $font-size-base,
 ), $headings);
+
+// Present font size
+$presents: () !default;
+$presents: map-merge((
+  1: 6rem,
+  2: 5.5rem,
+  3: 4.5rem ,
+  4: 3.5rem,
+  5: 2.5rem
+), $presents);
