@@ -1,0 +1,31 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "counter" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#example">Example</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Counters</h1>
+<p>Example for number counter animation to display numbers in a more interesting.</p>
+<h2 id="example">Example</h2>
+<div class="bd-example">
+    <div class="counter">
+        <span class="text-counter display-4" data-from="0" data-to="600" data-speed="3500" data-refresh-interval="50"></span>
+    </div>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <div class="counter">
+            <span class="text-counter display-4" data-from="0" data-to="600" data-speed="3500" data-refresh-interval="50"></span>
+        </div>
+    </script>
+</figure>
+{% endblock %}

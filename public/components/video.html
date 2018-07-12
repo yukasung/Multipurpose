@@ -174,7 +174,7 @@
                         </a>
 
                         <ul class="nav bd-sidenav">
-                            <li class="active">
+                            <li class="">
                                 <a href="/components/owlcarousel.html">
                                     Owl Carousel
                                 </a>
@@ -219,7 +219,7 @@
                                     Progress
                                 </a>
                             </li>
-                            <li class="">
+                            <li class="active">
                             <a href="/components/video.html">
                                     Video
                                 </a>
@@ -388,154 +388,25 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
-    <a href="#basic">Basic</a>
-    <a href="#with-controls">With controls</a>
-    <a href="#hover-controls">Hover controls</a>
-    <a href="#dots-navigations">Dots navigations</a>
-    <a href="#donts-inside">Dots inside</a>
-    <a href="#complete-referance">Complete Reference</a>
+    <a href="#example">Example</a>
 </li>
 
                 </ul>
             </div>
             <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 
-<h1 class="bd-title" id="content">Owl Carousel</h1>
-<p class="bd-lead">Owl Carousel is a touch enabled jQuery plugin that lets you create beautiful responsive carousel sliders.</p>
-<h2 id="basic">Basic</h2>
-<p>The following example shows how to create a basic carousel.</p>
-<div class="bd-example">
-    <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":false, "loop":true, "autoHeight":true,"autoplay":true}'>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-        </div>
-    </div>
-</div>
-<h2 id="with-controls">With controls</h2>
-<p>Adding in the previous and next controls.</p>
-<div class="bd-example">
-    <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-        </div>
-    </div>
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
-    </script>
-</figure>
-<h2 id="hover-controls">Hover controls</h2>
-<p>Show the previous and next on hover over by adding
-    <code class="highlighter-rouge">.owl-nav-md-hover</code>
-</p>
-<div class="bd-example">
-    <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-        </div>
-    </div>
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
-    </script>
-</figure>
-<h2 id="dots-navigations">Dots navigations</h2>
-<p>Change dots navigation color by adding
-    <code class="highlighter-rouge">.owl-dots-primary</code> or
-    <code class="highlighter-rouge">.owl-dots-white</code>.
-</p>
-<div class="bd-example">
-    <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-        </div>
-    </div>
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
-    </script>
-</figure>
 
-<h2 id="donts-inside">Dots inside</h2>
-<p>Add
-    <code class="highlighter-rouge">.owl-dots-inside</code> for show dots navigation inside the owl carousel.
-</p>
+<h1 class="bd-title" id="content">Video</h1>
+<h2 id="example">Example</h2>
 <div class="bd-example">
-    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
+    <div class="overlay">
+        <img data-src="holder.js/800x500?auto=yes&bg=cccccc&text=800x500" src="assets/img/other/other-1-540x372.jpg" alt="" class="img-fluid">
+        <div class="overlay-body">
+            <div class="video-gallery overlay-align-middle text-center">
+                <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
+                    <i class="ion-ios-play"></i>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -544,23 +415,18 @@
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
+        <div class="overlay">
+            <img data-src="holder.js/800x500?auto=yes&bg=cccccc&text=800x500" src="assets/img/other/other-1-540x372.jpg" alt="" class="img-fluid">
+            <div class="overlay-body">
+                <div class="video-gallery overlay-align-middle text-center">
+                    <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
+                        <i class="ion-ios-play"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </script>
 </figure>
-<h2 id="complete-referance">Complete Reference</h2>
-<p>For a complete reference of all owl carousel options, methods and events, go to our
-    <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html">Owl Carousel Reference</a>
-</p>
 
             </main>
         </div>

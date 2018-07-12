@@ -1,0 +1,167 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "card" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#blog-card">Blog card</a>
+    <a href="#titles-text-and-links">Titles, text, and links</a>
+    <a href="#shop-card">Shop card</a>
+    <a href="#complete-referance">Complete Reference</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Cards</h1>
+<p class="bd-lead">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+<h2 id="blog-card">Blog card</h2>
+<div class="bd-example">
+    <div class="card border-0 mb-4" style="width:350px;">
+        <a href="#">
+            <img data-src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
+        </a>
+        <div class="card-body py-4 px-0">
+            <h5 class="card-title">
+                <a href="#">Card title</a>
+            </h5>
+            <p class="meta">January 1, 2018
+                <span>by</span>
+                <a href="#">Mark</a>
+                <span>in</span>
+                <a href="#">Design</a>
+            </p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <div class="card border-0 mb-4" style="width:350px;">
+            <a href="#">
+                <img data-src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
+            </a>
+            <div class="card-body py-4 px-0">
+                <h5 class="card-title">
+                    <a href="#">Card title</a>
+                </h5>
+                <p class="meta">January 1, 2018
+                    <span>by</span>
+                    <a href="#">Mark</a>
+                    <span>in</span>
+                    <a href="#">Design</a>
+                </p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </script>
+</figure>
+<h2 id="titles-text-and-links">Titles, text, and links</h2>
+<div class="bd-example">
+    <div class="card bg-transparent border-0 mb-4 mb-lg-0" style="width:350px;">
+        <div class="card-body p-0">
+            <h3 class="card-title h5">
+                <a class="text-body" href="#">Card title</a>
+            </h3>
+            <p class="meta">January 1, 2018
+                <span>by</span>
+                <a href="#">Mark</a>
+                <span>in</span>
+                <a href="#">Design</a>
+            </p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-body px-0 pb-lg-0">
+            <a class="card-link" href="#">Read More</a>
+        </div>
+    </div>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <div class="card bg-transparent border-0 mb-4 mb-lg-0" style="width:350px;">
+            <div class="card-body p-0">
+                <h3 class="card-title h5">
+                    <a class="text-body" href="#">We discuss our business priorities</a>
+                </h3>
+                <p class="meta">January 1, 2018
+                    <span>by</span>
+                    <a href="#">Mark</a>
+                    <span>in</span>
+                    <a href="#">Design</a>
+                </p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-body px-0 pb-lg-0">
+                <a class="card-link" href="#">Read More</a>
+            </div>
+        </div>
+    </script>
+</figure>
+<h2 id="shop-card">Shop Card</h2>
+<div class="bd-example">
+    <div class="card border-0 mb-4" style="width:350px;">
+        <div class="card border-0 mb-4" style="width: 255px;">
+            <span class="badge badge-pill badge-circle badge-primary text-uppercase position-absolute right-0 mt-3 mr-3">sale</span>
+            <a href="#">
+                <img data-src="holder.js/380x507?auto=yes&bg=cccccc&text=380x507" alt="" class="card-img-top rounded-0 img-fluid">
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-title h5">
+                    <a href="#">Product title</a>
+                </h3>
+                <span class="font-weight-bold">
+                    <del class="font-weight-light text-muted">$85</del>
+                    <ins class="text-decoration-none">$35</ins>
+                </span>
+                <div class="float-right">
+                    <i class="ion-ios-star text-primary"></i>
+                    <i class="ion-ios-star text-primary"></i>
+                    <i class="ion-ios-star text-primary"></i>
+                    <i class="ion-ios-star text-primary"></i>
+                    <i class="ion-ios-star-half text-primary"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <div class="card border-0 mb-4" style="width:350px;">
+            <div class="card border-0 mb-4" style="width: 255px;">
+                <span class="badge badge-pill badge-circle badge-primary text-uppercase position-absolute right-0 mt-3 mr-3">sale</span>
+                <a href="#">
+                    <img data-src="holder.js/380x507?auto=yes&bg=cccccc&text=380x507" alt="" class="card-img-top rounded-0 img-fluid">
+                </a>
+                <div class="card-body px-0">
+                    <h3 class="card-title h5">
+                        <a href="#">Product title</a>
+                    </h3>
+                    <span class="font-weight-bold">
+                        <del class="font-weight-light text-muted">$85</del>
+                        <ins class="text-decoration-none">$35</ins>
+                    </span>
+                    <div class="float-right">
+                        <i class="ion-ios-star text-primary"></i>
+                        <i class="ion-ios-star text-primary"></i>
+                        <i class="ion-ios-star text-primary"></i>
+                        <i class="ion-ios-star text-primary"></i>
+                        <i class="ion-ios-star-half text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </script>
+</figure>
+<h2 id="complete-referance">Complete Reference</h2>
+<p>For a complete reference of all card classes, go to our complete
+    <a href="https://getbootstrap.com/docs/4.1/components/card">Bootstrap Card Reference</a>.</p>
+{% endblock %}

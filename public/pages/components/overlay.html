@@ -4,20 +4,22 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#basic">Basic</a>
-    <a href="#navigation-hover">Navigation hover</a>
-    <a href="#dots-navigation">Dots navigation</a>
+    <a href="#overlay-icon">Overlay icon</a>
+    <a href="#overlay-text">Overlay text</a>
+    <a href="#overlay-hover-text">Overlay hover text</a>
+    <a href="#radial-gradient">Radial gradient</a>
+    <a href="#complete-referance">Complete Reference</a>
 </li>
 {% endblock%}
 <!--  -->
 {% block content %}
 
-<h1 class="bd-title" id="content">Overlay</h1>
-<p class="bd-lead">A slideshow component for cycling through elements—images or slides of carousel.</p>
-<h3 id="slides-only">Center Icon</h3>
+<h1 class="bd-title" id="content">Image Overlay</h1>
+<p class="bd-lead">Create an image overlay</p>
+<h2 id="overlay-icon">Overlay icon</h2>
 <div class="bd-example">
     <div class="overlay">
-        <img src="../assets/img/blog/blog-1-800x518.jpg" alt="" class="img-fluid">
+        <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
         <div class="overlay-body">
             <div class="video-gallery overlay-align-middle text-center">
                 <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
@@ -32,24 +34,26 @@
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <figure class="figure overlay">
-            <div class="overlay-linear-gradient gradient-dark gradient-bottom h-80 op-5"></div>
-            <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
-            <figcaption class="overlay-body overlay-bottom p-4">
-                <h4 class="h5">Agricultural Market, 2017</h4>
-                <span class="font-weight-light">Branding and Identity</span>
-            </figcaption>
-        </figure>
+        <div class="overlay">
+            <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
+            <div class="overlay-body">
+                <div class="video-gallery overlay-align-middle text-center">
+                    <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
+                        <i class="ion-ios-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </script>
 </figure>
-<h3 id="navigation-hover">Caption Inside</h3>
+<h2 id="overlay-text">Overlay text</h2>
 <div class="bd-example">
     <figure class="figure overlay">
-        <div class="overlay-linear-gradient gradient-dark gradient-bottom h-80 op-5"></div>
-        <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+        <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
+        <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
         <figcaption class="overlay-body overlay-bottom p-4">
-            <h4 class="h5">Agricultural Market, 2017</h4>
-            <span class="font-weight-light">Branding and Identity</span>
+            <h5>Special title treatment</h5>
+            <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
         </figcaption>
     </figure>
 </div>
@@ -58,24 +62,24 @@
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <figure class="figure overlay overlay-hover">
-            <div class="overlay-linear-gradient gradient-dark gradient-bottom h-80 op-5"></div>
-            <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+        <figure class="figure overlay">
+            <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
+            <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
             <figcaption class="overlay-body overlay-bottom p-4">
-                <h4 class="h5">Agricultural Market, 2017</h4>
-                <span class="font-weight-light">Branding and Identity</span>
+                <h5>Special title treatment</h5>
+                <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
             </figcaption>
         </figure>
     </script>
 </figure>
-<h3 id="navigation-hover">Caption Hover</h3>
+<h2 id="overlay-hover-text">Overlay hover text</h2>
 <div class="bd-example">
     <figure class="figure overlay overlay-hover">
-        <div class="overlay-linear-gradient gradient-dark gradient-bottom h-80 op-5"></div>
-        <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+        <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
+        <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
         <figcaption class="overlay-body overlay-bottom p-4">
-            <h4 class="h5">Agricultural Market, 2017</h4>
-            <span class="font-weight-light">Branding and Identity</span>
+            <h5>Special title treatment</h5>
+            <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
         </figcaption>
     </figure>
 </div>
@@ -85,11 +89,37 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         <figure class="figure overlay overlay-hover">
-            <div class="overlay-linear-gradient op-5"></div>
-            <img src="../assets/img/blog/blog-1-800x518.jpg" class="figure-img img-fluid mb-0" alt="">
+            <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
+            <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
             <figcaption class="overlay-body overlay-bottom p-4">
-                <h4 class="h5">Agricultural Market, 2017</h4>
-                <span class="font-weight-light">Branding and Identity</span>
+                <h5>Special title treatment</h5>
+                <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
+            </figcaption>
+        </figure>
+    </script>
+</figure>
+<h2 id="radial-gradient">Radial gradient</h2>
+<div class="bd-example">
+    <figure class="figure overlay">
+        <div class="d-block bg-radial-gradient gradient-dark gradient-left w-100 h-100"></div>
+        <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
+        <figcaption class="overlay-body overlay-bottom p-4">
+            <h5>Special title treatment</h5>
+            <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
+        </figcaption>
+    </figure>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        <figure class="figure overlay">
+            <div class="d-block bg-radial-gradient gradient-dark gradient-left w-100 h-100"></div>
+            <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
+            <figcaption class="overlay-body overlay-bottom p-4">
+                <h5>Special title treatment</h5>
+                <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
             </figcaption>
         </figure>
     </script>

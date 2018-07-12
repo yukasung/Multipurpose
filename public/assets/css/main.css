@@ -9938,79 +9938,57 @@ blockquote {
 a {
   outline: none; }
 
-.heading-1 {
+.caption-1 {
   font-size: 2.5rem !important; }
 
-.heading-2 {
+.caption-2 {
   font-size: 2rem !important; }
 
-.heading-3 {
+.caption-3 {
   font-size: 1.75rem !important; }
 
-.heading-4 {
+.caption-4 {
   font-size: 1.5rem !important; }
 
-.heading-5 {
-  font-size: 1.25rem !important; }
-
-.heading-6 {
-  font-size: 1rem !important; }
-
 @media (min-width: 576px) {
-  .heading-sm-1 {
+  .caption-sm-1 {
     font-size: 2.5rem !important; }
-  .heading-sm-2 {
+  .caption-sm-2 {
     font-size: 2rem !important; }
-  .heading-sm-3 {
+  .caption-sm-3 {
     font-size: 1.75rem !important; }
-  .heading-sm-4 {
-    font-size: 1.5rem !important; }
-  .heading-sm-5 {
-    font-size: 1.25rem !important; }
-  .heading-sm-6 {
-    font-size: 1rem !important; } }
+  .caption-sm-4 {
+    font-size: 1.5rem !important; } }
 
 @media (min-width: 768px) {
-  .heading-md-1 {
+  .caption-md-1 {
     font-size: 2.5rem !important; }
-  .heading-md-2 {
+  .caption-md-2 {
     font-size: 2rem !important; }
-  .heading-md-3 {
+  .caption-md-3 {
     font-size: 1.75rem !important; }
-  .heading-md-4 {
-    font-size: 1.5rem !important; }
-  .heading-md-5 {
-    font-size: 1.25rem !important; }
-  .heading-md-6 {
-    font-size: 1rem !important; } }
+  .caption-md-4 {
+    font-size: 1.5rem !important; } }
 
 @media (min-width: 992px) {
-  .heading-lg-1 {
+  .caption-lg-1 {
     font-size: 2.5rem !important; }
-  .heading-lg-2 {
+  .caption-lg-2 {
     font-size: 2rem !important; }
-  .heading-lg-3 {
+  .caption-lg-3 {
     font-size: 1.75rem !important; }
-  .heading-lg-4 {
-    font-size: 1.5rem !important; }
-  .heading-lg-5 {
-    font-size: 1.25rem !important; }
-  .heading-lg-6 {
-    font-size: 1rem !important; } }
+  .caption-lg-4 {
+    font-size: 1.5rem !important; } }
 
 @media (min-width: 1200px) {
-  .heading-xl-1 {
+  .caption-xl-1 {
     font-size: 2.5rem !important; }
-  .heading-xl-2 {
+  .caption-xl-2 {
     font-size: 2rem !important; }
-  .heading-xl-3 {
+  .caption-xl-3 {
     font-size: 1.75rem !important; }
-  .heading-xl-4 {
-    font-size: 1.5rem !important; }
-  .heading-xl-5 {
-    font-size: 1.25rem !important; }
-  .heading-xl-6 {
-    font-size: 1rem !important; } }
+  .caption-xl-4 {
+    font-size: 1.5rem !important; } }
 
 .present-1 {
   font-size: 6rem !important; }

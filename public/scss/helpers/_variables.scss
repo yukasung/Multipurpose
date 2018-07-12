@@ -102,15 +102,13 @@ $sizes: map-merge((
 ), $sizes);
 
 // Heading font size
-$headings: () !default;
-$headings: map-merge((
+$captions: () !default;
+$captions: map-merge((
   1: $font-size-base * 2.5,
   2: $font-size-base * 2,
   3: $font-size-base * 1.75,
-  4: $font-size-base * 1.5,
-  5: $font-size-base * 1.25,
-  6: $font-size-base,
-), $headings);
+  4: $font-size-base * 1.5
+), $captions);
 
 // Present font size
 $presents: () !default;
