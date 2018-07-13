@@ -13,6 +13,7 @@
 <h1 class="bd-title" id="content">Video</h1>
 <h2 id="example">Example</h2>
 <div class="bd-example">
+    {% macro example() %}
     <div class="overlay">
         <img data-src="holder.js/800x500?auto=yes&bg=cccccc&text=800x500" src="assets/img/other/other-1-540x372.jpg" alt="" class="img-fluid">
         <div class="overlay-body">
@@ -23,22 +24,20 @@
             </div>
         </div>
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call example() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="overlay">
-            <img data-src="holder.js/800x500?auto=yes&bg=cccccc&text=800x500" src="assets/img/other/other-1-540x372.jpg" alt="" class="img-fluid">
-            <div class="overlay-body">
-                <div class="video-gallery overlay-align-middle text-center">
-                    <a class="icon-video" href="https://www.youtube.com/watch?v=TJ1SDXbij8Y">
-                        <i class="ion-ios-play"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        {% call example() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
 {% endblock %}
