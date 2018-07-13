@@ -19,6 +19,7 @@
 <h2 id="basic">Basic</h2>
 <p>The following example shows how to create a basic carousel.</p>
 <div class="bd-example">
+    {% macro basic() %}
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":false, "loop":true, "autoHeight":true,"autoplay":true}'>
         <div class="item">
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
@@ -30,10 +31,26 @@
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
         </div>
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call basic() %}
+    <!--  -->
+    {% endcall %}
 </div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call basic() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
 <h2 id="with-controls">With controls</h2>
 <p>Adding in the previous and next controls.</p>
 <div class="bd-example">
+    {% macro withControls() %}
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
         <div class="item">
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
@@ -45,30 +62,30 @@
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
         </div>
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call withControls() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
+        {% call withControls() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
+<p>Use the
+    <code class="highlighter-rouge">.owl-nav-dark</code> class to make controls dark color.</p>
 <h2 id="hover-controls">Hover controls</h2>
 <p>Show the previous and next on hover over by adding
     <code class="highlighter-rouge">.owl-nav-md-hover</code>
 </p>
 <div class="bd-example">
+    {% macro hoverControls() %}
     <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
         <div class="item">
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
@@ -80,23 +97,20 @@
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
         </div>
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call hoverControls() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
+        {% call hoverControls() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
 <h2 id="dots-navigations">Dots navigations</h2>
@@ -105,6 +119,7 @@
     <code class="highlighter-rouge">.owl-dots-white</code>.
 </p>
 <div class="bd-example">
+    {% macro dotsNavigations() %}
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
         <div class="item">
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
@@ -116,23 +131,20 @@
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
         </div>
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call dotsNavigations() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
+        {% call dotsNavigations() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
 
@@ -141,6 +153,7 @@
     <code class="highlighter-rouge">.owl-dots-inside</code> for show dots navigation inside the owl carousel.
 </p>
 <div class="bd-example">
+    {% macro dotsInside() %}
     <div class="owl-carousel owl-theme owl-loaded owl-dots-inside" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
         <div class="item">
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
@@ -152,23 +165,20 @@
             <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
         </div>
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call dotsInside() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
-        </div>
+        {% call dotsInside() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
 <h2 id="complete-referance">Complete Reference</h2>

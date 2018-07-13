@@ -1,0 +1,44 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "backgrounds" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#overlay">Overlay</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Backgrounds</h1>
+<h2 id="with-carousel">Overlay</h2>
+<div class="bd-example">
+    {% macro overlay() %}
+    <section class="position-relative bg-light">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image bg-image-center op-3" alt="">
+        <div class="container py-8">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endmacro %}
+    <!--  -->
+    {% call overlay() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call overlay() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+
+{% endblock %}

@@ -4,21 +4,27 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#with-carousel">With Carousel</a>
-    <a href="#grid">Grid</a>
+    <a href="#sizes">Sizes</a>
 </li>
 {% endblock%}
 <!--  -->
 {% block content %}
 
-<h1 class="bd-title" id="content">Clients</h1>
-<h2 id="with-carousel">With Carousel</h2>
+<h1 class="bd-title" id="content">Icons</h1>
+<h2 id="sizes">Sizes</h2>
 <div class="bd-example">
-    {% macro x() %}
-    
+    {% macro sizes() %}
+    <i class="ti-check-box icon-xs"></i>
+    <i class="ti-check-box icon-sm"></i>
+    <i class="ti-check-box icon-lg"></i>
+    <i class="ti-check-box icon-2x"></i>
+    <i class="ti-check-box icon-3x"></i>
+    <i class="ti-check-box icon-5x"></i>
+    <i class="ti-check-box icon-7x"></i>
+    <i class="ti-check-box icon-10x"></i>
     {% endmacro %}
     <!--  -->
-    {% call x() %}
+    {% call sizes() %}
     <!--  -->
     {% endcall %}
 </div>
@@ -27,7 +33,7 @@
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        {% call x() %}
+        {% call sizes() %}
         <!--  -->
         {% endcall %}
     </script>

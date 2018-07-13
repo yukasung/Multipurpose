@@ -6,6 +6,7 @@
 <li class="toc-entry toc-h2">
     <a href="#form-controls">Form controls</a>
     <a href="#input-with-icon">Input with icon</a>
+    <a href="#input-round">Input round</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -15,6 +16,7 @@
 <p class="bd-lead">Examples and usage guidelines for form control styles.</p>
 <h2 id="form-controls">Form controls</h2>
 <div class="bd-example">
+    {% macro formControls() %}
     <form class="form-container" name="form_name" action="#" method="post">
         <div class="form-group">
             <input type="text" name="first" class="form-control" placeholder="Name">
@@ -39,58 +41,68 @@
         </div>
         <input type="submit" value="Submit" name="submit" class="btn btn-primary text-uppercase">
     </form>
+    {% endmacro %}
+    <!--  -->
+    {% call formControls() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <form class="form-container" name="form_name" action="#" method="post">
-            <div class="form-group">
-                <input type="text" name="first" class="form-control" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <input type="text" name="first" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input type="text" name="first" class="form-control" placeholder="Phone">
-            </div>
-            <div class="form-group">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <textarea name="textarea" id="textarea" class="form-control" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
-            </div>
-            <input type="submit" value="Submit" name="submit" class="btn btn-primary text-uppercase">
-        </form>
+        {% call formControls() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
-<h2 id="">Input with icon</h2>
+<h2 id="input-with-icon">Input with icon</h2>
 <div class="bd-example">
+    {% macro inputWithIcon() %}
     <div class="input-icon">
         <button type="submit" class="input-btn">
             <i class="ion-ios-search-strong icon"></i>
         </button>
         <input type="text" class="form-control" name="" placeholder="Enter your keyword...">
     </div>
+    {% endmacro %}
+    <!--  -->
+    {% call inputWithIcon() %}
+    <!--  -->
+    {% endcall %}
 </div>
 <div class="bd-clipboard">
 
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        <div class="input-icon">
-            <button type="submit" class="input-btn">
-                <i class="ion-ios-search-strong icon"></i>
-            </button>
-            <input type="text" class="form-control" name="" placeholder="Enter your keyword...">
-        </div>
+        {% call inputWithIcon() %}
+        <!--  -->
+        {% endcall %}
     </script>
 </figure>
+
+<h2 id="input-round">Input round</h2>
+<div class="bd-example">
+    {% macro inputRound() %}
+    <input type="text" class="form-control border-radius-30" name="" placeholder="Example input"> 
+    {% endmacro %}
+    <!--  -->
+    {% call inputRound() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call inputRound() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+
+
 {% endblock %}

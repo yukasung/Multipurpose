@@ -1,0 +1,129 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "testimonial" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#with-carousel">With Carousel</a>
+    <a href="#grid">Grid</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Testimonial</h1>
+<h2 id="with-carousel">With Carousel</h2>
+<div class="bd-example">
+    {% macro withCarousel() %}
+    <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":true,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": false}}}'>
+        <div class="item">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="ti-quote-left icon-lg text-primary"></i>
+                            <p class="lead mt-4">Minim maecenas anim lacus cupidatat sem at donec montes excepteur pharetra ultrices.</p>
+                            <div class="d-block mt-4">
+                                <img data-src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2" alt="">
+                                <div class="d-inline-block align-middle text-left ml-3">
+                                    <h6 class="text-primary my-2">
+                                        <a href="#">Name 1</a>
+                                    </h6>
+                                    <p class="font-weight-light text-black-50 pb-0 mb-0">Position</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="ti-quote-left icon-lg text-primary"></i>
+                            <p class="lead mt-4">Minim maecenas anim lacus cupidatat sem at donec montes excepteur pharetra ultrices.</p>
+                            <div class="d-block mt-4">
+                                <img data-src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2" alt="">
+                                <div class="d-inline-block align-middle text-left ml-3">
+                                    <h6 class="text-primary my-2">
+                                        <a href="#">Name 2</a>
+                                    </h6>
+                                    <p class="font-weight-light text-black-50 pb-0 mb-0">Position</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call withCarousel() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call withCarousel() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+
+<h2 id="with-carousel">Image left</h2>
+<div class="bd-example">
+    {% macro imageLeft() %}
+    <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":true,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": false}}}'>
+        <div class="item">
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-2 mb-4 mb-sm-0 text-center">
+                    <img data-src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle" alt="">
+                </div>
+                <div class="col-md-7 my-auto">
+                    <p class="lead">Minim maecenas anim lacus cupidatat sem at donec montes excepteur pharetra ultrices.</p>
+                    <h6 class="text-primary my-2">
+                        <a href="#">Name 1</a>
+                    </h6>
+                    <p class="font-weight-light text-black-50 pb-0 mb-0">Position</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-2 mb-4 mb-sm-0 text-center">
+                    <img data-src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle" alt="">
+                </div>
+                <div class="col-md-7 my-auto">
+                    <p class="lead">Minim maecenas anim lacus cupidatat sem at donec montes excepteur pharetra ultrices.</p>
+                    <h6 class="text-primary my-2">
+                        <a href="#">Name 1</a>
+                    </h6>
+                    <p class="font-weight-light text-black-50 pb-0 mb-0">Position</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call imageLeft() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call imageLeft() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+
+{% endblock %}
