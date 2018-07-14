@@ -1,5 +1,6 @@
 <!-- Layout 1 -->
 {% macro layout1(testimonial) %}
+
 <div class="row justify-content-center">
     <div class="col-md-9">
         <div class="card border-0">
@@ -39,4 +40,18 @@
     </div>
 </div>
 
+{% endmacro %}
+
+
+<!-- Layout 3 -->
+{% macro layout3(testimonial) %}
+
+<div class="d-block text-center">
+    <i class="ti-quote-left icon-lg text-primary"></i>
+    <p class="mt-4">The term may refer to a range of human activity, from handicraft to high tech.</p>
+    <h6 class="text-primary mt-3 mb-2">
+        <a href="#">{{ testimonial.name }}</a>
+    </h6>
+    <p class="font-weight-light text-black-50 pb-0 mb-0">{{ testimonial.position }}</p>
+</div>
 {% endmacro %}

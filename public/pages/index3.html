@@ -68,41 +68,48 @@
                 </div>
             </div>
             <div class="row mt-6">
-                <div class="col-lg-6 text-center text-lg-left pr-lg-7">
-                    <img class="img-fluid" src="assets/img/other/other-2-917x1000.jpg" alt="">
+                <div class="col-lg-4 text-center mb-4">
+                    <i class="ti-bar-chart-alt icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Financial Planning
+                    </h4>
+                    <p class="mb-0">Finance is one of the most important aspects of business management and includes analysis related.</p>
                 </div>
-                <div class="col-lg-6 pt-6 pt-lg-0 my-auto">
-                    <div class="media">
-                        <i class="ti-bar-chart-alt icon-3x text-primary mr-4"></i>
-                        <div class="media-body">
-                            <h4 class="mb-3">Financial Planning</h4>
-                            <p class="mb-0">The confusion surrounding the term financial plans might stem from the fact that there are many
-                                types of financial statement.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media mt-4">
-                        <i class="ti-world icon-3x text-primary mr-4"></i>
-                        <div class="media-body">
-                            <h4 class="mb-3">Software and Research</h4>
-                            <p class="mb-0">Software quality is very important, especially for commercial and system software like Microsoft Windows.</p>
-                        </div>
-                    </div>
-                    <div class="media mt-4">
-                        <i class="ti-briefcase icon-3x text-primary mr-4"></i>
-                        <div class="media-body">
-                            <h4 class="mb-3">Business Services</h4>
-                            <p class="mb-0">Managed services is the practice of outsourcing on a proactive basis management responsibilities
-                                and functions.</p>
-                        </div>
-                    </div>
-                    <div class="media mt-4">
-                        <i class="ti-wallet icon-3x text-primary mr-4"></i>
-                        <div class="media-body">
-                            <h4 class="mb-3">Investment Planning</h4>
-                            <p class="mb-0">Investors generally expect higher returns from riskier investments. Financial assets range from low-risk.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <i class="ti-world icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Software and Research
+                    </h4>
+                    <p class="mb-0">Software quality is very important, especially for commercial and system software like Microsoft Windows.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <i class="ti-briefcase icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Business Services
+                    </h4>
+                    <p class="mb-0">The confusion surrounding the term financial plans might stem from the fact that there are many types
+                        of financial.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <i class="ti-pie-chart icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Economic Consulting
+                    </h4>
+                    <p class="mb-0">These factors give context, content, and set the conditions and parameters in which an economy functions.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <i class="ti-wallet icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Investment Planning
+                    </h4>
+                    <p class="mb-0">Investors generally expect higher returns from riskier investments. Financial assets range from low-risk.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <i class="ti-heart-broken icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Healthcare Consulting
+                    </h4>
+                    <p class="mb-0">Primary care is often used as the term for the health care services that play a role in the local community.</p>
                 </div>
             </div>
         </div>
@@ -120,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section class="position-relative bg-primary py-7">
+    <section class="position-relative bg-dark py-7">
         <img src="assets/img/other/other-1-1920x700.jpg" class="bg-image bg-image-center op-2" alt="">
         <div class="container">
             <div class="row">
@@ -153,12 +160,12 @@
     </section>
     <section class="py-8">
         <div class="container">
-            <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":true,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": false}}}'>
-                {% set testimonials = testimonials.slice(0,3) %}
+            <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"nav":false, "margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": true}, "992": {"items": 3,"dots": true}}}'>
+                {% set testimonials = testimonials.slice(0,6) %}
                 <!--  -->
                 {% for testimonial in testimonials %}
                 <div class="item">
-                    {{ macroTestimonials.layout2(testimonial) }}
+                    {{ macroTestimonials.layout3(testimonial) }}
                 </div>
                 {% endfor %}
             </div>
