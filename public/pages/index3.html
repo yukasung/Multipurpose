@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="caption-img-overlay-fluid px-4 pt-4 pb-7 col-12 col-lg-6 text-center text-lg-left text-white">
                             <p class="text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">The efficient and effective operation of a business</p>
-                            <h1 class="heading-3 heading-lg-1 font-weight-bold text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s"
+                            <h1 class="caption-3 caption-lg-1 font-weight-bold text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s"
                                 data-animation-delay="0.5s">We are a leading consulting service company offering complete business</h1>
                             <a href="#" class="btn btn-primary text-uppercase mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
                         </div>
@@ -34,7 +34,7 @@
                     <div class="row">
                         <div class="caption-img-overlay-fluid px-4 pt-4 pb-7 col-12 col-lg-6 text-center text-lg-left text-white">
                             <p class="text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">The efficient and effective operation of a business</p>
-                            <h1 class="heading-3 heading-lg-1 font-weight-bold text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s"
+                            <h1 class="caption-3 caption-lg-1 font-weight-bold text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s"
                                 data-animation-delay="0.5s">We can help your business grow with a powerful Search Engine</h1>
                             <a href="#" class="btn btn-primary text-uppercase mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
                         </div>
@@ -50,7 +50,7 @@
                     <div class="row">
                         <div class="caption-img-overlay-fluid px-4 pt-4 pb-7 col-12 col-lg-6 text-center text-lg-left text-white">
                             <p class="text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s" data-animation-delay="0.2s">The efficient and effective operation of a business</p>
-                            <h1 class="heading-3 heading-lg-1 font-weight-bold text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s"
+                            <h1 class="caption-3 caption-lg-1 font-weight-bold text-uppercase" data-animation-in="fadeInUp" data-animation-duration="1s"
                                 data-animation-delay="0.5s">A simple business solution to a business problem</h1>
                             <a href="#" class="btn btn-primary text-uppercase mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
                         </div>
@@ -114,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="border-top py-7">
+    <section class="border-top py-8">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -124,7 +124,7 @@
                     <a href="#">View More</a>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-5">
                 {% set posts = posts.slice(0,3) %}
                 <!--  -->
                 {% for post in posts %}
@@ -172,7 +172,7 @@
                 {% set testimonials = testimonials.slice(0,3) %}
                 <!--  -->
                 {% for testimonial in testimonials %}
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     {{ macroTestimonials.layout3(testimonial) }}
                 </div>
                 {% endfor %}

@@ -16,10 +16,10 @@
 
 
 <!-- Layout 1 -->
-{% macro layout1(post) %}
+{% macro layout1(post, title_css="") %}
 <div class="card bg-transparent border-0 mb-4 mb-lg-0">
     <div class="card-body p-0">
-        <h3 class="card-title h5">
+        <h3 class="card-title h5 {{ title_css }}">
             {{ post.title }}
         </h3>
         {{ card_meta(post) }}
