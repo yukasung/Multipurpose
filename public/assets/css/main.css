@@ -11045,6 +11045,14 @@ select {
       display: table-cell;
       vertical-align: middle; }
 
+.list-icon li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .list-icon li [class*="icon-"] {
+    margin-top: 5px; }
+
 .list-sm li {
   padding-top: 4px;
   padding-bottom: 4px; }
@@ -11345,7 +11353,7 @@ hr.line-dotted {
   color: #e0e0e0 !important; }
 
 .bg-dark-50 {
-  background-color: rgba(52, 58, 64, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .bg-transparent {
   background-color: transparent; }

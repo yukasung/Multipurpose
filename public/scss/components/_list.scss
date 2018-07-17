@@ -1,4 +1,13 @@
 
+.list-icon{
+	li{
+		display: flex;
+		[class*="icon-"]{
+			margin-top: 5px;
+		}
+	}
+}
+
 .list-sm {
 	li {
 		padding-top: 4px;
