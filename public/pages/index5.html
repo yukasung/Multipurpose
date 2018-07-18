@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    <section class="py-7">
+    <section class="bg-light py-7">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 text-center text-md-left my-auto">
@@ -37,7 +37,7 @@
             </div>
             <div class="row mt-7">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 mb-4 text-center">
+                    <div class="card border-0 p-4 mb-4 text-center">
                         <i class="ti-bar-chart-alt icon-3x text-primary"></i>
                         <h4 class="my-4">
                             Financial Planning
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 text-center mb-4 mb-md-0">
-                    <div class="card p-4 mb-4 text-center">
+                    <div class="card border-0 p-4 mb-4 text-center">
                         <i class="ti-world icon-3x text-primary"></i>
                         <h4 class="my-4">
                             Software and Research
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 mb-4 text-center">
+                    <div class="card border-0 p-4 mb-4 text-center">
                         <i class="ti-briefcase icon-3x text-primary"></i>
                         <h4 class="my-4">
                             Business Services
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 text-center mb-4 mb-md-0">
-                    <div class="card p-4 mb-4 text-center">
+                    <div class="card border-0 p-4 mb-4 text-center">
                         <i class="ti-pie-chart icon-3x text-primary"></i>
                         <h4 class="my-4">
                             Economic Consulting
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 text-center mb-4 mb-md-0">
-                    <div class="card p-4 mb-4 text-center">
+                    <div class="card border-0 p-4 mb-4 text-center">
                         <i class="ti-wallet icon-3x text-primary"></i>
                         <h4 class="my-4">
                             Investment Planning
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 text-center mb-4 mb-md-0">
-                    <div class="card p-4 mb-4 text-center">
+                    <div class="card border-0 p-4 mb-4 text-center">
                         <i class="ti-heart-broken icon-3x text-primary"></i>
                         <h4 class="my-4">
                             Healthcare Consulting
@@ -134,12 +134,12 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 pt-5 my-auto">
-
+                    
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-8 bg-light">
+    <section class="py-8">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 text-center text-lg-left">
@@ -156,14 +156,14 @@
             </div>
         </div>
     </section>
-    <section class="py-6">
+    <section class="bg-light py-6">
         <div class="container">
-            <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":false,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": true}}}'>
+            <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":false,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 3,"dots": true}}}'>
                 {% set testimonials = testimonials.slice(0,3) %}
                 <!--  -->
                 {% for testimonial in testimonials %}
                 <div class="item">
-                    {{ macroTestimonials.layout1(testimonial) }}
+                    {{ macroTestimonials.layout3(testimonial) }}
                 </div>
                 {% endfor %}
             </div>

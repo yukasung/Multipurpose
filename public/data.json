@@ -140,50 +140,50 @@
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-1-380x507.jpg",
+            "img": "assets/img/shop/product-1.jpg",
             "sale": "sale"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-2-380x507.jpg"
+            "img": "assets/img/shop/product-2.jpg"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-3-380x507.jpg",
+            "img": "assets/img/shop/product-3.jpg",
             "sale": "sale"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-4-380x507.jpg"
+            "img": "assets/img/shop/product-4.jpg"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-5-380x507.jpg"
+            "img": "assets/img/shop/product-5.jpg"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-6-380x507.jpg"
+            "img": "assets/img/shop/product-6.jpg"
         },
         {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-7-380x507.jpg"
+            "img": "assets/img/shop/product-7.jpg"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-8-380x507.jpg"
+            "img": "assets/img/shop/product-8.jpg"
         }, {
             "name": "Orci per consectetur vulputate",
             "price": "$85",
             "discount_price": "$35",
-            "img": "assets/img/shop/shop-9-380x507.jpg"
+            "img": "assets/img/shop/product-9.jpg"
         }
     ],
     "teams": [{
