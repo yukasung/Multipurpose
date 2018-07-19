@@ -1,12 +1,12 @@
 <!-- Default -->
-{% macro default(product) %}
+{% macro default(product, card_css="mb-4") %}
 
-<div class="card border-0 mb-4">
+<div class="card border-0 {{ card_css }}">
     {% if product.sale %}
     <span class="badge badge-primary badge-pill badge-sale text-uppercase position-absolute right-0 mt-3 mr-3">sale</span>
     {% endif %}
     <a href="shop-single.html">
-        <img class="card-img-top rounded-0 img-fluid" src="{{ product.img }}" alt=""> {{ card_overlay() }}
+        <img class="card-img-top rounded-0 img-fluid" src="{{ product.img }}" alt="">
     </a>
     <div class="card-body px-0">
         <h3 class="card-title h5">
@@ -26,18 +26,15 @@
 
 {% endmacro %}
 
-<!-- Card Overlay -->
-{% macro card_overlay() %} {% endmacro %}
-
 <!--  -->
 {% macro header() %}
 
-<div class="row mx-0 mb-6 pb-2">
+<div class="row mx-0 mb-6">
     <div class="col-12 col-md-6 my-auto px-0">
         <p class="font-weight-bold text-uppercase mb-0">Showing 1–12 of 23 results</p>
     </div>
     <div class="col-12 col-md-6 my-auto px-0">
-        <form class="float-none float-md-right">
+        <form class="float-none float-md-right mt-4 mt-md-0">
             <div class="form-group">
                 <select class="form-control">
                     <option value="menu_order">Default sorting</option>

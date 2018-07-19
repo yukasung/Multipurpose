@@ -93,6 +93,8 @@ $spacers: map-merge((
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: ();
 $sizes: map-merge((
+  5: 5%,
+  10: 10%,
   25: 25%,
   50: 50%,
   75: 75%,

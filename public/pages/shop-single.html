@@ -18,7 +18,7 @@
     <div class="container py-6 py-lg-8">
         <div class="row">
             <div class="col-12 col-lg-5">
-                <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
+                <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
                     <div class="item">
                         <img src="assets/img/shop/product-1.jpg" class="img-fluid" alt="" />
                     </div>
@@ -29,24 +29,16 @@
             </div>
             <div class="col-12 col-lg-7">
                 <div class="d-block ml-lg-4">
-                    <h3 class="card-title mt-4 mt-lg-0">Truetone by Ecolatnix U22 T-Shirt</h3>
+                    <h3 class="card-title mt-4 mt-lg-0">Women black t-shirt</h3>
                     <h4 class="font-weight-bold">
                         <del class="font-weight-light text-muted">$55.00</del>
                         <ins class="text-decoration-none text-primary">$35.00</ins>
                     </h4>
-                    <div class="float-none mt-3 text-primary">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
                     <div class="d-block mt-4">
                         <p>Pellentesque sollicitudin integer odio cubilia pretium. Minim lobortis eu eleifend pulvinar nam.
-                            Ullamcorper parturient veniam proident mattis eros. Tristique natoque semper diam tempus. Nunc
-                            condimentum varius etiam dolor donec.</p>
+                            Ullamcorper parturient veniam proident mattis eros.</p>
                     </div>
-                    <div class="d-block">
+                    <div class="d-block mt-4">
                         <strong>Share:</strong>
                         <div class="d-inline-block ml-4">
                             <ul class="list-inline list-inline-lg mb-0">
@@ -84,7 +76,7 @@
                                 <label for="example-text-input" class="col-2 col-form-label">Color:</label>
                                 <div class="col-10 col-md-6">
                                     <select class="form-control">
-                                        <option>Red</option>
+                                        <option>Black</option>
                                         <option>Yellow</option>
                                         <option>Green</option>
                                         <option>Pink</option>
@@ -97,7 +89,7 @@
                                     <input class="form-control" type="number" value="42" id="example-number-input">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <div class="form-group row mt-4">
                                 <div class="offset-2 col-6">
                                     <input type="submit" value="Add To Card" name="submit" class="btn btn-primary text-uppercase">
                                 </div>
@@ -110,7 +102,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-tabs-flush flex-column flex-md-row mt-6" role="tablist">
+                <ul class="nav nav-tabs nav-tabs-flush mt-6" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="tab" href="#desc" role="tab">Description</a>
                     </li>
@@ -118,10 +110,7 @@
                         <a class="nav-link" data-toggle="tab" href="#info" role="tab">Additional Information</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#review" role="tab">Reviews (4)</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#custom" role="tab">Custom</a>
+                        <a class="nav-link" data-toggle="tab" href="#review" role="tab">Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -396,24 +385,16 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane" id="custom" role="tabpanel">
-                <p>Suspendisse vel sint eros maecenas a. Varius vivamus nullam suspendisse aliquam pharetra sint ad mus lacus
-                    ipsum voluptate. Justo laoreet incididunt molestie dis nec quam viverra augue cillum pharetra consectetuer.
-                    Fames malesuada occaecat aliquet torquent mi purus montes elementum. Quis dignissim phasellus mollis
-                    tellus metus sapien sem. Occaecat vitae mattis quisque volutpat duis nostrud arcu montes ornare facilisi
-                    fames.
-                </p>
-            </div>
         </div>
-        <div class="mt-7">
+        <div class="mt-8">
             <h3>Related Products</h3>
         </div>
-        <div class="owl-carousel owl-theme owl-loaded owl-dots-primary mt-5" data-owl-carousel-options='{"nav":false,"margin":30, "dots":true, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 4}}}'>
+        <div class="owl-carousel owl-theme owl-loaded owl-dots-primary mt-5" data-owl-carousel-options='{"nav":false, "margin":30, "dots":true, "loop":true, "autoHeight":true, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 4}}}'>
             {% set products = products.slice(0,4) %}
             <!--  -->
             {% for product in products %}
             <!--  -->
-            {{ macroShops.default(product,"border-0") }}
+            {{ macroShops.default(product,"mb-0") }}
             <!--  -->
             {% endfor %}
         </div>
