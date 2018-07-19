@@ -137,50 +137,50 @@
         }
     ],
     "products": [{
-            "name": "Orci per consectetur vulputate",
+            "name": "Women black t-shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-1.jpg",
             "sale": "sale"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Men long-sleeve t-shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-2.jpg"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Women long-sleeve t-shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-3.jpg",
             "sale": "sale"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Men comfort jacket",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-4.jpg"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Men long-sleeve shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-5.jpg"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Men long-sleeve shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-6.jpg"
         },
         {
-            "name": "Orci per consectetur vulputate",
+            "name": "Men slim-fit shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-7.jpg"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Men red polo shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-8.jpg"
         }, {
-            "name": "Orci per consectetur vulputate",
+            "name": "Women black t-shirt",
             "price": "$85",
             "discount_price": "$35",
             "img": "assets/img/shop/product-9.jpg"
