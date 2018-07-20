@@ -14,11 +14,11 @@
 <div id="content">
     <div class="container py-6 py-lg-8">
         <div class="row justify-content-center">
-            <div class="col-10 px-0 border-bottom">
+            <div class="col-4">
                 {% include "../templates/partials/portfolio_filters.html" %}
             </div>
         </div>
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-6">
             <div class="col-10">
                 <div class="portfolio-grid portfolio-grid-packery row">
                     {% set portfolios = portfolios.slice(0,6) %}
@@ -27,7 +27,7 @@
                     <div class="grid-item mb-4 {{ portfolio.tag }}">
                         <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                             <figure class="figure overlay mb-0">
-                                <div class="overlay-gradient op-5"></div>
+                                <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
                                 <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
                                 <figcaption class="overlay-body overlay-bottom p-4">
                                     <h4 class="h5">{{ portfolio.title }}</h4>

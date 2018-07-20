@@ -11465,7 +11465,7 @@ hr.line-dotted {
           transform: translateZ(0); }
 
 .overlay-hover:not(:hover) .overlay-body,
-.overlay-hover:not(:hover) .overlay-gradient {
+.overlay-hover:not(:hover) .bg-linear-gradient {
   opacity: 0 !important; }
 
 .overlay-body {

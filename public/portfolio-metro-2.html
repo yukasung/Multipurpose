@@ -112,11 +112,10 @@
     
 <!--  -->
 <div class="position-relative bg-primary top-space">
-    <!-- <img alt="" src="assets/img/other/other-13-1920x500.jpg" class="bg-image bg-image-center op-3"> -->
     <div class="container py-6">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="text-white mb-0">Portfolio Metro Style</h1>
+                <h1 class="caption-4 caption-lg-1 text-white mb-0">Portfolio Metro Style</h1>
                 <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-4">
                     <ol class="breadcrumb bg-transparent p-0 m-0">
                         <li class="breadcrumb-item">
@@ -601,7 +600,7 @@
     <div class="container py-7">
         <div class="row">
             <div class="col-md-12">
-                <nav class="nav nav-tabs-flush justify-content-center justify-content-lg-start portfolio-filter">
+                <!-- <nav class="nav nav-tabs-flush justify-content-center justify-content-lg-start portfolio-filter">
     <li class="nav-item">
         <a class="nav-link active" href="#" data-filter="*">All Categories</a>
     </li>
@@ -614,8 +613,20 @@
     <li class="nav-item">
         <a class="nav-link" href="#" data-filter=".planning">Planning</a>
     </li>
-</ul>
-
+</ul> -->
+<form>
+    <div class="form-group row justify-content-center mb-0">
+        <label class="col-sm-3 col-form-label">Category: </label>
+        <div class="col-sm-8">
+            <select class="form-control">
+                <option value="menu_order" selected="selected">All Categories</option>
+                <option value="investing">Investing</option>
+                <option value="marketing">Marketing</option>
+                <option value="planning">Planning</option>
+            </select>
+        </div>
+    </div>
+</form>
             </div>
         </div>
         <div class="portfolio-grid portfolio-grid-packery row no-gutters mt-4">

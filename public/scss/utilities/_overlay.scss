@@ -15,7 +15,7 @@
 .overlay-hover {
     &:not(:hover) {
         .overlay-body,
-        .overlay-gradient {
+        .bg-linear-gradient {
             opacity: 0 !important;
         }
     }
