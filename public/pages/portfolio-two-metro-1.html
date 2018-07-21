@@ -20,11 +20,11 @@
         <div class="row justify-content-center mt-6">
             <div class="col-12">
                 <div class="portfolio-grid portfolio-grid-packery row">
-                    <div class="grid-item col-lg-6 mb-4 planning">
+                    <div class="grid-item col-lg-6 mb-4 {{ portfolios[0].tag }}">
                         <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                             <figure class="figure overlay mb-0">
                                 <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                <img src="assets/img/portfolio/metro/portfolio-5-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                                <img src="assets/img/portfolio/portfolio-10-1600x1600.jpg" class="figure-img img-fluid mb-0" alt="">
                                 <figcaption class="overlay-body overlay-bottom p-4">
                                     <h3 class="h5">{{ portfolios[0].title }}</h3>
                                     <span class="font-weight-light">{{ portfolios[0].desc }}</span>
@@ -32,11 +32,11 @@
                             </figure>
                         </a>
                     </div>
-                    <div class="grid-item col-lg-3 mb-4 planning">
+                    <div class="grid-item col-lg-3 mb-4 {{ portfolios[1].tag }}">
                         <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                             <figure class="figure overlay mb-0">
                                 <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                <img src="assets/img/portfolio/metro/portfolio-8-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                                <img src="assets/img/portfolio/portfolio-11-1600x1600.jpg" class="figure-img img-fluid mb-0" alt="">
                                 <figcaption class="overlay-body overlay-bottom p-4">
                                     <h3 class="h5">{{ portfolios[1].title }}</h3>
                                     <span class="font-weight-light">{{ portfolios[1].desc }}</span>
@@ -44,11 +44,23 @@
                             </figure>
                         </a>
                     </div>
-                    <div class="grid-item col-lg-3 mb-4 investing">
+                    <div class="grid-item col-lg-3 mb-4 {{ portfolios[2].tag }}">
                         <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                             <figure class="figure overlay mb-0">
                                 <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                <img src="assets/img/portfolio/metro/portfolio-3-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                                <img src="assets/img/portfolio/portfolio-12-1600x1600.jpg" class="figure-img img-fluid mb-0" alt="">
+                                <figcaption class="overlay-body overlay-bottom p-4">
+                                    <h3 class="h5">{{ portfolios[2].title }}</h3>
+                                    <span class="font-weight-light">{{ portfolios[2].desc }}</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="grid-item col-lg-6 mb-4 {{ portfolios[3].tag }}">
+                        <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
+                            <figure class="figure overlay mb-0">
+                                <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
+                                <img src="assets/img/portfolio/portfolio-13-1600x1600.jpg" class="figure-img img-fluid mb-0" alt="">
                                 <figcaption class="overlay-body overlay-bottom p-4">
                                     <h3 class="h5">{{ portfolios[3].title }}</h3>
                                     <span class="font-weight-light">{{ portfolios[3].desc }}</span>
@@ -56,41 +68,29 @@
                             </figure>
                         </a>
                     </div>
-                    <div class="grid-item col-lg-6 mb-4 traning">
-                        <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
-                            <figure class="figure overlay mb-0">
-                                <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                <img src="assets/img/portfolio/metro/portfolio-1-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
-                                <figcaption class="overlay-body overlay-bottom p-4">
-                                    <h3 class="h5">{{ portfolios[4].title }}</h3>
-                                    <span class="font-weight-light">{{ portfolios[4].desc }}</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="grid-item col-lg-3 mb-4 investing marketing">
+                    <div class="grid-item col-lg-3 mb-4 {{ portfolios[4].tag }}">
                         <figure class="figure mb-0">
                             <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                                 <figure class="figure overlay mb-0">
                                     <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                    <img src="assets/img/portfolio/metro/portfolio-9-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                                    <img src="assets/img/portfolio/portfolio-14-1600x1600.jpg" class="figure-img img-fluid mb-0" alt="">
                                     <figcaption class="overlay-body overlay-bottom p-4">
-                                        <h3 class="h5">{{ portfolios[5].title }}</h3>
-                                        <span class="font-weight-light">{{ portfolios[5].desc }}</span>
+                                        <h3 class="h5">{{ portfolios[4].title }}</h3>
+                                        <span class="font-weight-light">{{ portfolios[4].desc }}</span>
                                     </figcaption>
                                 </figure>
                             </a>
                         </figure>
                     </div>
-                    <div class="grid-item col-lg-3 mb-4 traning marketing">
+                    <div class="grid-item col-lg-3 mb-4 {{ portfolios[5].tag }}">
                         <figure class="figure mb-0">
                             <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                                 <figure class="figure overlay mb-0">
                                     <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                    <img src="assets/img/portfolio/metro/portfolio-7-960x960.jpg" class="figure-img img-fluid mb-0" alt="">
+                                    <img src="assets/img/portfolio/portfolio-15-1600x1600.jpg" class="figure-img img-fluid mb-0" alt="">
                                     <figcaption class="overlay-body overlay-bottom p-4">
-                                        <h3 class="h5">{{ portfolios[6].title }}</h3>
-                                        <span class="font-weight-light">{{ portfolios[6].desc }}</span>
+                                        <h3 class="h5">{{ portfolios[5].title }}</h3>
+                                        <span class="font-weight-light">{{ portfolios[5].desc }}</span>
                                     </figcaption>
                                 </figure>
                             </a>
