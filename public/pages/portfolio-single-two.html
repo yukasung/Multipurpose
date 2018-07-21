@@ -1,0 +1,70 @@
+{% set page_title = "Portfolio Single" %}
+<!--  -->
+{% set page_link2 = "Portfolio" %}
+<!--  -->
+{% set page_active_link = "Portfolio Single" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
+<!--  -->
+{% include "../templates/partials/page_title.html"%}
+<!--  -->
+{% include "partials/header.html" %}
+<div id="content">
+    <div class="bg-white">
+        <div class="container py-8">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <i class="ti-pie-chart  icon-3x text-primary"></i>
+                    <h4 class="mt-4">1. System Analysis</h4>
+                    <p class="mb-0">Systems modeling is generally a basic principle in engineering and in social sciences.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <i class="ti-bar-chart-alt icon-3x text-primary"></i>
+                    <h4 class="mt-4">3. Software Analysis</h4>
+                    <p class="mb-0">Software system which has components as its structure and observable.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="ti-world icon-3x text-primary"></i>
+                    <h4 class="mt-4">2. Data Analysis</h4>
+                    <p class="mb-0">Hence inclusion to or exclusion from system context is dependent on the intention.</p>
+                </div>
+            </div>
+            <div class="post-gallery pt-8">
+                <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
+                    <div class="item">
+                        <img src="assets/img/portfolio/portfolio-4-1600x1033.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/portfolio/portfolio-3-1600x1033.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/portfolio/portfolio-2-1600x1033.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light">
+        <div class="container py-6">
+            <div class="w-90 mx-auto">
+                <h2 class="mb-4">Project Description</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>In computer science and information science, system is a software system which has components as
+                            its structure and observable inter-process communications as its behavior. Again, an example
+                            will illustrate: There are systems of counting, as with Roman numerals, and various systems for
+                            filing papers, or catalogues, and various library systems, of which the Dewey Decimal Classification
+                            is an example. This still fits with the definition of components which are connected together
+                            (in this case to facilitate the flow of information).</p>
+                        <p>Social and cognitive sciences recognize systems in human person models and in human societies. They
+                            include human brain functions and mental processes as well as normative ethics systems and social/cultural
+                            behavioral patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
