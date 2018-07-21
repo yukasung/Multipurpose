@@ -12,13 +12,9 @@
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
-    <div class="container py-6 py-lg-8">
-        <div class="row justify-content-center mx-0">
-            <div class="col-12 px-0 border-bottom">
-                {% include "../templates/partials/portfolio_filters.html" %}
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5">
+    <div class="container py-8">
+        {% include "../templates/partials/portfolio_filters.html" %}
+        <div class="row justify-content-center mt-6">
             <div class="col-12">
                 <div class="portfolio-grid portfolio-grid-masonry row">
                     <div class="grid-item col-lg-4 mb-4 marketing">
