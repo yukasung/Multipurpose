@@ -82,58 +82,58 @@
         }
     ],
     "portfolios": [{
-            "title": "Agricultural Market, 2017",
+            "title": "Partners branding agency",
             "img": "assets/img/portfolio/portfolio-1-1600x1033.jpg",
             "tag": "marketing planning",
-            "desc": "Branding and Identity"
+            "desc": "Marketing and Planning"
         },
         {
-            "title": "Cras vestibulum pretium",
+            "title": "Our market analysis",
             "img": "assets/img/portfolio/portfolio-2-1600x1033.jpg",
             "tag": "planning training",
-            "desc": "Branding and Identity"
+            "desc": "Planning and Training"
         },
         {
-            "title": "Aliquam phasellus aenean",
+            "title": "Market research studies",
             "img": "assets/img/portfolio/portfolio-3-1600x1033.jpg",
             "tag": "investing marketing",
-            "desc": "Branding and Identity"
+            "desc": "Investing and Marketing"
         },
         {
-            "title": "Hendrerit commodo deserunt",
+            "title": "Software analysis and quality ",
             "img": "assets/img/portfolio/portfolio-4-1600x1033.jpg",
             "tag": "planning training",
-            "desc": "Branding and Identity"
+            "desc": "Planning and Training"
         },
         {
-            "title": "Mollis adipisicing penatibus",
+            "title": "Social media marketing specialists",
             "img": "assets/img/portfolio/portfolio-5-1600x1033.jpg",
             "tag": "investing marketing",
-            "desc": "Branding and Identity"
+            "desc": "Investing and Marketing"
         },
         {
-            "title": "Habitant hendrerit tincidunt",
+            "title": "Business seminar on branding",
             "img": "assets/img/portfolio/portfolio-6-1600x1033.jpg",
             "tag": "planning training",
-            "desc": "Branding and Identity"
+            "desc": "Planning and Training"
         },
         {
-            "title": "Habitant hendrerit tincidunt",
+            "title": "Staff training and development",
             "img": "assets/img/portfolio/portfolio-7-1600x1033.jpg",
             "tag": "investing planning",
-            "desc": "Branding and Identity"
+            "desc": "Investing and Planning"
         },
         {
-            "title": "Habitant hendrerit tincidunt",
+            "title": "Financial training workshop",
             "img": "assets/img/portfolio/portfolio-8-1600x1033.jpg",
             "tag": "marketing training",
-            "desc": "Branding and Identity"
+            "desc": "Marketing and Training"
         },
         {
-            "title": "Habitant hendrerit tincidunt",
+            "title": "Professional call center to report",
             "img": "assets/img/portfolio/portfolio-9-1600x1033.jpg",
             "tag": "investing planning",
-            "desc": "Branding and Identity"
+            "desc": "Investing and Planning"
         }
     ],
     "products": [{
