@@ -192,24 +192,33 @@ var theme = {
             }
         };
 
-        // bind filter button click
-        $('.portfolio-filter').on('click', 'a', function () {
-            var filterValue = $(this).attr('data-filter');
-            // use filterFn if matches value
+        // bind filter on select change
+        $('.portfolio-filter').on('change', function () {
+            var filterValue = this.value;
             filterValue = filterFns[filterValue] || filterValue;
             $grid.isotope({
                 filter: filterValue
             });
         });
 
-        // change is-checked class on buttons
-        $('.portfolio-filter').each(function (i, buttonGroup) {
-            var $buttonGroup = $(buttonGroup);
-            $buttonGroup.on('click', 'a', function () {
-                $buttonGroup.find('.active').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
+        // // bind filter button click
+        // $('.portfolio-filter').on('click', 'a', function () {
+        //     var filterValue = $(this).attr('data-filter');
+        //     // use filterFn if matches value
+        //     filterValue = filterFns[filterValue] || filterValue;
+        //     $grid.isotope({
+        //         filter: filterValue
+        //     });
+        // });
+
+        // // change is-checked class on buttons
+        // $('.portfolio-filter').each(function (i, buttonGroup) {
+        //     var $buttonGroup = $(buttonGroup);
+        //     $buttonGroup.on('click', 'a', function () {
+        //         $buttonGroup.find('.active').removeClass('active');
+        //         $(this).addClass('active');
+        //     });
+        // });
 
         var portfolioPackery = $('.portfolio-grid-packery');
         portfolioPackery.imagesLoaded(function () {
@@ -478,7 +487,7 @@ var theme = {
         var topSpaceHeight = 0;
 
         if ($('.navbar').hasClass('navbar-top') || $('nav').hasClass('navbar-fixed-top')) {
-            
+
             if ($('.top-space').length > 0) {
 
                 if (!$('.navbar').hasClass('bg-transparent')) {

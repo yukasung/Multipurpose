@@ -84,55 +84,55 @@
     "portfolios": [{
             "title": "Agricultural Market, 2017",
             "img": "assets/img/portfolio/portfolio-1-1600x1033.jpg",
-            "tag": "transition coporate",
+            "tag": "marketing planning",
             "desc": "Branding and Identity"
         },
         {
             "title": "Cras vestibulum pretium",
             "img": "assets/img/portfolio/portfolio-2-1600x1033.jpg",
-            "tag": "coporate",
+            "tag": "planning training",
             "desc": "Branding and Identity"
         },
         {
             "title": "Aliquam phasellus aenean",
             "img": "assets/img/portfolio/portfolio-3-1600x1033.jpg",
-            "tag": "package",
+            "tag": "investing marketing",
             "desc": "Branding and Identity"
         },
         {
             "title": "Hendrerit commodo deserunt",
             "img": "assets/img/portfolio/portfolio-4-1600x1033.jpg",
-            "tag": "food",
+            "tag": "planning training",
             "desc": "Branding and Identity"
         },
         {
             "title": "Mollis adipisicing penatibus",
             "img": "assets/img/portfolio/portfolio-5-1600x1033.jpg",
-            "tag": "transition books",
+            "tag": "investing marketing",
             "desc": "Branding and Identity"
         },
         {
             "title": "Habitant hendrerit tincidunt",
             "img": "assets/img/portfolio/portfolio-6-1600x1033.jpg",
-            "tag": "video",
+            "tag": "planning training",
             "desc": "Branding and Identity"
         },
         {
             "title": "Habitant hendrerit tincidunt",
             "img": "assets/img/portfolio/portfolio-7-1600x1033.jpg",
-            "tag": "video",
+            "tag": "investing planning",
             "desc": "Branding and Identity"
         },
         {
             "title": "Habitant hendrerit tincidunt",
             "img": "assets/img/portfolio/portfolio-8-1600x1033.jpg",
-            "tag": "video",
+            "tag": "marketing training",
             "desc": "Branding and Identity"
         },
         {
             "title": "Habitant hendrerit tincidunt",
             "img": "assets/img/portfolio/portfolio-9-1600x1033.jpg",
-            "tag": "video",
+            "tag": "investing planning",
             "desc": "Branding and Identity"
         }
     ],
