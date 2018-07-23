@@ -1,0 +1,126 @@
+{% set page_title = "About Us" %}
+<!--  -->
+{% set page_link2 = "Pages" %}
+<!--  -->
+{% set page_active_link = "About Us" %}
+<!--  -->
+{% extends "../templates/master.html" %}
+<!--  -->
+{% block content %}
+<!--  -->
+{% import '../templates/macros/teams.html' as macroTeams %}
+<!--  -->
+{% import '../templates/macros/partners.html' as macroPartners %}
+<!--  -->
+{% import '../templates/macros/clients.html' as macroClients %}
+<!--  -->
+{% include "../templates/partials/page_title.html" %}
+<!--  -->
+{% include "partials/header.html" %}
+
+<div id="content">
+    <section class="py-8 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">About Us</h3>
+                    <p>Consultants provide their advice to their clients in a variety of forms. Reports and presentations are
+                        often used. However, in some specialized fields, the consultant may develop customized software or
+                        other products for the client. Depending on the nature of the consulting services and the wishes
+                        of the client, the advice from the consultant may be made public, by placing the report or presentation
+                        online.
+                    </p>
+                    <p class="mt-4">In the United Kingdom, a partnership is not legally a company, but may sometimes be referred to informally
+                        as a company.
+                    </p>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 pl-lg-5">
+                    <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
+                        <div class="item">
+                            <img class="img-fluid" src="assets/img/about/about-1-1600x1102.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid" src="assets/img/about/about-2-1600x1102.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <i class="ti-wallet icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Budget Friendly
+                    </h4>
+                    <p class="mb-0">The budget of a government is a summary or plan of the intended revenues and expenditures of that government.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <i class="ti-world icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        Worldwide Availability
+                    </h4>
+                    <p class="mb-0">Manufacturing is the production of merchandise for use or sale using labour and machines tools chemical
+                        and biological.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <i class="ti-user icon-3x text-primary"></i>
+                    <h4 class="mt-4 mb-3">
+                        After Sale Support
+                    </h4>
+                    <p class="mb-0">Owners may manage their businesses themselves, or employ managers to do so for them whether they are
+                        owners.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ macroClients.layout3() }}
+    <section class="py-7">
+        <div class="container">
+            <h3 class="text-center">Get In Touch</h3>
+            <div class="row mt-6">
+                <div class="col-12 col-lg-6">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <p>Consultants provide their advice to their clients in a variety of forms. Reports and presentations are
+                        often used. However, in some specialized fields, the consultant may develop customized software.</p>
+                    <ul class="list-unstyled list-lg mt-4 mb-0">
+                        <li>
+                            <i class="ti-email icon-lg text-primary mr-3"></i>info@company.com
+                        </li>
+                        <li>
+                            <i class="ti-support icon-lg text-primary mr-3"></i>support@company.com
+                        </li>
+                        <li>
+                            <i class="ti-mobile icon-lg text-primary mr-3"></i>+1 123 312 32 23
+                        </li>
+                        <li>
+                            <i class="ti-location-pin icon-lg text-primary mr-3"></i>93731 street lorem ipsum dolor City, Country
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                    <form class="form-container" name="form_name" action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="first" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="first" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="first" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="textarea" id="textarea" class="form-control" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" name="submit" class="btn btn-primary text-uppercase">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+{% endblock %}
