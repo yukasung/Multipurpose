@@ -376,26 +376,14 @@ var theme = {
     },
     initProgressBar: function () {
 
-        $(".progress-bar").each(function (i) {
-
-            var progressDelay = 200;
-
+        $('.skillbar').each(function (i) {
             $(this).appear(function () {
-                $(this).delay(progressDelay * i).animate({
-                    width: $(this).attr('aria-valuenow') + '%'
-                }, progressDelay);
+                $('.skillbar').skillBars({
+                    from: 0,
+                    speed: 2000,
+                    interval: 100,
+                });
             });
-
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: progressDelay,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now) + '%');
-                }
-            });
-
         });
 
     },

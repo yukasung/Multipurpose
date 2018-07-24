@@ -1,8 +1,10 @@
-{% macro progress_bar(value, css="", color="bg-primary") %}
+{% macro progressBar(title, value, css="", color="bg-primary") %}
 
-<div class="progress {{ css }}">
-    <div class="progress-bar {{ color }}" role="progressbar" aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100">{{ value }}</div>
-</div>
+<div class="skillbar {{ css }}" data-percent="{{ value }}">
+        <span class="skillbar-title">{{ title }}</span>
+        <span class="skill-bar-percent"></span>
+        <p class="skillbar-bar {{ color }}"></p>
+    </div>
 
 {% endmacro %}
 
