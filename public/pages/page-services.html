@@ -26,6 +26,67 @@
     <section class="py-8">
         <div class="container">
             <div class="row">
+                <div class="col-md-6">
+                    <div class="row light-gallery">
+                        <div class="col-md-6 mb-4">
+                            <figure class="figure overlay overlay-hover mb-0">
+                                <a class="d-block lgitem" href="assets/img/portfolio/portfolio-1-1600x1033.jpg" data-sub-html="#caption1">
+                                    <div id="caption1" class="d-none">
+                                        <h3>Business training must be about values</h3>
+                                        <p>We focus on business planning, capital raising and methodical and sustained growth.</p>
+                                    </div>
+                                    <img src="assets/img/portfolio/portfolio-1-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <figure class="figure overlay overlay-hover mb-0">
+                                <a class="d-block lgitem" href="assets/img/portfolio/portfolio-2-1600x1033.jpg" data-sub-html="#caption1">
+                                    <div id="caption1" class="d-none">
+                                        <h3>Montes aliqua nunc imperdiet nam.</h3>
+                                        <p>Esse mattis habitant senectus labore lorem. Facilisi duis quam do ligula. Reprehenderit
+                                            vestibulum exercitation.</p>
+                                    </div>
+                                    <img src="assets/img/portfolio/portfolio-2-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <figure class="figure overlay overlay-hover mb-0">
+                                <a class="d-block lgitem" href="assets/img/portfolio/portfolio-3-1600x1033.jpg" data-sub-html="#caption1">
+                                    <div id="caption1" class="d-none">
+                                        <h3>Montes aliqua nunc imperdiet nam.</h3>
+                                        <p>Esse mattis habitant senectus labore lorem. Facilisi duis quam do ligula. Reprehenderit
+                                            vestibulum exercitation.</p>
+                                    </div>
+                                    <img src="assets/img/portfolio/portfolio-3-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <figure class="figure overlay overlay-hover mb-0">
+                                <a class="d-block lgitem" href="assets/img/portfolio/portfolio-4-1600x1033.jpg" data-sub-html="#caption1">
+                                    <div id="caption1" class="d-none">
+                                        <h3>Montes aliqua nunc imperdiet nam.</h3>
+                                        <p>Esse mattis habitant senectus labore lorem. Facilisi duis quam do ligula. Reprehenderit
+                                            vestibulum exercitation.</p>
+                                    </div>
+                                    <img src="assets/img/portfolio/portfolio-4-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pl-lg-4">
+                    <h3 class="mb-4">We have been trusted advisors to the world’s biggest companies, and we continue to grow with the help
+                        of more than 20,000 people in our global network</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
+                        ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non tincidunt
+                        dui. Curabitur pretium efficitur sem vitae fermentum.</p>
+                    <button type="button" class="btn btn-primary text-uppercase mt-4">Read More</button>
+                </div>
+            </div>
+            <!-- <div class="row">
                 <div class="col-lg-6">
                     <h3 class="mb-3">We have been trusted advisors to the world’s biggest companies</h3>
                     <p class="mb-4 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -44,7 +105,7 @@
                 <div class="col-lg-6 mt-4 mt-lg-0 pl-lg-6">
                     <img class="img-fluid" src="assets/img/service/service-7-800x787.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="bg-light py-8">
@@ -178,11 +239,11 @@
     </section>
     <section class="bg-light py-8">
         <div class="container">
-            <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"nav":true,"margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1,"nav":false,"dots": true}, "768": {"items": 1,"dots": false}, "992": {"items": 1,"dots": false}}}'>
-                {% set testimonials = testimonials.slice(0,3) %}
+            <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover owl-nav-dark" data-owl-carousel-options='{"nav":true,"dots":false, "margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+                {% set testimonials = testimonials.slice(0,4) %}
                 <!--  -->
                 {% for testimonial in testimonials %}
-                <div class="item">
+                <div class="item mt-0">
                     {{ macroTestimonials.layout1(testimonial) }}
                 </div>
                 {% endfor %}

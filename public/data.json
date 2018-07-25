@@ -223,41 +223,49 @@
         "name": "Kristina Cain",
         "position": "Managing Director",
         "desc": "Investment is the most valuable business resource we have ever purchased.",
+        "desc2":"Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times the value from business. Thanks to business.",
         "img": "assets/img/testimonial/testimonial-1-400x400.jpg"
     }, {
         "name": "Stacy Logan",
         "position": "Operations Manager",
         "desc": "Financial is the most valuable business resource we have ever purchased.",
+        "desc2": "I don't always clop, but when I do, it's because of business. Keep up the excellent work. I have gotten at least 50 times the value from business.",
         "img": "assets/img/testimonial/testimonial-2-400x400.jpg"
     }, {
         "name": "Candice Perkins",
         "position": "Technology Director",
         "desc": "I didn't even need training. You won't regret it. Healthcare saved my business.",
+        "desc2": "I could probably go into sales for you. No matter where you go, business is the coolest, most happening thing around! Very easy to use.",
         "img": "assets/img/testimonial/testimonial-3-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "desc2": "I love business. Thanks to business, we've just launched our 5th website! You've saved our business! I am so pleased with this product.",
         "img": "assets/img/testimonial/testimonial-1-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Operations Director",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "desc2": "I could probably go into sales for you. No matter where you go, business is the coolest, most happening thing around! Very easy to use. Thanks to business, we've just launched our 5th website.",
         "img": "assets/img/testimonial/testimonial-2-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Business Director",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "desc2": "I could probably go into sales for you. No matter where you go, business is the coolest, most happening thing around! Very easy to use. Thanks to business, we've just launched our 5th website.",
         "img": "assets/img/testimonial/testimonial-3-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "desc2": "I could probably go into sales for you. No matter where you go, business is the coolest, most happening thing around! Very easy to use. Thanks to business, we've just launched our 5th website.",
         "img": "assets/img/testimonial/testimonial-1-400x400.jpg"
     }, {
         "name": "Coriss Ambady",
         "position": "Marketing Specialist",
         "desc": "Diam lacinia bibendum eros occaecat incididunt. Euismod tempor vulputate feugiat diam. Consequat purus.",
+        "desc2": "I could probably go into sales for you. No matter where you go, business is the coolest, most happening thing around! Very easy to use. Thanks to business, we've just launched our 5th website.",
         "img": "assets/img/testimonial/testimonial-2-400x400.jpg"
     }],
     "clients": [{
