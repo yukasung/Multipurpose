@@ -31,11 +31,11 @@
                 </div>
                 <div class="col-md-5 my-auto">
                     <h3 class="mb-4">We have been trusted advisors to the world’s biggest companies, and we continue to grow with the help
-                        of more than 20,000 people.</h3>
+                        of more than
+                        <span class="text-primary">20,000</span> people.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
                         ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non tincidunt
                         dui. Curabitur pretium efficitur sem vitae fermentum.</p>
-                    <button type="button" class="btn btn-primary text-uppercase mt-4">Read More</button>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light py-8">
+    <section class="border-top py-8">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -177,12 +177,12 @@
                     <h6 class="font-weight-light text-muted">We provide dedicated innovative software</h6>
                 </div>
             </div>
-            <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover owl-nav-dark mt-6" data-owl-carousel-options='{"nav":true,"dots":false, "margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+            <div class="owl-carousel owl-theme owl-loaded mt-6" data-owl-carousel-options='{"nav":false,"dots":true, "margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
                 {% set testimonials = testimonials.slice(0,4) %}
                 <!--  -->
                 {% for testimonial in testimonials %}
                 <div class="item mt-0">
-                    {{ macroTestimonials.layout1(testimonial) }}
+                    {{ macroTestimonials.layout1(testimonial,"bg-light") }}
                 </div>
                 {% endfor %}
             </div>

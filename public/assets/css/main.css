@@ -11190,6 +11190,26 @@ hr.line-dotted {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+.testimonial .testimonial-body {
+  position: relative; }
+  .testimonial .testimonial-body:before {
+    position: absolute;
+    bottom: -7px;
+    left: 33px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-color: inherit;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.testimonial.testimonial-center .testimonial-body:before {
+  left: 80px; }
+
+.testimonial.testimonial-center .testimonial-footer {
+  text-align: center; }
+
 a {
   color: #3498db; }
   a:hover {

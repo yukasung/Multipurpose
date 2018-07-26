@@ -1,0 +1,29 @@
+//
+// Custom testimonial
+//
+.testimonial {
+    .testimonial-body {
+        position: relative;
+        &:before {
+            position: absolute;
+            bottom: -7px;
+            left: 33px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            content: "";
+            background-color: inherit;
+            transform: rotate(45deg);
+        }
+    }
+    &.testimonial-center {
+        .testimonial-body {
+            &:before {
+                left: 80px;
+            }
+        }
+        .testimonial-footer {
+            text-align: center;
+        }
+    }
+}

@@ -1,17 +1,17 @@
 <!-- Layout 1 -->
-{% macro layout1(testimonial) %}
-<div class="card border-0">
-    <div class="card-body p-4 text-center">
+{% macro layout1(testimonial, card_css) %}
+<div class="testimonial testimonial-center">
+    <div class="testimonial-body text-center p-4 bg-light">
         <i class="ti-quote-left icon-lg text-primary"></i>
-        <p class="font-weight-light pt-4">{{ testimonial.desc2 }}</p>
-        <div class="d-block pt-4">
-            <img src="{{ testimonial.img }}" alt="Testimonial" class="d-inline rounded-circle w-max-90px mr-2">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h6 class="text-primary my-2">
-                    <a href="#">{{ testimonial.name }}</a>
-                </h6>
-                <p class="font-weight-light text-black-50 pb-0 mb-0">{{ testimonial.position }}</p>
-            </div>
+        <p class="font-weight-light pt-4 mb-0">{{ testimonial.desc2 }}</p>
+    </div>
+    <div class="testimonial-footer mt-4">
+        <img src="{{ testimonial.img }}" class="d-inline rounded-circle w-max-90px mr-2" alt="">
+        <div class="d-inline-block align-middle text-left ml-3">
+            <h6 class="text-primary mb-2">
+                <a href="#">{{ testimonial.name }}</a>
+            </h6>
+            <p class="font-weight-light text-black-50 pb-0 mb-0">{{ testimonial.position }}</p>
         </div>
     </div>
 </div>
