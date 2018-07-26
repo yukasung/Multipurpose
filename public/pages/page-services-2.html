@@ -23,19 +23,51 @@
 {% include "partials/header.html" %}
 
 <div id="content">
-    <section class="py-4">
+    <section class="py-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <img src="assets/img/other/other-21-600x776.png" class="img-fluid" alt="">
+            <div class="row ">
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-5 col-md-12 col-lg-5 text-right text-md-center text-lg-center">
+                            <div class="counter text-nowrap">
+                                <span class="text-counter display-4" data-from="0" data-to="120" data-speed="3500" data-refresh-interval="50"></span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-12 col-lg-6 my-auto text-left text-md-center text-lg-left">
+                            <h5 class="font-weight-light mb-0">Clients business partners</h5>
+                        </div>
+                        <div class="col-1 d-none d-lg-block">
+                            <div class="h-100 border-right"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5 my-auto">
-                    <h3 class="mb-4">We have been trusted advisors to the world’s biggest companies, and we continue to grow with the help
-                        of more than 20,000 people.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
-                        ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non tincidunt
-                        dui. Curabitur pretium efficitur sem vitae fermentum.</p>
-                    <button type="button" class="btn btn-primary text-uppercase mt-4">Read More</button>
+                <div class="col-12 col-md-4 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="col-5 col-md-12 col-lg-5 text-right text-md-center text-lg-center">
+                            <div class="counter text-nowrap">
+                                <span class="text-counter display-4" data-from="0" data-to="500" data-speed="3500" data-refresh-interval="50"></span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-12 col-lg-6 my-auto text-left text-md-center text-lg-left">
+                            <h5 class="font-weight-light mb-0">Employee around the world</h5>
+                        </div>
+                        <div class="col-1 d-none d-lg-block">
+                            <div class="h-100 border-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="col-5 col-md-12 col-lg-5 text-right text-md-center text-lg-center">
+                            <div class="counter text-nowrap">
+                                <span class="text-counter display-4" data-from="0" data-to="25" data-speed="3500" data-refresh-interval="50"></span>
+                                <span class="display-4">+</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-12 col-lg-6 my-auto text-left text-md-center text-lg-left">
+                            <h5 class="font-weight-light mb-0">Years experience of business</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,15 +215,15 @@
                     <h6 class="font-weight-light text-muted">We provide dedicated innovative software</h6>
                 </div>
             </div>
-            <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover owl-nav-dark mt-6" data-owl-carousel-options='{"nav":true,"dots":false, "margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
-                {% set testimonials = testimonials.slice(0,4) %}
-                <!--  -->
-                {% for testimonial in testimonials %}
-                <div class="item mt-0">
-                    {{ macroTestimonials.layout1(testimonial) }}
+            <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover mt-6" data-owl-carousel-options='{"nav":true, "dots":false, "margin":30, "loop":true, "autoHeight":true,"responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+                    {% set testimonials = testimonials.slice(0,4) %}
+                    <!--  -->
+                    {% for testimonial in testimonials %}
+                    <div class="item mt-0">
+                        {{ macroTestimonials.layout1(testimonial,"bg-white") }}
+                    </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
-            </div>
         </div>
     </section>
 </div>

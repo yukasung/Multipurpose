@@ -1,7 +1,7 @@
 <!-- Layout 1 -->
-{% macro layout1(testimonial, card_css) %}
+{% macro layout1(testimonial, body_css) %}
 <div class="testimonial testimonial-center">
-    <div class="testimonial-body text-center p-4 bg-light">
+    <div class="testimonial-body text-center p-4 {{ body_css }}">
         <i class="ti-quote-left icon-lg text-primary"></i>
         <p class="font-weight-light pt-4 mb-0">{{ testimonial.desc2 }}</p>
     </div>
