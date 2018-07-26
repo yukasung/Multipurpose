@@ -73,27 +73,36 @@
     </div>
     <div class="container py-8">
         <div class="row">
-            <div class="col-12 col-lg-6">
-                <h5 class="mb-3">Contact Info</h5>
-                <p>Consultants provide their advice to their clients in a variety of forms. Reports and presentations are often
-                    used. However, in some specialized fields, the consultant may develop customized software.</p>
-                <ul class="list-unstyled list-lg mt-4 mt-lg-0 mb-0">
-                    <li>
-                        <i class="ti-email icon-lg text-primary mr-3"></i>info@company.com
-                    </li>
-                    <li>
-                        <i class="ti-support icon-lg text-primary mr-3"></i>support@company.com
-                    </li>
-                    <li>
-                        <i class="ti-mobile icon-lg text-primary mr-3"></i>+1 123 312 32 23
-                    </li>
-                    <li>
-                        <i class="ti-location-pin icon-lg text-primary mr-3"></i>93731 street lorem ipsum dolor City, Country
-                    </li>
-                </ul>
+            <div class="col-12 text-center">
+                <h3>Fill Out the Form</h3>
+                <h6 class="font-weight-light text-muted">We provide dedicated innovative software</h6>
             </div>
-            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                <form class="form-container" name="form_name" action="#" method="post">
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="first" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="first" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="first" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="form-group col-md-6">
+                            {{ inputData.ddlDepartments() }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="textarea" id="textarea" class="form-control" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    <input type="submit" value="Send message" name="submit" class="btn btn-primary text-uppercase">
+                </form>
+                <!-- <form class="form-container" name="form_name" action="#" method="post">
                     <div class="form-group">
                         <input type="text" name="first" class="form-control" placeholder="Name">
                     </div>
@@ -110,7 +119,7 @@
                         <textarea name="textarea" id="textarea" class="form-control" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
                     </div>
                     <input type="submit" value="Send message" name="submit" class="btn btn-primary text-uppercase">
-                </form>
+                </form> -->
             </div>
         </div>
     </div>
