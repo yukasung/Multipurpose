@@ -11203,6 +11203,12 @@ hr.line-dotted {
     background-color: inherit;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
+  .testimonial .testimonial-body.border:before {
+    position: absolute;
+    bottom: -9px;
+    background-color: #fff;
+    border-right: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef; }
 
 .testimonial.testimonial-center .testimonial-body:before {
   left: 80px; }
