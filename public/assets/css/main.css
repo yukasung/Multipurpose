@@ -11501,6 +11501,9 @@ a {
 .border-gray {
   border-color: #67666A !important; }
 
+.border-width-2 {
+  border-width: 2px !important; }
+
 .overlay {
   position: relative;
   display: inline-block;
