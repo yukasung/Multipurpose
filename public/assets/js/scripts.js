@@ -22,6 +22,7 @@ var theme = {
         theme.initWOW();
         theme.initOwlCarousel();
         theme.initParallax();
+        theme.initVideo();
     },
     resizeEvent: function () {
         theme.setTopSpace();
@@ -356,6 +357,17 @@ var theme = {
     },
     initWOW: function () {
         new WOW().init();
+    },
+    initVideo: function () {
+
+        $(document).on('click', '.video-icon', function (ev) {
+            ev.preventDefault();
+            var video = $(this).closest('.video');
+            var iframe = video.find('iframe');
+            var src = iframe.data('src');
+            video.addClass('video-reveal');
+            iframe.attr('src', src);
+        });
     },
     setTopSpace: function () {
 
