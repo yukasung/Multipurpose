@@ -164,6 +164,9 @@ input[type="submit"] {
         height: 100%;
         border: 0;
         background: #252525;
-        min-height: 350px;
+        min-height: 220px !important;
+        @include media-breakpoint-up(sm) {
+            min-height: 350px !important;
+        }
     }
 }
