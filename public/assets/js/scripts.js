@@ -81,31 +81,13 @@ var theme = {
         });
     },
     initParallax: function () {
-        var cls = '.parallax';
-        $(cls).each(function (idx, obj) {
-            var url = $(obj).attr('data-parallax-img');
-            $(obj).css({
-                'background-image': 'url(' + url + ')',
-                'background-repeat': 'repeat'
+
+        if ($('.parallax').length > 0) {
+            var parallax = new Rellax('.parallax', {
+                center: true
             });
-            theme.parallaxUpdate(null, obj);
-        });
-        $(cls).on('resize', theme.parallaxUpdate);
-        $(window).on('scroll', function (evt) {
-            theme.parallaxUpdateAll(evt, cls);
-        });
-        $(window).on('resize', function (evt) {
-            theme.parallaxUpdateAll(evt, cls);
-        });
-    },
-    initParallaxVideo: function () {
-        $('#video-work').backgroundVideo({
-            $outerWrap: $('.outer-wrap'),
-            pauseVideoOnViewLoss: false,
-            parallaxOptions: {
-                effect: 1.9
-            }
-        });
+        }
+
     },
     // add animate.css class(es) to the elements to be animated
     setAnimation: function (elem, inOut) {
@@ -365,8 +347,10 @@ var theme = {
             var video = $(this).closest('.video');
             var iframe = video.find('iframe');
             var src = iframe.data('src');
+            iframe.removeClass("d-none");
             video.addClass('video-reveal');
             iframe.attr('src', src);
+            
         });
     },
     setTopSpace: function () {

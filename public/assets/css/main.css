@@ -10157,55 +10157,39 @@ input[type="submit"] {
     padding: 0 !important;
     background-color: transparent !important; } }
 
-.bg-image-center {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.overflow-hidden,
+.overflow-hidden-y {
+  overflow-y: hidden; }
 
-.bg-image,
-.bg-image-fluid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  object-fit: cover; }
-
-@media (max-width: 767.98px) {
-  .bg-image-fluid {
-    position: relative; } }
+.overflow-hidden,
+.overflow-hidden-x {
+  overflow-x: hidden; }
 
 .lg-sub-html p {
   font-size: 0.875rem; }
 
-.video .video-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out; }
-
-.video img {
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear; }
-
-.video.video-reveal .video-icon,
-.video.video-reveal img {
-  opacity: 0 !important;
-  pointer-events: none; }
-
-.video iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  background: #252525;
-  min-height: 220px !important; }
-  @media (min-width: 576px) {
-    .video iframe {
-      min-height: 350px !important; } }
+.video {
+  position: relative; }
+  .video .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out; }
+  .video img {
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear; }
+  .video.video-reveal .video-icon,
+  .video.video-reveal img {
+    opacity: 0 !important;
+    pointer-events: none; }
+  .video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #252525; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  02. MASTERS > SIDEBAR
@@ -10815,7 +10799,7 @@ header.sticky.header-appear .navbar-action > ul a {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
   .owl-dots-inside .owl-dots span {
-    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
 .owl-dots-primary .owl-dot span {
   border: 2px solid #3498db !important; }
@@ -11173,7 +11157,7 @@ hr.line-dotted {
   margin: 15px 0;
   width: 100%;
   background: #eee;
-  height: 15px;
+  height: 10px;
   border-radius: 0;
   width: 100%; }
   .skillbar .skillbar-title {
@@ -11181,7 +11165,7 @@ hr.line-dotted {
     top: -35px;
     left: 0; }
   .skillbar .skillbar-bar {
-    height: 15px;
+    height: 10px;
     width: 0px;
     background: #6adcfa;
     border-radius: 0;
@@ -11207,6 +11191,20 @@ hr.line-dotted {
   .pricing .price .period {
     font-size: 18px;
     letter-spacing: 0px; }
+
+.parallax:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
+.parallax[class*="bg-"]:after {
+  background-color: inherit; }
+
+.parallax[class*="op-"]:after {
+  opacity: inherit; }
 
 /*-----------------------------------------------------------------------------------*/
 /*  Custom > Component > Badge
@@ -11483,6 +11481,9 @@ a {
   bottom: 0;
   left: 0;
   right: 0; }
+  .bg-radial-gradient.gradient-primary.gradient-left {
+    background: -webkit-radial-gradient(center left, circle, #3498db, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
   .bg-radial-gradient.gradient-dark.gradient-left {
     background: -webkit-radial-gradient(center left, circle, #343a40, rgba(255, 255, 255, 0) 80%);
     background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
@@ -11642,6 +11643,39 @@ a {
 /*-----------------------------------------------------------------------------------*/
 .right-0 {
   right: 0; }
+
+.bg-image-center {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-image,
+.bg-image-fluid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover; }
+
+@media (max-width: 767.98px) {
+  .bg-image-fluid {
+    position: relative; } }
+
+.bg-holder {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  will-change: transform, opacity, filter;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-repeat: no-repeat; }
 
 .meta {
   font-size: 14px;

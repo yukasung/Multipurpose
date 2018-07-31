@@ -112,27 +112,14 @@ input[type="submit"] {
     }
 }
 
-.bg-image-center {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.overflow-hidden,
+.overflow-hidden-y {
+    overflow-y: hidden;
 }
 
-.bg-image,
-.bg-image-fluid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    object-fit: cover;
-}
-
-.bg-image-fluid {
-    @include media-breakpoint-down(sm) {
-        position: relative;
-    }
+.overflow-hidden,
+.overflow-hidden-x {
+    overflow-x: hidden;
 }
 
 .lg-sub-html {
@@ -142,6 +129,7 @@ input[type="submit"] {
 }
 
 .video {
+    position: relative;
     .video-icon {
         position: absolute;
         top: 50%;
@@ -164,9 +152,9 @@ input[type="submit"] {
         height: 100%;
         border: 0;
         background: #252525;
-        min-height: 220px !important;
-        @include media-breakpoint-up(sm) {
-            min-height: 350px !important;
+        // min-height: 220px !important;
+        @include media-breakpoint-up(lg) {
+            // min-height: 348px !important;
         }
     }
 }
