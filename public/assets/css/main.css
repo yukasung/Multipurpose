@@ -9968,6 +9968,9 @@ a {
 .caption-4 {
   font-size: 1.5rem !important; }
 
+.caption-5 {
+  font-size: 1.25rem !important; }
+
 @media (min-width: 576px) {
   .caption-sm-1 {
     font-size: 2.5rem !important; }
@@ -9976,7 +9979,9 @@ a {
   .caption-sm-3 {
     font-size: 1.75rem !important; }
   .caption-sm-4 {
-    font-size: 1.5rem !important; } }
+    font-size: 1.5rem !important; }
+  .caption-sm-5 {
+    font-size: 1.25rem !important; } }
 
 @media (min-width: 768px) {
   .caption-md-1 {
@@ -9986,7 +9991,9 @@ a {
   .caption-md-3 {
     font-size: 1.75rem !important; }
   .caption-md-4 {
-    font-size: 1.5rem !important; } }
+    font-size: 1.5rem !important; }
+  .caption-md-5 {
+    font-size: 1.25rem !important; } }
 
 @media (min-width: 992px) {
   .caption-lg-1 {
@@ -9996,7 +10003,9 @@ a {
   .caption-lg-3 {
     font-size: 1.75rem !important; }
   .caption-lg-4 {
-    font-size: 1.5rem !important; } }
+    font-size: 1.5rem !important; }
+  .caption-lg-5 {
+    font-size: 1.25rem !important; } }
 
 @media (min-width: 1200px) {
   .caption-xl-1 {
@@ -10006,7 +10015,9 @@ a {
   .caption-xl-3 {
     font-size: 1.75rem !important; }
   .caption-xl-4 {
-    font-size: 1.5rem !important; } }
+    font-size: 1.5rem !important; }
+  .caption-xl-5 {
+    font-size: 1.25rem !important; } }
 
 .present-1 {
   font-size: 6rem !important; }
