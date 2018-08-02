@@ -90,21 +90,51 @@ var theme = {
         }
 
     },
-    initChart: function(){
+    initChart: function () {
 
-        var data = {
-            // A labels array that can contain any sort of values
-            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-            // Our series array that contains series objects or in this case series data arrays
-            series: [
-              [5, 2, 4, 2, 0]
-            ]
-          };
-          
-          // Create a new line chart object where as first parameter we pass in a selector
-          // that is resolving to our chart container element. The Second parameter
-          // is the actual data object.
-          new Chartist.Line('.ct-chart', data);
+        $('#chartBar').each(function (i) {
+
+            $(this).appear(function () {
+                Chart.defaults.global.defaultFontColor = '#333333';
+                var ctx = $("#chartBar")[0].getContext('2d');
+
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+                        datasets: [{
+                            label: 'Revenue by Year',
+                            data: [22, 24, 25, 26, 29, 31, 34],
+                            backgroundColor: 'rgba(52, 152, 219, 1)',
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        title: {
+                            display: true,
+                            text: 'Revenue by Year'
+                        },
+                        legend: {
+                            display: false,
+                        },
+                        scales: {
+                            yAxes: [{
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Revenue in billion U.S. dollars'
+                                },
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            });
+
+        });
 
     },
     // add animate.css class(es) to the elements to be animated
@@ -368,7 +398,7 @@ var theme = {
             iframe.removeClass("d-none");
             video.addClass('video-reveal');
             iframe.attr('src', src);
-            
+
         });
     },
     setTopSpace: function () {

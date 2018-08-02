@@ -10,16 +10,21 @@
 {% include "partials/header6.html" %}
 <div id="content" class="top-space">
     <section class="d-flex flex-column position-relative">
-        <img src="assets/img/slider/slider-12-1920x880.jpg" class="img-fluid" alt="">
+        <img src="assets/img/slider/slider-10-1920x880.jpg" class="img-fluid" alt="">
         <div class="bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="caption-img-overlay-fluid col-12 col-lg-5 text-white text-left">
-                        <div class="bg-dark-50 p-lg-4">
-                            <h1 class="caption-1">Bring Innovation Supply the Solutions</h1>
-                            <p class="mt-3 mb-0">Manufacturing is the production of merchandise for use or sale using labour and machines, tools,
-                                chemical and biological.</p>
-                            <a href="#" class="btn btn-primary text-uppercase mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
+                    <div class="caption-img-overlay-fluid col-12 col-lg-4 text-white text-left">
+                        <div class="bg-dark-50 p-lg-4 mr-4">
+                            <h3 class="h4">Subcribe now and get a first month free of charge</h3>
+                            <p class="mt-2 mb-0 font-weight-light">Climb leg rub face on everything give attitude nap all day for under the bed goofballs.</p>
+                            <form class="form-container form-material mt-5" name="form_name" action="#" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="first" class="form-control focus text-white" placeholder="Enter your email address..">
+                                </div>
+                                <a href="#" class="btn btn-block btn-primary text-uppercase">Subscribe</a>
+                            </form>
+                            <p class="mt-3 mb-0 font-weight-light">We don’t share your personal info with anyone. Check out our Privacy Policy.</p>
                         </div>
                     </div>
                 </div>
@@ -168,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section class="py-8">
+    <section class="py-6 py-md-7">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 my-auto">
@@ -196,6 +201,34 @@
                     {{ macroBlogs.default(post) }}
                 </div>
                 {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="text-uppercase">See more news <i class="ti-arrow-circle-right ml-1"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light py-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Top questions about Forms</h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <h4 class="h5">Do people need Google accounts to respond to forms?</h4>
+                    <p>No. Anyone can respond to Google Forms.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5">Can I keep a form private to only my company?</h4>
+                    <p>Yes. The sharing settings for Google Forms make it easy to control who is able to view and edit your forms.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5">Can Google Forms handle a large number of responses?</h4>
+                    <p>Yes. Google Forms can handle as much data as <a href="#">Google Sheets</a>, and Google Sheets can currently handle 2 million cells of data. That's a lot of data.</p>
+                </div>
             </div>
         </div>
     </section>

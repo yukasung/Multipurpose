@@ -15,7 +15,7 @@
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/lightgallery/css/lightgallery.min.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="assets/plugins/chartist/chartist.min.css" rel="stylesheet">
+    <!-- <link href="assets/plugins/chartist/chartist.min.css" rel="stylesheet"> -->
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -528,9 +528,9 @@
         <div class="bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="caption-img-overlay-fluid col-12 col-lg-6 p-4 mt-4 text-white text-center">
+                    <div class="caption-img-overlay-fluid col-12 col-lg-6 p-4 mt-lg-4 text-white text-center">
                         <p>We are a friendly approachable creative agency.</p>
-                        <h1 class="caption-3 caption-lg-1 text-uppercase">
+                        <h1 class="caption-3 caption-lg-1 text-uppercase mb-0">
                             25 years experience in the project management industry
                         </h1>
                         <a href="#" class="btn btn-primary text-uppercase mt-4" data-animation-in="fadeInRight" data-animation-duration="1s" data-animation-delay="0.8s">Learn More</a>
@@ -539,7 +539,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light py-8">
+    <section class="bg-light py-6 py-md-8">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 text-center text-md-left my-auto">
@@ -617,8 +617,9 @@
             </div>
         </div>
     </section>
-    <section class="position-relative overflow-hidden py-8">
-        <div class="parallax bg-holder" style="background-image: url('assets/img/other/other-5-1920x600.jpg'); transform: translate3d(0px, -10px, 0px);" data-rellax-percentage="0.5"></div>
+    <section class="position-relative overflow-hidden py-6 py-md-8">
+        <div class="parallax bg-holder" style="background-image: url('assets/img/other/other-5-1920x600.jpg'); transform: translate3d(0px, -10px, 0px);"
+            data-rellax-percentage="0.5"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 my-auto text-white">
@@ -642,7 +643,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 my-auto">
+                <div class="col-lg-6 pt-5 pt-lg-0 my-auto">
                     <div class="video">
                         <img src="assets/img/other/other-4-800x516.jpg" class="img-fluid" alt="">
                         <iframe class="d-none bg-image bg-image-center" data-src="https://www.youtube.com/embed/TJ1SDXbij8Y?autoplay=1" allowfullscreen></iframe>
@@ -654,35 +655,32 @@
             </div>
         </div>
     </section>
-    <section class="py-8">
+    <section class="py-6 py-md-8">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 my-auto text-center">
-                    <!-- <img src="assets/img/other/other-23-360x575.jpg" class="img-fluid" alt=""> -->
-                    <div class="ct-chart ct-perfect-fourth"></div>
+                <div class="col-12 col-lg-6 my-auto text-center pt-5 pt-lg-0 order-2 order-lg-1">
+                    <canvas id="chartBar" width="400" height="300"></canvas>
                 </div>
-                <div class="col-12 col-lg-6 my-auto">
-                    <div class="d-block mt-6 mt-lg-0 text-center text-lg-left">
-                        <h3 class="mb-4">We have been trusted advisors to the world’s biggest companies, and we continue to grow with the
-                            help of more than
-                            <span class="text-primary">20,000</span> people.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, nunc ut hendrerit tempus,
-                            ex dolor consectetur risus, ut pharetra dolor elit eu magna. Vivamus vitae tincidunt quam, non
-                            tincidunt dui. Curabitur pretium efficitur sem vitae fermentum. Maecenas fermentum erat non facilisis
-                            laoreet.
-                        </p>
+                <div class="col-12 col-lg-6 my-auto order-1 order-lg-2">
+                    <div class="d-block pl-lg-4">
+                        <h3 class="mb-4">We manage $35 billion in assets and serve more than
+                            <span class="text-primary">90,000</span> members and we continue to grow.</h3>
+                        <p>Modern mathematical analysis is the study of infinite processes. It is the branch of mathematics
+                            that includes calculus. It can be applied in the study of classical concepts of mathematics,
+                            such as real numbers complex variables, trigonometric functions, and algorithms, or of non-classical
+                            concepts like constructivism.</p>
                         <a href="#" class="btn btn-primary text-uppercase mt-3">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-8 bg-light">
+    <section class="bg-light py-6 py-md-8">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h3>What Our Clients Say</h3>
-                    <h6 class="font-weight-light text-muted">We provide dedicated innovative software</h6>
+                    <h6 class="font-weight-light text-muted">We help our customer find opportunities to cut costs</h6>
                 </div>
             </div>
             <div class="row mt-6">
@@ -873,7 +871,7 @@
     <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-skills-bar/skill.bars.jquery.js"></script>
     <script type="text/javascript" src="assets/plugins/rellax.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/chartist/chartist.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/chart.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 
