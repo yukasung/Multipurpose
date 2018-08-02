@@ -129,6 +129,9 @@ var theme = {
                                     beginAtZero: true
                                 }
                             }]
+                        },
+                        animation: {
+                            duration: 3000
                         }
                     }
                 });
