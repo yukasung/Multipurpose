@@ -69,17 +69,6 @@
                 }
             }
         }
-        .navbar-toggler {
-            span,
-            span::before,
-            span::after {
-                position: absolute;
-                display: inline-block;
-                height: 2px;
-                width: 24px;
-                background: $navbar-dark-color;
-            }
-        }
     }
     &.navbar-light {
         .navbar-brand {
@@ -326,7 +315,6 @@
         display: inline-block;
         height: 2px;
         width: 24px;
-        background: $navbar-light-color;
     }
     span {
         position: absolute;
@@ -349,6 +337,26 @@
     }
     span::after {
         top: 6px;
+    }
+}
+
+.navbar-light {
+    .navbar-toggler {
+        span,
+        span::before,
+        span::after {
+            background: $navbar-light-color;
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        span,
+        span::before,
+        span::after {
+            background: $navbar-dark-color;
+        }
     }
 }
 
@@ -391,13 +399,26 @@
         transform: translateX(0);
         transition: all .4s ease 0s;
     }
-    .navbar-toggler {
+    .navbar-dark {
         span {
-            background: rgba(#333333, 0) !important;
+            background: rgba($navbar-dark-color, 0) !important;
             &::before,
             &::after {
-                background: #333333;
+                background: $navbar-dark-color;
             }
+        }
+    }
+    .navbar-light {
+        span {
+            background: rgba($navbar-light-color, 0) !important;
+            &::before,
+            &::after {
+                background: $navbar-light-color;
+            }
+        }
+    }
+    .navbar-toggler {
+        span {
             &::before {
                 transform: translateX(4px) translateY(-3px) rotate(45deg);
             }
@@ -482,28 +503,6 @@ header {
                 top: 0;
                 transition-duration: 0.3s;
             }
-            .navbar-brand {
-                .logo-dark {
-                    display: inline;
-                }
-                .logo-light {
-                    display: none;
-                }
-            }
-            .navbar-action {
-                >ul {
-                    a {
-                        color: $navbar-light-color;
-                    }
-                }
-            }
-            .navbar-nav {
-                .nav-link {
-                    @include media-breakpoint-up(lg) {
-                        color: $navbar-light-color;
-                    }
-                }
-            }
         }
     }
 }
@@ -516,10 +515,39 @@ header {
 
 .header-appear {
     .navbar {
-        background-color: $white !important;
+        &.navbar-dark {
+            &.bg-transparent {
+                background-color: #fff !important;
+                .navbar-brand {
+                    .logo-dark {
+                        display: inline;
+                    }
+                    .logo-light {
+                        display: none;
+                    }
+                }
+                .nav-link {
+                    color: $navbar-light-color;
+                }
+                .navbar-action {
+                    >ul {
+                        a {
+                            color: $navbar-light-color;
+                        }
+                    }
+                }
+                .navbar-toggler {
+                    span,
+                    span::before,
+                    span::after {
+                        background: $navbar-light-color;
+                    }
+                }
+            }
+        }
     }
 }
 
-.navbar-shadow{
+.navbar-shadow {
     box-shadow: $box-shadow;
 }
