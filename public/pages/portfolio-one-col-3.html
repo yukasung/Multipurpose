@@ -12,21 +12,21 @@
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
-    <div class="container py-6 py-lg-8">
+    <div class="container py-6 pt-lg-8">
         <div class="row justify-content-center">
             {% set portfolios = portfolios.slice(0,9) %}
             <!--  -->
             {% for portfolio in portfolios %}
-            <div class="col-md-6 col-lg-4">
-                <figure class="figure">
+            <div class="col-lg-4">
+                <figure class="figure mb-4">
                     <a href="portfolio-single-photo-gallery-grid.html">
                         <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
                     </a>
-                    <figcaption class="figure-caption py-4">
+                    <figcaption class="figure-caption py-3">
                         <h4 class="h5">
                             <a href="portfolio-single-photo-gallery-grid.html">{{ portfolio.title }}</a>
                         </h4>
-                        <span class="font-weight-light">{{ portfolio.desc }}</span>
+                        <span class="text-muted">{{ portfolio.desc }}</span>
                     </figcaption>
                 </figure>
             </div>

@@ -12,29 +12,24 @@
 <!--  -->
 {% import '../templates/macros/portfolios.html' as macroPortfolios %}
 <div id="content">
-    <div class="container py-6 py-lg-8">
-        {% include "../templates/partials/portfolio_filters.html" %}
-        <div class="row justify-content-center mt-6">
-            <div class="col-10">
-                <div class="portfolio-grid portfolio-grid-packery row">
-                    {% set portfolios = portfolios.slice(0,6) %}
-                    <!--  -->
-                    {% for portfolio in portfolios %}
-                    <div class="grid-item mb-4 {{ portfolio.tag }}">
-                        <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
-                            <figure class="figure overlay overlay-hover mb-0">
-                                <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
-                                <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
-                                <figcaption class="overlay-body overlay-bottom p-4">
-                                    <h4 class="h5">{{ portfolio.title }}</h4>
-                                    <span class="font-weight-light">{{ portfolio.desc }}</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    {% endfor %}
-                </div>
+    <div class="container py-6 pt-lg-8">
+        <div class="row justify-content-center">
+            {% set portfolios = portfolios.slice(0,6) %}
+            <!--  -->
+            {% for portfolio in portfolios %}
+            <div class="col-lg-10">
+                <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
+                    <figure class="figure overlay overlay-hover mb-4">
+                        <div class="d-block bg-linear-gradient gradient-dark gradient-bottom w-100 h-80 op-5"></div>
+                        <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+                        <figcaption class="overlay-body overlay-bottom p-4">
+                            <h4 class="h5">{{ portfolio.title }}</h4>
+                            <span class="font-weight-light">{{ portfolio.desc }}</span>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
+            {% endfor %}
         </div>
     </div>
     {% endblock %}
