@@ -14,37 +14,39 @@
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
-    <div class="container py-8">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card border-0">
-                    <div class="overlay">
-                        <img src="assets/img/portfolio/portfolio-2-1600x1033.jpg" class="img-fluid" alt="" />
-                        <div class="overlay-body">
-                            <div class="video-gallery overlay-align-middle text-center">
-                                <a class="icon-video" href="https://www.youtube.com/watch?v=GNloY_4s8RA">
-                                    <i class="ion-ios-play"></i>
-                                </a>
+    <section class="py-6 pt-lg-8 pt-lg-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0">
+                        <div class="overlay">
+                            <img src="assets/img/portfolio/portfolio-2-1600x1033.jpg" class="img-fluid" alt="" />
+                            <div class="overlay-body">
+                                <div class="video-gallery overlay-align-middle text-center">
+                                    <a class="icon-video" href="https://www.youtube.com/watch?v=GNloY_4s8RA">
+                                        <i class="ion-ios-play"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-8">
-            <div class="col-md-12 text-center">
-                <h3>Related Blog Posts</h3>
+            <div class="row mt-6">
+                <div class="col-md-12 text-center">
+                    <h3>Related Blog Posts</h3>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded owl-dots-primary mt-5" data-owl-carousel-options='{"nav":false, "margin":30, "dots":true, "loop":false, "autoHeight":true, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
+                {% set posts = posts.slice(0,3) %}
+                <!--  -->
+                {% for post in posts %}
+                <!--  -->
+                {{ macroBlogs.default(post,"border-0 mb-0") }}
+                <!--  -->
+                {% endfor %}
             </div>
         </div>
-        <div class="owl-carousel owl-theme owl-loaded owl-dots-primary mt-5" data-owl-carousel-options='{"nav":false, "margin":30, "dots":true, "loop":true, "autoHeight":true, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}}}'>
-            {% set posts = posts.slice(0,3) %}
-            <!--  -->
-            {% for post in posts %}
-            <!--  -->
-            {{ macroBlogs.default(post) }}
-            <!--  -->
-            {% endfor %}
-        </div>
-    </div>
+    </section>
 </div>
 {% endblock %}
