@@ -13,29 +13,24 @@
 {% include "partials/header.html" %}
 <div id="content">
     <div class="container py-6 py-lg-8">
-        {% include "../templates/partials/portfolio_filters.html" %}
-        <div class="row justify-content-center mt-6">
-            <div class="col-12">
-                <div class="portfolio-grid portfolio-grid-packery row">
-                    {% set portfolios = portfolios.slice(0,8) %}
-                    <!--  -->
-                    {% for portfolio in portfolios %}
-                    <div class="grid-item col-md-6 mb-4 {{ portfolio.tag }}">
-                        <figure class="figure">
-                            <a href="portfolio-single-photo-gallery-grid.html">
-                                <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
-                            </a>
-                            <figcaption class="figure-caption pt-4">
-                                <h4 class="h5">
-                                    <a href="portfolio-single-photo-gallery-grid.html">{{ portfolio.title }}</a>
-                                </h4>
-                                <span class="font-weight-light">{{ portfolio.desc }}</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    {% endfor %}
-                </div>
+        <div class="row justify-content-center">
+            {% set portfolios = portfolios.slice(0,8) %}
+            <!--  -->
+            {% for portfolio in portfolios %}
+            <div class="col-md-6 mb-4">
+                <figure class="figure">
+                    <a href="portfolio-single-photo-gallery-grid.html">
+                        <img src="{{ portfolio.img }}" class="figure-img img-fluid mb-0" alt="">
+                    </a>
+                    <figcaption class="figure-caption pt-4">
+                        <h4 class="h5">
+                            <a href="portfolio-single-photo-gallery-grid.html">{{ portfolio.title }}</a>
+                        </h4>
+                        <span class="text-black-50">{{ portfolio.desc }}</span>
+                    </figcaption>
+                </figure>
             </div>
+            {% endfor %}
         </div>
     </div>
     {% endblock %}
