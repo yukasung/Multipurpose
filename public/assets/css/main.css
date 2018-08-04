@@ -10372,7 +10372,7 @@ input[type="submit"] {
     @media (min-width: 992px) {
       .navbar .navbar-nav > .nav-item > .nav-link {
         line-height: 72px; } }
-  @media (max-width: 1199.98px) {
+  @media (max-width: 991.98px) {
     .navbar .dropdown.show > .dropdown-toggle:after {
       -webkit-transform: rotate(-180deg);
               transform: rotate(-180deg); } }

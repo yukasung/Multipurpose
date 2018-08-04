@@ -150,7 +150,7 @@
         &.show {
             >.dropdown-toggle {
                 &:after {
-                    @include media-breakpoint-down(lg) {
+                    @include media-breakpoint-down(md) {
                         transform: rotate(-180deg);
                     }
                 }

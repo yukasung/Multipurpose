@@ -10,7 +10,6 @@ $(window).resize(function () {
 var theme = {
     init: function () {
         theme.setTopSpace();
-        theme.initNavbar();
         theme.initGoogleMap();
         theme.initProgressBar();
         theme.initNavbarPopup();
@@ -151,9 +150,6 @@ var theme = {
 
             });
         });
-    },
-    initNavbar: function () {
-
     },
     initGoogleMap: function () {
 

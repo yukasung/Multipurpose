@@ -18,10 +18,6 @@ var navbar = {
 
         var slideDownDuration = 100;
         var slideUpDuration = 50;
-        var topHeaderAreaHeight = 0;
-        var navbarHeight = 0;
-
-        navbarHeight = $('.navbar').height();
 
         $('#navbarCollapse').on('show.bs.collapse', function () {
             $('header').addClass('navbar-collapse-show');
@@ -32,14 +28,20 @@ var navbar = {
             $('header').removeClass('navbar-collapse-show');
         });
 
-        $('.navbar-dropdown-hover .dropdown').hover(function () {
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
             if (!$('.navbar-toggler').is(':visible')) {
                 $(this).find('.dropdown-toggle').first().trigger('click');
             }
-        });
+        } else {
+            $('.navbar-dropdown-hover .dropdown').hover(function () {
+                if (!$('.navbar-toggler').is(':visible')) {
+                    $(this).find('.dropdown-toggle').first().trigger('click');
+                }
+            });
+        }
 
         $('.navbar .dropdown-menu .dropdown-toggle').on('click', function (e) {
-            
+
             var $el = $(this);
             var $parent = $(this).offsetParent(".dropdown-menu");
 
