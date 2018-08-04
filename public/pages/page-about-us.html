@@ -16,16 +16,26 @@
 <!--  -->
 {% import '../templates/macros/components.html' as macroComponents %}
 <!--  -->
-{% include "../templates/partials/page_title.html" %}
-<!--  -->
 {% include "partials/header.html" %}
+<!--  -->
+{% include "../templates/partials/page_title.html" %}
 
 <div id="content">
-    <section class="py-6 py-md-8 border-bottom">
+    <section class="py-6 py-lg-8 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 pr-lg-4">
-                    <img src="assets/img/about/about-1-1600x1102.jpg" class="figure-img img-fluid mb-0" alt="">
+                    <div class="owl-carousel owl-theme owl-loaded owl-nav-dark" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
+                        <div class="item">
+                            <img src="assets/img/about/about-1-1600x1102.jpg" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/about/about-1-1600x1102.jpg" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/about/about-1-1600x1102.jpg" alt="" />
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0 pl-lg-4">
                     <h3 class="mb-3">Our Overview</h3>

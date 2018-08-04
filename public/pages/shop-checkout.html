@@ -12,224 +12,226 @@
 <!--  -->
 {% include "partials/header.html" %}
 <div id="content">
-    <div class="container py-6 py-lg-8">
-        <form>
-            <div class="row">
-                <div class="col-12 col-lg-7">
-                    <h4 class="mb-4">Billing Details</h4>
-                    <div class="form-group row">
-                        <div class="col-lg-12">
-                            {{ inputData.ddlCountries() }}
+    <section class="py-6 py-lg-8">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <h4 class="mb-4">Billing Details</h4>
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                {{ inputData.ddlCountries() }}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-6 mb-3 mb-lg-0">
-                            <input type="text" class="form-control" placeholder="First Name" value="">
+                        <div class="form-group row">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="First Name" value="">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Last Name" value="">
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Last Name" value="">
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control" placeholder="Company Name" value="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-12">
-                            <input type="text" class="form-control" placeholder="Company Name" value="">
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control" placeholder="Address" value="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-12">
-                            <input type="text" class="form-control" placeholder="Address" value="">
+                        <div class="form-group row">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc." value="">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Town / City" value="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-6 mb-3 mb-lg-0">
-                            <input type="text" class="form-control" placeholder="Apartment, suite, unit etc." value="">
+                        <div class="form-group row">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="State / County" value="">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Postcode / Zip" value="">
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Town / City" value="">
+                        <div class="form-group row">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Email" value="">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Phone" value="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-6 mb-3 mb-lg-0">
-                            <input type="text" class="form-control" placeholder="State / County" value="">
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Postcode / Zip" value="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-6 mb-3 mb-lg-0">
-                            <input type="text" class="form-control" placeholder="Email" value="">
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Phone" value="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-12">
-                            <div class="checkbox-collapse">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Create Account</label>
-                                </div>
-                                <div class="collapse mt-2">
-                                    <p>Create an account by entering the information below. If you are a returning customer
-                                        please login at the top of the page.</p>
-                                    <div class="form-group row">
-                                        <div class="col-lg-12">
-                                            <input type="text" class="form-control" id="txtUserName" placeholder="Username">
-                                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                <div class="checkbox-collapse">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Create Account</label>
                                     </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-12">
-                                            <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                                    <div class="collapse mt-2">
+                                        <p>Create an account by entering the information below. If you are a returning customer
+                                            please login at the top of the page.</p>
+                                        <div class="form-group row">
+                                            <div class="col-lg-12">
+                                                <input type="text" class="form-control" id="txtUserName" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-lg-12">
+                                                <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-lg-12">
-                            <div class="checkbox-collapse">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                    <label class="custom-control-label" for="customCheck2">Ship to a different address</label>
-                                </div>
-                                <div class="collapse mt-2">
-                                    <div class="form-group row">
-                                        <div class="col-lg-12">
-                                            {{ inputData.ddlCountries() }}
-                                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                <div class="checkbox-collapse">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Ship to a different address</label>
                                     </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-6 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" placeholder="First Name" value="">
+                                    <div class="collapse mt-2">
+                                        <div class="form-group row">
+                                            <div class="col-lg-12">
+                                                {{ inputData.ddlCountries() }}
+                                            </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" placeholder="Last Name" value="">
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                                <input type="text" class="form-control" placeholder="First Name" value="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" placeholder="Last Name" value="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-12">
-                                            <input type="text" class="form-control" placeholder="Company Name" value="">
+                                        <div class="form-group row">
+                                            <div class="col-lg-12">
+                                                <input type="text" class="form-control" placeholder="Company Name" value="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-12">
-                                            <input type="text" class="form-control" placeholder="Address" value="">
+                                        <div class="form-group row">
+                                            <div class="col-lg-12">
+                                                <input type="text" class="form-control" placeholder="Address" value="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-6 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" placeholder="Apartment, suite, unit etc." value="">
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc." value="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" placeholder="Town / City" value="">
+                                            </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" placeholder="Town / City" value="">
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                                <input type="text" class="form-control" placeholder="State / County" value="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" placeholder="Postcode / Zip" value="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-6 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" placeholder="State / County" value="">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" placeholder="Postcode / Zip" value="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-6 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" placeholder="Email" value="">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" placeholder="Phone" value="">
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                                <input type="text" class="form-control" placeholder="Email" value="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" placeholder="Phone" value="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group mb-0">
+                            <label for="exampleTextarea">Order Notes</label>
+                            <textarea class="form-control" id="txtOrderNotes" rows="8"></textarea>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleTextarea">Order Notes</label>
-                        <textarea class="form-control" id="txtOrderNotes" rows="8"></textarea>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="order-review mt-6 mt-lg-0">
-                        <h4 class="mb-4">Your Order</h4>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th class="w-70 border-top-0">Product</th>
-                                    <th class="w-30 border-top-0 text-right">Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle py-4">Same Black Shoose
-                                        <strong class="ml-2">× 1</strong>
-                                    </td>
-                                    <td class="align-middle py-4 text-right">$20.00</td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle py-4">Same Black Shoose
-                                        <strong class="ml-2">× 1</strong>
-                                    </td>
-                                    <td class="align-middle py-4 text-right">$20.00</td>
-                                </tr>
-                                <tr>
-                                    <th class="align-middle">Subtotal</th>
-                                    <td class="align-middle py-4 text-right">$1,695.00</td>
-                                </tr>
-                                <tr>
-                                    <th class="align-middle">Shipping</th>
-                                    <td class="align-middle py-4 text-right text-nowrap">Free Shipping</td>
-                                </tr>
-                                <tr>
-                                    <th class="align-middle">Total</th>
-                                    <th class="align-middle py-4 text-right">$1,697.90</th>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="d-block">
-                            <h4 class="mb-4">Payment Method</h4>
-                            <fieldset class="form-group">
-                                <table class="table mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td class="border-top-0 pb-4 pl-0">
-                                                <label class="custom-control custom-radio mb-0">
-                                                    <input id="radio1" name="radio" type="radio" class="custom-control-input" checked>
-                                                    <span class="custom-control-indicator"></span>
-                                                    <span class="custom-control-description">Direct Bank Transfer</span>
-                                                </label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-4 pl-0">
-                                                <label class="custom-control custom-radio mb-0">
-                                                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
-                                                    <span class="custom-control-indicator"></span>
-                                                    <span class="custom-control-description">Credit Card</span>
-                                                </label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-4 pl-0">
-                                                <label class="custom-control custom-radio mb-0">
-                                                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
-                                                    <span class="custom-control-indicator"></span>
-                                                    <span class="custom-control-description">PayPal</span>
-                                                </label>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </fieldset>
-                            <a class="btn btn-primary text-uppercase" href="#">Place Order</a>
+                    <div class="col-lg-5">
+                        <div class="border border-width-2 p-4 mt-4 mt-lg-0">
+                            <h4 class="mb-4">Your Order</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="w-70 border-top-0">Product</th>
+                                        <th class="w-30 border-top-0 text-right">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle py-4">Same Black Shoose
+                                            <strong class="ml-2">× 1</strong>
+                                        </td>
+                                        <td class="align-middle py-4 text-right">$20.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle py-4">Same Black Shoose
+                                            <strong class="ml-2">× 1</strong>
+                                        </td>
+                                        <td class="align-middle py-4 text-right">$20.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle">Subtotal</th>
+                                        <td class="align-middle py-4 text-right">$1,695.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle">Shipping</th>
+                                        <td class="align-middle py-4 text-right text-nowrap">Free Shipping</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle">Total</th>
+                                        <th class="align-middle py-4 text-right">$1,697.90</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-block">
+                                <h4 class="mb-4">Payment Method</h4>
+                                <fieldset class="form-group">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-top-0 pb-4 pl-0">
+                                                    <label class="custom-control custom-radio mb-0">
+                                                        <input id="radio1" name="radio" type="radio" class="custom-control-input" checked>
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Direct Bank Transfer</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-4 pl-0">
+                                                    <label class="custom-control custom-radio mb-0">
+                                                        <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Credit Card</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-4 pl-0">
+                                                    <label class="custom-control custom-radio mb-0">
+                                                        <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">PayPal</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                                <a class="btn btn-primary text-uppercase" href="#">Place Order</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    </section>
 </div>
 {% endblock %}

@@ -8,23 +8,25 @@
 <!--  -->
 {% block content %}
 <!--  -->
-{% include "../templates/partials/page_title.html" %}
-<!--  -->
 {% import '../templates/macros/blogs.html' as macroBlogs %}
 <!--  -->
 {% include "partials/header.html" %}
+<!--  -->
+{% include "../templates/partials/page_title.html" %}
 <div id="content">
-    <div class="container py-6 py-lg-8">
-        <div class="row">
-            {% set posts = posts.slice(0,9) %}
-            <!--  -->
-            {% for post in posts %}
-            <div class="col-12 col-sm-6 col-lg-4">
-                {{ macroBlogs.default(post) }}
+    <section class="py-6 py-lg-8">
+        <div class="container">
+            <div class="row">
+                {% set posts = posts.slice(0,9) %}
+                <!--  -->
+                {% for post in posts %}
+                <div class="col-12 col-lg-4">
+                    {{ macroBlogs.default(post) }}
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
+            {% include "../templates/partials/pagination.html" %}
         </div>
-        {% include "../templates/partials/pagination.html" %}
-    </div>
+    </section>
 </div>
 {% endblock %}

@@ -4,13 +4,15 @@
 <!--  -->
 {% set page_active_link = "Grid Three Columns" %}
 <!--  -->
-{% extends "../templates/master.html" %} {% block content %}
+{% extends "../templates/master.html" %} 
 <!--  -->
-{% include "../templates/partials/page_title.html"%}
+{% block content %}
+<!--  -->
+{% import '../templates/macros/portfolios.html' as macroPortfolios %}
 <!--  -->
 {% include "partials/header.html" %}
 <!--  -->
-{% import '../templates/macros/portfolios.html' as macroPortfolios %}
+{% include "../templates/partials/page_title.html"%}
 <div id="content">
     <section class="py-6 pt-lg-8 pb-lg-7">
         <div class="container">

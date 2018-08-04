@@ -10,12 +10,10 @@ $(window).resize(function () {
 var theme = {
     init: function () {
         theme.setTopSpace();
-        theme.initIsoTope();
         theme.initNavbar();
         theme.initGoogleMap();
         theme.initProgressBar();
         theme.initNavbarPopup();
-        theme.initLightGallery();
         theme.initCounter();
         theme.initCheckboxCollapse();
         theme.initCardLinkShare();
@@ -154,52 +152,6 @@ var theme = {
             });
         });
     },
-    initIsoTope: function () {
-
-        var $grid = $('.portfolio-grid').isotope();
-
-        // filter functions
-        var filterFns = {
-            // show if number is greater than 50
-            numberGreaterThan50: function () {
-                var number = $(this).find('.number').text();
-                return parseInt(number, 10) > 50;
-            },
-            // show if name ends with -ium
-            ium: function () {
-                var name = $(this).find('.name').text();
-                return name.match(/ium$/);
-            }
-        };
-
-        // bind filter on select change
-        $('.portfolio-filter').on('change', function () {
-            var filterValue = this.value;
-            filterValue = filterFns[filterValue] || filterValue;
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-
-        var portfolioPackery = $('.portfolio-grid-packery');
-        portfolioPackery.imagesLoaded(function () {
-            portfolioPackery.isotope({
-                layoutMode: 'packery',
-                itemSelector: '.grid-item',
-
-            });
-        });
-
-        var portfolioMasonry = $('.portfolio-grid-masonry');
-        portfolioMasonry.imagesLoaded(function () {
-            portfolioMasonry.isotope({
-                layoutMode: 'masonry',
-                itemSelector: '.grid-item',
-
-            });
-        });
-
-    },
     initNavbar: function () {
 
     },
@@ -266,23 +218,6 @@ var theme = {
             });
 
         });
-
-    },
-    initLightGallery: function () {
-
-        $('.light-gallery').lightGallery({
-            thumbnail: true,
-            selector: '.lgitem',
-            animateThumb: true,
-            showThumbByDefault: false,
-            download: false,
-            autoplayControls: false,
-            thumbWidth: 100,
-            thumbContHeight: 80,
-            videoMaxWidth: '1000px'
-        });
-
-        $('.video-gallery').lightGallery();
 
     },
     initCounter: function () {
