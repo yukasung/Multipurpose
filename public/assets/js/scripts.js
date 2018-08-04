@@ -178,7 +178,7 @@ var theme = {
 
         $('.skillbar').each(function (i) {
             $(this).appear(function () {
-                $('.skillbar').skillBars({
+                $(this).skillBars({
                     from: 0,
                     speed: 2000,
                     interval: 100,
