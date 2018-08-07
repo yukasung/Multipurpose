@@ -1,0 +1,34 @@
+//
+// Custom card
+//
+.accordion {
+    .card {
+        .card-header {
+            position: relative;
+            a {
+                display: block;
+                padding-right: 30px;
+                &:after {
+                    content: "\e64b";
+                    position: absolute;
+                    right: 15px;
+                    font-family: "themify";
+                    transition: all .3s linear 0s;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &.collapsed {
+                    &:after {
+                        content: "\e649";
+                        position: absolute;
+                        right: 15px;
+                        font-family: "themify";
+                        transition: all .3s linear 0s;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

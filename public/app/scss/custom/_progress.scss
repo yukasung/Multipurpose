@@ -1,0 +1,30 @@
+//
+// Custom progress
+//
+.skillbar {
+	position: relative;
+	display: inline-block;
+	margin: 15px 0;
+	width: 100%;
+	background: #eee;
+	height: 10px;
+	border-radius: 0;
+	width: 100%;
+	.skillbar-title {
+		position: absolute;
+		top: -35px;
+		left: 0;
+	}
+	.skillbar-bar {
+		height: 10px;
+		width: 0px;
+		background: #6adcfa;
+		border-radius: 0;
+		display: inline-block;
+	}
+	.skill-bar-percent {
+		position: absolute;
+		right: 0;
+		top: -35px;
+	}
+}
