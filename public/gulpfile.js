@@ -56,30 +56,30 @@ gulp.task('browserSync', function () {
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
-    .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(plumber(plumberErrorHandler))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('app/assets/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
 })
 
-// Watchers
-gulp.task('watch', function () {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
-})
-
-
 // NunJucks
 gulp.task('nunjucks', function () {
   return gulp.src(['app/pages/**/*.html'])
-      .pipe(plumber(plumberErrorHandler))
-      .pipe(nunjucksRender({
-          path: ['app/templates']
-      }))
-      .pipe(gulp.dest('app'))
-});
+    .pipe(plumber(plumberErrorHandler))
+    .pipe(nunjucksRender({
+      path: ['app/templates']
+    }))
+    .pipe(gulp.dest('app'))
+})
+
+// Watchers
+gulp.task('watch', function () {
+  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/pages/**/*.html', ['nunjucks']);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
+})
 
 // Optimization Tasks 
 // ------------------

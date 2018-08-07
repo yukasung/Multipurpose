@@ -9753,7 +9753,7 @@ a {
     padding: 0 !important;
     background-color: transparent !important; } }
 
-.p-over {
+.block-over {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -9763,12 +9763,12 @@ a {
   padding: 0 !important;
   background-color: transparent !important; }
 
-.p-under {
+.block-under {
   width: 100% !important;
   z-index: 1; }
 
 @media (min-width: 576px) {
-  .p-sm-over {
+  .block-sm-over {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -9777,12 +9777,12 @@ a {
     overflow: hidden;
     padding: 0 !important;
     background-color: transparent !important; }
-  .p-sm-under {
+  .block-sm-under {
     width: 100% !important;
     z-index: 1; } }
 
 @media (min-width: 768px) {
-  .p-md-over {
+  .block-md-over {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -9791,12 +9791,12 @@ a {
     overflow: hidden;
     padding: 0 !important;
     background-color: transparent !important; }
-  .p-md-under {
+  .block-md-under {
     width: 100% !important;
     z-index: 1; } }
 
 @media (min-width: 992px) {
-  .p-lg-over {
+  .block-lg-over {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -9805,12 +9805,12 @@ a {
     overflow: hidden;
     padding: 0 !important;
     background-color: transparent !important; }
-  .p-lg-under {
+  .block-lg-under {
     width: 100% !important;
     z-index: 1; } }
 
 @media (min-width: 1200px) {
-  .p-xl-over {
+  .block-xl-over {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -9819,7 +9819,7 @@ a {
     overflow: hidden;
     padding: 0 !important;
     background-color: transparent !important; }
-  .p-xl-under {
+  .block-xl-under {
     width: 100% !important;
     z-index: 1; } }
 
