@@ -72,6 +72,9 @@ gulp.task('nunjucks', function () {
       path: ['app/templates']
     }))
     .pipe(gulp.dest('app'))
+    .pipe(browserSync.reload({ // Reloading with Browser Sync
+      stream: true
+    }));
 })
 
 // Watchers
@@ -86,7 +89,6 @@ gulp.task('watch', function () {
 
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function () {
-
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))

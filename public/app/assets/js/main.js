@@ -265,7 +265,7 @@ var theme = {
 
         if ($('.navbar').hasClass('navbar-top') || $('nav').hasClass('navbar-fixed-top')) {
 
-            if ($('.top-space').length > 0) {
+            if ($('.space-top').length > 0) {
 
                 if (!$('.navbar').hasClass('bg-transparent')) {
                     topSpaceHeight = $('.navbar').outerHeight();
@@ -276,7 +276,7 @@ var theme = {
                 }
 
                 topSpaceHeight -= 2;
-                $('.top-space').css('margin-top', topSpaceHeight + "px");
+                $('.space-top').css('margin-top', topSpaceHeight + "px");
 
             }
 
