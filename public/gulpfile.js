@@ -80,7 +80,7 @@ gulp.task('nunjucks', function () {
 // Watchers
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/pages/**/*.html', ['nunjucks']);
+  gulp.watch(['app/pages/**/*.html', 'app/templates/**/*.html'], ['nunjucks']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 })
 
