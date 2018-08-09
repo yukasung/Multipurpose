@@ -2,7 +2,6 @@
 // Timeline
 //
 $primary-hover: scale-color($primary, $lightness: 32%);
-
 a {
     color: $primary;
     &:hover {
@@ -10,13 +9,6 @@ a {
         text-decoration: none;
     }
 }
-
-/*==================================
-    TIMELINE
-==================================*/
-
-/*-- GENERAL STYLES
-    ------------------------------*/
 
 .timeline {
     line-height: 1.4em;
@@ -34,8 +26,6 @@ a {
     }
 }
 
-/*----- TIMELINE ITEM -----*/
-
 .timeline-item {
     padding-left: 40px;
     position: relative;
@@ -43,8 +33,6 @@ a {
         padding-bottom: 0;
     }
 }
-
-/*----- TIMELINE INFO -----*/
 
 .timeline-info {
     font-size: 12px;
@@ -54,8 +42,6 @@ a {
     text-transform: uppercase;
     white-space: nowrap;
 }
-
-/*----- TIMELINE MARKER -----*/
 
 .timeline-marker {
     position: absolute;
@@ -96,8 +82,6 @@ a {
     border: 3px solid $primary;
 }
 
-/*----- TIMELINE CONTENT -----*/
-
 .timeline-item {
     &:last-child() {
         .timeline-content {
@@ -112,8 +96,6 @@ a {
         margin-bottom: 0;
     }
 }
-
-/*----- TIMELINE PERIOD -----*/
 
 .period {
     padding: 0;
@@ -148,10 +130,6 @@ a {
     }
 }
 
-/*----------------------------------------------
-        MOD: TIMELINE SPLIT
-    ----------------------------------------------*/
-
 .timeline-split {
     @media (min-width: 768px) {
         .timeline {
@@ -183,10 +161,6 @@ a {
         }
     }
 }
-
-/*----------------------------------------------
-        MOD: TIMELINE CENTERED
-    ----------------------------------------------*/
 
 .timeline-centered {
     @extend .timeline-split;
@@ -248,10 +222,6 @@ a {
         }
     }
 }
-
-/*----------------------------------------------
-        MOD: MARKER OUTLINE
-    ----------------------------------------------*/
 
 .marker-outline {
     .timeline-marker {

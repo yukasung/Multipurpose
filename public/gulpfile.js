@@ -81,7 +81,7 @@ gulp.task('nunjucks', function () {
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch(['app/pages/**/*.html', 'app/templates/**/*.html'], ['nunjucks']);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/assets/js/**/*.js', browserSync.reload);
 })
 
 // Optimization Tasks 

@@ -16,33 +16,31 @@
     .owl-item {
         display: flex;
         flex: 1 0 auto;
-        .item {
-            display: flex;
-            flex-direction: column;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: auto;
-            margin-top: auto;
-            .card {
-                flex: 1 0 auto;
-            }
-            &.item-height {
-                height: 592px;
-            }
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+        .card {
+            flex: 1 0 auto;
+        }
+        &.item-height {
+            height: 592px;
         }
     }
 }
 
 .owl-hero {
-    .owl-item {
-        .item {
-            height: 100%;
-            margin-top: 0;
-            .bg-gradient {
-                &:after {
-                    @include media-breakpoint-down(lg) {
-                        content: none;
-                    }
+    .item {
+        height: 100%;
+        margin-top: 0;
+        .bg-gradient {
+            &:after {
+                @include media-breakpoint-down(lg) {
+                    content: none;
                 }
             }
         }
@@ -62,7 +60,7 @@
             border: 1px solid $primary;
             width: 13px;
             height: 13px;
-            transition: all 150ms ease-in;            
+            transition: all 150ms ease-in;
         }
         &.active,
         &:hover {
@@ -90,7 +88,7 @@
         transition: all 0.2s ease-in-out;
         &:after {
             font-family: 'themify';
-            font-size: 28px;
+            font-size: 1.75rem;
             display: block;
             line-height: 40px;
         }

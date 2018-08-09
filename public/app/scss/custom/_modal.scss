@@ -12,15 +12,13 @@
 }
 
 .modal {
-    .modal-dialog {
-        &.modal-fullscreen {
+    .modal-fullscreen {
+        @extend %fullscreen;
+        .modal-content {
+            border: none;
+            border-radius: 0;
+            box-shadow: inherit;
             @extend %fullscreen;
-            .modal-content {
-                border: none;
-                border-radius: 0;
-                box-shadow: inherit;
-                @extend %fullscreen;
-            }
         }
     }
     .close {

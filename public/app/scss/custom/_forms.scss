@@ -15,35 +15,3 @@ select {
     padding: 1rem;
     padding-right: 2rem;
 }
-
-//
-// Form material
-//
-
-.form-material .form-control {
-    padding-right: 0;
-    padding-left: 0;
-    background-color: transparent;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center bottom, center calc(100% - 1px);
-    background-size: 0 2px, 100% 1px;
-    transition: background 0s ease-out;
-}
-
-.form-material .form-control,
-.form-material .form-control.focus,
-.form-material .form-control:focus {
-    background-image: linear-gradient($primary, $primary), linear-gradient(#e4eaec, #e4eaec);
-    float: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-.form-material .form-control.focus,
-.form-material .form-control:focus {
-    background-size: 100% 2px, 100% 1px;
-    outline: 0;
-    transition-duration: .3s
-}
