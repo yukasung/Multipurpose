@@ -120,7 +120,7 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
                 margin: 0;
-                color: #fff;
+                color: #fff !important;
             }
             @include media-breakpoint-up(lg) {
                 line-height: $navbar-height;
