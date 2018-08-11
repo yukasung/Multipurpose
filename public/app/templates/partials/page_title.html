@@ -8,12 +8,12 @@
                         <li class="breadcrumb-item">
                             <a href="/" class="text-white">Home</a>
                         </li>
-                        {% if page_link2 %}
+                        {% if page_link %}
                         <li class="breadcrumb-item text-white">
-                            <a href="#" class="text-white">{{ page_link2 }}</a>
+                            <a href="#" class="text-white">{{ page_link }}</a>
                         </li>
-                        {% endif %} {% if page_active_link %}
-                        <li class="breadcrumb-item active text-white op-8" aria-current="page">{{ page_active_link }}</li>
+                        {% endif %} {% if page_link2 %}
+                        <li class="breadcrumb-item active text-white op-8" aria-current="page">{{ page_link2 }}</li>
                         {% endif %}
                     </ol>
                 </nav>
