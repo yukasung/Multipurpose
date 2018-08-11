@@ -11,31 +11,59 @@
 </div>
 <div class="mb-5">
     <h4 class="mb-3">About Us</h4>
-    <p>Companies as legal persons may associate and register themselves collectively as other companies often known as a corporate group.</p>
+    <p>Companies as legal persons may associate and register themselves collectively as other companies often known as a corporate
+        group.
+    </p>
 </div>
 <div class="mb-5">
     <h4 class="mb-3">Latest News</h4>
     <div>
         <ul class="list-group list-group-lg list-group-flush">
-            {% set posts = posts.slice(0,3) %}
-            <!--  -->
-            {% for post in posts %}
             <li class="list-group-item px-0">
                 <div class="media">
                     <a class="overlay overlay-hover w-30" href="blog-single-left-sidebar.html">
-                        <img class="img-fluid" src="{{ post.img }}" alt="">
+                        <img class="img-fluid" src="assets/images/blog/blog-1-1600x1033.jpg" alt="">
                     </a>
                     <div class="media-body ml-3">
                         <h5 class="h6">
-                            <a href="blog-single-right-sidebar.html">{{ post.title }}</a>
+                            <a class="text-body" href="blog-single-right-sidebar.html">We discuss our business priorities</a>
                         </h5>
                         <p class="meta mb-0">
-                            {{ post.date }}
+                            January 1, 2018
                         </p>
                     </div>
                 </div>
             </li>
-            {% endfor %}
+            <li class="list-group-item px-0">
+                <div class="media">
+                    <a class="overlay overlay-hover w-30" href="blog-single-left-sidebar.html">
+                        <img class="img-fluid" src="assets/images/blog/blog-2-1600x1033.jpg" alt="">
+                    </a>
+                    <div class="media-body ml-3">
+                        <h5 class="h6">
+                            <a class="text-body" href="blog-single-right-sidebar.html">The key account sales and marketing</a>
+                        </h5>
+                        <p class="meta mb-0">
+                            February 1, 2018
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item px-0">
+                <div class="media">
+                    <a class="overlay overlay-hover w-30" href="blog-single-left-sidebar.html">
+                        <img class="img-fluid" src="assets/images/blog/blog-3-1600x1033.jpg" alt="">
+                    </a>
+                    <div class="media-body ml-3">
+                        <h5 class="h6">
+                            <a class="text-body" href="blog-single-right-sidebar.html">We are a small organization meeting</a>
+                        </h5>
+                        <p class="meta mb-0">
+                            March 10, 2018
+                        </p>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -44,26 +72,39 @@
     <div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                <a href="#">Economics</a>
+                <a class="text-body" href="#">Economics</a>
                 <span class="badge badge-pill font-size-14 font-weight-normal">12</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                <a href="#">Management‎</a>
+                <a class="text-body" href="#">Management‎</a>
                 <span class="badge badge-pill font-size-14 font-weight-normal">15</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                <a href="#">Education‎</a>
+                <a class="text-body" href="#">Education‎</a>
                 <span class="badge badge-pill font-size-14 font-weight-normal">20</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                <a href="#">Organizations‎</a>
+                <a class="text-body" href="#">Organizations‎</a>
                 <span class="badge badge-pill font-size-14 font-weight-normal">10</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                <a href="#">Intelligence‎</a>
+                <a class="text-body" href="#">Intelligence‎</a>
                 <span class="badge badge-pill font-size-14 font-weight-normal">14</span>
             </li>
         </ul>
     </div>
 </div>
-{% include "./widget_tag.html" %}
+<div class="d-block">
+    <h4 class="mb-4">Popular Tags</h4>
+    <div>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Catalog</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Animal</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Urban</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Tilted</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Wanderer</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Inspiring</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Pixieset</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Family</a>
+        <a href="#" class="badge badge-primary px-2 py-1 h6">Minimal</a>
+    </div>
+</div>
