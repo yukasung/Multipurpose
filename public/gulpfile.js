@@ -13,8 +13,6 @@ var plumber = require('gulp-plumber');
 var path = require('path');
 var notify = require('gulp-notify');
 var nunjucksRender = require('gulp-nunjucks-render');
-var data = require('gulp-data');
-var autoprefixer = require('gulp-autoprefixer');
 
 //Autoprefixer
 var browser_support = [
@@ -64,9 +62,9 @@ gulp.task('sass', function () {
     }));
 })
 
-// NunJucks
-gulp.task('nunjucks', function () {
-  return gulp.src(['app/pages/**/*.html'])
+// NunJucks pages
+gulp.task('nunjucks-pages', function () {
+  return gulp.src(['app/pages/*.html'])
     .pipe(plumber(plumberErrorHandler))
     .pipe(nunjucksRender({
       path: ['app/templates']
@@ -77,10 +75,24 @@ gulp.task('nunjucks', function () {
     }));
 })
 
+// NunJucks docs
+gulp.task('nunjucks-docs', function () {
+  return gulp.src(['app/pages/docs/*.html'])
+    .pipe(plumber(plumberErrorHandler))
+    .pipe(nunjucksRender({
+      path: ['app/templates']
+    }))
+    .pipe(gulp.dest('app/docs'))
+    .pipe(browserSync.reload({ // Reloading with Browser Sync
+      stream: true
+    }));
+})
+
 // Watchers
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch(['app/pages/**/*.html', 'app/templates/**/*.html'], ['nunjucks']);
+  gulp.watch(['app/pages/*.html', 'app/templates/**/*.html'], ['nunjucks-pages']);
+  gulp.watch(['app/pages/docs/*.html', 'app/templates/**/*.html'], ['nunjucks-docs']);
   gulp.watch('app/assets/js/**/*.js', browserSync.reload);
 })
 
@@ -133,7 +145,7 @@ gulp.task('clean:dist', function () {
 // ---------------
 
 gulp.task('default', function (callback) {
-  runSequence(['nunjucks', 'sass', 'browserSync'], 'watch',
+  runSequence(['nunjucks-pages', 'nunjucks-docs', 'sass', 'browserSync'], 'watch',
     callback
   )
 })

@@ -1,0 +1,40 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "progress" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#example">Example</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Progress</h1>
+<p>Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds,
+    and text labels.</p>
+<h2 id="example">Example</h2>
+<div class="bd-example">
+    {% macro example() %}
+    <div class="skillbar " data-percent="90">
+        <span class="skillbar-title">Financial Services</span>
+        <span class="skill-bar-percent"></span>
+        <p class="skillbar-bar bg-primary"></p>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call example() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call example() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+{% endblock %}

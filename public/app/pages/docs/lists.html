@@ -1,0 +1,117 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "lists" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#with-icon">With icon</a>
+    <a href="#sizes">Sizes</a>
+    <a href="#divider-line">Divider line</a>
+    <a href="#complete-referance">Complete Reference</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Lists</h1>
+<p class="bd-lead">The following example shows some of the available list item.</p>
+<h2 id="with-icon">With icon</h2>
+<div class="bd-example">
+    {% macro withIcon() %}
+    <ul class="list-unstyled">
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Nulla laoreet metus at eros porttitor elementum.
+        </li>
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Sed et purus eu dolor tempor fringilla eu eget quam.</li>
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Quisque euismod elit pellentesque massa consequat.</li>
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Sed non erat non est suscipit tincidunt.</li>
+    </ul>
+    {% endmacro %}
+    <!--  -->
+    {% call withIcon() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call withIcon() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="sizes">Sizes</h2>
+<p>Add
+    <code class="highlighter-rouge">.list-sm</code> or
+    <code class="highlighter-rouge">.list-md</code> or
+    <code class="highlighter-rouge">.list-lg</code> for additional sizes.</p>
+<div class="bd-example">
+    {% macro sizes() %}
+    <ul class="list-unstyled list-lg">
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Nulla laoreet metus at eros porttitor elementum.
+        </li>
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Sed et purus eu dolor tempor fringilla eu eget quam.</li>
+        <li>
+            <i class="ti-check-box icon-lg text-primary mr-3"></i>Quisque euismod elit pellentesque massa consequat.</li>
+    </ul>
+    {% endmacro %}
+    <!--  -->
+    {% call sizes() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call sizes() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="divider-line">Divider line</h2>
+<p>Show the divider line by adding
+    <code class="highlighter-rouge">.list-group-flush</code>
+</p>
+<div class="bd-example">
+    {% macro dividerLine() %}
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item px-0">
+            Nulla laoreet metus at eros porttitor elementum.
+        </li>
+        <li class="list-group-item px-0">
+            Sed et purus eu dolor tempor fringilla eu eget quam.</li>
+        <li class="list-group-item px-0">
+            Quisque euismod elit pellentesque massa consequat.</li>
+        <li class="list-group-item px-0">
+            Sed non erat non est suscipit tincidunt.</li>
+    </ul>
+    {% endmacro %}
+    <!--  -->
+    {% call dividerLine() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call dividerLine() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="complete-referance">Complete Reference</h2>
+<p>For a complete reference of all lists classes, go to our complete
+    <a href="https://getbootstrap.com/docs/4.1/content/typography/#lists">Bootstrap Lists Reference</a>
+</p>
+{% endblock %}

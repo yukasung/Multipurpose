@@ -77,7 +77,6 @@
         top: calc(50% - 14px);
         transform: translateY(-50%);
         display: inline-block;
-        zoom: 1;
         margin: 0 1px;
         padding: 10px 0;
         line-height: 0;
@@ -86,15 +85,6 @@
         border-radius: 0;
         font-size: 0;
         transition: all 0.2s ease-in-out;
-        &:after {
-            font-family: 'themify';
-            font-size: 1.75rem;
-            display: block;
-            line-height: 40px;
-        }
-        &:hover {
-            opacity: 1 !important;
-        }
     }
     .owl-prev,
     .owl-next {
@@ -103,15 +93,10 @@
     }
     .owl-prev {
         left: 0;
-        &:after {
-            content: "\e64a";
-        }
+       
     }
     .owl-next {
         right: 0;
-        &:after {
-            content: "\e649";
-        }
     }
 }
 
@@ -163,17 +148,6 @@
         &:hover {
             span {
                 background: $white !important;
-            }
-        }
-    }
-}
-
-.owl-nav-dark {
-    .owl-nav {
-        >div {
-            color: $dark;
-            &:not(:hover) {
-                opacity: 0.5;
             }
         }
     }

@@ -125,12 +125,10 @@ var theme = {
                 var round = 0;
                 var options = $(this).data("owl-carousel-options");
                 var defaults = {
-                    navText: "",
+                    navText: ["<img src='../assets/images/other/nav_prev.png'>","<img src='../assets/images/other/nav_next.png'>"]
                 }
 
-                if (options != undefined) {
-                    $(this).owlCarousel(options);
-                }
+                $(this).owlCarousel( $.extend( defaults, options) );
 
                 $(this).on('change.owl.carousel', function (event) {
                     currentItem = $('.owl-item', owl).eq(event.item.index);
