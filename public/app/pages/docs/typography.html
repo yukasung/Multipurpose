@@ -4,118 +4,56 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#headings">Headings</a>
-    <a href="#display-headings">Display headings</a>
-    <a href="#lead">Lead</a>
     <a href="#caption">Caption</a>
-    <a href="#present">Present</a>
+    <a href="#complete-referance">Complete Reference</a>
 </li>
 {% endblock%}
 <!--  -->
 {% block content %}
 
 <h1 class="bd-title" id="content">Typography</h1>
-<p class="bd-lead">Documentation and examples for Bootstrap typography.</p>
-<h2 id="headings">Headings</h2>
-<div class="bd-example">
-    {% macro headings() %}
-    <h1>h1. Bootstrap heading</h1>
-    <h2>h2. Bootstrap heading</h2>
-    <h3>h3. Bootstrap heading</h3>
-    <h4>h4. Bootstrap heading</h4>
-    <h5>h5. Bootstrap heading</h5>
-    <h6>h6. Bootstrap heading</h6>
-    {% endmacro %}
-    <!--  -->
-    {% call headings() %}
-    <!--  -->
-    {% endcall %}
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        {% call headings() %}
-        <!--  -->
-        {% endcall %}
-    </script>
-</figure>
-<p>
-    <code class="highlighter-rouge">.h1</code> through
-    <code class="highlighter-rouge">.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated
-    HTML element.</p>
-
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        <p class="h1">h1. Bootstrap heading</p>
-        <p class="h2">h2. Bootstrap heading</p>
-        <p class="h3">h3. Bootstrap heading</p>
-        <p class="h4">h4. Bootstrap heading</p>
-        <p class="h5">h5. Bootstrap heading</p>
-        <p class="h6">h6. Bootstrap heading</p>
-    </script>
-</figure>
-
-<h2 id="display-headings">Display headings</h2>
-<p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand
-    out, consider using a
-    <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
-<div class="bd-example">
-    {% macro displayHeadings() %}
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-2">Display 2</h1>
-    <h1 class="display-3">Display 3</h1>
-    <h1 class="display-4">Display 4</h1>
-    {% endmacro %}
-    <!--  -->
-    {% call displayHeadings() %}
-    <!--  -->
-    {% endcall %}
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        {% call displayHeadings() %}
-        <!--  -->
-        {% endcall %}
-    </script>
-</figure>
-
-<h2 id="lead">Lead</h2>
-<p>Make a paragraph stand out by adding
-    <code class="highlighter-rouge">.lead</code>.</p>
-<div class="bd-example">
-    {% macro lead() %}
-    <p class="lead">
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-    </p>
-    {% endmacro %}
-    <!--  -->
-    {% call lead() %}
-    <!--  -->
-    {% endcall %}
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        {% call lead() %}
-        <!--  -->
-        {% endcall %}
-    </script>
-</figure>
-
+<p class="bd-lead">Documentation and examples for typography.</p>
 <h2 id="caption">Caption</h2>
+<p>Caption headings are used to stand out more than normal headings, Caption heading classes that apply to all breakpoints,
+    from <code class="highlighter-rouge">xs</code> to <code class="highlighter-rouge">xl</code>.</p>
+<p>As such, the classes are named using the format:</p>
+<ul>
+    <li>
+        <code class="highlighter-rouge">.caption-{size}</code> for
+        <code class="highlighter-rouge">xs</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">.caption-{breakpoint}-{size}</code> for
+        <code class="highlighter-rouge">sm</code>,
+        <code class="highlighter-rouge">md</code>,
+        <code class="highlighter-rouge">lg</code>, and
+        <code class="highlighter-rouge">xl</code>.</li>
+</ul>
+<p>Where
+    <em>size</em> is one of:</p>
+<ul>
+    <li>
+        <code class="highlighter-rouge">1</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">2</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">3</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">4</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">5</code>
+    </li>
+</ul>
 <div class="bd-example">
     {% macro caption() %}
-    <p class="caption-lg-1">Caption 1</p>
-    <p class="caption-lg-2">Caption 2</p>
-    <p class="caption-lg-3">Caption 3</p>
-    <p class="caption-lg-4">Caption 4</p>
+    <p class="caption-1">Caption 1</p>
+    <p class="caption-2">Caption 2</p>
+    <p class="caption-3">Caption 3</p>
+    <p class="caption-4">Caption 4</p>
     {% endmacro %}
     <!--  -->
     {% call caption() %}
@@ -132,29 +70,8 @@
         {% endcall %}
     </script>
 </figure>
-<h2 id="present">Present</h2>
-<div class="bd-example">
-    {% macro present() %}
-    <p class="present-lg-1">Present 1</p>
-    <p class="present-lg-2">Present 2</p>
-    <p class="present-lg-3">Present 3</p>
-    <p class="present-lg-4">Present 4</p>
-    <p class="present-lg-5">Present 5</p>
-    {% endmacro %}
-    <!--  -->
-    {% call present() %}
-    <!--  -->
-    {% endcall %}
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        {% call present() %}
-        <!--  -->
-        {% endcall %}
-    </script>
-</figure>
-
+<h2 id="complete-referance">Complete Reference</h2>
+<p>For a complete reference of all typography, go to our
+    <a href="http://getbootstrap.com/docs/4.1/content/typography/">Bootstrap typography Reference</a>
+</p>
 {% endblock %}

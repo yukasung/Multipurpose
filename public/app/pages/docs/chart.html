@@ -1,0 +1,94 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "chart" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#example">Example</a>
+    <a href="#usage">Usage</a>
+    <a href="#complete-referance">Complete Reference</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Chart</h1>
+<p>Simple HTML5 Charts using the canvas element
+    <a href="http://www.chartjs.org" rel="nofollow">chartjs.org</a>
+</p>
+<h2 id="example">Example</h2>
+<div class="bd-example">
+    {% macro example() %}
+    <canvas id="chartBar" width="400" height="300"></canvas>
+    {% endmacro %}
+    <!--  -->
+    {% call example() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call example() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="usage">Usage</h2>
+<p>Trigger the tooltip via JavaScript</p>
+<p></p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-javascript">
+        Chart.defaults.global.defaultFontColor = '#333333';
+        var chartBar = $("#chartBar")[0].getContext('2d');
+
+        var myChart = new Chart(chartBar, {
+            type: 'bar',
+            data: {
+                labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+                datasets: [{
+                    label: 'Revenue by Year',
+                    data: [22, 24, 25, 26, 29, 31, 34],
+                    backgroundColor: 'rgba(52, 152, 219, 1)',
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Revenue by Year'
+                },
+                legend: {
+                    display: false,
+                },
+                scales: {
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Revenue in billion U.S. dollars'
+                        },
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                },
+                animation: {
+                    duration: 3000
+                }
+            }
+        }); 
+    </script>
+</figure>
+
+<h2 id="complete-referance">Complete Reference</h2>
+<p>For a complete reference of all jQuery countTo options, methods and events, go to our
+    <a href="http://www.chartjs.org">Chart.js Reference</a>
+</p>
+{% endblock %}

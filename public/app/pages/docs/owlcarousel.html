@@ -6,7 +6,6 @@
 <li class="toc-entry toc-h2">
     <a href="#basic">Basic</a>
     <a href="#with-controls">With controls</a>
-    <a href="#hover-controls">Hover controls</a>
     <a href="#dots-navigations">Dots navigations</a>
     <a href="#donts-inside">Dots inside</a>
     <a href="#complete-referance">Complete Reference</a>
@@ -78,39 +77,8 @@
         {% endcall %}
     </script>
 </figure>
-<h2 id="hover-controls">Hover controls</h2>
-<p>Show the previous and next on hover over by adding
-    <code class="highlighter-rouge">.owl-nav-md-hover</code>
-</p>
-<div class="bd-example">
-    {% macro hoverControls() %}
-    <div class="owl-carousel owl-theme owl-loaded owl-nav-md-hover" data-owl-carousel-options='{"items":1, "nav":true,"margin":0, "dots":false, "loop":true, "autoHeight":true}'>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-        </div>
-        <div class="item">
-            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-        </div>
-    </div>
-    {% endmacro %}
-    <!--  -->
-    {% call hoverControls() %}
-    <!--  -->
-    {% endcall %}
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        {% call hoverControls() %}
-        <!--  -->
-        {% endcall %}
-    </script>
-</figure>
+<p>Hide and show the previous and next on hover over use the
+    <code class="highlighter-rouge">.owl-nav-hover</code> class or one of the <code class="highlighter-rouge">.owl-nav-{sm,md,lg,xl}-hover</code> classes for any responsive screen variation
 <h2 id="dots-navigations">Dots navigations</h2>
 <p>Change dots navigation color by adding
     <code class="highlighter-rouge">.owl-dots-primary</code> or

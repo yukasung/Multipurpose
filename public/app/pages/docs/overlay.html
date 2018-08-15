@@ -4,7 +4,6 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#overlay-icon">Overlay icon</a>
     <a href="#overlay-text">Overlay text</a>
     <a href="#overlay-hover-text">Overlay hover text</a>
     <a href="#radial-gradient">Radial gradient</a>
@@ -43,6 +42,9 @@
     </script>
 </figure>
 <h2 id="overlay-hover-text">Overlay hover text</h2>
+<p>To hide the overlay and display it on hover, add the
+    <code class="highlighter-rouge">.overlay-hover</code> class to the overlay container.
+</p>
 <div class="bd-example">
     {% macro overlayHoverText() %}
     <figure class="figure overlay overlay-hover">
@@ -70,15 +72,15 @@
     </script>
 </figure>
 <h2 id="radial-gradient">Radial gradient</h2>
+<p>Change gradient color by adding
+    <code class="highlighter-rouge">.gradient-light</code> or
+    <code class="highlighter-rouge">.gradient-dark</code> or <code class="highlighter-rouge">.gradient-primary</code>.
+</p>
 <div class="bd-example">
     {% macro radialGradient() %}
     <figure class="figure overlay">
         <div class="d-block bg-radial-gradient gradient-dark gradient-left w-100 h-100"></div>
         <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="" class="img-fluid">
-        <figcaption class="overlay-body overlay-bottom p-4">
-            <h5>Special title treatment</h5>
-            <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
-        </figcaption>
     </figure>
     {% endmacro %}
     <!--  -->

@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-top navbar-shadow navbar-dropdown-hover bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-top shadow-sm navbar-dropdown-hover bg-white">
             <div class="container">
                 <a class="navbar-brand text-uppercase" href="../index.html">
                     <img class="logo logo-dark" src="../assets/images/brand/logo-dark.png">
@@ -179,11 +179,6 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a href="../components/buttons.html">
-                                    Buttons
-                                </a>
-                            </li>
-                            <li class="">
                                 <a href="../docs/overlay.html">
                                     Overlay
                                 </a>
@@ -236,6 +231,11 @@
                             <li class="">
                                 <a href="../docs/typography.html">
                                     Typography
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../docs/chart.html">
+                                    Chart
                                 </a>
                             </li>
                         </ul>
@@ -393,6 +393,7 @@
                     
 <li class="toc-entry toc-h2">
     <a href="#example">Example</a>
+    <a href="#complete-referance">Complete Reference</a>
 </li>
 
                 </ul>
@@ -401,18 +402,23 @@
                 
 
 <h1 class="bd-title" id="content">Progress</h1>
-<p>Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds,
-    and text labels.</p>
+<p>The progress indicator visualizes the current advancement of a process or a degree of accomplishment.</p>
 <h2 id="example">Example</h2>
+<p>Use background utility classes to change the appearance of individual progress bars.</p>
 <div class="bd-example">
     
     <!--  -->
     
-    <div class="skillbar " data-percent="90">
-        <span class="skillbar-title">Financial Services</span>
+    <div class="skillbar" data-percent="60">
+        <span class="skillbar-title">Progress 1</span>
         <span class="skill-bar-percent"></span>
         <p class="skillbar-bar bg-primary"></p>
     </div>
+    <div class="skillbar" data-percent="90">
+            <span class="skillbar-title">Progress 2</span>
+            <span class="skill-bar-percent"></span>
+            <p class="skillbar-bar bg-success"></p>
+        </div>
     
 </div>
 <div class="bd-clipboard">
@@ -421,14 +427,23 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         
-    <div class="skillbar " data-percent="90">
-        <span class="skillbar-title">Financial Services</span>
+    <div class="skillbar" data-percent="60">
+        <span class="skillbar-title">Progress 1</span>
         <span class="skill-bar-percent"></span>
         <p class="skillbar-bar bg-primary"></p>
     </div>
+    <div class="skillbar" data-percent="90">
+            <span class="skillbar-title">Progress 2</span>
+            <span class="skill-bar-percent"></span>
+            <p class="skillbar-bar bg-success"></p>
+        </div>
     
     </script>
 </figure>
+
+<h2 id="complete-referance">Complete Reference</h2>
+<p>For a complete reference of all jQuery Skills Bar options, go to our
+    <a href="https://github.com/umarwebdeveloper/jquery-css-skills-bar">jQuery Skills Bar Reference</a>.</p>
 
             </main>
         </div>

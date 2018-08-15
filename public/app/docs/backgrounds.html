@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-top navbar-shadow navbar-dropdown-hover bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-top shadow-sm navbar-dropdown-hover bg-white">
             <div class="container">
                 <a class="navbar-brand text-uppercase" href="../index.html">
                     <img class="logo logo-dark" src="../assets/images/brand/logo-dark.png">
@@ -179,11 +179,6 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a href="../components/buttons.html">
-                                    Buttons
-                                </a>
-                            </li>
-                            <li class="">
                                 <a href="../docs/overlay.html">
                                     Overlay
                                 </a>
@@ -236,6 +231,11 @@
                             <li class="">
                                 <a href="../docs/typography.html">
                                     Typography
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../docs/chart.html">
+                                    Chart
                                 </a>
                             </li>
                         </ul>
@@ -392,7 +392,9 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
+    <a href="#images">Images</a>
     <a href="#overlay">Overlay</a>
+    <a href="#parallax">Parallax</a>
 </li>
 
                 </ul>
@@ -401,17 +403,100 @@
                 
 
 <h1 class="bd-title" id="content">Backgrounds</h1>
-<h2 id="with-carousel">Overlay</h2>
+<h2 id="images">Images</h2>
+<p>Apply to
+    <code class="highlighter-rouge"> img </code>to set image as the background for the parent element.</p>
 <div class="bd-example">
     
     <!--  -->
     
-    <section class="position-relative bg-light">
-        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image bg-image-center op-3" alt="">
+    <div class="position-relative">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image" alt="">
         <div class="container py-8">
             <div class="row justify-content-md-center text-center">
                 <div class="col-12 col-lg-8">
                     <h2>Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        
+    <div class="position-relative">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image" alt="">
+        <div class="container py-8">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </script>
+</figure>
+<p>Ensure the parent element has the
+    <code class="highlighter-rouge">position:relative;</code> property set, as the background images feature uses absolute positioning.</p>
+
+<h2 id="overlay">Overlay</h2>
+<p>Use
+    <a href="https://getbootstrap.com/docs/4.1/utilities/colors/#background-color">background</a> and
+    <a href="https://getbootstrap.com/docs/4.1/utilities/colors/#background-color">opacity</a> utilities to turn an image into a background and overlay text</p>
+<div class="bd-example">
+    
+    <!--  -->
+    
+    <div class="position-relative bg-dark">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image op-5" alt="">
+        <div class="container py-8">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h2 class="text-white">Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        
+    <div class="position-relative bg-dark">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image op-5" alt="">
+        <div class="container py-8">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h2 class="text-white">Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </script>
+</figure>
+
+<h2 id="parallax">Parallax</h2>
+<p>Rellax is a buttery smooth, super lightweight, vanilla javascript parallax library.</p>
+<div class="bd-example">
+    
+    <!--  -->
+    
+    <section class="position-relative overflow-hidden py-8">
+        <div class="parallax bg-holder" style="background-image: url('../assets/images/other/other-5-1920x600.jpg'); transform: translate3d(0px, -10px, 0px);"
+            data-rellax-percentage="0.5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center text-white">
+                    <h2 class="text-white">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -424,12 +509,13 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         
-    <section class="position-relative bg-light">
-        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image bg-image-center op-3" alt="">
-        <div class="container py-8">
-            <div class="row justify-content-md-center text-center">
-                <div class="col-12 col-lg-8">
-                    <h2>Lorem ipsum dolor sit amet</h2>
+    <section class="position-relative overflow-hidden py-8">
+        <div class="parallax bg-holder" style="background-image: url('../assets/images/other/other-5-1920x600.jpg'); transform: translate3d(0px, -10px, 0px);"
+            data-rellax-percentage="0.5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center text-white">
+                    <h2 class="text-white">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -437,7 +523,9 @@
     
     </script>
 </figure>
-
+<p>For more information please check
+    <a href="https://github.com/dixonandmoe/rellax">Rellax Documentation</a>.</p>
+</p>
 
             </main>
         </div>

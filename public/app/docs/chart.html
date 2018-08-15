@@ -228,12 +228,12 @@
                                     Backgrounds
                                 </a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../docs/typography.html">
                                     Typography
                                 </a>
                             </li>
-                            <li class="">
+                            <li class="active">
                                 <a href="../docs/chart.html">
                                     Chart
                                 </a>
@@ -392,7 +392,8 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
-    <a href="#caption">Caption</a>
+    <a href="#example">Example</a>
+    <a href="#usage">Usage</a>
     <a href="#complete-referance">Complete Reference</a>
 </li>
 
@@ -401,51 +402,16 @@
             <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 
 
-<h1 class="bd-title" id="content">Typography</h1>
-<p class="bd-lead">Documentation and examples for typography.</p>
-<h2 id="caption">Caption</h2>
-<p>Caption headings are used to stand out more than normal headings, Caption heading classes that apply to all breakpoints,
-    from <code class="highlighter-rouge">xs</code> to <code class="highlighter-rouge">xl</code>.</p>
-<p>As such, the classes are named using the format:</p>
-<ul>
-    <li>
-        <code class="highlighter-rouge">.caption-{size}</code> for
-        <code class="highlighter-rouge">xs</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">.caption-{breakpoint}-{size}</code> for
-        <code class="highlighter-rouge">sm</code>,
-        <code class="highlighter-rouge">md</code>,
-        <code class="highlighter-rouge">lg</code>, and
-        <code class="highlighter-rouge">xl</code>.</li>
-</ul>
-<p>Where
-    <em>size</em> is one of:</p>
-<ul>
-    <li>
-        <code class="highlighter-rouge">1</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">2</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">3</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">4</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">5</code>
-    </li>
-</ul>
+<h1 class="bd-title" id="content">Chart</h1>
+<p>Simple HTML5 Charts using the canvas element
+    <a href="http://www.chartjs.org" rel="nofollow">chartjs.org</a>
+</p>
+<h2 id="example">Example</h2>
 <div class="bd-example">
     
     <!--  -->
     
-    <p class="caption-1">Caption 1</p>
-    <p class="caption-2">Caption 2</p>
-    <p class="caption-3">Caption 3</p>
-    <p class="caption-4">Caption 4</p>
+    <canvas id="chartBar" width="400" height="300"></canvas>
     
 </div>
 <div class="bd-clipboard">
@@ -454,16 +420,64 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         
-    <p class="caption-1">Caption 1</p>
-    <p class="caption-2">Caption 2</p>
-    <p class="caption-3">Caption 3</p>
-    <p class="caption-4">Caption 4</p>
+    <canvas id="chartBar" width="400" height="300"></canvas>
     
     </script>
 </figure>
+<h2 id="usage">Usage</h2>
+<p>Trigger the tooltip via JavaScript</p>
+<p></p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-javascript">
+        Chart.defaults.global.defaultFontColor = '#333333';
+        var chartBar = $("#chartBar")[0].getContext('2d');
+
+        var myChart = new Chart(chartBar, {
+            type: 'bar',
+            data: {
+                labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+                datasets: [{
+                    label: 'Revenue by Year',
+                    data: [22, 24, 25, 26, 29, 31, 34],
+                    backgroundColor: 'rgba(52, 152, 219, 1)',
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Revenue by Year'
+                },
+                legend: {
+                    display: false,
+                },
+                scales: {
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Revenue in billion U.S. dollars'
+                        },
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                },
+                animation: {
+                    duration: 3000
+                }
+            }
+        }); 
+    </script>
+</figure>
+
 <h2 id="complete-referance">Complete Reference</h2>
-<p>For a complete reference of all typography, go to our
-    <a href="http://getbootstrap.com/docs/4.1/content/typography/">Bootstrap typography Reference</a>
+<p>For a complete reference of all jQuery countTo options, methods and events, go to our
+    <a href="http://www.chartjs.org">Chart.js Reference</a>
 </p>
 
             </main>
