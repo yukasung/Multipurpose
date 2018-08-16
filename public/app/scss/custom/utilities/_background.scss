@@ -11,22 +11,16 @@
     object-fit: cover;
 }
 
-.bg-image-center {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .bg-holder {
     position: absolute;
     width: 100%;
     min-height: 100%;
     top: 0;
     left: 0;
-    background-size: cover;
-    background-position: center;    
-    backface-visibility: hidden;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
     will-change: transform, opacity, filter;
     overflow: hidden;
 }

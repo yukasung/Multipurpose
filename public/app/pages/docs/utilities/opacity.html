@@ -1,0 +1,45 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "opacity" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#example ">Example </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Opacity</h1>
+<p>The opacity classes specifies the opacity/transparency of an element.</p>
+<h2 id="example">Example</h2>
+<div class="bd-example">
+    {% macro example() %}
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-0" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-1" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-2" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-3" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-4" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-5" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-6" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-7" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-8" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-9" alt="...">
+        <img src="holder.js/50x50?auto=yes&bg=cccccc&text=50x50" class="op-10" alt="...">
+    {% endmacro %}
+    <!--  -->
+    {% call example() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call example() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+{% endblock %}

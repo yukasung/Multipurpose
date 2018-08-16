@@ -1,0 +1,40 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "background" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#classes ">Classes </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Background</h1>
+<p>CSS class that turns any <code class="highlighter-rouge">&lt;img&gt;</code> into a background for the parent element</p>
+<h2 id="classes">Classes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.bg-image</code>
+            </td>
+            <td> Apply to
+                <code class="highlighter-rouge">&lt;img&gt;</code> to turn an image into a background for the parent element.</td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.bg-holder</code>
+            </td>
+            <td>Apply to
+                    <code class="highlighter-rouge">&lt;div&gt;</code> to turn an image into a background for the parent element.</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

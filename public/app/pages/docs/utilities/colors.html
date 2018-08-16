@@ -1,0 +1,37 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "colors" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#classes ">Classes </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Colors</h1>
+<p>Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states,
+    too.</p>
+<h2 id="background-color">Background color</h2>
+<div class="bd-example">
+    {% macro backgroundColor() %}
+    <div class="p-3 mb-2 bg-dark-50 text-white">.bg-dark-50</div>
+    <div class="p-3 mb-2 bg-darker text-white">.bg-darker</div>
+    {% endmacro %}
+    <!--  -->
+    {% call backgroundColor() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call backgroundColor() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+{% endblock %}

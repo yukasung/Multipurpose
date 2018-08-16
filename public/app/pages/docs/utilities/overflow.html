@@ -1,0 +1,44 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "overflow" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#classes ">Classes </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Overflow</h1>
+<p>The overflow classes specifies when content is clipped if necessary to fit the padding box.</p>
+<h2 id="classes">Classes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.overflow-hidden</code>
+            </td>
+            <td>The overflow is clipped, and the rest of the content will be invisible.</td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.overflow-hidden-y</code>
+            </td>
+            <td>The content is clipped when it overflows at the top and bottom edges.</td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.overflow-hidden-x</code>
+            </td>
+            <td>The content is clipped when it overflows at the left and right edges.</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

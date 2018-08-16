@@ -1,0 +1,38 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "borders" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#classes ">Classes </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Borders</h1>
+<p>The overflow classes specifies when content is clipped if necessary to fit the padding box.</p>
+<h2 id="classes">Classes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.border-radius-30</code>
+            </td>
+            <td>Add classes to an element to easily round its corners.</td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.border-width-2</code>
+            </td>
+            <td>The content is clipped when it overflows at the top and bottom edges.</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
