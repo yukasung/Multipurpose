@@ -9727,13 +9727,7 @@ a {
 .header-top-dark .header-top-link {
   color: #ffffff; }
 
-.bg-image-center {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.bg-image,
-.bg-image-fluid {
+.bg-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -9742,9 +9736,10 @@ a {
   z-index: 0;
   object-fit: cover; }
 
-@media (max-width: 767.98px) {
-  .bg-image-fluid {
-    position: relative; } }
+.bg-image-center {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .bg-holder {
   position: absolute;
@@ -9754,10 +9749,10 @@ a {
   left: 0;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-  will-change: transform, opacity, filter;
   backface-visibility: hidden;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  will-change: transform, opacity, filter;
+  overflow: hidden; }
 
 .border-radius-30 {
   border-radius: 30px !important; }

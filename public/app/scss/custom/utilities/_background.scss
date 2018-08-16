@@ -1,14 +1,7 @@
 //
 // Utilities background
 //
-.bg-image-center {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image,
-.bg-image-fluid {
+.bg-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,10 +11,10 @@
     object-fit: cover;
 }
 
-.bg-image-fluid {
-    @include media-breakpoint-down(sm) {
-        position: relative;
-    }
+.bg-image-center {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-holder {
@@ -31,9 +24,9 @@
     top: 0;
     left: 0;
     background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    will-change: transform, opacity, filter;
+    background-position: center;    
     backface-visibility: hidden;
     background-repeat: no-repeat;
+    will-change: transform, opacity, filter;
+    overflow: hidden;
 }

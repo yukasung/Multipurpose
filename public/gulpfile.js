@@ -77,7 +77,7 @@ gulp.task('nunjucks-pages', function () {
 
 // NunJucks docs
 gulp.task('nunjucks-docs', function () {
-  return gulp.src(['app/pages/docs/*.html'])
+  return gulp.src(['app/pages/docs/**/*.html'])
     .pipe(plumber(plumberErrorHandler))
     .pipe(nunjucksRender({
       path: ['app/templates']
@@ -92,7 +92,7 @@ gulp.task('nunjucks-docs', function () {
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch(['app/pages/*.html', 'app/templates/**/*.html'], ['nunjucks-pages']);
-  gulp.watch(['app/pages/docs/*.html', 'app/templates/**/*.html'], ['nunjucks-docs']);
+  gulp.watch(['app/pages/docs/**/*.html', 'app/templates/**/*.html'], ['nunjucks-docs']);
   gulp.watch('app/assets/js/**/*.js', browserSync.reload);
 })
 

@@ -1,0 +1,241 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "timeline" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#basic">Basic</a>
+    <a href="#split">Split</a>
+    <a href="#centered">Centered</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Timeline</h1>
+<p>Simple responsive timeline</p>
+<h2 id="basic">Basic</h2>
+<div class="bd-example">
+    {% macro basic() %}
+    <ul class="timeline">
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>March 12, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>March 23, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+        <li class="timeline-item period">
+            <div class="timeline-info"></div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h2 class="timeline-title">April 2016</h2>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>April 02, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>April 28, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+    </ul>
+    {% endmacro %}
+    <!--  -->
+    {% call basic() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call basic() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="split">Split</h2>
+<div class="bd-example">
+    {% macro split() %}
+    <ul class="timeline timeline-split">
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>March 12, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>March 23, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+        <li class="timeline-item period">
+            <div class="timeline-info"></div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h2 class="timeline-title">April 2016</h2>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>April 02, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>April 28, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec
+                    orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus.
+                    ullam dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+    </ul>
+    {% endmacro %}
+    <!--  -->
+    {% call split() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call split() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="centered">Centered</h2>
+<div class="bd-example">
+    {% macro centered() %}
+    <ul class="timeline timeline-centered">
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>March 12, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                    eu pede mollis pretium. Pellentesque ut neque.</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>March 23, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                    eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+        <li class="timeline-item period">
+            <div class="timeline-info"></div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h2 class="timeline-title">April 2016</h2>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>April 02, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                    eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span>April 28, 2016</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Event Title</h3>
+                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                    eu pede mollis pretium. Pellentesque ut neque. </p>
+            </div>
+        </li>
+    </ul>
+    {% endmacro %}
+    <!--  -->
+    {% call centered() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call centered() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+{% endblock %}

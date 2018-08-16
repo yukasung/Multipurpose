@@ -1,0 +1,40 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "google_map" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#example">Example</a>
+    <a href="#complete-referance">Complete Reference</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Google map</h1>
+<p>    A JavaScript plugin for lazy-loading Google Maps.</p>
+<h2 id="example">Example</h2>
+<div class="bd-example">
+    {% macro googleMap() %}
+    <div class="google-map wide" style="width: 100%; height: 450px" data-lat="51.211215" data-lng="3.226287"></div>
+    {% endmacro %}
+    <!--  -->
+    {% call googleMap() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call googleMap() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="complete-referance">Complete Reference</h2>
+<p>For a complete reference of all Lazy-loading Google Maps options, methods and events, go to our
+    <a href="https://osvaldas.info/lazy-loading-google-maps">Lazy-loading Google Maps Reference</a>
+</p>
+{% endblock %}
