@@ -1,0 +1,88 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "testimonial" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#border">Border</a>
+    <a href="#background">Background</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Testimonial</h1>
+<p>The video class allows you to embed a video using an iframe from service providers such as Youtube, Vimeo etc.</p>
+<h2 id="border">Border</h2>
+<div class="bd-example">
+    {% macro border() %}
+    
+    <div class="testimonial testimonial-center" style="width: 21rem;">
+        <div class="testimonial-body text-center p-4 border">
+            <i class="ti-quote-left icon-lg text-primary"></i>
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times the value from
+                business.</p>
+        </div>
+        <div class="testimonial-footer mt-4">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2" alt="">
+            <div class="d-inline-block align-middle text-left ml-3">
+                <h6 class="text-primary mb-2">
+                    <a href="#">Kristina Cain</a>
+                </h6>
+                <p class="font-weight-light text-black-50 pb-0 mb-0">Managing Director</p>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call border() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call border() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<h2 id="background">Background</h2>
+<div class="bd-example">
+    {% macro background() %}
+    
+    <div class="testimonial testimonial-center" style="width: 21rem;">
+        <div class="testimonial-body text-center p-4 bg-light">
+            <i class="ti-quote-left icon-lg text-primary"></i>
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times the value from
+                business.</p>
+        </div>
+        <div class="testimonial-footer mt-4">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2" alt="">
+            <div class="d-inline-block align-middle text-left ml-3">
+                <h6 class="text-primary mb-2">
+                    <a href="#">Kristina Cain</a>
+                </h6>
+                <p class="font-weight-light text-black-50 pb-0 mb-0">Managing Director</p>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call background() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call background() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "text" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#classes ">Classes </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Text</h1>
+<p>The CSS Classes participates in specifies the size of an element.</p>
+<h2 id="classes">Classes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.line-height-1</code>
+            </td>
+            <td>Uses CSS’s <code class="highlighter-rouge">line-height: 1 !important;</code></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

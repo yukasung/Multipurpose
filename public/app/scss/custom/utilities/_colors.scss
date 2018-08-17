@@ -1,56 +1,10 @@
 //
 // Utilities colors
 //
-
-.bg-dark-50{
+.bg-dark-50 {
     background-color: rgba($black, 0.5);
 }
 
-.bg-transparent{
-    background-color: transparent;
-}
-
-.bg-black{
-    background-color: #1c1c20;
-}
-
-.bg-darker{
+.bg-darker {
     background-color: #28282e;
-}
-
-.bg-linear-gradient {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    &.gradient-dark {
-        &.gradient-bottom {
-            background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0) 100%);
-        }
-        &.gradient-left {
-            background: linear-gradient(to right, #252525 0%, rgba(0, 0, 0, 0) 100%);
-        }
-    }
-}
-
-.bg-radial-gradient {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    &.gradient-primary {
-        &.gradient-left {
-            background: radial-gradient(circle at center left, $primary, rgba(255, 255, 255, 0) 80%);
-        }
-    }
-    &.gradient-dark {
-        &.gradient-left {
-            background: radial-gradient(circle at center left, $dark, rgba(255, 255, 255, 0) 80%);
-        }
-    }
-    &.gradient-light {
-        &.gradient-left {
-            background: radial-gradient(circle at center left, $light, rgba(255, 255, 255, 0) 80%);
-        }
-    }
 }

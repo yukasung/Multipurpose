@@ -1,0 +1,59 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set component = "modal" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#fullScreen">Full Screen</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Modal</h1>
+<p>The Modal component is a dialog box/popup window that is displayed on top of the current page.</p>
+<h2 id="example">Full Screen</h2>
+<div class="bd-example">
+    {% macro fullScreen() %}
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-overlay">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <h3>Modal body text goes here.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endmacro %}
+    <!--  -->
+    {% call fullScreen() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call fullScreen() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+{% endblock %}

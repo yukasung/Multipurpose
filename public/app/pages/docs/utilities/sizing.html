@@ -1,0 +1,44 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set utilities = "position" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#classes ">Classes </a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Sizing</h1>
+<p>The CSS Classes participates in specifies the size of an element.</p>
+<h2 id="classes">Classes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.w-60px</code>
+            </td>
+            <td>Uses CSS’s<code class="highlighter-rouge"> width: 60px;</code></td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.w-70px</code>
+            </td>
+            <td>Uses CSS’s<code class="highlighter-rouge"> width: 70px;</code></td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.w-max-90px</code>
+            </td>
+            <td>Uses CSS’s<code class="highlighter-rouge"> max-width: 90px;</code></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
