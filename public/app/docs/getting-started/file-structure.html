@@ -49,7 +49,7 @@
         <div class="row flex-xl-nowrap">
             <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
                 <nav class="collapse bd-links" id="bd-docs-nav">
-                        <div class="bd-toc-item ">
+                        <div class="bd-toc-item active">
                         <a class="bd-toc-link" href="../../docs/getting-started/introduction.html">
                             Getting started
                         </a>
@@ -59,7 +59,7 @@
                                     Introduction
                                 </a>
                             </li>
-                             <li class="">
+                             <li class="active">
                                 <a href="../../docs/getting-started/file-structure.html">
                                     File Structure
                                 </a>
@@ -71,7 +71,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="bd-toc-item active">
+                    <div class="bd-toc-item ">
                         <a class="bd-toc-link" href="../../docs/components/owlcarousel.html">
                             Components
                         </a>
@@ -86,7 +86,7 @@
                                     Overlay
                                 </a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../../docs/components/pricing.html">
                                     Pricing
                                 </a>
@@ -231,8 +231,8 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
-    <a href="#basic">Basic</a>
-    <a href="#popular">Popular</a>
+    <a href="#border">Border</a>
+    <a href="#background-color">Background Color</a>
 </li>
 
                 </ul>
@@ -240,153 +240,43 @@
             <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 
 
-<h1 class="bd-title" id="content">Pricing</h1>
-<p class="bd-lead">Example pricing page built with Cards and featuring a custom header and body.</p>
-<h2 id="basic">Basic</h2>
-<div class="bd-example">
-    
-    <!--  -->
-    
-    <div class="card pricing border-0 bg-light rounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>19
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Startup License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-</div>
+<h1 class="bd-title" id="content">File structure</h1>
+<p>Testimonials from customers who are not famous have been effectively used in marketing for as long as marketing has existed.</p>
+<h2 id="border">What’s included</h2>
+<p>Once you have downloaded the archive and opened it, you will find the following structure.</p>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        
-    <div class="card pricing border-0 bg-light rounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>19
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Startup License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-    </script>
+    <pre><code class="language-plaintext" data-lang="plaintext">public/
+    ├── app/
+    │   ├── assets/
+    │   │   ├── css/
+    │   │   ├── images/
+    │   │   ├── js/
+    │   │   └── plugins/
+    │   ├── docs/
+    │   ├── pages/
+    │   ├── scss/
+    │   │   ├── bootstrap/
+    │   │   ├── custom/
+    │   │   ├── utilities/
+    │   │   └── theme.scss
+    │   ├── templates/
+    │   │   ├── partials/
+    │   │   └── master.html
+    ├── dist/
+    ├── gulpfile.js
+    └── package.json
+    </code></pre>
 </figure>
-
-<h2 id="popular">Popular</h2>
-<div class="bd-example">
-    
-    <!--  -->
-    
-    <div class="card pricing border-0 bg-light ounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light text-primary rounded-0 p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>29
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Business License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn btn-primary text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        
-    <div class="card pricing border-0 bg-light ounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light text-primary rounded-0 p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>29
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Business License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn btn-primary text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-    </script>
-</figure>
+<p>The
+    <code class="highlighter-rouge">scss/</code> and
+    <code class="highlighter-rouge">js/</code> are the source code for our CSS and JavaScript. The
+    <code class="highlighter-rouge">dist/</code> folder includes everything listed in the precompiled download section above. The
+    <code class="highlighter-rouge">docs/</code> folder includes the source code for our documentation, and
+    <code class="highlighter-rouge">examples/</code> of Bootstrap usage. Beyond that, any other included file provides support for packages, license information,
+    and development.</p>
 
             </main>
         </div>

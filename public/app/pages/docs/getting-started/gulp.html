@@ -1,0 +1,51 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set gettingStarted = "gulp" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#border">Border</a>
+    <a href="#background-color">Background Color</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Gulp</h1>
+<p>Gulp is a tool that helps you out with several tasks when it comes to web development.</p>
+<h2 id="border">Installing Gulp</h2>
+<p>You need to have Node.js (Node) installed onto your computer before you can install Gulp.
+</p>
+<p>If you do not have Node installed already, you can get it by <a href="https://nodejs.org">downloading the package installer from Node's website</a>. </p>
+<figure class="highlight">
+    <pre><code>
+        $ sudo npm install gulp -g
+    </code></pre>
+</figure>
+<h2 id="border">Creating a Gulp Project</h2>
+<p><p>First, we'll create a folder called <code>project</code> to server as our project root as we move through this tutorial. Run the <code>npm init</code> command from inside that directory:</p></p>
+<figure class="highlight">
+    <pre><code>
+        $ npm init
+    </code></pre>
+</figure>
+<p>The <code>npm init</code> command creates a <code>package.json</code> file for your project which stores information about the project, like the <em>dependencies</em> used in the project (Gulp is an example of a dependency).</p>
+<p>Once the <code>package.json</code> file is created, we can install Gulp into the project by using the following command: </p>
+<figure class="highlight">
+    <pre><code>
+        $ npm install gulp --save-dev
+    </code></pre>
+</figure>
+<h2 id="border">Using Nunjucks with Gulp</h2>
+<p><p>We can use Nunjucks through a plugin called <a href="https://github.com/carlosl/gulp-nunjucks-render">gulp-nunjucks-render</a></p></p>
+<p>Let’s start by installing gulp-nunjucks-render.</p>
+<figure class="highlight">
+    <pre><code>
+        $ npm install gulp-nunjucks-render --save-dev
+    </code></pre>
+</figure>
+<p><strong>The <code>templates</code> folder</strong> is used for storing all Nunjucks partials and other Nunjucks files that will be added to files in the <code>pages</code> folder.</p>
+<p><strong>The <code>pages</code> folder</strong> is used for storing files that will be compiled into HTML. Once they are compiled, they will be created in the <code>app</code> folder.</p>
+<h2>Adding a Nunjucks Partial</h2>
+<p>We need to create a partial before we can add it to <code>index.nunjucks</code>. Let’s create a partial called <code>navigation.nunjucks</code> and place it in a <code>partials</code> folder that’s within the <code>templates</code> folder.</p>
+{% endblock %}

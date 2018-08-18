@@ -49,7 +49,7 @@
         <div class="row flex-xl-nowrap">
             <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
                 <nav class="collapse bd-links" id="bd-docs-nav">
-                        <div class="bd-toc-item ">
+                        <div class="bd-toc-item active">
                         <a class="bd-toc-link" href="../../docs/getting-started/introduction.html">
                             Getting started
                         </a>
@@ -64,14 +64,14 @@
                                     File Structure
                                 </a>
                             </li>
-                            <li class="">
+                            <li class="active">
                                 <a href="../../docs/getting-started/gulp.html">
                                     Gulp
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="bd-toc-item active">
+                    <div class="bd-toc-item ">
                         <a class="bd-toc-link" href="../../docs/components/owlcarousel.html">
                             Components
                         </a>
@@ -86,7 +86,7 @@
                                     Overlay
                                 </a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../../docs/components/pricing.html">
                                     Pricing
                                 </a>
@@ -231,8 +231,8 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
-    <a href="#basic">Basic</a>
-    <a href="#popular">Popular</a>
+    <a href="#border">Border</a>
+    <a href="#background-color">Background Color</a>
 </li>
 
                 </ul>
@@ -240,153 +240,43 @@
             <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 
 
-<h1 class="bd-title" id="content">Pricing</h1>
-<p class="bd-lead">Example pricing page built with Cards and featuring a custom header and body.</p>
-<h2 id="basic">Basic</h2>
-<div class="bd-example">
-    
-    <!--  -->
-    
-    <div class="card pricing border-0 bg-light rounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>19
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Startup License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
+<h1 class="bd-title" id="content">Gulp</h1>
+<p>Gulp is a tool that helps you out with several tasks when it comes to web development.</p>
+<h2 id="border">Installing Gulp</h2>
+<p>You need to have Node.js (Node) installed onto your computer before you can install Gulp.
+</p>
+<p>If you do not have Node installed already, you can get it by <a href="https://nodejs.org">downloading the package installer from Node's website</a>. </p>
 <figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        
-    <div class="card pricing border-0 bg-light rounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>19
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Startup License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-    </script>
+    <pre><code>
+        $ sudo npm install gulp -g
+    </code></pre>
 </figure>
-
-<h2 id="popular">Popular</h2>
-<div class="bd-example">
-    
-    <!--  -->
-    
-    <div class="card pricing border-0 bg-light ounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light text-primary rounded-0 p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>29
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Business License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn btn-primary text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
+<h2 id="border">Creating a Gulp Project</h2>
+<p><p>First, we'll create a folder called <code>project</code> to server as our project root as we move through this tutorial. Run the <code>npm init</code> command from inside that directory:</p></p>
 <figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        
-    <div class="card pricing border-0 bg-light ounded-0 text-center" style="width: 348px;">
-        <div class="card-header bg-light text-primary rounded-0 p-4 border-bottom-0">
-            <h3 class="price mb-0">
-                <span class="currency">$</span>29
-                <span class="period">/month</span>
-            </h3>
-        </div>
-        <div class="card-body py-4">
-            <h4 class="card-title">Business License</h4>
-            <ul class="list-unstyled list-lg">
-                <li>
-                    <strong>1</strong> Project</li>
-                <li>
-                    <strong>100K</strong> API Access</li>
-                <li>
-                    <strong>100MB</strong> Storage</li>
-                <li>100KCustom
-                    <strong>Cloud</strong> Services</li>
-                <li>Weekly
-                    <strong>Reports</strong>
-                </li>
-                <li>7/24
-                    <strong>Support</strong>
-                </li>
-            </ul>
-            <a href="#" class="btn btn-primary text-uppercase mt-2">Choose Plan</a>
-        </div>
-    </div>
-    
-    </script>
+    <pre><code>
+        $ npm init
+    </code></pre>
 </figure>
+<p>The <code>npm init</code> command creates a <code>package.json</code> file for your project which stores information about the project, like the <em>dependencies</em> used in the project (Gulp is an example of a dependency).</p>
+<p>Once the <code>package.json</code> file is created, we can install Gulp into the project by using the following command: </p>
+<figure class="highlight">
+    <pre><code>
+        $ npm install gulp --save-dev
+    </code></pre>
+</figure>
+<h2 id="border">Using Nunjucks with Gulp</h2>
+<p><p>We can use Nunjucks through a plugin called <a href="https://github.com/carlosl/gulp-nunjucks-render">gulp-nunjucks-render</a></p></p>
+<p>Let’s start by installing gulp-nunjucks-render.</p>
+<figure class="highlight">
+    <pre><code>
+        $ npm install gulp-nunjucks-render --save-dev
+    </code></pre>
+</figure>
+<p><strong>The <code>templates</code> folder</strong> is used for storing all Nunjucks partials and other Nunjucks files that will be added to files in the <code>pages</code> folder.</p>
+<p><strong>The <code>pages</code> folder</strong> is used for storing files that will be compiled into HTML. Once they are compiled, they will be created in the <code>app</code> folder.</p>
+<h2>Adding a Nunjucks Partial</h2>
+<p>We need to create a partial before we can add it to <code>index.nunjucks</code>. Let’s create a partial called <code>navigation.nunjucks</code> and place it in a <code>partials</code> folder that’s within the <code>templates</code> folder.</p>
 
             </main>
         </div>

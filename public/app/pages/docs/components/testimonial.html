@@ -5,14 +5,14 @@
 {% block section_nav %}
 <li class="toc-entry toc-h2">
     <a href="#border">Border</a>
-    <a href="#background">Background</a>
+    <a href="#background-color">Background Color</a>
 </li>
 {% endblock%}
 <!--  -->
 {% block content %}
 
 <h1 class="bd-title" id="content">Testimonial</h1>
-<p>The video class allows you to embed a video using an iframe from service providers such as Youtube, Vimeo etc.</p>
+<p>Testimonials from customers who are not famous have been effectively used in marketing for as long as marketing has existed.</p>
 <h2 id="border">Border</h2>
 <div class="bd-example">
     {% macro border() %}
@@ -49,9 +49,9 @@
         {% endcall %}
     </script>
 </figure>
-<h2 id="background">Background</h2>
+<h2 id="background-color">Background Color</h2>
 <div class="bd-example">
-    {% macro background() %}
+    {% macro backgroundColor() %}
     
     <div class="testimonial testimonial-center" style="width: 21rem;">
         <div class="testimonial-body text-center p-4 bg-light">
@@ -71,7 +71,7 @@
     </div>
     {% endmacro %}
     <!--  -->
-    {% call background() %}
+    {% call backgroundColor() %}
     <!--  -->
     {% endcall %}
 </div>
@@ -80,7 +80,7 @@
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        {% call background() %}
+        {% call backgroundColor() %}
         <!--  -->
         {% endcall %}
     </script>

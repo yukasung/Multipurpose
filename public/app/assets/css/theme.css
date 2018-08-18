@@ -9470,9 +9470,6 @@ blockquote {
   padding: 15px 30px;
   font-style: italic; }
 
-.text-decoration-none {
-  text-decoration: none; }
-
 a {
   outline: none; }
 
@@ -9481,7 +9478,7 @@ a {
   color: #939393;
   margin-bottom: 10px; }
   .meta .meta-link {
-    font-size: 12px; }
+    font-size: 0.75rem; }
 
 .caption-1 {
   font-size: 2.5rem !important; }
@@ -9545,69 +9542,6 @@ a {
     font-size: 1.5rem !important; }
   .caption-xl-5 {
     font-size: 1.25rem !important; } }
-
-.present-1 {
-  font-size: 6rem !important; }
-
-.present-2 {
-  font-size: 5.5rem !important; }
-
-.present-3 {
-  font-size: 4.5rem !important; }
-
-.present-4 {
-  font-size: 3.5rem !important; }
-
-.present-5 {
-  font-size: 2.5rem !important; }
-
-@media (min-width: 576px) {
-  .present-sm-1 {
-    font-size: 6rem !important; }
-  .present-sm-2 {
-    font-size: 5.5rem !important; }
-  .present-sm-3 {
-    font-size: 4.5rem !important; }
-  .present-sm-4 {
-    font-size: 3.5rem !important; }
-  .present-sm-5 {
-    font-size: 2.5rem !important; } }
-
-@media (min-width: 768px) {
-  .present-md-1 {
-    font-size: 6rem !important; }
-  .present-md-2 {
-    font-size: 5.5rem !important; }
-  .present-md-3 {
-    font-size: 4.5rem !important; }
-  .present-md-4 {
-    font-size: 3.5rem !important; }
-  .present-md-5 {
-    font-size: 2.5rem !important; } }
-
-@media (min-width: 992px) {
-  .present-lg-1 {
-    font-size: 6rem !important; }
-  .present-lg-2 {
-    font-size: 5.5rem !important; }
-  .present-lg-3 {
-    font-size: 4.5rem !important; }
-  .present-lg-4 {
-    font-size: 3.5rem !important; }
-  .present-lg-5 {
-    font-size: 2.5rem !important; } }
-
-@media (min-width: 1200px) {
-  .present-xl-1 {
-    font-size: 6rem !important; }
-  .present-xl-2 {
-    font-size: 5.5rem !important; }
-  .present-xl-3 {
-    font-size: 4.5rem !important; }
-  .present-xl-4 {
-    font-size: 3.5rem !important; }
-  .present-xl-5 {
-    font-size: 2.5rem !important; } }
 
 .video {
   position: relative; }
@@ -9772,6 +9706,9 @@ a {
 
 .w-max-90px {
   max-width: 90px !important; }
+
+.text-decoration-none {
+  text-decoration: none; }
 
 .line-height-1 {
   line-height: 1 !important; }
