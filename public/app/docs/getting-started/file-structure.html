@@ -59,11 +59,6 @@
                                     Introduction
                                 </a>
                             </li>
-                             <li class="active">
-                                <a href="../../docs/getting-started/file-structure.html">
-                                    File Structure
-                                </a>
-                            </li>
                             <li class="">
                                 <a href="../../docs/getting-started/gulp.html">
                                     Gulp
@@ -241,15 +236,14 @@
                 
 
 <h1 class="bd-title" id="content">File structure</h1>
-<p>Testimonials from customers who are not famous have been effectively used in marketing for as long as marketing has existed.</p>
+<p>Within this theme you’ll find the following directories and files, grouping common resources and providing both compiled
+    and minified distribution files, as well as raw source files.</p>
 <h2 id="border">What’s included</h2>
 <p>Once you have downloaded the archive and opened it, you will find the following structure.</p>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
 <figure class="highlight">
     <pre><code class="language-plaintext" data-lang="plaintext">public/
     ├── app/
+    │   │   ├── index.html and other .html files
     │   ├── assets/
     │   │   ├── css/
     │   │   ├── images/
@@ -264,19 +258,14 @@
     │   │   └── theme.scss
     │   ├── templates/
     │   │   ├── partials/
-    │   │   └── master.html
+    │   │   └── layout.html
     ├── dist/
     ├── gulpfile.js
     └── package.json
     </code></pre>
 </figure>
-<p>The
-    <code class="highlighter-rouge">scss/</code> and
-    <code class="highlighter-rouge">js/</code> are the source code for our CSS and JavaScript. The
-    <code class="highlighter-rouge">dist/</code> folder includes everything listed in the precompiled download section above. The
-    <code class="highlighter-rouge">docs/</code> folder includes the source code for our documentation, and
-    <code class="highlighter-rouge">examples/</code> of Bootstrap usage. Beyond that, any other included file provides support for packages, license information,
-    and development.</p>
+<p>In this structure, we used the <code>app</code> folder for development purposes, while the <code>dist</code> folder is used to contain optimized files for the production site. </p>
+<p>Since <code>app</code> is used for development purposes, all our code will be placed in <code>app</code>. </p>
 
             </main>
         </div>

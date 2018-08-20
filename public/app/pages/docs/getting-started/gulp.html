@@ -5,7 +5,6 @@
 {% block section_nav %}
 <li class="toc-entry toc-h2">
     <a href="#installing-gulp">Installing Gulp</a>
-    <a href="#creating-gulp-project">Creating a Gulp Project</a>
     <a href="#using-nunjucks-gulp">Using Nunjucks with Gulp</a>
     <a href="#complete-referance">Complete Reference</a>
 </li>
@@ -20,66 +19,82 @@
 </p>
 <p>If you do not have Node installed already, you can get it by
     <a href="https://nodejs.org">downloading the package installer from Node's website</a>. </p>
+<p>
+    When you're done with installing Node, you can install Gulp by using the following command in the command line:
+</p>
 <div class="bd-clipboard">
     <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
 </div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        $ sudo npm install gulp -g
+        $ npm install gulp -g
     </script>
 </figure>
-<h2 id="creating-gulp-project">Creating a Gulp Project</h2>
-<p>
-    <p>First, we'll create a folder called
-        <code>project</code> to server as our project root as we move through this tutorial. Run the
-        <code>npm init</code> command from inside that directory:</p>
-</p>
+<p>When you’re done, make sure you’ve installed the rest of the theme’s dependencies:</p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        $ npm init
+        $ npm install
     </script>
 </figure>
-<p>The
-    <code>npm init</code> command creates a
-    <code>package.json</code> file for your project which stores information about the project, like the
-    <em>dependencies</em> used in the project (Gulp is an example of a dependency).</p>
-<p>Once the
-    <code>package.json</code> file is created, we can install Gulp into the project by using the following command: </p>
+<p>Now, we can run this task with the gulp command in the command line.</p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
-        $ npm install gulp --save-dev
+        $ gulp
+    </script>
+</figure>
+<p>We've also built a second task,
+    <code>build</code>, that creates a
+    <code>dist</code> folder for the production website. To run this task, we just have to type
+    <code>gulp build</code> into the command line. </p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        $ gulp build
     </script>
 </figure>
 <h2 id="using-nunjucks-gulp">Using Nunjucks with Gulp</h2>
 <p>
-    <p>We used Nunjucks through a plugin called
+    <p>We have used Nunjucks through a plugin called
         <a href="https://github.com/carlosl/gulp-nunjucks-render">gulp-nunjucks-render</a>
     </p>
 </p>
-<p>Let’s start by installing gulp-nunjucks-render.</p>
+
 <figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        $ npm install gulp-nunjucks-render --save-dev
-    </script>
+    <pre><code class="language-plaintext" data-lang="plaintext">public/
+    ├── app/
+    │   ├── pages/
+    │   ├── templates/
+            ├── partials/
+            └── layout.html
+    </code></pre>
 </figure>
+
 <p>
     <strong>The
-        <code>app/templates</code> folder</strong> is used for storing all Nunjucks partials and other Nunjucks files that will
-    be added to files in the
-    <code>app/pages</code> folder.</p>
+        <code>templates</code> folder</strong> is used for storing all Nunjucks partials and other Nunjucks files that will be
+    added to files in the
+    <code>pages</code> folder.</p>
 <p>
     <strong>The
-        <code>app/pages</code> folder</strong> is used for storing files that will be compiled into HTML. Once they are compiled,
-    they will be created in the
+        <code>pages</code> folder</strong> is used for storing files that will be compiled into HTML. Once they are compiled, they
+    will be created in the
     <code>app</code> folder.</p>
-<p>We added partials with the help of the
-    <code>{&#37; include "path-to-partial" &#37;}</code> statement that Nunjucks provides.</p>
+<p>We created a template that contains boilerplate HTMl code which can be inherited by other pages. In this boilerplate HTML
+    <code>layout.html</code>.</p>
 <h2 id="complete-referance">Complete Reference</h2>
 <p>Learn more about
-    <a href="https://zellwk.com/blog/nunjucks-with-gulp/">using Nunjucks</a>.
-    <br>Learn more about
     <a href="https://css-tricks.com/gulp-for-beginners/">Gulp for Beginners</a>.
 </p>
-
-
+<p>Learn more about
+    <a href="https://zellwk.com/blog/nunjucks-with-gulp/">using Nunjucks with Gulp</a>.
+</p>
+<p>For more info about nunjucks functionality, check <a href="https://mozilla.github.io/nunjucks/api.html" rel="nofollow">https://mozilla.github.io/nunjucks/api.html</a>.</p>
 {% endblock %}
