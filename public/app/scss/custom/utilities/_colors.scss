@@ -2,9 +2,13 @@
 // Utilities colors
 //
 .bg-dark-50 {
-    background-color: rgba($black, 0.5);
+    background-color: rgba($black, 0.5) !important;
+}
+
+.bg-light-50 {
+    background-color: rgba($white, 0.5) !important;
 }
 
 .bg-darker {
-    background-color: #28282e;
+    background-color: #28282e !important;
 }

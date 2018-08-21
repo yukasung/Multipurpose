@@ -9657,10 +9657,13 @@ a {
   border-width: 2px !important; }
 
 .bg-dark-50 {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+.bg-light-50 {
+  background-color: rgba(255, 255, 255, 0.5) !important; }
 
 .bg-darker {
-  background-color: #28282e; }
+  background-color: #28282e !important; }
 
 .op-0 {
   opacity: 0 !important; }
@@ -9728,8 +9731,7 @@ a {
   z-index: 1;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 !important;
-  background-color: transparent !important; }
+  padding: 0 !important; }
 
 .block-under {
   z-index: 1; }
@@ -9742,8 +9744,7 @@ a {
     z-index: 1;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 !important;
-    background-color: transparent !important; }
+    padding: 0 !important; }
   .block-sm-under {
     z-index: 1; } }
 
@@ -9755,8 +9756,7 @@ a {
     z-index: 1;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 !important;
-    background-color: transparent !important; }
+    padding: 0 !important; }
   .block-md-under {
     z-index: 1; } }
 
@@ -9768,8 +9768,7 @@ a {
     z-index: 1;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 !important;
-    background-color: transparent !important; }
+    padding: 0 !important; }
   .block-lg-under {
     z-index: 1; } }
 
@@ -9781,7 +9780,6 @@ a {
     z-index: 1;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 !important;
-    background-color: transparent !important; }
+    padding: 0 !important; }
   .block-xl-under {
     z-index: 1; } }
