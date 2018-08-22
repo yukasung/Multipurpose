@@ -56,13 +56,49 @@ $btn-padding-x-lg: 2.5rem;
 // stylelint-disable
 $spacer: 1rem !default;
 $spacers: () !default;
-$spacers: map-merge(( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.875), 5: ($spacer * 3), 6: ($spacer * 4.5), 7: ($spacer * 6), 8: ($spacer * 7.5), 9: ($spacer * 9), 10: ($spacer * 10.5), 11: ($spacer * 11), 12: ($spacer * 12), 13: ($spacer * 13), 14: ($spacer * 14), 15: ($spacer * 15), 16: ($spacer * 16), 17: ($spacer * 17), 18: ($spacer * 18), 19: ($spacer * 19), 20: ($spacer * 20), ), $spacers);
+$spacers: map-merge(( 
+    0: 0, 1: ($spacer * .25), 
+    2: ($spacer * .5), 
+    3: $spacer, 
+    4: ($spacer * 1.875), 
+    5: ($spacer * 3), 
+    6: ($spacer * 4.5), 
+    7: ($spacer * 6), 
+    8: ($spacer * 7.5), 
+    9: ($spacer * 9), 
+    10: ($spacer * 10.5), 
+    11: ($spacer * 11), 
+    12: ($spacer * 12), 
+    13: ($spacer * 13), 
+    14: ($spacer * 14), 
+    15: ($spacer * 15), 
+    16: ($spacer * 16), 
+    17: ($spacer * 17), 
+    18: ($spacer * 18), 
+    19: ($spacer * 19), 
+    20: ($spacer * 20)
+), $spacers);
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: ();
-$sizes: map-merge(( 5: 5%, 10: 10%, 25: 25%, 30: 30%, 50: 50%, 75: 75%, 80: 80%, 100: 100%, auto: auto), $sizes);
-// Heading font size
+$sizes: map-merge(( 
+    5: 5%, 
+    10: 10%, 
+    25: 25%, 
+    30: 30%, 
+    50: 50%, 
+    75: 75%, 
+    80: 80%, 
+    100: 100%, 
+    auto: auto
+), $sizes);
+
+// Caption font size
 $captions: () !default;
-$captions: map-merge(( 1: $font-size-base * 2.5, 2: $font-size-base * 2, 3: $font-size-base * 1.75, 4: $font-size-base * 1.5, 5: $font-size-base * 1.25), $captions);
-// Present font size
-$presents: () !default;
-$presents: map-merge(( 1: 6rem, 2: 5.5rem, 3: 4.5rem, 4: 3.5rem, 5: 2.5rem), $presents);
+$captions: map-merge(( 
+    1: 6rem, 
+    2: 5.5rem, 
+    3: 4.5rem, 
+    4: 3.5rem, 
+    5: 2.5rem,
+    6: 2rem
+), $captions);

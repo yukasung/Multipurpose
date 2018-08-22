@@ -9490,67 +9490,78 @@ a {
     font-size: 0.75rem; }
 
 .caption-1 {
-  font-size: 2.5rem !important; }
+  font-size: 6rem !important; }
 
 .caption-2 {
-  font-size: 2rem !important; }
+  font-size: 5.5rem !important; }
 
 .caption-3 {
-  font-size: 1.75rem !important; }
+  font-size: 4.5rem !important; }
 
 .caption-4 {
-  font-size: 1.5rem !important; }
+  font-size: 3.5rem !important; }
 
 .caption-5 {
-  font-size: 1.25rem !important; }
+  font-size: 2.5rem !important; }
+
+.caption-6 {
+  font-size: 2rem !important; }
 
 @media (min-width: 576px) {
   .caption-sm-1 {
-    font-size: 2.5rem !important; }
+    font-size: 6rem !important; }
   .caption-sm-2 {
-    font-size: 2rem !important; }
+    font-size: 5.5rem !important; }
   .caption-sm-3 {
-    font-size: 1.75rem !important; }
+    font-size: 4.5rem !important; }
   .caption-sm-4 {
-    font-size: 1.5rem !important; }
+    font-size: 3.5rem !important; }
   .caption-sm-5 {
-    font-size: 1.25rem !important; } }
+    font-size: 2.5rem !important; }
+  .caption-sm-6 {
+    font-size: 2rem !important; } }
 
 @media (min-width: 768px) {
   .caption-md-1 {
-    font-size: 2.5rem !important; }
+    font-size: 6rem !important; }
   .caption-md-2 {
-    font-size: 2rem !important; }
+    font-size: 5.5rem !important; }
   .caption-md-3 {
-    font-size: 1.75rem !important; }
+    font-size: 4.5rem !important; }
   .caption-md-4 {
-    font-size: 1.5rem !important; }
+    font-size: 3.5rem !important; }
   .caption-md-5 {
-    font-size: 1.25rem !important; } }
+    font-size: 2.5rem !important; }
+  .caption-md-6 {
+    font-size: 2rem !important; } }
 
 @media (min-width: 992px) {
   .caption-lg-1 {
-    font-size: 2.5rem !important; }
+    font-size: 6rem !important; }
   .caption-lg-2 {
-    font-size: 2rem !important; }
+    font-size: 5.5rem !important; }
   .caption-lg-3 {
-    font-size: 1.75rem !important; }
+    font-size: 4.5rem !important; }
   .caption-lg-4 {
-    font-size: 1.5rem !important; }
+    font-size: 3.5rem !important; }
   .caption-lg-5 {
-    font-size: 1.25rem !important; } }
+    font-size: 2.5rem !important; }
+  .caption-lg-6 {
+    font-size: 2rem !important; } }
 
 @media (min-width: 1200px) {
   .caption-xl-1 {
-    font-size: 2.5rem !important; }
+    font-size: 6rem !important; }
   .caption-xl-2 {
-    font-size: 2rem !important; }
+    font-size: 5.5rem !important; }
   .caption-xl-3 {
-    font-size: 1.75rem !important; }
+    font-size: 4.5rem !important; }
   .caption-xl-4 {
-    font-size: 1.5rem !important; }
+    font-size: 3.5rem !important; }
   .caption-xl-5 {
-    font-size: 1.25rem !important; } }
+    font-size: 2.5rem !important; }
+  .caption-xl-6 {
+    font-size: 2rem !important; } }
 
 .video {
   position: relative; }
