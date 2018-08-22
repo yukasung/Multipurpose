@@ -1,3 +1,6 @@
+var _btnGoTopOffset = 100;
+var _btnGoTopDuration = 500;
+
 $(document).ready(function () {
     'use strict';
     theme.init();
@@ -5,6 +8,14 @@ $(document).ready(function () {
 
 $(window).resize(function () {
     theme.resizeEvent();
+});
+
+$(window).scroll(function () {
+    theme.scrollEvent(this);
+});
+
+$(window).load(function () {
+    theme.loadEvent();
 });
 
 var theme = {
@@ -20,9 +31,30 @@ var theme = {
         theme.initParallax();
         theme.initVideo();
         theme.initChart();
+        theme.initGoToTopBotton();
+    },
+    loadEvent: function () {
+
+        $('#preloader .loading').fadeOut();
+        $("#preloader").fadeOut(function () {
+            $(this).remove();
+        });
+        $('body').css({
+            'overflow': 'visible'
+        });
+
     },
     resizeEvent: function () {
         theme.setTopSpace();
+    },
+    scrollEvent: function (obj) {
+
+        if ($(obj).scrollTop() > _btnGoTopOffset) {
+            $('#btnGoTop').fadeIn(_btnGoTopDuration);
+        } else {
+            $('#btnGoTop').fadeOut(_btnGoTopDuration);
+        }
+
     },
     initParallax: function () {
 
@@ -125,10 +157,10 @@ var theme = {
                 var round = 0;
                 var options = $(this).data("owl-carousel-options");
                 var defaults = {
-                    navText: ["<img src='../../assets/images/other/nav_prev.png'>","<img src='../../assets/images/other/nav_next.png'>"]
+                    navText: ["<img src='../../assets/images/other/nav_prev.png'>", "<img src='../../assets/images/other/nav_next.png'>"]
                 }
 
-                $(this).owlCarousel( $.extend( defaults, options) );
+                $(this).owlCarousel($.extend(defaults, options));
 
                 $(this).on('change.owl.carousel', function (event) {
                     currentItem = $('.owl-item', owl).eq(event.item.index);
@@ -153,15 +185,19 @@ var theme = {
 
         $('.google-map').lazyLoadGoogleMaps({
             callback: function (container, map) {
-                var $container = $(container),
-                    center = new google.maps.LatLng($container.attr('data-lat'), $container.attr('data-lng'));
+                var $container = $(container);
+                var $center = new google.maps.LatLng($container.attr('data-lat'), $container.attr('data-lng'));
+                var $zoom = 15;
 
+                if ($container.attr('data-zoom')) {
+                    $zoom = parseInt($container.attr('data-zoom'));
+                }
                 map.setOptions({
-                    zoom: 15,
-                    center: center
+                    zoom: $zoom,
+                    center: $center
                 });
                 new google.maps.Marker({
-                    position: center,
+                    position: $center,
                     map: map
                 });
             }
@@ -257,6 +293,18 @@ var theme = {
 
         });
     },
+    initGoToTopBotton() {
+
+        $('#btnGoTop').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, _btnGoTopDuration);
+            return false;
+        });
+
+    },
+
     setTopSpace: function () {
 
         var topSpaceHeight = 0;

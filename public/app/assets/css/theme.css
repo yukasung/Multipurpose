@@ -8542,6 +8542,16 @@ a.text-dark:hover, a.text-dark:focus {
 .btn {
   font-size: 0.8125rem; }
 
+.btn-go-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  opacity: 0.8;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 999;
+  bottom: 30px; }
+
 .accordion .card .card-header {
   position: relative; }
   .accordion .card .card-header a {
@@ -9315,9 +9325,8 @@ a {
     padding-bottom: 0; }
 
 .timeline-info {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 3px;
   margin: 0 0 .5em 0;
   text-transform: uppercase;
   white-space: nowrap; }
@@ -9630,6 +9639,35 @@ a {
     background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
   .overlay-radial-gradient.gradient-light.gradient-center-left {
     background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999; }
+  #preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(52, 152, 219, 0.5);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    z-index: 999; }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg); } }
 
 .bg-image {
   position: absolute;
