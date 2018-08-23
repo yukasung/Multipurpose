@@ -15,13 +15,17 @@
         z-index: 90;
     }
     .input-btn {
+        cursor: pointer;
         +.form-control {
             padding-right: 50px;
         }
     }
     .icon {
         color: #76838f;
-        font-size: 1.25rem;
+        position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
     }
     &.input-group {
         .icon {

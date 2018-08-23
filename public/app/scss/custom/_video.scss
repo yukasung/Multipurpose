@@ -7,18 +7,24 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        z-index: 10;
+        width: 72px;
+        height: 72px;
+        border-radius: 100%;
+        border: 3px solid #ffffff;
+        background: rgba(#000000, 0.2);
         transform: translate3d(-50%, -50%, 0);
         transition: 0.2s ease-out;
+        cursor: pointer;
+        >* {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     img {
         transition: 0.3s linear;
-    }
-    &.video-reveal {
-        .video-icon,
-        img {
-            opacity: 0 !important;
-            pointer-events: none;
-        }
     }
     iframe {
         position: absolute;
@@ -30,5 +36,12 @@
         height: 100%;
         border: 0;
         background: #252525;
+    }
+    &.video-reveal {
+        .video-icon,
+        img {
+            opacity: 0 !important;
+            pointer-events: none;
+        }
     }
 }

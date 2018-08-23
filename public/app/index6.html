@@ -114,7 +114,8 @@
     </div>
     <!-- Go Top Button -->
     <a href="#" id="btnGoTop" class="btn btn-primary btn-go-top">
-        <i class="ti-angle-up icon-lg"></i>
+        <!-- <i class="ti-angle-up icon-lg"></i> -->
+        <i data-feather="chevron-up" width="20" height="20" class="text-light"></i>
     </a>
     <!--  -->
     
@@ -363,24 +364,18 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <ul class="list-inline">
-            <li class="list-inline-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
-                    <i class="flag-icon flag-icon-gb"></i>
-                    <span class="ml-2">en</span>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="nav-link" href="shop-cart.html">
-                    <i class="ion-bag icon-lg"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalSearch">
-                    <i class="ion-ios-search-strong icon-lg"></i>
-                </a>
-            </li>
-        </ul>
+        <div class="d-flex flex-row">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
+                <i class="flag-icon flag-icon-gb"></i>
+                <span class="ml-2">en</span>
+            </a>
+            <a class="nav-link line-height-1 mt-1" href="shop-cart.html">
+                <i data-feather="shopping-cart" width="20" height="20"></i>
+            </a>
+            <a class="nav-link line-height-1 mt-1" href="#" data-toggle="modal" data-target="#modalSearch">
+                <i data-feather="search" width="20" height="20"></i>
+            </a>
+        </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -457,9 +452,9 @@
             </div>
         </div>
     </section>
-    <section class="py-5 bg-primary">
+    <section class="py-5 border-bottom">
         <div class="container">
-            <div class="row text-white">
+            <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="row">
                         <div class="col-5 col-md-12 col-lg-5 text-right text-md-center text-lg-center">
@@ -657,22 +652,22 @@
                 <ul class="list-inline mb-0 d-none d-md-block">
                     <li class="list-inline-item mr-4">
                         <a href="#">
-                            <i class="ion-social-facebook icon-lg text-light"></i>
+                            <i data-feather="facebook" width="20" height="20" stroke-width="1" class="text-light"></i>
                         </a>
                     </li>
                     <li class="list-inline-item mr-4">
                         <a href="#">
-                            <i class="ion-social-instagram icon-lg text-light"></i>
+                            <i data-feather="instagram" width="20" height="20" stroke-width="1" class="text-light"></i>
                         </a>
                     </li>
                     <li class="list-inline-item mr-4">
                         <a href="#">
-                            <i class="ion-social-twitter icon-lg text-light"></i>
+                            <i data-feather="twitter" width="20" height="20" stroke-width="1" class="text-light"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#">
-                            <i class="ion-social-youtube icon-lg text-light"></i>
+                            <i data-feather="youtube" width="20" height="20" stroke-width="1" class="text-light"></i>
                         </a>
                     </li>
                 </ul>
@@ -695,6 +690,9 @@
     <script type="text/javascript" src="assets/plugins/jquery-skills-bar/skill.bars.jquery.js"></script>
     <script type="text/javascript" src="assets/plugins/rellax.min.js"></script>
     <script type="text/javascript" src="assets/plugins/chart.min.js"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
     <!--build:js assets/js/theme.min.js -->
     <script src="assets/js/lib/a-library.js"></script>

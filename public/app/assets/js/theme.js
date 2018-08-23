@@ -31,6 +31,7 @@ var theme = {
         theme.initParallax();
         theme.initVideo();
         theme.initChart();
+        theme.initIcons();
         theme.initGoToTopBotton();
     },
     loadEvent: function () {
@@ -114,6 +115,9 @@ var theme = {
 
         });
 
+    },
+    initIcons: function () {
+        feather.replace();
     },
     // add animate.css class(es) to the elements to be animated
     setAnimation: function (elem, inOut) {
