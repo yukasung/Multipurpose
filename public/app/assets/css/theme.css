@@ -8545,12 +8545,13 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-go-top {
   position: fixed;
   display: none;
-  right: 30px;
-  opacity: 0.8;
-  padding: 6px 10px;
-  text-decoration: none;
   z-index: 999;
-  bottom: 30px; }
+  right: 30px;
+  bottom: 30px;
+  opacity: 0.8;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none; }
 
 .accordion .card .card-header {
   position: relative; }
@@ -8592,7 +8593,7 @@ select {
   padding-right: 2rem; }
 
 .form-control-rounded {
-  border-radius: 200px; }
+  border-radius: 200px !important; }
 
 .icon-xs {
   font-size: .75em; }
@@ -8622,6 +8623,8 @@ select {
 
 .input-icon {
   position: relative; }
+  .input-icon.input-group-lg .input-btn {
+    padding: 0 20px; }
   .input-icon .input-btn {
     position: absolute;
     top: 0;
@@ -8637,7 +8640,7 @@ select {
     .input-icon .input-btn + .form-control {
       padding-right: 50px; }
   .input-icon .icon {
-    color: #76838f;
+    color: #999999;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -9020,7 +9023,7 @@ select {
   transition: ease-in-out 0.3s; }
 
 .header-topbar .navbar-top {
-  top: 35px; }
+  top: 42px; }
 
 .header-appear .navbar-dark.bg-transparent {
   background-color: #fff !important; }
@@ -9568,9 +9571,6 @@ a {
   .video.video-reveal img {
     opacity: 0 !important;
     pointer-events: none; }
-
-.header-top {
-  font-size: 0.875rem; }
 
 .overlay {
   position: relative;

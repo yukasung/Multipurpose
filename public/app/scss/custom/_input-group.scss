@@ -3,6 +3,11 @@
 //
 .input-icon {
     position: relative;
+    &.input-group-lg {
+        .input-btn {
+            padding: 0 20px;
+        }
+    }
     .input-btn {
         position: absolute;
         top: 0;
@@ -21,11 +26,11 @@
         }
     }
     .icon {
-        color: #76838f;
+        color: #999999;
         position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     &.input-group {
         .icon {

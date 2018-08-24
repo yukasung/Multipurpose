@@ -8,10 +8,12 @@
 .btn-go-top {
     position: fixed;
     display: none;
-    right: 30px;
-    opacity: 0.8;
-    padding: 6px 10px;
-    text-decoration: none;
     z-index: 999;
+    right: 30px;
     bottom: 30px;
+    opacity: 0.8;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+ 
 }
