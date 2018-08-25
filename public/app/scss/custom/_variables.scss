@@ -102,3 +102,7 @@ $captions: map-merge((
     5: 2.5rem,
     6: 2rem
 ), $captions);
+
+// Breadcrumbs
+$breadcrumb-divider-color: #ffffff !default;
+$breadcrumb-active-color: #ffffff !default;

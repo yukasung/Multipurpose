@@ -1,29 +1,12 @@
 //
 // Timeline
 //
-$primary-hover: scale-color($primary, $lightness: 32%);
-a {
-    color: $primary;
-    &:hover {
-        color: $primary-hover;
-        text-decoration: none;
-    }
-}
-
 .timeline {
     line-height: 1.4em;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        line-height: inherit;
-    }
 }
 
 .timeline-item {
@@ -37,7 +20,6 @@ a {
 .timeline-info {
     font-size: 0.75rem;
     font-weight: 700;
-    // letter-spacing: 3px;
     margin: 0 0 .5em 0;
     text-transform: uppercase;
     white-space: nowrap;

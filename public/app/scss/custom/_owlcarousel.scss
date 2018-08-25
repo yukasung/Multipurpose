@@ -3,13 +3,6 @@
 //
 .owl-carousel {
     position: relative;
-    &:hover {
-        .owl-nav {
-            >div {
-                opacity: 0.8;
-            }
-        }
-    }
     .owl-stage {
         display: flex;
     }
@@ -26,23 +19,6 @@
         margin-top: auto;
         .card {
             flex: 1 0 auto;
-        }
-        &.item-height {
-            height: 592px;
-        }
-    }
-}
-
-.owl-hero {
-    .item {
-        height: 100%;
-        margin-top: 0;
-        .bg-gradient {
-            &:after {
-                @include media-breakpoint-down(lg) {
-                    content: none;
-                }
-            }
         }
     }
 }
@@ -72,7 +48,8 @@
 }
 
 .owl-nav {
-    >div {
+    .owl-prev,
+    .owl-next {
         position: absolute;
         top: calc(50% - 14px);
         transform: translateY(-50%);
@@ -86,27 +63,11 @@
         font-size: 0;
         transition: all 0.2s ease-in-out;
     }
-    .owl-prev,
-    .owl-next {
-        text-align: center;
-        color: #ffffff;
-    }
     .owl-prev {
         left: 0;
-       
     }
     .owl-next {
         right: 0;
-    }
-}
-
-.owl-item {
-    figure {
-        &:after {
-            @include media-breakpoint-down(sm) {
-                background: none !important;
-            }
-        }
     }
 }
 

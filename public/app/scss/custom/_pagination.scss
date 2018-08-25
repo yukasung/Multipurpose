@@ -17,7 +17,7 @@
 		}
 		&.active {
 			.page-link {
-				color: #ffffff;
+				color: $white;
 				background: $primary;
 				opacity: 1;
 			}
@@ -42,11 +42,11 @@
 		will-change: box-shadow, transform;
 		transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
 		outline: 0;
-		cursor: pointer;
 		text-decoration: none;
 		text-align: center;
+		cursor: pointer;
 		&:hover {
-			color: #ffffff;
+			color: $white;
 			background: $primary;
 			opacity: 1;
 		}

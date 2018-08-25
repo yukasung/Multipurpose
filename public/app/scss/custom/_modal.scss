@@ -11,17 +11,15 @@
     max-width: 100%;
 }
 
-.modal {
-    &.fullscreen {
-        z-index: 1050 !important;
-        .modal-dialog {
+.modal-fullscreen {
+    z-index: 1050 !important;
+    .modal-dialog {
+        @extend %fullscreen;
+        .modal-content {
+            border: none;
+            border-radius: 0;
+            box-shadow: inherit;
             @extend %fullscreen;
-            .modal-content {
-                border: none;
-                border-radius: 0;
-                box-shadow: inherit;
-                @extend %fullscreen;
-            }
         }
     }
     .close {
