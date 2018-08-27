@@ -16,6 +16,8 @@
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!--build:css assets/css/theme.min.css-->
     <link rel="stylesheet" href="assets/css/theme.css">
     <!--endbuild-->
@@ -116,7 +118,7 @@
     </div>
     <!-- Go Top Button -->
     <a href="#" id="btnGoTop" class="btn btn-primary btn-go-top">
-        <i class="fas fa-angle-up fa-lg"></i>
+        <i class="material-icons">expand_less</i>
     </a>
     <!--  -->
     
@@ -365,18 +367,28 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <div class="d-flex flex-row">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
-                <i class="flag-icon flag-icon-gb"></i>
-                <span class="ml-2">en</span>
-            </a>
-            <a class="nav-link" href="shop-cart.html">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a class="nav-link pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item align-middle mr-4">
+                <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                    <i class="flag-icon flag-icon-gb"></i>
+                    <span class="text-body ml-2">en</span>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle mr-4">
+                <a class="d-flex justify-content-center align-items-center text-body" href="shop-cart.html">
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle">
+                <a class="d-flex justify-content-center align-items-center text-body pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </a>
+            </li>
+        </ul>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -459,21 +471,23 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-10 col-lg-4 text-center mb-4 mb-lg-0">
-                    <i data-feather="pie-chart" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                    <i class="material-icons md-60 text-primary">bar_chart</i>
                     <h4 class="mt-4 mb-3">
                         Financial Planning
                     </h4>
-                    <p class="mb-0">Finance is one of the most important aspects of business management and includes analysis related.</p>
+                    <p class="mb-0">Finance is a field that is concerned with the allocation of assets and liabilities over space and time
+                        often under conditions.</p>
                 </div>
                 <div class="col-md-10 col-lg-4 text-center mb-4 mb-lg-0">
-                    <i data-feather="monitor" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                    <i class="material-icons md-60 text-primary">desktop_windows</i>
                     <h4 class="mt-4 mb-3">
                         Software and Research
                     </h4>
-                    <p class="mb-0">Software quality is very important, especially for commercial and system software like Microsoft Windows.</p>
+                    <p class="mb-0">Software quality is very important especially for commercial and system software like Microsoft Office
+                        Microsoft Windows.</p>
                 </div>
                 <div class="col-md-10 col-lg-4 text-center mb-4 mb-lg-0">
-                    <i data-feather="user" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                    <i class="material-icons md-60 text-primary">person_outline</i>
                     <h4 class="mt-4 mb-3">
                         Business Services
                     </h4>

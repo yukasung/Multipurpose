@@ -16,6 +16,8 @@
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!--build:css assets/css/theme.min.css-->
     <link rel="stylesheet" href="assets/css/theme.css">
     <!--endbuild-->
@@ -116,7 +118,7 @@
     </div>
     <!-- Go Top Button -->
     <a href="#" id="btnGoTop" class="btn btn-primary btn-go-top">
-        <i class="fas fa-angle-up fa-lg"></i>
+        <i class="material-icons">expand_less</i>
     </a>
     <!--  -->
     
@@ -365,18 +367,28 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <div class="d-flex flex-row">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
-                <i class="flag-icon flag-icon-gb"></i>
-                <span class="ml-2">en</span>
-            </a>
-            <a class="nav-link" href="shop-cart.html">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a class="nav-link pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item align-middle mr-4">
+                <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                    <i class="flag-icon flag-icon-gb"></i>
+                    <span class="text-body ml-2">en</span>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle mr-4">
+                <a class="d-flex justify-content-center align-items-center text-body" href="shop-cart.html">
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle">
+                <a class="d-flex justify-content-center align-items-center text-body pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </a>
+            </li>
+        </ul>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -416,7 +428,7 @@
             <div class="row mt-6">
                 <div class="col-md-6 col-lg-4">
                     <div class="card text-center align-items-center border-0 p-4 mb-4">
-                        <i data-feather="pie-chart" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                        <i class="material-icons md-60 text-primary">bar_chart</i>
                         <h4 class="my-4">
                             Financial Planning
                         </h4>
@@ -426,7 +438,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
                     <div class="card text-center align-items-center border-0 p-4 mb-4">
-                        <i data-feather="monitor" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                        <i class="material-icons md-60 text-primary">desktop_windows</i>
                         <h4 class="my-4">
                             Software and Research
                         </h4>
@@ -437,7 +449,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card text-center align-items-center border-0 p-4 mb-4">
-                        <i data-feather="user" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                        <i class="material-icons md-60 text-primary">person_outline</i>
                         <h4 class="my-4">
                             Business Services
                         </h4>
@@ -448,7 +460,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
                     <div class="card text-center align-items-center border-0 p-4 mb-4">
-                        <i data-feather="activity" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                        <i class="material-icons md-60 text-primary">show_chart</i>
                         <h4 class="my-4">
                             Economic Consulting
                         </h4>
@@ -458,7 +470,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
                     <div class="card text-center align-items-center border-0 p-4 mb-4">
-                        <i data-feather="credit-card" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                        <i class="material-icons md-60 text-primary">language</i>
                         <h4 class="my-4">
                             Investment Planning
                         </h4>
@@ -468,7 +480,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
                     <div class="card  text-center align-items-center border-0 p-4 mb-4">
-                        <i data-feather="heart" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                        <i class="material-icons md-60 text-primary">add</i>
                         <h4 class="my-4">
                             Healthcare Consulting
                         </h4>
@@ -510,7 +522,7 @@
                         <img src="assets/images/other/other-4-800x516.jpg" class="img-fluid" alt="Image Description">
                         <iframe class="d-none bg-image" data-src="https://www.youtube.com/embed/TJ1SDXbij8Y?autoplay=1" allowfullscreen></iframe>
                         <a class="video-icon">
-                            <i data-feather="play" stroke-width="2" class="text-light"></i>
+                            <i class="material-icons md-36 text-light icon">play_arrow</i>
                         </a>
                     </div>
                 </div>
@@ -549,6 +561,7 @@
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     <div class="testimonial testimonial-center">
                         <div class="testimonial-body text-center p-4 bg-white">
+                            <i class="material-icons md-36 text-primary">format_quote</i>
                             <p class="font-weight-light mb-0">Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times
                                 the value from business.</p>
                         </div>
@@ -566,6 +579,7 @@
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     <div class="testimonial testimonial-center">
                         <div class="testimonial-body text-center p-4 bg-white">
+                            <i class="material-icons md-36 text-primary">format_quote</i>
                             <p class="font-weight-light mb-0">I don&#39;t always clop, but when I do, it&#39;s because of business. Keep up the excellent work.</p>
                         </div>
                         <div class="testimonial-footer mt-4">
@@ -582,6 +596,7 @@
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     <div class="testimonial testimonial-center">
                         <div class="testimonial-body text-center p-4 bg-white">
+                            <i class="material-icons md-36 text-primary">format_quote</i>
                             <p class="font-weight-light mb-0">I could probably go into sales for you. No matter where you go, business is the coolest, most
                                 happening thing around!.</p>
                         </div>

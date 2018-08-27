@@ -16,6 +16,8 @@
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!--build:css assets/css/theme.min.css-->
     <link rel="stylesheet" href="assets/css/theme.css">
     <!--endbuild-->
@@ -116,7 +118,7 @@
     </div>
     <!-- Go Top Button -->
     <a href="#" id="btnGoTop" class="btn btn-primary btn-go-top">
-        <i class="fas fa-angle-up fa-lg"></i>
+        <i class="material-icons">expand_less</i>
     </a>
     <!--  -->
     
@@ -365,18 +367,28 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <div class="d-flex flex-row">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
-                <i class="flag-icon flag-icon-gb"></i>
-                <span class="ml-2">en</span>
-            </a>
-            <a class="nav-link" href="shop-cart.html">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a class="nav-link pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item align-middle mr-4">
+                <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                    <i class="flag-icon flag-icon-gb"></i>
+                    <span class="text-body ml-2">en</span>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle mr-4">
+                <a class="d-flex justify-content-center align-items-center text-body" href="shop-cart.html">
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle">
+                <a class="d-flex justify-content-center align-items-center text-body pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </a>
+            </li>
+        </ul>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -604,6 +616,7 @@
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
                     <div class="testimonial testimonial-center">
                         <div class="testimonial-body text-center p-4 border">
+                            <i class="material-icons md-36 text-primary">format_quote</i>
                             <p class="font-weight-light mb-0">Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times
                                 the value from business.</p>
                         </div>
@@ -617,13 +630,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
-
                     <div class="testimonial testimonial-center">
                         <div class="testimonial-body text-center p-4 border">
+                            <i class="material-icons md-36 text-primary">format_quote</i>
                             <p class="font-weight-light mb-0">I don't always clop, but when I do, it's because of business. Keep up the excellent work.</p>
                         </div>
                         <div class="testimonial-footer mt-4">
@@ -636,13 +647,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
-
                     <div class="testimonial testimonial-center">
                         <div class="testimonial-body text-center p-4 border">
+                            <i class="material-icons md-36 text-primary">format_quote</i>
                             <p class="font-weight-light mb-0">I could probably go into sales for you. No matter where you go, business is the coolest, most
                                 happening thing around!.</p>
                         </div>
@@ -656,9 +665,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>

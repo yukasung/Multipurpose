@@ -9,10 +9,6 @@ blockquote {
     font-style: italic;
 }
 
-a {
-    outline: none;
-}
-
 .meta {
     font-size: 0.875rem;
     color: #939393;
@@ -20,6 +16,10 @@ a {
     .meta-link {
         font-size: 0.75rem;
     }
+}
+
+.text-small{
+    font-size: 0.875rem;
 }
 
 // Captions

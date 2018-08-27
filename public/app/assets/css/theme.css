@@ -8539,8 +8539,7 @@ a.text-dark:hover, a.text-dark:focus {
   right: 30px;
   bottom: 30px;
   opacity: 0.8;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 10px 0px;
   text-decoration: none; }
 
 .card .card-link {
@@ -8913,14 +8912,8 @@ select {
     margin-left: 40px; } }
 
 .navbar-action span {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase; }
-
-.navbar-action > ul {
-  list-style: none;
-  margin-bottom: 0; }
-  .navbar-action > ul li:not(:last-child) {
-    margin-right: 0; }
 
 .navbar-collapse-show .navbar-brand {
   transform: scale(0);
@@ -9374,15 +9367,15 @@ blockquote {
   padding: 15px 30px;
   font-style: italic; }
 
-a {
-  outline: none; }
-
 .meta {
   font-size: 0.875rem;
   color: #939393;
   margin-bottom: 10px; }
   .meta .meta-link {
     font-size: 0.75rem; }
+
+.text-small {
+  font-size: 0.875rem; }
 
 .caption-1 {
   font-size: 6rem !important; }
@@ -9578,6 +9571,21 @@ a {
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(360deg); } }
+
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.material-icons.md-60 {
+  font-size: 60px; }
 
 .bg-image {
   position: absolute;

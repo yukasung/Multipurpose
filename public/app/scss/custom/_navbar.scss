@@ -348,17 +348,8 @@
         margin-left: 40px;
     }
     span {
-        font-size: 14px;
+        font-size: 0.875rem;
         text-transform: uppercase;
-    }
-    >ul {
-        list-style: none;
-        margin-bottom: 0;
-        li {
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-        }
     }
 }
 

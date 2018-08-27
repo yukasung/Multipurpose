@@ -16,6 +16,8 @@
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!--build:css assets/css/theme.min.css-->
     <link rel="stylesheet" href="assets/css/theme.css">
     <!--endbuild-->
@@ -116,7 +118,7 @@
     </div>
     <!-- Go Top Button -->
     <a href="#" id="btnGoTop" class="btn btn-primary btn-go-top">
-        <i class="fas fa-angle-up fa-lg"></i>
+        <i class="material-icons">expand_less</i>
     </a>
     <!--  -->
     
@@ -127,14 +129,16 @@
         <div class="row">
             <div class="col-md-6 text-center text-md-left">
                 <ul class="list-inline mb-0">
-                    <li class="list-inline-item mr-4">
+                    <li class="list-inline-item align-middle mr-4">
                         <a class="d-flex justify-content-center align-items-center text-white" href="tel:171422226666">
-                            <i class="fas fa-phone fa-flip-horizontal mr-2"></i><small>+1 714 2222 6666</small>
+                            <i class="material-icons md-18 mr-2">phone</i>
+                            <span class="text-small">+1 714 2222 6666</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
+                    <li class="list-inline-item align-middle">
                         <a class="d-flex justify-content-center align-items-center text-white" href="mailto:Info@construction.com">
-                            <i class="fas fa-envelope mr-2"></i><small>info@domain.com</small>
+                            <i class="material-icons md-18 mr-2">email</i>
+                            <span class="text-small">info@domain.com</span>
                         </a>
                     </li>
                 </ul>
@@ -409,18 +413,28 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <div class="d-flex flex-row">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
-                <i class="flag-icon flag-icon-gb"></i>
-                <span class="ml-2">en</span>
-            </a>
-            <a class="nav-link" href="shop-cart.html">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a class="nav-link pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item align-middle mr-4">
+                <a href="#" data-toggle="modal" data-target="#modalLanguage">
+                    <i class="flag-icon flag-icon-gb"></i>
+                    <span class="text-body ml-2">en</span>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle mr-4">
+                <a class="d-flex justify-content-center align-items-center text-body" href="shop-cart.html">
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </a>
+            </li>
+            <li class="list-inline-item align-middle">
+                <a class="d-flex justify-content-center align-items-center text-body pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </a>
+            </li>
+        </ul>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -501,7 +515,7 @@
                         <img src="assets/images/other/other-1-800x516.jpg" class="img-fluid" alt="Image Description">
                         <iframe class="d-none bg-image" data-src="https://www.youtube.com/embed/TJ1SDXbij8Y?autoplay=1" allowfullscreen></iframe>
                         <a class="video-icon">
-                            <i data-feather="play" stroke-width="2" class="text-light"></i>
+                            <i class="material-icons md-36 text-light icon">play_arrow</i>
                         </a>
                     </div>
                 </div>
@@ -512,7 +526,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-10 col-lg-4 text-center mb-4 mb-lg-0">
-                    <i data-feather="pie-chart" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                    <i class="material-icons md-60 text-primary">bar_chart</i>
                     <h4 class="mt-4 mb-3">
                         Financial Planning
                     </h4>
@@ -520,7 +534,7 @@
                         often under conditions.</p>
                 </div>
                 <div class="col-md-10 col-lg-4 text-center mb-4 mb-lg-0">
-                    <i data-feather="monitor" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                    <i class="material-icons md-60 text-primary">desktop_windows</i>
                     <h4 class="mt-4 mb-3">
                         Software and Research
                     </h4>
@@ -528,7 +542,7 @@
                         Microsoft Windows.</p>
                 </div>
                 <div class="col-md-10 col-lg-4 text-center mb-4 mb-lg-0">
-                    <i data-feather="user" width="60" height="60" stroke-width="1" class="text-primary"></i>
+                    <i class="material-icons md-60 text-primary">person_outline</i>
                     <h4 class="mt-4 mb-3">
                         Business Services
                     </h4>
@@ -582,7 +596,7 @@
                         <div class="col-lg-6">
                             <div class="form-group input-icon mb-lg-0">
                                 <button type="submit" class="input-btn">
-                                    <i class="fas fa-chevron-right icon"></i>
+                                    <i class="material-icons icon">chevron_right</i>
                                 </button>
                                 <input type="text" class="form-control form-control-rounded" name="" placeholder="Your Email">
                             </div>
