@@ -442,6 +442,9 @@
 }
 
 .header-appear {
+    .navbar{
+        box-shadow: $box-shadow-sm;
+    }
     .navbar-dark {
         &.bg-transparent {
             background-color: #fff !important;
