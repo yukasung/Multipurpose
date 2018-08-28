@@ -10,21 +10,17 @@
             &:after {
                 position: absolute;
                 right: 15px;
-                font-family: "themify";
-                content: "\e64b";
+                font-family: 'Material Icons';
+                font-size: 24px;
+                content: '\e5cc';
                 transition: all .3s linear 0s;
                 top: 50%;
                 transform: translateY(-50%);
             }
             &.collapsed {
                 &:after {
-                    position: absolute;
-                    right: 15px;
-                    font-family: "themify";
-                    content: "\e649";
+                    content: '\e5cf';
                     transition: all .3s linear 0s;
-                    top: 50%;
-                    transform: translateY(-50%);
                 }
             }
         }

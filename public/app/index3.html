@@ -16,8 +16,7 @@
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--build:css assets/css/theme.min.css-->
     <link rel="stylesheet" href="assets/css/theme.css">
     <!--endbuild-->
@@ -52,7 +51,9 @@
                                     <h5 class="modal-title h3 text-center mb-4 animated fadeInUp">Search Our Website</h5>
                                     <div class="input-icon input-group-lg">
                                         <button type="submit" class="input-btn">
-                                            <i class="fas fa-search fa-lg icon"></i>
+                                            <i class="material-icons icon">
+                                                search
+                                            </i>
                                         </button>
                                         <input type="text" class="form-control form-control-rounded" name="" placeholder="Search...">
                                     </div>
@@ -367,28 +368,22 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <ul class="list-inline mb-0">
-            <li class="list-inline-item align-middle mr-4">
-                <a href="#" data-toggle="modal" data-target="#modalLanguage">
-                    <i class="flag-icon flag-icon-gb"></i>
-                    <span class="text-body ml-2">en</span>
-                </a>
-            </li>
-            <li class="list-inline-item align-middle mr-4">
-                <a class="d-flex justify-content-center align-items-center text-body" href="shop-cart.html">
-                    <i class="material-icons">
-                        shopping_cart
-                    </i>
-                </a>
-            </li>
-            <li class="list-inline-item align-middle">
-                <a class="d-flex justify-content-center align-items-center text-body pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
-                    <i class="material-icons">
-                        search
-                    </i>
-                </a>
-            </li>
-        </ul>
+        <div class="d-flex flex-row">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
+                <i class="flag-icon flag-icon-gb"></i>
+                <span class="ml-2">en</span>
+            </a>
+            <a class="d-flex justify-content-center align-items-center nav-link" href="shop-cart.html">
+                <i class="material-icons">
+                    shopping_cart
+                </i>
+            </a>
+            <a class="d-flex justify-content-center align-items-center nav-link pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
+                <i class="material-icons">
+                    search
+                </i>
+            </a>
+        </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -418,7 +413,9 @@
             <div class="row justify-content-md-center">
                 <div class="col-md-4 col-lg-auto px-lg-4">
                     <div class="media">
-                        <i class="fas fa-clock text-primary fa-lg mt-1"></i>
+                        <i class="material-icons">
+                            access_time
+                        </i>
                         <div class="media-body ml-3">
                             <h5 class="h6 text-uppercase">Working Hour</h5>
                             <span class="font-weight-light">
@@ -429,7 +426,7 @@
                 </div>
                 <div class="col-md-4 col-lg-auto py-4 py-md-0 px-lg-4">
                     <div class="media">
-                        <i class="fas fa-map-marker-alt text-primary fa-lg mt-1"></i>
+                        <i class="material-icons">location_on</i>
                         <div class="media-body ml-3">
                             <h5 class="h6 text-uppercase">Our Location</h5>
                             <span class="font-weight-light mb-0">
@@ -440,7 +437,7 @@
                 </div>
                 <div class="col-md-4 col-lg-auto py-md-0 px-lg-4">
                     <div class="media">
-                        <i class="fas fa-phone fa-flip-horizontal text-primary fa-lg mt-1"></i>
+                        <i class="material-icons">phone</i>
                         <div class="media-body ml-3">
                             <h5 class="h6 text-uppercase">Call Us</h5>
                             <span class="font-weight-light">

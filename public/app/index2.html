@@ -16,8 +16,7 @@
     <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/plugins/animate.css" rel="stylesheet">
     <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--build:css assets/css/theme.min.css-->
     <link rel="stylesheet" href="assets/css/theme.css">
     <!--endbuild-->
@@ -52,7 +51,9 @@
                                     <h5 class="modal-title h3 text-center mb-4 animated fadeInUp">Search Our Website</h5>
                                     <div class="input-icon input-group-lg">
                                         <button type="submit" class="input-btn">
-                                            <i class="fas fa-search fa-lg icon"></i>
+                                            <i class="material-icons icon">
+                                                search
+                                            </i>
                                         </button>
                                         <input type="text" class="form-control form-control-rounded" name="" placeholder="Search...">
                                     </div>
@@ -367,28 +368,22 @@
         </ul>
     </div>
     <div class="navbar-action">
-        <ul class="list-inline mb-0">
-            <li class="list-inline-item align-middle mr-4">
-                <a href="#" data-toggle="modal" data-target="#modalLanguage">
-                    <i class="flag-icon flag-icon-gb"></i>
-                    <span class="text-body ml-2">en</span>
-                </a>
-            </li>
-            <li class="list-inline-item align-middle mr-4">
-                <a class="d-flex justify-content-center align-items-center text-body" href="shop-cart.html">
-                    <i class="material-icons">
-                        shopping_cart
-                    </i>
-                </a>
-            </li>
-            <li class="list-inline-item align-middle">
-                <a class="d-flex justify-content-center align-items-center text-body pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
-                    <i class="material-icons">
-                        search
-                    </i>
-                </a>
-            </li>
-        </ul>
+        <div class="d-flex flex-row">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLanguage">
+                <i class="flag-icon flag-icon-gb"></i>
+                <span class="ml-2">en</span>
+            </a>
+            <a class="d-flex justify-content-center align-items-center nav-link" href="shop-cart.html">
+                <i class="material-icons">
+                    shopping_cart
+                </i>
+            </a>
+            <a class="d-flex justify-content-center align-items-center nav-link pr-0" href="#" data-toggle="modal" data-target="#modalSearch">
+                <i class="material-icons">
+                    search
+                </i>
+            </a>
+        </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -628,16 +623,16 @@
                         often used. However, in some specialized fields, the consultant may develop customized software.</p>
                     <ul class="list-unstyled list-lg mt-4 mb-0">
                         <li class="d-flex align-items-center">
-                            <i class="material-icons text-primary mr-2">email</i>info@company.com
+                            <i class="material-icons mr-2">email</i>info@company.com
                         </li>
                         <li class="d-flex align-items-center">
-                            <i class="material-icons text-primary mr-2">account_circle</i>support@company.com
+                            <i class="material-icons mr-2">account_circle</i>support@company.com
                         </li>
                         <li class="d-flex align-items-center">
-                            <i class="material-icons text-primary mr-2">phone</i></i>903-965-1149, 940-453-7439
+                            <i class="material-icons mr-2">phone</i></i>903-965-1149, 940-453-7439
                         </li>
                         <li class="d-flex align-items-center">
-                            <i class="material-icons text-primary mr-2">location_on</i>368 Alpha Avenue, Texas 75414
+                            <i class="material-icons mr-2">location_on</i>368 Alpha Avenue, Texas 75414
                         </li>
                     </ul>
                 </div>

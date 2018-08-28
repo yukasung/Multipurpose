@@ -8553,19 +8553,15 @@ a.text-dark:hover, a.text-dark:focus {
     .accordion .card-header a[data-toggle="collapse"]:after {
       position: absolute;
       right: 15px;
-      font-family: "themify";
-      content: "\e64b";
+      font-family: 'Material Icons';
+      font-size: 24px;
+      content: '\e5cc';
       transition: all .3s linear 0s;
       top: 50%;
       transform: translateY(-50%); }
     .accordion .card-header a[data-toggle="collapse"].collapsed:after {
-      position: absolute;
-      right: 15px;
-      font-family: "themify";
-      content: "\e649";
-      transition: all .3s linear 0s;
-      top: 50%;
-      transform: translateY(-50%); }
+      content: '\e5cf';
+      transition: all .3s linear 0s; }
 
 select {
   -webkit-appearance: none;
@@ -9611,6 +9607,9 @@ blockquote {
 
 .border-width-2 {
   border-width: 2px !important; }
+
+.text-gray {
+  color: #7b7b7b !important; }
 
 .bg-dark-50 {
   background-color: rgba(0, 0, 0, 0.5) !important; }
