@@ -10,8 +10,7 @@
             &:after {
                 position: absolute;
                 right: 15px;
-                font-family: 'Material Icons';
-                font-size: 24px;
+                @include material-icons();
                 content: '\e5cc';
                 transition: all .3s linear 0s;
                 top: 50%;

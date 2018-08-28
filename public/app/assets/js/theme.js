@@ -158,7 +158,6 @@ var theme = {
 
                 var currentItem = {};
                 var elemsToanim = {};
-                var round = 0;
                 var options = $(this).data("owl-carousel-options");
                 var defaults = {
                     navText: ["<img src='../../assets/images/other/nav_prev.png'>", "<img src='../../assets/images/other/nav_next.png'>"]
