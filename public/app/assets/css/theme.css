@@ -8637,21 +8637,27 @@ select {
 .list-inline-lg li:not(:first-child) {
   margin-left: 30px; }
 
-.modal-fullscreen .modal-dialog, .modal-fullscreen .modal-dialog .modal-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: 0;
-  max-width: 100%; }
-
 .modal-fullscreen {
   z-index: 1050 !important; }
-  .modal-fullscreen .modal-dialog .modal-content {
-    border: none;
-    border-radius: 0;
-    box-shadow: inherit; }
+  .modal-fullscreen .modal-dialog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    max-width: 100%; }
+    .modal-fullscreen .modal-dialog .modal-content {
+      border: none;
+      border-radius: 0;
+      box-shadow: inherit;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0;
+      max-width: 100%; }
   .modal-fullscreen .close {
     outline: none; }
 
@@ -9007,9 +9013,7 @@ select {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto; }
+    margin-right: auto; }
     .owl-carousel .item .card {
       flex: 1 0 auto; }
 
@@ -9059,8 +9063,6 @@ select {
   left: 50%;
   width: auto;
   transform: translateX(-50%); }
-  .owl-dots-inside .owl-dots span {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
 .owl-dots-primary .owl-dot span {
   border: 2px solid #3498db !important; }
@@ -9582,19 +9584,19 @@ blockquote {
   to {
     -webkit-transform: rotate(360deg); } }
 
-.material-icons.md-18 {
+.icon-18 {
   font-size: 18px; }
 
-.material-icons.md-24 {
+.icon-24 {
   font-size: 24px; }
 
-.material-icons.md-36 {
+.icon-36 {
   font-size: 36px; }
 
-.material-icons.md-48 {
+.icon-48 {
   font-size: 48px; }
 
-.material-icons.md-60 {
+.icon-60 {
   font-size: 60px; }
 
 .bg-image {

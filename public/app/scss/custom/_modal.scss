@@ -1,25 +1,15 @@
 //
 // Custom modal
 //
-%fullscreen {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: 0;
-    max-width: 100%;
-}
-
 .modal-fullscreen {
     z-index: 1050 !important;
     .modal-dialog {
-        @extend %fullscreen;
+        @include modal-fullscreen;
         .modal-content {
             border: none;
             border-radius: 0;
             box-shadow: inherit;
-            @extend %fullscreen;
+            @include modal-fullscreen;
         }
     }
     .close {

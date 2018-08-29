@@ -31,7 +31,6 @@ var theme = {
         theme.initParallax();
         theme.initVideo();
         theme.initChart();
-        theme.initIcons();
         theme.initGoToTopBotton();
     },
     loadEvent: function () {
@@ -116,40 +115,6 @@ var theme = {
         });
 
     },
-    initIcons: function () {
-        feather.replace();
-    },
-    // add animate.css class(es) to the elements to be animated
-    setAnimation: function (elem, inOut) {
-        // Store all animationend event name in a string.
-        // cf animate.css documentation
-        var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-        elem.each(function () {
-
-            var element = $(this);
-            var animationType = 'animated ' + element.data('animation-' + inOut);
-            var animationDurations = {};
-
-            if (element.data('animation-duration')) {
-                animationDurations['animation-duration'] = element.data('animation-duration');
-            }
-
-            if (element.data('animation-delay')) {
-                animationDurations['animation-delay'] = element.data('animation-delay');
-            }
-
-            if (element.data('animation-offset')) {
-                animationDurations['animation-offset'] = element.data('animation-offset');
-            }
-
-            element.addClass(animationType).css(animationDurations).one(animationEndEvent, function () {
-                element.removeClass(animationType);
-                element.removeAttr('style');
-            });
-
-        });
-    },
     initOwlCarousel: function () {
 
         var owl = $('.owl-carousel');
@@ -164,22 +129,6 @@ var theme = {
                 }
 
                 $(this).owlCarousel($.extend(defaults, options));
-
-                $(this).on('change.owl.carousel', function (event) {
-                    currentItem = $('.owl-item', owl).eq(event.item.index);
-                    elemsToanim = currentItem.find("[data-animation-out]");
-                    theme.setAnimation(elemsToanim, 'out');
-                });
-
-                $(this).on('changed.owl.carousel', function (event) {
-                    currentItem = $('.owl-item', $(this)).eq(event.item.index);
-                    elemsToanim = currentItem.find("[data-animation-in]");
-                    theme.setAnimation(elemsToanim, 'in');
-                });
-
-                currentItem = $('.owl-item', owl).eq(2);
-                elemsToanim = currentItem.find("[data-animation-in]");
-                theme.setAnimation(elemsToanim, 'in');
 
             });
         });
@@ -324,7 +273,6 @@ var theme = {
                     topSpaceHeight = topSpaceHeight + $('.header-top').outerHeight();
                 }
 
-                topSpaceHeight -= 2;
                 $('.space-top').css('margin-top', topSpaceHeight + "px");
 
             }
