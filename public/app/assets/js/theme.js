@@ -23,10 +23,8 @@ var theme = {
         theme.setTopSpace();
         theme.initGoogleMap();
         theme.initProgressBar();
-        theme.initNavbarPopup();
         theme.initCounter();
         theme.initCheckboxCollapse();
-        theme.initCardLinkShare();
         theme.initOwlCarousel();
         theme.initParallax();
         theme.initVideo();
@@ -59,7 +57,7 @@ var theme = {
     initParallax: function () {
 
         if ($('.parallax').length > 0) {
-            var parallax = new Rellax('.parallax', {
+            new Rellax('.parallax', {
                 center: true
             });
         }
@@ -121,8 +119,6 @@ var theme = {
         owl.imagesLoaded(function () {
             owl.each(function () {
 
-                var currentItem = {};
-                var elemsToanim = {};
                 var options = $(this).data("owl-carousel-options");
                 var defaults = {
                     navText: ["<img src='../../assets/images/other/nav_prev.png'>", "<img src='../../assets/images/other/nav_next.png'>"]
@@ -136,7 +132,9 @@ var theme = {
     initGoogleMap: function () {
 
         $('.google-map').lazyLoadGoogleMaps({
+
             callback: function (container, map) {
+
                 var $container = $(container);
                 var $center = new google.maps.LatLng($container.attr('data-lat'), $container.attr('data-lng'));
                 var $zoom = 15;
@@ -152,7 +150,9 @@ var theme = {
                     position: $center,
                     map: map
                 });
+
             }
+
         });
 
     },
@@ -166,39 +166,6 @@ var theme = {
                     interval: 100,
                 });
             });
-        });
-
-    },
-    initNavbarPopup: function () {
-
-        $('a[data-toggle="navbar-popup"]').on("click", function (e) {
-
-            var target = $(this).attr("data-target");
-            var btnClose = $(target).find('.btn-close');
-            var lblTitle = $(target).find('.popup-title');
-
-            e.preventDefault();
-            $(target).show();
-
-            setTimeout(function () {
-                $(target).addClass("visible");
-            }, 100);
-            setTimeout(function () {
-                lblTitle.addClass("visible");
-            }, 600);
-            setTimeout(function () {
-                btnClose.addClass("visible");
-            }, 800);
-
-            btnClose.bind("click", function () {
-                $(target).removeClass("visible");
-                setTimeout(function () {
-                    $(target).hide();
-                    btnClose.removeClass("visible");
-                    lblTitle.removeClass("visible");
-                }, 300);
-            });
-
         });
 
     },
@@ -220,25 +187,20 @@ var theme = {
             }
 
             e.stopPropagation();
+
         })
-
-    },
-    initCardLinkShare: function () {
-
-        $(".card-link-share").click(function () {
-            var cardSocial = $(this).closest("div").find(".card-social");
-            cardSocial.toggleClass("active");
-            return false;
-        });
 
     },
     initVideo: function () {
 
         $(document).on('click', '.video-icon', function (ev) {
+            
             ev.preventDefault();
+            
             var video = $(this).closest('.video');
             var iframe = video.find('iframe');
             var src = iframe.data('src');
+
             iframe.removeClass("d-none");
             video.addClass('video-reveal');
             iframe.attr('src', src);
@@ -256,7 +218,6 @@ var theme = {
         });
 
     },
-
     setTopSpace: function () {
 
         var topSpaceHeight = 0;
