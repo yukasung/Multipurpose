@@ -8542,9 +8542,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 5px 10px 0px;
   text-decoration: none; }
 
-.card .card-link {
-  font-size: 0.875rem; }
-
 .accordion .card-header {
   position: relative; }
   .accordion .card-header a[data-toggle="collapse"] {
@@ -8874,7 +8871,7 @@ select {
 .navbar-toggler {
   position: relative;
   display: block;
-  width: 30px;
+  width: 26px;
   height: 24px;
   overflow: hidden;
   white-space: nowrap;
@@ -8924,9 +8921,8 @@ select {
   .navbar-action {
     margin-left: 40px; } }
 
-.navbar-action span {
-  font-size: 0.875rem;
-  text-transform: uppercase; }
+.navbar-action .nav-link:first-child {
+  padding-left: 0; }
 
 .navbar-collapse-show .navbar-brand {
   transform: scale(0);
@@ -9144,23 +9140,6 @@ select {
       color: #fff;
       background: #3498db;
       opacity: 1; }
-
-/*-----------------------------------------------------------------------------------*/
-/*	COMPONENTS > PRICING
-/*-----------------------------------------------------------------------------------*/
-.pricing .price {
-  font-size: 80px;
-  font-weight: 300;
-  line-height: .8; }
-  .pricing .price .currency {
-    position: relative;
-    font-size: 2.75rem;
-    font-weight: 500;
-    top: -22px;
-    letter-spacing: 0px; }
-  .pricing .price .period {
-    font-size: 1.125rem;
-    letter-spacing: 0px; }
 
 .skillbar {
   position: relative;
@@ -9627,6 +9606,9 @@ blockquote {
 .text-gray {
   color: #7b7b7b !important; }
 
+.bg-black {
+  background-color: #000 !important; }
+
 .bg-dark-50 {
   background-color: rgba(0, 0, 0, 0.5) !important; }
 
@@ -9698,59 +9680,39 @@ blockquote {
 .block-over {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 !important; }
+  transform: translateY(-50%); }
 
 .block-under {
-  z-index: 1; }
+  position: relative; }
 
 @media (min-width: 576px) {
   .block-sm-over {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 !important; }
+    transform: translateY(-50%); }
   .block-sm-under {
-    z-index: 1; } }
+    position: relative; } }
 
 @media (min-width: 768px) {
   .block-md-over {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 !important; }
+    transform: translateY(-50%); }
   .block-md-under {
-    z-index: 1; } }
+    position: relative; } }
 
 @media (min-width: 992px) {
   .block-lg-over {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 !important; }
+    transform: translateY(-50%); }
   .block-lg-under {
-    z-index: 1; } }
+    position: relative; } }
 
 @media (min-width: 1200px) {
   .block-xl-over {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 !important; }
+    transform: translateY(-50%); }
   .block-xl-under {
-    z-index: 1; } }
+    position: relative; } }

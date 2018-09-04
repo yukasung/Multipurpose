@@ -291,7 +291,7 @@
 .navbar-toggler {
     position: relative;
     display: block;
-    width: 30px;
+    width: 26px;
     height: 24px;
     overflow: hidden;
     white-space: nowrap;
@@ -347,9 +347,10 @@
     @include media-breakpoint-up(lg) {
         margin-left: 40px;
     }
-    span {
-        font-size: 0.875rem;
-        text-transform: uppercase;
+    .nav-link{
+        &:first-child{
+            padding-left: 0;
+        }
     }
 }
 
