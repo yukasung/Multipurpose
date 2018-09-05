@@ -1,6 +1,55 @@
 //
 // Utilities position
 //
-.right-0 {
-    right: 0;
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .position#{$infix}-absolute {
+            position: absolute;
+        }
+
+        .position#{$infix}-relative {
+            position: relative;
+        }
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .py#{$infix}-start {
+            top: 0 !important;
+        }
+
+        .py#{$infix}-center {
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+        }
+
+        .py#{$infix}-end {
+            bottom: 0;
+        }
+    }
+}
+
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .px#{$infix}-start {
+            left: 0 !important;
+        }
+
+        .px#{$infix}-center {
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        .px#{$infix}-end {
+            right: 0 !important;
+        }
+    }
 }
