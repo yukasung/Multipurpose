@@ -19,16 +19,16 @@
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-        .py#{$infix}-start {
+        .position-y#{$infix}-top {
             top: 0 !important;
         }
 
-        .py#{$infix}-center {
+        .position-y#{$infix}-center {
             top: 50% !important;
             transform: translateY(-50%) !important;
         }
 
-        .py#{$infix}-end {
+        .position-y#{$infix}-bottom {
             bottom: 0;
         }
     }
@@ -39,16 +39,16 @@
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-        .px#{$infix}-start {
+        .position-x#{$infix}-left {
             left: 0 !important;
         }
 
-        .px#{$infix}-center {
+        .position-x#{$infix}-center {
             left: 50% !important;
             transform: translateX(-50%) !important;
         }
 
-        .px#{$infix}-end {
+        .position-x#{$infix}-right {
             right: 0 !important;
         }
     }

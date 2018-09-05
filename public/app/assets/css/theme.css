@@ -9479,40 +9479,6 @@ blockquote {
     opacity: 0 !important;
     pointer-events: none; }
 
-.overlay {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  overflow: hidden;
-  vertical-align: middle;
-  transform: translateZ(0); }
-
-.overlay-hover:not(:hover) [class*="overlay-"],
-.overlay-hover:not(:hover) figcaption {
-  opacity: 0 !important; }
-
-.overlay-linear-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-  .overlay-linear-gradient.gradient-dark.gradient-to-top {
-    background: linear-gradient(to top, #252525 0%, transparent 100%); }
-
-.overlay-radial-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-  .overlay-radial-gradient.gradient-primary.gradient-center-left {
-    background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
-  .overlay-radial-gradient.gradient-dark.gradient-center-left {
-    background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
-  .overlay-radial-gradient.gradient-light.gradient-center-left {
-    background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
-
 #preloader {
   position: fixed;
   top: 0;
@@ -9666,96 +9632,96 @@ blockquote {
   .position-xl-relative {
     position: relative; } }
 
-.py-start {
+.position-y-top {
   top: 0 !important; }
 
-.py-center {
+.position-y-center {
   top: 50% !important;
   transform: translateY(-50%) !important; }
 
-.py-end {
+.position-y-bottom {
   bottom: 0; }
 
 @media (min-width: 576px) {
-  .py-sm-start {
+  .position-y-sm-top {
     top: 0 !important; }
-  .py-sm-center {
+  .position-y-sm-center {
     top: 50% !important;
     transform: translateY(-50%) !important; }
-  .py-sm-end {
+  .position-y-sm-bottom {
     bottom: 0; } }
 
 @media (min-width: 768px) {
-  .py-md-start {
+  .position-y-md-top {
     top: 0 !important; }
-  .py-md-center {
+  .position-y-md-center {
     top: 50% !important;
     transform: translateY(-50%) !important; }
-  .py-md-end {
+  .position-y-md-bottom {
     bottom: 0; } }
 
 @media (min-width: 992px) {
-  .py-lg-start {
+  .position-y-lg-top {
     top: 0 !important; }
-  .py-lg-center {
+  .position-y-lg-center {
     top: 50% !important;
     transform: translateY(-50%) !important; }
-  .py-lg-end {
+  .position-y-lg-bottom {
     bottom: 0; } }
 
 @media (min-width: 1200px) {
-  .py-xl-start {
+  .position-y-xl-top {
     top: 0 !important; }
-  .py-xl-center {
+  .position-y-xl-center {
     top: 50% !important;
     transform: translateY(-50%) !important; }
-  .py-xl-end {
+  .position-y-xl-bottom {
     bottom: 0; } }
 
-.px-start {
+.position-x-left {
   left: 0 !important; }
 
-.px-center {
+.position-x-center {
   left: 50% !important;
   transform: translateX(-50%) !important; }
 
-.px-end {
+.position-x-right {
   right: 0 !important; }
 
 @media (min-width: 576px) {
-  .px-sm-start {
+  .position-x-sm-left {
     left: 0 !important; }
-  .px-sm-center {
+  .position-x-sm-center {
     left: 50% !important;
     transform: translateX(-50%) !important; }
-  .px-sm-end {
+  .position-x-sm-right {
     right: 0 !important; } }
 
 @media (min-width: 768px) {
-  .px-md-start {
+  .position-x-md-left {
     left: 0 !important; }
-  .px-md-center {
+  .position-x-md-center {
     left: 50% !important;
     transform: translateX(-50%) !important; }
-  .px-md-end {
+  .position-x-md-right {
     right: 0 !important; } }
 
 @media (min-width: 992px) {
-  .px-lg-start {
+  .position-x-lg-left {
     left: 0 !important; }
-  .px-lg-center {
+  .position-x-lg-center {
     left: 50% !important;
     transform: translateX(-50%) !important; }
-  .px-lg-end {
+  .position-x-lg-right {
     right: 0 !important; } }
 
 @media (min-width: 1200px) {
-  .px-xl-start {
+  .position-x-xl-left {
     left: 0 !important; }
-  .px-xl-center {
+  .position-x-xl-center {
     left: 50% !important;
     transform: translateX(-50%) !important; }
-  .px-xl-end {
+  .position-x-xl-right {
     right: 0 !important; } }
 
 .w-60px {
@@ -9780,3 +9746,37 @@ blockquote {
 .overflow-hidden,
 .overflow-hidden-x {
   overflow-x: hidden; }
+
+.overlay {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  transform: translateZ(0); }
+
+.overlay-hover:not(:hover) [class*="overlay-"],
+.overlay-hover:not(:hover) figcaption {
+  opacity: 0 !important; }
+
+.overlay-linear-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .overlay-linear-gradient.gradient-dark.gradient-to-top {
+    background: linear-gradient(to top, #252525 0%, transparent 100%); }
+
+.overlay-radial-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .overlay-radial-gradient.gradient-primary.gradient-center-left {
+    background: radial-gradient(circle at center left, #3498db, rgba(255, 255, 255, 0) 80%); }
+  .overlay-radial-gradient.gradient-dark.gradient-center-left {
+    background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
+  .overlay-radial-gradient.gradient-light.gradient-center-left {
+    background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
