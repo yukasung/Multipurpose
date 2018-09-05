@@ -9489,30 +9489,9 @@ blockquote {
   vertical-align: middle;
   transform: translateZ(0); }
 
-.overlay-hover:not(:hover) [class*="overlay-"] {
+.overlay-hover:not(:hover) [class*="overlay-"],
+.overlay-hover:not(:hover) figcaption {
   opacity: 0 !important; }
-
-.overlay-body {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #fff; }
-  .overlay-body a:not([class]) {
-    color: inherit; }
-  .overlay-body > :last-child {
-    margin-bottom: 0; }
-  .overlay-body.overlay-bottom {
-    top: auto; }
-
-.overlay-align-middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  width: 100%; }
 
 .overlay-linear-gradient {
   position: absolute;
