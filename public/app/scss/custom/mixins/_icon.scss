@@ -13,3 +13,12 @@
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
+
+@mixin arrow-right() {
+    display: inline-block;
+    float: right;
+    margin-top: 6px;
+    border-left: 4px dashed;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}

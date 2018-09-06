@@ -1,25 +1,10 @@
-var _btnGoTopOffset = 100;
-var _btnGoTopDuration = 500;
-
-$(document).ready(function () {
-    'use strict';
-    theme.init();
-});
-
-$(window).resize(function () {
-    theme.resizeEvent();
-});
-
-$(window).scroll(function () {
-    theme.scrollEvent(this);
-});
-
-$(window).load(function () {
-    theme.loadEvent();
-});
+"use strict";
 
 var theme = {
+    ButtonGoTopOffset: 100,
+    ButtonGoTopDuration: 500,
     init: function () {
+
         theme.setTopSpace();
         theme.initGoogleMap();
         theme.initProgressBar();
@@ -30,6 +15,7 @@ var theme = {
         theme.initVideo();
         theme.initChart();
         theme.initGoToTopBotton();
+        
     },
     loadEvent: function () {
 
@@ -47,10 +33,10 @@ var theme = {
     },
     scrollEvent: function (obj) {
 
-        if ($(obj).scrollTop() > _btnGoTopOffset) {
-            $('#btnGoTop').fadeIn(_btnGoTopDuration);
+        if ($(obj).scrollTop() > this.ButtonGoTopOffset) {
+            $('#btnGoTop').fadeIn(this.ButtonGoTopDuration);
         } else {
-            $('#btnGoTop').fadeOut(_btnGoTopDuration);
+            $('#btnGoTop').fadeOut(this.ButtonGoTopDuration);
         }
 
     },
@@ -213,7 +199,7 @@ var theme = {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: 0
-            }, _btnGoTopDuration);
+            }, this.ButtonGoTopDuration);
             return false;
         });
 
@@ -242,3 +228,20 @@ var theme = {
 
     }
 };
+
+
+$(document).ready(function () {
+    theme.init();
+});
+
+$(window).resize(function () {
+    theme.resizeEvent();
+});
+
+$(window).scroll(function () {
+    theme.scrollEvent(this);
+});
+
+$(window).load(function () {
+    theme.loadEvent();
+});

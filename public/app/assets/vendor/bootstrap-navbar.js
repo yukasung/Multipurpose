@@ -1,19 +1,7 @@
-var _lastScroll = 0;
-
-$(document).ready(function () {
-    'use strict';
-    navbar.init();
-});
-
-$(window).resize(function () {
-    navbar.eventResize();
-});
-
-$(window).scroll(function () {
-    navbar.eventScroll($(this));
-});
+"use strict";
 
 var navbar = {
+    LastScroll: 0,
     init: function () {
 
         var slideDownDuration = 100;
@@ -28,17 +16,11 @@ var navbar = {
             $('header').removeClass('navbar-collapse-show');
         });
 
-        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+        $('.navbar-dropdown-hover .dropdown').hover(function () {
             if (!$('.navbar-toggler').is(':visible')) {
                 $(this).find('.dropdown-toggle').first().trigger('click');
             }
-        } else {
-            $('.navbar-dropdown-hover .dropdown').hover(function () {
-                if (!$('.navbar-toggler').is(':visible')) {
-                    $(this).find('.dropdown-toggle').first().trigger('click');
-                }
-            });
-        }
+        });
 
         $('.navbar .dropdown-menu .dropdown-toggle').on('click', function (e) {
 
@@ -97,6 +79,7 @@ var navbar = {
         $('.dropdown').on('hide.bs.dropdown', function (e) {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp(slideUpDuration);
         });
+
     },
     eventResize: function () {
 
@@ -123,16 +106,28 @@ var navbar = {
 
         // header appear on scroll up
         var st = element.scrollTop();
-        if (st > _lastScroll) {
+        if (st > this.LastScroll) {
             $('.sticky').removeClass('header-appear');
         } else {
             $('.sticky').addClass('header-appear');
         }
 
-        _lastScroll = st;
-        if (_lastScroll <= headerHeight) {
+        this.LastScroll = st;
+        if (this.LastScroll <= headerHeight) {
             $('header').removeClass('header-appear');
         }
 
     }
 };
+
+$(document).ready(function () {
+    navbar.init();
+});
+
+$(window).resize(function () {
+    navbar.eventResize();
+});
+
+$(window).scroll(function () {
+    navbar.eventScroll($(this));
+});
