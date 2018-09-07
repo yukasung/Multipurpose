@@ -9569,6 +9569,9 @@ blockquote {
 .bg-darker {
   background-color: #28282e !important; }
 
+.bg-transparent {
+  background-color: transparent !important; }
+
 .op-0 {
   opacity: 0 !important; }
 
