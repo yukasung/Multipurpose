@@ -8998,6 +8998,32 @@ select {
   .header-appear .navbar-dark.bg-transparent .navbar-toggler span::after {
     background: #232323; }
 
+.nav-tabs-line {
+  position: relative; }
+  .nav-tabs-line .nav-link {
+    padding: .715rem 1.429rem;
+    border-bottom: 2px solid transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none; }
+    .nav-tabs-line .nav-link:focus {
+      background-color: transparent; }
+    .nav-tabs-line .nav-link:hover {
+      background-color: transparent;
+      border-bottom-color: #ced4da; }
+    .nav-tabs-line .nav-link.active {
+      color: #3498db;
+      background-color: transparent;
+      border-bottom: 2px solid #3498db; }
+      .nav-tabs-line .nav-link.active:focus {
+        color: #3498db;
+        background-color: transparent;
+        border-bottom: 2px solid #3498db; }
+      .nav-tabs-line .nav-link.active:hover {
+        color: #3498db;
+        background-color: transparent;
+        border-bottom: 2px solid #3498db; }
+
 .owl-carousel {
   position: relative; }
   .owl-carousel .owl-stage {
