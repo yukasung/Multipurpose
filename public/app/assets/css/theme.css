@@ -9412,6 +9412,15 @@ blockquote {
 .caption-6 {
   font-size: 2rem !important; }
 
+.caption-7 {
+  font-size: 1.75rem !important; }
+
+.caption-8 {
+  font-size: 1.5rem !important; }
+
+.caption-9 {
+  font-size: 1.25rem !important; }
+
 @media (min-width: 576px) {
   .caption-sm-1 {
     font-size: 6rem !important; }
@@ -9424,7 +9433,13 @@ blockquote {
   .caption-sm-5 {
     font-size: 2.5rem !important; }
   .caption-sm-6 {
-    font-size: 2rem !important; } }
+    font-size: 2rem !important; }
+  .caption-sm-7 {
+    font-size: 1.75rem !important; }
+  .caption-sm-8 {
+    font-size: 1.5rem !important; }
+  .caption-sm-9 {
+    font-size: 1.25rem !important; } }
 
 @media (min-width: 768px) {
   .caption-md-1 {
@@ -9438,7 +9453,13 @@ blockquote {
   .caption-md-5 {
     font-size: 2.5rem !important; }
   .caption-md-6 {
-    font-size: 2rem !important; } }
+    font-size: 2rem !important; }
+  .caption-md-7 {
+    font-size: 1.75rem !important; }
+  .caption-md-8 {
+    font-size: 1.5rem !important; }
+  .caption-md-9 {
+    font-size: 1.25rem !important; } }
 
 @media (min-width: 992px) {
   .caption-lg-1 {
@@ -9452,7 +9473,13 @@ blockquote {
   .caption-lg-5 {
     font-size: 2.5rem !important; }
   .caption-lg-6 {
-    font-size: 2rem !important; } }
+    font-size: 2rem !important; }
+  .caption-lg-7 {
+    font-size: 1.75rem !important; }
+  .caption-lg-8 {
+    font-size: 1.5rem !important; }
+  .caption-lg-9 {
+    font-size: 1.25rem !important; } }
 
 @media (min-width: 1200px) {
   .caption-xl-1 {
@@ -9466,7 +9493,13 @@ blockquote {
   .caption-xl-5 {
     font-size: 2.5rem !important; }
   .caption-xl-6 {
-    font-size: 2rem !important; } }
+    font-size: 2rem !important; }
+  .caption-xl-7 {
+    font-size: 1.75rem !important; }
+  .caption-xl-8 {
+    font-size: 1.5rem !important; }
+  .caption-xl-9 {
+    font-size: 1.25rem !important; } }
 
 .video {
   position: relative; }
