@@ -20,7 +20,9 @@ var navbar = {
             $('header').removeClass('navbar-collapse-show');
         });
 
-        $('.navbar-dropdown-hover .dropdown').mouseenter(this.dropdownHandlerIn).mouseleave(this.dropdownHandlerOut);
+        if (!/Mobi|Android/i.test(navigator.userAgent)) {
+            $('.navbar-dropdown-hover .dropdown').mouseenter(this.dropdownHandlerIn).mouseleave(this.dropdownHandlerOut);
+        }
 
         $('.navbar .dropdown-menu .dropdown-toggle').on('click', function (e) {
 
