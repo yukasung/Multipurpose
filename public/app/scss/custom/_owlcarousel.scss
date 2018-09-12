@@ -31,15 +31,14 @@
             margin: 0 5px;
             display: block;
             border-radius: 100%;
-            border: 1px solid $primary;
+            background-color: #bec3c9;
             width: 13px;
             height: 13px;
             transition: all 150ms ease-in;
         }
-        &.active,
-        &:hover {
+        &.active{
             span {
-                background: $primary;
+                background-color: $primary;
             }
         }
     }
@@ -78,34 +77,6 @@
         left: 50%;
         width: auto;
         transform: translateX(-50%);
-    }
-}
-
-.owl-dots-primary {
-    .owl-dot {
-        span {
-            border: 2px solid $primary !important;
-        }
-        &.active,
-        &:hover {
-            span {
-                background: $primary !important;
-            }
-        }
-    }
-}
-
-.owl-dots-white {
-    .owl-dot {
-        span {
-            border: 2px solid $white !important;
-        }
-        &.active,
-        &:hover {
-            span {
-                background: $white !important;
-            }
-        }
     }
 }
 

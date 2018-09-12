@@ -8543,13 +8543,16 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none; }
 
 .accordion .card-header {
-  position: relative; }
+  position: relative;
+  padding: 15px; }
   .accordion .card-header a[data-toggle="collapse"] {
     display: block;
+    font-weight: normal;
+    color: #333333;
     padding-right: 30px; }
     .accordion .card-header a[data-toggle="collapse"]:after {
       position: absolute;
-      right: 15px;
+      right: 6px;
       font-family: 'Material Icons';
       font-weight: normal;
       font-style: normal;
@@ -8564,12 +8567,15 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-font-feature-settings: 'liga';
       -webkit-font-smoothing: antialiased;
       content: '\e5cc';
-      transition: all .3s linear 0s;
       top: 50%;
+      transition: all .3s linear 0s;
       transform: translateY(-50%); }
     .accordion .card-header a[data-toggle="collapse"].collapsed:after {
       content: '\e5cf';
       transition: all .3s linear 0s; }
+
+.accordion .card-body {
+  padding: 15px; }
 
 select {
   -webkit-appearance: none;
@@ -9049,12 +9055,12 @@ select {
       margin: 0 5px;
       display: block;
       border-radius: 100%;
-      border: 1px solid #3498db;
+      background-color: #bec3c9;
       width: 13px;
       height: 13px;
       transition: all 150ms ease-in; }
-    .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
-      background: #3498db; }
+    .owl-dots .owl-dot.active span {
+      background-color: #3498db; }
 
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
@@ -9085,18 +9091,6 @@ select {
   left: 50%;
   width: auto;
   transform: translateX(-50%); }
-
-.owl-dots-primary .owl-dot span {
-  border: 2px solid #3498db !important; }
-
-.owl-dots-primary .owl-dot.active span, .owl-dots-primary .owl-dot:hover span {
-  background: #3498db !important; }
-
-.owl-dots-white .owl-dot span {
-  border: 2px solid #fff !important; }
-
-.owl-dots-white .owl-dot.active span, .owl-dots-white .owl-dot:hover span {
-  background: #fff !important; }
 
 .owl-nav-hover .owl-nav > div {
   display: none !important; }
@@ -9800,6 +9794,12 @@ blockquote {
 
 .line-height-1 {
   line-height: 1 !important; }
+
+.font-weight-400 {
+  font-weight: 400 !important; }
+
+.font-weight-500 {
+  font-weight: 500 !important; }
 
 .overflow-hidden,
 .overflow-hidden-y {
