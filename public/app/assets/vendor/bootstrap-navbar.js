@@ -7,6 +7,10 @@ var navbar = {
         var slideDownDuration = 100;
         var slideUpDuration = 50;
 
+        $('.navbar-dropdown-hover .dropdown-menu').on('click', function (e) {
+            e.stopPropagation();
+        });
+
         $('#navbarCollapse').on('show.bs.collapse', function () {
             $('header').addClass('navbar-collapse-show');
             $('.navbar-action').css('transition', '');
@@ -16,16 +20,13 @@ var navbar = {
             $('header').removeClass('navbar-collapse-show');
         });
 
-        $('.navbar-dropdown-hover .dropdown').hover(function () {
-            if (!$('.navbar-toggler').is(':visible')) {
-                $(this).find('.dropdown-toggle').first().trigger('click');
-            }
-        });
+        $('.navbar-dropdown-hover .dropdown').mouseenter(this.dropdownHandlerIn).mouseleave(this.dropdownHandlerOut);
 
         $('.navbar .dropdown-menu .dropdown-toggle').on('click', function (e) {
 
             var $el = $(this);
             var $parent = $(this).offsetParent(".dropdown-menu");
+            var $subMenu = $(this).next(".dropdown-menu");
 
             if (!$(this).next().hasClass('show')) {
                 $(this).parents('.dropdown-menu').first().find('.show').removeClass("show").css({
@@ -33,16 +34,15 @@ var navbar = {
                 });
             }
 
-            var $subMenu = $(this).next(".dropdown-menu");
             if ($subMenu.hasClass('show')) {
                 $subMenu.stop(true, true).slideUp(slideUpDuration);
             } else {
                 $subMenu.stop(true, true).slideDown(slideDownDuration);
             }
+
             $subMenu.toggleClass('show');
 
             $(this).parent("li").toggleClass('show');
-
             $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
                 $('.dropdown-menu .show').removeClass("show").css({
                     'display': ''
@@ -56,7 +56,6 @@ var navbar = {
                 });
 
                 if ($parent.hasClass('dropdown-left')) {
-                    console.log($parent.outerWidth());
                     $el.next().css({
                         "left": $parent.outerWidth() * -1
                     });
@@ -79,6 +78,22 @@ var navbar = {
         $('.dropdown').on('hide.bs.dropdown', function (e) {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp(slideUpDuration);
         });
+
+    },
+    dropdownHandlerIn: function () {
+
+        if (!$('.navbar-toggler').is(':visible')) {
+            $(this).find('.dropdown-toggle').first().trigger('click');
+        }
+
+    },
+    dropdownHandlerOut: function () {
+
+        if (!$('.navbar-toggler').is(':visible')) {
+            if ($(this).hasClass('show')) {
+                $(this).find('.dropdown-toggle').first().trigger('click');
+            }
+        }
 
     },
     eventResize: function () {
