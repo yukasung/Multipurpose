@@ -1,20 +1,9 @@
 //
 // Custom utilities colors
 //
-.text-gray {
-    color: #7b7b7b !important;
-}
 
 .bg-black {
     background-color: $black !important;
-}
-
-.bg-dark-50 {
-    background-color: rgba($dark, 0.5) !important;
-}
-
-.bg-light-50 {
-    background-color: rgba($light, 0.5) !important;
 }
 
 .bg-white-50 {
@@ -23,12 +12,4 @@
 
 .bg-white-70 {
     background-color: rgba($white, 0.7) !important;
-}
-
-.bg-darker {
-    background-color: #28282e !important;
-}
-
-.bg-transparent{
-    background-color: transparent !important;
 }

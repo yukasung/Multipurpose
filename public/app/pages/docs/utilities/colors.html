@@ -4,7 +4,8 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#classes ">Classes </a>
+    <a href="#background-color ">Background color</a>
+    <a href="#referance">Reference</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -16,8 +17,9 @@
 <h2 id="background-color">Background color</h2>
 <div class="bd-example">
     {% macro backgroundColor() %}
-    <div class="p-3 mb-2 bg-dark-50 text-white">.bg-dark-50</div>
-    <div class="p-3 mb-2 bg-darker text-white">.bg-darker</div>
+    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+    <div class="p-3 mb-2 bg-white-50 text-white text-dark">.bg-white-50</div>
+    <div class="p-3 mb-2 bg-white-70 text-white text-dark">.bg-white-70</div>
     {% endmacro %}
     <!--  -->
     {% call backgroundColor() %}
@@ -34,5 +36,6 @@
         {% endcall %}
     </script>
 </figure>
-
+<h2 id="referance">Reference</h2>
+<p>See <a href="https://getbootstrap.com/docs/4.1/utilities/colors">Bootstrap 4 document</a> for more information.</p>
 {% endblock %}

@@ -9601,29 +9601,14 @@ blockquote {
 .border-width-2 {
   border-width: 2px !important; }
 
-.text-gray {
-  color: #7b7b7b !important; }
-
 .bg-black {
   background-color: #000 !important; }
-
-.bg-dark-50 {
-  background-color: rgba(52, 58, 64, 0.5) !important; }
-
-.bg-light-50 {
-  background-color: rgba(248, 249, 250, 0.5) !important; }
 
 .bg-white-50 {
   background-color: rgba(255, 255, 255, 0.5) !important; }
 
 .bg-white-70 {
   background-color: rgba(255, 255, 255, 0.7) !important; }
-
-.bg-darker {
-  background-color: #28282e !important; }
-
-.bg-transparent {
-  background-color: transparent !important; }
 
 .op-0 {
   opacity: 0 !important; }

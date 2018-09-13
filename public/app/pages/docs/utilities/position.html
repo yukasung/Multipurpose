@@ -12,21 +12,54 @@
 
 <h1 class="bd-title" id="content">Position</h1>
 <p>The CSS Classes participates in specifying the position of a positioned element.</p>
-<h2 id="classes">Classes</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Class</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <code class="highlighter-rouge">.right-0</code>
-            </td>
-            <td>Uses CSS’s <code class="highlighter-rouge">right: 0;</code></td>
-        </tr>
-    </tbody>
-</table>
+<h2 id="classes">Common values</h2>
+<p>Responsive variations also exist for <code class="highlighter-rouge">.position-absolute</code> and <code class="highlighter-rouge">.position-relative</code>.</p>
+<ul>
+    <li><code class="highlighter-rouge">.position-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-relative</code></li>
+    <li><code class="highlighter-rouge">.position-sm-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-sm-relative</code></li>
+    <li><code class="highlighter-rouge">.position-md-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-md-relative</code></li>
+    <li><code class="highlighter-rouge">.position-lg-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-lg-relative</code></li>
+
+</ul>
+<h2 id="classes">Position</h2>
+<div class="bd-example py-5">
+    {% macro example() %}
+    <div class="p-2 position-absolute position-x-left bd-highlight">position-x-left</div>
+    <div class="p-2 position-absolute position-x-center bd-highlight">position-x-center</div>
+    <div class="p-2 position-absolute position-x-right bd-highlight">position-x-right</div>
+    {% endmacro %}
+    <!--  -->
+    {% call example() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call example() %}
+            <!--  -->
+            {% endcall %}
+        </script>
+</figure>
+<p>Responsive variations also exist for <code class="highlighter-rouge">position-x</code>.</p>
+<ul>
+    <li><code class="highlighter-rouge">.position-x-left</code></li>
+    <li><code class="highlighter-rouge">.position-x-center</code></li>
+    <li><code class="highlighter-rouge">.position-x-right</code></li>
+    <li><code class="highlighter-rouge">.position-x-sm-left</code></li>
+    <li><code class="highlighter-rouge">.position-x-sm-center</code></li>
+    <li><code class="highlighter-rouge">.position-x-smright</code></li>
+    <li><code class="highlighter-rouge">.position-x-md-left</code></li>
+    <li><code class="highlighter-rouge">.position-x-md-center</code></li>
+    <li><code class="highlighter-rouge">.position-x-md-right</code></li>
+    <li><code class="highlighter-rouge">.position-x-lg-left</code></li>
+    <li><code class="highlighter-rouge">.position-x-lg-center</code></li>
+    <li><code class="highlighter-rouge">.position-x-lgright</code></li>
+</ul>
 {% endblock %}
