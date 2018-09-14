@@ -43,6 +43,7 @@ $navbar-nav-bg-color: $primary;
 $input-border-radius: 0;
 $input-border-radius-lg: 0;
 $input-border-radius-sm: 0;
+$input-icon-color: #999999;
 // Badges
 $badge-border-radius: 0;
 // Cards
@@ -95,7 +96,9 @@ $sizes: map-merge((
     auto: auto
 ), $sizes);
 
-// Caption font size
+// Typography
+$meta-font-size: 0.875rem !default;
+$meta-color: #939393 !default;
 $captions: () !default;
 $captions: map-merge(( 
     1: 6rem, 

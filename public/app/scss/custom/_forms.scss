@@ -9,7 +9,7 @@ select {
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: 7px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid $input-border-color;
     border-radius: 2px;
     margin-right: 2rem;
     padding: 1rem;
@@ -18,4 +18,42 @@ select {
 
 .form-control-rounded{
     border-radius: 200px !important;
+}
+
+.input-icon {
+    position: relative;
+    &.input-group-lg {
+        .input-btn {
+            padding: 0 24px;
+        }
+    }
+    .input-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 18px;
+        background: 0 0;
+        border: none;
+        outline: none !important;
+        z-index: 90;
+    }
+    .input-btn {
+        cursor: pointer;
+        +.form-control {
+            padding-right: 50px;
+        }
+    }
+    .icon {
+        color: $input-icon-color;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &.input-group {
+        .icon {
+            margin: 0 6px;
+        }
+    }
 }

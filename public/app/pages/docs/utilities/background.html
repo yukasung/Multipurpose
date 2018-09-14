@@ -4,7 +4,9 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#classes ">Classes </a>
+    <a href="#images ">Images</a>
+    <a href="#overlay ">Overlay</a>
+    <a href="#classes ">Classes</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -12,6 +14,74 @@
 
 <h1 class="bd-title" id="content">Background</h1>
 <p>CSS class that turns any <code class="highlighter-rouge">&lt;img&gt;</code> into a background for the parent element</p>
+<h2 id="images">Images</h2>
+<p>Apply to
+    <code class="highlighter-rouge"> img </code>to set image as the background for the parent element.</p>
+<div class="bd-example">
+    {% macro images() %}
+    <div class="position-relative">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image" alt="Image Description">
+        <div class="container py-8">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call images() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call images() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+<p>Ensure the parent element has the
+    <code class="highlighter-rouge">position:relative;</code> property set, as the background images feature uses
+    absolute positioning.</p>
+
+<h2 id="overlay">Overlay</h2>
+<p>Use
+    <a href="https://getbootstrap.com/docs/4.1/utilities/colors/#background-color">background</a> and
+    <a href="https://getbootstrap.com/docs/4.1/utilities/colors/#background-color">opacity</a> utilities to turn an
+    image into a background and overlay text.</p>
+<div class="bd-example">
+    {% macro overlay() %}
+    <div class="position-relative bg-dark">
+        <img data-src="holder.js/1920x500?auto=yes&bg=cccccc&text=1920x500" class="bg-image op-5" alt="Image Description">
+        <div class="container py-8">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h2 class="text-white">Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call overlay() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call overlay() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
 <h2 id="classes">Classes</h2>
 <table>
     <thead>
@@ -26,14 +96,16 @@
                 <code class="highlighter-rouge">.bg-image</code>
             </td>
             <td> Apply to
-                <code class="highlighter-rouge">&lt;img&gt;</code> to turn an image into a background for the parent element.</td>
+                <code class="highlighter-rouge">&lt;img&gt;</code> to turn an image into a background for the parent
+                element.</td>
         </tr>
         <tr>
             <td>
                 <code class="highlighter-rouge">.bg-holder</code>
             </td>
             <td>Apply to
-                    <code class="highlighter-rouge">&lt;div&gt;</code> to turn an image into a background for the parent element.</td>
+                <code class="highlighter-rouge">&lt;div&gt;</code> to turn an image into a background for the parent
+                element.</td>
         </tr>
     </tbody>
 </table>

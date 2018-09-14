@@ -7,13 +7,14 @@
     <a href="#form-controls">Form controls</a>
     <a href="#input-with-icon">Input with icon</a>
     <a href="#input-round">Input round</a>
+    <a href="#referance">Reference</a>
 </li>
 {% endblock%}
 <!--  -->
 {% block content %}
 
 <h1 class="bd-title" id="content">Forms</h1>
-<p class="bd-lead">Examples and usage guidelines for form control styles.</p>
+<p>Examples and usage guidelines for form control styles.</p>
 <h2 id="form-controls">Form controls</h2>
 <div class="bd-example">
     {% macro formControls() %}
@@ -60,11 +61,11 @@
 <h2 id="input-with-icon">Input with icon</h2>
 <div class="bd-example">
     {% macro inputWithIcon() %}
-    <div class="input-icon">
+    <div class="form-group input-icon">
         <button type="submit" class="input-btn">
-            <i class="ion-ios-search-strong icon"></i>
+            <i class="material-icons icon">chevron_right</i>
         </button>
-        <input type="text" class="form-control" name="" placeholder="Enter your keyword...">
+        <input type="text" class="form-control" name="">
     </div>
     {% endmacro %}
     <!--  -->
@@ -86,7 +87,7 @@
 <h2 id="input-round">Input round</h2>
 <div class="bd-example">
     {% macro inputRound() %}
-    <input type="text" class="form-control form-control-rounded" name="" placeholder="Example input"> 
+    <input type="text" class="form-control form-control-rounded" name="" placeholder="Example input">
     {% endmacro %}
     <!--  -->
     {% call inputRound() %}
@@ -103,6 +104,7 @@
         {% endcall %}
     </script>
 </figure>
-
+<h2 id="referance">Reference</h2>
+<p>See <a href="https://getbootstrap.com/docs/4.1/components/forms/">Bootstrap 4 document</a> for more information.</p>
 
 {% endblock %}

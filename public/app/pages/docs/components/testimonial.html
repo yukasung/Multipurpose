@@ -4,27 +4,69 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
+    <a href="#default">Default</a>
     <a href="#border">Border</a>
     <a href="#background-color">Background Color</a>
+    <a href="#center">Center</a>
 </li>
 {% endblock%}
 <!--  -->
 {% block content %}
 
 <h1 class="bd-title" id="content">Testimonial</h1>
-<p>Testimonials from customers who are not famous have been effectively used in marketing for as long as marketing has existed.</p>
-<h2 id="border">Border</h2>
+<p>Testimonials from customers who are not famous have been effectively used in marketing for as long as marketing has
+    existed.</p>
+<h2 id="default">Default</h2>
 <div class="bd-example">
-    {% macro border() %}
-    
-    <div class="testimonial testimonial-center" style="width: 21rem;">
+    {% macro default() %}
+    <div class="testimonial" style="width: 21rem;">
         <div class="testimonial-body text-center p-4 border">
             <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times the value from
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
+                have gotten at least 50 times the value from
                 business.</p>
         </div>
         <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2" alt="Image Description">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
+                alt="Image Description">
+            <div class="d-inline-block align-middle text-left ml-3">
+                <h6 class="text-primary mb-2">
+                    <a href="#">Kristina Cain</a>
+                </h6>
+                <p class="font-weight-light text-black-50 pb-0 mb-0">Managing Director</p>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call default() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+        <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+    </div>
+    <figure class="highlight">
+        <script type="text/plain" class="language-markup">
+            {% call default() %}
+            <!--  -->
+            {% endcall %}
+        </script>
+    </figure>
+<h2 id="border">Border</h2>
+<div class="bd-example">
+    {% macro border() %}
+
+    <div class="testimonial" style="width: 21rem;">
+        <div class="testimonial-body text-center p-4 border">
+            <i class="ti-quote-left icon-lg text-primary"></i>
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
+                have gotten at least 50 times the value from
+                business.</p>
+        </div>
+        <div class="testimonial-footer mt-4">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
+                alt="Image Description">
             <div class="d-inline-block align-middle text-left ml-3">
                 <h6 class="text-primary mb-2">
                     <a href="#">Kristina Cain</a>
@@ -52,15 +94,17 @@
 <h2 id="background-color">Background Color</h2>
 <div class="bd-example">
     {% macro backgroundColor() %}
-    
-    <div class="testimonial testimonial-center" style="width: 21rem;">
+
+    <div class="testimonial" style="width: 21rem;">
         <div class="testimonial-body text-center p-4 bg-light">
             <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I have gotten at least 50 times the value from
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
+                have gotten at least 50 times the value from
                 business.</p>
         </div>
         <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2" alt="Image Description">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
+                alt="Image Description">
             <div class="d-inline-block align-middle text-left ml-3">
                 <h6 class="text-primary mb-2">
                     <a href="#">Kristina Cain</a>
@@ -81,6 +125,45 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         {% call backgroundColor() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+
+<h2 id="center">Center</h2>
+<div class="bd-example">
+    {% macro center() %}
+
+    <div class="testimonial testimonial-center" style="width: 21rem;">
+        <div class="testimonial-body text-center p-4 bg-light">
+            <i class="ti-quote-left icon-lg text-primary"></i>
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
+                have gotten at least 50 times the value from
+                business.</p>
+        </div>
+        <div class="testimonial-footer mt-4">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
+                alt="Image Description">
+            <div class="d-inline-block align-middle text-left ml-3">
+                <h6 class="text-primary mb-2">
+                    <a href="#">Kristina Cain</a>
+                </h6>
+                <p class="font-weight-light text-black-50 pb-0 mb-0">Managing Director</p>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call center() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call center() %}
         <!--  -->
         {% endcall %}
     </script>

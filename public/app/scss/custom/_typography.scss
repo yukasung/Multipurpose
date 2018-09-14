@@ -1,5 +1,5 @@
 //
-// Custom type
+// Custom Typography
 //
 blockquote {
     border-left: 3px solid $primary !important;
@@ -10,17 +10,13 @@ blockquote {
 }
 
 .meta {
-    font-size: 0.875rem;
-    color: #939393;
+    font-size: $meta-font-size;
+    color: $meta-color;
     margin-bottom: 10px;
-
-    .meta-link {
-        font-size: 0.75rem;
-    }
 }
 
 .text-small {
-    font-size: 0.875rem;
+    font-size: 0.875rem !important;
 }
 
 // Captions

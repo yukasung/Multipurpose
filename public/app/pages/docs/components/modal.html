@@ -5,6 +5,7 @@
 {% block section_nav %}
 <li class="toc-entry toc-h2">
     <a href="#fullScreen">Full Screen</a>
+    <a href="#referance">Reference</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -21,7 +22,7 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal modal-fullscreen fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content bg-overlay">
                 <div class="modal-header border-0">
@@ -56,4 +57,6 @@
         {% endcall %}
     </script>
 </figure>
+<h2 id="referance">Reference</h2>
+<p>See <a href="https://getbootstrap.com/docs/4.1/components/modal/">Bootstrap 4 document</a> for more information.</p>
 {% endblock %}

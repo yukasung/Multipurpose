@@ -4,7 +4,10 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#classes ">Classes </a>
+    <a href="#relative">Relative</a>
+    <a href="#absolute">Absolute</a>
+    <a href="#horizontal-position">Horizontal position</a>
+    <a href="#vertical-position">Vertical position</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -12,20 +15,25 @@
 
 <h1 class="bd-title" id="content">Position</h1>
 <p>The CSS Classes participates in specifying the position of a positioned element.</p>
-<h2 id="classes">Common values</h2>
-<p>Responsive variations also exist for <code class="highlighter-rouge">.position-absolute</code> and <code class="highlighter-rouge">.position-relative</code>.</p>
+<h2 id="relative">Relative</h2>
+<p>Responsive variations also exist for <code class="highlighter-rouge">.position-relative</code>.</p>
 <ul>
-    <li><code class="highlighter-rouge">.position-absolute</code></li>
     <li><code class="highlighter-rouge">.position-relative</code></li>
-    <li><code class="highlighter-rouge">.position-sm-absolute</code></li>
     <li><code class="highlighter-rouge">.position-sm-relative</code></li>
-    <li><code class="highlighter-rouge">.position-md-absolute</code></li>
     <li><code class="highlighter-rouge">.position-md-relative</code></li>
-    <li><code class="highlighter-rouge">.position-lg-absolute</code></li>
     <li><code class="highlighter-rouge">.position-lg-relative</code></li>
 
 </ul>
-<h2 id="classes">Position</h2>
+<h2 id="absolute">Absolute</h2>
+<p>Responsive variations also exist for <code class="highlighter-rouge">.position-absolute</code>.</p>
+<ul>
+    <li><code class="highlighter-rouge">.position-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-sm-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-md-absolute</code></li>
+    <li><code class="highlighter-rouge">.position-lg-absolute</code></li>
+
+</ul>
+<h2 id="horizontal-position">Horizontal position</h2>
 <div class="bd-example py-5">
     {% macro example() %}
     <div class="p-2 position-absolute position-x-left bd-highlight">position-x-left</div>
@@ -61,5 +69,42 @@
     <li><code class="highlighter-rouge">.position-x-lg-left</code></li>
     <li><code class="highlighter-rouge">.position-x-lg-center</code></li>
     <li><code class="highlighter-rouge">.position-x-lgright</code></li>
+</ul>
+<h2 id="vertical-position">Vertical position</h2>
+<div class="bd-example py-7">
+    {% macro example() %}
+    <div class="p-2 position-absolute position-y-top bd-highlight">position-y-top</div>
+    <div class="p-2 position-absolute position-y-center bd-highlight">position-y-center</div>
+    <div class="p-2 position-absolute position-y-bottom bd-highlight">position-y-bottom</div>
+    {% endmacro %}
+    <!--  -->
+    {% call example() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call example() %}
+            <!--  -->
+            {% endcall %}
+        </script>
+</figure>
+<p>Responsive variations also exist for <code class="highlighter-rouge">position-y</code>.</p>
+<ul>
+    <li><code class="highlighter-rouge">.position-y-left</code></li>
+    <li><code class="highlighter-rouge">.position-y-center</code></li>
+    <li><code class="highlighter-rouge">.position-y-right</code></li>
+    <li><code class="highlighter-rouge">.position-y-sm-left</code></li>
+    <li><code class="highlighter-rouge">.position-y-sm-center</code></li>
+    <li><code class="highlighter-rouge">.position-y-smright</code></li>
+    <li><code class="highlighter-rouge">.position-y-md-left</code></li>
+    <li><code class="highlighter-rouge">.position-y-md-center</code></li>
+    <li><code class="highlighter-rouge">.position-y-md-right</code></li>
+    <li><code class="highlighter-rouge">.position-y-lg-left</code></li>
+    <li><code class="highlighter-rouge">.position-y-lg-center</code></li>
+    <li><code class="highlighter-rouge">.position-y-lgright</code></li>
 </ul>
 {% endblock %}

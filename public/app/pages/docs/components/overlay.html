@@ -13,14 +13,14 @@
 {% block content %}
 
 <h1 class="bd-title" id="content">Image Overlay</h1>
-<p class="bd-lead">Create an image overlay</p>
+<p>Create image overlay, allowing for readable white text over the image.</p>
 <h2 id="overlay-text">Overlay text</h2>
 <div class="bd-example">
     {% macro overlayText() %}
     <figure class="figure overlay">
         <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
         <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="Image Description" class="img-fluid">
-        <figcaption class="overlay-body overlay-bottom p-4">
+        <figcaption class="position-absolute position-y-bottom text-white p-4">
             <h5>Special title treatment</h5>
             <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
         </figcaption>
@@ -42,15 +42,12 @@
     </script>
 </figure>
 <h2 id="overlay-hover-text">Overlay hover text</h2>
-<p>To hide the overlay and display it on hover, add the
-    <code class="highlighter-rouge">.overlay-hover</code> class to the overlay container.
-</p>
 <div class="bd-example">
     {% macro overlayHoverText() %}
     <figure class="figure overlay overlay-hover">
         <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
         <img src="holder.js/800x518?auto=yes&bg=cccccc&text=800x518" alt="Image Description" class="img-fluid">
-        <figcaption class="overlay-body overlay-bottom p-4">
+        <figcaption class="position-absolute position-y-bottom text-white p-4">
             <h5>Special title treatment</h5>
             <p class="font-weight-light">With supporting text below as a natural lead-in to additional content.</p>
         </figcaption>
