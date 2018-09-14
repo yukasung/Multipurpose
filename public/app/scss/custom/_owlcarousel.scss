@@ -23,7 +23,7 @@
 
 .owl-dots {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     .owl-dot {
         display: inline-block;
         zoom: 1;
@@ -78,28 +78,5 @@
         left: 50%;
         width: auto;
         transform: translateX(-50%);
-    }
-}
-
-//
-// Utilities for show nav when hover event active
-//
-@each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-        .owl-nav#{$infix}-hover {
-            .owl-nav {
-                >div {
-                    display: none !important;
-                }
-            }
-            &:hover {
-                .owl-nav {
-                    >div {
-                        display: block !important;
-                    }
-                }
-            }
-        }
     }
 }

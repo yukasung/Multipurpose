@@ -9047,7 +9047,7 @@ select {
 
 .owl-dots {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 40px; }
   .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1; }
@@ -9092,36 +9092,6 @@ select {
   left: 50%;
   width: auto;
   transform: translateX(-50%); }
-
-.owl-nav-hover .owl-nav > div {
-  display: none !important; }
-
-.owl-nav-hover:hover .owl-nav > div {
-  display: block !important; }
-
-@media (min-width: 576px) {
-  .owl-nav-sm-hover .owl-nav > div {
-    display: none !important; }
-  .owl-nav-sm-hover:hover .owl-nav > div {
-    display: block !important; } }
-
-@media (min-width: 768px) {
-  .owl-nav-md-hover .owl-nav > div {
-    display: none !important; }
-  .owl-nav-md-hover:hover .owl-nav > div {
-    display: block !important; } }
-
-@media (min-width: 992px) {
-  .owl-nav-lg-hover .owl-nav > div {
-    display: none !important; }
-  .owl-nav-lg-hover:hover .owl-nav > div {
-    display: block !important; } }
-
-@media (min-width: 1200px) {
-  .owl-nav-xl-hover .owl-nav > div {
-    display: none !important; }
-  .owl-nav-xl-hover:hover .owl-nav > div {
-    display: block !important; } }
 
 .pagination {
   margin-bottom: 0; }

@@ -77,79 +77,77 @@
         {% endcall %}
     </script>
 </figure>
-<p>Hide and show the previous and next on hover over use the
-    <code class="highlighter-rouge">.owl-nav-hover</code> class or one of the <code class="highlighter-rouge">.owl-nav-{sm,md,lg,xl}-hover</code>
-    classes for any responsive screen variation
-    <h2 id="dots-navigations">Dots navigations</h2>
-    <p>Change dots navigation color by adding
-        <code class="highlighter-rouge">.owl-dots-primary</code> or
-        <code class="highlighter-rouge">.owl-dots-white</code>.
-    </p>
-    <div class="bd-example">
-        {% macro dotsNavigations() %}
-        <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
+<h2 id="dots-navigations">Dots navigations</h2>
+<p>Change dots navigation color by adding
+    <code class="highlighter-rouge">.owl-dots-primary</code> or
+    <code class="highlighter-rouge">.owl-dots-white</code>.
+</p>
+<div class="bd-example">
+    {% macro dotsNavigations() %}
+    <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
+        <div class="item">
+            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
         </div>
-        {% endmacro %}
-        <!--  -->
+        <div class="item">
+            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
+        </div>
+        <div class="item">
+            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call dotsNavigations() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
         {% call dotsNavigations() %}
         <!--  -->
         {% endcall %}
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-    </div>
-    <figure class="highlight">
-        <script type="text/plain" class="language-markup">
-            {% call dotsNavigations() %}
-        <!--  -->
-        {% endcall %}
     </script>
-    </figure>
+</figure>
 
-    <h2 id="donts-inside">Dots inside</h2>
-    <p>Add
-        <code class="highlighter-rouge">.owl-dots-inside</code> for show dots navigation inside the owl carousel.
-    </p>
-    <div class="bd-example">
-        {% macro dotsInside() %}
-        <div class="owl-carousel owl-theme owl-loaded owl-dots-inside" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
-            </div>
-            <div class="item">
-                <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
-            </div>
+<h2 id="donts-inside">Dots inside</h2>
+<p>Add
+    <code class="highlighter-rouge">.owl-dots-inside</code> for show dots navigation inside the owl carousel.
+</p>
+<div class="bd-example">
+    {% macro dotsInside() %}
+    <div class="owl-carousel owl-theme owl-loaded owl-dots-inside" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
+        <div class="item">
+            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=First Slide" alt="First Slide" />
         </div>
-        {% endmacro %}
-        <!--  -->
+        <div class="item">
+            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Second Slide" alt="Second Slide" />
+        </div>
+        <div class="item">
+            <img data-src="holder.js/800x400?auto=yes&bg=cccccc&text=Third Slide" alt="Third Slide" />
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call dotsInside() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
         {% call dotsInside() %}
         <!--  -->
         {% endcall %}
-    </div>
-    <div class="bd-clipboard">
-        <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-    </div>
-    <figure class="highlight">
-        <script type="text/plain" class="language-markup">
-            {% call dotsInside() %}
-        <!--  -->
-        {% endcall %}
     </script>
-    </figure>
-    <h2 id="referance">Reference</h2>
-    <p>See <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html">Owl Carousel 2 document</a> for more
-        information.</p>
+</figure>
+<h2 id="referance">Reference</h2>
+<p>See <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html">Owl Carousel 2 document</a> for
+    more
+    information.</p>
 
-    {% endblock %}
+{% endblock %}
