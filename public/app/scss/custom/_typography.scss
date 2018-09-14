@@ -9,16 +9,6 @@ blockquote {
     font-style: italic;
 }
 
-.meta {
-    font-size: $meta-font-size;
-    color: $meta-color;
-    margin-bottom: 10px;
-}
-
-.text-small {
-    font-size: 0.875rem !important;
-}
-
 // Captions
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {

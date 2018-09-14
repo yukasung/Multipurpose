@@ -9379,14 +9379,6 @@ blockquote {
   padding: 15px 30px;
   font-style: italic; }
 
-.meta {
-  font-size: 0.875rem;
-  color: #939393;
-  margin-bottom: 10px; }
-
-.text-small {
-  font-size: 0.875rem !important; }
-
 .caption-1 {
   font-size: 6rem !important; }
 
@@ -9784,6 +9776,9 @@ blockquote {
 
 .font-weight-500 {
   font-weight: 500 !important; }
+
+.text-small {
+  font-size: 0.875rem !important; }
 
 .overflow-hidden,
 .overflow-hidden-y {
