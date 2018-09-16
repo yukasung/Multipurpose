@@ -8954,55 +8954,39 @@ select {
 .navbar-collapse-show .navbar-toggler span::after {
   transform: translateX(4px) translateY(2px) rotate(-45deg); }
 
-.navbar-top {
+.sticky .navbar.fixed-hide {
+  top: -160px;
+  transition-duration: 0.3s; }
+
+.sticky .fixed-hide {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   transition-duration: 0.3s; }
 
-.sticky .navbar-top {
-  top: -160px;
+.show .fixed-hide {
+  top: 0 !important;
   transition-duration: 0.3s; }
 
-.sticky.header-appear .navbar-top {
-  top: 0;
-  transition-duration: 0.3s; }
-
-.sticky.header-topbar .header-top {
-  top: -45px; }
-
-.header-topbar.sticky.header-appear .navbar-top {
-  top: 0; }
-
-.header-topbar.sticky .navbar-top {
-  top: -160px; }
-
-.header-topbar .header-top {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  width: 100%;
-  transition: ease-in-out 0.3s; }
-
-.header-topbar .navbar-top {
-  top: 42px; }
-
-.header-appear .navbar {
+.header-topbar.show .navbar {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
 
-.header-appear .navbar-dark.bg-transparent {
+.header-topbar.show .navbar-dark.bg-transparent {
   background-color: #fff !important; }
-  .header-appear .navbar-dark.bg-transparent .logo-dark {
+  .header-topbar.show .navbar-dark.bg-transparent .logo-dark {
     display: inline; }
-  .header-appear .navbar-dark.bg-transparent .logo-light {
+  .header-topbar.show .navbar-dark.bg-transparent .logo-light {
     display: none; }
-  .header-appear .navbar-dark.bg-transparent .nav-link {
+  .header-topbar.show .navbar-dark.bg-transparent .nav-link {
     color: #232323; }
-  .header-appear .navbar-dark.bg-transparent .navbar-toggler span,
-  .header-appear .navbar-dark.bg-transparent .navbar-toggler span::before,
-  .header-appear .navbar-dark.bg-transparent .navbar-toggler span::after {
+  .header-topbar.show .navbar-dark.bg-transparent .navbar-toggler span,
+  .header-topbar.show .navbar-dark.bg-transparent .navbar-toggler span::before,
+  .header-topbar.show .navbar-dark.bg-transparent .navbar-toggler span::after {
     background: #232323; }
+
+.header-topbar.sticky .fixed-hide {
+  top: -160px; }
 
 .nav-tabs-line {
   position: relative; }

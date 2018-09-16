@@ -110,28 +110,30 @@ var navbar = {
     },
     eventScroll: function (element) {
 
-        // sticky nav start
-        var headerHeight = $('nav').outerHeight();
-        if (!$('header').hasClass('no-sticky')) {
-            if ($(document).scrollTop() >= headerHeight) {
-                $('header').addClass('sticky');
+        if ($('nav').hasClass('fixed-hide')) {
+            // sticky nav start
+            var headerHeight = $('nav').outerHeight();
+            if (!$('header').hasClass('no-sticky')) {
+                if ($(document).scrollTop() >= headerHeight) {
+                    $('header').addClass('sticky');
 
-            } else if ($(document).scrollTop() <= headerHeight) {
-                $('header').removeClass('sticky');
+                } else if ($(document).scrollTop() <= headerHeight) {
+                    $('header').removeClass('sticky');
+                }
             }
-        }
 
-        // header appear on scroll up
-        var st = element.scrollTop();
-        if (st > this.LastScroll) {
-            $('.sticky').removeClass('header-appear');
-        } else {
-            $('.sticky').addClass('header-appear');
-        }
+            // header appear on scroll up
+            var st = element.scrollTop();
+            if (st > this.LastScroll) {
+                $('.sticky').removeClass('show');
+            } else {
+                $('.sticky').addClass('show');
+            }
 
-        this.LastScroll = st;
-        if (this.LastScroll <= headerHeight) {
-            $('header').removeClass('header-appear');
+            this.LastScroll = st;
+            if (this.LastScroll <= headerHeight) {
+                $('header').removeClass('show');
+            }
         }
 
     }

@@ -76,7 +76,7 @@
                                     Owl Carousel
                                 </a>
                             </li>
-                            <li class="">
+                            <li class="active">
                                 <a href="../../docs/components/navbar.html">
                                     Navbar
                                 </a>
@@ -116,7 +116,7 @@
                                     Icons
                                 </a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../../docs/components/typography.html">
                                     Typography
                                 </a>
@@ -211,8 +211,7 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
-    <a href="#caption">Caption</a>
-    <a href="#classes">Classes</a>
+    <a href="#example">Example</a>
     <a href="#referance">Reference</a>
 </li>
 
@@ -221,58 +220,43 @@
             <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 
 
-<h1 class="bd-title" id="content">Typography</h1>
-<p>Documentation and examples for typography.</p>
-<h2 id="caption">Caption</h2>
-<p>Caption headings are used to stand out more than normal headings, Caption heading classes that apply to all breakpoints,
-    from
-    <code class="highlighter-rouge">xs</code> to
-    <code class="highlighter-rouge">xl</code>.</p>
-<p>As such, the classes are named using the format:</p>
-<ul>
-    <li>
-        <code class="highlighter-rouge">.caption-{size}</code> for
-        <code class="highlighter-rouge">xs</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">.caption-{breakpoint}-{size}</code> for
-        <code class="highlighter-rouge">sm</code>,
-        <code class="highlighter-rouge">md</code>,
-        <code class="highlighter-rouge">lg</code>, and
-        <code class="highlighter-rouge">xl</code>.</li>
-</ul>
-<p>Where
-    <em>size</em> is one of:</p>
-<ul>
-    <li>
-        <code class="highlighter-rouge">1</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">2</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">3</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">4</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">5</code>
-    </li>
-    <li>
-        <code class="highlighter-rouge">6</code>
-    </li>
-</ul>
+<h1 class="bd-title" id="content">Navbar</h1>
+<p>Examples for Bootstrap’s powerful, responsive navigation header, the navbar.</p>
+<h2 id="example">Example</h2>
 <div class="bd-example">
     
-    <!--  -->
     
-    <p class="caption-1">Caption 1</p>
-    <p class="caption-2">Caption 2</p>
-    <p class="caption-3">Caption 3</p>
-    <p class="caption-4">Caption 4</p>
-    <p class="caption-5">Caption 5</p>
-    <p class="caption-6">Caption 6</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     
 </div>
 <div class="bd-clipboard">
@@ -281,17 +265,42 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         
-    <p class="caption-1">Caption 1</p>
-    <p class="caption-2">Caption 2</p>
-    <p class="caption-3">Caption 3</p>
-    <p class="caption-4">Caption 4</p>
-    <p class="caption-5">Caption 5</p>
-    <p class="caption-6">Caption 6</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     
     </script>
 </figure>
 <h2 id="referance">Reference</h2>
-<p>See <a href="http://getbootstrap.com/docs/4.1/content/typography/">Bootstrap 4 document</a> for more information.</p>
+<p>See <a href="https://getbootstrap.com/docs/4.1/components/navbar/">Bootstrap 4 document</a> for more information.</p>
 
             </main>
         </div>

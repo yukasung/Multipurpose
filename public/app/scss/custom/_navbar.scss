@@ -384,78 +384,58 @@
     }
 }
 
-.navbar-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition-duration: 0.3s;
-}
-
 .sticky {
-    .navbar-top {
-        top: -160px;
-        transition-duration: 0.3s;
-    }
-    &.header-appear {
-        .navbar-top {
-            top: 0;
+    .navbar{
+        &.fixed-hide {
+            top: -160px;
             transition-duration: 0.3s;
         }
     }
-    &.header-topbar {
-        .header-top {
-            top: -45px;
-        }
-    }
-}
-
-.header-topbar {
-    &.sticky {
-        &.header-appear {
-            .navbar-top {
-                top: 0;
-            }
-        }
-        .navbar-top {
-            top: -160px;
-        }
-    }
-    .header-top {
+    .fixed-hide {
         position: fixed;
         top: 0;
-        z-index: 99;
-        width: 100%;
-        transition: ease-in-out 0.3s;
-    }
-    .navbar-top {
-        top: 42px;
+        left: 0;
+        right: 0;
+        transition-duration: 0.3s;
     }
 }
 
-.header-appear {
-    .navbar{
-        box-shadow: $box-shadow-sm;
+.show {
+    .fixed-hide {
+        top: 0 !important;
+        transition-duration: 0.3s;
     }
-    .navbar-dark {
-        &.bg-transparent {
-            background-color: #fff !important;
-            .logo-dark {
-                display: inline;
-            }
-            .logo-light {
-                display: none;
-            }
-            .nav-link {
-                color: $navbar-light-color;
-            }
-            .navbar-toggler {
-                span,
-                span::before,
-                span::after {
-                    background: $navbar-light-color;
+}
+.header-topbar {
+    &.show {
+        .navbar{
+            box-shadow: $box-shadow-sm;
+        }
+        .navbar-dark {
+            &.bg-transparent {
+                background-color: $white !important;
+                .logo-dark {
+                    display: inline;
+                }
+                .logo-light {
+                    display: none;
+                }
+                .nav-link {
+                    color: $navbar-light-color;
+                }
+                .navbar-toggler {
+                    span,
+                    span::before,
+                    span::after {
+                        background: $navbar-light-color;
+                    }
                 }
             }
+        }
+    }
+    &.sticky {
+        .fixed-hide {
+            top: -160px;
         }
     }
 }
