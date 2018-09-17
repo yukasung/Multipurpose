@@ -1,141 +1,6 @@
 //
 // Custom navbar
 //
-.navbar-dark {
-    .logo-dark {
-        display: none;
-    }
-
-    .nav-link {
-        color: $navbar-dark-color;
-
-        span {
-            color: inherit;
-        }
-    }
-
-    .navbar-toggler {
-
-        span,
-        span::before,
-        span::after {
-            background: $navbar-dark-color;
-        }
-    }
-}
-
-.navbar-light {
-    .logo-light {
-        display: none;
-    }
-
-    .nav-link {
-        color: $navbar-light-color;
-
-        span {
-            color: inherit;
-        }
-    }
-
-    .navbar-toggler {
-
-        span,
-        span::before,
-        span::after {
-            background: $navbar-light-color;
-        }
-    }
-}
-
-.navbar-light {
-    .navbar-toggler {
-
-        span,
-        span::before,
-        span::after {
-            background: $navbar-light-color;
-        }
-    }
-}
-
-.navbar-brand {
-    display: block;
-    padding: 0;
-    margin: 0;
-
-    .logo {
-        max-height: 26px;
-        max-width: none;
-    }
-
-    @include media-breakpoint-down(md) {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
-        z-index: -1;
-        transform: scale(1);
-        transition: all .4s ease .4s;
-    }
-}
-
-.navbar-collapse {
-    @include media-breakpoint-down(md) {
-        left: 0;
-        padding: 0;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-    }
-}
-
-.navbar-nav {
-    @include media-breakpoint-down(md) {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: $navbar-nav-bg-color;
-    }
-
-    .nav-item {
-        @include media-breakpoint-down(md) {
-            margin-left: 20px;
-        }
-    }
-
-    >.nav-item {
-        @include media-breakpoint-down(md) {
-            margin: 0 20px;
-        }
-
-        >.nav-link {
-            font-size: $navbar-ddl-menu-font-size;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin: 0 20px;
-            padding: 0;
-            letter-spacing: 0.015em;
-            outline: 0;
-
-            >i {
-                @include media-breakpoint-up(lg) {
-                    line-height: $navbar-height;
-                }
-            }
-
-            @include media-breakpoint-down(md) {
-                padding-top: 10px;
-                padding-bottom: 10px;
-                margin: 0;
-                color: #fff !important;
-            }
-
-            @include media-breakpoint-up(lg) {
-                line-height: $navbar-height;
-            }
-        }
-    }
-}
 
 .navbar {
     height: $navbar-height;
@@ -321,6 +186,186 @@
             }
         }
     }
+
+    &.sticky {
+        &.fixed-hide {
+            position: fixed;
+            top: -160px;
+            left: 0;
+            right: 0;
+            transition-duration: 0.3s;
+        }
+    }
+
+    &.show {
+        box-shadow: $box-shadow-sm;
+
+        &.fixed-hide {
+            top: 0 !important;
+            transition-duration: 0.3s;
+        }
+
+        &.bg-transparent {
+            background-color: $white !important;
+
+            .nav-link {
+                color: $navbar-light-color;
+            }
+
+            .logo-dark {
+                display: inline;
+            }
+
+            .logo-light {
+                display: none;
+            }
+        }
+
+        .navbar-toggler {
+
+            span,
+            span::before,
+            span::after {
+                background: $navbar-light-color;
+            }
+        }
+    }
+}
+
+.navbar-dark {
+    .logo-dark {
+        display: none;
+    }
+
+    .nav-link {
+        color: $navbar-dark-color;
+
+        span {
+            color: inherit;
+        }
+    }
+
+    .navbar-toggler {
+
+        span,
+        span::before,
+        span::after {
+            background: $navbar-dark-color;
+        }
+    }
+}
+
+.navbar-light {
+    .logo-light {
+        display: none;
+    }
+
+    .nav-link {
+        color: $navbar-light-color;
+
+        span {
+            color: inherit;
+        }
+    }
+
+    .navbar-toggler {
+
+        span,
+        span::before,
+        span::after {
+            background: $navbar-light-color;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-toggler {
+
+        span,
+        span::before,
+        span::after {
+            background: $navbar-light-color;
+        }
+    }
+}
+
+.navbar-brand {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    .logo {
+        max-height: 26px;
+        max-width: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        z-index: -1;
+        transform: scale(1);
+        transition: all .4s ease .4s;
+    }
+}
+
+.navbar-collapse {
+    @include media-breakpoint-down(md) {
+        left: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+}
+
+.navbar-nav {
+    @include media-breakpoint-down(md) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: $navbar-nav-bg-color;
+    }
+
+    .nav-item {
+        @include media-breakpoint-down(md) {
+            margin-left: 20px;
+        }
+    }
+
+    >.nav-item {
+        @include media-breakpoint-down(md) {
+            margin: 0 20px;
+        }
+
+        >.nav-link {
+            font-size: $navbar-ddl-menu-font-size;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0 20px;
+            padding: 0;
+            letter-spacing: 0.015em;
+            outline: 0;
+
+            >i {
+                @include media-breakpoint-up(lg) {
+                    line-height: $navbar-height;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin: 0;
+                color: #fff !important;
+            }
+
+            @include media-breakpoint-up(lg) {
+                line-height: $navbar-height;
+            }
+        }
+    }
 }
 
 .navbar-toggler {
@@ -439,49 +484,6 @@
 
             &::after {
                 transform: translateX(4px) translateY(2px) rotate(-45deg);
-            }
-        }
-    }
-}
-
-.navbar {
-    &.sticky {
-        &.fixed-hide {
-            position: fixed;
-            top: -160px;
-            left: 0;
-            right: 0;
-            transition-duration: 0.3s;
-        }
-    }
-
-    &.show {
-        box-shadow: $box-shadow-sm;
-
-        &.fixed-hide {
-            top: 0 !important;
-            transition-duration: 0.3s;
-        }
-        background-color: $white !important;
-
-        .logo-dark {
-            display: inline;
-        }
-
-        .logo-light {
-            display: none;
-        }
-
-        .nav-link {
-            color: $navbar-light-color;
-        }
-
-        .navbar-toggler {
-
-            span,
-            span::before,
-            span::after {
-                background: $navbar-light-color;
             }
         }
     }

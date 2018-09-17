@@ -8668,98 +8668,6 @@ select {
   overflow-y: auto;
   padding-right: 0px !important; }
 
-.navbar-dark .logo-dark {
-  display: none; }
-
-.navbar-dark .nav-link {
-  color: #ffffff; }
-  .navbar-dark .nav-link span {
-    color: inherit; }
-
-.navbar-dark .navbar-toggler span,
-.navbar-dark .navbar-toggler span::before,
-.navbar-dark .navbar-toggler span::after {
-  background: #ffffff; }
-
-.navbar-light .logo-light {
-  display: none; }
-
-.navbar-light .nav-link {
-  color: #232323; }
-  .navbar-light .nav-link span {
-    color: inherit; }
-
-.navbar-light .navbar-toggler span,
-.navbar-light .navbar-toggler span::before,
-.navbar-light .navbar-toggler span::after {
-  background: #232323; }
-
-.navbar-light .navbar-toggler span,
-.navbar-light .navbar-toggler span::before,
-.navbar-light .navbar-toggler span::after {
-  background: #232323; }
-
-.navbar-brand {
-  display: block;
-  padding: 0;
-  margin: 0; }
-  .navbar-brand .logo {
-    max-height: 26px;
-    max-width: none; }
-  @media (max-width: 991.98px) {
-    .navbar-brand {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      text-align: center;
-      z-index: -1;
-      transform: scale(1);
-      transition: all .4s ease .4s; } }
-
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    left: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    width: 100%; } }
-
-@media (max-width: 991.98px) {
-  .navbar-nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #3498db; } }
-
-@media (max-width: 991.98px) {
-  .navbar-nav .nav-item {
-    margin-left: 20px; } }
-
-@media (max-width: 991.98px) {
-  .navbar-nav > .nav-item {
-    margin: 0 20px; } }
-
-.navbar-nav > .nav-item > .nav-link {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 0 20px;
-  padding: 0;
-  letter-spacing: 0.015em;
-  outline: 0; }
-  @media (min-width: 992px) {
-    .navbar-nav > .nav-item > .nav-link > i {
-      line-height: 72px; } }
-  @media (max-width: 991.98px) {
-    .navbar-nav > .nav-item > .nav-link {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin: 0;
-      color: #fff !important; } }
-  @media (min-width: 992px) {
-    .navbar-nav > .nav-item > .nav-link {
-      line-height: 72px; } }
-
 .navbar {
   height: 72px;
   z-index: 99; }
@@ -8873,6 +8781,121 @@ select {
       left: auto;
       max-width: 75%;
       min-width: 550px; } }
+  .navbar.sticky.fixed-hide {
+    position: fixed;
+    top: -160px;
+    left: 0;
+    right: 0;
+    transition-duration: 0.3s; }
+  .navbar.show {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+    .navbar.show.fixed-hide {
+      top: 0 !important;
+      transition-duration: 0.3s; }
+    .navbar.show.bg-transparent {
+      background-color: #fff !important; }
+      .navbar.show.bg-transparent .nav-link {
+        color: #232323; }
+      .navbar.show.bg-transparent .logo-dark {
+        display: inline; }
+      .navbar.show.bg-transparent .logo-light {
+        display: none; }
+    .navbar.show .navbar-toggler span,
+    .navbar.show .navbar-toggler span::before,
+    .navbar.show .navbar-toggler span::after {
+      background: #232323; }
+
+.navbar-dark .logo-dark {
+  display: none; }
+
+.navbar-dark .nav-link {
+  color: #ffffff; }
+  .navbar-dark .nav-link span {
+    color: inherit; }
+
+.navbar-dark .navbar-toggler span,
+.navbar-dark .navbar-toggler span::before,
+.navbar-dark .navbar-toggler span::after {
+  background: #ffffff; }
+
+.navbar-light .logo-light {
+  display: none; }
+
+.navbar-light .nav-link {
+  color: #232323; }
+  .navbar-light .nav-link span {
+    color: inherit; }
+
+.navbar-light .navbar-toggler span,
+.navbar-light .navbar-toggler span::before,
+.navbar-light .navbar-toggler span::after {
+  background: #232323; }
+
+.navbar-light .navbar-toggler span,
+.navbar-light .navbar-toggler span::before,
+.navbar-light .navbar-toggler span::after {
+  background: #232323; }
+
+.navbar-brand {
+  display: block;
+  padding: 0;
+  margin: 0; }
+  .navbar-brand .logo {
+    max-height: 26px;
+    max-width: none; }
+  @media (max-width: 991.98px) {
+    .navbar-brand {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      z-index: -1;
+      transform: scale(1);
+      transition: all .4s ease .4s; } }
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%; } }
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #3498db; } }
+
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-item {
+    margin-left: 20px; } }
+
+@media (max-width: 991.98px) {
+  .navbar-nav > .nav-item {
+    margin: 0 20px; } }
+
+.navbar-nav > .nav-item > .nav-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 0;
+  letter-spacing: 0.015em;
+  outline: 0; }
+  @media (min-width: 992px) {
+    .navbar-nav > .nav-item > .nav-link > i {
+      line-height: 72px; } }
+  @media (max-width: 991.98px) {
+    .navbar-nav > .nav-item > .nav-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 0;
+      color: #fff !important; } }
+  @media (min-width: 992px) {
+    .navbar-nav > .nav-item > .nav-link {
+      line-height: 72px; } }
 
 .navbar-toggler {
   position: relative;
@@ -8953,30 +8976,6 @@ select {
 
 .navbar-collapse-show .navbar-toggler span::after {
   transform: translateX(4px) translateY(2px) rotate(-45deg); }
-
-.navbar.sticky.fixed-hide {
-  position: fixed;
-  top: -160px;
-  left: 0;
-  right: 0;
-  transition-duration: 0.3s; }
-
-.navbar.show {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  background-color: #fff !important; }
-  .navbar.show.fixed-hide {
-    top: 0 !important;
-    transition-duration: 0.3s; }
-  .navbar.show .logo-dark {
-    display: inline; }
-  .navbar.show .logo-light {
-    display: none; }
-  .navbar.show .nav-link {
-    color: #232323; }
-  .navbar.show .navbar-toggler span,
-  .navbar.show .navbar-toggler span::before,
-  .navbar.show .navbar-toggler span::after {
-    background: #232323; }
 
 .nav-tabs-line {
   position: relative; }
