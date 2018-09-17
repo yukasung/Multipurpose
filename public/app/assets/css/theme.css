@@ -8954,39 +8954,29 @@ select {
 .navbar-collapse-show .navbar-toggler span::after {
   transform: translateX(4px) translateY(2px) rotate(-45deg); }
 
-.sticky .navbar.fixed-hide {
-  top: -160px;
-  transition-duration: 0.3s; }
-
-.sticky .fixed-hide {
+.navbar.sticky.fixed-hide {
   position: fixed;
-  top: 0;
+  top: -160px;
   left: 0;
   right: 0;
   transition-duration: 0.3s; }
 
-.show .fixed-hide {
-  top: 0 !important;
-  transition-duration: 0.3s; }
-
-.header-topbar.show .navbar {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
-
-.header-topbar.show .navbar-dark.bg-transparent {
+.navbar.show {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   background-color: #fff !important; }
-  .header-topbar.show .navbar-dark.bg-transparent .logo-dark {
+  .navbar.show.fixed-hide {
+    top: 0 !important;
+    transition-duration: 0.3s; }
+  .navbar.show .logo-dark {
     display: inline; }
-  .header-topbar.show .navbar-dark.bg-transparent .logo-light {
+  .navbar.show .logo-light {
     display: none; }
-  .header-topbar.show .navbar-dark.bg-transparent .nav-link {
+  .navbar.show .nav-link {
     color: #232323; }
-  .header-topbar.show .navbar-dark.bg-transparent .navbar-toggler span,
-  .header-topbar.show .navbar-dark.bg-transparent .navbar-toggler span::before,
-  .header-topbar.show .navbar-dark.bg-transparent .navbar-toggler span::after {
+  .navbar.show .navbar-toggler span,
+  .navbar.show .navbar-toggler span::before,
+  .navbar.show .navbar-toggler span::after {
     background: #232323; }
-
-.header-topbar.sticky .fixed-hide {
-  top: -160px; }
 
 .nav-tabs-line {
   position: relative; }

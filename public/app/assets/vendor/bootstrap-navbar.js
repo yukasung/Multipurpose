@@ -110,16 +110,16 @@ var navbar = {
     },
     eventScroll: function (element) {
 
-        if ($('nav').hasClass('fixed-hide')) {
+        var $navbar = $('.navbar');
+
+        if ($navbar.hasClass('fixed-hide')) {
             // sticky nav start
             var headerHeight = $('nav').outerHeight();
-            if (!$('header').hasClass('no-sticky')) {
-                if ($(document).scrollTop() >= headerHeight) {
-                    $('header').addClass('sticky');
 
-                } else if ($(document).scrollTop() <= headerHeight) {
-                    $('header').removeClass('sticky');
-                }
+            if ($(document).scrollTop() >= headerHeight) {
+                $navbar.addClass('sticky');
+            } else if ($(document).scrollTop() <= headerHeight) {
+                $navbar.removeClass('sticky');
             }
 
             // header appear on scroll up
@@ -132,7 +132,7 @@ var navbar = {
 
             this.LastScroll = st;
             if (this.LastScroll <= headerHeight) {
-                $('header').removeClass('show');
+                $navbar.removeClass('show');
             }
         }
 
