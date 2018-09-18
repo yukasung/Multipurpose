@@ -4,8 +4,6 @@
 
 .navbar {
     height: $navbar-height;
-    z-index: 99;
-
     @include media-breakpoint-up(sm) {
         height: $navbar-height;
         padding: 0;
@@ -189,10 +187,7 @@
 
     &.sticky {
         &.fixed-hide {
-            position: fixed;
-            top: -160px;
-            left: 0;
-            right: 0;
+            top: -160px !important;
             transition-duration: 0.3s;
         }
     }
@@ -229,6 +224,14 @@
                 background: $navbar-light-color;
             }
         }
+    }
+
+    &.fixed-hide{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 }
 
