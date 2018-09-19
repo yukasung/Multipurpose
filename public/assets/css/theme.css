@@ -9449,7 +9449,7 @@ blockquote {
   right: 0;
   bottom: 0;
   background-color: #fff;
-  z-index: 999; }
+  z-index: 2000; }
   #preloader .loading {
     position: absolute;
     left: 50%;
@@ -9461,7 +9461,7 @@ blockquote {
     border-radius: 50%;
     border-top-color: #fff;
     animation: spin 1s ease-in-out infinite;
-    z-index: 999; }
+    z-index: 2000; }
 
 @keyframes spin {
   to {

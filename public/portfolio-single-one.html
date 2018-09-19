@@ -34,25 +34,28 @@
     <!-- Modal Search-->
     <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bg-overlay">
-                <div class="modal-header border-0">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 bg-primary text-white">
+                    <h5 class="modal-title">Search Our Website</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="material-icons">clear</i>
                     </button>
                 </div>
-                <div class="modal-body px-4 pb-5">
-                    <div class="col-md-12">
-                        <form>
-                            <h5 class="modal-title h3 text-center mb-5">Search Our Website</h5>
-                            <div class="input-icon input-group-lg">
-                                <button type="submit" class="input-btn">
-                                    <i class="material-icons icon">
-                                        search
-                                    </i>
-                                </button>
-                                <input type="text" class="form-control form-control-rounded" name="" placeholder="Search...">
-                            </div>
-                        </form>
+                <div class="modal-body px-3 py-5 text-center">
+                    <div class="container">
+                        <div class="col-12">
+                            <p>Tell us what you’re looking for and we’ll match results to your search terms.</p>
+                            <form>
+                                <div class="input-icon input-group-lg mt-4">
+                                    <button type="submit" class="input-btn">
+                                        <i class="material-icons icon">
+                                            search
+                                        </i>
+                                    </button>
+                                    <input type="text" class="form-control form-control-rounded" name="" placeholder="Search...">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,38 +65,39 @@
     <!-- Modal Language-->
     <div class="modal fade" id="modalLanguage" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bg-overlay">
-                <div class="modal-header border-0">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 bg-primary text-white">
+                    <h5 class="modal-title">Switch The Language</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="material-icons">clear</i>
                     </button>
                 </div>
-                <div class="modal-body pb-5">
+                <div class="modal-body px-3 py-5 text-center">
                     <div class="container">
-                        <h3 class="popup-title text-center mb-5">Switch The Language</h3>
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                                <a href="#" class="d-inline">
-                                    <i class="flag-icon flag-icon-de icon-36 align-middle"></i>
-                                    <span class="text-muted">Deutsch</span>
+                        <p>You can choose to display your site to viewers in many different languages.</p>
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-3 text-center">
+                                <a href="#" class="d-flex flex-column justify-content-center">
+                                    <i class="flag-icon flag-icon-de icon-36 align-self-center"></i>
+                                    <span class="text-muted mt-2">Deutsch</span>
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                                <a href="#" class="d-inline">
-                                    <i class="flag-icon flag-icon-gb icon-36 align-middle"></i>
-                                    <span class="text-muted">English</span>
+                            <div class="col-3 text-center">
+                                <a href="#" class="d-flex flex-column justify-content-center">
+                                    <i class="flag-icon flag-icon-gb icon-36 align-self-center"></i>
+                                    <span class="text-muted mt-2">English</span>
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                                <a href="#" class="d-inline">
-                                    <i class="flag-icon flag-icon-es icon-36 align-middle"></i>
-                                    <span class="text-muted">Español</span>
+                            <div class="col-3 text-center">
+                                <a href="#" class="d-flex flex-column justify-content-center">
+                                    <i class="flag-icon flag-icon-es icon-36 align-self-center"></i>
+                                    <span class="text-muted mt-2">Español</span>
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 mb-4 mb-md-0 text-center">
-                                <a href="#" class="d-inline">
-                                    <i class="flag-icon flag-icon-fr icon-36 align-middle"></i>
-                                    <span class="text-muted">Français</span>
+                            <div class="col-3 text-center">
+                                <a href="#" class="d-flex flex-column justify-content-center">
+                                    <i class="flag-icon flag-icon-fr icon-36 align-self-center"></i>
+                                    <span class="text-muted mt-2">Français</span>
                                 </a>
                             </div>
 
@@ -152,7 +156,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-hide shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dropdown-hover fixed-hide shadow-sm bg-white">
         <div class="container">
     <a class="navbar-brand text-uppercase" href="index.html">
         <img class="logo logo-dark" src="assets/images/brand/logo-dark.png">
@@ -526,15 +530,17 @@
 
     <!--  -->
     <footer class="footer bg-dark">
-    <div class="container pt-8 pb-5">
+    <div class="container py-8">
         <div class="row">
-            <div class="col-12 col-md-4 mb-5 mb-md-0">
-                <img src="/assets/images/brand/logo-light.png" alt="" style="max-height: 30px;">
-                <p class="text-light mt-4 pr-sm-4 mb-0">We evaluate our solution on a challenging one million urban image dataset and provide public access to our
-                    service through our online application.
+            <div class="col-md-4 mb-5 mb-md-0">
+                <img src="assets/images/brand/logo-light.png" alt="" style="max-height: 30px;">
+                <p class="text-light mt-4 pr-sm-4 mb-0">We evaluate our solution on a challenging one million urban
+                    image dataset and provide public access to our
+                    service.
                 </p>
+                <p class="text-small text-light mt-3">© 2018 Yuka. Design by Yukathemes</p>
             </div>
-            <div class="col-6 col-md-2 mb-5 mb-md-0">
+            <div class="col-md-2 mb-5 mb-md-0">
                 <h5 class="text-light mb-0">Company</h5>
                 <ul class="list-unstyled list-sm mt-4 mb-0">
                     <li>
@@ -551,7 +557,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-6 col-md-2 mb-5 mb-md-0">
+            <div class="col-md-2 mb-5 mb-md-0">
                 <h5 class="text-light mb-0">Support</h5>
                 <ul class="list-unstyled list-sm mt-4 mb-0">
                     <li>
@@ -586,35 +592,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="row mt-6">
-            <div class="col-sm-6 text-light">
-                <span class="text-small">© 2018 Yuka. Design by Yukathemes</span>
-            </div>
-            <div class="col-sm-6 text-right ">
-                <ul class="list-inline mb-0 d-none d-md-block">
-                    <li class="list-inline-item mr-4">
-                        <a href="#">
-                            <i class="fab fa-facebook-f text-light"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-4">
-                        <a href="#">
-                            <i class="fab fa-instagram text-light"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-4">
-                        <a href="#">
-                            <i class="fab fa-twitter text-light"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fab fa-youtube text-light"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
