@@ -8781,12 +8781,18 @@ select {
       max-width: 75%;
       min-width: 550px; } }
   .navbar.sticky.fixed-hide {
+    position: fixed;
     top: -160px !important;
+    right: 0;
+    left: 0;
     transition-duration: 0.3s; }
   .navbar.show {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
     .navbar.show.fixed-hide {
+      position: fixed;
       top: 0 !important;
+      right: 0;
+      left: 0;
       transition-duration: 0.3s; }
     .navbar.show.bg-transparent {
       background-color: #fff !important; }
@@ -8801,10 +8807,6 @@ select {
     .navbar.show .navbar-toggler span::after {
       background: #232323; }
   .navbar.fixed-hide {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 1030; }
 
 .navbar-dark .logo-dark {

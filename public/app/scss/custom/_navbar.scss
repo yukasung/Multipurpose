@@ -187,7 +187,10 @@
 
     &.sticky {
         &.fixed-hide {
+            position: fixed;
             top: -160px !important;
+            right: 0;
+            left: 0;
             transition-duration: 0.3s;
         }
     }
@@ -196,7 +199,10 @@
         box-shadow: $box-shadow-sm;
 
         &.fixed-hide {
+            position: fixed;
             top: 0 !important;
+            right: 0;
+            left: 0;
             transition-duration: 0.3s;
         }
 
@@ -227,10 +233,6 @@
     }
 
     &.fixed-hide{
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
         z-index: 1030;
     }
 }

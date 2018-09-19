@@ -15,6 +15,7 @@ var theme = {
         theme.initVideo();
         theme.initChart();
         theme.initGoToTopBotton();
+        theme.initModal();
         
     },
     loadEvent: function () {
@@ -203,6 +204,13 @@ var theme = {
             return false;
         });
 
+    },
+    initModal(){
+
+        $('.modal').on('shown.bs.modal', function (e) {
+            $('.navbar').css('padding-right', '0');
+        });
+        
     },
     setTopSpace: function () {
 
