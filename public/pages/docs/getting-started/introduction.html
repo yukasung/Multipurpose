@@ -1,0 +1,55 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set gettingStarted = "introduction" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#what-is-included">What’s included</a>
+    <a href="#custom-builds">Custom builds</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Introduction</h1>
+<p>Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with the Bootstrap CDN and a template starter page.</p>
+<h2 id="what-is-included">What’s included</h2>
+<p>Once downloaded, unzip the compressed folder and you’ll see something like this:</p>
+<figure class="highlight">
+    <pre><code class="language-plaintext" data-lang="plaintext">public/
+    ├── index.html and other .html files
+    ├── assets/
+    │   ├── css/
+    │   ├── images/
+    │   ├── js/
+    │   └── vendor/
+    ├── dist/
+    ├── docs/
+    ├── pages/
+    ├── scss/
+    │   ├── bootstrap/
+    │   ├── custom/
+    │   └── theme.scss
+    ├── templates/
+    │   ├── partials/
+    │   └── master.html
+    ├── gulpfile.js
+    └── package.json
+    </code></pre>
+</figure>
+<h2 id="custom-builds">Custom builds</h2>
+<ul>
+    <li>
+        <code>scss/bootstrap</code>, which contains the most recently released version of Bootstrap (v4.1).</li>
+    <li>
+        <code>scss/custom</code>, which contains all of the custom components and overrides authored specifically for this theme.</li>
+    <li>
+        <code>scss/theme.scss</code> is the entry point for Sass files - to build your own custom build, simply modify your local
+        custom files or edit the includes listed here.</li>
+    <li>
+        <code>scss/custom/_variables.scss</code> is home to your theme’s variables. Note that your theme’s
+        <code>variables</code> file depends on and overrides an existing Bootstrap variable file. You will find the complete list
+        of Bootstrap’s variables in
+        <code class="highlighter-rouge">scss/bootstrap/_variables.scss</code>.</li>
+</ul>
+{% endblock %}

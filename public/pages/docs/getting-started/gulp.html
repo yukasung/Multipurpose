@@ -1,0 +1,104 @@
+{% extends "../templates/master_doc.html" %}
+<!--  -->
+{% set gettingStarted = "gulp" %}
+<!--  -->
+{% block section_nav %}
+<li class="toc-entry toc-h2">
+    <a href="#installing-gulp">Installing Gulp</a>
+    <a href="#using-nunjucks-gulp">Using Nunjucks with Gulp</a>
+    <a href="#complete-referance">Complete Reference</a>
+</li>
+{% endblock%}
+<!--  -->
+{% block content %}
+
+<h1 class="bd-title" id="content">Gulp</h1>
+<p>Gulp is a tool that helps you out with several tasks when it comes to web development.</p>
+<h2 id="installing-gulp">Installing Gulp</h2>
+<p>You need to have Node.js (Node) installed onto your computer before you can install Gulp.
+</p>
+<p>If you do not have Node installed already, you can get it by
+    <a href="https://nodejs.org">downloading the package installer from Node's website</a>. </p>
+<p>
+    When you're done with installing Node, you can install Gulp by using the following command in the command line:
+</p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        $ npm install gulp -g
+    </script>
+</figure>
+<p>When you’re done, make sure you’ve installed the rest of the theme’s dependencies:</p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        $ npm install
+    </script>
+</figure>
+<p>Now, we can run this task with the gulp command in the command line.</p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        $ gulp
+    </script>
+</figure>
+<p>We've also built a second task,
+    <code>build</code>, that creates a
+    <code>dist</code> folder for the production website. To run this task, we just have to type
+    <code>gulp build</code> into the command line. </p>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        $ gulp build
+    </script>
+</figure>
+<h2 id="using-nunjucks-gulp">Using Nunjucks with Gulp</h2>
+<p>
+    <p>We have used Nunjucks through a plugin called
+        <a href="https://github.com/carlosl/gulp-nunjucks-render">gulp-nunjucks-render</a>
+    </p>
+</p>
+
+<figure class="highlight">
+    <pre><code class="language-plaintext" data-lang="plaintext">public/
+    ├── pages/
+    ├── templates/
+        ├── partials/
+        └── master.html
+    </code></pre>
+</figure>
+
+<p>
+    <strong>The
+        <code>templates</code> folder</strong> is used for storing all Nunjucks partials and other Nunjucks files that
+    will be
+    added to files in the
+    <code>pages</code> folder.</p>
+<p>
+    <strong>The
+        <code>pages</code> folder</strong> is used for storing files that will be compiled into HTML. Once they are
+    compiled, they
+    will be created in the
+    project root.</p>
+<p>We created a template that contains boilerplate HTMl code which can be inherited by other pages. In this boilerplate
+    HTML
+    <code>master.html</code>.</p>
+<h2 id="complete-referance">Complete Reference</h2>
+<ul>
+    <li>Learn more about
+        <a href="https://css-tricks.com/gulp-for-beginners/">Gulp for Beginners</a>.</li>
+    <li>Learn more about
+        <a href="https://zellwk.com/blog/nunjucks-with-gulp/">using Nunjucks with Gulp</li>
+    <li>Learn more about
+        <a href="https://zellwk.com/blog/nunjucks-with-gulp/">using Nunjucks with Gulp</a>.</li>
+    <li>For more info about nunjucks functionality, check <a href="https://mozilla.github.io/nunjucks/api.html" rel="nofollow">https://mozilla.github.io/nunjucks/api.html</a>.</li>
+</ul>
+{% endblock %}

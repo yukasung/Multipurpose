@@ -47,16 +47,16 @@ var plumberErrorHandler = {
 gulp.task('browserSync', function () {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: './'
     }
   })
 })
 
 gulp.task('sass', function () {
-  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+  return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in scss and children dirs
     .pipe(plumber(plumberErrorHandler))
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('app/assets/css')) // Outputs it in the css folder
+    .pipe(gulp.dest('assets/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -64,12 +64,12 @@ gulp.task('sass', function () {
 
 // NunJucks pages
 gulp.task('nunjucks-pages', function () {
-  return gulp.src(['app/pages/*.html'])
+  return gulp.src(['pages/*.html'])
     .pipe(plumber(plumberErrorHandler))
     .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['templates']
     }))
-    .pipe(gulp.dest('app'))
+    .pipe(gulp.dest('./'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -77,12 +77,12 @@ gulp.task('nunjucks-pages', function () {
 
 // NunJucks docs
 gulp.task('nunjucks-docs', function () {
-  return gulp.src(['app/pages/docs/**/*.html'])
+  return gulp.src(['pages/docs/**/*.html'])
     .pipe(plumber(plumberErrorHandler))
     .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['templates']
     }))
-    .pipe(gulp.dest('app/docs'))
+    .pipe(gulp.dest('docs'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -90,10 +90,10 @@ gulp.task('nunjucks-docs', function () {
 
 // Watchers
 gulp.task('watch', function () {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch(['app/templates/**/*.html', 'app/pages/*.html'], ['nunjucks-pages']);
-  gulp.watch(['app/templates/**/*.html', 'app/pages/docs/**/*.html'], ['nunjucks-docs']);
-  gulp.watch('app/assets/js/**/*.js', browserSync.reload);
+  gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch(['templates/**/*.html', 'pages/*.html'], ['nunjucks-pages']);
+  gulp.watch(['templates/**/*.html', 'pages/docs/**/*.html'], ['nunjucks-docs']);
+  gulp.watch('assets/js/**/*.js', browserSync.reload);
 })
 
 // Optimization Tasks 
@@ -101,7 +101,7 @@ gulp.task('watch', function () {
 
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function () {
-  return gulp.src('app/*.html')
+  return gulp.src('*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
@@ -110,7 +110,7 @@ gulp.task('useref', function () {
 
 // Optimizing Images 
 gulp.task('images', function () {
-  return gulp.src('app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
       interlaced: true,
@@ -120,13 +120,13 @@ gulp.task('images', function () {
 
 // Copying fonts 
 gulp.task('fonts', function () {
-  return gulp.src('app/fonts/**/*')
+  return gulp.src('fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 })
 
 // Copying plugins
 gulp.task('plugins', function () {
-  return gulp.src('app/assets/plugins/**/*')
+  return gulp.src('assets/plugins/**/*')
     .pipe(gulp.dest('dist/assets/plugins'))
 })
 
