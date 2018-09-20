@@ -3,18 +3,22 @@
 //
 .owl-carousel {
     position: relative;
+
     .owl-stage {
         display: flex;
     }
+
     .owl-item {
         display: flex;
         flex: 1 0 auto;
     }
+
     .item {
         display: flex;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+
         .card {
             flex: 1 0 auto;
         }
@@ -24,9 +28,11 @@
 .owl-dots {
     text-align: center;
     margin-top: 40px;
+
     .owl-dot {
         display: inline-block;
         zoom: 1;
+
         span {
             margin: 0 5px;
             display: block;
@@ -36,7 +42,8 @@
             height: 13px;
             transition: all 150ms ease-in;
         }
-        &.active{
+
+        &.active {
             span {
                 background-color: $primary;
             }
@@ -45,6 +52,7 @@
 }
 
 .owl-nav {
+
     .owl-prev,
     .owl-next {
         position: absolute;
@@ -59,10 +67,20 @@
         border-radius: 0;
         font-size: 0;
         transition: all 0.2s ease-in-out;
+
+        img {
+            opacity: 0.8;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
     }
+
     .owl-prev {
         left: 0;
     }
+
     .owl-next {
         right: 0;
         text-align: right;
