@@ -1,22 +1,47 @@
-{% set page_title = "Portfolio Grid" %}
-{% set page_link_one = "Portfolio" %}
-{% set page_link_two = "Portfolio Grid" %}
+{% set page_title = "Portfolio" %}
 {% extends "../templates/master.html" %}
 {% block content %}
 {% include "../templates/partials/header.html" %}
-{% include "../templates/partials/page_title.html" %}
 <main>
+    <section class="position-relative bg-primary py-5 py-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Portfolio</h1>
+                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item d-flex align-items-center">
+                                <a href="/" class="d-flex align-items-center text-small text-white">
+                                    <i class="material-icons align-middle mr-1 icon-18">
+                                        home
+                                    </i>
+                                    Home</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
+                                <span class="text-small text-white-50">Portfolio</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="pt-8 pb-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <figure class="figure mb-4">
                         <a href="portfolio-single-photo-gallery-grid.html">
-                            <img src="assets/images/portfolio/portfolio-1-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-1-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                         </a>
                         <figcaption class="figure-caption py-4">
                             <h4 class="h5">
-                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Partners branding agency</a>
+                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Partners branding
+                                    agency</a>
                             </h4>
                             <span class="text-muted">Marketing and Planning</span>
                         </figcaption>
@@ -25,11 +50,13 @@
                 <div class="col-lg-10">
                     <figure class="figure mb-4">
                         <a href="portfolio-single-photo-gallery-grid.html">
-                            <img src="assets/images/portfolio/portfolio-2-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-2-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                         </a>
                         <figcaption class="figure-caption py-4">
                             <h4 class="h5">
-                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Our market analysis</a>
+                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Our market
+                                    analysis</a>
                             </h4>
                             <span class="text-muted">Planning and Training</span>
                         </figcaption>
@@ -38,11 +65,13 @@
                 <div class="col-lg-10">
                     <figure class="figure mb-4">
                         <a href="portfolio-single-photo-gallery-grid.html">
-                            <img src="assets/images/portfolio/portfolio-3-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-3-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                         </a>
                         <figcaption class="figure-caption py-4">
                             <h4 class="h5">
-                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Market research studies</a>
+                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Market research
+                                    studies</a>
                             </h4>
                             <span class="text-muted">Investing and Marketing</span>
                         </figcaption>
@@ -51,11 +80,13 @@
                 <div class="col-lg-10">
                     <figure class="figure mb-4">
                         <a href="portfolio-single-photo-gallery-grid.html">
-                            <img src="assets/images/portfolio/portfolio-4-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-4-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                         </a>
                         <figcaption class="figure-caption py-4">
                             <h4 class="h5">
-                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Software analysis and quality </a>
+                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Software analysis
+                                    and quality </a>
                             </h4>
                             <span class="text-muted">Planning and Training</span>
                         </figcaption>
@@ -64,11 +95,13 @@
                 <div class="col-lg-10">
                     <figure class="figure mb-4">
                         <a href="portfolio-single-photo-gallery-grid.html">
-                            <img src="assets/images/portfolio/portfolio-5-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-5-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                         </a>
                         <figcaption class="figure-caption py-4">
                             <h4 class="h5">
-                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Social media marketing specialists</a>
+                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Social media
+                                    marketing specialists</a>
                             </h4>
                             <span class="text-muted">Investing and Marketing</span>
                         </figcaption>
@@ -77,11 +110,13 @@
                 <div class="col-lg-10">
                     <figure class="figure mb-4">
                         <a href="portfolio-single-photo-gallery-grid.html">
-                            <img src="assets/images/portfolio/portfolio-6-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-6-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                         </a>
                         <figcaption class="figure-caption py-4">
                             <h4 class="h5">
-                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Business seminar on branding</a>
+                                <a class="text-body" href="portfolio-single-photo-gallery-grid.html">Business seminar
+                                    on branding</a>
                             </h4>
                             <span class="text-muted">Planning and Training</span>
                         </figcaption>

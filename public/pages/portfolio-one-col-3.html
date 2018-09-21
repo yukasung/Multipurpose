@@ -1,11 +1,34 @@
-{% set page_title = "Grid Three Columns" %}
-{% set page_link_one = "Portfolio" %}
-{% set page_link_two = "Grid Three Columns" %}
+{% set page_title = "Portfolio" %}
 {% extends "../templates/master.html" %}
 {% block content %}
 {% include "../templates/partials/header.html" %}
-{% include "../templates/partials/page_title.html" %}
 <main>
+    <section class="position-relative bg-primary py-5 py-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Portfolio</h1>
+                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item d-flex align-items-center">
+                                <a href="/" class="d-flex align-items-center text-small text-white">
+                                    <i class="material-icons align-middle mr-1 icon-18">
+                                        home
+                                    </i>
+                                    Home</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
+                                <span class="text-small text-white-50">Portfolio</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="pt-8 pb-5">
         <div class="container">
             <div class="row justify-content-center">

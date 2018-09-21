@@ -1,11 +1,34 @@
-{% set page_title = "Grid Three Columns" %}
-{% set page_link_one = "Portfolio" %}
-{% set page_link_two = "Grid Three Columns" %}
+{% set page_title = "Portfolio" %}
 {% extends "../templates/master.html" %}
 {% block content %}
 {% include "../templates/partials/header.html" %}
-{% include "../templates/partials/page_title.html" %}
 <main>
+    <section class="position-relative bg-primary py-5 py-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Portfolio</h1>
+                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item d-flex align-items-center">
+                                <a href="/" class="d-flex align-items-center text-small text-white">
+                                    <i class="material-icons align-middle mr-1 icon-18">
+                                        home
+                                    </i>
+                                    Home</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
+                                <span class="text-small text-white-50">Portfolio</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="pt-8 pb-7">
         <div class="container">
             <div class="row justify-content-center">
@@ -13,79 +36,86 @@
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-1-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-1-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Partners branding agency</h4>
                                 <span class="font-weight-light">Marketing and Planning</span>
                             </figcaption>
                         </figure>
                     </a>
-                </div>   
+                </div>
                 <div class="col-md-4">
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-2-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-2-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Our market analysis</h4>
                                 <span class="font-weight-light">Planning and Training</span>
                             </figcaption>
                         </figure>
                     </a>
-                </div>  
+                </div>
                 <div class="col-md-4">
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-3-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-3-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Market research studies</h4>
                                 <span class="font-weight-light">Investing and Marketing</span>
                             </figcaption>
                         </figure>
                     </a>
-                </div>   
+                </div>
                 <div class="col-md-4">
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-4-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-4-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Software analysis and quality </h4>
                                 <span class="font-weight-light">Planning and Training</span>
                             </figcaption>
                         </figure>
                     </a>
-                </div>  
+                </div>
                 <div class="col-md-4">
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-5-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-5-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Social media marketing</h4>
                                 <span class="font-weight-light">Investing and Marketing</span>
                             </figcaption>
                         </figure>
                     </a>
-                </div> 
+                </div>
                 <div class="col-md-4">
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-6-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-6-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Business seminar on branding</h4>
                                 <span class="font-weight-light">Planning and Training</span>
                             </figcaption>
                         </figure>
                     </a>
-                </div> 
+                </div>
                 <div class="col-md-4">
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-7-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-7-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Staff training and development</h4>
                                 <span class="font-weight-light">Investing and Planning</span>
@@ -97,7 +127,8 @@
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-8-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-8-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Financial training workshop</h4>
                                 <span class="font-weight-light">Marketing and Training</span>
@@ -109,7 +140,8 @@
                     <a class="d-block" href="portfolio-single-photo-gallery-grid.html">
                         <figure class="figure overlay overlay-hover mb-4">
                             <div class="d-block overlay-linear-gradient gradient-dark gradient-to-top w-100 h-80 op-5"></div>
-                            <img src="assets/images/portfolio/portfolio-9-1600x1033.jpg" class="figure-img img-fluid mb-0" alt="Image Description">
+                            <img src="assets/images/portfolio/portfolio-9-1600x1033.jpg" class="figure-img img-fluid mb-0"
+                                alt="Image Description">
                             <figcaption class="position-absolute position-y-bottom text-white p-4">
                                 <h4 class="h5">Professional call center</h4>
                                 <span class="font-weight-light">Investing and Planning</span>

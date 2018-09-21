@@ -64,7 +64,7 @@ gulp.task('sass', function () {
 
 // NunJucks pages
 gulp.task('nunjucks-pages', function () {
-  return gulp.src(['pages/*.html'])
+  return gulp.src(['pages/*.html','templates/**/*.html'])
     .pipe(plumber(plumberErrorHandler))
     .pipe(nunjucksRender({
       path: ['templates']

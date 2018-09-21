@@ -1,11 +1,34 @@
-{% set page_title = "Portfolio Single One" %}
-{% set page_link_one = "Portfolio" %}
-{% set page_link_two = "Portfolio Single One" %}
+{% set page_title = "Portfolio Single" %}
 {% extends "../templates/master.html" %}
 {% block content %}
 {% include "../templates/partials/header.html" %}
-{% include "../templates/partials/page_title.html" %}
 <main>
+    <section class="position-relative bg-primary py-5 py-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Portfolio Single</h1>
+                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item d-flex align-items-center">
+                                <a href="/" class="d-flex align-items-center text-small text-white">
+                                    <i class="material-icons align-middle mr-1 icon-18">
+                                        home
+                                    </i>
+                                    Home</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
+                                <span class="text-small text-white-50">Portfolio Single</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-8">
         <div class="container">
             <div class="row">
@@ -36,33 +59,42 @@
                 <div class="col-lg-8">
                     <div class="d-block pr-lg-5">
                         <h3 class="mb-3">Project Case Study</h3>
-                        <p>Many companies today have a customer focus (or market orientation). This implies that the company
-                            focuses its activities and products on consumer demands. Generally there are three ways of doing
-                            this: the customer-driven approach, the sense of identifying market changes and the product innovation
+                        <p>Many companies today have a customer focus (or market orientation). This implies that the
+                            company
+                            focuses its activities and products on consumer demands. Generally there are three ways of
+                            doing
+                            this: the customer-driven approach, the sense of identifying market changes and the product
+                            innovation
                             approach.
                         </p>
                         <ul class="list-unstyled list-lg mb-0">
                             <li class="d-flex align-items-md-center">
-                                <i class="material-icons text-primary mr-2">check_box</i>Financial services consulting firm into the market.
+                                <i class="material-icons text-primary mr-2">check_box</i>Financial services consulting
+                                firm into the market.
                             </li>
                             <li class="d-flex align-items-md-center">
-                                <i class="material-icons text-primary mr-2">check_box</i>Business consulting and tech services branches.
+                                <i class="material-icons text-primary mr-2">check_box</i>Business consulting and tech
+                                services branches.
                             </li>
                             <li class="d-flex align-items-md-center">
-                                <i class="material-icons text-primary mr-2">check_box</i>Products and consulting services and creating brand.
+                                <i class="material-icons text-primary mr-2">check_box</i>Products and consulting
+                                services and creating brand.
                             </li>
                             <li class="d-flex align-items-md-center">
-                                <i class="material-icons text-primary mr-2">check_box</i>Energy and environment and management consulting.
+                                <i class="material-icons text-primary mr-2">check_box</i>Energy and environment and
+                                management consulting.
                             </li>
                             <li class="d-flex align-items-md-center">
-                                <i class="material-icons text-primary mr-2">check_box</i>Logistics consulting and solution provider.
+                                <i class="material-icons text-primary mr-2">check_box</i>Logistics consulting and
+                                solution provider.
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <h3 class="mb-3">Project Description</h3>
-                    <p>In project management a project consists of a temporary endeavor undertaken to create a unique product,
+                    <p>In project management a project consists of a temporary endeavor undertaken to create a unique
+                        product,
                         service or result.</p>
                     <dl class="row mb-0">
                         <dt class="col-sm-5">Project name</dt>

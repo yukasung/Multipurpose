@@ -1,11 +1,40 @@
 {% set page_title = "Shop Checkout" %}
-{% set page_link_one = "Shop" %}
-{% set page_link_two = "Shop Checkout" %}
 {% extends "../templates/master.html" %}
 {% block content %}
 {% include "../templates/partials/header.html" %}
-{% include "../templates/partials/page_title.html" %}
 <main>
+    <section class="position-relative bg-primary py-5 py-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Checkout</h1>
+                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item d-flex align-items-center">
+                                <a href="/" class="d-flex align-items-center text-small text-white">
+                                    <i class="material-icons align-middle mr-1 icon-18">
+                                        home
+                                    </i>
+                                    Home</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0">
+                                <a href="#" class="text-small text-white">Shop</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
+                                <span class="text-small text-white-50">Checkout</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-6 py-lg-8">
         <div class="container">
             <form>
@@ -312,7 +341,8 @@
                                         <label class="custom-control-label" for="customCheck1">Create Account</label>
                                     </div>
                                     <div class="collapse mt-2">
-                                        <p>Create an account by entering the information below. If you are a returning customer
+                                        <p>Create an account by entering the information below. If you are a returning
+                                            customer
                                             please login at the top of the page.</p>
                                         <div class="form-group row">
                                             <div class="col-lg-12">
@@ -321,7 +351,8 @@
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-lg-12">
-                                                <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                                                <input type="password" class="form-control" id="txtPassword"
+                                                    placeholder="Password">
                                             </div>
                                         </div>
                                     </div>
@@ -333,7 +364,8 @@
                                 <div class="checkbox-collapse">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">Ship to a different address</label>
+                                        <label class="custom-control-label" for="customCheck2">Ship to a different
+                                            address</label>
                                     </div>
                                     <div class="collapse mt-2">
                                         <div class="form-group row">
@@ -596,7 +628,8 @@
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-lg-12">
-                                                <input type="text" class="form-control" placeholder="Company Name" value="">
+                                                <input type="text" class="form-control" placeholder="Company Name"
+                                                    value="">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -606,7 +639,8 @@
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-lg-6 mb-3 mb-lg-0">
-                                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc." value="">
+                                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc."
+                                                    value="">
                                             </div>
                                             <div class="col-lg-6">
                                                 <input type="text" class="form-control" placeholder="Town / City" value="">
@@ -614,10 +648,12 @@
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-lg-6 mb-3 mb-lg-0">
-                                                <input type="text" class="form-control" placeholder="State / County" value="">
+                                                <input type="text" class="form-control" placeholder="State / County"
+                                                    value="">
                                             </div>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" placeholder="Postcode / Zip" value="">
+                                                <input type="text" class="form-control" placeholder="Postcode / Zip"
+                                                    value="">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -682,7 +718,8 @@
                                             <tr>
                                                 <td class="border-top-0 pb-4 pl-0">
                                                     <label class="custom-control custom-radio mb-0">
-                                                        <input id="radio1" name="radio" type="radio" class="custom-control-input" checked>
+                                                        <input id="radio1" name="radio" type="radio" class="custom-control-input"
+                                                            checked>
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description">Direct Bank Transfer</span>
                                                     </label>
