@@ -3229,8 +3229,8 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: inherit;
-    content: "/"; }
+    color: #6c757d;
+    content: none; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }

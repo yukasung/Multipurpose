@@ -89,9 +89,9 @@ $sizes: map-merge((5: 5%,
 100: 100%,
 auto: auto), $sizes);
 // Typography
-$meta-font-size: 0.875rem !default;
-$meta-color: #939393 !default;
-$captions: () !default;
+$meta-font-size: 0.875rem;
+$meta-color: #939393;
+$captions: ();
 $captions: map-merge((1: 6rem,
 2: 5.5rem,
 3: 4.5rem,
@@ -102,4 +102,4 @@ $captions: map-merge((1: 6rem,
 8: 1.5rem,
 9: 1.25rem), $captions);
 // Breadcrumbs
-$breadcrumb-divider-color: inherit !default;
+$breadcrumb-divider: none;
