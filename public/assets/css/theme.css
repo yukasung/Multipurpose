@@ -9030,7 +9030,7 @@ select {
   transition: all 0.2s ease-in-out; }
   .owl-nav .owl-prev img,
   .owl-nav .owl-next img {
-    opacity: 0.8; }
+    opacity: 0.7; }
     .owl-nav .owl-prev img:hover,
     .owl-nav .owl-next img:hover {
       opacity: 0.9; }

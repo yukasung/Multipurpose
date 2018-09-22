@@ -5,7 +5,6 @@ var theme = {
     ButtonGoTopDuration: 500,
     init: function () {
 
-        theme.setTopSpace();
         theme.initGoogleMap();
         theme.initProgressBar();
         theme.initCounter();
@@ -15,7 +14,7 @@ var theme = {
         theme.initVideo();
         theme.initChart();
         theme.initGoToTopBotton();
-        
+
     },
     loadEvent: function () {
 
@@ -179,10 +178,10 @@ var theme = {
     },
     initVideo: function () {
 
-        $(document).on('click', '.video-icon', function (ev) {
-            
-            ev.preventDefault();
-            
+        $('.video-icon').click(function (e) {
+
+            e.preventDefault();
+
             var video = $(this).closest('.video');
             var iframe = video.find('iframe');
             var src = iframe.data('src');
@@ -202,29 +201,6 @@ var theme = {
             }, this.ButtonGoTopDuration);
             return false;
         });
-
-    },
-    setTopSpace: function () {
-
-        var topSpaceHeight = 0;
-
-        if ($('.navbar').hasClass('navbar-top') || $('nav').hasClass('navbar-fixed-top')) {
-
-            if ($('.space-top').length > 0) {
-
-                if (!$('.navbar').hasClass('bg-transparent')) {
-                    topSpaceHeight = $('.navbar').outerHeight();
-                }
-
-                if ($('.header-top').length > 0) {
-                    topSpaceHeight = topSpaceHeight + $('.header-top').outerHeight();
-                }
-
-                $('.space-top').css('margin-top', topSpaceHeight + "px");
-
-            }
-
-        }
 
     }
 };
