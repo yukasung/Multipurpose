@@ -117,22 +117,32 @@ var navbar = {
             var headerHeight = $('nav').outerHeight();
 
             if ($(document).scrollTop() >= headerHeight) {
-                $navbar.addClass('sticky');
+                if (!$navbar.hasClass('sticky')) {
+                    $navbar.addClass('sticky');
+                }
             } else if ($(document).scrollTop() <= headerHeight) {
-                $navbar.removeClass('sticky');
+                if ($navbar.hasClass('sticky')) {
+                    $navbar.removeClass('sticky');
+                }
             }
 
             // header appear on scroll up
             var st = element.scrollTop();
             if (st > this.LastScroll) {
-                $('.sticky').removeClass('show');
+                if ($('.sticky').hasClass('show')) {
+                    $('.sticky').removeClass('show');
+                }
             } else {
-                $('.sticky').addClass('show');
+                if (!$('.sticky').hasClass('show')) {
+                    $('.sticky').addClass('show');
+                }
             }
 
             this.LastScroll = st;
             if (this.LastScroll <= headerHeight) {
-                $navbar.removeClass('show');
+                if ($navbar.hasClass('show')) {
+                    $navbar.removeClass('show');
+                }
             }
         }
 
