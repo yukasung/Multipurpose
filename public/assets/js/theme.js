@@ -27,9 +27,6 @@ var theme = {
         });
 
     },
-    resizeEvent: function () {
-        theme.setTopSpace();
-    },
     scrollEvent: function (obj) {
 
         if ($(obj).scrollTop() > this.ButtonGoTopOffset) {

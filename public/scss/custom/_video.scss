@@ -3,6 +3,7 @@
 //
 .video {
     position: relative;
+    height: 100%;
     .video-icon {
         position: absolute;
         top: 50%;
@@ -16,6 +17,7 @@
         transform: translate3d(-50%, -50%, 0);
         transition: 0.2s ease-out;
         cursor: pointer;
+
         >* {
             position: absolute;
             left: 50%;
@@ -23,9 +25,16 @@
             transform: translate(-50%, -50%);
         }
     }
+
     img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
         transition: 0.3s linear;
     }
+
     iframe {
         position: absolute;
         top: 0;
@@ -37,7 +46,9 @@
         border: 0;
         background: #252525;
     }
+
     &.video-reveal {
+
         .video-icon,
         img {
             opacity: 0 !important;

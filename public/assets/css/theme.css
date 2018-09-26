@@ -9415,7 +9415,8 @@ blockquote {
     font-size: 1.25rem !important; } }
 
 .video {
-  position: relative; }
+  position: relative;
+  height: 100%; }
   .video .video-icon {
     position: absolute;
     top: 50%;
@@ -9435,6 +9436,11 @@ blockquote {
       top: 50%;
       transform: translate(-50%, -50%); }
   .video img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
     transition: 0.3s linear; }
   .video iframe {
     position: absolute;
