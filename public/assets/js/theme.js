@@ -11,7 +11,7 @@ var theme = {
         theme.initCheckboxCollapse();
         theme.initOwlCarousel();
         theme.initParallax();
-        theme.initVideo();
+        theme.initVideoCover();
         theme.initChart();
         theme.initGoToTopBotton();
 
@@ -26,6 +26,9 @@ var theme = {
             'overflow': 'visible'
         });
 
+    },
+    resizeEvent: function () {
+        this.initVideoCover();
     },
     scrollEvent: function (obj) {
 
@@ -173,21 +176,51 @@ var theme = {
         })
 
     },
-    initVideo: function () {
+    initVideoCover: function () {
 
-        $('.video-icon').click(function (e) {
+        var videoCover = $('.video-cover');
+        var image = videoCover.find('img');
+        var embed = videoCover.find('.embed-responsive');
+
+        videoCover.removeAttr('style');
+
+        videoCover.imagesLoaded(function () {
+            image.each(function () {
+
+                if (videoCover.hasClass('video-reveal')) {
+                    image.removeClass('d-none');
+                    videoCover.css({
+                        'width': $(this).width(),
+                        'height': $(this).height(),
+                    });
+                    image.addClass('d-none');
+                } else {
+                    videoCover.css({
+                        'width': $(this).width(),
+                        'height': $(this).height(),
+                    });
+                }
+
+            });
+        });
+
+        $('.video-cover .video-icon').click(function (e) {
 
             e.preventDefault();
 
-            var video = $(this).closest('.video');
+            var video = $(this).closest('.video-cover');
+            var image = video.find('img');
             var iframe = video.find('iframe');
+            var embed = video.find('.embed-responsive');
             var src = iframe.data('src');
 
-            iframe.removeClass("d-none");
+            image.addClass('d-none');
+            embed.removeClass("d-none");
             video.addClass('video-reveal');
             iframe.attr('src', src);
 
         });
+
     },
     initGoToTopBotton() {
 
