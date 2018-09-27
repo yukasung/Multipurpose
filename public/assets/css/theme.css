@@ -8925,13 +8925,6 @@ select {
     transform: translateX(-150%);
     transition: all .4s ease .4s; } }
 
-@media (min-width: 992px) {
-  .navbar-action {
-    margin-left: 40px; } }
-
-.navbar-action .nav-link:first-child {
-  padding-left: 0; }
-
 .navbar-collapse-show .navbar-brand {
   transform: scale(0);
   transition: all .4s ease 0s; }
@@ -9017,7 +9010,7 @@ select {
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
   position: absolute;
-  top: calc(50% - 14px);
+  top: calc(50% - 5px);
   transform: translateY(-50%);
   display: inline-block;
   margin: 0 1px;
@@ -9036,11 +9029,17 @@ select {
       opacity: 0.9; }
 
 .owl-nav .owl-prev {
-  left: 0; }
+  left: 10px; }
 
 .owl-nav .owl-next {
-  right: 0;
+  right: 10px;
   text-align: right; }
+
+.owl-nav-edge .owl-prev {
+  left: 0; }
+
+.owl-nav-edge .owl-next {
+  right: 0; }
 
 .owl-dots-inside .owl-dots {
   position: absolute;
