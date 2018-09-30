@@ -9741,3 +9741,6 @@ blockquote {
     background: radial-gradient(circle at center left, #343a40, rgba(255, 255, 255, 0) 80%); }
   .overlay-radial-gradient.gradient-light.gradient-center-left {
     background: radial-gradient(circle at center left, #f8f9fa, rgba(255, 255, 255, 0) 80%); }
+
+.mb-30px {
+  margin-bottom: 30px; }
