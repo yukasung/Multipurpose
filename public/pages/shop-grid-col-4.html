@@ -1,0 +1,263 @@
+{% set page_title = "Online Shopping" %}
+{% extends "../templates/master.html" %}
+{% block content %}
+{% include "../templates/partials/header.html" %}
+<main>
+    <section class="bg-primary py-5 py-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Online Shopping</h1>
+                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
+                        <ol class="breadcrumb bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item d-flex align-items-center">
+                                <a href="/" class="d-flex align-items-center text-small text-white">
+                                    <i class="material-icons align-middle mr-1 icon-18">
+                                        home
+                                    </i>
+                                    Home</a>
+                                <i class="material-icons text-white align-middle px-1 icon-18">
+                                    chevron_right
+                                </i>
+                            </li>
+                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
+                                <span class="text-small text-white-50">Shop</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-8">
+        <div class="container">
+            <div class="row mx-0">
+                <div class="col-12 col-md-6 my-auto px-0">
+                    <p class="font-weight-bold text-uppercase mb-3 mb-md-0">Showing 1–12 of 23 results</p>
+                </div>
+                <div class="col-12 col-md-6 my-auto px-0">
+                    <form class="float-none float-md-right mt-3 mt-md-0">
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option value="menu_order">Default sorting</option>
+                                <option value="popularity">Sort by popularity</option>
+                                <option value="rating" selected="selected">Sort by average rating</option>
+                                <option value="date">Sort by newness</option>
+                                <option value="price">Sort by price: low to high</option>
+                                <option value="price-desc">Sort by price: high to low</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-1-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Women black t-shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-2-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Men long-sleeve t-shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-3-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Women long-sleeve t-shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-4-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Men comfort jacket</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-5-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Men long-sleeve shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-6-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Men long-sleeve shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-7-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Men slim-fit shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 mb-5">
+                                <a href="shop-single.html">
+                                    <img class="card-img-top rounded-0 img-fluid" src="assets/images/shop/product-8-800×1067.jpg"
+                                        alt="Image Description">
+                                </a>
+                                <div class="card-body pt-4 pb-0 px-0">
+                                    <h3 class="card-title h5">
+                                        <a class="text-body" href="shop-single.html">Men red polo shirt</a>
+                                    </h3>
+                                    <span class="font-weight-bold">
+                                        <del class="font-weight-light text-muted">$85</del>
+                                        <ins class="text-decoration-none">$35</ins>
+                                    </span>
+                                    <div class="float-right">
+                                        <a href="#">
+                                            <i class="material-icons">add_shopping_cart</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="pt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
