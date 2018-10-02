@@ -172,7 +172,6 @@ var theme = {
 
         var videoCover = $('.video-cover');
         var image = videoCover.find('img');
-        var embed = videoCover.find('.embed-responsive');
 
         videoCover.removeAttr('style');
 
