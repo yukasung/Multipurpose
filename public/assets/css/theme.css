@@ -8845,7 +8845,8 @@ select {
   .navbar-nav {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #3498db; } }
+    background-color: #3498db;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); } }
 
 @media (max-width: 991.98px) {
   .navbar-nav .nav-item {
