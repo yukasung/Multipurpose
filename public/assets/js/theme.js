@@ -7,7 +7,6 @@ var theme = {
 
         theme.initGoogleMap();
         theme.initProgressBar();
-        theme.initCounter();
         theme.initCheckboxCollapse();
         theme.initOwlCarousel();
         theme.initParallax();
@@ -151,13 +150,6 @@ var theme = {
                     interval: 100,
                 });
             });
-        });
-
-    },
-    initCounter: function () {
-
-        $(".counter").appear(function () {
-            $(this).children('.text-counter').countTo();
         });
 
     },
