@@ -9671,6 +9671,9 @@ blockquote {
   .position-x-xl-right {
     right: 0 !important; } }
 
+.w-40px {
+  width: 40px !important; }
+
 .w-60px {
   width: 60px !important; }
 

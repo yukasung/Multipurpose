@@ -12,6 +12,7 @@ var theme = {
         theme.initParallax();
         theme.initVideoCover();
         theme.initChart();
+        theme.initCounter();
         theme.initGoToTopBotton();
 
     },
@@ -112,6 +113,13 @@ var theme = {
 
             });
         });
+    },
+    initCounter: function () {
+
+        $(".counter").appear(function () {
+            $(this).children('.text-counter').countTo();
+        });
+
     },
     initGoogleMap: function () {
 
