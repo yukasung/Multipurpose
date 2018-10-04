@@ -18,6 +18,7 @@ blockquote {
         $size in $captions {
             .caption#{$infix}-#{$index} {
                 font-size: $size !important;
+                line-height: $headings-line-height !important;
             }
         }
     }
