@@ -53,10 +53,11 @@ var theme = {
         $('#chartBar').each(function (i) {
 
             $(this).appear(function () {
+                
                 Chart.defaults.global.defaultFontColor = '#333333';
                 var chartBar = $("#chartBar")[0].getContext('2d');
 
-                var myChart = new Chart(chartBar, {
+                new Chart(chartBar, {
                     type: 'bar',
                     data: {
                         labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018"],
@@ -93,6 +94,7 @@ var theme = {
                         }
                     }
                 });
+                
             });
 
         });

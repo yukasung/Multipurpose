@@ -1,56 +1,28 @@
-{% set page_title = "Blog Single" %}
+{% set page_title = "News" %}
 {% extends "../templates/master.html" %}
 {% block content %}
 {% include "../templates/partials/header.html" %}
 <main>
-    <section class="bg-primary py-5 py-md-6">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="caption-6 caption-lg-5 text-white mb-0">Blog Single</h1>
-                    <nav aria-label="breadcrumb" role="navigation" class="d-inline-block mt-3 mt-md-4">
-                        <ol class="breadcrumb bg-transparent p-0 m-0">
-                            <li class="breadcrumb-item d-flex align-items-center">
-                                <a href="/" class="d-flex align-items-center text-small text-white">
-                                    <i class="material-icons align-middle mr-1 icon-18">
-                                        home
-                                    </i>
-                                    Home</a>
-                                <i class="material-icons text-white align-middle px-1 icon-18">
-                                    chevron_right
-                                </i>
-                            </li>
-                            <li class="breadcrumb-item d-flex align-items-center pl-0">
-                                <a href="#" class="text-small text-white">Blog</a>
-                                <i class="material-icons text-white align-middle px-1 icon-18">
-                                    chevron_right
-                                </i>
-                            </li>
-                            <li class="breadcrumb-item d-flex align-items-center pl-0 active">
-                                <span class="text-small text-white-50">Blog Single</span>
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="py-8">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card border-0">
-                        <img src="assets/images/blog/blog-1-1200x775.jpg" class="img-fluid" alt="Image Description">
-                        <div class="card-body pt-4 pb-0 px-0">
-                            <h3 class="card-title h4">We discuss our business priorities and how to match our
-                                technology</h3>
-                            <p class="text-small text-black-50 mb-4 border-bottom pb-4">
-                                January 1, 2018
-                                <span>by</span>
-                                <a href="#">Mark</a>
-                                <span>in</span>
-                                <a href="#">Business</a>
-                            </p>
+                        <h1 class="card-title caption-7 caption-md-5">We discuss our business priorities and how to
+                            match our
+                            technology</h1>
+                        <p class="text-small text-black-50 mb-0">
+                            January 1, 2018
+                            <span>by</span>
+                            <a href="#">Mark</a>
+                            <span>in</span>
+                            <a href="#">Business</a>
+                        </p>
+                        <div class="pt-4 pb-5">
+                            <div class="border-top"></div>
+                        </div>
+                        <img src="assets/images/blog/blog-1-1200x775.jpg" class="img-fluid mb-5" alt="Image Description">
+                        <div class="card-body py-0 px-0">
                             <p>Reinsurance companies are insurance companies that sell policies to other insurance
                                 companies,
                                 allowing them to reduce their risks and protect themselves from very large losses.
@@ -58,6 +30,8 @@
                                 market is dominated by a few very large companies, with huge reserves. A reinsurer
                                 may also
                                 be a direct writer of insurance risks as well.</p>
+                            <h2 class="h5 mt-4">Small businesses it offers consulting services as well as factoring
+                                finance.</h2>
                             <p>Insurance companies are rated by various agencies such as A. M. Best. The ratings
                                 include the
                                 company's financial strength, which measures its ability to pay claims. It also
@@ -65,14 +39,12 @@
                                 instruments issued by the insurance company, such as bonds, notes, and
                                 securitization products.
                             </p>
-                            <blockquote class="blockquote my-5">
-                                <p class="mb-0">Captives are becoming an increasingly important component of the
-                                    risk management and risk
-                                    financing strategy of their parent. This can be understood against the
-                                    following background.
-                                </p>
-                            </blockquote>
-                            <h4 class="mt-4">The business model is to collect more in premium</h4>
+                            <p>Captives are becoming an increasingly important component of the
+                                risk management and risk
+                                financing strategy of their parent. This can be understood against the
+                                following background.
+                            </p>
+                            <h2 class="h5 mt-4">The business model is to collect more in premium.</h2>
                             <p>The types of risk that a captive can underwrite for their parents include property
                                 damage, public
                                 and product liability, professional indemnity, employee benefits, employers'
@@ -85,7 +57,7 @@
                                 then be "reimbursed" by the insurance carrier for the loss and out of pocket costs
                                 including,
                                 with the permission of the insurer, claim expenses.</p>
-                            <div class="row no-gutters py-4 border-bottom">
+                            <div class="row no-gutters mt-5">
                                 <div class="col-md-6">
                                     <strong>Share:</strong>
                                     <div class="d-inline-block ml-4">
@@ -119,15 +91,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-5">
+                    <div class="py-5">
+                        <div class="border-top"></div>
+                    </div>
+                    <div class="card border-0">
                         <div class="card-body p-0">
                             <div class="row">
-                                <div class="col-md-3 text-center">
-                                    <img src="assets/images/author/author-6-400x400.jpg" class="img-fluid mb-4 mb-md-0"
-                                        alt="Image Description">
+                                <div class="col-3 text-center">
+                                    <img src="assets/images/author/author-6-400x400.jpg" class="img-fluid" alt="Image Description">
                                 </div>
-                                <div class="col-md-9">
-                                    <h4 class="mb-3">About the Author</h4>
+                                <div class="col-9">
+                                    <h3 class="h4 mb-3">About the Author</h3>
                                     <p>Captives are becoming an increasingly important component of the risk
                                         management and
                                         risk financing strategy of their parent.</p>
@@ -232,7 +206,7 @@
                     </div>
                     <div class="card border-0 mt-4">
                         <div class="card-body p-0">
-                            <h4 class="card-title">Would you like to share your thoughts?</h4>
+                            <h3 class="card-title h4">Would you like to share your thoughts?</h3>
                             <p>Your email address will not be published. Required fields are marked *</p>
                             <form id="comment_form" class="form-container mt-4" action="#" method="post">
                                 <div class="form-group">

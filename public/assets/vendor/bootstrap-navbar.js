@@ -110,19 +110,19 @@ var navbar = {
     },
     eventScroll: function (element) {
 
-        var $navbar = $('.navbar');
+        var navbar = $('.navbar');
 
-        if ($navbar.hasClass('fixed-hide')) {
+        if (navbar.hasClass('fixed-hide')) {
             // sticky nav start
             var headerHeight = $('nav').outerHeight();
 
             if ($(document).scrollTop() >= headerHeight) {
-                if (!$navbar.hasClass('sticky')) {
-                    $navbar.addClass('sticky');
+                if (!navbar.hasClass('sticky')) {
+                    navbar.addClass('sticky');
                 }
             } else if ($(document).scrollTop() <= headerHeight) {
-                if ($navbar.hasClass('sticky')) {
-                    $navbar.removeClass('sticky');
+                if (navbar.hasClass('sticky')) {
+                    navbar.removeClass('sticky');
                 }
             }
 
@@ -140,8 +140,8 @@ var navbar = {
 
             this.LastScroll = st;
             if (this.LastScroll <= headerHeight) {
-                if ($navbar.hasClass('show')) {
-                    $navbar.removeClass('show');
+                if (navbar.hasClass('show')) {
+                    navbar.removeClass('show');
                 }
             }
         }
