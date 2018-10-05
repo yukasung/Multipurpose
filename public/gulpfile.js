@@ -10,9 +10,11 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var plumber = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer');
 var path = require('path');
 var notify = require('gulp-notify');
 var nunjucksRender = require('gulp-nunjucks-render');
+
 
 //Autoprefixer
 var browser_support = [
@@ -52,12 +54,14 @@ gulp.task('browserSync', function () {
   })
 })
 
+// Sass
 gulp.task('sass', function () {
-  return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in scss and children dirs
+  return gulp.src('scss/**/*.scss') 
     .pipe(plumber(plumberErrorHandler))
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('assets/css')) // Outputs it in the css folder
-    .pipe(browserSync.reload({ // Reloading with Browser Sync
+    .pipe(autoprefixer(browser_support))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(browserSync.reload({
       stream: true
     }));
 })
@@ -70,7 +74,7 @@ gulp.task('nunjucks-pages', function () {
       path: ['templates']
     }))
     .pipe(gulp.dest('./'))
-    .pipe(browserSync.reload({ // Reloading with Browser Sync
+    .pipe(browserSync.reload({
       stream: true
     }));
 })
@@ -83,7 +87,7 @@ gulp.task('nunjucks-docs', function () {
       path: ['templates']
     }))
     .pipe(gulp.dest('docs'))
-    .pipe(browserSync.reload({ // Reloading with Browser Sync
+    .pipe(browserSync.reload({
       stream: true
     }));
 })

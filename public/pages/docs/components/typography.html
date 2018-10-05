@@ -1,4 +1,4 @@
-{% extends "../templates/master_doc.html" %}
+{% extends "../templates/layout_doc.html" %}
 <!--  -->
 {% set component = "typography" %}
 <!--  -->
@@ -15,7 +15,8 @@
 <h1 class="bd-title" id="content">Typography</h1>
 <p>Documentation and examples for typography.</p>
 <h2 id="caption">Caption</h2>
-<p>Caption headings are used to stand out more than normal headings, Caption heading classes that apply to all breakpoints,
+<p>Caption headings are used to stand out more than normal headings, Caption heading classes that apply to all
+    breakpoints,
     from
     <code class="highlighter-rouge">xs</code> to
     <code class="highlighter-rouge">xl</code>.</p>
@@ -53,6 +54,15 @@
     <li>
         <code class="highlighter-rouge">6</code>
     </li>
+    <li>
+        <code class="highlighter-rouge">7</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">8</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">9</code>
+    </li>
 </ul>
 <div class="bd-example">
     {% macro caption() %}
@@ -62,6 +72,9 @@
     <p class="caption-4">Caption 4</p>
     <p class="caption-5">Caption 5</p>
     <p class="caption-6">Caption 6</p>
+    <p class="caption-7">Caption 7</p>
+    <p class="caption-8">Caption 8</p>
+    <p class="caption-9">Caption 9</p>
     {% endmacro %}
     <!--  -->
     {% call caption() %}

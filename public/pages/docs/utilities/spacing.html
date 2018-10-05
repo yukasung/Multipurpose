@@ -1,6 +1,6 @@
 {% extends "../templates/layout_doc.html" %}
 <!--  -->
-{% set utilities = "borders" %}
+{% set utilities = "spacing" %}
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
@@ -11,9 +11,8 @@
 <!--  -->
 {% block content %}
 
-<h1 class="bd-title" id="content">Borders</h1>
-<p>Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any
-    other element.</p>
+<h1 class="bd-title" id="content">Spacing</h1>
+<p>Margin and padding utility classes.</p>
 <h2 id="classes">Classes</h2>
 <table>
     <thead>
@@ -25,14 +24,12 @@
     <tbody>
         <tr>
             <td>
-                <code class="highlighter-rouge">.border-width-2</code>
+                <code class="highlighter-rouge">.mb-30px</code>
             </td>
-            <td>
-                <code class="highlighter-rouge">border-width: 2px !important;</code>
-            </td>
+            <td><code class="highlighter-rouge">margin-bottom: 30px !important;</code></td>
         </tr>
     </tbody>
 </table>
 <h2 id="referance">Reference</h2>
-<p>See <a href="https://getbootstrap.com/docs/4.1/utilities/borders">Bootstrap 4 document</a> for more information.</p>
+<p>See <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/">Bootstrap 4 document</a> for more information.</p>
 {% endblock %}

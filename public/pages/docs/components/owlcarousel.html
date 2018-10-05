@@ -1,4 +1,4 @@
-{% extends "../templates/master_doc.html" %}
+{% extends "../templates/layout_doc.html" %}
 <!--  -->
 {% set component = "owlcarousel" %}
 <!--  -->
@@ -78,10 +78,6 @@
     </script>
 </figure>
 <h2 id="dots-navigations">Dots navigations</h2>
-<p>Change dots navigation color by adding
-    <code class="highlighter-rouge">.owl-dots-primary</code> or
-    <code class="highlighter-rouge">.owl-dots-white</code>.
-</p>
 <div class="bd-example">
     {% macro dotsNavigations() %}
     <div class="owl-carousel owl-theme owl-loaded" data-owl-carousel-options='{"items":1, "nav":false,"margin":0, "dots":true, "loop":true, "autoHeight":true}'>
