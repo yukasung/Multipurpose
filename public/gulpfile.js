@@ -56,7 +56,7 @@ gulp.task('browserSync', function () {
 
 // Sass
 gulp.task('sass', function () {
-  return gulp.src('scss/**/*.scss') 
+  return gulp.src('scss/**/*.scss')
     .pipe(plumber(plumberErrorHandler))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer(browser_support))
@@ -157,8 +157,10 @@ gulp.task('default', function (callback) {
 gulp.task('build', function (callback) {
   runSequence(
     'clean:dist',
-    'sass', 
+    'sass',
     'useref',
+    'vendor',
+    'images',
     callback
   )
 })
