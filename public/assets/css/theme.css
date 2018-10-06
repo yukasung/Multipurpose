@@ -10262,9 +10262,7 @@ select {
       position: absolute;
       left: 0;
       right: 0;
-      margin: 0 auto;
       text-align: center;
-      z-index: -1;
       -webkit-transform: scale(1);
               transform: scale(1);
       -webkit-transition: all .4s ease .4s;
