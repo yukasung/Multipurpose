@@ -1,5 +1,4 @@
 "use strict";
-
 var theme = {
     ButtonGoTopOffset: 100,
     ButtonGoTopDuration: 500,
@@ -53,7 +52,7 @@ var theme = {
         $('#chartBar').each(function (i) {
 
             $(this).appear(function () {
-                
+
                 Chart.defaults.global.defaultFontColor = '#333333';
                 var chartBar = $("#chartBar")[0].getContext('2d');
 
@@ -94,7 +93,7 @@ var theme = {
                         }
                     }
                 });
-                
+
             });
 
         });
@@ -108,7 +107,7 @@ var theme = {
 
                 var options = $(this).data("owl-carousel-options");
                 var defaults = {
-                    navText: ["<img src='../../assets/images/other/nav_prev.png'>", "<img src='../../assets/images/other/nav_next.png'>"]
+                    navText: ["<img src='assets/images/other/nav_prev.png'>", "<img src='assets/images/other/nav_next.png'>"]
                 }
 
                 $(this).owlCarousel($.extend(defaults, options));
@@ -223,7 +222,7 @@ var theme = {
         });
 
     },
-    initGoToTopBotton() {
+    initGoToTopBotton: function() {
 
         $('#btnGoTop').click(function (event) {
             event.preventDefault();
