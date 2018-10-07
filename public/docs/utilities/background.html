@@ -16,7 +16,9 @@
     <link href="../../assets/vendor/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="../../assets/vendor/prism/prism.css" rel="stylesheet">
     <link href="../../assets/vendor/prism/prism-unescaped-markup.css" rel="stylesheet">
-    <link href="../../assets/css/theme.css" rel="stylesheet">
+    <!--build:css assets/css/theme.min.css-->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <!--endbuild-->
     <link href="../../assets/vendor/bootstrap/docs.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,6 +27,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 </head>
+
 <body style="padding-top: 4.5rem;">
     <header>
         <nav class="navbar navbar-light fixed-top shadow-sm bg-white">
@@ -179,10 +182,10 @@
                                 </a>
                             </li>
                             <li class="">
-                                    <a href="../../docs/utilities/spacing.html">
-                                        Spacing
-                                    </a>
-                                </li>
+                                <a href="../../docs/utilities/spacing.html">
+                                    Spacing
+                                </a>
+                            </li>
                             <li class="">
                                 <a href="../../docs/utilities/text.html">
                                     Text
@@ -334,7 +337,11 @@
 <script src="../../assets/vendor/jquery-skills-bar/skill.bars.jquery.js"></script>
 <script src="../../assets/vendor/rellax.min.js"></script>
 <script src="../../assets/vendor/chart.min.js"></script>
-<script src="../../assets/js/theme.js"></script>
+<!--build:js assets/js/theme.min.js -->
+<script src="assets/js/lib/a-library.js"></script>
+<script src="assets/js/lib/another-library.js"></script>
+<script src="assets/js/theme.js"></script>
+<!-- endbuild -->
 <script src="../../assets/vendor/prism/prism.js"></script>
 <script src="../../assets/vendor/prism/prism-unescaped-markup.js"></script>
 <script src="../../assets/vendor/holder.js"></script>
