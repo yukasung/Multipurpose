@@ -17,13 +17,13 @@ var theme = {
     },
     loadEvent: function () {
 
-        $('#preloader .loading').fadeOut();
-        $("#preloader").fadeOut(function () {
-            $(this).remove();
-        });
-        $('body').css({
-            'overflow': 'visible'
-        });
+        // $('#preloader .loading').fadeOut();
+        // $("#preloader").fadeOut(function () {
+        //     $(this).remove();
+        // });
+        // $('body').css({
+        //     'overflow': 'visible'
+        // });
 
     },
     resizeEvent: function () {

@@ -11,8 +11,8 @@
     z-index: 2000;
     .loading {
         position: absolute;
-        left: 50%;
-        top: 50%;
+        left: calc(50% - 25px);
+        top:  calc(50% - 25px);
         display: inline-block;
         width: 50px;
         height: 50px;
@@ -20,7 +20,7 @@
         border-radius: 50%;
         border-top-color: #fff;
         animation: spin 1s ease-in-out infinite;
-        z-index: 2000;
+        z-index: 2010;
     }
 }
 

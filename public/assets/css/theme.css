@@ -10967,8 +10967,10 @@ blockquote {
   z-index: 2000; }
   #preloader .loading {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: -webkit-calc(50% - 25px);
+    left: calc(50% - 25px);
+    top: -webkit-calc(50% - 25px);
+    top: calc(50% - 25px);
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -10977,7 +10979,7 @@ blockquote {
     border-top-color: #fff;
     -webkit-animation: spin 1s ease-in-out infinite;
             animation: spin 1s ease-in-out infinite;
-    z-index: 2000; }
+    z-index: 2010; }
 
 @keyframes spin {
   to {
