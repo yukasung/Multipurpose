@@ -208,21 +208,24 @@ var theme = {
 
             e.preventDefault();
 
-            var video = $(this).closest('.video-cover');
-            var image = video.find('img');
-            var iframe = video.find('iframe');
-            var embed = video.find('.embed-responsive');
+            var videoCover = $(this).closest('.video-cover');
+            var image = videoCover.find('img');
+            var iframe = videoCover.find('iframe');
+            var embed = videoCover.find('.embed-responsive');
             var src = iframe.data('src');
 
+            videoCover.css(
+                'background', '#252525'
+            );
             image.addClass('d-none');
             embed.removeClass("d-none");
-            video.addClass('video-reveal');
+            videoCover.addClass('video-reveal');
             iframe.attr('src', src);
 
         });
 
     },
-    initGoToTopBotton: function() {
+    initGoToTopBotton: function () {
 
         $('#btnGoTop').click(function (event) {
             event.preventDefault();
