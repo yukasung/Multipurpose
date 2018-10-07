@@ -10930,8 +10930,7 @@ blockquote {
     line-height: 1.2 !important; } }
 
 .video-cover {
-  position: relative;
-  background: #252525; }
+  position: relative; }
   .video-cover .video-icon {
     position: absolute;
     top: 50%;
