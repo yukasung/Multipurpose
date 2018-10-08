@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title></title>
-    <link rel="shortcut icon" href="../../assets/images/brand/favicon.ico">
+    <link rel="shortcut icon" href="style/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link href="../../assets/vendor/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="../../assets/vendor/prism/prism.css" rel="stylesheet">
     <link href="../../assets/vendor/prism/prism-unescaped-markup.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/theme.min.css">
+    <link href="../../assets/css/theme.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap/docs.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,34 +25,19 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 </head>
-
-<body style="padding-top: 4.5rem;">
+<body style="min-height: 75rem;padding-top: 4.5rem;">
     <header>
         <nav class="navbar navbar-light fixed-top shadow-sm bg-white">
             <div class="container">
-                <div class="navbar-brand">
-                    <a href="../../index.html">
-                        <img class="logo logo-dark" style="height: 28px;" src="../../assets/images/brand/logo-dark.svg">
-                    </a>
-                </div>
-                <form class="bd-search">
-                    <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button"
-                        data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
-                        aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
-                            width="30" height="30" focusable="false">
-                            <title>Menu</title>
-                            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                                d="M4 7h22M4 15h22M4 23h22"></path>
-                        </svg>
-                    </button>
-                </form>
+                <a class="navbar-brand text-uppercase" href="../../index.html">
+                    <img class="logo logo-dark" style="height: 28px;" src="../../assets/images/brand/logo-dark.svg">
+                </a>
             </div>
         </nav>
     </header>
     <div class="container-fluid">
         <div class="row flex-xl-nowrap">
             <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-
                 <nav class="collapse bd-links" id="bd-docs-nav">
                     <div class="bd-toc-item ">
                         <a class="bd-toc-link" href="../../docs/getting-started/introduction.html">
@@ -126,6 +111,11 @@
                                     Parallax
                                 </a>
                             </li>
+                            <li class="active">
+                                <a href="../../docs/components/pagination.html">
+                                    Pagination
+                                </a>
+                            </li>
                             <li class="">
                                 <a href="../../docs/components/progress.html">
                                     Progress
@@ -136,7 +126,7 @@
                                     Timeline
                                 </a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../../docs/components/testimonial.html">
                                     Testimonial
                                 </a>
@@ -194,11 +184,6 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a href="../../docs/utilities/spacing.html">
-                                    Spacing
-                                </a>
-                            </li>
-                            <li class="">
                                 <a href="../../docs/utilities/text.html">
                                     Text
                                 </a>
@@ -211,9 +196,8 @@
                 <ul class="section-nav">
                     
 <li class="toc-entry toc-h2">
-    <a href="#default">Default</a>
-    <a href="#background-color">Background Color</a>
-    <a href="#center">Center</a>
+    <a href="#example">Example</a>
+    <a href="#referance">Reference</a>
 </li>
 
                 </ul>
@@ -221,31 +205,38 @@
             <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 
 
-<h1 class="bd-title" id="content">Testimonial</h1>
-<p>Testimonials are a very powerful, internet marketing tool that helps businesses build credibility.</p>
-<h2 id="default">Default</h2>
+<h1 class="bd-title" id="content">Pagination</h1>
+<p>Examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+<h2 id="example">Example</h2>
 <div class="bd-example">
     
     <!--  -->
     
-    <div class="testimonial" style="width: 21rem;">
-        <div class="testimonial-body text-center p-4 border">
-            <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
-                have gotten at least 50 times the value from
-                business.</p>
-        </div>
-        <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
-                alt="Image Description">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h5 class="h6 text-primary mb-2">
-                    <a href="#">Kristina Cain</a>
-                </h5>
-                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
-            </div>
-        </div>
-    </div>
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     
 </div>
 <div class="bd-clipboard">
@@ -254,136 +245,36 @@
 <figure class="highlight">
     <script type="text/plain" class="language-markup">
         
-    <div class="testimonial" style="width: 21rem;">
-        <div class="testimonial-body text-center p-4 border">
-            <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
-                have gotten at least 50 times the value from
-                business.</p>
-        </div>
-        <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
-                alt="Image Description">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h5 class="h6 text-primary mb-2">
-                    <a href="#">Kristina Cain</a>
-                </h5>
-                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
-            </div>
-        </div>
-    </div>
-    
-        </script>
-</figure>
-<h2 id="background-color">Background Color</h2>
-<div class="bd-example">
-    
-    <!--  -->
-    
-
-    <div class="testimonial" style="width: 21rem;">
-        <div class="testimonial-body text-center p-4 bg-light">
-            <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
-                have gotten at least 50 times the value from
-                business.</p>
-        </div>
-        <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
-                alt="Image Description">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h5 class="h6 text-primary mb-2">
-                    <a href="#">Kristina Cain</a>
-                </h5>
-                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
-            </div>
-        </div>
-    </div>
-    
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        
-
-    <div class="testimonial" style="width: 21rem;">
-        <div class="testimonial-body text-center p-4 bg-light">
-            <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
-                have gotten at least 50 times the value from
-                business.</p>
-        </div>
-        <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
-                alt="Image Description">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h5 class="h6 text-primary mb-2">
-                    <a href="#">Kristina Cain</a>
-                </h5>
-                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
-            </div>
-        </div>
-    </div>
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     
     </script>
 </figure>
-
-<h2 id="center">Center</h2>
-<div class="bd-example">
-    
-    <!--  -->
-    
-
-    <div class="testimonial testimonial-center" style="width: 21rem;">
-        <div class="testimonial-body text-center p-4 bg-light">
-            <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
-                have gotten at least 50 times the value from
-                business.</p>
-        </div>
-        <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
-                alt="Image Description">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h5 class="text-primary mb-2">
-                    <a href="#">Kristina Cain</a>
-                </h5>
-                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
-            </div>
-        </div>
-    </div>
-    
-</div>
-<div class="bd-clipboard">
-    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-</div>
-<figure class="highlight">
-    <script type="text/plain" class="language-markup">
-        
-
-    <div class="testimonial testimonial-center" style="width: 21rem;">
-        <div class="testimonial-body text-center p-4 bg-light">
-            <i class="ti-quote-left icon-lg text-primary"></i>
-            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
-                have gotten at least 50 times the value from
-                business.</p>
-        </div>
-        <div class="testimonial-footer mt-4">
-            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-max-90px mr-2"
-                alt="Image Description">
-            <div class="d-inline-block align-middle text-left ml-3">
-                <h5 class="text-primary mb-2">
-                    <a href="#">Kristina Cain</a>
-                </h5>
-                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
-            </div>
-        </div>
-    </div>
-    
-    </script>
-</figure>
+<h2 id="referance">Reference</h2>
+<p>See <a href="https://getbootstrap.com/docs/4.1/components/pagination/">Bootstrap 4 document</a> for more information.</p>
 
             </main>
         </div>
@@ -401,7 +292,7 @@
 <script src="../../assets/vendor/jquery-skills-bar/skill.bars.jquery.js"></script>
 <script src="../../assets/vendor/rellax.min.js"></script>
 <script src="../../assets/vendor/chart.min.js"></script>
-<script src="../../assets/js/theme.min.js"></script>
+<script src="../../assets/js/theme.js"></script>
 <script src="../../assets/vendor/prism/prism.js"></script>
 <script src="../../assets/vendor/prism/prism-unescaped-markup.js"></script>
 <script src="../../assets/vendor/holder.js"></script>
