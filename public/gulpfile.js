@@ -134,6 +134,12 @@ gulp.task('vendor', function () {
     .pipe(gulp.dest('dist/assets/vendor'))
 })
 
+// Copying docs
+gulp.task('docs', function () {
+  return gulp.src('docs/**/*')
+    .pipe(gulp.dest('dist/docs'))
+})
+
 // Cleaning 
 gulp.task('clean', function () {
   return del.sync('dist').then(function (cb) {
@@ -160,6 +166,7 @@ gulp.task('build', function (callback) {
     'sass',
     'useref',
     'vendor',
+    'docs',
     'images',
     callback
   )
