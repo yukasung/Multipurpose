@@ -125,7 +125,7 @@ var theme = {
     initGoogleMap: function () {
 
         $('.google-map').lazyLoadGoogleMaps({
-
+            key: 'AIzaSyCcSl4NoVXeQ130cHtEKKaNvvC5fXnlCbg',
             callback: function (container, map) {
 
                 var $container = $(container);
