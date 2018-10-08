@@ -1,0 +1,18 @@
+{% set page_title = "We are sorry, the page you requested cannot be found" %}
+{% extends "../templates/layout.html" %}
+{% block content %}
+{% include "../templates/partials/header.html" %}
+<main>
+    <section class="py-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="mb-4">Sorry, we couldn't find that page</h1>
+                    <p>Please check your url and try again, or <a href="index.html">click here to home page</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% include "partials/footer.html" %}
+{% endblock %}
