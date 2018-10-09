@@ -13,6 +13,7 @@ var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var path = require('path');
 var notify = require('gulp-notify');
+var replace = require('gulp-replace');
 var nunjucksRender = require('gulp-nunjucks-render');
 
 
@@ -151,6 +152,14 @@ gulp.task('clean:dist', function () {
   return del.sync(['dist/**/*', '!dist/assets/images', '!dist/assets/images/**/*']);
 });
 
+// Replace
+gulp.task('replace', function(){
+  gulp.src('docs/**/*')
+    .pipe(replace('theme.css', 'theme.min.css'))
+    .pipe(gulp.dest('dist/docs'));
+});
+
+
 // Build Sequences
 // ---------------
 
@@ -167,6 +176,7 @@ gulp.task('build', function (callback) {
     'useref',
     'vendor',
     'docs',
+    'replace',
     'images',
     callback
   )
