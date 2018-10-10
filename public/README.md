@@ -1,5 +1,3 @@
-# Gulp Starter for CSS Tricks Tutorial  
+# Bootstrap Template      
 
-This repo is a gulp starter for this CSS Tricks tutorial. 
-
-Remember to do run the `npm install` command after cloning this repo :) 
+Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
