@@ -61,10 +61,10 @@
         transform: translateY(-50%);
         transition: all 0.2s ease-in-out;
         img {
-            opacity: 0.7;
-
+            width: 20px;
+            opacity: 0.8;
             &:hover {
-                opacity: 0.9;
+                opacity: 1;
             }
         }
     }
