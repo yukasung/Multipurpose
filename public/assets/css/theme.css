@@ -10454,7 +10454,7 @@ select {
             flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: 0;
     margin-bottom: auto; }
     .owl-carousel .item .card {
       -webkit-box-flex: 1;
