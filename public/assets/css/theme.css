@@ -10490,7 +10490,7 @@ select {
   transition: all 0.2s ease-in-out; }
   .owl-nav .owl-prev img,
   .owl-nav .owl-next img {
-    width: 28px;
+    width: 24px;
     opacity: 0.8; }
     .owl-nav .owl-prev img:hover,
     .owl-nav .owl-next img:hover {
