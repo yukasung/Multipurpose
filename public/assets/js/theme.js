@@ -41,8 +41,10 @@ var theme = {
     initParallax: function () {
 
         if ($('.parallax').length > 0) {
-            new Rellax('.parallax', {
-                center: true
+            $('.parallax').imagesLoaded(function () {
+                new Rellax('.parallax', {
+                    center: true
+                });
             });
         }
 
@@ -237,7 +239,6 @@ var theme = {
 
     }
 };
-
 
 $(document).ready(function () {
     theme.init();
