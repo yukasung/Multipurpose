@@ -10491,10 +10491,10 @@ select {
   .owl-nav .owl-prev img,
   .owl-nav .owl-next img {
     width: 28px;
-    opacity: 0.7; }
+    opacity: 0.8; }
     .owl-nav .owl-prev img:hover,
     .owl-nav .owl-next img:hover {
-      opacity: 0.9; }
+      opacity: 1; }
 
 .owl-nav .owl-prev {
   left: 10px; }
