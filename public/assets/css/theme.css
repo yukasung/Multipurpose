@@ -10454,7 +10454,7 @@ select {
             flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: auto;
     margin-bottom: auto; }
     .owl-carousel .item .card {
       -webkit-box-flex: 1;
@@ -10490,11 +10490,11 @@ select {
   transition: all 0.2s ease-in-out; }
   .owl-nav .owl-prev img,
   .owl-nav .owl-next img {
-    width: 24px;
-    opacity: 0.8; }
+    width: 20px;
+    opacity: 0.7; }
     .owl-nav .owl-prev img:hover,
     .owl-nav .owl-next img:hover {
-      opacity: 1; }
+      opacity: 0.9; }
 
 .owl-nav .owl-prev {
   left: 10px; }
