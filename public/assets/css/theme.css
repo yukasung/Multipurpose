@@ -10990,6 +10990,10 @@ blockquote {
   overflow-y: auto;
   padding-right: 0px !important; }
 
+.bg-block {
+  display: block;
+  width: 100%; }
+
 .bg-image {
   position: absolute;
   top: 0;
@@ -10998,6 +11002,58 @@ blockquote {
   height: 100%;
   z-index: 0;
   object-fit: cover; }
+
+@media (min-width: 576px) {
+  .bg-sm-block {
+    display: block;
+    width: 100%; }
+  .bg-sm-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover; } }
+
+@media (min-width: 768px) {
+  .bg-md-block {
+    display: block;
+    width: 100%; }
+  .bg-md-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover; } }
+
+@media (min-width: 992px) {
+  .bg-lg-block {
+    display: block;
+    width: 100%; }
+  .bg-lg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover; } }
+
+@media (min-width: 1200px) {
+  .bg-xl-block {
+    display: block;
+    width: 100%; }
+  .bg-xl-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover; } }
 
 .bg-holder {
   position: absolute;
@@ -11201,6 +11257,25 @@ blockquote {
 
 .w-max-90px {
   max-width: 90px !important; }
+
+.h-min-100vh {
+  min-height: 100vh; }
+
+@media (min-width: 576px) {
+  .h-sm-min-100vh {
+    min-height: 100vh; } }
+
+@media (min-width: 768px) {
+  .h-md-min-100vh {
+    min-height: 100vh; } }
+
+@media (min-width: 992px) {
+  .h-lg-min-100vh {
+    min-height: 100vh; } }
+
+@media (min-width: 1200px) {
+  .h-xl-min-100vh {
+    min-height: 100vh; } }
 
 .text-decoration-none {
   text-decoration: none !important; }

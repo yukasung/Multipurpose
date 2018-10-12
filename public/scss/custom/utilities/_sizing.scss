@@ -1,15 +1,28 @@
 //
 // Custom utilities sizing
 //
-.w-40px{
+.w-40px {
     width: 40px !important;
 }
+
 .w-60px {
     width: 60px !important;
 }
+
 .w-70px {
     width: 70px !important;
 }
+
 .w-max-90px {
     max-width: 90px !important;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .h#{$infix}-min-100vh {
+            min-height: 100vh;
+        }
+    }
 }
