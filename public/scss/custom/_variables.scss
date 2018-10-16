@@ -122,5 +122,12 @@ $opacities: map-merge((0: 0,
 9: .9,
 10: 1), $opacities);
 
+
+// Min height
+$min-heights: ();
+$min-heights: map-merge((445px: 445px,
+95vh: 95vh,
+100vh: 100vh), $min-heights);
+
 // Breadcrumbs
 $breadcrumb-divider: none;

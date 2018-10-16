@@ -13,7 +13,7 @@
     max-width: 90px !important;
 }
 
-.w-max-834px{
+.w-max-834px {
     max-width: 834px !important;
 }
 
@@ -21,21 +21,11 @@
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-        .h#{$infix}-min-50vh {
-            min-height: 50vh;
+        @each $index,
+        $size in $min-heights {
+            .min-h#{$infix}-#{$index} {
+                min-height: $size !important
+            }
         }
-
-        .h#{$infix}-min-70vh {
-            min-height: 70vh;
-        }
-
-        .h#{$infix}-min-95vh {
-            min-height: 95vh;
-        }
-
-        .h#{$infix}-min-100vh {
-            min-height: 100vh;
-        }
-        
     }
 }
