@@ -11359,6 +11359,9 @@ blockquote {
 .h-min-70vh {
   min-height: 70vh; }
 
+.h-min-95vh {
+  min-height: 95vh; }
+
 .h-min-100vh {
   min-height: 100vh; }
 
@@ -11367,6 +11370,8 @@ blockquote {
     min-height: 50vh; }
   .h-sm-min-70vh {
     min-height: 70vh; }
+  .h-sm-min-95vh {
+    min-height: 95vh; }
   .h-sm-min-100vh {
     min-height: 100vh; } }
 
@@ -11375,6 +11380,8 @@ blockquote {
     min-height: 50vh; }
   .h-md-min-70vh {
     min-height: 70vh; }
+  .h-md-min-95vh {
+    min-height: 95vh; }
   .h-md-min-100vh {
     min-height: 100vh; } }
 
@@ -11383,6 +11390,8 @@ blockquote {
     min-height: 50vh; }
   .h-lg-min-70vh {
     min-height: 70vh; }
+  .h-lg-min-95vh {
+    min-height: 95vh; }
   .h-lg-min-100vh {
     min-height: 100vh; } }
 
@@ -11391,6 +11400,8 @@ blockquote {
     min-height: 50vh; }
   .h-xl-min-70vh {
     min-height: 70vh; }
+  .h-xl-min-95vh {
+    min-height: 95vh; }
   .h-xl-min-100vh {
     min-height: 100vh; } }
 

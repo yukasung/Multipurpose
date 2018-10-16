@@ -29,6 +29,10 @@
             min-height: 70vh;
         }
 
+        .h#{$infix}-min-95vh {
+            min-height: 95vh;
+        }
+
         .h#{$infix}-min-100vh {
             min-height: 100vh;
         }
