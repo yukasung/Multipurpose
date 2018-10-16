@@ -53,4 +53,21 @@
             background: radial-gradient(circle at center left, $light, rgba(255, 255, 255, 0) 80%);
         }
     }
+
+    &.gradient-primary {
+        &.gradient-center-right {
+            background: radial-gradient(circle at center right, $primary, rgba(255, 255, 255, 0) 80%);
+        }
+    }
+    &.gradient-dark {
+        &.gradient-center-right {
+            background: radial-gradient(circle at center right, $dark, rgba(255, 255, 255, 0) 80%);
+        }
+    }
+    &.gradient-light {
+        &.gradient-center-right {
+            background: radial-gradient(circle at center right, $light, rgba(255, 255, 255, 0) 80%);
+        }
+    }
+
 }

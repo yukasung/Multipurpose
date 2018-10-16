@@ -221,17 +221,34 @@
             .logo-light {
                 display: none;
             }
+
+            .navbar-toggler {
+
+                span,
+                span::before,
+                span::after {
+                    background: $navbar-light-color;
+                }
+            }
         }
 
-        .navbar-toggler {
 
-            span,
-            span::before,
-            span::after {
-                background: $navbar-light-color;
+
+        &.navbar-dark {
+            &:not(.bg-transparent) {
+                .navbar-toggler {
+
+                    span,
+                    span::before,
+                    span::after {
+                        background: $navbar-dark-color;
+                    }
+                }
             }
         }
     }
+
+
 
     &.fixed-hide {
         z-index: 1030;
@@ -282,17 +299,6 @@
         }
     }
 
-    .navbar-toggler {
-
-        span,
-        span::before,
-        span::after {
-            background: $navbar-light-color;
-        }
-    }
-}
-
-.navbar-light {
     .navbar-toggler {
 
         span,

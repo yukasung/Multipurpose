@@ -13,12 +13,25 @@
     max-width: 90px !important;
 }
 
+.w-max-834px{
+    max-width: 834px !important;
+}
+
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+        .h#{$infix}-min-50vh {
+            min-height: 50vh;
+        }
+
+        .h#{$infix}-min-70vh {
+            min-height: 70vh;
+        }
+
         .h#{$infix}-min-100vh {
             min-height: 100vh;
         }
+        
     }
 }
