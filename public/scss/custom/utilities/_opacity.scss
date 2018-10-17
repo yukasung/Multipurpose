@@ -8,9 +8,9 @@
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
         @each $index,
-        $value in $opacities {
+        $opacity in $opacities {
             .op#{$infix}-#{$index} {
-                opacity: $value !important
+                opacity: $opacity !important
             }
         }
     }

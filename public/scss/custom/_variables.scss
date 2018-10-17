@@ -96,17 +96,10 @@ $sizes: map-merge((5: 5%,
 100: 100%,
 auto: auto), $sizes);
 
-// Width pixels
-$width-pixels: ();
-$width-pixels: map-merge((
-70: 70px,
-90: 90px), $width-pixels);
-
-// Min height of the viewport
+// Min height unit
 $min-heights: ();
-$min-heights: map-merge((0: 0,
-95: 95vh,
-100: 100vh), $min-heights);
+$min-heights: 95vh,
+100vh;
 
 // Captions
 $captions: ();
@@ -133,8 +126,6 @@ $opacities: map-merge((0: 0,
 8: .8,
 9: .9,
 10: 1), $opacities);
-
-
 
 // Breadcrumbs
 $breadcrumb-divider: none;
