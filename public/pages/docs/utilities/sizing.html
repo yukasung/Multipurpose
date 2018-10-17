@@ -4,7 +4,8 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#classes ">Classes </a>
+    <a href="#min-height">Min Height</a>
+    <a href="#classes">Classes</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -12,6 +13,31 @@
 
 <h1 class="bd-title" id="content">Sizing</h1>
 <p>The CSS Classes participates in specifies the size of an element.</p>
+<h2 id="min-height">Min Height</h2>
+<p>Min height utility classes sets the minimum height of an element. It prevents the used value of the height property from becoming smaller than the value specified for <code class="highlighter-rouge">min-height</code>.</p>
+<p>The classes are named using the format: </p>
+<ul>
+    <li>
+        <code class="highlighter-rouge">.mh-{value}</code> for
+        <code class="highlighter-rouge">xs</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">.mh-{breakpoint}-{value}</code> for
+        <code class="highlighter-rouge">sm</code>,
+        <code class="highlighter-rouge">md</code>,
+        <code class="highlighter-rouge">lg</code>, and
+        <code class="highlighter-rouge">xl</code>.</li>
+</ul>
+<p>Where <em>value</em> is one of:</p>
+<ul>
+    <li>
+        <code class="highlighter-rouge">95vh</code>
+    </li>
+    <li>
+        <code class="highlighter-rouge">100vh</code>
+    </li>
+</ul>
+
 <h2 id="classes">Classes</h2>
 <table>
     <thead>
@@ -23,18 +49,6 @@
     <tbody>
         <tr>
             <td>
-                <code class="highlighter-rouge">.w-40px</code>
-            </td>
-            <td><code class="highlighter-rouge"> width: 40px !important;</code></td>
-        </tr>
-        <tr>
-            <td>
-                <code class="highlighter-rouge">.w-60px</code>
-            </td>
-            <td><code class="highlighter-rouge"> width: 60px !important;</code></td>
-        </tr>
-        <tr>
-            <td>
                 <code class="highlighter-rouge">.w-70px</code>
             </td>
             <td><code class="highlighter-rouge"> width: 70px !important;</code></td>
@@ -43,7 +57,13 @@
             <td>
                 <code class="highlighter-rouge">.w-90px</code>
             </td>
-            <td><code class="highlighter-rouge"> max-width: 90px !important;</code></td>
+            <td><code class="highlighter-rouge"> width: 90px !important;</code></td>
+        </tr>
+        <tr>
+            <td>
+                <code class="highlighter-rouge">.mw-632px</code>
+            </td>
+            <td><code class="highlighter-rouge"> max-width: 632px !important;</code></td>
         </tr>
     </tbody>
 </table>
