@@ -125,7 +125,7 @@ $opacities: map-merge((0: 0,
 
 // Min height
 $min-heights: ();
-$min-heights: map-merge((445px: 445px,
+$min-heights: map-merge((380px: 380px,
 95vh: 95vh,
 100vh: 100vh), $min-heights);
 
