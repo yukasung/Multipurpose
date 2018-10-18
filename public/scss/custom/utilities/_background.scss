@@ -6,9 +6,9 @@
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-        .bg#{$infix}-block {
-            display: block;
-            width: 100%;
+        .bg#{$infix}-fluid {
+            max-width: 100%;
+            height: auto;
         }
 
         .bg#{$infix}-image {

@@ -316,6 +316,13 @@
     <tbody>
         <tr>
             <td>
+                <code class="highlighter-rouge">.bg-fluid</code>
+            </td>
+            <td> Apply to
+                <code class="highlighter-rouge">&lt;img&gt;</code> to responsive images automatically adjust to fit the size of the screen.</td>
+        </tr>
+        <tr>
+            <td>
                 <code class="highlighter-rouge">.bg-image</code>
             </td>
             <td> Apply to
@@ -332,13 +339,16 @@
         </tr>
     </tbody>
 </table>
-
-<p>Responsive variations also exist for <code class="highlighter-rouge">bg-image</code>.</p>
+<p>The classes are named using the format:</p>
 <ul>
-    <li><code class="highlighter-rouge">.bg-image</code></li>
-    <li><code class="highlighter-rouge">.bg-sm-image</code></li>
-    <li><code class="highlighter-rouge">.bg-md-image</code></li>
-    <li><code class="highlighter-rouge">.bg-lg-image</code></li>
+    <li><code class="highlighter-rouge">.bg-{value}</code> for <code class="highlighter-rouge">xs</code></li>
+    <li><code class="highlighter-rouge">.bg-{breakpoint}-{value}</code> for <code class="highlighter-rouge">sm</code>,
+        <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, and <code class="highlighter-rouge">xl</code>.</li>
+</ul>
+<p>Where value is one of:</p>
+<ul>
+    <li><code class="highlighter-rouge">fluid</code></li>
+    <li><code class="highlighter-rouge">image</code></li>
 </ul>
 
             </main>

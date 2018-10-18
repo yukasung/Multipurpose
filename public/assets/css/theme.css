@@ -10989,9 +10989,9 @@ blockquote {
   overflow-y: auto;
   padding-right: 0px !important; }
 
-.bg-block {
-  display: block;
-  width: 100%; }
+.bg-fluid {
+  max-width: 100%;
+  height: auto; }
 
 .bg-image {
   position: absolute;
@@ -11003,9 +11003,9 @@ blockquote {
   object-fit: cover; }
 
 @media (min-width: 576px) {
-  .bg-sm-block {
-    display: block;
-    width: 100%; }
+  .bg-sm-fluid {
+    max-width: 100%;
+    height: auto; }
   .bg-sm-image {
     position: absolute;
     top: 0;
@@ -11016,9 +11016,9 @@ blockquote {
     object-fit: cover; } }
 
 @media (min-width: 768px) {
-  .bg-md-block {
-    display: block;
-    width: 100%; }
+  .bg-md-fluid {
+    max-width: 100%;
+    height: auto; }
   .bg-md-image {
     position: absolute;
     top: 0;
@@ -11029,9 +11029,9 @@ blockquote {
     object-fit: cover; } }
 
 @media (min-width: 992px) {
-  .bg-lg-block {
-    display: block;
-    width: 100%; }
+  .bg-lg-fluid {
+    max-width: 100%;
+    height: auto; }
   .bg-lg-image {
     position: absolute;
     top: 0;
@@ -11042,9 +11042,9 @@ blockquote {
     object-fit: cover; } }
 
 @media (min-width: 1200px) {
-  .bg-xl-block {
-    display: block;
-    width: 100%; }
+  .bg-xl-fluid {
+    max-width: 100%;
+    height: auto; }
   .bg-xl-image {
     position: absolute;
     top: 0;
