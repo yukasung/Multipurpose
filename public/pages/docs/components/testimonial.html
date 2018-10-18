@@ -4,9 +4,10 @@
 <!--  -->
 {% block section_nav %}
 <li class="toc-entry toc-h2">
-    <a href="#default">Default</a>
+    <a href="#border">Border</a>
     <a href="#background-color">Background Color</a>
     <a href="#center">Center</a>
+    <a href="#transparent">Transparent</a>
 </li>
 {% endblock%}
 <!--  -->
@@ -14,7 +15,7 @@
 
 <h1 class="bd-title" id="content">Testimonial</h1>
 <p>Testimonials are a very powerful, internet marketing tool that helps businesses build credibility.</p>
-<h2 id="default">Default</h2>
+<h2 id="border">Border</h2>
 <div class="bd-example">
     {% macro default() %}
     <div class="testimonial" style="width: 21rem;">
@@ -128,4 +129,44 @@
         {% endcall %}
     </script>
 </figure>
+
+<h2 id="transparent">Transparent</h2>
+<div class="bd-example">
+    {% macro center() %}
+
+    <div class="testimonial testimonial-center" style="width: 21rem;">
+        <div class="testimonial-body text-center bg-transparent">
+            <i class="ti-quote-left icon-lg text-primary"></i>
+            <p class="font-weight-light pt-3 mb-0">Your company is truly upstanding and is behind its product 100%. I
+                have gotten at least 50 times the value from
+                business.</p>
+        </div>
+        <div class="testimonial-footer mt-4">
+            <img src="holder.js/400x400?auto=yes&bg=cccccc&text=400x400" class="d-inline rounded-circle w-90px mr-2"
+                alt="Image Description">
+            <div class="d-inline-block align-middle text-left ml-3">
+                <h5 class="text-primary mb-2">
+                    <a href="#">Kristina Cain</a>
+                </h5>
+                <p class="text-small text-black-50 pb-0 mb-0">Managing Director</p>
+            </div>
+        </div>
+    </div>
+    {% endmacro %}
+    <!--  -->
+    {% call center() %}
+    <!--  -->
+    {% endcall %}
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+    <script type="text/plain" class="language-markup">
+        {% call center() %}
+        <!--  -->
+        {% endcall %}
+    </script>
+</figure>
+
 {% endblock %}
